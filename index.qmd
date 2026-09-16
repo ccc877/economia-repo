@@ -1,3 +1,127 @@
-# Presentación {.unnumbered}
+# Recursos de Economía {.unnumbered}
 
-Este es el material de la asignatura de Economía de 1.º de Bachillerato. Cada tema se desarrolla en un capítulo independiente, con definiciones, ejemplos, casos reales y tablas o gráficos elaborados directamente en el propio documento.
+::: {.resource-intro}
+En esta página encontrarás los materiales de Economía de 1.º de Bachillerato. Los apuntes ya están disponibles; los ejercicios y los documentos complementarios se irán incorporando a lo largo del curso.
+:::
+
+::: {.resource-navigation}
+[Apuntes](#apuntes)
+
+[Ejercicios en HTML](#ejercicios-en-html)
+
+[Documentos PDF](#documentos-pdf)
+:::
+
+::: {.resource-section}
+## Apuntes
+
+Cada tema incluye explicaciones, definiciones, ejemplos y gráficos.
+
+### Unidad 1. Decisión, comportamiento y método
+
+- [La economía: concepto, método y ramas](tema-01.html)
+- [Necesidades, producción y sistemas económicos](tema-02.html)
+- [La economía del comportamiento](tema-03.html)
+
+### Unidad 2. Microeconomía y mercados
+
+- [La empresa y la producción](tema-04.html)
+- [El mercado: oferta, demanda y elasticidad](tema-05.html)
+- [Las estructuras de mercado](tema-06.html)
+- [Los fallos del mercado y el mercado de trabajo](tema-07.html)
+
+### Unidad 3. Macroeconomía y desarrollo
+
+- [La macroeconomía y el Producto Interior Bruto](tema-08.html)
+- [El desarrollo económico](tema-09.html)
+
+### Unidad 4. Sistema financiero y política monetaria
+
+- [El dinero, el sistema financiero y las finanzas personales](tema-10.html)
+- [Los precios, la inflación y la política monetaria](tema-11.html)
+
+### Unidad 5. Política fiscal y sector público
+
+- [Las finanzas públicas y la política fiscal](tema-12.html)
+
+### Unidad 6. Comercio, globalización y retos actuales
+
+- [El comercio internacional](tema-13.html)
+- [La globalización y los retos de la economía actual](tema-14.html)
+:::
+
+::: {.resource-section}
+## Ejercicios en HTML
+
+Los enlaces se han dejado preparados para añadir los ejercicios interactivos cuando estén disponibles.
+
+### Unidad 1. Decisión, comportamiento y método
+
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 2. Microeconomía y mercados
+
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La empresa y la producción</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 3. Macroeconomía y desarrollo
+
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El desarrollo económico</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 4. Sistema financiero y política monetaria
+
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 5. Política fiscal y sector público
+
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 6. Comercio, globalización y retos actuales
+
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El comercio internacional</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
+:::
+
+::: {.resource-section}
+## Documentos PDF
+
+Esta sección queda preparada para reunir fichas, esquemas y otros documentos descargables en PDF.
+
+### Unidad 1. Decisión, comportamiento y método
+
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 2. Microeconomía y mercados
+
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: La empresa y la producción</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 3. Macroeconomía y desarrollo
+
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: El desarrollo económico</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 4. Sistema financiero y política monetaria
+
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 5. Política fiscal y sector público
+
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span>
+
+### Unidad 6. Comercio, globalización y retos actuales
+
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: El comercio internacional</a><span class="placeholder-status">Próximamente</span>
+- <a class="placeholder-link" href="" aria-disabled="true">Documento: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
+:::
