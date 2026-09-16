@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Las estructuras de mercado – Economía</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./tema-07.html" rel="next">
+<link href="./tema-05.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ed7344add5f1663e434276306a2aa159.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tema-04.html">Unidad 2. Microeconomía y mercados</a></li><li class="breadcrumb-item"><a href="./tema-06.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Economía</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recursos de Economía</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unidad 1. Decisión, comportamiento y método</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Necesidades, producción y sistemas económicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La economía del comportamiento</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unidad 2. Microeconomía y mercados</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">La empresa y la producción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-06.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Los fallos del mercado y el mercado de trabajo</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unidad 3. Macroeconomía y desarrollo</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">La macroeconomía y el Producto Interior Bruto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">El desarrollo económico</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unidad 4. Sistema financiero y política monetaria</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El dinero, el sistema financiero y las finanzas personales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Los precios, la inflación y la política monetaria</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unidad 5. Política fiscal y sector público</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Las finanzas públicas y la política fiscal</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Unidad 6. Comercio, globalización y retos actuales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">El comercio internacional</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tema-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La globalización y los retos de la economía actual</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#los-elementos-que-condicionan-los-mercados" id="toc-los-elementos-que-condicionan-los-mercados" class="nav-link active" data-scroll-target="#los-elementos-que-condicionan-los-mercados"><span class="header-section-number">6.1</span> Los elementos que condicionan los mercados</a></li>
+  <li><a href="#la-competencia-perfecta" id="toc-la-competencia-perfecta" class="nav-link" data-scroll-target="#la-competencia-perfecta"><span class="header-section-number">6.2</span> La competencia perfecta</a></li>
+  <li><a href="#la-competencia-imperfecta" id="toc-la-competencia-imperfecta" class="nav-link" data-scroll-target="#la-competencia-imperfecta"><span class="header-section-number">6.3</span> La competencia imperfecta</a></li>
+  <li><a href="#el-monopolio" id="toc-el-monopolio" class="nav-link" data-scroll-target="#el-monopolio"><span class="header-section-number">6.4</span> El monopolio</a>
+  <ul class="collapse">
+  <li><a href="#las-causas-del-monopolio" id="toc-las-causas-del-monopolio" class="nav-link" data-scroll-target="#las-causas-del-monopolio"><span class="header-section-number">6.4.1</span> Las causas del monopolio</a></li>
+  <li><a href="#la-regulación-del-monopolio" id="toc-la-regulación-del-monopolio" class="nav-link" data-scroll-target="#la-regulación-del-monopolio"><span class="header-section-number">6.4.2</span> La regulación del monopolio</a></li>
+  </ul></li>
+  <li><a href="#el-oligopolio" id="toc-el-oligopolio" class="nav-link" data-scroll-target="#el-oligopolio"><span class="header-section-number">6.5</span> El oligopolio</a></li>
+  <li><a href="#la-competencia-monopolística" id="toc-la-competencia-monopolística" class="nav-link" data-scroll-target="#la-competencia-monopolística"><span class="header-section-number">6.6</span> La competencia monopolística</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tema-04.html">Unidad 2. Microeconomía y mercados</a></li><li class="breadcrumb-item"><a href="./tema-06.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="los-elementos-que-condicionan-los-mercados" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="los-elementos-que-condicionan-los-mercados"><span class="header-section-number">6.1</span> Los elementos que condicionan los mercados</h2>
+<p>No todos los mercados funcionan igual. Cuatro elementos determinan el grado de competencia que existe en un mercado concreto.</p>
+<p>El <strong>número de compradores y vendedores</strong> condiciona cómo se comportan los precios. En un mercado con muchos vendedores —como varios puestos de fruta en un mercado municipal—, ninguno puede fijar el precio por su cuenta: si uno lo sube, los compradores acuden a otro puesto. En un mercado con pocos vendedores —un <strong>oligopolio</strong>— o con uno solo —un <strong>monopolio</strong>—, el poder de fijar precios se concentra en pocas manos, y los consumidores tienen menos capacidad de elegir.</p>
+<p>La <strong>homogeneidad del producto</strong> también importa. Cuando los productos son idénticos —materias primas como el trigo o el petróleo—, los consumidores no tienen preferencia por un vendedor concreto y compiten solo en precio. Cuando los productos están diferenciados —automóviles, teléfonos móviles—, las empresas compiten además en calidad, marca y características, lo que les permite fijar precios más altos y generar cierta lealtad de marca.</p>
+<p>Las <strong>barreras de entrada y salida</strong> determinan cuán fácil es para una empresa nueva sumarse al mercado, o para una existente abandonarlo. Unos costes iniciales muy altos, unas regulaciones estrictas o la necesidad de tecnología avanzada dificultan la entrada; en general, cuanto más fácil es entrar y salir, más competitivo tiende a ser el mercado.</p>
+<p>Por último, la <strong>información</strong> disponible para compradores y vendedores condiciona el funcionamiento del mercado. Cuando la información es perfecta, todos conocen los precios y la calidad de los productos, lo que permite decisiones informadas. Cuando existe <strong>asimetría de información</strong> —una parte sabe más que la otra—, quien tiene más información puede aprovecharse de quien tiene menos, generando ineficiencias.</p>
+<div class="cell">
+<div id="tbl-estructuras-resumen" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-estructuras-resumen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;6.1: Comparativa de las estructuras de mercado
+</figcaption>
+<div aria-describedby="tbl-estructuras-resumen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="table table-striped table-hover cell caption-top table-sm small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Estructura</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Nº de vendedores</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Tipo de producto</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Barreras de entrada</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Control sobre el precio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Competencia perfecta</td>
+<td style="text-align: left;">Muchos</td>
+<td style="text-align: left;">Homogéneo</td>
+<td style="text-align: left;">Ninguna</td>
+<td style="text-align: left;">Ninguno (precio-aceptante)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Competencia monopolística</td>
+<td style="text-align: left;">Muchos</td>
+<td style="text-align: left;">Diferenciado</td>
+<td style="text-align: left;">Bajas</td>
+<td style="text-align: left;">Limitado</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Oligopolio</td>
+<td style="text-align: left;">Pocos</td>
+<td style="text-align: left;">Homogéneo o diferenciado</td>
+<td style="text-align: left;">Altas</td>
+<td style="text-align: left;">Alto (interdependencia)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monopolio</td>
+<td style="text-align: left;">Uno solo</td>
+<td style="text-align: left;">Único, sin sustitutivos</td>
+<td style="text-align: left;">Muy altas o insalvables</td>
+<td style="text-align: left;">Total</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="la-competencia-perfecta" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="la-competencia-perfecta"><span class="header-section-number">6.2</span> La competencia perfecta</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La competencia perfecta es una estructura de mercado en la que existen tantos compradores y vendedores que ninguno puede influir individualmente en el precio, el producto es homogéneo, no hay barreras de entrada ni salida, y toda la información está disponible para todos los participantes.</p>
+</div>
+</div>
+<p>Estos supuestos —difíciles de cumplir en su forma pura, aunque el mercado de algunas materias primas se les aproxima— generan un funcionamiento característico. El <strong>precio se determina</strong> en el punto donde la oferta total iguala a la demanda total, sin que exista ni escasez ni excedente. Se alcanza la <strong>eficiencia de Pareto</strong>: no es posible mejorar la situación de un agente sin perjudicar a otro, por lo que los recursos se emplean de la forma más productiva posible. El mercado se <strong>adapta rápidamente</strong> a los cambios: si aumenta la demanda, suben los precios, lo que incentiva a las empresas a producir más y atrae a nuevos competidores; si la demanda cae, los precios bajan y algunas empresas abandonan el mercado.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Los beneficios tienden a cero
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En competencia perfecta, si una empresa obtiene beneficios superiores a los normales, esa oportunidad atrae a nuevas empresas al mercado, lo que aumenta la oferta y presiona los precios a la baja. Este proceso continúa hasta que el precio solo cubre los costes de producción —los llamados «beneficios normales»—, por lo que a largo plazo ninguna empresa mantiene beneficios extraordinarios.</p>
+</div>
+</div>
+</section>
+<section id="la-competencia-imperfecta" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="la-competencia-imperfecta"><span class="header-section-number">6.3</span> La competencia imperfecta</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La competencia imperfecta engloba las estructuras de mercado en las que no se cumplen todas las condiciones de la competencia perfecta, de modo que al menos algunas empresas tienen capacidad para influir en el precio.</p>
+</div>
+</div>
+<p>Se distinguen tres tipos: el <strong>monopolio</strong>, en el que un único vendedor controla todo el mercado; el <strong>oligopolio</strong>, en el que unas pocas empresas lo dominan; y la <strong>competencia monopolística</strong>, en la que muchas empresas venden productos similares pero diferenciados. En los tres casos, las empresas disponen de cierto poder de mercado —la capacidad de fijar precios por encima del que resultaría en competencia perfecta— y suelen existir barreras que dificultan la entrada de nuevos competidores.</p>
+</section>
+<section id="el-monopolio" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="el-monopolio"><span class="header-section-number">6.4</span> El monopolio</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un monopolio es una estructura de mercado en la que una sola empresa controla la totalidad de la oferta de un bien o servicio, sin competencia directa.</p>
+</div>
+</div>
+<p>El monopolista puede fijar el precio que desee, pero no el que quiera sin consecuencias: cuanto más alto sea el precio, menos unidades venderá, porque los consumidores comprarán menos. Por eso, generalmente produce una cantidad menor y a un precio más alto que en un mercado competitivo, lo que reduce la satisfacción del consumidor. El poder efectivo del monopolista para subir el precio depende de la elasticidad de la demanda del bien: cuanto más inelástica sea, menos venta pierde al subir el precio.</p>
+<section id="las-causas-del-monopolio" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="las-causas-del-monopolio"><span class="header-section-number">6.4.1</span> Las causas del monopolio</h3>
+<p>Existen cuatro barreras de entrada que originan y sostienen un monopolio. El <strong>control de un factor productivo necesario</strong>: si una empresa posee la única fuente de un recurso esencial —por ejemplo, un mineral raro imprescindible para un componente—, se convierte en la única productora posible. Las <strong>patentes</strong>: otorgan a una empresa el derecho exclusivo sobre un invento durante un tiempo determinado, como ocurre con un nuevo medicamento. Los <strong>monopolios naturales</strong>: se dan en sectores donde resulta más eficiente que una sola empresa preste el servicio, evitando duplicar infraestructuras costosas —el suministro de agua o de electricidad son los ejemplos clásicos—. Y la <strong>superioridad tecnológica</strong>: una ventaja tecnológica decisiva puede permitir a una empresa desplazar a toda su competencia.</p>
+</section>
+<section id="la-regulación-del-monopolio" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="la-regulación-del-monopolio"><span class="header-section-number">6.4.2</span> La regulación del monopolio</h3>
+<p>Los monopolios son ineficientes respecto a la competencia perfecta, y los consumidores son quienes más lo sufren, al tener que pagar precios más altos. Los gobiernos disponen de tres vías de actuación. Las <strong>leyes antimonopolio</strong> buscan impedir que se formen monopolios —por ejemplo, prohibiendo fusiones que darían a la empresa resultante un control excesivo del mercado— y sancionan a quienes abusan de su posición dominante; en España, esta función corresponde a la Comisión Nacional de los Mercados y la Competencia (CNMC). La <strong>regulación de precios</strong>, habitual en los monopolios naturales, consiste en que el Estado fija un precio inferior al que impondría el monopolista, más cercano al de competencia perfecta; si ese precio genera pérdidas a la empresa, el Estado puede verse obligado a subvencionarla con fondos públicos. Y la <strong>propiedad pública del monopolio</strong>, en la que el Estado gestiona directamente la empresa para fijar precios más bajos, aunque corre el riesgo de generar pérdidas que también asumen los contribuyentes, y de perder los incentivos a la eficiencia que sí tiene una empresa privada que busca beneficios.</p>
+</section>
+</section>
+<section id="el-oligopolio" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="el-oligopolio"><span class="header-section-number">6.5</span> El oligopolio</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un oligopolio es una estructura de mercado dominada por un número reducido de empresas, cuya principal característica es la interdependencia: cada empresa sabe que sus decisiones afectan a las demás, y las tiene en cuenta al decidir su propia estrategia.</p>
+</div>
+</div>
+<p>Los productos pueden ser homogéneos —como el petróleo— o diferenciados —como los automóviles—. Las barreras de entrada suelen ser altas, por la necesidad de grandes inversiones iniciales o el acceso limitado a canales de distribución.</p>
+<p>Ante esa interdependencia, las empresas de un oligopolio pueden optar por competir o por colaborar. La <strong>colaboración explícita</strong> mediante cárteles —acuerdos para fijar precios o limitar la producción, como el histórico de la OPEP en el mercado petrolero— y las demás prácticas de <strong>colusión</strong> —como el reparto de mercados— están prohibidas en la mayoría de los países, precisamente porque eliminan la competencia. Pero mantener un cártel es difícil: cada empresa tiene un incentivo individual a romper el acuerdo y bajar sus precios en secreto para ganar cuota de mercado, con la esperanza de que las demás no se den cuenta —una situación estructuralmente idéntica al dilema del prisionero—; cuando varias empresas razonan así a la vez, el cártel se desmorona. Detectar estas prácticas es complicado, porque las empresas implicadas actúan de forma encubierta; por ello, la CNMC cuenta con un <strong>programa de clemencia</strong>, que ofrece inmunidad a la empresa de un cártel que aporte pruebas contra sus socios, lo que siembra la desconfianza entre ellas y desincentiva la formación de nuevos acuerdos.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El Índice de Concentración de Cuatro Firmas (C4) suma las cuotas de mercado de las cuatro mayores empresas de un sector. Un C4 elevado indica que el mercado está muy concentrado, lo que aumenta el riesgo de colusión y es un criterio que se tiene en cuenta al evaluar si autorizar una fusión empresarial.</p>
+</div>
+</div>
+<p>En la práctica, muchas empresas oligopolistas alcanzan una <strong>cooperación tácita</strong> sin necesidad de un acuerdo explícito: ninguna tiene incentivos para iniciar una guerra de precios si sabe que sus rivales reaccionarán bajando los suyos también, de modo que todas saldrían perdiendo.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Por qué importa la competencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un mercado competitivo aporta cuatro beneficios frente a uno concentrado: <strong>precios más bajos</strong>, porque las empresas compiten para atraer clientes; <strong>mejor calidad</strong>, porque una empresa sin competencia no tiene incentivos para mejorar sus productos; <strong>más innovación</strong>, porque la rivalidad empresarial impulsa el desarrollo de productos nuevos; y <strong>más empleo</strong>, porque un mayor número de empresas y una mayor producción requieren más trabajadores.</p>
+</div>
+</div>
+</section>
+<section id="la-competencia-monopolística" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="la-competencia-monopolística"><span class="header-section-number">6.6</span> La competencia monopolística</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Definición
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La competencia monopolística es una estructura de mercado con muchas empresas que ofrecen productos similares pero diferenciados, lo que otorga a cada una cierto poder para fijar su propio precio dentro de un margen limitado por la competencia.</p>
+</div>
+</div>
+<p>Combina rasgos de ambos extremos: como en la competencia perfecta, hay muchos vendedores y libertad de entrada y salida; pero como en el monopolio, cada empresa tiene cierto control sobre el precio de su producto, gracias a la diferenciación. Es habitual en sectores como la restauración, la moda o los productos de consumo.</p>
+<p>Las empresas se diferencian de varias formas. Por <strong>estilo o tipo</strong>: distintos géneros musicales, tipos de vehículo o categorías de restaurante conviven en el mismo mercado sin ser sustitutos perfectos entre sí. Por <strong>localización</strong>: un establecimiento con una ubicación privilegiada puede cobrar más por el mismo producto, no por su calidad, sino por la conveniencia o las vistas que ofrece. Y por <strong>calidad</strong>: dentro de una misma categoría de producto, como las bicicletas, conviven modelos muy baratos y otros mucho más caros, dirigidos a consumidores con necesidades distintas.</p>
+<p>Cuanto más logra diferenciarse una empresa, mayor es su capacidad de fijar un precio superior al de sus competidores, porque una parte de los consumidores está dispuesta a pagar más por ese producto concreto. La <strong>publicidad</strong> cumple un papel central en este proceso: informa sobre las opciones disponibles, pero también construye la percepción de marca que sostiene esa diferenciación —lo que alimenta el debate sobre si las decisiones de compra basadas en la marca son plenamente racionales, o están condicionadas por la propia publicidad—.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./tema-05.html" class="pagination-link" aria-label="El mercado: oferta, demanda y elasticidad">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./tema-07.html" class="pagination-link" aria-label="Los fallos del mercado y el mercado de trabajo">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Los fallos del mercado y el mercado de trabajo</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
