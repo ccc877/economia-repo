@@ -1,0 +1,22 @@
+# Artefactos de renderizado de Quarto (se regeneran con render.sh)
+_book/
+_html_out/
+.quarto/
+*_cache/
+*_files/
+
+# Artefactos de la compilación manual a PDF (ver AGENTS.md §4)
+Economía.tex
+Economía*.pdf
+*.aux
+*.log
+*.toc
+*.out
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Sistema
+.DS_Store

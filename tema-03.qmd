@@ -1,0 +1,113 @@
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+# La economía del comportamiento
+
+Imagina que estás en la cafetería del instituto con hambre y un euro en el bolsillo. Puedes elegir entre una manzana o una berlina de chocolate glaseada, al mismo precio. Un modelo económico simplificado supondría que comparas ambas opciones con calma y eliges la que más te conviene. En la práctica intervienen otros factores: el cansancio, el hambre acumulada, que tus amigos estén pidiendo berlinas, o simplemente el antojo del momento. Y no es raro que, cinco minutos después, te arrepientas de la elección.
+
+Ese pequeño episodio encierra una pregunta incómoda: si en el fondo sabemos qué nos conviene más, ¿por qué a veces elegimos otra cosa? De eso trata la **economía del comportamiento** o economía conductual: una rama que combina la economía con la psicología para estudiar cómo deciden las personas reales, con sus emociones, sus hábitos, la influencia de quienes las rodean y sus propias limitaciones para procesar información.
+
+## El *Homo economicus* frente a la racionalidad limitada
+
+Durante más de un siglo, buena parte de la teoría económica se ha apoyado en un modelo simplificado de persona: el ***Homo economicus***. No pretende describir cómo somos en realidad —igual que un plano de metro no dibuja cada árbol o cada banco de una ciudad—, sino aislar unos pocos mecanismos para poder razonar sobre ellos con claridad. Este agente teórico reúne tres rasgos: **racionalidad perfecta** (procesa toda la información disponible y elige siempre la opción que maximiza su utilidad), **egoísmo puro** (solo le importa su propio interés) y **preferencias estables** (sus gustos no cambian por el simple hecho de que cambie el contexto o el estado de ánimo).
+
+El modelo ha resultado enormemente útil: permite estudiar cómo reaccionan los consumidores ante los precios o cuánto produce una empresa sin tener que incorporar en cada análisis todas las emociones y sesgos humanos. La economía conductual no nace para decir que ese modelo «está mal», sino para preguntarse algo más preciso: ¿cuándo y por qué las predicciones del modelo tradicional dejan de cumplirse de forma sistemática?
+
+En la década de 1950, el economista Herbert Simon propuso una respuesta con el concepto de **racionalidad limitada**.
+
+::: {.callout-note}
+### Definición
+La racionalidad limitada es la idea de que nuestras decisiones están condicionadas por tres restricciones inevitables: la información disponible es incompleta, nuestra capacidad cognitiva para procesarla es limitada, y el tiempo del que disponemos para decidir es escaso.
+:::
+
+Estas restricciones no nos vuelven irracionales; cambian lo que significa decidir bien. Simon distinguió entre **optimizar** —buscar la mejor alternativa posible entre todas las existentes— y **satisfacer** —elegir la primera alternativa que resulta suficientemente buena—. Comprar una lavadora comparando de verdad todos los modelos del mercado exigiría semanas de análisis; en la práctica, fijamos unos requisitos razonables (precio, capacidad, consumo) y elegimos la primera opción que los cumple. Eso no es irracionalidad: es racionalidad adaptada a nuestras propias limitaciones.
+
+::: {.callout-tip}
+## Evidencia empírica: el juego del dictador
+Dos personas que no se conocen participan en un experimento. A la primera, el «dictador», se le entregan 20 € y puede repartirlos con la segunda como quiera; la segunda no puede negociar ni rechazar la decisión. Si el dictador solo se preocupara por su propio dinero, se quedaría con los 20 € completos. En la práctica, la mayoría de las personas comparten una parte. El resultado sugiere que nuestras preferencias incluyen elementos como la equidad o el bienestar ajeno: el dinero que recibe otra persona puede formar parte de nuestra propia satisfacción, no solo el que recibimos nosotros.
+:::
+
+## Heurísticos y sesgos cognitivos
+
+Si no podemos analizar cuidadosamente cada una de las miles de decisiones que tomamos al día, ¿cómo nos las arreglamos? En buena medida, gracias a los **heurísticos**: reglas prácticas que simplifican un problema y permiten decidir con rapidez. No son un defecto —son imprescindibles para funcionar en un mundo con más información de la que podemos procesar—, pero cuando un atajo mental se aplica en un contexto donde deja de funcionar bien, produce errores sistemáticos y predecibles llamados **sesgos cognitivos**. Los psicólogos Daniel Kahneman y Amos Tversky, pioneros en su estudio, identificaron varios que resultan especialmente relevantes para la economía.
+
+El **sesgo de disponibilidad** aparece cuando juzgamos la probabilidad de algo por lo fácil que nos resulta recordar ejemplos de ello, no por su frecuencia real. Un accidente de avión que ocupa titulares durante días puede hacer que algunas personas perciban que volar es más peligroso que viajar en coche, aunque las estadísticas digan justo lo contrario; el mismo mecanismo lleva a algunos inversores a extrapolar una caída bursátil reciente y esperar que el desplome continúe indefinidamente.
+
+El **sesgo de representatividad** consiste en juzgar la probabilidad de que algo pertenezca a una categoría por lo mucho que se parece a nuestro prototipo mental de esa categoría, en lugar de por la evidencia real. Conocer a un joven que viste de manera informal y habla sin parar de tecnología puede tentarnos a pensar que será un empresario de éxito, simplemente porque encaja con la imagen que tenemos de un emprendedor tecnológico; ese parecido no dice nada, por sí solo, sobre la probabilidad real de que su proyecto triunfe.
+
+El **sesgo de anclaje** es la tendencia a dejarnos influir por una cifra inicial —el ancla— al hacer una estimación posterior, aunque esa cifra sea poco relevante para el problema. Una etiqueta que muestra «Antes: 100 €, ahora: 40 €» convierte el 100 en un punto de referencia que hace que el 40 parezca una ganga, con independencia de cuánto valoremos realmente la prenda.
+
+La **aversión a las pérdidas**, uno de los pilares de la teoría de la perspectiva de Kahneman y Tversky, describe el hecho de que no valoramos igual una ganancia y una pérdida del mismo tamaño: perder 100 € suele doler más de lo que satisface ganar 100 €, hasta el punto de que muchas personas rechazarían un juego con valor esperado nulo —cara ganas 100 €, cruz pierdes 100 €— simplemente porque el disgusto de perder pesa más que la ilusión de ganar. Esta asimetría explica también por qué muchos inversores mantienen durante demasiado tiempo una acción que pierde valor: venderla obligaría a asumir la pérdida como definitiva.
+
+Muy cerca de ahí está la **falacia del coste irrecuperable**, que ya vimos en el tema anterior a propósito del Concorde: dejar que un gasto ya realizado —e imposible de recuperar— condicione una decisión que solo debería depender de costes y beneficios futuros. Comprar una entrada de concierto y acudir enfermo, bajo la lluvia, solo para «no desperdiciar los 50 €» es el mismo error: el dinero ya se ha ido tanto si vas como si no, y la decisión racional debería comparar únicamente lo que queda por decidir.
+
+Por último, muchos errores de cálculo tienen que ver con lo que el matemático John Allen Paulos llamó **anumerismo**: la dificultad para interpretar intuitivamente probabilidades y cantidades, incluso cuando conocemos perfectamente las reglas matemáticas. La **falacia del jugador** —creer que, si una moneda ha salido cara cinco veces seguidas, «ya toca cruz»— ignora que los lanzamientos son independientes y la probabilidad sigue siendo del 50 %. Y comprar lotería pensando que «esta vez podría tocar» pese a una probabilidad ínfima, mientras se reacciona con pánico ante otro riesgo igual de improbable, muestra que el problema no es solo conocer el porcentaje correcto, sino interpretar de verdad lo que ese porcentaje significa.
+
+## Decidir bajo riesgo e incertidumbre
+
+Comprar una vivienda, invertir en bolsa o montar un negocio son decisiones cuyas consecuencias no conocemos de antemano. Pero no todo lo desconocido lo es de la misma manera.
+
+::: {.callout-note}
+### Definición
+El riesgo es una situación en la que no conocemos el resultado con certeza, pero sí podemos identificar los resultados posibles y asignarles una probabilidad. La incertidumbre es una situación en la que ni siquiera es posible asignar esas probabilidades de forma fiable, por ejemplo por falta de información o por enfrentarnos a algo completamente nuevo.
+:::
+
+Cuando conocemos las probabilidades, podemos calcular el **valor esperado** de una alternativa como la media de sus resultados posibles ponderada por su probabilidad. Un sorteo con un 50 % de opciones de ganar 1000 € y un 50 % de ganar 0 € tiene un valor esperado de 500 €. Pero dos alternativas con el mismo valor esperado no generan necesariamente la misma satisfacción, porque lo que de verdad importa es la **utilidad** —el valor subjetivo— que cada persona atribuye a cada resultado. De ahí surgen tres actitudes clásicas ante el riesgo: la persona con **aversión al riesgo** prefiere un resultado seguro antes que una alternativa arriesgada con igual valor esperado —elegiría 500 € seguros antes que el sorteo—; la persona **neutral al riesgo** es indiferente entre ambas; y la persona con **propensión al riesgo** prefiere la alternativa arriesgada.
+
+::: {.callout-tip}
+## Por qué existen los seguros
+La aversión al riesgo explica el propio mercado de los seguros. Un coche de 20 000 € con una probabilidad del 1 % de sufrir un siniestro total tiene una pérdida esperada de 200 € (20 000 × 0,01). Una persona con aversión al riesgo puede estar dispuesta a pagar una prima superior a esos 200 € con tal de no asumir individualmente el riesgo de perder 20 000 € de golpe. La aseguradora, por su parte, puede permitírselo porque no asegura a una sola persona: agrupando muchos riesgos parecidos, la ley de los grandes números le permite prever con bastante precisión cuántos siniestros se producirán en total, aunque no sepa cuáles en concreto.
+:::
+
+## La teoría de juegos y las decisiones estratégicas
+
+Hasta ahora hemos hablado de decisiones en las que basta con relacionar nuestras propias alternativas con sus consecuencias. Pero muchas decisiones económicas tienen un ingrediente extra: lo que obtenemos depende también de lo que hagan los demás. El precio que fija una empresa depende del precio de sus competidores; la política climática de un país depende de lo que hagan los demás países. En estos casos no basta con preguntarse «¿qué debería hacer yo?»; hay que preguntarse además «¿qué hará el otro, y cómo debo reaccionar yo a eso?». A este tipo de situaciones interactivas —con sus jugadores, sus estrategias y sus pagos o resultados asociados a cada combinación de decisiones— se las llama **juegos**, y su estudio corresponde a la **teoría de juegos**.
+
+El ejemplo más conocido es el **dilema del prisionero**, que ilustra cómo una decisión individualmente racional puede llevar a un resultado peor para todos. Dos sospechosos son interrogados por separado, sin poder comunicarse entre sí, y a cada uno se le ofrece el mismo trato: si ambos confiesan, cada uno recibe 5 años de cárcel; si uno confiesa y el otro calla, el que confiesa queda libre y el que calla recibe 10 años; si ambos callan, cada uno recibe solo 1 año.
+
+```{r}
+#| label: tbl-dilema-prisionero
+#| tbl-cap: "La matriz de pagos del dilema del prisionero"
+
+df_dilema <- data.frame(
+  Fila = c("A calla", "A confiesa"),
+  B_calla = c("A: 1 año / B: 1 año", "A: 0 años / B: 10 años"),
+  B_confiesa = c("A: 10 años / B: 0 años", "A: 5 años / B: 5 años")
+)
+
+kable(df_dilema, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Prisionero A \\ Prisionero B", "B calla", "B confiesa")) |>
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "HOLD_position"))
+```
+
+Razonando desde el punto de vista de A: si B calla, a A le interesa confesar (pasa de 1 año a 0); si B confiesa, a A también le interesa confesar (pasa de 10 años a 5). Confesar es, por tanto, la mejor estrategia de A haga lo que haga B —y lo mismo le ocurre a B—, así que ambos acaban confesando y cumpliendo 5 años cada uno.
+
+::: {.callout-important}
+## El equilibrio de Nash
+El resultado en el que ambos confiesan es un equilibrio de Nash: una situación en la que ningún jugador tiene incentivos para cambiar su estrategia en solitario, dadas las decisiones del otro. La paradoja es que ambos estarían mejor si cooperasen y callasen —1 año cada uno—, pero ninguno puede confiar en que el otro no vaya a confesar. La búsqueda racional del interés individual no garantiza el mejor resultado colectivo.
+:::
+
+La misma estructura reaparece en muchas situaciones económicas reales: dos empresas de un oligopolio ganarían más manteniendo precios altos, pero cada una tiene incentivos para bajar los suyos y arrebatar clientes a la otra, de modo que si ambas lo hacen, las dos acaban peor; y cada país tiene incentivos para seguir contaminando mientras espera que sean los demás quienes asuman el coste de reducir emisiones, aunque el resultado colectivo de que todos razonen así sea peor para todos.
+
+Otro experimento célebre, propuesto por John Maynard Keynes a propósito de los mercados financieros, es el llamado **concurso de belleza**: cada participante elige en secreto un número entre 0 y 100, y gana quien más se acerque a dos tercios de la media de todos los números elegidos. Si crees que la media rondará 50, te conviene elegir dos tercios de 50 (unos 33); pero si los demás razonan igual, la media real será más cercana a 33, así que te convendría elegir dos tercios de eso (unos 22); y así sucesivamente. Llevado al extremo, un razonamiento infinito conduciría a elegir 0. En la práctica, nadie razona infinitos pasos, y los resultados en un aula suelen quedar bastante por encima de cero: nuestras decisiones estratégicas no dependen solo de lo listos que seamos, sino de hasta dónde creemos que llega el razonamiento de los demás.
+
+## Los *nudges* y la arquitectura de las decisiones
+
+Si nuestras decisiones están tan condicionadas por sesgos y por el contexto en que se presentan las opciones, surge una pregunta práctica: ¿se puede diseñar mejor ese contexto? A la forma en que se organiza, ordena y presenta un conjunto de alternativas se la llama **arquitectura de las decisiones**: colocar la fruta a la altura de los ojos en una cafetería y los dulces en un rincón menos visible no elimina ninguna opción, pero cambia el contexto en el que se elige.
+
+::: {.callout-note}
+### Definición
+Un *nudge* —«empujoncito»— es una intervención sobre la arquitectura de las decisiones, propuesta por los economistas Richard Thaler y Cass Sunstein, que modifica de forma predecible el comportamiento de las personas sin prohibir ninguna opción ni alterar de forma significativa sus incentivos económicos.
+:::
+
+Uno de los *nudges* con más impacto es la **opción por defecto**. En un sistema de donación de órganos de tipo *opt-in*, nadie es donante hasta que se registra activamente; en uno de tipo *opt-out*, todo el mundo es donante salvo que decida explícitamente lo contrario. Ambos sistemas preservan la libertad de elegir, pero la tasa de donantes varía enormemente entre uno y otro, porque cambiar la opción marcada por defecto exige un esfuerzo que muchas personas no llegan a dar. La misma lógica se aplica al ahorro para la jubilación: en lugar de exigir que cada trabajador se dé de alta activamente en un plan de pensiones, el sistema puede inscribirlo automáticamente y dejar que sea él quien tenga que darse de baja si no quiere participar —un cambio que, sin obligar a nadie, puede disparar la participación—. También se usa la comparación social: una factura eléctrica que muestra, junto al consumo propio, el de los vecinos con hogares similares y el de los más eficientes, aprovecha la importancia que damos a las normas sociales para animar al ahorro energético.
+
+Estas intervenciones plantean, casi de inmediato, una pregunta ética: si sabemos que la forma de presentar las opciones cambia las decisiones, ¿quién decide cómo se presentan? Thaler y Sunstein llamaron **paternalismo libertario** a la filosofía que hay detrás de los *nudges*: es paternalista porque orienta la decisión hacia lo que se considera beneficioso para la propia persona, y es libertario porque nunca elimina las demás alternativas. Pero la frontera entre ayudar a decidir mejor y manipular puede ser estrecha, sobre todo cuando estas mismas técnicas las emplean empresas privadas para su propio beneficio, dando lugar a los llamados **patrones oscuros** (*dark patterns*): interfaces diseñadas deliberadamente para dificultar unas opciones —como cancelar una suscripción— y facilitar otras.
+
+En el fondo, este recorrido por la economía del comportamiento devuelve al punto de partida del tema: no decidimos en el vacío. Nuestras decisiones dependen de nuestras preferencias, sí, pero también de la información de la que disponemos, de nuestras limitaciones cognitivas y del contexto —a menudo diseñado por otros— en el que se nos presentan las alternativas.

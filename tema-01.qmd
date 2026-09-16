@@ -1,0 +1,205 @@
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+# La economía: concepto, método y ramas
+
+Imagina un sábado por la mañana con veinte euros en el bolsillo y toda una lista de planes posibles: el cine, unas zapatillas nuevas que llevas semanas mirando, quedar a comer con los amigos, ahorrar para algo más grande. No puedes hacerlo todo. Elijas lo que elijas, renuncias a lo demás. Ese pequeño dilema doméstico, multiplicado por miles de millones de personas y por decisiones bastante más trascendentales —qué carreteras construir, cuánta agua repartir entre el regadío y las ciudades, cuántas horas dedicar al trabajo y cuántas a la familia—, es, en esencia, de lo que trata la economía.
+
+No hace falta ir a una Bolsa de valores ni leer el periódico salmón para toparse con ella. Un hospital que decide si compra un nuevo escáner o contrata a dos enfermeras más está haciendo economía. Una familia que decide entre alquilar un piso más caro cerca del trabajo o uno más barato y lejano, también. Incluso un adolescente que reparte su tiempo entre estudiar, entrenar y ver series está resolviendo, sin saberlo, un problema económico: qué hacer con un recurso limitado —las horas del día— que no da para todo.
+
+## Qué es la economía
+
+::: {.callout-note}
+### Definición
+La economía es la ciencia social que estudia cómo las personas, las empresas y los gobiernos deciden emplear unos recursos limitados para satisfacer necesidades que, en cambio, no tienen límite claro.
+:::
+
+Ahí está el núcleo del asunto, y tiene nombre propio: escasez.
+
+::: {.callout-warning}
+### Definición
+La escasez es la situación en la que los recursos disponibles son limitados, mientras que las necesidades y los deseos humanos son virtualmente ilimitados.
+:::
+
+Si el mundo tuviera petróleo, tierra fértil, horas de trabajo y talento en cantidades infinitas, la economía como disciplina apenas tendría nada que decir; bastaría con repartir. Pero no es así, y por eso la escasez es el **problema fundamental** de toda economía: si los recursos fueran ilimitados, no sería necesario elegir ni administrar nada.
+
+Conviene distinguir dos matices de esa escasez. Es **universal**: ninguna sociedad, por rica que sea, puede satisfacer todas las necesidades de todos sus miembros al mismo tiempo. Y es **relativa**: la intensidad con que se experimenta depende de las circunstancias de cada cual, de modo que dos personas con recursos y necesidades distintas no viven la escasez del mismo modo.
+
+Cada sociedad, gobierne quien la gobierne y sea rica o pobre, tiene que responder tarde o temprano a tres preguntas que no admiten evasivas.
+
+```{r}
+#| label: tbl-preguntas
+#| tbl-cap: "Las tres preguntas económicas básicas"
+
+df_preg <- data.frame(
+  Pregunta = c("¿Qué producir?", "¿Cómo producir?", "¿Para quién producir?"),
+  Significado = c("Qué bienes y servicios, y en qué cantidad",
+                   "Con qué recursos, con qué tecnología",
+                   "Cómo se reparte lo producido"),
+  Ejemplo = c("¿Más hospitales o más carreteras?",
+              "¿Mano de obra intensiva o maquinaria?",
+              "¿Según la renta de cada uno o de forma igualitaria?")
+)
+
+kable(df_preg, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Pregunta", "Significado", "Ejemplo")) |>
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+Lo interesante no es tanto la pregunta —resulta casi obvia una vez formulada— como la enorme variedad de respuestas que las sociedades han dado a lo largo de la historia. Un pueblo cazador-recolector, la Unión Soviética de 1970 y una startup tecnológica de Silicon Valley responden a las tres preguntas de forma radicalmente distinta, y esa diferencia de fondo es lo que llamamos **sistema económico**: el conjunto de reglas, costumbres o instituciones que una sociedad concreta utiliza para decidir qué, cómo y para quién producir. Volveremos sobre ello, con más detalle, en el próximo tema.
+
+## Los principios de la decisión económica
+
+La escasez obliga a elegir, y esa elección puede analizarse con un puñado de herramientas conceptuales que reaparecerán constantemente a lo largo de todo el curso.
+
+### La elección y el coste de oportunidad
+
+Dado que los recursos son limitados, toda elección implica una renuncia.
+
+::: {.callout-note}
+### Definición
+El **coste de oportunidad** es el valor de la mejor alternativa a la que se renuncia al tomar una decisión.
+:::
+
+**Ejemplo**: un estudiante dispone de 15 € y debe elegir entre ir al cine o comprar un libro. Si elige el cine, el coste de oportunidad es el valor que habría obtenido del libro. Si elige el libro, el coste de oportunidad es el disfrute del cine al que renuncia.
+
+El concepto es general: el coste de oportunidad de estudiar dos horas puede ser el tiempo que se habría dedicado al ocio; el de construir un hospital, los recursos que no se destinan a carreteras.
+
+### El coste irrecuperable
+
+::: {.callout-note}
+### Definición
+Los costes irrecuperables (*sunk costs*) son recursos ya gastados que no pueden recuperarse con independencia de la decisión que se tome a partir de ese momento.
+:::
+
+Un error frecuente es dejarse influir por ellos al tomar decisiones futuras, cuando lo racional es ignorarlos y evaluar únicamente los costes y beneficios futuros.
+
+::: {.callout-tip}
+## Ejemplo: el Concorde
+Francia y el Reino Unido invirtieron cantidades enormes en el desarrollo del avión supersónico Concorde. Cuando quedó claro que los costes superaban los ingresos esperados, la inversión ya realizada era irrecuperable. Sin embargo, se continuó financiando el proyecto durante años argumentando que «no se podía abandonar lo ya invertido». Este razonamiento se conoce como **falacia del coste irrecuperable**.
+:::
+
+### El análisis marginal
+
+La mayoría de las decisiones económicas no son del tipo «todo o nada» —¿estudio o no estudio?, ¿la empresa produce o cierra?—, sino del tipo «un poco más o un poco menos»: ¿estudio una hora más esta noche?, ¿la empresa fabrica una unidad adicional? Para responder a este tipo de preguntas, tan frecuentes como las anteriores, la economía recurre al análisis marginal: en lugar de preguntarse si vale la pena la actividad en su conjunto, se pregunta si vale la pena una unidad más de esa actividad.
+
+El **coste marginal** es el coste de producir o consumir una unidad adicional. El **beneficio marginal** es el beneficio obtenido por esa unidad adicional. La regla de decisión que se deriva de ahí es sencilla: conviene producir o consumir una unidad adicional siempre que el beneficio marginal supere al coste marginal, y conviene detenerse en cuanto el coste marginal empieza a superar al beneficio marginal.
+
+**Ejemplo**: producir 100 galletas cuesta 100 € y producir 101 galletas cuesta 101 €. El coste marginal de la galleta 101 es 1 €. Si esa galleta se vende a 2 €, el beneficio marginal (2 €) supera al coste marginal (1 €), por lo que la producción de esa unidad adicional es rentable. Pero si para llegar a la galleta número 200 el horno ya está al límite y hay que pagar horas extra al panadero, el coste marginal puede dispararse a 3 € por galleta; en ese punto, seguir produciendo unidad a unidad deja de compensar aunque el negocio en su conjunto siga siendo rentable. Ese es precisamente el valor del análisis marginal: permite afinar la decisión —cuánto producir, cuánto estudiar, cuánto invertir— en lugar de limitarse a decidir si sí o si no.
+
+### Los incentivos
+
+Si el análisis marginal explica cómo decide un agente racional, los incentivos explican por qué esa decisión cambia cuando cambian las circunstancias. Este concepto es importante porque es la palanca que usan las empresas y, sobre todo, los gobiernos para modificar el comportamiento de la gente sin necesidad de prohibir ni obligar nada: basta con alterar el coste o el beneficio de una acción para que las personas, actuando en su propio interés, acaben haciendo lo que se pretendía. Subir el precio del tabaco no prohíbe fumar, pero reduce el consumo; bonificar la contratación no obliga a contratar, pero la hace más atractiva.
+
+::: {.callout-note}
+### Definición
+Un incentivo es un estímulo que modifica el coste o el beneficio de una conducta y, con ello, la probabilidad de que esa conducta se produzca.
+:::
+
+Pueden ser **positivos**, cuando aumentan la probabilidad de una conducta (rebajas fiscales por invertir, bonificaciones salariales por objetivos), o **negativos**, cuando la reducen (multas por contaminar, impuestos sobre el tabaco). Entender los incentivos es también una forma de anticipar comportamientos que a primera vista parecen irracionales: casi siempre, detrás de una decisión que sorprende hay un incentivo mal diseñado, o bien diseñado para otro propósito distinto del que se esperaba.
+
+
+
+## El método en economía
+
+La economía comenzó a desarrollarse como ciencia moderna durante el siglo XVIII, cuando se empezó a aplicar el método científico al análisis de los fenómenos económicos.
+
+### El método científico en economía
+
+El método científico aplicado a la economía sigue las etapas habituales de cualquier disciplina científica:
+
+1. Observar fenómenos económicos de la realidad.
+2. Formular hipótesis que expliquen esos fenómenos.
+3. Construir modelos que representen las relaciones entre variables.
+4. Contrastar los modelos con datos empíricos.
+5. Extraer conclusiones y revisar las hipótesis si es necesario.
+
+### Los modelos económicos
+
+Los modelos económicos son representaciones simplificadas de la realidad. Se utilizan porque la realidad económica es demasiado compleja para analizarla en su totalidad.
+
+Sus características principales son:
+
+- Simplifican la realidad seleccionando las variables más relevantes.
+- Permiten realizar predicciones sobre el comportamiento de la economía.
+- Ayudan a comprender las relaciones entre variables.
+
+Sus limitaciones son igualmente importantes:
+
+- No capturan toda la complejidad de la realidad.
+- Dependen de supuestos que pueden no cumplirse.
+- Pueden fallar cuando las condiciones reales se alejan de los supuestos del modelo.
+
+Una herramienta que reaparecerá constantemente a partir de ahora es la cláusula ***ceteris paribus*** («permaneciendo todo lo demás constante»). Para estudiar el efecto de una sola variable —por ejemplo, qué le ocurre a la cantidad demandada de un bien cuando sube su precio— se supone que el resto de factores que también podrían influir en ella (la renta de los consumidores, sus gustos, el precio de otros bienes) permanecen fijos. No es una descripción realista del mundo, donde varias cosas cambian a la vez, sino una simplificación deliberada: es la única forma de aislar el efecto de una variable concreta y entenderlo con claridad, antes de complicar el análisis añadiendo el resto de factores.
+
+### Adam Smith y el inicio de la economía moderna
+
+Adam Smith publicó en 1776 *La riqueza de las naciones*, obra considerada el punto de partida de la economía como disciplina científica moderna.
+
+Uno de sus conceptos más conocidos es el de la **mano invisible**: los individuos, al buscar su propio beneficio, contribuyen sin pretenderlo al bienestar general de la sociedad. La coordinación entre compradores y vendedores se produce a través de los precios, sin necesidad de planificación centralizada.
+
+### Microeconomía y macroeconomía
+
+La economía se divide en dos grandes ramas según la escala de análisis:
+
+```{r}
+#| label: tbl-micromacro
+#| tbl-cap: "Microeconomía y macroeconomía"
+
+df_mm <- data.frame(
+  Aspecto    = c("Objeto de estudio", "Escala", "Variables principales", "Ejemplos"),
+  Micro      = c("Consumidores, empresas y mercados concretos",
+                 "Individual o sectorial",
+                 "Precios, producción, consumo, competencia",
+                 "Precio de un móvil, decisiones de una empresa, mercado del alquiler"),
+  Macro      = c("La economía en su conjunto",
+                 "Agregada (todo un país o región)",
+                 "PIB, inflación, desempleo, deuda pública, tipos de interés",
+                 "Crecimiento económico, crisis financieras, política monetaria")
+)
+
+kable(df_mm, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Aspecto", "Microeconomía", "Macroeconomía")) |>
+  kable_styling(full_width = FALSE, font_size = 9,
+                bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position")) |>
+  column_spec(1, bold = TRUE)
+```
+
+### Economía positiva y economía normativa
+
+Otra distinción fundamental es la que separa los enunciados descriptivos de los valorativos:
+
+- La **economía positiva** describe hechos y relaciones de forma objetiva, sin emitir juicios de valor. Sus afirmaciones pueden contrastarse con datos.
+- La **economía normativa** formula opiniones y recomendaciones. Introduce valores y criterios subjetivos sobre lo que debería ser.
+
+```{r}
+#| label: tbl-posnorm
+#| tbl-cap: "Economía positiva frente a economía normativa"
+
+df_pn <- data.frame(
+  Característica = c("Tipo de enunciado", "Criterio", "Base", "Función"),
+  Positiva       = c("Descriptivo", "Objetivo", "Datos y evidencia empírica",
+                     "Explicar lo que es"),
+  Normativa      = c("Valorativo", "Subjetivo", "Valores y criterios éticos",
+                     "Proponer lo que debería ser")
+)
+
+kable(df_pn, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Característica", "Economía positiva", "Economía normativa")) |>
+  kable_styling(full_width = FALSE, font_size = 9,
+                bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position")) |>
+  column_spec(1, bold = TRUE)
+```
+
+**Ejemplos de economía positiva**: «El desempleo ha aumentado tres puntos porcentuales en el último año»; «La inflación se sitúa en el 2 %».
+
+**Ejemplos de economía normativa**: «El Estado debería subir el salario mínimo»; «Los impuestos son demasiado altos»; «La sanidad pública debe ampliarse».
+

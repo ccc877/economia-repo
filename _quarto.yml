@@ -1,0 +1,69 @@
+project:
+  type: book
+
+lang: es
+
+book:
+  title: "Economía"
+  subtitle: "1.º de Bachillerato"
+  chapters:
+    - index.qmd
+    - part: "Unidad 1. Decisión, comportamiento y método"
+      chapters:
+        - tema-01.qmd
+        - tema-02.qmd
+        - tema-03.qmd
+    - part: "Unidad 2. Microeconomía y mercados"
+      chapters:
+        - tema-04.qmd
+        - tema-05.qmd
+        - tema-06.qmd
+        - tema-07.qmd
+    - part: "Unidad 3. Macroeconomía y desarrollo"
+      chapters:
+        - tema-08.qmd
+        - tema-09.qmd
+    - part: "Unidad 4. Sistema financiero y política monetaria"
+      chapters:
+        - tema-10.qmd
+        - tema-11.qmd
+    - part: "Unidad 5. Política fiscal y sector público"
+      chapters:
+        - tema-12.qmd
+    - part: "Unidad 6. Comercio, globalización y retos actuales"
+      chapters:
+        - tema-13.qmd
+        - tema-14.qmd
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+  pdf:
+    keep-tex: true
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    documentclass: scrbook
+    papersize: a4
+    geometry:
+      - top=2.4cm
+      - bottom=2.4cm
+      - left=2.2cm
+      - right=2.2cm
+    fontsize: 11pt
+    linkcolor: blue
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \usepackage{array}
+        \usepackage{float}
+        \renewcommand{\partname}{Parte}
+
+execute:
+  echo: false
+  warning: false
+  message: false

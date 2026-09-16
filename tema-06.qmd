@@ -1,0 +1,115 @@
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+# Las estructuras de mercado
+
+## Los elementos que condicionan los mercados
+
+No todos los mercados funcionan igual. Cuatro elementos determinan el grado de competencia que existe en un mercado concreto.
+
+El **número de compradores y vendedores** condiciona cómo se comportan los precios. En un mercado con muchos vendedores —como varios puestos de fruta en un mercado municipal—, ninguno puede fijar el precio por su cuenta: si uno lo sube, los compradores acuden a otro puesto. En un mercado con pocos vendedores —un **oligopolio**— o con uno solo —un **monopolio**—, el poder de fijar precios se concentra en pocas manos, y los consumidores tienen menos capacidad de elegir.
+
+La **homogeneidad del producto** también importa. Cuando los productos son idénticos —materias primas como el trigo o el petróleo—, los consumidores no tienen preferencia por un vendedor concreto y compiten solo en precio. Cuando los productos están diferenciados —automóviles, teléfonos móviles—, las empresas compiten además en calidad, marca y características, lo que les permite fijar precios más altos y generar cierta lealtad de marca.
+
+Las **barreras de entrada y salida** determinan cuán fácil es para una empresa nueva sumarse al mercado, o para una existente abandonarlo. Unos costes iniciales muy altos, unas regulaciones estrictas o la necesidad de tecnología avanzada dificultan la entrada; en general, cuanto más fácil es entrar y salir, más competitivo tiende a ser el mercado.
+
+Por último, la **información** disponible para compradores y vendedores condiciona el funcionamiento del mercado. Cuando la información es perfecta, todos conocen los precios y la calidad de los productos, lo que permite decisiones informadas. Cuando existe **asimetría de información** —una parte sabe más que la otra—, quien tiene más información puede aprovecharse de quien tiene menos, generando ineficiencias.
+
+```{r}
+#| label: tbl-estructuras-resumen
+#| tbl-cap: "Comparativa de las estructuras de mercado"
+
+df_est <- data.frame(
+  Estructura = c("Competencia perfecta", "Competencia monopolística", "Oligopolio", "Monopolio"),
+  Vendedores = c("Muchos", "Muchos", "Pocos", "Uno solo"),
+  Producto = c("Homogéneo", "Diferenciado", "Homogéneo o diferenciado", "Único, sin sustitutivos"),
+  Barreras = c("Ninguna", "Bajas", "Altas", "Muy altas o insalvables"),
+  Control_precio = c("Ninguno (precio-aceptante)", "Limitado", "Alto (interdependencia)", "Total")
+)
+
+kable(df_est, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Estructura", "Nº de vendedores", "Tipo de producto", "Barreras de entrada", "Control sobre el precio")) |>
+  kable_styling(full_width = FALSE, font_size = 8, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+## La competencia perfecta
+
+::: {.callout-note}
+### Definición
+La competencia perfecta es una estructura de mercado en la que existen tantos compradores y vendedores que ninguno puede influir individualmente en el precio, el producto es homogéneo, no hay barreras de entrada ni salida, y toda la información está disponible para todos los participantes.
+:::
+
+Estos supuestos —difíciles de cumplir en su forma pura, aunque el mercado de algunas materias primas se les aproxima— generan un funcionamiento característico. El **precio se determina** en el punto donde la oferta total iguala a la demanda total, sin que exista ni escasez ni excedente. Se alcanza la **eficiencia de Pareto**: no es posible mejorar la situación de un agente sin perjudicar a otro, por lo que los recursos se emplean de la forma más productiva posible. El mercado se **adapta rápidamente** a los cambios: si aumenta la demanda, suben los precios, lo que incentiva a las empresas a producir más y atrae a nuevos competidores; si la demanda cae, los precios bajan y algunas empresas abandonan el mercado.
+
+::: {.callout-important}
+## Los beneficios tienden a cero
+En competencia perfecta, si una empresa obtiene beneficios superiores a los normales, esa oportunidad atrae a nuevas empresas al mercado, lo que aumenta la oferta y presiona los precios a la baja. Este proceso continúa hasta que el precio solo cubre los costes de producción —los llamados «beneficios normales»—, por lo que a largo plazo ninguna empresa mantiene beneficios extraordinarios.
+:::
+
+## La competencia imperfecta
+
+::: {.callout-note}
+### Definición
+La competencia imperfecta engloba las estructuras de mercado en las que no se cumplen todas las condiciones de la competencia perfecta, de modo que al menos algunas empresas tienen capacidad para influir en el precio.
+:::
+
+Se distinguen tres tipos: el **monopolio**, en el que un único vendedor controla todo el mercado; el **oligopolio**, en el que unas pocas empresas lo dominan; y la **competencia monopolística**, en la que muchas empresas venden productos similares pero diferenciados. En los tres casos, las empresas disponen de cierto poder de mercado —la capacidad de fijar precios por encima del que resultaría en competencia perfecta— y suelen existir barreras que dificultan la entrada de nuevos competidores.
+
+## El monopolio
+
+::: {.callout-note}
+### Definición
+Un monopolio es una estructura de mercado en la que una sola empresa controla la totalidad de la oferta de un bien o servicio, sin competencia directa.
+:::
+
+El monopolista puede fijar el precio que desee, pero no el que quiera sin consecuencias: cuanto más alto sea el precio, menos unidades venderá, porque los consumidores comprarán menos. Por eso, generalmente produce una cantidad menor y a un precio más alto que en un mercado competitivo, lo que reduce la satisfacción del consumidor. El poder efectivo del monopolista para subir el precio depende de la elasticidad de la demanda del bien: cuanto más inelástica sea, menos venta pierde al subir el precio.
+
+### Las causas del monopolio
+
+Existen cuatro barreras de entrada que originan y sostienen un monopolio. El **control de un factor productivo necesario**: si una empresa posee la única fuente de un recurso esencial —por ejemplo, un mineral raro imprescindible para un componente—, se convierte en la única productora posible. Las **patentes**: otorgan a una empresa el derecho exclusivo sobre un invento durante un tiempo determinado, como ocurre con un nuevo medicamento. Los **monopolios naturales**: se dan en sectores donde resulta más eficiente que una sola empresa preste el servicio, evitando duplicar infraestructuras costosas —el suministro de agua o de electricidad son los ejemplos clásicos—. Y la **superioridad tecnológica**: una ventaja tecnológica decisiva puede permitir a una empresa desplazar a toda su competencia.
+
+### La regulación del monopolio
+
+Los monopolios son ineficientes respecto a la competencia perfecta, y los consumidores son quienes más lo sufren, al tener que pagar precios más altos. Los gobiernos disponen de tres vías de actuación. Las **leyes antimonopolio** buscan impedir que se formen monopolios —por ejemplo, prohibiendo fusiones que darían a la empresa resultante un control excesivo del mercado— y sancionan a quienes abusan de su posición dominante; en España, esta función corresponde a la Comisión Nacional de los Mercados y la Competencia (CNMC). La **regulación de precios**, habitual en los monopolios naturales, consiste en que el Estado fija un precio inferior al que impondría el monopolista, más cercano al de competencia perfecta; si ese precio genera pérdidas a la empresa, el Estado puede verse obligado a subvencionarla con fondos públicos. Y la **propiedad pública del monopolio**, en la que el Estado gestiona directamente la empresa para fijar precios más bajos, aunque corre el riesgo de generar pérdidas que también asumen los contribuyentes, y de perder los incentivos a la eficiencia que sí tiene una empresa privada que busca beneficios.
+
+## El oligopolio
+
+::: {.callout-note}
+### Definición
+Un oligopolio es una estructura de mercado dominada por un número reducido de empresas, cuya principal característica es la interdependencia: cada empresa sabe que sus decisiones afectan a las demás, y las tiene en cuenta al decidir su propia estrategia.
+:::
+
+Los productos pueden ser homogéneos —como el petróleo— o diferenciados —como los automóviles—. Las barreras de entrada suelen ser altas, por la necesidad de grandes inversiones iniciales o el acceso limitado a canales de distribución.
+
+Ante esa interdependencia, las empresas de un oligopolio pueden optar por competir o por colaborar. La **colaboración explícita** mediante cárteles —acuerdos para fijar precios o limitar la producción, como el histórico de la OPEP en el mercado petrolero— y las demás prácticas de **colusión** —como el reparto de mercados— están prohibidas en la mayoría de los países, precisamente porque eliminan la competencia. Pero mantener un cártel es difícil: cada empresa tiene un incentivo individual a romper el acuerdo y bajar sus precios en secreto para ganar cuota de mercado, con la esperanza de que las demás no se den cuenta —una situación estructuralmente idéntica al dilema del prisionero—; cuando varias empresas razonan así a la vez, el cártel se desmorona. Detectar estas prácticas es complicado, porque las empresas implicadas actúan de forma encubierta; por ello, la CNMC cuenta con un **programa de clemencia**, que ofrece inmunidad a la empresa de un cártel que aporte pruebas contra sus socios, lo que siembra la desconfianza entre ellas y desincentiva la formación de nuevos acuerdos.
+
+::: {.callout-note}
+### Definición
+El Índice de Concentración de Cuatro Firmas (C4) suma las cuotas de mercado de las cuatro mayores empresas de un sector. Un C4 elevado indica que el mercado está muy concentrado, lo que aumenta el riesgo de colusión y es un criterio que se tiene en cuenta al evaluar si autorizar una fusión empresarial.
+:::
+
+En la práctica, muchas empresas oligopolistas alcanzan una **cooperación tácita** sin necesidad de un acuerdo explícito: ninguna tiene incentivos para iniciar una guerra de precios si sabe que sus rivales reaccionarán bajando los suyos también, de modo que todas saldrían perdiendo.
+
+::: {.callout-tip}
+## Por qué importa la competencia
+Un mercado competitivo aporta cuatro beneficios frente a uno concentrado: **precios más bajos**, porque las empresas compiten para atraer clientes; **mejor calidad**, porque una empresa sin competencia no tiene incentivos para mejorar sus productos; **más innovación**, porque la rivalidad empresarial impulsa el desarrollo de productos nuevos; y **más empleo**, porque un mayor número de empresas y una mayor producción requieren más trabajadores.
+:::
+
+## La competencia monopolística
+
+::: {.callout-note}
+### Definición
+La competencia monopolística es una estructura de mercado con muchas empresas que ofrecen productos similares pero diferenciados, lo que otorga a cada una cierto poder para fijar su propio precio dentro de un margen limitado por la competencia.
+:::
+
+Combina rasgos de ambos extremos: como en la competencia perfecta, hay muchos vendedores y libertad de entrada y salida; pero como en el monopolio, cada empresa tiene cierto control sobre el precio de su producto, gracias a la diferenciación. Es habitual en sectores como la restauración, la moda o los productos de consumo.
+
+Las empresas se diferencian de varias formas. Por **estilo o tipo**: distintos géneros musicales, tipos de vehículo o categorías de restaurante conviven en el mismo mercado sin ser sustitutos perfectos entre sí. Por **localización**: un establecimiento con una ubicación privilegiada puede cobrar más por el mismo producto, no por su calidad, sino por la conveniencia o las vistas que ofrece. Y por **calidad**: dentro de una misma categoría de producto, como las bicicletas, conviven modelos muy baratos y otros mucho más caros, dirigidos a consumidores con necesidades distintas.
+
+Cuanto más logra diferenciarse una empresa, mayor es su capacidad de fijar un precio superior al de sus competidores, porque una parte de los consumidores está dispuesta a pagar más por ese producto concreto. La **publicidad** cumple un papel central en este proceso: informa sobre las opciones disponibles, pero también construye la percepción de marca que sostiene esa diferenciación —lo que alimenta el debate sobre si las decisiones de compra basadas en la marca son plenamente racionales, o están condicionadas por la propia publicidad—.

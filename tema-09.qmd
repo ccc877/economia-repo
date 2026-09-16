@@ -1,0 +1,128 @@
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+# El desarrollo económico
+
+## Crecimiento y desarrollo económico
+
+En el análisis económico es fundamental distinguir entre crecimiento y desarrollo. El primero es puramente cuantitativo: se refiere al aumento de la producción de un país, medido a través del PIB. El segundo abarca transformaciones cualitativas que afectan directamente a la vida de las personas.
+
+::: {.callout-note}
+### Definición
+El desarrollo económico es la transformación profunda de la estructura social y económica de un país, que mejora sus condiciones económicas, sociales y políticas y aumenta la calidad de vida de sus ciudadanos.
+:::
+
+Sus factores se dividen en dos tipos. Los **cuantitativos** se refieren al aumento de la producción, es decir, al crecimiento del PIB. Los **cualitativos** abarcan la mejora en la distribución de la renta, el acceso a servicios públicos, la estabilidad política, las libertades civiles y los avances tecnológicos. Un país puede crecer sin desarrollarse —si ese crecimiento no llega a la mayoría de la población—, aunque a largo plazo resulta difícil sostener el desarrollo sin crecimiento.
+
+### El desarrollo humano y el IDH
+
+El desarrollo humano se centra en la expansión de las capacidades y oportunidades de las personas, más allá de la renta. Para medirlo, la ONU utiliza el **Índice de Desarrollo Humano (IDH)**, que combina tres dimensiones: la salud, medida a través de la esperanza de vida al nacer; la riqueza, medida por el PIB per cápita en paridad de poder adquisitivo; y la educación, medida por los años de escolarización esperados y los años medios de estudio.
+
+::: {.callout-warning}
+## Limitaciones del IDH
+El IDH no contabiliza la calidad del empleo, el impacto ambiental ni la calidad democrática. Es el indicador de desarrollo más aceptado internacionalmente, pero debe complementarse con otros para obtener una imagen completa del bienestar de un país.
+:::
+
+### El desarrollo sostenible
+
+El concepto de desarrollo sostenible surge como respuesta al modelo de crecimiento que agota los recursos naturales y compromete el futuro.
+
+::: {.callout-note}
+## Definición (Informe Brundtland, 1987)
+El desarrollo sostenible es aquel que permite satisfacer las necesidades del presente sin comprometer la capacidad de las generaciones futuras para satisfacer las suyas.
+:::
+
+Para que el desarrollo sea sostenible en un sentido pleno, debe existir equilibrio entre tres dimensiones:
+
+```{r}
+#| label: tbl-dimensiones-sostenible
+#| tbl-cap: "Las tres dimensiones del desarrollo sostenible"
+
+df_sost <- data.frame(
+  Dimensión = c("Medioambiental", "Social", "Económica"),
+  Descripción = c(
+    "Preservación del entorno natural",
+    "Igualdad y desarrollo del potencial humano",
+    "Crecimiento con equidad"
+  ),
+  Objetivos = c(
+    "Energías renovables, biodiversidad, gestión del agua",
+    "Sanidad universal, educación, fin de la discriminación",
+    "Reparto justo de la riqueza, estabilidad financiera"
+  )
+)
+
+kable(df_sost, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Dimensión", "Descripción", "Objetivos clave")) |>
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+## Los indicadores de desarrollo social
+
+Mientras que el crecimiento se mide con el PIB per cápita, el desarrollo social exige indicadores cualitativos: el nivel de vida digno, mediante la tasa de pobreza extrema; la educación, mediante el nivel de alfabetización; la atención sanitaria, mediante la esperanza de vida y la mortalidad infantil; la igualdad de oportunidades, mediante indicadores como la brecha salarial; las instituciones y libertades, mediante la garantía de derechos y la ausencia de corrupción; y la sostenibilidad, mediante la gestión responsable de los recursos naturales.
+
+La evolución histórica de estos indicadores muestra una mejora sustancial del bienestar humano en los últimos dos siglos:
+
+```{r}
+#| label: tbl-evolucion-1820
+#| tbl-cap: "Evolución de indicadores de desarrollo social (1820-2025)"
+
+df_evol <- data.frame(
+  Indicador = c("Pobreza extrema", "Alfabetización", "Mortalidad infantil (menores de 5 años)", "Libertad y derechos"),
+  Año1820 = c("Más del 90 % de la población", "Aproximadamente el 15 %", "45 %", "Predominio de dictaduras"),
+  Actual = c("Menos del 10 %", "Alrededor del 85 %", "Menos del 5 %", "Más del 50 % vive en democracia")
+)
+
+kable(df_evol, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Indicador", "Situación en 1820", "Situación actual (2025)")) |>
+  kable_styling(full_width = FALSE, font_size = 9, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+Los países con bajo nivel de desarrollo comparten rasgos estructurales: un PIB per cápita equivalente a solo el 5 % del de los países ricos, bajos niveles de alfabetización, escasa infraestructura sanitaria, poco ahorro y tasas de crecimiento poblacional que su economía no logra absorber.
+
+## Los factores del crecimiento económico
+
+El crecimiento a largo plazo depende fundamentalmente de la **productividad**: la cantidad de bienes o servicios que un trabajador produce en un periodo de tiempo determinado. Tres factores la impulsan.
+
+El **capital físico** —maquinaria, herramientas, infraestructuras— explica buena parte de las diferencias de crecimiento entre países: China ha destinado más del 40 % de su PIB a bienes de inversión desde 1980, frente a menos del 20 % de Estados Unidos. El **capital humano** —la formación, las habilidades y la experiencia de los trabajadores— es igualmente decisivo: en 1960, la mitad de la población de Singapur no estaba escolarizada, y tras priorizar la educación durante décadas, el país cuenta hoy con uno de los sistemas educativos más avanzados del mundo. El **progreso tecnológico**, es decir, la aplicación de avances científicos para optimizar los procesos productivos —incluyendo la inversión en investigación y desarrollo—, completa los tres factores.
+
+El Estado desempeña un papel importante en este proceso: para garantizar un crecimiento sostenido, debe invertir en infraestructuras, financiar el sistema educativo, aportar fondos para la I+D y garantizar estabilidad política, seguridad jurídica y derechos de propiedad.
+
+::: {.callout-warning}
+En países con alta corrupción o inestabilidad política, los incentivos para invertir desaparecen, lo que estanca la productividad y el crecimiento.
+:::
+
+## Los obstáculos al desarrollo
+
+Varios factores dificultan que un país alcance mayores niveles de desarrollo. La **escasa libertad en los mercados** —una intervención estatal excesiva en mercados competitivos— distorsiona el sistema de precios, obstaculiza el emprendimiento y genera sistemas financieros ineficientes que dificultan el acceso al crédito. El **déficit público y la inflación** también lastran el desarrollo: una deuda pública elevada obliga a destinar los ingresos fiscales al pago de intereses en lugar de a infraestructuras o servicios sociales, mientras que la inflación desincentiva el ahorro y, con él, la inversión.
+
+La **escasez de capital físico y humano** —la carencia de infraestructuras y la baja formación de la población— mantiene la productividad y los salarios en niveles de subsistencia. A ello se suman las **relaciones comerciales desiguales**: aunque la ventaja comparativa sugeriría que los países pobres deberían especializarse en agricultura o en sectores intensivos en mano de obra, el proteccionismo de los países desarrollados cierra esos mercados, de modo que los países pobres se ven obligados a importar bienes tecnológicos caros mientras encuentran barreras para exportar sus productos básicos.
+
+::: {.callout-important}
+## El círculo vicioso de la pobreza
+Bajos ingresos → ausencia de ahorro → falta de inversión → baja productividad → persistencia de la pobreza. Romper este ciclo requiere estabilidad interna, libertad económica y un marco de comercio internacional más justo.
+:::
+
+## Las consecuencias del crecimiento económico
+
+### Distribución de la renta y desigualdad
+
+El crecimiento ha permitido que millones de personas salgan de la pobreza extrema, especialmente en China, India o Brasil, pero persisten grandes disparidades. Conviene distinguir dos conceptos: la **pobreza extrema**, cuyo umbral varía según el contexto —en los países más pobres, vivir con menos de un dólar al día; en España, en torno a diez dólares; en Estados Unidos, en torno a treinta—; y la **pobreza relativa**, que consiste en percibir menos del 60 % de la renta mediana del propio país, y que genera exclusión social y limita el desarrollo personal aunque no implique una privación material extrema.
+
+La riqueza tiende además a concentrarse: en España, el 1 % más rico controla el 25,1 % de la riqueza, mientras que el 50 % más pobre suma solo el 10,3 %; en Estados Unidos, el 1 % más rico posee el 40 % del total. Las causas principales de este aumento de la desigualdad son la globalización —que desplaza empleos hacia países con salarios más bajos— y la revolución digital —que incrementa los salarios de los trabajadores cualificados mientras sustituye a los no cualificados—. Entre las propuestas para reducirla se encuentran la inversión en educación y formación, una reforma fiscal más progresiva, transferencias mejor orientadas y la renta básica universal.
+
+### El impacto medioambiental
+
+La actividad económica depende del entorno natural, que cumple tres funciones: proveedor de recursos, receptor de residuos —con límites físicos— y suministrador de servicios recreativos y científicos. Los principales problemas derivados del crecimiento son el efecto invernadero y el cambio climático —el 7 % más rico de la población mundial es responsable del 50 % de las emisiones de CO₂—, la reducción de la capa de ozono, la contaminación, la pérdida de biodiversidad, el agotamiento de recursos naturales y la generación masiva de residuos.
+
+::: {.callout-tip}
+## La huella ecológica
+La huella ecológica mide la superficie necesaria para producir los recursos que consume la humanidad y absorber los residuos que genera. El ritmo de consumo actual equivale a 1,75 planetas, lo que evidencia un modelo de crecimiento insostenible a largo plazo.
+:::

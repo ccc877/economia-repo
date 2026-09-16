@@ -1,0 +1,160 @@
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+# La globalización y los retos de la economía actual
+
+## La globalización económica
+
+::: {.callout-note}
+### Definición
+La globalización económica es el proceso de integración progresiva de las economías nacionales en un único mercado mundial, impulsado por la reducción de las barreras comerciales, el desarrollo tecnológico y la liberalización financiera.
+:::
+
+Este proceso tiene varias dimensiones. La dimensión **comercial** se refleja en la expansión del comercio internacional de bienes y servicios. La dimensión **financiera** consiste en la libre circulación de capitales entre países. La dimensión **productiva** organiza la producción en cadenas de valor globales, lo que da lugar a la deslocalización de fábricas y procesos. Y la dimensión **tecnológica y cultural** difunde de forma acelerada el conocimiento, la información y las pautas de consumo.
+
+Tres factores han impulsado la globalización: la reducción de los costes de transporte y comunicación —el contenedor marítimo, la aviación comercial e internet—, la liberalización comercial y financiera —los acuerdos del GATT y la OMC, y la desregulación de los movimientos de capital— y la revolución digital, que permite coordinar cadenas productivas globales en tiempo real.
+
+### Oportunidades y riesgos
+
+```{r}
+#| label: tbl-globalizacion-riesgos
+#| tbl-cap: "Oportunidades y riesgos de la globalización"
+
+df_glob <- data.frame(
+  Oportunidades = c(
+    "Reducción del precio de los bienes de consumo",
+    "Acceso de países emergentes a mercados y tecnología",
+    "Difusión de conocimiento e innovación",
+    "Reducción de la pobreza extrema global",
+    "Especialización según la ventaja comparativa"
+  ),
+  Riesgos = c(
+    "Deslocalización y desempleo en países desarrollados",
+    "Presión a la baja en salarios y condiciones laborales",
+    "Concentración del poder en grandes corporaciones",
+    "Evasión fiscal a través de paraísos fiscales",
+    "Homogeneización cultural y pérdida de diversidad"
+  )
+)
+
+kable(df_glob, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Oportunidades", "Riesgos")) |>
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+Uno de los debates centrales de la economía contemporánea es si la globalización aumenta o reduce la desigualdad, y la evidencia es mixta: **entre países**, ha reducido la brecha entre las economías emergentes —especialmente en Asia— y los países desarrollados; pero **dentro de cada país**, ha aumentado la desigualdad interna en las economías desarrolladas, al perjudicar a los trabajadores de baja cualificación cuyas tareas se deslocalizan o se automatizan.
+
+::: {.callout-tip}
+## El «elefante de Milanovic»
+Este gráfico, popularizado por el economista Branko Milanovic, ilustra esta paradoja: entre 1988 y 2008, los mayores aumentos de renta real se concentraron en la clase media de los países emergentes —la «joroba» del elefante— y en las élites globales —la «cola»—. La clase media-baja de los países desarrollados, en cambio, vio su renta prácticamente estancada, en la zona deprimida entre ambas jorobas. Esta dinámica no es inevitable: depende de las decisiones políticas sobre redistribución, educación, fiscalidad y regulación laboral que adopte cada país.
+:::
+
+La globalización también tiene una cara oscura: amplía las rutas del **tráfico ilegal**, que aprovecha las mismas infraestructuras que el comercio legal pero al margen de cualquier regulación. La trata de personas —una de las formas más graves de violación de los derechos humanos— genera unos 150 000 millones de dólares anuales de beneficio ilícito; el narcotráfico mueve entre 400 000 y 600 000 millones de dólares al año y financia conflictos armados; y el tráfico de armas y de especies silvestres alimenta la inestabilidad en distintas regiones del mundo. Estos flujos ilustran la necesidad de una gobernanza global, porque ningún país puede combatirlos en solitario.
+
+## Los flujos migratorios internacionales
+
+La globalización no solo implica el movimiento de bienes y capitales, sino también el de personas: en la actualidad hay más de 280 millones de migrantes internacionales, el 3,6 % de la población mundial. Existen distintos tipos de migración: la **económica**, motivada por la búsqueda de mejores condiciones laborales; la **forzada**, causada por guerras, persecución o desastres naturales, que da lugar a los refugiados; la de **alta cualificación**, conocida como «fuga de cerebros», por la que profesionales emigran a países con mejores salarios o condiciones de investigación; y la **de retorno**, el regreso al país de origen.
+
+Sus causas principales son las diferencias salariales y de nivel de vida entre países, los conflictos armados, el cambio climático, la reunificación familiar y la búsqueda de formación. Entre sus consecuencias destacan las **remesas** —el dinero que los migrantes envían a sus países de origen, que alcanza los 700 000 millones de dólares anuales y con frecuencia supera la ayuda oficial al desarrollo—, la fuga de cerebros en los países emisores, y su contribución a frenar el envejecimiento demográfico en los países receptores.
+
+La inmigración es, de hecho, un factor clave para la sostenibilidad del Estado del bienestar: en España, la población inmigrante aporta en torno al 6,6 % de los ingresos del Estado, frente al 5,4 % del gasto que genera, y la Comisión Europea estima que el país necesitará unos siete millones de inmigrantes en los próximos veinte años para mantener su población activa y sostener el sistema de pensiones.
+
+## Crisis económicas y contagio global
+
+La globalización financiera conecta los mercados de tal manera que una crisis surgida en un país puede propagarse rápidamente al resto del mundo, un fenómeno conocido como **efecto contagio**, que opera a través de varios canales: el **comercial** —si el país en crisis reduce sus importaciones, sus socios exportadores sufren una caída de la demanda—, el **financiero** —los inversores venden activos de mercados emergentes para cubrir pérdidas en su país de origen—, el de **confianza** —las expectativas negativas se autocumplen— y el de **deuda soberana** —si un país no puede pagar su deuda, los bancos acreedores restringen el crédito en sus propios mercados—.
+
+La historia reciente ofrece varios ejemplos. La **crisis financiera global de 2008**, originada en el mercado hipotecario de alto riesgo estadounidense, se propagó a través de productos financieros derivados y provocó la mayor recesión desde 1929. La **crisis de la deuda soberana europea (2010-2013)** sometió a Grecia, Irlanda, Portugal, España e Italia a ataques especulativos sobre su deuda pública, que la Unión Europea y el FMI atajaron con rescates condicionados a políticas de austeridad. La **pandemia de covid-19 (2020)** provocó la primera recesión sincronizada global del siglo XXI, con una caída del PIB mundial del 3,1 %, la peor desde la Segunda Guerra Mundial. Y la **guerra en Ucrania (2022)** disparó los precios globales del trigo, el maíz y la energía, generando inflación de oferta en todo el mundo y evidenciando la fragilidad de las cadenas de suministro globales.
+
+Ante esta dimensión global, la comunidad internacional cuenta con organismos de respuesta coordinada: el FMI concede préstamos a países con crisis de balanza de pagos, habitualmente con condiciones de ajuste; el Banco Mundial financia proyectos de desarrollo en países pobres y emergentes; la OMC regula el comercio y arbitra disputas comerciales; el G20 coordina respuestas macroeconómicas entre las veinte mayores economías; y el ACNUR coordina la protección de refugiados y desplazados.
+
+## La gentrificación: un ejemplo de tensión urbana global
+
+::: {.callout-note}
+### Definición
+La gentrificación es el proceso por el cual un barrio popular experimenta una transformación social y económica que eleva los precios inmobiliarios y expulsa progresivamente a los vecinos de menor renta, que son sustituidos por habitantes de mayor poder adquisitivo.
+:::
+
+La globalización ha convertido a las grandes ciudades en nodos de la economía mundial, que atraen a trabajadores de alta cualificación con salarios elevados y presionan al alza los precios de la vivienda. A ello se suman la inversión extranjera en inmuebles como activo financiero, los fondos de inversión que compran bloques enteros de viviendas y los alquileres turísticos, que retiran vivienda del mercado residencial. Sus consecuencias son desiguales: mientras que los propietarios se benefician de la revalorización de sus inmuebles y de la mejora de servicios y equipamientos, los vecinos originales sufren la subida de los alquileres, el desplazamiento involuntario y la pérdida de las redes sociales y de la identidad cultural del barrio.
+
+En España y Europa se pueden identificar varios casos representativos: en Madrid, barrios como Lavapiés, Malasaña o Carabanchel han experimentado intensos procesos de gentrificación, con subidas del alquiler superiores al 70 % en la última década; en Barcelona, el Born y el Poblenou son ejemplos paradigmáticos de tensión entre vecinos y turismo masivo; y en Bilbao, el llamado «efecto Guggenheim» revalorizó el barrio de Abandoibarra, aunque desplazó industria y trabajadores hacia la periferia. La gentrificación no es, sin embargo, un fenómeno inevitable: puede modularse mediante políticas públicas como el control de los alquileres, la construcción de parques públicos de vivienda, la regulación de los alquileres turísticos o el derecho de tanteo y retracto municipal sobre inmuebles en venta.
+
+## La nueva economía y la revolución digital
+
+La revolución digital, considerada la tercera revolución industrial, se basa en el uso masivo de ordenadores, telefonía móvil e internet para transformar la producción, la distribución y el consumo. Ha traído consigo nuevos modelos de negocio con acceso instantáneo a servicios de transporte, ocio o comercio; el internet de las cosas y el teletrabajo, que permiten la automatización de procesos y una mayor flexibilidad laboral; y un impacto ambivalente sobre el empleo, con un **efecto sustitución** —la automatización de tareas rutinarias pone en riesgo hasta el 40 % de los empleos actuales— y un **efecto complementariedad** —la tecnología aumenta la productividad y crea nuevos perfiles profesionales, como desarrolladores o analistas de datos—.
+
+Esta transformación genera una **polarización salarial**: los trabajadores cualificados aumentan su productividad y sus ingresos, mientras que los no cualificados son desplazados por la automatización. A ello se suma la **brecha digital**, que separa a quienes tienen acceso y competencias tecnológicas de quienes no, tanto dentro de un mismo país como entre distintas regiones del mundo. Otros riesgos asociados son la ciberseguridad, la vigilancia masiva de datos, la desinformación y la concentración del poder económico en un número reducido de plataformas globales.
+
+Responder a estos retos exige invertir en capital humano —formación continua y reconversión profesional—, reformar el sistema educativo para incorporar competencias digitales, y regular las plataformas tecnológicas para garantizar condiciones laborales dignas. Quedan abiertas preguntas relevantes de política económica: cómo gravar a plataformas que generan valor en un país pero tributan en otro, o cómo garantizar derechos laborales a los trabajadores de la llamada *gig economy*.
+
+El uso de plataformas digitales para intercambiar bienes y servicios entre particulares ha dado lugar además a la **economía colaborativa**, que incluye el consumo colaborativo —compartir transporte o alojamiento—, la producción colaborativa —profesionales que cooperan en proyectos conjuntos— y el conocimiento abierto —formación e información gratuitas y accesibles—. Esta economía genera eficiencia y accesibilidad, pero también plantea tensiones con la regulación laboral y fiscal existente.
+
+Por último, dos corrientes replantean el modelo productivo desde una perspectiva ambiental. La **economía ecológica** parte de que el crecimiento infinito es imposible en un planeta con límites físicos, y propone integrar los costes ambientales en el análisis económico. La **economía circular** sustituye el modelo lineal de producir, consumir y tirar por un ciclo cerrado —reparar, redistribuir, reducir, reutilizar, reciclar y recuperar energía— que alarga la vida útil de los productos y minimiza los residuos.
+
+## Las teorías sobre el decrecimiento económico
+
+La teoría del decrecimiento, desarrollada especialmente desde los años setenta, parte de una premisa: el crecimiento económico ilimitado es incompatible con los límites físicos del planeta. Esta corriente cuestiona el PIB como medida del bienestar y propone otros indicadores que incorporen el bienestar subjetivo, la igualdad y la sostenibilidad ambiental.
+
+Sus principales argumentos son que el consumo creciente en los países desarrollados no se traduce en mayor felicidad una vez superado un determinado umbral de renta —la llamada paradoja de Easterlin—, que el modelo actual supera la biocapacidad del planeta —la huella ecológica global equivale a 1,75 Tierras— y que las desigualdades globales hacen injusto exigir a los países pobres que renuncien a crecer, cuando la responsabilidad histórica del deterioro ambiental recae sobre todo en los países ricos.
+
+Sus defensores proponen reducir la producción y el consumo en los países desarrollados, redistribuir la riqueza a escala global, reducir la jornada laboral y priorizar las actividades de cuidado y sostenibilidad sobre las extractivas. Sus críticos señalan que el decrecimiento podría aumentar el desempleo y reducir los ingresos fiscales que financian el Estado del bienestar, y que ningún gobierno lo ha adoptado en la práctica como política. La alternativa predominante en las políticas de la Unión Europea es el **crecimiento verde**: crecer de forma desacoplada del consumo de recursos mediante tecnología limpia, aunque también es objeto de debate.
+
+## El desarrollo sostenible y los ODS
+
+En la década de 1970 surgió la conciencia sobre los límites del crecimiento. Tras los Objetivos del Milenio (2000-2015), 193 países de la ONU firmaron en 2015 la **Agenda 2030**, que establece 17 Objetivos de Desarrollo Sostenible (ODS) como hoja de ruta para un desarrollo global equitativo y sostenible, con metas como erradicar el hambre y la pobreza extrema, garantizar el acceso universal al agua limpia y a la energía sostenible, asegurar una educación de calidad y un trabajo decente, reducir las desigualdades y proteger los ecosistemas. España ocupa el puesto 22 en el ranking de compromiso con la Agenda 2030, con mejores resultados en el objetivo de agua limpia y en el de energía asequible.
+
+El desarrollo sostenible exige la implicación de tres agentes: las **empresas**, sustituyendo las energías fósiles por fuentes limpias y adoptando modelos de producción circular; el **Estado**, aplicando el principio de que «quien contamina, paga», regulando las emisiones de CO₂ y subvencionando las tecnologías limpias; y los **consumidores**, siguiendo la regla de las tres erres: reducir, reutilizar y reciclar.
+
+::: {.callout-important}
+## Justicia climática y tensiones Norte-Sur
+El desarrollo sostenible no está exento de conflictos distributivos. Los países en desarrollo argumentan que las restricciones ambientales impuestas por los países ricos son injustas, porque estos se industrializaron contaminando libremente durante dos siglos y ahora exigen a los demás que sigan un camino distinto. La justicia climática reclama que los países históricamente más responsables del cambio climático asuman una carga proporcionalmente mayor en la transición, incluyendo la financiación de la adaptación en los países más vulnerables.
+:::
+
+## El Estado del bienestar
+
+::: {.callout-note}
+### Definición
+El Estado del bienestar es el modelo político-económico en el que el Estado garantiza los derechos sociales y un nivel de vida digno a sus ciudadanos. Surgió tras el crac de 1929 y la Segunda Guerra Mundial como respuesta a la incapacidad del mercado para cubrir por sí solo las necesidades básicas de la población.
+:::
+
+Sus pilares son las pensiones de jubilación, la protección por desempleo, la sanidad y la educación universales, y la atención a la dependencia. Su justificación va más allá de la eficiencia económica: es una condición para la democracia real, porque sin acceso garantizado a la sanidad, la educación y unas rentas mínimas, la participación política efectiva queda limitada a quienes tienen recursos. A su vez, la democracia es condición del Estado del bienestar, ya que sin rendición de cuentas ni libertades civiles, los sistemas de protección social tienden a degradarse o a ser capturados por intereses particulares.
+
+Su sostenibilidad financiera afronta varias amenazas: el **envejecimiento demográfico**, que dispara el gasto en pensiones y sanidad; un **mercado laboral precario**, en el que una economía basada en servicios y turismo genera empleo temporal con menos cotizaciones; la **globalización**, cuya deslocalización genera desempleo estructural y erosiona la base de cotizantes; y los **cambios sociales**, como el aumento de las familias monoparentales, que incrementa la demanda de recursos públicos.
+
+El caso de las **pensiones** ilustra bien esta tensión: en los últimos años, la Seguridad Social española ha ingresado por cotizaciones menos de lo necesario para cubrirlas, debido al descenso del número de cotizantes, al envejecimiento demográfico y al agotamiento del Fondo de Reserva —la llamada «hucha de las pensiones»—, que llegó a alcanzar los 66 815 millones de euros en 2011 y se ha ido reduciendo desde entonces. Entre las soluciones debatidas se encuentran el retraso de la edad de jubilación hacia los 67 años o más, la reducción de la cuantía de las pensiones, su financiación mediante impuestos generales, o la introducción de una cotización sobre la automatización que grave la sustitución de trabajadores por máquinas.
+
+## Los retos y propuestas ante la economía actual
+
+La economía actual afronta cinco grandes retos interconectados: la **desigualdad creciente**, tanto entre países como dentro de ellos, agravada por la globalización y la digitalización; la **emergencia climática**, incompatible con un modelo de crecimiento basado en combustibles fósiles; la **transformación del empleo**, reconfigurado por la automatización y la economía de plataformas; la **fiscalidad global**, ya que las grandes corporaciones y fortunas eluden impuestos aprovechando la fragmentación regulatoria entre países; y la **sostenibilidad del Estado del bienestar**, amenazada por el envejecimiento demográfico y la precarización del empleo.
+
+Frente a estos retos se plantean iniciativas en distintos ámbitos. En el **fiscal**: un impuesto mínimo global a las multinacionales —acordado por la OCDE en el 15 % desde 2021, aunque con aplicación desigual—, una mayor progresividad sobre los grandes patrimonios y las rentas del capital, la lucha efectiva contra los paraísos fiscales y una tasa digital sobre las plataformas que generan valor en un país pero tributan en otro. En el **laboral**: la regulación de las condiciones de trabajo en la *gig economy* —la Ley Rider española es una referencia—, la inversión pública en formación para la transición digital y el debate sobre la reducción de la jornada laboral. En el **social**: la renta básica universal como red de seguridad ante la automatización, el refuerzo de la educación pública como instrumento de movilidad social y las políticas activas de empleo en sectores de alta demanda y baja huella ambiental.
+
+En el ámbito de la **sostenibilidad**, las propuestas incluyen fijar un precio al carbono para internalizar los costes ambientales en los precios de mercado, eliminar progresivamente las subvenciones a los combustibles fósiles, invertir en energías renovables y transporte limpio, avanzar hacia una economía circular, y reformar instituciones internacionales como la OMC, el FMI o el Banco Mundial para incorporar criterios de equidad y sostenibilidad.
+
+```{r}
+#| label: tbl-casos-retos
+#| tbl-cap: "Casos de estudio sobre los retos de la economía actual"
+
+df_casos <- data.frame(
+  Caso = c("Impuesto OCDE del 15 %", "Ley Rider (España, 2021)", "Green Deal europeo",
+           "Piloto de renta básica (Finlandia)", "Migración y pensiones en España",
+           "Gentrificación en Madrid y Barcelona", "Crisis financiera de 2008"),
+  Reto = c("Evasión fiscal multinacional", "Derechos en la gig economy", "Emergencia climática",
+           "Automatización y desempleo", "Sostenibilidad del Estado del bienestar",
+           "Desigualdad urbana y acceso a la vivienda", "Contagio global y fragilidad sistémica"),
+  Iniciativa = c("Armonización fiscal global", "Regulación del trabajo de plataformas",
+                 "Política industrial verde", "Renta básica universal",
+                 "Políticas migratorias activas", "Control de alquileres y vivienda pública",
+                 "Regulación financiera internacional")
+)
+
+kable(df_casos, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Caso", "Reto que ilustra", "Iniciativa analizable")) |>
+  kable_styling(full_width = FALSE, font_size = 8, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```

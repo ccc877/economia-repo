@@ -1,0 +1,180 @@
+```{r}
+#| label: setup
+#| include: false
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+
+# El comercio internacional
+
+## Qué es el comercio internacional
+
+::: {.callout-note}
+## Definición
+El comercio internacional es el intercambio de bienes y servicios entre países. Se denomina exportación cuando un país vende un producto al extranjero, e importación cuando lo adquiere del exterior.
+:::
+
+El comercio internacional permite a los países especializarse en la producción de aquello en lo que poseen ventaja, accediendo a cambio a productos que no pueden fabricar de forma eficiente. Surge de las diferencias entre países en clima (Brasil exporta café gracias a su clima tropical), factores productivos (Canadá dispone de madera, Bangladés de mano de obra abundante), tecnología y capital humano (Corea del Sur lidera los semiconductores), gustos de los consumidores (la preferencia por el vino francés pese a que otros países también lo producen) y economías de escala, que permiten a las empresas reducir costes unitarios al vender en múltiples mercados.
+
+::: {.callout-important}
+## La ventaja comparativa (David Ricardo, 1817)
+Un país tiene ventaja comparativa en la producción de un bien cuando puede producirlo a un coste de oportunidad menor que otro país, aunque no sea el más eficiente en términos absolutos. Supongamos que Portugal produce vino y tela con menor coste que Inglaterra en ambos casos, pero es relativamente mucho más eficiente en el vino: su coste de oportunidad de producir tela (a lo que renuncia en vino) es muy alto. A Portugal le conviene especializarse en vino e importar tela, aunque Inglaterra sea menos eficiente en ambos bienes. El principio demuestra que el comercio beneficia a todos los países participantes, incluso a los menos eficientes en términos absolutos: lo relevante no es producir mejor, sino especializarse donde el coste de oportunidad es relativamente más bajo.
+:::
+
+## El debate entre librecambio y proteccionismo
+
+::: {.callout-note}
+## El librecambio
+Sostiene que el comercio debe desarrollarse sin restricciones, permitiendo que cada país se especialice en lo que produce de forma más eficiente. Sus defensores señalan cuatro beneficios: mayor eficiencia productiva, mayor competencia y precios más bajos, mayor variedad de productos disponibles, y menores costes gracias a las economías de escala.
+:::
+
+::: {.callout-note}
+## El proteccionismo
+Defiende la imposición de barreras al comercio para proteger la economía nacional. Sus defensores argumentan cuatro razones: evitar la dependencia exterior en sectores estratégicos (energía, defensa, alimentación), proteger la producción y el empleo nacionales frente a la competencia extranjera, proteger el desarrollo de industrias nacientes que no podrían competir con grandes corporaciones ya establecidas, y recaudar ingresos fiscales mediante aranceles.
+:::
+
+En la práctica, la mayoría de los países combinan ambos enfoques según el sector y el contexto: incluso economías muy abiertas al comercio, como China, Irlanda o Corea del Sur, han aplicado medidas proteccionistas en determinadas circunstancias.
+
+## Los instrumentos de la política comercial
+
+::: {.callout-note}
+## Definición
+La política comercial es el conjunto de estrategias e instrumentos —aranceles, convenios, normativas— que utiliza un Estado para regular sus intercambios comerciales con el resto del mundo.
+:::
+
+Existen cuatro categorías principales de medidas proteccionistas. Los **aranceles** son impuestos sobre los productos importados que encarecen su precio y reducen su competitividad frente a los bienes nacionales. Los **contingentes** son límites cuantitativos a la importación de un producto: a diferencia de los aranceles, no generan ingresos fiscales, pero también reducen la oferta disponible y tienden a elevar los precios. Las **subvenciones** son ayudas económicas a las empresas nacionales que mejoran su competitividad, aunque distorsionan el comercio internacional y pueden generar disputas con otros países. Las **barreras no arancelarias** son restricciones que no adoptan la forma de impuesto ni de límite cuantitativo, como normativas sanitarias o certificaciones de calidad exigentes.
+
+```{r}
+#| label: tbl-proteccionismo
+#| tbl-cap: "Beneficiarios y perjudicados de las medidas proteccionistas"
+
+df_prot <- data.frame(
+  Medida = c("Aranceles", "Contingentes", "Subvenciones", "Barreras no arancelarias"),
+  Beneficiados = c("Empresas nacionales y el Estado (recaudación)",
+                   "Empresas nacionales",
+                   "Empresas nacionales subvencionadas",
+                   "Empresas nacionales"),
+  Perjudicados = c("Consumidores nacionales y empresas extranjeras",
+                   "Consumidores nacionales y empresas extranjeras",
+                   "Contribuyentes",
+                   "Consumidores (menos variedad, más coste)")
+)
+
+kable(df_prot, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Medida", "Beneficiados", "Perjudicados")) |>
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+::: {.callout-tip}
+## Caso real: el arancel a la aceituna española (2018)
+En junio de 2018, Estados Unidos impuso un arancel del 14 % más una tasa adicional del 20 % a la aceituna negra española, alegando que las empresas españolas recibían subvenciones que les permitían vender a precios inferiores a los del mercado (*dumping*). La medida encareció el producto español en el mercado estadounidense y redujo el volumen de sus ventas.
+:::
+
+En síntesis, bajo un esquema de medidas proteccionistas, los productores nacionales son los principales beneficiados, mientras que los consumidores y las empresas extranjeras son los más perjudicados.
+
+## La balanza de pagos
+
+::: {.callout-note}
+## Definición
+La balanza de pagos es el documento contable que registra el conjunto de transacciones económicas y financieras entre un país y el resto del mundo durante un período determinado, habitualmente un año.
+:::
+
+Puede entenderse como el libro de cuentas de un país frente al exterior. Utiliza el sistema de **partida doble**: cada transacción se registra dos veces, una para el bien, servicio o activo financiero que se compra o se vende, y otra para el movimiento de dinero correspondiente. Si una empresa española vende coches a Alemania, se registran tanto la venta de los coches como la entrada del dinero que la paga.
+
+La balanza de pagos se organiza en tres grandes cuentas: la cuenta corriente, la cuenta de capital y la cuenta financiera.
+
+### La cuenta corriente
+
+La cuenta corriente registra los intercambios de bienes, servicios, rentas y transferencias con el resto del mundo, y se subdivide en tres balanzas. La **balanza de bienes y servicios** recoge, por un lado, el comercio de bienes tangibles —coches, alimentos, maquinaria—, cuya diferencia entre exportaciones e importaciones es el **saldo comercial**; y por otro, el comercio de servicios intangibles como el transporte, los seguros o el turismo, en el que España presenta tradicionalmente superávit. La **balanza de rentas primarias** registra los ingresos y pagos derivados de activos financieros —intereses, dividendos— y del trabajo: si una empresa extranjera invierte en España y repatría beneficios, es un pago; si España presta dinero al exterior y cobra intereses, es un ingreso. La **balanza de rentas secundarias** registra transferencias sin contraprestación, como las ayudas internacionales, las pensiones pagadas al extranjero o las remesas que envían los inmigrantes a sus países de origen.
+
+Cada partida se anota como **ingreso** (entrada de dinero: exportaciones, rentas recibidas) o como **pago** (salida de dinero: importaciones, rentas pagadas), y el saldo de la cuenta corriente es la diferencia entre ambos:
+
+$$\text{Saldo CC} = (X_{\text{bienes}} - M_{\text{bienes}}) + (X_{\text{servicios}} - M_{\text{servicios}}) + \text{Rentas primarias netas} + \text{Rentas secundarias netas}$$
+
+::: {.callout-tip}
+## Ejercicio resuelto: el saldo de la cuenta corriente
+Un país registra en un año los siguientes datos (en miles de millones de euros): exportaciones de bienes, 150; importaciones de bienes, 120; exportaciones de servicios, 80; importaciones de servicios, 60; rentas primarias netas, −10; rentas secundarias netas, +5. ¿Cuál es el saldo de su cuenta corriente?
+
+**Solución:**
+
+$$\text{Saldo CC} = (150 - 120) + (80 - 60) + (-10) + 5 = 30 + 20 - 10 + 5 = +45$$
+
+El resultado es positivo, por lo que el país presenta un **superávit** de 45 000 millones de euros en su cuenta corriente: ingresa más de lo que paga en sus transacciones con el exterior.
+:::
+
+### La cuenta de capital y la cuenta financiera
+
+La **cuenta de capital** tiene un peso mucho menor que la corriente. Registra transferencias de capital sin contraprestación inmediata —como los fondos europeos destinados a infraestructuras— y la compraventa de activos inmateriales o no producidos, como patentes, marcas o terrenos.
+
+La **cuenta financiera** recoge los flujos de inversión y financiación entre el país y el exterior, y permite determinar si un país es acreedor o deudor frente al resto del mundo. Distingue entre **activos financieros** —inversiones que un país realiza en el extranjero, que generan un derecho de cobro futuro— y **pasivos financieros** —inversiones o préstamos recibidos del exterior, que constituyen una obligación de pago futura—. Sus principales operaciones son la inversión directa (adquisición de empresas o apertura de filiales en el extranjero, como una tienda de Zara en Estados Unidos), la inversión en cartera (compra de acciones o bonos sin ánimo de control), otras inversiones (préstamos y depósitos transfronterizos) y la variación de las reservas internacionales de divisas del banco central.
+
+### El equilibrio de la balanza de pagos
+
+Contablemente, la balanza de pagos siempre está en equilibrio: toda salida de dinero tiene su contrapartida en alguna entrada, y viceversa. La relación entre sus tres cuentas es:
+
+$$\text{Saldo CC} + \text{Saldo cuenta de capital} + \text{Saldo cuenta financiera} = 0$$
+
+Esto implica que un déficit en la cuenta corriente debe financiarse necesariamente con un superávit en la cuenta financiera —entrada neta de capitales— o con una reducción de las reservas internacionales. Ese equilibrio contable, sin embargo, no implica equilibrio económico.
+
+Un **déficit en la cuenta corriente** —importar más de lo que se exporta— genera endeudamiento externo, porque el país debe financiarlo endeudándose o vendiendo activos a inversores extranjeros, lo que a largo plazo añade una carga de intereses que puede agravar el propio déficit. También genera presión depreciadora sobre la moneda nacional, lo que a su vez encarece las importaciones y abarata las exportaciones, corrigiendo el desequilibrio parcialmente; y una dependencia de que los inversores extranjeros sigan dispuestos a financiar ese déficit. España registró déficits por cuenta corriente próximos al 10 % del PIB en los años previos a 2008, financiados con una entrada masiva de capitales exteriores; cuando esa financiación se interrumpió, estalló la crisis.
+
+Un **superávit en la cuenta corriente**, en cambio, permite al país acumular activos en el exterior y convertirse en acreedor neto, generando ingresos de rentas futuros, aunque también presiona al alza el tipo de cambio de su moneda —lo que encarece sus exportaciones— y puede generar tensiones comerciales con sus socios si se percibe como una ventaja competitiva artificial. Alemania mantiene de forma sostenida superávits superiores al 6 % del PIB, lo que le ha valido críticas de la Unión Europea y de Estados Unidos.
+
+## El mercado de divisas
+
+::: {.callout-note}
+## Definición
+El tipo de cambio es el precio relativo entre dos monedas: indica cuántas unidades de una divisa se necesitan para adquirir una unidad de otra.
+:::
+
+Un tipo de cambio dólar/euro de 1,40 significa que se necesitan 1,40 dólares para comprar un euro. Este precio se determina en el mercado de divisas mediante la oferta y la demanda. En un modelo simplificado con solo dos monedas, cuando los agentes europeos demandan dólares deben ofrecer euros a cambio, y cuando los agentes estadounidenses demandan euros deben ofrecer dólares; por tanto, la demanda de euros equivale a la oferta de dólares, y viceversa.
+
+La **demanda de euros** procede de las exportaciones de la eurozona —las empresas europeas que cobran en dólares los convierten a euros—, del turismo hacia Europa y de las inversiones extranjeras en activos europeos. La **oferta de euros** procede, simétricamente, de las importaciones europeas, del turismo de los europeos hacia el exterior y de las inversiones europeas en el extranjero.
+
+Cuatro factores determinan estos flujos, con efectos simétricos sobre la oferta y la demanda: el propio **tipo de cambio** —si el euro se aprecia, los bienes europeos se encarecen para el resto del mundo, lo que reduce la demanda de euros y aumenta su oferta—; los **niveles relativos de precios** —una inflación más alta en la eurozona encarece sus productos y reduce su competitividad—; el **nivel de renta** en cada zona —una renta más alta en Estados Unidos aumenta su consumo de importaciones europeas y, con ello, la demanda de euros—; y los **tipos de interés relativos** —unos tipos más altos en la eurozona atraen inversión financiera y aumentan la demanda de euros—.
+
+## La cooperación internacional
+
+La historia ha mostrado que el cierre de los mercados entre países puede tener consecuencias graves, como ocurrió tras la crisis de 1929. Por ello surgieron organismos de cooperación económica internacional. El **Fondo Monetario Internacional (FMI)** busca la cooperación monetaria entre países y la estabilidad de las divisas, y presta apoyo a países con dificultades económicas. El **Banco Mundial** concede préstamos con intereses bajos, especialmente a países en desarrollo, para reducir la pobreza mundial. La **Organización Mundial del Comercio (OMC)**, sucesora del Acuerdo General sobre Aranceles y Comercio (GATT) desde 1994, impulsa el libre comercio, reduce el proteccionismo y resuelve disputas comerciales entre países. Estas tres instituciones nacieron de la Conferencia de Bretton Woods (1944), donde los líderes mundiales acordaron establecer una cooperación económica internacional estable.
+
+### La integración económica: los bloques regionales
+
+Además de la cooperación multilateral, algunos países crean bloques regionales para facilitar el comercio entre sí, manteniendo restricciones frente a terceros países. Existen distintos niveles de integración, cada uno más profundo que el anterior.
+
+```{r}
+#| label: tbl-integracion
+#| tbl-cap: "Niveles de integración económica"
+
+df_integ <- data.frame(
+  Nivel = c("Área de libre comercio", "Unión aduanera", "Mercado común",
+            "Unión económica", "Integración económica plena"),
+  Característica = c(
+    "Elimina barreras internas; cada país decide sus barreras frente a terceros",
+    "Añade un arancel exterior común",
+    "Añade libre circulación de trabajadores y capitales",
+    "Añade coordinación de políticas económicas y, a veces, moneda común",
+    "Un único gobierno decide la política económica y fiscal de todos"
+  ),
+  Ejemplo = c("TLCAN / NAFTA", "Mercosur", "Antigua Comunidad Económica Europea",
+              "Unión Europea (eurozona)", "—")
+)
+
+kable(df_integ, format = if (knitr::is_latex_output()) "latex" else "html", booktabs = TRUE,
+      col.names = c("Nivel de integración", "Característica", "Ejemplo")) |>
+  kable_styling(full_width = FALSE, font_size = 9,
+                bootstrap_options = c("striped", "hover"),
+                latex_options = c("scale_down", "hold_position"))
+```
+
+## La Unión Europea
+
+La Unión Europea nació del Tratado de Roma (1957), firmado por seis países fundadores, y se constituyó formalmente con el Tratado de Maastricht (1992), que planteó además la creación de una moneda común. Actualmente integra a 27 países y más de 400 millones de personas.
+
+Su presupuesto se financia con las aportaciones de los países miembros —proporcionales a su riqueza—, una parte de la recaudación del IVA de cada país y los aranceles cobrados en sus fronteras exteriores. Entre sus principales políticas destacan la **política agrícola común**, que garantiza ingresos a agricultores y ganaderos, y la **política regional**, que reduce las desigualdades entre las regiones más ricas y más pobres de la Unión mediante fondos específicos.
+
+La **Unión Económica y Monetaria (UEM)** supuso la creación del euro en 2002, con una moneda única y una política monetaria común gestionada por el Banco Central Europeo, cuyo objetivo prioritario es la estabilidad de precios. El **Pacto de Estabilidad** obliga a los países miembros a mantener el déficit público por debajo del 3 % del PIB y la deuda pública por debajo del 60 % del PIB.
+
+Pertenecer a la UEM tiene ventajas —menores costes de transacción al compartir moneda, ausencia de riesgo de tipo de cambio entre países miembros y tipos de interés generalmente más bajos gracias a la menor incertidumbre— e inconvenientes: los países pierden autonomía monetaria, ya que no pueden fijar su propio tipo de interés ni devaluar su moneda para ganar competitividad exterior, y quedan expuestos a un posible efecto contagio si otro país de la zona euro atraviesa una crisis grave.
