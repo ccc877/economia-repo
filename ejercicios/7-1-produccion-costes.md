@@ -79,9 +79,9 @@
 >
 > * **d) Nivel óptimo de empleo y maximización del beneficio:**
 >   * La empresa contratará **4 trabajadores**, con los que logra el máximo beneficio posible (500 €).
->   * **Por qué hay beneficio:** La empresa solo obtiene beneficios con 3, 4 y 5 trabajadores, pues son los únicos niveles donde el precio ($10\text{ €}$) supera al coste medio ($CMe < 10\text{ €}$).
->   * **Por qué no quedarse en 3 trabajadores:** Al pasar de 3 a 4 trabajadores, el coste marginal de cada nuevo balón es de 8,33 €, inferior al precio de venta (10 €). Como cada balón nuevo aporta más de lo que cuesta ($P > CMg$), el beneficio total aumenta de 300 € a 500 €.
->   * **Por qué no contratar al quinto:** Al pasar de 4 a 5 trabajadores, el coste marginal asciende a 12,50 €, superando el precio de venta de 10 € ($CMg > P$). Cada balón extra genera una pérdida unitaria de 2,50 €, reduciendo el beneficio global de 500 € a 300 €.
+>   * **Qué niveles dan beneficio:** Con 3, 4 y 5 trabajadores el beneficio es positivo, porque es la zona en la que el precio ($10\text{ €}$) supera al coste medio ($CMe < 10\text{ €}$). Con 6, el beneficio vuelve a ser negativo.
+>   * **Por qué no quedarse en 3 trabajadores:** Al pasar de 3 a 4, el coste marginal de cada balón nuevo es de 8,33 €, inferior al precio de venta. Como cada balón aporta más de lo que cuesta ($P > CMg$), el beneficio total sube de 300 € a 500 €.
+>   * **Por qué no seguir a 5 ni a 6:** El quinto trabajador no es rentable, aunque la empresa no pierda dinero con él. Su coste marginal es de 12,50 €, que supera el precio de 10 € ($CMg > P$): cada balón adicional sale a pérdida, y el beneficio total cae de 500 € a 300 €. Con el sexto, el coste marginal se dispara a 50 € y el beneficio se vuelve negativo. El óptimo no es «cuántos dan beneficio», sino **cuántos los maximizan**: 4.
 
 ---
 
