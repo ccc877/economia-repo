@@ -34,9 +34,16 @@ render_html () {
   echo "==> Renderizando HTML del libro..."
   rm -rf _book
   quarto render --to html
+
+  # Los ejercicios se traducen a callouts nativos de Quarto antes de renderizar:
+  # Quarto los reconoce en su lector, antes de que corra ningún filtro, así que
+  # un filtro no sirve (ver tools/gh-alerts-to-quarto.py).
+  echo "==> Preparando los ejercicios..."
+  python3 tools/gh-alerts-to-quarto.py ejercicios build/ejercicios
+
   echo "==> Renderizando HTML de los ejercicios..."
   # Va después del anterior porque escribe dentro de _book/.
-  ( cd ejercicios && quarto render --to html )
+  ( cd build/ejercicios && quarto render --to html )
   echo "==> HTML listo en _book/"
 }
 

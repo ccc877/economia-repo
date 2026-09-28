@@ -22,11 +22,10 @@ Los dos primeros documentos cubren la distinción entre economía normativa y
 positiva, el nivel de análisis micro y macro, los costes irrecuperables, el
 coste de oportunidad y la clasificación de bienes.
 
-### Frank Price Production
+### La frontera de posibilidades de producción
 
-La frontera de posibilidades de producción, con el caso de la movilidad urbana
-Ícaro y las preguntas habituales de un examen sobre si el coste de oportunidad
-es creciente o constante.
+El caso de la movilidad urbana Ícaro y las preguntas habituales de un examen
+sobre si el coste de oportunidad es creciente o constante.
 
 ### Eficiencia
 

@@ -23,3 +23,6 @@ Economía*.pdf
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Ficheros generados por tools/gh-alerts-to-quarto.py
+build/

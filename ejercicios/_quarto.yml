@@ -6,9 +6,6 @@ project:
 
 lang: es
 
-filters:
-  - ../filters/github-alerts.lua
-
 book:
   title: "Ejercicios de Economía"
   subtitle: "1.º de Bachillerato · Primer trimestre"
@@ -22,7 +19,7 @@ book:
         contents:
           - 2-macro-micro-normativa-positiva.md
           - 3-costes-irrecuperables.md
-      - section: "Frank Price Production"
+      - section: "La frontera de posibilidades de producción"
         contents:
           - 4-fpp-icaro.md
       - section: "Eficiencia"
@@ -51,7 +48,7 @@ book:
       chapters:
         - 2-macro-micro-normativa-positiva.md
         - 3-costes-irrecuperables.md
-    - part: "Frank Price Production"
+    - part: "La frontera de posibilidades de producción"
       chapters:
         - 4-fpp-icaro.md
     - part: "Eficiencia"

@@ -40,11 +40,17 @@ jobs:
       - name: Renderizar el libro a HTML
         run: quarto render --to html
 
-      # Los ejercicios son un proyecto Quarto aparte que escribe dentro de
-      # _book/ejercicios/, así que tienen que renderizarse después del libro.
+      # Los ejercicios usan sintaxis de GitHub para los avisos, que hay que
+      # traducir a callouts nativos de Quarto ANTES de renderizar: Quarto los
+      # reconoce en su lector, antes de que corra ningún filtro, así que un
+      # filtro no serviría. Ver tools/gh-alerts-to-quarto.py.
+      - name: Preparar los ejercicios
+        run: python3 tools/gh-alerts-to-quarto.py ejercicios build/ejercicios
+
+      # Van después del libro porque escriben dentro de _book/.
       - name: Renderizar los ejercicios a HTML
         run: quarto render --to html
-        working-directory: ejercicios
+        working-directory: build/ejercicios
 
       - name: Publicar en GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

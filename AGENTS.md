@@ -15,8 +15,8 @@ con tablas descolocadas, símbolos rotos o texto en inglés donde debería ir en
 _quarto.yml          # Configuración del libro: formatos, unidades (parts), capítulos
 index.qmd             # Landing del sitio: apuntes, ejercicios y documentos
 tema-01.qmd … tema-14.qmd   # Un archivo por tema, cada uno UN SOLO capítulo (un único "# Título" H1)
-ejercicios/           # PROYECTO QLARTO APARTE (tiene su propio _quarto.yml), ver más abajo
-filters/              # Filtros Lua que usa el proyecto de ejercicios
+ejercicios/           # PROYECTO QUARTO APARTE (tiene su propio _quarto.yml), ver más abajo
+tools/                # Scripts que preparan el contenido antes de renderizar
 render.sh              # Pipeline de renderizado completo (HTML + PDF), ver sección 4
 .github/workflows/      # CI: renderiza a HTML y publica en GitHub Pages en cada push a main
 ```
@@ -27,8 +27,7 @@ Hay **dos proyectos Quarto distintos** en el mismo repositorio, y conviene no co
 - **Los ejercicios** (`ejercicios/_quarto.yml`): proyecto propio de tipo `book`, que
   renderiza dentro de `_book/ejercicios/`. Los ejercicios **no** son capítulos del
   libro ni un apéndice suyo: son una sección aparte del sitio, enlazada desde la
-  landing. El `output-dir: ../_book/ejercicios` es lo que hace que las rutas relativas
-  de la landing funcionen tal cual.
+  landing.
 
 Y dentro de cada uno, dos tipos de contenido con reglas distintas:
 
@@ -36,7 +35,7 @@ Y dentro de cada uno, dos tipos de contenido con reglas distintas:
   *chunk* de R y siguiendo todo lo de la sección 3.
 - **Los ejercicios** (`ejercicios/*.md`) son material de trabajo: van en **Markdown plano
   (`.md`)**, no necesitan chunk de R. Puedes escribirlos como los escribes en GitHub; el
-  filtro de la sección 3 se encarga de la interoperabilidad.
+  paso de preparación de la sección 4 se encarga de la interoperabilidad.
 
 Cada `tema-NN.qmd` empieza con el mismo *chunk* de configuración:
 
@@ -79,7 +78,7 @@ Todo el material va **orientado al alumnado**, sin excepciones:
   mismo para quien lo resuelve y para quien lo corrige. Nada de mencionar al
   profesorado ni de escribir comentarios del tipo «esto sirve para comprobar si el
   alumnado…».
-- El **filtro marca los títulos de callout como `unlisted`**, así que no ensucian el
+- El **convertidor marca los títulos como `unlisted`**, así que no ensucian el
   índice. Si añades un desplegable nuevo, hereda ese comportamiento automáticamente.
 
 ## 2. Entorno necesario
@@ -125,9 +124,9 @@ basta con Quarto + R (ver `.github/workflows/publish.yml`, que usa exactamente e
 - `.callout-tip` → ejemplos, casos reales, ejercicios resueltos.
 - `.callout-warning` → avisos (contenido pendiente, matices que rompen una regla general).
 
-**Sintaxis de GitHub también vale.** El filtro `filters/github-alerts.lua` (declarado en
-`_quarto.yml`) convierte los avisos de GitHub en callouts nativos de Quarto, así que en
-los ejercicios puedes escribir como en GitHub y sale igual de bien:
+**Sintaxis de GitHub también vale.** El script `tools/gh-alerts-to-quarto.py` (lo ejecuta
+`render.sh` antes de renderizar, ver sección 4) traduce los avisos de GitHub a callouts
+nativos, así que en los ejercicios puedes escribir como en GitHub y sale igual de bien:
 
 ```markdown
 > [!tip] Título          se convierte en    ::: {.callout-tip}
@@ -136,10 +135,25 @@ los ejercicios puedes escribir como en GitHub y sale igual de bien:
 >                                         :::
 ```
 
-`[!info]` se mapea a `callout-note` (GitHub y Quarto lo llaman distinto). Un sufijo `-`
-deja el callout plegado y `+` desplegado pero plegable. Si añades un tipo nuevo al mapa
-`TIPOS` del filtro, ten en cuenta que un tipo ausente hace que el aviso se descarte **en
-silencio** y salga como texto entrecomillado plano.
+**Por qué un script y no un filtro de Lua** (costó bastante averiguarlo): Quarto
+reconoce los callouts **en su lector**, es decir ANTES de que corra cualquier filtro. Un
+filtro que construya el `div` correcto produce algo con la clase `callout-*` pero sin
+estilo ni botón de plegado: no es un callout, solo un `div` que se le parece. La única
+forma fiable de tener callouts de verdad es darle a Quarto la sintaxis `:::`. Por eso el
+script reescribe los ficheros en `build/ejercicios/` y se renderiza desde ahí; los
+ficheros fuente se siguen escribiendo con sintaxis de GitHub.
+
+⚠️ **Quarto solo reconoce cinco tipos de callout: `note`, `tip`, `important`, `warning` y
+`caution`.** Cualquier otro (`callout-example`, `callout-success`…) no es un callout para
+Quarto: lo deja como un `<section>` normal, sin estilo y **sin botón de plegado**, y no da
+ningún error. El script `TIPOS` recategoriza los tipos de GitHub a esos cinco; si añades
+uno nuevo, mapea lo a un tipo real o el aviso saldrá sin plegar y parece que el bug es
+del convertidor.
+
+`[!info]` se mapea a `callout-note` (GitHub y Quarto lo llaman distinto) y las soluciones
+(`[!example]`) a `callout-tip`. Un sufijo `-` deja el callout plegado y `+` desplegado pero
+plegable. Un tipo ausente en el mapa hace que el aviso se descarte **en silencio** y salga
+como texto entrecomillado plano.
 
 ⚠️ **Si el cuerpo de un aviso empieza con una lista o una tabla, pon una línea `>`
 vacía justo después del título.** Sin ella Pandoc interpreta la lista como
@@ -203,9 +217,17 @@ detalle). Resumen:
 ./render.sh all    # ambos
 ```
 
-`render.sh html` renderiza **los dos proyectos** por orden: primero el libro (que borra
-`_book/` entero) y después los ejercicios, que escriben dentro de `_book/ejercicios/`. Si
-inviertes ese orden, el segundo render se come al primero.
+El paso de HTML hace, en este orden:
+
+1. `quarto render --to html` del libro (que borra `_book/` entero).
+2. `python3 tools/gh-alerts-to-quarto.py ejercicios build/ejercicios` — traduce la
+   sintaxis de GitHub a callouts nativos. El script copia el `_quarto.yml` ajustando
+   `output-dir` a `../../_book/ejercicios` (un nivel más de anidamiento).
+3. `quarto render --to html` dentro de `build/ejercicios`.
+
+Si renderizas los ejercicios a mano, **pásate por el paso 2**; sin él los `> [!info]`
+salen como texto entrecomillado y, peor, los desplegables de solución salen sin botón
+de plegado.
 
 El paso a PDF hace, en este orden:
 
@@ -246,7 +268,7 @@ en `ejercicios/*.md` y se enlazan desde la sección «Ejercicios en HTML» de la
 
 - Pon el archivo en `ejercicios/` con nombre en minúsculas y guiones, y regístralo en el
   `part:` correspondiente de `ejercicios/_quarto.yml` (y en el `sidebar:`).
-- Usa sintaxis de GitHub para los avisos (`> [!tip] Título`); el filtro los traduce
+- Usa sintaxis de GitHub para los avisos (`> [!tip] Título`); el script los traduce
   (sección 3). Cada solución va en su propio desplegable `> [!example]- Solución` bajo
   su enunciado (ver «Cómo es un ejercicio» en la sección 1).
 - En la sección «Ejercicios en HTML» de `index.qmd`, sustituye el `placeholder-link` del
