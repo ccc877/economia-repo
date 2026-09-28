@@ -1,0 +1,243 @@
+---
+title: "Gestión de Recursos Humanos"
+---
+
+
+## La administración o dirección de la empresa
+
+A los 25 años, Edu asumió la responsabilidad de dirigir la empresa de su padre. De un día para otro, debía encargarse de toda la administración. Su primera pregunta no fue trivial: «Pero papá, ¿qué significa administrar una empresa?» Administrar una empresa implica llevar a cabo una serie de funciones de manera constante con el objetivo de alcanzar determinadas metas. A lo largo de este tema, analizaremos los conocimientos que Edu tuvo que adquirir para convertirse en un administrador eficiente.
+
+### Concepto y funciones de la administración o dirección
+
+La administración o dirección de la empresa se basa en la ejecución de cuatro funciones fundamentales:
+
+-   **Planificación:** consiste en definir los objetivos de la empresa y determinar las estrategias adecuadas para alcanzarlos. Esta función es esencial, ya que orienta todas las demás.
+-   **Organización:** implica establecer la estructura organizativa de la empresa, distribuir las tareas entre los miembros de la organización, asignar responsabilidades y definir las relaciones de autoridad.
+-   **Dirección:** se centra en la gestión de los recursos humanos para lograr los objetivos empresariales. Dentro de esta función, destacan tres subfunciones clave: la motivación, el liderazgo y la comunicación.
+-   **Control:** consiste en comparar los resultados obtenidos con los objetivos planificados. A través de esta función, se pueden detectar desviaciones y aplicar las correcciones necesarias para mejorar la gestión empresarial.
+
+### Los niveles directivos
+
+La administración de la empresa es llevada a cabo por distintos niveles de dirección, que se pueden clasificar en tres categorías:
+
+-   **Alta dirección:** integrada por el presidente y los altos cargos de la empresa, quienes toman las decisiones estratégicas a largo plazo.
+-   **Dirección intermedia:** compuesta por responsables de áreas o departamentos, cuya función es garantizar la correcta ejecución de los planes establecidos por la alta dirección.
+-   **Gestión operativa:** formada por los supervisores o encargados de equipo, quienes asignan tareas a los trabajadores, supervisan su desempeño y ejecutan las órdenes de la dirección intermedia, manteniendo un contacto directo con los empleados.
+
+### Diferencias en la terminología
+
+Existen variaciones en el uso de los términos administración, dirección y gestión, lo que puede generar cierta confusión. En la literatura académica y en los exámenes pueden presentarse dos enfoques:
+
+a)  En algunos casos, la función general desempeñada por los directivos se denomina **administración**, la cual se divide en cuatro funciones: planificación, organización, dirección y control.
+
+b)  En otros casos, esta función general se denomina **dirección**, dividiéndose en planificación, organización, gestión y control.
+
+::: callout-note
+Independientemente de la terminología utilizada, la administración o dirección de la empresa engloba las funciones realizadas por los directivos para coordinar los recursos materiales y humanos de la organización con el fin de alcanzar sus objetivos dentro de un entorno determinado.
+:::
+
+## La función de planificación
+
+El primer consejo que recibió Edu de su padre fue claro: debía realizar una planificación. No solo debía definir qué quería lograr (objetivos), sino también cómo iba a conseguirlo (estrategias).
+
+La planificación es el proceso mediante el cual se fijan objetivos a partir del punto de partida de la empresa, se establecen estrategias y políticas para alcanzarlos y se determinan los recursos necesarios para su ejecución.
+
+### Análisis de la situación (¿dónde estamos?)
+
+Toda planificación comienza con un análisis externo e interno que permita comprender la realidad de la empresa:
+
+-   **Análisis externo:** estudia los factores del entorno que pueden influir en la empresa, identificando oportunidades y amenazas.
+-   **Análisis interno:** examina los recursos y capacidades de la empresa para detectar fortalezas y debilidades frente a la competencia.
+
+### DAFO
+
+Este doble análisis da lugar a la matriz DAFO, una herramienta clave para conocer el punto de partida de la empresa.
+
+-   **Fortalezas (F):** Puntos fuertes internos (ej. producto único).
+-   **Debilidades (D):** Puntos débiles internos (ej. poca financiación).
+-   **Oportunidades (O):** Factores externos positivos (ej. nuevas becas o modas).
+-   **Amenazas (A):** Factores externos negativos (ej. nuevos competidores).
+
+### Análisis PESTEL
+
+El análisis PESTEL estudia el entorno general: Políticos, Económicos, Socioculturales, Tecnológicos, Ecológicos y Legales.
+
+### Modelo de las fuerzas competitivas de Porter
+
+Determina el grado de competencia mediante cinco fuerzas: 
+1. Amenaza de nuevos competidores. 
+2. Amenaza de productos sustitutos. 
+3. Poder de negociación de los proveedores. 
+4. Poder de negociación de los clientes. 
+5. Grado de rivalidad entre competidores actuales.
+
+### Fijación de objetivos (¿dónde queremos llegar?)
+
+-   **Misión:** Razón de ser de la empresa.
+-   **Visión:** Qué queremos ser en el futuro.
+-   **Objetivos estratégicos:** A largo plazo (1-5 años).
+-   **Objetivos operativos:** A corto plazo (menos de un año).
+
+### Diseño de estrategias (¿cómo llegaremos allí?)
+
+-   **Liderazgo en costes:** Precios más bajos que la competencia.
+-   **Diferenciación:** Producto único y valorado.
+
+### Implantación de la estrategia (¿qué acciones llevaremos a cabo?)
+
+-   **Políticas:** Principios generales.
+-   **Procedimientos:** Pasos detallados para llevar a cabo acciones específicas.
+-   **Reglas:** Normas obligatorias sin margen de interpretación.
+
+### Establecimiento de un presupuesto (¿con qué recursos contamos?)
+
+Define los recursos financieros necesarios, incluyendo gastos previstos e ingresos estimados.
+
+### Control (¿lo estamos consiguiendo?)
+
+Consiste en comparar los resultados obtenidos con lo planificado para corregir desviaciones.
+
+## La función de organización
+
+Organiza los recursos humanos y materiales de manera eficiente.
+
+### Organización formal e informal
+Un aspecto clave dentro de una empresa es la manera en que las personas se relacionan entre sí, ya que la productividad de los trabajadores depende, en gran medida, de estas interacciones. Sin embargo, aunque la empresa establece ciertas relaciones de manera estructurada, también surgen vínculos espontáneos entre los empleados.
+
+Podemos diferenciar dos tipos de organización:
+
+**A) Organización formal:** Estructura oficial (jerarquía, departamentos, tareas).
+**B) Organización informal:** Relaciones espontáneas y sociales entre trabajadores.
+
+::: callout-important
+## Definición de Organización
+
+La organización consiste en establecer la estructura organizativa de la empresa, distribuir las tareas y responsabilidades entre sus miembros y definir las relaciones de autoridad.
+:::
+
+### Los organigramas
+
+Representación gráfica de la estructura. 
+- **Líneas continuas**: Relaciones jerárquicas (mando). 
+- **Líneas discontinuas**: Relaciones de staff (asesoramiento).
+
+### Modelos de estructura organizativa
+
+1.  **Lineal o jerárquico:** Unidad de mando estricta.
+2.  **Funcional:** Especialistas por áreas.
+3.  **En línea y staff:** Mixto (mando + asesores).
+4.  **Matricial:** Doble autoridad (por función y por producto).
+5.  **En comité:** Decisiones grupales por consenso.
+
+## La función de dirección o gestión de recursos humanos
+
+Se basa en tres pilares: liderazgo, motivación y comunicación.
+
+### El liderazgo en la empresa
+
+-   **Autoritario (autocrático):** El líder decide todo, la comunicación es unidireccional y el poder del líder se sustenta en su capacidad para imponer sanciones o conceder recompensas.
+-   **Democrático (participativo):** El equipo participa, el líder decide al final. Su autoridad se basa en la delegación de funciones y en la confianza en su equipo.
+-   **Liberal (laissez-faire):** Autonomía total para los empleados.
+
+### La teoría X e Y de McGregor
+
+-   **Teoría X:** Visión negativa del trabajador (necesita control). Parte de la premisa de que los trabajadores evitan responsabilidades y necesitan supervisión constante.
+-   **Teoría Y:** Visión positiva (busca responsabilidad y motivación). Presupone que los empleados son responsables, creativos y buscan la autorrealización en sus tareas, por lo que se les pueden delegar responsabilidades.
+
+::: callout-tip
+## Teoría Z (William Ouchi)
+
+Propone la confianza, el empleo a largo plazo y la toma de decisiones colectiva (método japonés).
+:::
+
+### La motivación
+
+-   **Factores monetarios:** Salario, bonus.
+-   **Factores no monetarios:** Reconocimiento, clima laboral, promoción.
+
+### Pirámide de Maslow y Factores de Herzberg
+
+-   **Maslow:** Jerarquía de necesidades (Básicas → Seguridad → Sociales → Estima → Autorrealización).
+-   **Herzberg:** Factores de Higiene (mínimos para no desmotivar, como el salario) y Factores Motivadores (los que realmente impulsan, como el reconocimiento).
+
+### La comunicación
+
+-   **Vertical:** Ascendente (empleado a jefe) o descendente (jefe a empleado).
+-   **Horizontal:** Entre personas del mismo nivel jerárquico.
+
+## La función de control
+
+::: callout-note
+**Planificación y control** están muy relacionadas. Controlar es detectar si nos desviamos de los objetivos previstos para tomar medidas.
+:::
+
+### Fases del control
+
+1.  Fijación de estándares.
+2.  Medición de resultados reales.
+3.  Comparación y análisis de desviaciones.
+4.  Corrección.
+
+### Instrumentos de control
+
+-   **Auditoría:** Interna o externa de las cuentas.
+-   **Control presupuestario:** Análisis de gastos e ingresos.
+-   **Estadística:** Análisis de datos históricos.
+
+## El departamento de recursos humanos
+
+### Funciones del departamento
+
+-   Previsión de necesidades y análisis de puestos.
+-   Externalización (Subcontratación).
+-   Reclutamiento y selección.
+-   Política salarial, de formación y de prevención de riesgos.
+
+::: callout-tip
+## Plan de Gestión de RRHH
+
+Actividades y políticas para conseguir que las personas sean una ventaja competitiva.
+:::
+
+## El reclutamiento y la selección de personal
+
+-   **Reclutamiento:** Atraer candidatos (interno o externo: LinkedIn, anuncios, agencias).
+-   **Selección:** Elegir al idóneo (Entrevistas, tests psicotécnicos, pruebas prácticas, dinámicas de grupo).
+
+## La política de contratación
+
+Tipos de contrato (Reforma 2022): 1. **Indefinidos:** Sin fecha de fin. 2. **Fijos-discontinuos:** Trabajos estacionales. 3. **Temporales:** Por sustitución o circunstancias de la producción. 4. **Formativos:** En alternancia o para práctica profesional.
+
+## La política de formación
+
+Inversión en capital humano. 
+- **Hard Skills:** Habilidades técnicas (idiomas, software). 
+- **Soft Skills:** Habilidades personales (empatía, liderazgo).
+
+### Equipos ágiles
+
+Se basan en **Sprints** (iteraciones cortas), **Backlog** (tareas pendientes) y entregas continuas de valor al cliente.
+
+## La política salarial
+
+### Estructura del salario
+
+-   **Salario base.**
+-   **Complementos:** Antigüedad, nocturnidad, incentivos.
+-   **Salario en especie:** No puede superar el 30% del total.
+
+::: callout-important
+## La nómina
+
+**Devengos (Salario Bruto) - Deducciones (SS e IRPF) = Líquido a percibir (Salario Neto).**
+:::
+
+## La política de relaciones laborales
+
+-   **Sindicato:** Es una asociación de trabajadores que tiene como objetivo la defensa y mejora de sus condiciones de trabajo. Todos los trabajadores tienen el derecho de afiliarse a uno.
+-   **Negociación colectiva:** Proceso de diálogo.
+-   **Convenio colectivo:** Acuerdo escrito entre los representantes de los trabajadores y de los empresarios para fijar las condiciones de trabajo.
+
+### Igualdad e inclusión
+
+Medidas para evitar brechas salariales y discriminación en selección y promoción, fomentando la diversidad como valor competitivo.

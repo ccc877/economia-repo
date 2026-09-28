@@ -1,0 +1,137 @@
+# Formas jurídicas y estructura empresarial
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Tabla resumen — Formas jurídicas principales"}
+
+| Forma jurídica | Nº socios | Capital mínimo | Responsabilidad | Tributa |
+|:---|:---:|:---:|:---:|:---:|
+| Empresario individual (autónomo) | 1 | Sin mínimo | **Ilimitada** | IRPF |
+| Comunidad de bienes | Mín. 2 | Sin mínimo | **Ilimitada** | IRPF |
+| Sociedad Civil | Mín. 2 | Sin mínimo | **Ilimitada** | IRPF |
+| Sociedad Colectiva | Mín. 2 | Sin mínimo | **Ilimitada** | IS |
+| Sociedad Comanditaria Simple | Mín. 2 | Sin mínimo | Mixta* | IS |
+| **Sociedad de Responsabilidad Limitada (SL)** | Mín. 1 | **1 €** | **Limitada** | IS |
+| **Sociedad Anónima (SA)** | Mín. 1 | **60.000 €** | **Limitada** | IS |
+| Sociedad Cooperativa | Mín. 3 | Estatutos | **Limitada** | IS (bonif.) |
+| Sociedad Laboral (SLL / SAL) | Mín. 2 | 1 € / 60.000 € | **Limitada** | IS |
+
+*En la comanditaria: socios colectivos → ilimitada; socios comanditarios → limitada al capital aportado.
+
+**Diferencias clave SA vs SL**
+
+| | SA | SL |
+|:---|:---:|:---:|
+| Capital mínimo | 60.000 € | 1 € |
+| División del capital | **Acciones** (libre transmisión) | **Participaciones** (transmisión restringida) |
+| Transmisión | Libre, cotiza en bolsa | Requiere consentimiento de socios |
+| Perfil típico | Grandes empresas, inversores externos | Pymes, carácter familiar o cerrado |
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- La **SA** divide el capital en **acciones** de libre transmisión. La **SL** divide el capital en **participaciones** de transmisión restringida. Esta distinción es la más preguntada.
+- **Responsabilidad limitada** significa que el socio solo pierde lo que aportó: no responde con su patrimonio personal. **Ilimitada** significa que las deudas de la empresa pueden cobrarse sobre los bienes personales del propietario.
+- El **dividendo activo** es la parte del beneficio que se reparte entre accionistas. El **dividendo pasivo** es el capital comprometido pero aún no desembolsado por el accionista. Son conceptos opuestos y frecuentemente se confunden en los exámenes.
+- Una **startup** no es una empresa tradicional: es de reciente creación, tecnológica, escalable y opera bajo alta incertidumbre.
+- El **trust** fusiona empresas del mismo sector para dominar el mercado (concentración). El **cártel** es un acuerdo entre competidores para fijar precios sin fusionarse: está prohibido.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### Examen interno — Verdadero o falso (formas jurídicas y conceptos)
+
+> Indica si las siguientes afirmaciones son verdaderas o falsas y razona la respuesta:
+>
+> 1. El capital de una sociedad anónima está dividido en acciones y la responsabilidad de la sociedad es ilimitada.
+> 2. La parte de los beneficios que una SA reparte entre sus accionistas se denomina dividendo pasivo.
+> 3. Los trusts son asociaciones empresariales del mismo sector. Tienen control casi total sobre el mercado y se ponen de acuerdo en precios y ventas.
+> 4. Una *startup* es una empresa tradicional.
+
+::: {.callout-tip title="Solución comentada"}
+
+**1. Falso.**
+
+La primera parte es correcta: el capital de una SA sí se divide en acciones. Pero la responsabilidad de los socios es **limitada**, no ilimitada. Cada accionista solo arriesga el capital que ha aportado y no responde con su patrimonio personal ante las deudas de la sociedad.
+
+**2. Falso.**
+
+La parte de los beneficios que la SA distribuye periódicamente entre sus accionistas se llama **dividendo activo**. El **dividendo pasivo** es la parte del capital social que un accionista se comprometió a aportar en el momento de la constitución pero que aún no ha desembolsado. Son conceptos opuestos: uno es un cobro; el otro, una deuda del socio con la sociedad.
+
+**3. Verdadero.**
+
+Un trust es una forma de concentración empresarial en la que varias empresas del mismo sector se fusionan o quedan bajo control de una entidad superior, perdiendo su independencia. Su objetivo es crear un monopolio u oligopolio, fijando precios y limitando la competencia para maximizar beneficios. En muchos países está regulado o prohibido por las leyes de defensa de la competencia.
+
+**4. Falso.**
+
+Una startup no es una empresa tradicional. Se caracteriza por ser de reciente creación, estar fuertemente vinculada a la innovación tecnológica, tener un modelo de negocio **escalable** (puede crecer rápidamente sin aumentar proporcionalmente sus costes) y operar bajo un alto grado de incertidumbre sobre su viabilidad futura.
+
+:::
+
+---
+
+### Examen interno — Elección de forma jurídica razonada
+
+> *Elena, Marcos y Sofía han patentado un nuevo sistema de baterías de estado sólido. Necesitan 850.000 € (solo disponen de 150.000 €) y deben atraer a fondos de inversión y business angels. Los inversores exigen: (1) responsabilidad limitada al capital aportado y (2) que sus títulos de propiedad puedan transmitirse libremente.*
+>
+> a) ¿Qué forma jurídica recomendarías? *(0,75 p)*
+> b) Justifica la elección y explica por qué no sería adecuada una SL. *(1,25 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+**a) Forma jurídica recomendada: Sociedad Anónima (SA)**
+
+**b) Justificación**
+
+El enunciado plantea dos condiciones que deben cumplirse simultáneamente:
+
+**Condición 1 — Responsabilidad limitada:** tanto la SA como la SL ofrecen responsabilidad limitada. En ambas, los socios solo arriesgan el capital aportado y no responden con su patrimonio personal. Este requisito no diferencia entre las dos opciones.
+
+**Condición 2 — Libre transmisibilidad de los títulos:** aquí está la clave. En la **SA**, el capital se divide en **acciones**, que son títulos valores de transmisión libre. Un inversor puede vender sus acciones en cualquier momento sin necesitar el permiso de los demás socios. En la **SL**, el capital se divide en **participaciones**, cuya transmisión a terceros ajenos a la sociedad está legalmente restringida: los demás socios tienen derecho de adquisición preferente y pueden bloquear la venta. Esto incumple la condición innegociable de los inversores.
+
+Adicionalmente, la necesidad de 850.000 € de capital encaja perfectamente con la SA, cuyo capital mínimo de 60.000 € está diseñado precisamente para proyectos de gran envergadura que requieren atraer múltiples inversores.
+
+**Por qué no la SL:** aunque cumpliría la condición de responsabilidad limitada y su capital mínimo de 1 € no es un obstáculo, la SL tiene un carácter cerrado y familiar. La transmisión restringida de participaciones impediría a los inversores salir del proyecto libremente, incumpliendo la condición innegociable del enunciado.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Clasificación de formas jurídicas"}
+Indica la forma jurídica más adecuada para cada situación y justifica brevemente:
+
+a) Dos hermanos quieren montar una pequeña panadería con sus ahorros sin trámites complejos ni capital mínimo, y no les importa responder con su patrimonio personal.
+b) Un grupo de 15 agricultores quiere unirse para vender su producción conjuntamente, tomando decisiones de forma democrática (un socio, un voto).
+c) Una empresa tecnológica necesita captar 5 millones de euros de varios fondos de capital riesgo internacionales que exigen poder revender su participación libremente.
+
+::: {.callout-note title="Solución" collapse="true"}
+a) **Comunidad de bienes o Sociedad Civil**: sin capital mínimo, sencilla de constituir, responsabilidad ilimitada (aceptable si los socios lo asumen conscientemente).
+
+b) **Sociedad Cooperativa**: estructura democrática (un socio = un voto), responsabilidad limitada, diseñada para actividades en común entre sus miembros.
+
+c) **Sociedad Anónima**: responsabilidad limitada, capital dividido en acciones de libre transmisión, apta para grandes volúmenes de inversión y múltiples inversores.
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — Verdadero o falso"}
+Indica si son verdaderas o falsas y razona:
+
+a) En una Sociedad Cooperativa, el socio con más capital aportado tiene más votos en la asamblea general.
+b) El empresario individual tributa por el Impuesto de Sociedades.
+c) La principal diferencia entre leasing y renting es que el leasing incluye opción de compra y el renting no.
+d) Un cártel y un trust son dos formas equivalentes de concentración empresarial.
+
+::: {.callout-note title="Solución" collapse="true"}
+a) **Falso.** En la cooperativa rige el principio democrático: un socio, un voto, independientemente del capital aportado.
+
+b) **Falso.** El empresario individual tributa por el **IRPF** (Impuesto sobre la Renta de las Personas Físicas), no por el Impuesto de Sociedades, que es el que aplica a las sociedades mercantiles.
+
+c) **Verdadero.** En el leasing, al finalizar el contrato el arrendatario puede comprar el bien a un precio residual pactado. En el renting no existe esa opción: se devuelve el bien o se renueva el contrato.
+
+d) **Falso.** Son formas distintas. El **trust** implica fusión o control efectivo de varias empresas bajo una entidad superior (pierden independencia). El **cártel** es un acuerdo entre empresas independientes para coordinar precios o repartirse el mercado sin fusionarse. El cártel está prohibido en la mayoría de países; el trust está regulado pero no siempre prohibido.
+:::
+:::

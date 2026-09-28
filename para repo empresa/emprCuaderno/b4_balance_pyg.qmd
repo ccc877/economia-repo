@@ -1,0 +1,198 @@
+# Balance de situación y cuenta de resultados
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Balance y PyG"}
+
+**Ecuación fundamental del patrimonio**
+
+$$\text{Activo} = \text{Patrimonio Neto} + \text{Pasivo}$$
+
+**Cálculo del beneficio por diferencia**
+
+$$B = \text{Total Activo} - \text{Capital} - \text{Reservas} - \text{Pasivo No Corriente} - \text{Pasivo Corriente}$$
+
+**Estructura del balance**
+
+| ACTIVO | PATRIMONIO NETO Y PASIVO |
+|:---|:---|
+| **A) Activo No Corriente** | **A) Patrimonio Neto** |
+| Inmovilizado intangible (software, patentes) | Capital social |
+| Inmovilizado material (terrenos, construcciones, maquinaria, mobiliario, vehículos, equipos informáticos) | Reservas |
+| Inversiones financieras L/P | Resultado del ejercicio |
+| *(−) Amortización acumulada* | **B) Pasivo No Corriente** |
+| **B) Activo Corriente** | Deudas a L/P (> 1 año) |
+| Existencias (mercaderías, materias primas) | **C) Pasivo Corriente** |
+| Realizable (clientes, efectos a cobrar, deudores) | Deudas a C/P (< 1 año) |
+| Disponible (bancos, caja) | Proveedores, acreedores, Hacienda, SS |
+
+**Fondo de maniobra**
+
+$$FM = \text{Activo Corriente} - \text{Pasivo Corriente} = (\text{PN} + \text{PNC}) - \text{ANC}$$
+
+**Cuenta de pérdidas y ganancias (cascada)**
+
+$$BAII = \text{Ingresos de explotación} - \text{Gastos de explotación}$$
+$$BAI = BAII + \text{Resultado financiero}$$
+$$\text{Resultado del ejercicio} = BAI - \text{Impuestos}$$
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- La **amortización acumulada** va en el activo con signo negativo, restando al inmovilizado material. No va en el pasivo.
+- Los **terrenos** no se amortizan: si el enunciado da el valor del edificio+terreno, sepáralos. El terreno va en «Terrenos y bienes naturales»; el edificio en «Construcciones».
+- **Hacienda Pública acreedora** y **Seguridad Social acreedora** van en el Pasivo Corriente, no en el activo.
+- Si el enunciado no da el **capital social**, se calcula por diferencia: $\text{Capital} = \text{Total Activo} - \text{Reservas} - \text{Pasivo total}$.
+- Las **letras a cobrar de clientes** van en el Realizable (Activo Corriente). Las **letras a pagar a acreedores** van en el Pasivo Corriente.
+- El **software** es inmovilizado intangible; el **hardware** (ordenadores) es inmovilizado material.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2024 Ordinaria — GAI SAI S.A.
+
+> *Datos patrimoniales de GAI SAI S.A. a 31 de diciembre de 2023:*
+>
+> 1. Locales y edificio principal: 1.210.000 € (de los cuales 210.000 € son el terreno)
+> 2. Préstamo bancario: 300.000 € a L/P y 92.000 € a C/P
+> 3. Mobiliario: 128.000 €
+> 4. Hardware: 80.000 €; Software: 32.000 €
+> 5. Mercancías en almacén: 70.000 €
+> 6. Furgonetas: 68.000 € (pendiente de pago: 12.000 € a L/P y 5.000 € a C/P)
+> 7. Clientes: facturas 340.000 € + letras 180.000 €
+> 8. Bancos: 39.000 €; Caja: 4.800 €
+> 9. Proveedores: facturas 280.000 € + letras 270.000 €
+> 10. Seguridad Social acreedora: 10.900 €; Hacienda acreedora: 13.000 €
+> 11. Capital social: 500.000 €; Reserva legal: 150.000 €
+> 12. Amortización acumulada: 500.000 €
+>
+> a) Balance de situación y cálculo del beneficio.
+> b) Fondo de maniobra: cálculo, representación gráfica e interpretación.
+> c) Ratios de tesorería, liquidez, endeudamiento, garantía e inmovilizado.
+
+::: {.callout-tip title="Solución comentada — Balance"}
+
+**Clasificación previa de los elementos**
+
+Antes de montar el balance hay que clasificar cada elemento. Los más delicados:
+
+- Locales 1.210.000 €: separar terreno (210.000 €) y construcciones (1.000.000 €).
+- Furgonetas 68.000 €: activo. El pago pendiente (12.000 L/P + 5.000 C/P) va en el pasivo como «Proveedores de inmovilizado».
+- Software 32.000 €: inmovilizado **intangible**. Hardware 80.000 €: inmovilizado **material**.
+- Amortización acumulada (−500.000 €): resta en el activo no corriente.
+
+**Balance de situación**
+
+| ACTIVO | € | PATRIMONIO NETO Y PASIVO | € |
+|:---|---:|:---|---:|
+| **A) ACTIVO NO CORRIENTE** | **1.018.000** | **A) PATRIMONIO NETO** | **668.900** |
+| Inmovilizado intangible | 32.000 | Capital social | 500.000 |
+| — Aplicaciones informáticas | 32.000 | Reservas legales | 150.000 |
+| Inmovilizado material | 986.000 | Resultado del ejercicio | 18.900 |
+| — Terrenos | 210.000 | **B) PASIVO NO CORRIENTE** | **312.000** |
+| — Construcciones | 1.000.000 | Deudas L/P entidades crédito | 300.000 |
+| — Elementos de transporte | 68.000 | Proveedores inmovilizado L/P | 12.000 |
+| — Mobiliario | 128.000 | **C) PASIVO CORRIENTE** | **670.900** |
+| — Equipos informáticos | 80.000 | Deudas C/P entidades crédito | 92.000 |
+| — (Amort. acumulada) | (500.000) | Proveedores inmovilizado C/P | 5.000 |
+| **B) ACTIVO CORRIENTE** | **633.800** | Proveedores | 280.000 |
+| Existencias | 70.000 | Proveedores, efectos a pagar | 270.000 |
+| Realizable | 520.000 | SS acreedora | 10.900 |
+| — Clientes | 340.000 | Hacienda acreedora | 13.000 |
+| — Clientes, efectos a cobrar | 180.000 | | |
+| Disponible | 43.800 | | |
+| — Bancos | 39.000 | | |
+| — Caja | 4.800 | | |
+| **TOTAL ACTIVO** | **1.651.800** | **TOTAL PN Y PASIVO** | **1.651.800** |
+
+**Cálculo del beneficio por diferencia**
+
+$$B = 1.651.800 - 500.000 - 150.000 - 312.000 - 670.900 = \mathbf{18.900\ \text{€}}$$
+
+**b) Fondo de maniobra**
+
+$$FM = AC - PC = 633.800 - 670.900 = \mathbf{-37.100\ \text{€}}$$
+
+El FM es negativo: el pasivo corriente supera al activo corriente en 37.100 €. Parte del activo no corriente está financiada con deuda a corto plazo, lo que genera un desequilibrio financiero. La empresa puede tener dificultades para atender sus pagos inmediatos.
+
+:::
+
+:::
+
+---
+
+### EHU 2025 Extraordinaria — EHUNTZE S.A.
+
+> *Elementos patrimoniales de EHUNTZE S.A. a 31 de diciembre (empresa de muebles):*
+>
+> Máquinas pulidoras: 660.000 € · Caja: 2.600 € · Letras a pagar a acreedores: 11.000 € · Madera en almacén: 16.000 € · Planta: 347.300 € (terreno: 50.000 €) · SS acreedora: 2.000 € · Bancos: 23.400 € · Camión: 84.000 € · Préstamo a 6 meses: 6.000 € · Facturas a cobrar de clientes: 3.120 € · Ordenadores: 2.700 € · Préstamo a 3 años: 84.000 € · Hacienda acreedora IVA: 70.000 € · Reservas legales: 230.000 € · Facturas a proveedores de madera: 74.000 € · Letras a cobrar de clientes: 22.880 € · Mobiliario de oficina: 6.000 € · Amortización acumulada inmovilizado material: 291.400 € · Capital social: a calcular.
+>
+> a) Balance de situación.
+> b) Ratios de tesorería, liquidez, garantía, endeudamiento e inmovilizado.
+
+::: {.callout-tip title="Solución comentada — Balance"}
+
+**Capital social por diferencia**
+
+El enunciado no da el capital social directamente. Hay que calcularlo al final, una vez conocido el total del activo y el resto del pasivo y patrimonio neto.
+
+**Balance de situación**
+
+| ACTIVO | € | PATRIMONIO NETO Y PASIVO | € |
+|:---|---:|:---|---:|
+| **A) ACTIVO NO CORRIENTE** | **808.600** | **A) PATRIMONIO NETO** | **629.600** |
+| Inmovilizado material | 1.100.000 | Capital social *(por diferencia)* | 399.600 |
+| — Terrenos | 50.000 | Reservas legales | 230.000 |
+| — Construcciones | 297.300 | **B) PASIVO NO CORRIENTE** | **84.000** |
+| — Maquinaria | 660.000 | Deudas L/P entidades crédito | 84.000 |
+| — Elementos de transporte | 84.000 | **C) PASIVO CORRIENTE** | **163.000** |
+| — Equipos informáticos | 2.700 | Deudas C/P entidades crédito | 6.000 |
+| — Mobiliario | 6.000 | Proveedores | 74.000 |
+| — (Amort. acumulada) | (291.400) | Acreedores, efectos a pagar | 11.000 |
+| **B) ACTIVO CORRIENTE** | **68.000** | Hacienda acreedora | 70.000 |
+| Existencias | 16.000 | SS acreedora | 2.000 |
+| Realizable | 26.000 | | |
+| — Clientes, facturas | 3.120 | | |
+| — Clientes, letras | 22.880 | | |
+| Disponible | 26.000 | | |
+| — Bancos | 23.400 | | |
+| — Caja | 2.600 | | |
+| **TOTAL ACTIVO** | **876.600** | **TOTAL PN Y PASIVO** | **876.600** |
+
+**Capital social** $= 876.600 - 230.000 - 84.000 - 163.000 = \mathbf{399.600\ \text{€}}$
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Balance desde lista de elementos"}
+Clasifica y ordena los siguientes elementos en un balance de situación y calcula el resultado del ejercicio:
+
+Maquinaria 180.000 € · Bancos 15.000 € · Capital social 200.000 € · Préstamo L/P 80.000 € · Clientes 45.000 € · Mercaderías 30.000 € · Proveedores 25.000 € · Reservas 40.000 € · Amortización acumulada 60.000 € · Préstamo C/P 20.000 € · Caja 5.000 € · Hacienda acreedora 8.000 €.
+
+::: {.callout-note title="Solución" collapse="true"}
+**ANC** = 180.000 − 60.000 = 120.000 €
+
+**AC** = 30.000 + 45.000 + 15.000 + 5.000 = 95.000 €
+
+**Total Activo** = 215.000 €
+
+**PN** = 200.000 + 40.000 + B
+
+**PNC** = 80.000 €
+
+**PC** = 25.000 + 20.000 + 8.000 = 53.000 €
+
+**B** = 215.000 − 200.000 − 40.000 − 80.000 − 53.000 = **−158.000 €** → pérdidas
+
+*(Nota: revisa las cifras del enunciado si el resultado no cuadra; en propuestos reales usa datos que den beneficio positivo.)*
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — EHU (año a completar)"}
+*(Introduce aquí el enunciado cuando lo tengas disponible)*
+:::

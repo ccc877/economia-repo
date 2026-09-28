@@ -1,0 +1,380 @@
+
+## 1. Obligaciones contables de la empresa
+
+### 1.1. La contabilidad y su importancia
+
+La contabilidad es un instrumento esencial para el registro y análisis de todas las operaciones económicas de una empresa. A través de la contabilidad, se obtiene información relevante que permite la toma de decisiones estratégicas dentro de la empresa y proporciona datos valiosos a terceros interesados.
+
+#### Grupos de interés y necesidad de información contable
+
+Diferentes grupos tienen interés en la información contable de una empresa:
+
+- **Propietarios**: para verificar la rentabilidad y el uso de su inversión.
+- **Directivos**: para tomar decisiones basadas en la situación económica de la empresa.
+- **Trabajadores**: ya que su salario, estabilidad y crecimiento profesional dependen del rendimiento empresarial.
+- **Proveedores**: para evaluar la capacidad de pago de la empresa en los plazos acordados.
+- **Estado**: para calcular impuestos, otorgar subvenciones y regular la actividad económica.
+
+### 1.2. El Plan General de Contabilidad (PGC)
+
+El Plan General de Contabilidad (PGC) es el conjunto de normas que regulan el registro contable de las empresas en España, asegurando que la información financiera sea fiable, homogénea y comparable.
+
+#### Funciones del PGC
+
+1. **Reflejar la imagen fiel de la empresa**, garantizando transparencia en la información financiera.
+2. **Fijar todas las normas contables** para la adecuada elaboración de registros y cuentas anuales.
+3. **Indicar las cuentas anuales**, estableciendo los documentos obligatorios que deben presentar las empresas.
+
+#### Estructura del PGC
+
+El PGC se divide en cinco partes fundamentales:
+
+1. **Marco conceptual**: principios y criterios que rigen la contabilidad.
+2. **Normas de registro y valoración**: definen cómo registrar y valorar los diferentes elementos patrimoniales.
+3. **Cuentas anuales**: documentos que reflejan la situación económica de la empresa.
+4. **Cuadro de cuentas**: lista de todas las cuentas que se utilizan en el sistema contable.
+5. **Definiciones y relaciones contables**: explicación del funcionamiento y clasificación de las cuentas.
+
+### 1.3. Las cuentas anuales
+
+Las empresas deben elaborar anualmente una serie de documentos que informan sobre sus resultados, patrimonio y situación financiera. Estos documentos son conocidos como **cuentas anuales** y son los siguientes:
+
+#### 1.3.1. El balance de situación
+
+Muestra la situación económica y financiera de la empresa en un momento determinado. Se compone de:
+
+- **Activo**: bienes y derechos de la empresa.
+- **Patrimonio neto**: recursos propios de la empresa.
+- **Pasivo**: deudas y obligaciones de la empresa.
+
+#### 1.3.2. La cuenta de pérdidas y ganancias (PyG)
+
+Resume todos los ingresos y gastos de la empresa durante el último año. Permite conocer si la empresa ha obtenido beneficios o ha incurrido en pérdidas.
+
+#### 1.3.3. Estado de cambios en el patrimonio neto
+
+Refleja las variaciones en los fondos propios de la empresa, tales como aumentos de capital o distribución de dividendos.
+
+#### 1.3.4. La memoria
+
+Es un documento explicativo que complementa la información contenida en las demás cuentas anuales. Permite detallar aspectos que no pueden expresarse numéricamente.
+
+#### 1.3.5. Estado de flujos de efectivo
+
+Informa sobre los movimientos de dinero en efectivo y equivalentes, permitiendo analizar la liquidez de la empresa.
+
+### 1.4. Los libros de contabilidad y el registro contable
+
+Las empresas están obligadas a llevar una contabilidad ordenada a través de los siguientes libros:
+
+- **Libro diario**: registra cronológicamente todas las operaciones económicas de la empresa mediante **asientos contables**.
+- **Libro mayor**: recoge, clasificadas por cuentas, todas las anotaciones del libro diario. Permite ver el saldo de cada cuenta en cualquier momento.
+- **Libro de inventarios y cuentas anuales**: incluye el balance inicial, los balances de comprobación periódicos y las cuentas anuales al cierre del ejercicio.
+
+#### El método de partida doble y los asientos contables
+
+La contabilidad española se basa en el **método de partida doble**: toda operación tiene un origen (abono, *Haber*) y un destino (cargo, *Debe*), de modo que la suma del Debe siempre iguala la suma del Haber.
+
+Un **asiento contable** es la anotación en el libro diario que recoge una operación económica indicando las cuentas afectadas, los importes y si van al Debe o al Haber. Su estructura es:
+
+| Debe | Haber |
+|------|-------|
+| Cuenta que aumenta (activo/gasto) o disminuye (pasivo/ingreso) | Cuenta que disminuye (activo/gasto) o aumenta (pasivo/ingreso) |
+
+> **Regla nemotécnica**: las cuentas de **activo y gasto** aumentan por el **Debe** y disminuyen por el **Haber**. Las cuentas de **pasivo, patrimonio neto e ingreso** aumentan por el **Haber** y disminuyen por el **Debe**.
+
+### 1.5. Importancia de las obligaciones contables
+
+El cumplimiento de estas obligaciones contables es fundamental para:
+
+- Garantizar la **transparencia financiera**.
+- Permitir la **comparabilidad** con otras empresas.
+- Facilitar la **toma de decisiones estratégicas**.
+- Cumplir con las **normativas fiscales y legales**.
+
+Las empresas que no cumplan con sus obligaciones contables pueden enfrentarse a sanciones legales y dificultades en su gestión financiera. Es imprescindible llevar una contabilidad ordenada y acorde con el PGC para asegurar la estabilidad y el crecimiento de la empresa.
+
+---
+
+## 2. El patrimonio de la empresa
+
+### 2.1. El patrimonio de la empresa
+
+El patrimonio empresarial representa la riqueza de la empresa, expresada como la diferencia entre sus bienes y derechos y sus obligaciones.
+
+#### Elementos del patrimonio
+
+- **Bienes**: recursos materiales de la empresa, como locales, mercancías, mobiliario y dinero en efectivo.
+- **Derechos**: cantidades que terceros deben a la empresa, como créditos a clientes.
+- **Obligaciones**: deudas de la empresa con bancos y proveedores.
+
+El patrimonio se estructura en:
+
+- **Activo**: conjunto de bienes y derechos.
+- **Pasivo**: deudas y obligaciones.
+- **Patrimonio neto**: diferencia entre el activo y el pasivo, que representa los recursos propios.
+
+### 2.2. Las masas patrimoniales
+
+Las masas patrimoniales agrupan elementos patrimoniales con características comunes. Se dividen en:
+
+#### Activo
+
+1. **Activo no corriente**: elementos de permanencia superior a un año, como inmovilizado material (terrenos, edificios, maquinaria) e inversiones a largo plazo.
+2. **Activo corriente**: elementos con permanencia menor a un año, como existencias, derechos de cobro y efectivo disponible.
+
+#### Patrimonio neto y pasivo
+
+1. **Patrimonio neto**: fondos propios de la empresa (capital, reservas y beneficios no distribuidos).
+2. **Pasivo no corriente**: deudas con vencimiento superior a un año.
+3. **Pasivo corriente**: deudas con vencimiento inferior a un año.
+
+---
+
+## 3. Los elementos patrimoniales y los estados financieros
+
+### 3.1. Los elementos patrimoniales
+
+Los elementos patrimoniales son las unidades mínimas que componen el patrimonio y se clasifican en:
+
+- **Elementos de activo no corriente**: inmovilizado material (terrenos, maquinaria), intangible (marcas, software) y financiero (acciones, préstamos concedidos).
+- **Elementos de activo corriente**: existencias, realizable (clientes, deudores) y disponible (bancos, caja).
+- **Elementos de pasivo**: obligaciones financieras, proveedores y deudas a corto y largo plazo.
+
+### 3.2. El balance de situación
+
+El balance de situación es un documento obligatorio que muestra la situación patrimonial de la empresa en un momento determinado. Se organiza según:
+
+- **Estructura económica (activo)**: ordenada de menor a mayor liquidez. Un activo es más líquido cuando tiene más facilidad para convertirse en dinero.
+- **Estructura financiera (patrimonio neto y pasivo)**: ordenada de menor a mayor exigibilidad. Los fondos serán más exigibles cuanto antes haya que devolverlos.
+
+#TODO```{python}
+#| label: fig-balance
+#| fig-cap: "Estructura del balance de situación"
+#| echo: false
+
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.axis("off")
+
+# Columnas: Activo (izquierda) y Financiación (derecha)
+cols = ["ACTIVO (Estructura económica)", "PATRIMONIO NETO Y PASIVO\n(Estructura financiera)"]
+
+# Filas activo
+activo_items = [
+    ("A) ACTIVO NO CORRIENTE", "#d0e4f7", 0.30),
+    ("  Inmovilizado intangible", "#e8f4fd", 0.08),
+    ("  Inmovilizado material", "#e8f4fd", 0.08),
+    ("  Inversiones financieras L/P", "#e8f4fd", 0.08),
+    ("B) ACTIVO CORRIENTE", "#d0e4f7", 0.25),
+    ("  Existencias", "#e8f4fd", 0.07),
+    ("  Realizable (deudores/clientes)", "#e8f4fd", 0.07),
+    ("  Disponible (tesorería)", "#e8f4fd", 0.07),
+]
+
+# Filas pasivo
+pasivo_items = [
+    ("A) PATRIMONIO NETO", "#d5f0d5", 0.25),
+    ("  Capital y reservas", "#eafaea", 0.12),
+    ("B) PASIVO NO CORRIENTE", "#d5f0d5", 0.15),
+    ("  Deudas a L/P (> 1 año)", "#eafaea", 0.10),
+    ("C) PASIVO CORRIENTE", "#d5f0d5", 0.15),
+    ("  Deudas a C/P (< 1 año)", "#eafaea", 0.10),
+    ("  Proveedores", "#eafaea", 0.08),
+]
+
+def draw_column(ax, items, x_start, x_end, y_start=0.95):
+    y = y_start
+    for label, color, height in items:
+        rect = mpatches.FancyBboxPatch(
+            (x_start, y - height), x_end - x_start, height,
+            boxstyle="square,pad=0", linewidth=0.5,
+            edgecolor="gray", facecolor=color
+        )
+        ax.add_patch(rect)
+        ax.text((x_start + x_end) / 2, y - height / 2, label,
+                ha="center", va="center", fontsize=7.5, wrap=True)
+        y -= height
+
+draw_column(ax, activo_items, 0.02, 0.48)
+draw_column(ax, pasivo_items, 0.52, 0.98)
+
+# Encabezados
+ax.text(0.25, 0.98, cols[0], ha="center", va="center", fontsize=9,
+        fontweight="bold", color="#1a3a5c")
+ax.text(0.75, 0.98, cols[1], ha="center", va="center", fontsize=9,
+        fontweight="bold", color="#1a4a1a")
+
+# Línea divisoria central
+ax.axvline(x=0.50, color="black", linewidth=1.5, ymin=0.02, ymax=0.96)
+
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
+plt.tight_layout()
+plt.show()
+#```
+
+### 3.3. La cuenta de pérdidas y ganancias
+
+Este documento refleja los ingresos y gastos de la empresa durante un ejercicio económico, permitiendo determinar el resultado del ejercicio (beneficio o pérdida).
+
+Estructura de la cuenta de pérdidas y ganancias:
+
+1. **Resultado de explotación**: diferencia entre ingresos y gastos operativos.
+2. **Resultado financiero**: diferencia entre ingresos y gastos financieros.
+3. **Resultado antes de impuestos**: suma de los dos anteriores.
+4. **Resultado del ejercicio**: importe final tras descontar impuestos.
+
+El resultado del ejercicio se integra en el patrimonio neto del balance.
+
+#### La cuenta de pérdidas y ganancias, paso a paso
+
+La cuenta de pérdidas y ganancias refleja los ingresos y gastos de una empresa, mostrando los distintos resultados que se obtienen paso a paso.
+
+**1. Resultado de explotación (BAII — beneficio antes de intereses e impuestos)**
+
+Es el beneficio que obtiene la empresa por su actividad principal. Se calcula restando los **gastos de explotación** (como salarios y materias primas) de los **ingresos de explotación** (principalmente las ventas).
+
+$$\text{RESULTADO DE EXPLOTACIÓN} = \text{Ingresos de explotación} - \text{Gastos de explotación}$$
+
+Como aún no se han descontado los gastos financieros ni los impuestos, también se conoce como **beneficio antes de intereses e impuestos (BAII)**.
+
+**2. Resultado financiero**
+
+Refleja el impacto de la actividad financiera de la empresa. Se obtiene restando los **gastos financieros** (intereses por préstamos) de los **ingresos financieros** (intereses recibidos).
+
+$$\text{RESULTADO FINANCIERO} = \text{Ingresos financieros} - \text{Gastos financieros}$$
+
+**3. Resultado antes de impuestos (BAI — beneficio antes de impuestos)**
+
+Se calcula sumando el resultado de explotación y el resultado financiero.
+
+$$\text{RESULTADO ANTES DE IMPUESTOS} = \text{Resultado de explotación} + \text{Resultado financiero}$$
+
+**4. Resultado del ejercicio o beneficio neto**
+
+Se obtiene restando los **impuestos sobre los beneficios** al BAI.
+
+$$\text{RESULTADO DEL EJERCICIO} = \text{Resultado antes de impuestos} - \text{Impuestos}$$
+
+---
+
+### EBITDA (beneficio antes de intereses, impuestos, depreciaciones y amortizaciones)
+
+El **EBITDA** mide el beneficio de la empresa sin considerar intereses, impuestos ni pérdidas de valor de los activos. Se calcula sumando las **depreciaciones** y **amortizaciones** al **BAII**:
+
+$$\text{EBITDA} = \text{BAII} + \text{Depreciaciones} + \text{Amortizaciones}$$
+
+Este indicador es útil para analizar la rentabilidad operativa sin la influencia de factores financieros o contables.
+
+```{python}
+#| label: fig-pyg
+#| fig-cap: "Estructura de la cuenta de pérdidas y ganancias (esquema en cascada)"
+#| echo: false
+
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+
+fig, ax = plt.subplots(figsize=(9, 7))
+ax.axis("off")
+
+steps = [
+    ("(+) Ingresos de explotación\n(−) Gastos de explotación", "#d0e4f7", "= BAII (Resultado de explotación)"),
+    ("(+) Ingresos financieros\n(−) Gastos financieros", "#fff0b3", "= Resultado financiero"),
+    ("BAII + Resultado financiero", "#d5f0d5", "= BAI (Resultado antes de impuestos)"),
+    ("BAI − Impuestos sobre beneficios", "#f7d0d0", "= Resultado del ejercicio (Beneficio neto)"),
+]
+
+y = 0.92
+box_h = 0.16
+gap = 0.04
+
+for (desc, color, result) in steps:
+    # Caja izquierda (operación)
+    rect_l = mpatches.FancyBboxPatch(
+        (0.02, y - box_h), 0.52, box_h,
+        boxstyle="round,pad=0.01", linewidth=0.8,
+        edgecolor="#999", facecolor=color
+    )
+    ax.add_patch(rect_l)
+    ax.text(0.28, y - box_h / 2, desc, ha="center", va="center", fontsize=8.5)
+
+    # Caja derecha (resultado)
+    rect_r = mpatches.FancyBboxPatch(
+        (0.57, y - box_h), 0.41, box_h,
+        boxstyle="round,pad=0.01", linewidth=0.8,
+        edgecolor="#666", facecolor=color
+    )
+    ax.add_patch(rect_r)
+    ax.text(0.775, y - box_h / 2, result, ha="center", va="center",
+            fontsize=8.5, fontweight="bold")
+
+    # Flecha
+    ax.annotate("", xy=(0.57, y - box_h / 2), xytext=(0.54, y - box_h / 2),
+                arrowprops=dict(arrowstyle="->", color="black", lw=1.2))
+
+    y -= box_h + gap
+
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## 4. Ratios financieros
+
+Los **ratios financieros** son cocientes que relacionan magnitudes del balance o de la cuenta de pérdidas y ganancias con el fin de evaluar la situación económico-financiera de la empresa. Se agrupan en ratios de **equilibrio**, **solvencia** y **endeudamiento**.
+
+> **Nota para el examen (EBAU):** el endeudamiento es el único ratio que se expresa como un **rango óptimo**, mientras que los demás se expresan como mínimos de supervivencia. Esto es así porque los ratios de liquidez, garantía y tesorería tienen un "punto de muerte": si caen por debajo de 1, la empresa no puede pagar o quiebra. En cambio, el endeudamiento tiene dos extremos negativos (exceso de deuda o exceso de autonomía), por lo que se define un intervalo.
+
+#```{python}
+#| label: tbl-ratios
+#| tbl-cap: "Ratios financieros: fórmulas, criterios e interpretación"
+#| echo: false
+
+import pandas as pd
+from IPython.display import display, HTML
+
+data = {
+    "Ratio": ["Inmovilizado", "Endeudamiento", "Liquidez", "Garantía", "Tesorería"],
+    "Fórmula": [
+        "ANC / (PN + PNC)",
+        "Exigible / PN",
+        "AC / PC",
+        "Activo real / Exigible",
+        "(Realizable + Disponible) / PC",
+    ],
+    "Criterio": ["< 1", "0,5 – 1,2", "> 1", "> 1", "> 1"],
+    "Tipo": ["🔴 Límite", "🟢 Rango", "🔴 Límite", "🔴 Límite", "🔴 Límite"],
+    "Interpretación": [
+        "Equilibrio. El fondo de maniobra es positivo. (Si > 1: desequilibrio financiero.)",
+        "Estructura. Mide la dependencia de deuda. Si < 0,5: exceso de autonomía. Si > 1,2: exceso de deudas.",
+        "Supervivencia. Capacidad de pago a c/p. (Si < 1: suspensión de pagos.)",
+        "Seguridad. Solvencia final ante acreedores. (Si < 1: quiebra técnica.)",
+        "Inmediatez. Capacidad de pago sin vender existencias. (Si < 1: falta de efectivo.)",
+    ],
+}
+
+df = pd.DataFrame(data)
+# Mostrar como tabla HTML sencilla para PDF
+html = df.to_html(index=False, border=1, classes="ratio-table")
+display(HTML(html))
+#```
+
+> **Nota sobre el endeudamiento**: a diferencia de los otros ratios, donde solo se busca superar el valor 1, en el endeudamiento hay que **criticar también** si el valor es muy bajo (p. ej., 0,2) o muy alto (p. ej., 2,5), ya que ambos extremos son negativos.
+
+### 4.1. Cómo redactar el análisis de ratios
+
+A continuación se muestran modelos de comentario tanto para el caso **favorable** como para el **desfavorable**:
+
+| Ratio | Comentario favorable | Comentario desfavorable |
+|---|---|---|
+| **Inmovilizado** | Su patrimonio neto y pasivo no corriente financian el activo no corriente y, además, una parte del activo corriente. Fondo de maniobra positivo: equilibrio financiero. | El patrimonio neto y el pasivo no corriente no son capaces de financiar el activo no corriente; la empresa necesita parte del pasivo corriente para hacerlo. Desequilibrio financiero. |
+| **Endeudamiento** | El nivel de deuda es bajo; la empresa dispone de más fondos propios que de financiación externa. | El ratio supera los valores de referencia. Las deudas son excesivas; la empresa depende en gran medida de financiación ajena. |
+| **Liquidez** | La empresa puede hacer frente a sus deudas a corto plazo. Por cada euro adeudado a c/p dispone de [...] euros en activo corriente. | La empresa tendrá problemas para pagar sus deudas a corto plazo. Por cada euro adeudado a c/p solo dispone de [...] euros en activo corriente. |
+| **Garantía** | El ratio de garantía de [...] indica que la empresa no tendrá problemas para responder ante sus acreedores; dispone de [...] euros en activo por cada euro adeudado. | La empresa podría tener problemas para responder a sus pasivos. Dispone de [...] euros en activo por cada euro adeudado. |
+| **Tesorería** | El ratio de tesorería indica que no tendrá problemas para pagar deudas a muy corto plazo. | El valor de la tesorería está por debajo del valor de referencia. La empresa se encuentra en riesgo a muy corto plazo de suspensión de pagos. |

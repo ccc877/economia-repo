@@ -1,0 +1,772 @@
+# Modelos de negocio {#sec-modelos-negocio}
+
+## ¿Qué es un modelo de negocio?
+
+Un **modelo de negocio** es la forma en la que una empresa **crea, entrega y captura valor**. Dicho de otro modo, describe cómo la empresa va a satisfacer las necesidades de los clientes a través de un producto o servicio, cómo ese producto llega hasta ellos y cómo la empresa obtiene ingresos a cambio.
+
+::: {.callout-note title="Tres dimensiones del valor"}
+Todo modelo de negocio se articula en torno a tres preguntas:
+
+- **¿Qué valor creamos?** → la propuesta de valor: qué problema resolvemos o qué necesidad cubrimos.
+- **¿Cómo lo entregamos?** → canales, procesos y actividades necesarios para que el cliente lo reciba.
+- **¿Cómo capturamos valor?** → fuentes de ingresos que hacen al modelo económicamente sostenible.
+:::
+
+Los modelos de negocio se dividen en dos grandes categorías: los **modelos tradicionales**, que han funcionado durante décadas, y los **nuevos modelos de negocio**, surgidos principalmente al calor de las tecnologías digitales.
+
+
+## Modelos de negocio tradicionales
+
+### Fabricante
+
+El fabricante transforma materias primas o componentes en productos terminados y los vende, habitualmente a través de intermediarios.
+
+**Características principales:**
+
+- La producción puede ir desde la elaboración artesanal hasta la fabricación industrial en masa.
+- El control de calidad y la gestión de la cadena de suministro son factores críticos de éxito.
+- Los canales de venta suelen depender de distribuidores o minoristas para llegar al mercado con eficiencia.
+
+::: {.callout-tip title="Ejemplos"}
+**Intel** fabrica microprocesadores que otras empresas tecnológicas incorporan a sus productos. **Toyota** produce automóviles que distribuye a través de una red global de concesionarios. **Procter & Gamble** fabrica bienes de consumo —desde detergentes hasta productos de cuidado personal— para su venta en supermercados de todo el mundo.
+:::
+
+### Distribuidor
+
+El distribuidor actúa como intermediario entre el fabricante y el punto de venta final. Compra grandes volúmenes al fabricante y los revende a minoristas u otros clientes.
+
+**Características principales:**
+
+- Gestiona la logística, el almacenamiento y el transporte de la mercancía.
+- Aporta una red comercial y de contactos que el fabricante no siempre posee por sí mismo.
+- Asume el riesgo de inventario: si el producto no se vende o queda obsoleto, la pérdida recae sobre él.
+
+::: {.callout-tip title="Ejemplos"}
+Los **concesionarios de automóviles** adquieren vehículos del fabricante y los venden al público. **Sysco** distribuye alimentos y suministros para restaurantes y empresas del sector de la hostelería a escala masiva.
+:::
+
+### Venta directa
+
+Este modelo elimina a los intermediarios: la empresa vende directamente al consumidor final, en persona, por catálogo, por teléfono o, cada vez más, a través de plataformas en línea.
+
+**Características principales:**
+
+- Al no haber intermediarios, el margen de beneficio suele ser mayor.
+- Permite una relación más cercana con el cliente y facilita la obtención de *feedback* directo.
+- Los vendedores suelen ser distribuidores independientes con autonomía sobre su horario y estrategia de venta.
+
+::: {.callout-tip title="Ejemplos"}
+**Avon** y **Mary Kay** usan redes de representantes independientes para vender cosméticos directamente a los consumidores. **Tupperware** popularizó las «fiestas en casa» como espacio de demostración y venta.
+:::
+
+### Franquicia
+
+La franquicia es un acuerdo por el que una empresa —el **franquiciador**— cede a un tercero —el **franquiciado**— el derecho a utilizar su marca, productos y modelo de negocio, a cambio de una tarifa inicial y pagos periódicos (*royalties*).
+
+**Características principales:**
+
+- El franquiciado opera una réplica de un negocio ya probado y rentable, lo que reduce el riesgo de fracaso.
+- El franquiciador proporciona formación, asistencia técnica y estrategias de *marketing*.
+- Para mantener la consistencia de la marca, el franquiciado debe adherirse estrictamente a las directrices del franquiciador.
+
+::: {.callout-tip title="Ejemplos"}
+**McDonald's** y **Subway** son dos de las franquicias de comida rápida más reconocidas del mundo, con miles de restaurantes operados por franquiciados. **Century 21** es una de las mayores franquicias inmobiliarias del mundo.
+:::
+
+### Modelo «cebo y anzuelo» (*Razor and blade*)
+
+También conocido como modelo de «productos atados», consiste en ofrecer un producto base a precio muy bajo —el **cebo**— para después generar ingresos recurrentes y significativos mediante la venta de consumibles, repuestos o servicios asociados —el **anzuelo**.
+
+**Características principales:**
+
+- La barrera de entrada para el consumidor es baja, lo que incentiva la compra inicial.
+- El beneficio real proviene de las compras repetitivas y necesarias para el uso del producto principal.
+- Una vez adquirido el producto base, el cliente queda ligado a la marca para los consumibles (*lock-in*).
+
+::: {.callout-tip title="Ejemplos clásicos"}
+- **Impresoras y cartuchos de tinta**: la impresora es económica, pero los cartuchos tienen un coste elevado y se consumen periódicamente.
+- **Maquinillas de afeitar y cuchillas**: el mango se vende a bajo coste; los beneficios provienen de la venta continua de las hojas de recambio.
+- **Consolas y videojuegos**: las consolas se comercializan con margen ajustado; la rentabilidad se obtiene con la venta de los juegos.
+:::
+
+
+## Nuevos modelos de negocio
+
+Los nuevos modelos de negocio han surgido principalmente gracias al desarrollo de las tecnologías digitales. Permiten a las empresas operar en entornos muy cambiantes con mayor agilidad y hacer frente a la incertidumbre que caracteriza los mercados del siglo XXI.
+
+| Modelo | Descripción | Ejemplo |
+|---|---|---|
+| **Freemium** | Versión básica gratuita; ingresos por funciones avanzadas de pago | Spotify, Google Drive |
+| **Publicidad** | Contenido gratuito para el usuario; ingresos por publicidad mostrada | YouTube, Facebook |
+| **Multiplataforma** | Distribución simultánea en múltiples canales (web, app, televisión…) | Netflix |
+| **Suscripción** | Tarifa periódica para acceder al servicio | Amazon Prime |
+| **Afiliación** | Comisión por redirigir clientes hacia otra empresa | *Influencers* con enlaces de referido |
+| **Aplicaciones móviles** | Ingresos por publicidad o compras dentro de la app | Candy Crush |
+| **Long tail** | Catálogo muy amplio de productos de nicho vendidos en pequeñas cantidades | Amazon (libros descatalogados) |
+
+: Principales nuevos modelos de negocio {#tbl-nuevos-modelos}
+
+::: {.callout-note title="¿Por qué importa el «long tail»?"}
+El concepto de **larga cola** (*long tail*), popularizado por Chris Anderson, explica que en un mercado digital los ingresos acumulados de miles de productos de nicho pueden superar a los de los pocos productos «superventas». Esto solo es posible cuando el coste de almacenamiento y distribución es prácticamente cero, como ocurre con la música, los libros digitales o las aplicaciones.
+:::
+
+### Patrones de modelos de negocio
+
+Más allá de los modelos individuales, los investigadores han identificado **patrones** que se repiten en muchas empresas exitosas. Conocerlos sirve como fuente de inspiración para diseñar modelos nuevos. Algunos de los más relevantes:
+
+- **Plataforma multilateral**: conecta a dos o más grupos de usuarios distintos (por ejemplo, compradores y vendedores en eBay, o anunciantes y lectores en un periódico digital). El valor se crea por la interacción entre los grupos.
+- **Modelo abierto** (*open business model*): la empresa colabora sistemáticamente con agentes externos para crear y capturar valor, ya sea integrando conocimiento externo o licenciando su propiedad intelectual (por ejemplo, Linux o Wikipedia).
+- **Desagregación** (*unbundling*): separar en negocios distintos tres tipos de actividades que tradicionalmente coexistían: relación con clientes, innovación de producto e infraestructura. Cada uno tiene dinámicas económicas y culturales diferentes.
+- **Gratuito**: alguno de los segmentos de clientes financia de forma cruzada a los demás (caso *freemium* o publicidad).
+
+::: {.callout-important title="Actividad — identificar patrones de modelo de negocio"}
+**Objetivo:** identificar y justificar el patrón de modelo de negocio de tres empresas conocidas.
+
+**Instrucciones:** para cada empresa, indica qué patrón utiliza y justifica tu respuesta con al menos un bloque del Canvas.
+
+| Empresa | Patrón principal | Justificación |
+|---------|-----------------|---------------|
+| **Airbnb** | Plataforma multilateral | Conecta anfitriones y viajeros; cobra comisiones a ambos lados. |
+| **Spotify** | Gratuito (*freemium*) | El segmento gratuito (con publicidad) financia el desarrollo; el *premium* aporta ingresos directos. |
+| **Wikipedia** | Modelo abierto | Contenido creado por voluntarios externos; se financia mediante donaciones, no por venta del producto. |
+
+**Para debatir:** ¿podría Airbnb adoptar también un modelo *freemium*? ¿Qué bloques del Canvas cambiarían?
+:::
+
+
+## La metodología *Lean Startup*
+
+La **metodología *Lean Startup***, desarrollada por Eric Ries, tiene como objetivo **validar la idea de negocio** antes de invertir grandes recursos en ella. Parte de la constatación de que la mayoría de las *startups* fracasan no por problemas técnicos, sino por falta de clientes: el producto se construye sin saber antes si alguien lo quiere.
+
+::: {.callout-warning title="El error del enfoque tradicional"}
+En el enfoque clásico, el emprendedor redacta un plan de negocio detallado, busca financiación y construye el producto final… para descubrir, a veces demasiado tarde, que el mercado no lo quería. El resultado: pérdida de mucho tiempo y dinero.
+
+El *Lean Startup* invierte este orden: primero se aprende, luego se construye.
+:::
+
+El *Lean Startup* propone un ciclo iterativo de aprendizaje:
+
+```
+Hipótesis → Crear (MVP) → Medir → Aprender → [repetir]
+```
+
+**Paso a paso:**
+
+1. **Establecer hipótesis**: el emprendedor plasma sus suposiciones sobre clientes, propuesta de valor y modelo de negocio, habitualmente con el *Canvas* (véase §2.5).
+2. **Crear el MVP** (*Minimum Viable Product*, producto mínimo viable): versión del producto con las características básicas, construida con el mínimo esfuerzo e inversión posibles. Puede ser un prototipo físico, un vídeo explicativo, una maqueta o incluso un dibujo.
+3. **Medir**: el MVP se presenta a clientes potenciales para registrar su reacción y grado de aceptación.
+4. **Aprender**: se analiza el *feedback* para decidir cómo ajustar la propuesta.
+
+Según los resultados del aprendizaje, la empresa puede:
+
+- **Iterar**: el MVP se ajusta bien a lo que los clientes quieren; se realizan pequeñas mejoras y el ciclo continúa.
+- **Pivotar**: el MVP no encaja con el mercado; se realiza un cambio importante en uno o más bloques del modelo de negocio, dándole un nuevo enfoque al negocio.
+
+### Las tres herramientas del *Lean Startup*
+
+::: {.callout-note title="Las tres herramientas del Lean Startup"}
+1. **Modelo *Canvas***: organiza las hipótesis iniciales del modelo de negocio (véase §2.5).
+2. **Desarrollo de clientes** (*Customer Development*): proceso de salir a hablar con clientes reales para validar las hipótesis antes de construir el producto.
+3. **Desarrollo de producto ágil**: construir el producto de forma incremental, añadiendo funcionalidades según el *feedback* recibido.
+:::
+
+### El desarrollo de clientes
+
+El **desarrollo de clientes** es, probablemente, el elemento más diferenciador del *Lean Startup*. La idea central es que las empresas fracasan fundamentalmente por no tener clientes suficientes, no por fallos técnicos. Por eso, antes de construir nada, hay que salir a la calle a validar si existe demanda real.
+
+El proceso consta de cuatro etapas:
+
+
+```{=typst}
+#figure(
+  caption: [Las cuatro etapas del modelo de Desarrollo de Clientes (_Customer Development_)],
+  table(
+    // Ajuste de columnas: número pequeño, nombre mediano, objetivo ocupa el resto (1fr)
+    columns: (auto, auto, 1fr),
+    
+    // Centramos el número, alineamos el resto a la izquierda. 
+    // 'horizon' centra el texto verticalmente dentro de la celda.
+    align: (center + horizon, left + horizon, left + horizon),
+    
+    // Encabezado de la tabla
+    table.header(
+      [*Etapa*], [*Nombre*], [*Objetivo*]
+    ),
+    
+    // Fila 1
+    [1], 
+    [*Descubrimiento de clientes*],[Contrastar si el problema existe realmente, si es importante para el cliente y si nuestra hipótesis de producto lo resuelve (_encaje problema-solución_).],
+    
+    // Fila 2
+    [2], 
+    [*Validación de clientes*],[Comprobar que el modelo de negocio es viable, repetible y escalable, confirmando que hay suficientes clientes dispuestos a pagar por la solución.],
+    
+    // Fila 3
+    [3], 
+    [*Creación de clientes*],[Invertir en marketing y ventas para generar demanda masiva, dirigirla hacia nuestros canales y empezar a escalar el negocio.],
+    
+    // Fila 4
+    [4],[*Construcción de empresa*],[Pasar de ser una _startup_ (en fase de búsqueda) a una empresa consolidada, estructurando departamentos para ejecutar el modelo ya validado.]
+  )
+) <tbl-customer-dev>
+```
+
+Las dos primeras etapas (descubrimiento y validación) son las más críticas: permiten verificar si hay un mercado antes de incurrir en grandes inversiones. Si la validación falla, lo correcto es **pivotar** antes de pasar a la etapa de creación.
+
+
+## El modelo *Canvas*
+
+El **lienzo del modelo de negocio** (*Business Model Canvas*), propuesto por Alexander Osterwalder, es una herramienta visual que permite estructurar y comunicar los componentes esenciales de cualquier empresa en una sola página. Está formado por **nueve bloques** interrelacionados, de modo que un cambio en uno de ellos suele afectar a los demás.
+
+```{=html}
+<figure style="margin: 1.5em auto; max-width: 720px;">
+<svg viewBox="0 0 720 370" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
+  <!-- Fondo -->
+  <rect x="0" y="0" width="720" height="370" fill="#f9f9f9" rx="6"/>
+  <!-- Título -->
+  <text x="360" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Business Model Canvas</text>
+
+  <!-- SOCIOS CLAVE -->
+  <rect x="8" y="32" width="128" height="160" fill="#fde8cc" stroke="#f28e2b" stroke-width="1" rx="4"/>
+  <text x="72" y="50" text-anchor="middle" font-weight="bold" fill="#b85c00" font-size="10">8. SOCIOS CLAVE</text>
+  <text x="72" y="66" text-anchor="middle" fill="#555" font-size="9">Alianzas y proveedores</text>
+  <text x="72" y="79" text-anchor="middle" fill="#555" font-size="9">estratégicos que</text>
+  <text x="72" y="92" text-anchor="middle" fill="#555" font-size="9">complementan</text>
+  <text x="72" y="105" text-anchor="middle" fill="#555" font-size="9">las capacidades</text>
+  <text x="72" y="118" text-anchor="middle" fill="#555" font-size="9">propias</text>
+
+  <!-- ACTIVIDADES CLAVE -->
+  <rect x="144" y="32" width="128" height="78" fill="#d5edcc" stroke="#59a14f" stroke-width="1" rx="4"/>
+  <text x="208" y="50" text-anchor="middle" font-weight="bold" fill="#2d6a27" font-size="10">7. ACTIVIDADES CLAVE</text>
+  <text x="208" y="66" text-anchor="middle" fill="#555" font-size="9">Acciones esenciales:</text>
+  <text x="208" y="79" text-anchor="middle" fill="#555" font-size="9">producción, marketing,</text>
+  <text x="208" y="92" text-anchor="middle" fill="#555" font-size="9">distribución...</text>
+
+  <!-- RECURSOS CLAVE -->
+  <rect x="144" y="116" width="128" height="76" fill="#d5edcc" stroke="#59a14f" stroke-width="1" rx="4"/>
+  <text x="208" y="134" text-anchor="middle" font-weight="bold" fill="#2d6a27" font-size="10">6. RECURSOS CLAVE</text>
+  <text x="208" y="150" text-anchor="middle" fill="#555" font-size="9">Activos imprescindibles:</text>
+  <text x="208" y="163" text-anchor="middle" fill="#555" font-size="9">físicos, humanos,</text>
+  <text x="208" y="176" text-anchor="middle" fill="#555" font-size="9">financieros, intangibles</text>
+
+  <!-- PROPUESTA DE VALOR (centro) -->
+  <rect x="280" y="32" width="160" height="160" fill="#dce8f5" stroke="#4e79a7" stroke-width="1.5" rx="4"/>
+  <text x="360" y="54" text-anchor="middle" font-weight="bold" fill="#1a3a5c" font-size="11">2. PROPUESTA</text>
+  <text x="360" y="68" text-anchor="middle" font-weight="bold" fill="#1a3a5c" font-size="11">DE VALOR</text>
+  <text x="360" y="90" text-anchor="middle" fill="#555" font-size="9">Valor ofrecido al cliente:</text>
+  <text x="360" y="103" text-anchor="middle" fill="#555" font-size="9">qué necesidades satisface</text>
+  <text x="360" y="116" text-anchor="middle" fill="#555" font-size="9">o qué problemas resuelve</text>
+
+  <!-- RELACIÓN CON CLIENTES -->
+  <rect x="448" y="32" width="128" height="78" fill="#f9d0d0" stroke="#e15759" stroke-width="1" rx="4"/>
+  <text x="512" y="48" text-anchor="middle" font-weight="bold" fill="#8b1a1a" font-size="10">4. RELACIÓN CON</text>
+  <text x="512" y="60" text-anchor="middle" font-weight="bold" fill="#8b1a1a" font-size="10">CLIENTES</text>
+  <text x="512" y="76" text-anchor="middle" fill="#555" font-size="9">Atracción, fidelización</text>
+  <text x="512" y="89" text-anchor="middle" fill="#555" font-size="9">y atención posventa</text>
+
+  <!-- CANALES -->
+  <rect x="448" y="116" width="128" height="76" fill="#f9d0d0" stroke="#e15759" stroke-width="1" rx="4"/>
+  <text x="512" y="134" text-anchor="middle" font-weight="bold" fill="#8b1a1a" font-size="10">3. CANALES</text>
+  <text x="512" y="150" text-anchor="middle" fill="#555" font-size="9">Medios para entregar</text>
+  <text x="512" y="163" text-anchor="middle" fill="#555" font-size="9">la propuesta de valor</text>
+  <text x="512" y="176" text-anchor="middle" fill="#555" font-size="9">a los clientes</text>
+
+  <!-- SEGMENTO DE CLIENTES -->
+  <rect x="584" y="32" width="128" height="160" fill="#d5eeec" stroke="#76b7b2" stroke-width="1" rx="4"/>
+  <text x="648" y="50" text-anchor="middle" font-weight="bold" fill="#1a5c58" font-size="10">1. SEGMENTO</text>
+  <text x="648" y="62" text-anchor="middle" font-weight="bold" fill="#1a5c58" font-size="10">DE CLIENTES</text>
+  <text x="648" y="82" text-anchor="middle" fill="#555" font-size="9">Grupos a los que</text>
+  <text x="648" y="95" text-anchor="middle" fill="#555" font-size="9">se dirige la empresa,</text>
+  <text x="648" y="108" text-anchor="middle" fill="#555" font-size="9">sus características</text>
+  <text x="648" y="121" text-anchor="middle" fill="#555" font-size="9">y motivaciones</text>
+
+  <!-- ESTRUCTURA DE COSTES -->
+  <rect x="8" y="200" width="352" height="80" fill="#ede4f5" stroke="#9b6bb5" stroke-width="1" rx="4"/>
+  <text x="184" y="220" text-anchor="middle" font-weight="bold" fill="#5a1a8b" font-size="10">9. ESTRUCTURA DE COSTES</text>
+  <text x="184" y="238" text-anchor="middle" fill="#555" font-size="9">Todos los costes en que incurre la empresa:</text>
+  <text x="184" y="251" text-anchor="middle" fill="#555" font-size="9">fijos (alquiler, salarios) y variables (materias primas)</text>
+
+  <!-- FUENTES DE INGRESOS -->
+  <rect x="368" y="200" width="344" height="80" fill="#fff0b3" stroke="#b5941a" stroke-width="1" rx="4"/>
+  <text x="540" y="220" text-anchor="middle" font-weight="bold" fill="#6b4e00" font-size="10">5. FUENTES DE INGRESOS</text>
+  <text x="540" y="238" text-anchor="middle" fill="#555" font-size="9">Cómo captura valor económicamente:</text>
+  <text x="540" y="251" text-anchor="middle" fill="#555" font-size="9">venta, suscripción, alquiler, publicidad...</text>
+
+  <!-- Leyenda izquierda / derecha -->
+  <text x="184" y="298" text-anchor="middle" font-size="9" fill="#888">← Eficiencia (costes y operaciones)</text>
+  <text x="540" y="298" text-anchor="middle" font-size="9" fill="#888">Valor y mercado (clientes e ingresos) →</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.4em">Figura: El lienzo del modelo de negocio (<em>Business Model Canvas</em>) — 9 bloques</figcaption>
+</figure>
+```
+
+**Los nueve bloques:**
+
+```{=typst}
+#figure(
+  caption: [Los nueve bloques del modelo _Canvas_],
+  table(
+    // Ajuste de columnas: número pequeño, bloque mediano, descripción ocupa el resto
+    columns: (auto, auto, 1fr),
+    
+    // Alineación: Número centrado, textos a la izquierda, todo centrado verticalmente
+    align: (center + horizon, left + horizon, left + horizon),
+    
+    // Encabezado
+    table.header([*\#*], [*Bloque*], [*¿Qué describe?*]
+    ),[1], [*Segmento de clientes*],[Los grupos de clientes a los que se dirige la empresa, sus características y por qué comprarían el producto],
+    
+    [2], [*Propuesta de valor*],[El valor que la empresa ofrece: qué necesidades satisface o qué problemas resuelve],
+    
+    [3], [*Canales*], [Los medios a través de los cuales la empresa entrega la propuesta de valor a sus clientes],[4], [*Relación con clientes*],[Cómo la empresa interactúa con cada segmento: atracción, fidelización, atención posventa...],
+    
+    [5], [*Fuentes de ingresos*],[Cómo la empresa captura valor económicamente: venta, suscripción, alquiler, publicidad, intermediación...],[6], [*Recursos clave*],[Los activos imprescindibles para operar: físicos, humanos, financieros e intangibles (patentes, marca...)],
+    
+    [7], [*Actividades clave*],[Las acciones esenciales que la empresa debe realizar: producción, _marketing_, distribución, gestión financiera...],
+    
+    [8], [*Socios clave*],[Alianzas con terceros (proveedores, socios estratégicos, empresas subcontratadas) que complementan las capacidades propias],
+    
+    [9], [*Estructura de costes*],[Todos los costes en que incurre la empresa: *fijos* (alquiler, salarios fijos) y *variables* (materias primas, salarios variables)]
+  )
+) <tbl-canvas>
+```
+
+
+::: {.callout-tip title="El Canvas como sistema, no como lista"}
+El Canvas no es una lista de comprobación; es un sistema. Por ejemplo: si la empresa cambia el **segmento de clientes** (bloque 1) para dirigirse a un público más joven, probablemente deba revisar los **canales** (bloque 3, quizás más redes sociales), la **relación con clientes** (bloque 4, quizás más autoservicio digital) y las **fuentes de ingresos** (bloque 5, quizás modelo *freemium* en lugar de venta directa).
+:::
+
+### Herramientas complementarias al *Canvas*
+
+El *Canvas* puede combinarse con otras herramientas de diseño e innovación:
+
+- **Mapa de empatía** (véase §2.6): profundiza en la perspectiva del cliente.
+- ***Visual Thinking*** (§2.9): organización de ideas mediante representaciones gráficas.
+- **Estrategia de océano azul**: búsqueda de espacios de mercado no disputados donde la competencia es irrelevante.
+- ***Google Trends*** (§2.10): herramienta para detectar tendencias emergentes y nichos de mercado con demanda creciente.
+- **Mapa de escenarios** (§2.11): exploración sistemática de contextos futuros posibles para testar la robustez del modelo.
+
+
+## El mapa de empatía
+
+El **mapa de empatía** es una herramienta complementaria al *Canvas* que permite profundizar en la perspectiva del cliente, más allá de sus datos demográficos. Fue desarrollado por Dave Gray y es especialmente útil para construir el bloque 1 (segmento de clientes) y el bloque 2 (propuesta de valor) del *Canvas*.
+
+El mapa se divide en **seis cuadrantes** que ayudan a reconstruir la experiencia del cliente:
+
+| Cuadrante | Pregunta guía |
+|---|---|
+| **¿Qué piensa y siente?** | ¿Cuáles son sus preocupaciones más profundas? ¿Qué le importa de verdad, aunque no lo diga en voz alta? |
+| **¿Qué ve?** | ¿Qué observa en su entorno cotidiano? ¿Qué ofertas existen en su mercado? ¿Qué hacen sus amigos o referentes? |
+| **¿Qué oye?** | ¿Qué dicen sus amigos, su jefe, personas influyentes en su vida? ¿Qué canales de comunicación le llegan? |
+| **¿Qué dice y hace?** | ¿Cómo se comporta en público? ¿Hay contradicción entre lo que dice y lo que hace? |
+| **¿Cuáles son sus dolores?** | ¿Qué obstáculos, frustraciones o miedos tiene? ¿Qué le impide conseguir lo que quiere? |
+| **¿Cuáles son sus ganancias?** | ¿Qué quiere lograr realmente? ¿Cómo mide el éxito? ¿Qué le haría sentir bien? |
+
+: Los seis cuadrantes del mapa de empatía {#tbl-empatia}
+
+```{=html}
+<figure style="margin: 1.5em auto; max-width: 560px;">
+<svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
+  <!-- Fondo -->
+  <rect x="0" y="0" width="560" height="520" fill="#fafafa" rx="6"/>
+  <!-- Título -->
+  <text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Mapa de Empatía</text>
+
+  <!-- PIENSA Y SIENTE (arriba centro) -->
+  <path d="M200,50 L360,50 L360,170 L280,200 L200,170 Z" fill="#dce8f5" stroke="#4e79a7" stroke-width="1.2"/>
+  <text x="280" y="90" text-anchor="middle" font-weight="bold" fill="#1a3a5c">¿Qué piensa</text>
+  <text x="280" y="105" text-anchor="middle" font-weight="bold" fill="#1a3a5c">y siente?</text>
+  <text x="280" y="125" text-anchor="middle" fill="#444" font-size="9.5">Preocupaciones profundas,</text>
+  <text x="280" y="138" text-anchor="middle" fill="#444" font-size="9.5">lo que le importa</text>
+  <text x="280" y="151" text-anchor="middle" fill="#444" font-size="9.5">de verdad</text>
+
+  <!-- VE (izquierda arriba) -->
+  <path d="M10,50 L195,50 L195,175 L110,230 L10,175 Z" fill="#d5edcc" stroke="#59a14f" stroke-width="1.2"/>
+  <text x="105" y="95" text-anchor="middle" font-weight="bold" fill="#2d6a27">¿Qué ve?</text>
+  <text x="105" y="115" text-anchor="middle" fill="#444" font-size="9.5">Su entorno, ofertas</text>
+  <text x="105" y="128" text-anchor="middle" fill="#444" font-size="9.5">del mercado, lo que</text>
+  <text x="105" y="141" text-anchor="middle" fill="#444" font-size="9.5">hacen sus referentes</text>
+
+  <!-- OYE (derecha arriba) -->
+  <path d="M365,50 L550,50 L550,175 L450,230 L365,175 Z" fill="#fff0b3" stroke="#b5941a" stroke-width="1.2"/>
+  <text x="455" y="95" text-anchor="middle" font-weight="bold" fill="#6b4e00">¿Qué oye?</text>
+  <text x="455" y="115" text-anchor="middle" fill="#444" font-size="9.5">Amigos, jefe, personas</text>
+  <text x="455" y="128" text-anchor="middle" fill="#444" font-size="9.5">influyentes, canales</text>
+  <text x="455" y="141" text-anchor="middle" fill="#444" font-size="9.5">de comunicación</text>
+
+  <!-- DICE Y HACE (abajo centro) -->
+  <path d="M200,310 L360,310 L360,430 L280,460 L200,430 Z" fill="#f9d0d0" stroke="#e15759" stroke-width="1.2"/>
+  <text x="280" y="345" text-anchor="middle" font-weight="bold" fill="#8b1a1a">¿Qué dice</text>
+  <text x="280" y="360" text-anchor="middle" font-weight="bold" fill="#8b1a1a">y hace?</text>
+  <text x="280" y="382" text-anchor="middle" fill="#444" font-size="9.5">Comportamiento público,</text>
+  <text x="280" y="395" text-anchor="middle" fill="#444" font-size="9.5">posibles contradicciones</text>
+  <text x="280" y="408" text-anchor="middle" fill="#444" font-size="9.5">entre dicho y hecho</text>
+
+  <!-- DOLORES (izquierda abajo) -->
+  <path d="M10,290 L195,290 L195,415 L110,460 L10,415 Z" fill="#ede4f5" stroke="#9b6bb5" stroke-width="1.2"/>
+  <text x="105" y="325" text-anchor="middle" font-weight="bold" fill="#5a1a8b">¿Cuáles son</text>
+  <text x="105" y="340" text-anchor="middle" font-weight="bold" fill="#5a1a8b">sus dolores?</text>
+  <text x="105" y="362" text-anchor="middle" fill="#444" font-size="9.5">Obstáculos, miedos</text>
+  <text x="105" y="375" text-anchor="middle" fill="#444" font-size="9.5">y frustraciones que</text>
+  <text x="105" y="388" text-anchor="middle" fill="#444" font-size="9.5">le impiden avanzar</text>
+
+  <!-- GANANCIAS (derecha abajo) -->
+  <path d="M365,290 L550,290 L550,415 L450,460 L365,415 Z" fill="#d5eeec" stroke="#76b7b2" stroke-width="1.2"/>
+  <text x="455" y="325" text-anchor="middle" font-weight="bold" fill="#1a5c58">¿Cuáles son</text>
+  <text x="455" y="340" text-anchor="middle" font-weight="bold" fill="#1a5c58">sus ganancias?</text>
+  <text x="455" y="362" text-anchor="middle" fill="#444" font-size="9.5">Lo que quiere lograr,</text>
+  <text x="455" y="375" text-anchor="middle" fill="#444" font-size="9.5">cómo mide el éxito,</text>
+  <text x="455" y="388" text-anchor="middle" fill="#444" font-size="9.5">qué le haría sentir bien</text>
+
+  <!-- Cara central -->
+  <circle cx="280" cy="255" r="52" fill="white" stroke="#aaa" stroke-width="1.5"/>
+  <!-- Ojos -->
+  <circle cx="264" cy="245" r="5" fill="#555"/>
+  <circle cx="296" cy="245" r="5" fill="#555"/>
+  <!-- Sonrisa -->
+  <path d="M262,268 Q280,285 298,268" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+  <!-- Nariz -->
+  <path d="M280,250 L276,262 L284,262" fill="none" stroke="#aaa" stroke-width="1.2"/>
+  <!-- Texto -->
+  <text x="280" y="320" text-anchor="middle" font-size="10" fill="#888">Cliente</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.4em">Figura: Mapa de empatía — seis cuadrantes alrededor del cliente</figcaption>
+</figure>
+```
+
+::: {.callout-tip title="¿Para qué sirve el mapa de empatía en la práctica?"}
+Antes de rellenar el *Canvas*, conviene construir el mapa de empatía del cliente tipo. Muchos emprendedores descubren, al hacerlo, que sus suposiciones sobre «lo que quiere el cliente» eran incorrectas. Este es exactamente el tipo de error que el *Lean Startup* pretende detectar antes de invertir.
+:::
+
+
+## El proceso creativo
+
+La creatividad no es un chispazo espontáneo: sigue una estructura. El modelo más citado es el del psicólogo Graham Wallas, que distingue cinco fases:
+
+### Las cinco fases del proceso creativo (modelo de Wallas)
+
+**Fase 1: Preparación o investigación**
+
+Es el punto de partida de todo el proceso. La mente se sumerge en el problema: se investiga, se recopilan datos, se analiza la información existente y se define claramente el reto que se quiere resolver. Es una fase consciente y deliberada en la que se acumula la «materia prima» para que la creatividad pueda florecer.
+
+Actividades clave: identificar y definir el problema; recoger información de diversas fuentes (leer, observar, preguntar); analizar los datos explorando distintas perspectivas.
+
+**Fase 2: Incubación**
+
+Una vez que la mente está saturada de información, se entra en una fase de procesamiento **inconsciente**. El pensador se aleja del problema de forma deliberada y se dedica a otras actividades. Mientras tanto, el cerebro sigue trabajando en segundo plano, conectando la información de maneras inesperadas y buscando patrones sin la presión del pensamiento lógico.
+
+Actividades clave: tomarse un descanso del problema; realizar actividades relajantes o no relacionadas (pasear, hacer deporte, escuchar música); permitir que la mente divague.
+
+::: {.callout-note title="La incubación no es perder el tiempo"}
+Estudios en psicología cognitiva muestran que los descansos durante la resolución de problemas complejos mejoran la calidad de las soluciones. La clave es que la fase de preparación haya llenado suficientemente la mente de información relevante.
+:::
+
+**Fase 3: Iluminación**
+
+Es el famoso momento «¡eureka!». De forma súbita e inesperada, la solución al problema o la idea clave emerge en la conciencia. Es un destello de claridad, el instante en que las piezas del rompecabezas encajan y se ve la respuesta de forma nítida. Este chispazo es el resultado directo del trabajo inconsciente realizado durante la incubación.
+
+Características: suele ser breve, repentino y emocionalmente intenso; aporta una nueva perspectiva que resuelve el conflicto central; la solución aparece clara y evidente.
+
+**Fase 4: Evaluación o verificación**
+
+Una vez que ha surgido la idea, es el momento de traerla de vuelta al mundo real y analizarla de forma racional. Se determina si la solución es viable, práctica y si realmente resuelve el problema inicial. Es un filtro necesario para asegurar que la idea no solo es original, sino también útil y realizable.
+
+Actividades clave: analizar los pros y los contras de la idea; determinar si se cuenta con los recursos necesarios; someter la idea a la crítica constructiva para refinarla.
+
+**Fase 5: Elaboración y comunicación**
+
+La creatividad no termina con la idea: debe materializarse. Esta es la etapa del trabajo duro, donde se desarrolla, ejecuta y perfecciona la solución. Requiere disciplina, esfuerzo y habilidad para convertir el concepto en un producto, un servicio o una obra real. Finalmente, el proceso culmina al presentar y compartir el resultado.
+
+Actividades clave: planificar y ejecutar los pasos para desarrollar la idea; trabajar en los detalles y pulir el resultado final; presentar el proyecto comunicando su valor de forma efectiva.
+
+
+## Técnicas de creatividad
+
+### *Brainstorming* (lluvia de ideas)
+
+Formalizada por el publicista Alex F. Osborn en la década de 1940, la lluvia de ideas es una de las técnicas grupales más conocidas y efectivas para la generación de ideas. Osborn descubrió que los equipos producen más y mejores soluciones cuando trabajan de forma conjunta y espontánea, suspendiendo el juicio. Su premisa fundamental: **la cantidad genera calidad**. Cuantas más ideas se produzcan, mayor es la probabilidad de encontrar alguna verdaderamente innovadora.
+
+**Las cuatro reglas de oro del *brainstorming*:**
+
+1. **Suspender el juicio y eliminar la crítica**: esta es la regla más importante. Durante la fase de generación, no se permite ninguna crítica, evaluación o comentario negativo. Juzgar las ideas prematuramente bloquea la creatividad y desanima la participación.
+2. **Fomentar las ideas «locas» o inesperadas**: se anima a pensar más allá de lo obvio. Las ideas extravagantes o poco realistas actúan como catalizadores, inspirando otras más prácticas y novedosas.
+3. **Buscar la cantidad sobre la calidad**: el objetivo principal es generar el mayor número posible de ideas. En esta etapa, cada idea es valiosa, incluso las menos viables.
+4. **Construir sobre las ideas de los demás**: se fomenta la colaboración; los participantes escuchan las propuestas ajenas y las utilizan como punto de partida para crear nuevas ideas, combinarlas o mejorarlas.
+
+**Fases de una sesión de *brainstorming* efectiva:**
+
+1. **Preparación y definición del problema**: el moderador define claramente el objetivo o reto a resolver. Se selecciona un grupo diverso de entre 5 y 10 personas.
+2. **Generación de ideas** (fase divergente): esta es la fase central, que suele durar entre 15 y 30 minutos. El moderador presenta el problema y recuerda las reglas de oro. Los participantes lanzan todas las ideas que se les ocurran, sin filtro ni juicio. Un secretario registra todo en un lugar visible (pizarra o documento compartido).
+3. **Clarificación y agrupación**: una vez finalizado el tiempo, el moderador repasa la lista para asegurar que todas las ideas se comprenden. A continuación, se agrupan las ideas similares por categorías o temas.
+4. **Evaluación y selección** (fase convergente): con todas las ideas organizadas, el equipo aplica el pensamiento crítico para analizar, debatir y seleccionar las propuestas más prometedoras según criterios previamente establecidos.
+
+### Técnica 4×4×4
+
+Cada miembro del grupo escribe individualmente **4 ideas** sobre el tema propuesto. A continuación, se forman **parejas** y, a partir de las ideas previas, cada pareja selecciona o formula 4 nuevas ideas conjuntas. Finalmente, se forman **grupos de cuatro** personas y se repite el proceso, obteniendo al final 4 ideas del grupo completo.
+
+Es una técnica de **convergencia progresiva**: el número de ideas se mantiene constante (4) pero la elaboración colectiva va refinando y enriqueciendo las propuestas.
+
+### SCAMPER
+
+SCAMPER es un acrónimo que guía la innovación sobre un producto o servicio existente mediante siete tipos de preguntas estructuradas:
+
+```{=typst}
+#figure(
+  table(
+    columns: (auto, auto, 1fr, 1fr),
+    align: (center + horizon, left + horizon, left + horizon, left + horizon),
+    fill: (col, row) => if row == 0 { luma(240) } else { none },
+    stroke: 0.5pt + luma(150),
+    
+    [*Letra*],[*Acción*], [*Pregunta guía*], [*Ejemplo*],
+    
+    [*S*],[*Sustituir*], [¿Qué elementos se pueden reemplazar? (materiales, colores, componentes…)],[Sustituir azúcar por sacarina en un pastel],
+    [*C*], [*Combinar*],[¿Qué se puede unir o mezclar? (características, ideas, objetos…)],[Combinar cepillo y palo → escoba],
+    [*A*], [*Adaptar*],[¿Cómo adaptar la función a nuevos usos o usuarios?], [Añadir entrada pequeña en una tienda para señalizar que está orientada a niños],
+    [*M*], [*Modificar*],[¿Qué se puede transformar, cambiar de tamaño o de material?], [Circo sin animales → acrobacias, magia y musicales],
+    [*P*],[*Proponer otros usos*], [¿Para qué más sirve el producto o sus componentes?],[Una sábana bonita → cortina o vestido],
+    [*E*], [*Eliminar*], [¿De qué se puede prescindir?], [Eliminar los cables del mando de la consola → mando inalámbrico],
+    [*R*],[*Reordenar*], [¿Cómo cambiar la organización, el orden o la disposición?],[Cambiar el orden del proceso de montaje para reducir tiempos]
+  ),
+  caption: [La técnica SCAMPER]
+) <tbl-scamper>
+```
+  
+
+## *Visual Thinking* (pensamiento visual)
+
+El ***Visual Thinking*** o pensamiento visual es la capacidad de organizar, sintetizar y comunicar ideas a través de representaciones gráficas: dibujos, esquemas, iconos, mapas mentales, diagramas de flujo, etc. No se trata de ser un artista; basta con saber utilizar formas simples para dar estructura visual al pensamiento.
+
+**¿Para qué sirve en el diseño de modelos de negocio?**
+
+- **Síntesis**: ayuda a condensar información compleja en una imagen que se comprende de un vistazo.
+- **Ideación**: facilita la generación de ideas al activar el pensamiento visual además del verbal.
+- **Comunicación**: hace que las presentaciones sean más claras y memorables.
+- **Colaboración**: en trabajo en equipo, una pizarra con diagramas simples permite que todos contribuyan y compartan la misma visión.
+
+::: {.callout-tip title="Herramientas digitales de Visual Thinking"}
+Aplicaciones como **Miro**, **Mural** o **Canva** ofrecen entornos de pizarra digital que facilitan el *Visual Thinking* en equipos distribuidos. Para trabajar en papel, basta con post-its, rotuladores y una pizarra blanca.
+:::
+
+::: {.callout-important title="Actividad — Canvas visual sin palabras"}
+**Objetivo:** representar el modelo de negocio del equipo usando únicamente iconos y esquemas, sin texto completo.
+
+**Instrucciones:**
+
+1. En un folio grande (o en Miro/Canva), dibuja los 9 bloques del Canvas.
+2. Rellena cada bloque usando solo iconos, flechas y símbolos — ninguna frase completa.
+3. Presenta tu Canvas al resto de la clase: el público debe ser capaz de inferir de qué negocio se trata sin que lo expliques.
+
+**Criterios de evaluación:** claridad visual, coherencia entre bloques, capacidad de síntesis.
+:::
+
+
+## Herramientas de búsqueda de nichos de mercado: *Google Trends*
+
+**Google Trends** es una herramienta gratuita de Google que muestra la evolución temporal de las búsquedas de un término o tema en un período y región concretos. Es útil para:
+
+- Detectar tendencias emergentes antes de que se conviertan en mercados saturados.
+- Comparar el interés relativo entre varias ideas de negocio.
+- Identificar patrones estacionales en la demanda.
+- Evaluar si un nicho de mercado está creciendo o en declive.
+
+::: {.callout-note title="Ejemplo de uso"}
+Un emprendedor que está considerando abrir una tienda de bicicletas eléctricas puede comprobar en *Google Trends* si el interés por «bicicleta eléctrica» ha crecido en los últimos cinco años en el País Vasco. Si la tendencia es claramente alcista, eso sugiere que hay una ventana de oportunidad; si ya es plana o está descendiendo, puede que el mercado esté madurando o saturándose.
+:::
+
+
+## Escenarios: exploración de futuros posibles
+
+El análisis de **escenarios** consiste en construir descripciones coherentes de distintos futuros posibles para una empresa o sector, con el objetivo de testar la robustez del modelo de negocio y anticipar decisiones estratégicas.
+
+El proceso habitual sigue estos pasos:
+
+1. **Identificar las fuerzas clave** que moldean el entorno del modelo de negocio (tecnología, regulación, demografía, competencia…).
+2. **Seleccionar las dos incertidumbres más relevantes e independientes** entre sí.
+3. **Construir cuatro escenarios** a partir de las combinaciones posibles de esas dos incertidumbres (una matriz 2×2).
+4. **Desarrollar cada escenario** con suficiente detalle narrativo para imaginar cómo sería operar en él.
+5. **Evaluar el modelo de negocio** en cada escenario: ¿sería viable? ¿qué ajustes necesitaría?
+
+::: {.callout-tip title="¿Para qué sirven los escenarios en el canvas?"}
+Los escenarios no sirven para predecir el futuro —eso es imposible— sino para **reducir la sorpresa** y ampliar el espacio de posibilidades que la empresa considera. Un modelo de negocio que funciona bien en cuatro escenarios distintos es más robusto que uno que solo funciona en condiciones ideales.
+:::
+
+
+## El prototipado
+
+El **prototipado** consiste en crear una versión preliminar, simplificada o representativa del producto, servicio o modelo de negocio, con el objetivo de explorarlo, comunicarlo y testarlo antes de invertir en su desarrollo completo. Es una de las herramientas clave del diseño centrado en el usuario (*design thinking*) y del *Lean Startup*.
+
+### Concepto y utilidad
+
+Un prototipo no tiene por qué ser funcional ni definitivo. Su valor reside en que permite:
+
+- **Explorar**: materializar una idea para evaluarla de forma concreta, no solo abstracta.
+- **Comunicar**: mostrar a clientes, socios e inversores cómo funcionará el producto antes de construirlo.
+- **Aprender**: obtener *feedback* real a un coste muy bajo, antes de comprometer recursos importantes.
+- **Fallar rápido y barato**: es mejor descubrir los problemas en un prototipo de cartón que en un producto terminado.
+
+### Posibilidades de prototipado
+
+Las posibilidades varían en función del tipo de entregable:
+
+**Prototipado de bienes físicos:**
+
+- Maquetas y modelos a escala (cartón, espuma, arcilla, impresión 3D).
+- Prototipos de baja fidelidad (*low-fi*): comunican la forma y función sin acabado final.
+- Prototipos de alta fidelidad (*hi-fi*): muy cercanos al producto definitivo, usados en fases avanzadas.
+
+**Prototipado de servicios:**
+
+- **Actuación de rol** (*role playing*): el equipo simula la prestación del servicio para identificar fallos en la experiencia.
+- **Storyboard**: secuencia de dibujos que representa las etapas del servicio desde la perspectiva del cliente.
+- **Prototipo de papel**: maqueta visual de la interfaz o del proceso, dibujada en papel.
+
+**Prototipado de aplicaciones y software:**
+
+- **Maqueta estática** (*mockup*): imagen de cómo será la interfaz, sin funcionalidad real.
+- **Prototipo interactivo** (*wireframe* navegable): permite simular la experiencia de uso sin escribir código.
+- **MVP funcional**: versión mínima pero operativa del producto, usada en el ciclo *Lean Startup*.
+
+::: {.callout-note title="La fidelidad del prototipo debe ajustarse a la pregunta"}
+En las fases tempranas, cuando se quiere validar si el concepto tiene sentido, basta un prototipo de baja fidelidad (un papel, un dibujo). Cuanto más avanzado está el desarrollo, mayor fidelidad tiene sentido. Construir un prototipo de alta fidelidad demasiado pronto es un desperdicio de recursos.
+:::
+
+::: {.callout-important title="Actividad — prototipo y feedback de clientes"}
+**Objetivo:** construir un prototipo básico del producto o servicio y someterlo a validación con compañeros que actúan como clientes potenciales.
+
+**Instrucciones:**
+
+1. **Construye el prototipo** (máx. 20 minutos): puede ser un boceto en papel, una maqueta de cartón, una presentación de 3 diapositivas o una pantalla dibujada a mano.
+2. **Presenta el prototipo** a otro equipo (5 minutos): explica qué problema resuelve y cómo funciona.
+3. **Recoge el feedback** usando estas preguntas guía:
+   - ¿Qué parte te parece más útil o interesante?
+   - ¿Qué no entiendes o te genera dudas?
+   - ¿Pagarías por esto? ¿Cuánto y por qué?
+   - ¿Qué cambiarías o añadirías?
+4. **Reflexiona en equipo**: ¿qué hipótesis del Canvas quedan validadas? ¿Cuáles hay que revisar?
+:::
+
+
+## Herramientas de comunicación del modelo de negocio
+
+### *Storytelling* (narración de historias)
+
+El ***storytelling*** es el arte de contar historias para transmitir un mensaje de forma memorable y emocionalmente atractiva. Imagina que estás sentado en una fogata con un grupo de amigos, y uno de ellos empieza a contar una historia. No importa si es real o ficticia; lo importante es cómo te engancha, cómo te hace sentir parte de la narrativa y cómo, al final, te quedas con una enseñanza o una idea que recordarás mucho tiempo.
+
+En el mundo empresarial, el *storytelling* se usa para presentar la propuesta de valor, conectar emocionalmente con los clientes, comunicar la cultura de empresa o defender un proyecto ante inversores.
+
+**Elementos de un buen *storytelling*:**
+
+1. **Inicio impactante**: una primera frase o imagen que capte la atención desde el primer momento.
+2. **Personajes**: protagonistas con los que el público pueda identificarse (el cliente con un problema, el emprendedor que lo resuelve).
+3. **Inclusión de diálogos**: dan naturalidad y dinamismo al relato y lo hacen más vivido.
+4. **Estructura clásica**: presentación (situación inicial), nudo (conflicto o problema) y desenlace (solución).
+5. **Metáforas y analogías**: facilitan la comprensión de ideas complejas al conectarlas con experiencias conocidas.
+6. **Apelación a las emociones**: las historias que generan emoción son más fáciles de recordar y de compartir.
+
+::: {.callout-important title="Caso real — Microsoft y el storytelling corporativo"}
+**La reinvención narrativa de Microsoft bajo Satya Nadella**
+
+Cuando Satya Nadella asumió la dirección de Microsoft en 2014, la empresa arrastraba una imagen de gigante burocrático atrapado en el pasado. Su gran narrativa cambió radicalmente: de *"un PC en cada escritorio"* (la visión fundacional de Gates) a *"empoderar a cada persona y organización del planeta para que logre más"*.
+
+Este cambio de historia no fue cosmético. Implicó abandonar la guerra de los sistemas operativos móviles (Windows Phone), apostar por la nube (Azure), abrir el ecosistema a Linux y a los competidores, y transformar la cultura interna de una mentalidad de *know-it-all* (el que todo lo sabe) a una de *learn-it-all* (el que siempre aprende).
+
+**¿Qué enseña este caso?**
+
+- El *storytelling* eficaz no describe lo que la empresa *hace*, sino lo que la empresa *hace posible* para sus clientes.
+- Un cambio de narrativa debe ir acompañado de cambios reales en el modelo de negocio; de lo contrario es puro *marketing*.
+- La historia interna (para los empleados) es tan importante como la externa (para los clientes e inversores).
+:::
+
+### *Elevator pitch* (discurso del ascensor)
+
+Imagina que tienes solo 30 segundos para convencer a alguien de tu gran idea. Eso es un ***elevator pitch***: una presentación breve, directa y persuasiva diseñada para captar la atención y despertar interés en el tiempo que dura un viaje en ascensor.
+
+¿Por qué es tan importante? En un mundo donde la gente tiene poco tiempo y atención limitada, hay que ser capaz de comunicar lo esencial de manera clara y atractiva. Un buen *elevator pitch* resume quién eres, qué ofreces y por qué es valioso, dejando al interlocutor con ganas de saber más. Es la oportunidad de convertir un momento fugaz en una conexión real.
+
+::: {.callout-tip title="Estructura de un elevator pitch eficaz"}
+1. **Gancho inicial**: una pregunta, dato o afirmación sorprendente que capture la atención.
+2. **El problema**: ¿qué dolor o necesidad resuelves?
+3. **La solución**: tu propuesta de valor en una frase.
+4. **La prueba o diferencial**: ¿por qué tú? ¿qué te hace diferente?
+5. **Llamada a la acción**: ¿qué quieres que haga el interlocutor a continuación?
+:::
+
+::: {.callout-important title="Actividad — *elevator pitch* del modelo de negocio"}
+**Objetivo:** comunicar el modelo de negocio del equipo de forma clara y persuasiva en 60 segundos.
+
+**Instrucciones:**
+
+1. Prepara un discurso de máximo 60 segundos siguiendo esta estructura:
+   - **Problema** (10 s): ¿qué problema existe y para quién?
+   - **Solución** (15 s): ¿qué ofreces y por qué es mejor?
+   - **Modelo de negocio** (15 s): ¿cómo ganas dinero?
+   - **Tracción** (10 s): ¿qué evidencia tienes de que funciona?
+   - **Llamada a la acción** (10 s): ¿qué pides al interlocutor?
+2. Practica el pitch y preséntalo ante la clase.
+
+**Rúbrica de evaluación:**
+
+| Criterio | Excelente (4) | Bien (3) | Mejorable (2) | Insuficiente (1) |
+|----------|--------------|----------|---------------|-----------------|
+| Claridad | Mensaje cristalino, sin tecnicismos | Claro con alguna ambigüedad | Partes confusas | Difícil de seguir |
+| Estructura | Sigue los 5 pasos con fluidez | Sigue la mayoría | Estructura parcial | Sin estructura visible |
+| Síntesis | Todo en ≤ 60 s, sin relleno | Ligero exceso | +15 s o con relleno | Muy largo o incompleto |
+| Persuasión | Genera interés real, llama a la acción | Interesante pero sin gancho | Poco convincente | No persuade |
+:::
+
+
+## Protección de la idea, el producto y la marca
+
+Antes de lanzar un modelo de negocio al mercado, es fundamental proteger los activos que lo hacen valioso. Las principales figuras de protección son:
+
+| Figura | ¿Qué protege? | Duración orientativa |
+|---|---|---|
+| **Patente** | Invenciones técnicas nuevas con aplicación industrial | 20 años (no renovable) |
+| **Modelo de utilidad** | Invenciones de menor rango de novedad («pequeñas invenciones») | 10 años |
+| **Marca** | Signo distintivo que identifica el origen empresarial de bienes y servicios | 10 años (renovable indefinidamente) |
+| **Diseño industrial** | Apariencia externa de un producto (forma, líneas, colores, textura…) | 5 años (renovable hasta 25) |
+| **Derecho de autor** | Obras literarias, artísticas, musicales, software | Toda la vida del autor + 70 años |
+| **Secreto empresarial** | Información confidencial con valor competitivo (fórmulas, algoritmos…) | Sin límite, mientras se mantenga confidencial |
+
+: Principales figuras de protección de la propiedad intelectual e industrial {#tbl-propiedad}
+
+La protección de la propiedad intelectual e industrial cumple tres funciones estratégicas:
+
+- **Exclusividad temporal**: impide que los competidores copien directamente la innovación durante un período, lo que permite amortizar la inversión en I+D.
+- **Activo negociable**: las patentes, marcas y diseños pueden venderse, licenciarse o usarse como garantía para obtener financiación.
+- **Señal de calidad**: para inversores y clientes, una empresa con patentes registradas proyecta una imagen de solidez tecnológica y rigor.
+
+::: {.callout-warning title="La protección tiene coste y límites"}
+Registrar una patente o una marca tiene costes administrativos y de mantenimiento. Además, la patente solo protege en los territorios donde se ha registrado. Para una *startup* con recursos limitados, la decisión de qué proteger y dónde debe ser estratégica.
+:::
+
+::: {.callout-important title="Recursos vascos de propiedad industrial"}
+Para proteger las innovaciones y creaciones de una empresa, existen diferentes organismos que ofrecen **registro, asesoramiento y financiación**. Es fundamental distinguir entre el registro oficial estatal y la red de apoyo autonómica:
+
+**A nivel estatal (Registro oficial)**
+*   **OEPM (Oficina Española de Patentes y Marcas):** Es el organismo público y único competente a nivel nacional para la concesión y el registro de la Propiedad Industrial (patentes, modelos de utilidad, marcas, nombres comerciales y diseños industriales). Acudir a ella es el paso legal indispensable para proteger una idea en España.
+
+**A nivel autonómico y foral (Asesoramiento y apoyo en Euskadi)**
+En el País Vasco existe un ecosistema muy potente para ayudar a las empresas a gestionar e internacionalizar su I+D+i, lo que incluye la gestión de sus patentes y marcas:
+*   **Grupo SPRI (Agencia Vasca de Desarrollo Empresarial):** Dependiente del Gobierno Vasco, impulsa la industria vasca. Ofrece programas de ayudas y subvenciones a la I+D+i (como *Hazitek* o *Innobideak*) que pueden ayudar a financiar los costes derivados de proteger la propiedad industrial.
+*   **BEAZ (y la red de centros BIC):** BEAZ es una sociedad pública de la Diputación Foral de Bizkaia dedicada a apoyar a pymes y emprendedores. Junto con los otros centros BIC (*Business Innovation Centres*) de Araba y Gipuzkoa, ofrecen asesoramiento técnico y ayudas económicas directas para la creación de empresas innovadoras, cubriendo en muchos casos los gastos de registro de patentes y homologaciones.
+*   **Orkestra (Instituto Vasco de Competitividad):** Aunque no es una oficina de registro, es un centro de análisis e investigación (perteneciente a la Universidad de Deusto) clave en el territorio. Sus estudios ayudan a las empresas a trazar estrategias competitivas, analizando el impacto económico de la innovación y cómo explotar comercialmente las patentes y marcas.
+*   **Innobasque (Agencia Vasca de la Innovación):** Entidad que conecta y coordina el ecosistema vasco de innovación, orientando a las empresas hacia los organismos adecuados para proteger sus ventajas competitivas.
+
+:::
+
+
+## Resumen del tema
+
+::: {.callout-note title="Ideas clave del Tema 2"}
+- Un **modelo de negocio** describe cómo una empresa crea, entrega y captura valor.
+- Los **modelos tradicionales** (fabricante, distribuidor, venta directa, franquicia, cebo y anzuelo) han demostrado su eficacia durante décadas; los **nuevos modelos** (freemium, suscripción, *long tail*…) aprovechan las posibilidades digitales.
+- Los **patrones de modelos de negocio** (plataforma multilateral, modelo abierto, desagregación, gratuito…) son configuraciones recurrentes que sirven de inspiración para diseñar nuevas propuestas.
+- La metodología ***Lean Startup*** propone validar la idea de negocio con el mínimo gasto posible, a través de ciclos «crear MVP → medir → aprender», apoyada en el **desarrollo de clientes** para verificar si existe demanda real.
+- El **modelo *Canvas*** organiza el modelo de negocio en nueve bloques interrelacionados; el **mapa de empatía** profundiza en la perspectiva del cliente.
+- La **creatividad** sigue un proceso estructurado (Wallas: preparación, incubación, iluminación, evaluación, elaboración); técnicas como el *brainstorming*, el 4×4×4 o el SCAMPER ayudan a generar y filtrar ideas.
+- Herramientas como el ***Visual Thinking***, *Google Trends*, el análisis de **escenarios** y el **prototipado** permiten explorar, validar y comunicar modelos de negocio.
+- El ***storytelling*** y el ***elevator pitch*** son herramientas de comunicación esenciales para transmitir y defender una propuesta de valor.
+- La **protección de la propiedad intelectual e industrial** (patentes, marcas, derechos de autor…) es una decisión estratégica que todo emprendedor debe considerar antes de lanzar su modelo al mercado.
+:::

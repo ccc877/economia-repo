@@ -1,0 +1,362 @@
+# Inversión y financiación
+
+Desde el punto de vista patrimonial, las empresas poseen estructura económica y financiera. Disponen de una masa patrimonial compuesta por elementos económicos denominados **activos** (bienes y derechos), que son financiados mediante elementos **pasivos** (deudas y obligaciones).
+
+
+## Inversión: conceptos y tipos
+
+Una **inversión** es aquel acto en el cual una empresa renuncia a una satisfacción inmediata y cierta por la esperanza de obtener una mayor rentabilidad en el futuro.
+
+Para adquirir activos las empresas tienen que invertir. Esto supone renunciar a dinero a cambio de obtener dichos activos con la esperanza de obtener rentabilidad en el futuro.
+
+Existe un mercado de capitales que redirige ahorros de los diversos agentes económicos a inversiones en empresas.
+
+**Tipos de activos en los que se puede invertir:**
+
+- **Activos reales o productivos**: engloban todos los bienes destinados a la producción (no a su consumo directo). Por ejemplo, la maquinaria.
+- **Activos financieros**: acciones, bonos y otro tipo de instrumentos financieros.
+
+**Según la relación entre inversiones:**
+
+- **Sustitutivas**: la realización de una hace innecesaria o imposible la otra.
+- **Complementarias**: la realización de una facilita o potencia la otra.
+- **Independientes**: la realización de una no afecta a las demás.
+
+A la hora de valorar una inversión, existen **tres características** a analizar:
+
+- **Rentabilidad**: el beneficio en relación al monto invertido. Se expresa como un porcentaje.
+- **Riesgo**: hay inversiones seguras, pero otras sufren una gran volatilidad, por lo que a la hora de invertir no puede saberse con certeza cuál será el resultado.
+- **Liquidez**: la cualidad de los activos para ser convertidos en dinero efectivo de forma inmediata sin pérdida significativa de su valor.
+
+
+## Características y valoración de una inversión
+
+Al invertir, se hace un pago —el **desembolso inicial** ($D_0$)— con la esperanza de generar unas entradas y salidas de dinero, llamados **flujos netos de caja** o *cash flows*, a lo largo de $n$ años (duración temporal). Al final de la inversión, puede que el bien aún tenga algún valor en el mercado, denominado **valor residual**.
+
+El dinero no tiene siempre el mismo valor: varía con el tiempo según la inflación. Por eso no se pueden comparar los euros actuales con los del año 2000. Al darse los flujos de caja en distintos momentos, para saber si se ganará dinero habrá que llevar todos los flujos de caja a **valores actuales**, actualizarlos para saber a cuánto dinero de hoy equivaldrían.
+
+- Sin tener en cuenta ese dinamismo, la valoración es **estática**.
+- Al tenerlo en cuenta, la valoración es **dinámica**.
+
+### Criterio estático: el pay-back (plazo de recuperación)
+
+A la hora de valorar una inversión, lo más simple es considerar que el valor del dinero es constante. Cuando no hay medios para hacer un cálculo más complejo, puede recurrirse al **criterio del plazo de recuperación o pay-back**. Este criterio estático muestra el tiempo necesario para recuperar el monto desembolsado. El foco está, por tanto, en la **liquidez** de la inversión.
+
+Para calcularlo hay que organizar una línea temporal, restando el desembolso inicial y sumando año a año los ingresos generados, hasta superar el 0. Superar el cero significará que en ese momento ($T$) se habrá recuperado el dinero desembolsado. La inversión seleccionada será aquella en la que el dinero logre recuperarse; si hay varias, se seleccionará aquella que permita recuperar la inversión antes (el menor $T$ posible).
+
+### Métodos dinámicos
+
+Si se cuenta con los medios necesarios, lo ideal es tener en cuenta el momento en el que se producen los flujos de caja. Los métodos que lo hacen se denominan **métodos dinámicos**.
+
+#### Valor Actual Neto (VAN)
+
+El método más simple es calcular el **Valor Actual Neto (VAN)**:
+
+$$
+VAN = \sum_{t=1}^{n} \frac{V_t}{(1+k)^t} - I_0
+$$
+
+Donde:
+
+- $V_t$ representa los flujos de caja en cada periodo $t$.
+- $I_0$ es el valor del desembolso inicial de la inversión.
+- $n$ es el número de períodos considerado.
+- $k$ es el tipo de interés (coste del capital o rentabilidad mínima exigida).
+
+El VAN consiste en llevar al momento actual (momento 0) todos los flujos de caja. Por la **equivalencia financiera**, los capitales son comparables cuando están todos en el mismo punto de la línea temporal.
+
+::: {.callout-note}
+## ¿Por qué no se pueden comparar euros de distintos momentos?
+
+Imagina que tienes dos opciones:
+
+- **Ahorrar 100 €**: si los guardas en un depósito al 10 % anual, después de un año tendrás 110 €.
+- **Gastar 100 € hoy**: disfrutarás del bien ahora, pero no tendrás ese dinero más tarde.
+
+La equivalencia financiera de los capitales significa que el dinero que tienes hoy puede crecer si lo ahorras. Por eso 100 € hoy no son comparables directamente con 100 € dentro de un año: los primeros valen más.
+:::
+
+En inversiones empresariales, se calcula un interés $k$ que es el mínimo que hay que ganar para que la inversión compense (si no, habría alternativas mejores, como un depósito bancario). Para que un proyecto merezca la pena, el VAN tiene que ser positivo o al menos nulo.
+
+**¿Cómo elegir entre proyectos según el VAN?**
+
+| Resultado del VAN | Interpretación |
+|:-----------------|:--------------|
+| $VAN > 0$ | El proyecto es rentable: el valor actualizado de las entradas supera el desembolso inicial. |
+| $VAN < 0$ | El proyecto no es rentable: no se recupera el dinero invertido. No debe llevarse a cabo. |
+| $VAN = 0$ | El valor actualizado de las entradas es igual al desembolso inicial. El proyecto es indiferente. |
+
+Entre los proyectos con VAN nulo o positivo, **hay que seleccionar aquel que tenga el mayor VAN**.
+
+#### Tasa Interna de Rentabilidad (TIR)
+
+El VAN da una medida **absoluta** de la rentabilidad. Para comparar adecuadamente inversiones de distinto tamaño puede utilizarse la **Tasa Interna de Rentabilidad (TIR)**.
+
+La TIR es la tasa de actualización $k$ que hace que el VAN sea igual a cero:
+
+$$
+VAN = 0 = -A + \frac{FNC_1}{(1+TIR)^1} + \frac{FNC_2}{(1+TIR)^2} + \frac{FNC_3}{(1+TIR)^3} + \cdots + \frac{FNC_n}{(1+TIR)^n}
+$$
+
+La TIR mide la rentabilidad **relativa** de la inversión (cuánto se obtiene por cada euro invertido), expresada en porcentaje. Permite saber si una inversión es más rentable que otra aunque tenga un VAN absoluto mayor pero también una mayor inversión inicial.
+
+| Comparación | Interpretación |
+|:-----------|:--------------|
+| $TIR > k$ | La rentabilidad es superior al interés exigido; el VAN será positivo. |
+| $TIR < k$ | La inversión no es rentable; destruye valor. |
+| $TIR = k$ | La inversión es indiferente. |
+
+Se elige, de entre todos los proyectos con TIR positiva, el que tenga el valor más elevado.
+
+
+```{python}
+#| echo: false
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Inversión inicial de 100 y flujos de caja de 30 durante 5 años
+inversion_inicial = 100
+flujos_caja = [30, 30, 30, 30, 30]
+
+def calcular_van(k, inversion, flujos):
+    van = -inversion
+    for t, flujo in enumerate(flujos):
+        van += flujo / (1 + k)**(t + 1)
+    return van
+
+k_valores = np.linspace(0, 0.35, 100)
+van_valores = [calcular_van(k, inversion_inicial, flujos_caja) for k in k_valores]
+
+tir_aprox = 0.1524  # TIR ≈ 15.24%
+
+fig, ax = plt.subplots(figsize=(8, 6))
+ax.plot(k_valores, van_valores, color='#9b59b6', linewidth=3)
+ax.plot(tir_aprox, 0, marker='o', markersize=10, color='#9b59b6')
+ax.text(-0.02, 45, r'$\mathbf{VAN = f(k)}$', fontsize=14, fontweight='bold', ha='right')
+ax.text(0.36, -3, r'$\mathbf{k}$', fontsize=16, fontweight='bold')
+ax.text(tir_aprox - 0.01, 5, 'TIR', fontsize=13, fontweight='bold', ha='center')
+ax.spines['left'].set_position('zero')
+ax.spines['bottom'].set_position('zero')
+ax.spines['right'].set_color('none')
+ax.spines['top'].set_color('none')
+ax.plot(0, 52, "^k", transform=ax.get_yaxis_transform(), clip_on=False)
+ax.plot(0.36, 0, ">k", transform=ax.get_xaxis_transform(), clip_on=False)
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_xlim(0, 0.38)
+ax.set_ylim(-15, 55)
+plt.figtext(0.5, 0.02, "Representación gráfica del VAN y de la TIR.",
+            wrap=True, horizontalalignment='center', fontsize=14)
+plt.show()
+```
+
+
+### Comparativa de los tres métodos
+
+| Método | Mide | Enfoque |
+|:-------|:-----|:--------|
+| Pay-back | Velocidad de recuperación | Liquidez |
+| VAN | Beneficio total actualizado | Rentabilidad absoluta |
+| TIR | Rentabilidad por euro invertido | Rentabilidad relativa |
+
+Los tres métodos son complementarios: el pay-back mide la **liquidez** del proyecto; el VAN mide la **rentabilidad absoluta**; la TIR mide la **rentabilidad relativa**.
+
+
+## Período Medio de Maduración (PMM)
+
+El **Período Medio de Maduración Financiero (PMMF)** mide el tiempo que transcurre desde que la empresa **paga** a sus proveedores por las materias primas hasta que **cobra** a sus clientes por la venta de los productos.
+
+$$
+PMMF = PMA + PMF + PMV + PMC - PMP
+$$
+
+O, de forma equivalente:
+
+$$
+PMMF = PMME - PMP
+$$
+
+Donde:
+
+- **PMA**: Período Medio de Almacenamiento de materias primas.
+- **PMF**: Período Medio de Fabricación.
+- **PMV**: Período Medio de Ventas (productos terminados en almacén).
+- **PMC**: Período Medio de Cobro a clientes.
+- **PMP**: Período Medio de Pago a proveedores (se resta porque es financiación gratuita que retrasa la necesidad de tesorería).
+- **PMME**: Período Medio de Maduración Económico (suma de los cuatro primeros).
+
+::: {.callout-note}
+Cuanto menor sea el PMMF, menor será la necesidad de financiación del ciclo de explotación (fondo de maniobra). Las empresas buscan reducirlo acortando el ciclo productivo, gestionando mejor el stock y cobrando antes a clientes.
+:::
+
+
+## La función financiera de la empresa
+
+Las empresas requieren inversiones (como la compra de naves y máquinas) para llevar a cabo su actividad productiva. Para financiar estas inversiones y cubrir gastos corrientes (salarios, suministros, etc.), necesitan obtener recursos financieros. El departamento financiero tiene dos funciones principales:
+
+1. **Identificación de inversiones y gastos**: determinar todas las inversiones y gastos necesarios, con el objetivo de lograr una rentabilidad adecuada.
+2. **Selección de fuentes de financiación**: elegir los fondos suficientes al menor coste posible.
+
+### Estructura económica y financiera
+
+La relación entre inversiones y financiación se representa a través de la **estructura económica** (inversiones = activo) y la **estructura financiera** (pasivo y patrimonio neto).
+
+```{=html}
+<figure style="margin: 1.5em auto; max-width: 640px;">
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:13px;">
+  <!-- Títulos columnas -->
+  <text x="160" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#1a3a5c">ACTIVO</text>
+  <text x="160" y="38" text-anchor="middle" font-size="11" fill="#1a3a5c">(Estructura económica)</text>
+  <text x="480" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#1a4a1a">PATRIMONIO NETO Y PASIVO</text>
+  <text x="480" y="38" text-anchor="middle" font-size="11" fill="#1a4a1a">(Estructura financiera)</text>
+  <!-- Línea divisoria -->
+  <line x1="320" y1="48" x2="320" y2="310" stroke="#333" stroke-width="2"/>
+  <!-- ACTIVO NO CORRIENTE -->
+  <rect x="10" y="50" width="300" height="130" fill="#d0e4f7" stroke="#aac" stroke-width="1" rx="3"/>
+  <text x="160" y="72" text-anchor="middle" font-weight="bold" fill="#1a3a5c">A) ACTIVO NO CORRIENTE</text>
+  <rect x="20" y="82" width="280" height="28" fill="#e8f4fd" stroke="#aac" stroke-width="0.5" rx="2"/>
+  <text x="160" y="101" text-anchor="middle" fill="#333">Inmovilizado intangible</text>
+  <rect x="20" y="114" width="280" height="28" fill="#e8f4fd" stroke="#aac" stroke-width="0.5" rx="2"/>
+  <text x="160" y="133" text-anchor="middle" fill="#333">Inmovilizado material</text>
+  <rect x="20" y="146" width="280" height="28" fill="#e8f4fd" stroke="#aac" stroke-width="0.5" rx="2"/>
+  <text x="160" y="165" text-anchor="middle" fill="#333">Inversiones financieras L/P</text>
+  <!-- ACTIVO CORRIENTE -->
+  <rect x="10" y="186" width="300" height="118" fill="#d0e4f7" stroke="#aac" stroke-width="1" rx="3"/>
+  <text x="160" y="207" text-anchor="middle" font-weight="bold" fill="#1a3a5c">B) ACTIVO CORRIENTE</text>
+  <rect x="20" y="216" width="280" height="26" fill="#e8f4fd" stroke="#aac" stroke-width="0.5" rx="2"/>
+  <text x="160" y="233" text-anchor="middle" fill="#333">Existencias</text>
+  <rect x="20" y="246" width="280" height="26" fill="#e8f4fd" stroke="#aac" stroke-width="0.5" rx="2"/>
+  <text x="160" y="263" text-anchor="middle" fill="#333">Realizable (clientes/deudores)</text>
+  <rect x="20" y="276" width="280" height="26" fill="#e8f4fd" stroke="#aac" stroke-width="0.5" rx="2"/>
+  <text x="160" y="293" text-anchor="middle" fill="#333">Disponible (tesorería)</text>
+  <!-- PATRIMONIO NETO -->
+  <rect x="330" y="50" width="300" height="90" fill="#d5f0d5" stroke="#8a8" stroke-width="1" rx="3"/>
+  <text x="480" y="72" text-anchor="middle" font-weight="bold" fill="#1a4a1a">A) PATRIMONIO NETO</text>
+  <rect x="340" y="82" width="280" height="50" fill="#eafaea" stroke="#8a8" stroke-width="0.5" rx="2"/>
+  <text x="480" y="107" text-anchor="middle" fill="#333">Capital y reservas</text>
+  <!-- PASIVO NO CORRIENTE -->
+  <rect x="330" y="146" width="300" height="76" fill="#d5f0d5" stroke="#8a8" stroke-width="1" rx="3"/>
+  <text x="480" y="168" text-anchor="middle" font-weight="bold" fill="#1a4a1a">B) PASIVO NO CORRIENTE</text>
+  <rect x="340" y="178" width="280" height="36" fill="#eafaea" stroke="#8a8" stroke-width="0.5" rx="2"/>
+  <text x="480" y="200" text-anchor="middle" fill="#333">Deudas a L/P (&gt; 1 año)</text>
+  <!-- PASIVO CORRIENTE -->
+  <rect x="330" y="228" width="300" height="76" fill="#d5f0d5" stroke="#8a8" stroke-width="1" rx="3"/>
+  <text x="480" y="250" text-anchor="middle" font-weight="bold" fill="#1a4a1a">C) PASIVO CORRIENTE</text>
+  <rect x="340" y="260" width="280" height="36" fill="#eafaea" stroke="#8a8" stroke-width="0.5" rx="2"/>
+  <text x="480" y="282" text-anchor="middle" fill="#333">Deudas a C/P (&lt; 1 año) · Proveedores</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.4em">Figura: Estructura del balance de situación</figcaption>
+</figure>
+```
+
+Al elegir fuentes de financiación, deben considerarse varios factores:
+
+- **Coste**: algunas fuentes son más caras (p. ej., préstamos a largo plazo implican más intereses).
+- **Cantidad necesaria**: las opciones de financiación varían según la cantidad de fondos requeridos.
+- **Flexibilidad**: algunas fuentes permiten aplazar pagos, lo que puede beneficiar a la empresa.
+- **Tamaño de la empresa**: las empresas grandes suelen tener más opciones de financiación.
+- **Equilibrio financiero**: debe existir una relación adecuada entre inversiones y fuentes de financiación. Por ejemplo, no es sensato pedir un préstamo a largo plazo para financiar activos de corta duración.
+
+
+## Fuentes de financiación
+
+Las fuentes de financiación se clasifican según tres criterios:
+
+### Según su titularidad
+
+- **Fondos propios**: recursos que pertenecen a la empresa y no necesitan ser devueltos. Incluyen aportaciones de socios (capital), beneficios no distribuidos (reservas) y amortizaciones y provisiones.
+- **Fondos ajenos**: recursos que se piden prestados y deben devolverse con intereses. Se dividen en:
+  - *A largo plazo*: devolución en más de un año (pasivo no corriente).
+  - *A corto plazo*: devolución en menos de un año (pasivo corriente). Los intereses se consideran gastos financieros.
+
+### Según su origen
+
+- **Financiación interna**: recursos generados por la propia empresa (reservas, amortizaciones y provisiones).
+- **Financiación externa**: recursos obtenidos del exterior (aportaciones de socios, emisión de obligaciones, otros tipos de financiación ajena).
+
+### Según su duración
+
+- **Capitales permanentes**: fondos que permanecen en la empresa a largo plazo (autofinanciación + pasivo no corriente).
+- **Capitales a corto plazo**: fondos que deben devolverse en menos de un año.
+
+
+## La financiación propia
+
+### Financiación propia externa
+
+- **Capital social**: cantidad de dinero o bienes aportados por los socios para iniciar la actividad.
+  - *Aportaciones iniciales de los socios*: en una Sociedad Anónima se dividen en **acciones**; en otras sociedades, en **participaciones**.
+  - *Ampliaciones de capital*: si la empresa necesita más fondos, puede solicitar nuevas aportaciones, ofreciéndolas primero a los socios actuales.
+- **Subvenciones**: ayudas otorgadas por las Administraciones Públicas, generalmente disponibles para pymes y emprendedores.
+
+### Financiación propia interna (autofinanciación)
+
+Son los fondos generados por la propia actividad de la empresa:
+
+- **Reservas**: beneficios no distribuidos. Pueden ser legales (fijadas por la ley), estatutarias (fijadas por los estatutos) o voluntarias.
+- **Amortizaciones**: reflejan la pérdida de valor de los activos productivos a lo largo del tiempo. Por ejemplo, un coche comprado por 20.000 € con vida útil de 10 años se amortiza a razón de 2.000 € anuales. Este monto se contabiliza como coste, pero en realidad se "ahorra" para futuras inversiones.
+- **Provisiones**: cantidades reservadas para cubrir gastos futuros inciertos (p. ej., una reparación prevista en la fábrica).
+
+
+## La financiación ajena
+
+### Financiación ajena a largo plazo
+
+Cuando los fondos propios no son suficientes, las empresas recurren a financiación ajena a largo plazo (devolución en más de un año):
+
+1. **Préstamos a largo plazo**: fondos obtenidos con devolución e intereses pactados a más de un año.
+2. **Empréstitos**: emisión de bonos u obligaciones que particulares o empresas compran, prestando dinero a la empresa a cambio de intereses.
+3. **Leasing**: contrato de arrendamiento con opción a compra. Una entidad de leasing compra el bien y lo cede a la empresa a cambio de una cuota periódica. Al finalizar el contrato, la empresa puede comprar el bien a precio reducido, renovar el contrato o devolverlo. El mantenimiento y el seguro no están incluidos, y el coste total suele ser elevado.
+4. **Renting**: contrato de alquiler a largo plazo con cuota fija que incluye mantenimiento y seguro. A diferencia del leasing, **no existe opción de compra** al finalizar el contrato.
+
+### Financiación ajena a corto plazo
+
+Pedir financiación a largo plazo suele ser más costoso debido a los intereses más altos. Cuando la empresa necesita dinero para cubrir necesidades puntuales y puede devolverlo rápidamente, recurre a financiación a corto plazo:
+
+1. **Préstamos a corto plazo**: préstamos bancarios con plazo de devolución inferior a un año.
+2. **Líneas de crédito**: el banco habilita una cuenta con un límite determinado y la empresa retira fondos según lo necesite. Se pagan intereses por la cantidad utilizada y comisión por el monto no dispuesto.
+3. **Crédito comercial**: los proveedores permiten aplazar el pago de materias primas (normalmente entre 45 y 90 días). Es una forma de financiación gratuita, salvo que el proveedor ofrezca descuento por pago anticipado.
+4. **Descuento de efectos**: el banco anticipa el importe de un efecto comercial (pagaré, cheque) antes de su vencimiento, descontando un interés. El banco asume el riesgo de impago.
+5. **Factoring**: la empresa vende sus derechos de cobro a una entidad ("factor"), que adelanta el dinero con un descuento que cubre intereses y riesgo de impago. Permite trasladar el riesgo al factor, aunque el coste es elevado.
+6. **Confirming**: servicio bancario que facilita la gestión de pagos a proveedores. El banco informa al proveedor sobre el pago pendiente y le ofrece cobrarlo antes del vencimiento a cambio de intereses.
+7. **Fuentes espontáneas de financiación**: formas de financiación que se obtienen sin negociación previa:
+   - *Descubierto en cuenta*: la empresa gasta más de lo disponible en cuenta; los intereses aplicados suelen ser muy altos.
+   - *Salarios pendientes de pago*: los empleados cobran a fin de mes, por lo que la empresa dispone temporalmente de esos fondos.
+   - *Pagos a Hacienda*: la empresa dispone de los fondos fiscales hasta la fecha de pago.
+
+
+## Fuentes alternativas de financiación
+
+Las fuentes alternativas han cobrado gran relevancia especialmente para las pymes. Las principales son:
+
+1. **Capital riesgo (*venture capital*)**: entidades que invierten en empresas con alto potencial de crecimiento a cambio de una participación. Su objetivo es obtener beneficios al vender su participación cuando la empresa haya prosperado.
+2. **Business angels**: inversores individuales con experiencia y contactos que proporcionan capital a *startups* en etapas iniciales a cambio de una participación.
+3. **Crowdfunding**: recaudación de fondos a través de pequeñas aportaciones de muchas personas. Los contribuyentes reciben contraprestaciones como participaciones o recompensas.
+4. **Crowdlending**: similar al crowdfunding, pero en forma de préstamos otorgados por múltiples particulares que esperan recibir intereses. Las tasas suelen ser más bajas que las bancarias.
+5. **Friends, Family and Fools (FFF)**: financiamiento en el círculo cercano (familiares, amigos y personas que confían en el proyecto).
+6. **Aceleradoras de *startups***: apoyan a nuevas empresas en sus primeras etapas ofreciendo inversión, redes de contactos, formación y asesoramiento.
+7. **Capitalización de la prestación de desempleo**: la Seguridad Social permite a los desempleados recibir el total de su prestación de una sola vez para iniciar un negocio.
+
+---
+
+<!-- 
+NOTA CURRICULAR (comentario; no se renderiza en PDF/HTML)
+
+Este capítulo cubre los saberes básicos del Decreto 76/2023
+para Empresa y Diseño de Modelos de Negocio (2.º Bach.):
+
+Bloque B.5 - Función financiera:
+  - Estructura económica y financiera ✓
+  - Inversión: conceptos y tipos ✓
+  - Valoración y selección de inversiones: VAN y PAYBACK ✓
+  - Recursos financieros ✓
+  - Análisis de fuentes alternativas de financiación interna y externa ✓
+
+Bloque B.3 - Función productiva (parcialmente):
+  - Período Medio de Maduración ✓ (incluido aquí por coherencia con el ciclo de explotación)
+
+PENDIENTES:
+  - Figura del diagrama de balance (image1): insertar gráfico propio
+  - Figura del gráfico VAN/TIR: código Python incluido en callout;
+    ejecutar, guardar imagen e insertar con ![](ruta.png)
+-->

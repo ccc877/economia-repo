@@ -1,0 +1,88 @@
+---
+title: "llll"
+editor: visual
+---
+
+```{python}
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+def dibujar_piramide_maslow():
+    # Crear la figura
+    fig, ax = plt.subplots(figsize=(10, 7))
+
+    # Definir los niveles de la pirámide (de abajo hacia arriba)
+    # Cada nivel tiene su altura (y), color y texto
+    niveles =[
+        {
+            "y_bottom": 0, "y_top": 2, 
+            "color": "#ff9999", # Rojo pastel
+            "label": "1. Fisiológicas\n(Respirar, comer, beber, dormir)"
+        },
+        {
+            "y_bottom": 2, "y_top": 4, 
+            "color": "#ffcc99", # Naranja pastel
+            "label": "2. Seguridad\n(Empleo, familia, salud, propiedad física)"
+        },
+        {
+            "y_bottom": 4, "y_top": 6, 
+            "color": "#ffff99", # Amarillo pastel
+            "label": "3. Afiliación / Sociales\n(Amistad, afecto, intimidad, pertenencia)"
+        },
+        {
+            "y_bottom": 6, "y_top": 8, 
+            "color": "#99ff99", # Verde pastel
+            "label": "4. Reconocimiento / Estima\n(Éxito, respeto, confianza, autoestima)"
+        },
+        {
+            "y_bottom": 8, "y_top": 10, 
+            "color": "#99ccff", # Azul pastel
+            "label": "5. Autorrealización\n(Creatividad, moralidad, resolución de problemas)"
+        }
+    ]
+
+    # Dibujar cada nivel
+    for nivel in niveles:
+        yb = nivel["y_bottom"]
+        yt = nivel["y_top"]
+        
+        # La pirámide es un triángulo que va de x=-5 a x=5 en la base, y termina en x=0 en la punta (y=10).
+        # Ecuación de las líneas diagonales: x_left = -5 + y/2 | x_right = 5 - y/2
+        xl_b, xr_b = -5 + yb / 2, 5 - yb / 2
+        xl_t, xr_t = -5 + yt / 2, 5 - yt / 2
+        
+        # Coordenadas de las esquinas del polígono (trapecio)
+        vertices = [[xl_b, yb], [xr_b, yb], [xr_t, yt],[xl_t, yt]]
+        
+        # Crear la capa de la pirámide
+        poligono = patches.Polygon(
+            vertices, 
+            closed=True, 
+            facecolor=nivel["color"], 
+            edgecolor='white', # Borde blanco para separar los niveles
+            linewidth=3
+        )
+        ax.add_patch(poligono)
+        
+        # Añadir el texto en el centro del trapecio
+        ax.text(
+            0, (yb + yt) / 2, 
+            nivel["label"], 
+            ha='center', va='center', 
+            fontsize=11, fontweight='bold', color='#333333'
+        )
+
+    # Configuración de los ejes y el gráfico
+    ax.set_xlim(-6, 6)
+    ax.set_ylim(-0.5, 11)
+    ax.axis('off')  # Ocultamos los ejes para que parezca un dibujo limpio
+    plt.title("Jerarquía de las necesidades de Maslow", fontsize=18, fontweight='bold', pad=20)
+    
+    # Mostrar el resultado
+    plt.tight_layout()
+    plt.show()
+
+# Ejecutar la función
+if __name__ == "__main__":
+    dibujar_piramide_maslow()
+```

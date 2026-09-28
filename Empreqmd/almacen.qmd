@@ -1,0 +1,233 @@
+# Gestión del almacén e inventarios
+
+La gestión de inventarios es crucial para las empresas, ya que deben encontrar un equilibrio entre tener demasiadas existencias —con costes de almacenamiento elevados— y tener muy pocas —con riesgo de quedarse sin stock y perder ventas o producción—. Para optimizar este equilibrio se utilizan modelos de gestión de inventarios.
+
+---
+
+## El modelo de Wilson (CEP / EOQ)
+
+El **Modelo de Wilson** o **Cantidad Económica de Pedido (CEP)** —en inglés *Economic Order Quantity* (EOQ)— es el modelo de gestión de inventarios más conocido.
+
+**Objetivo principal:** minimizar los **costes totales de gestión del inventario**, que incluyen los costes de almacenamiento (o posesión) y los costes de pedido, determinando la cantidad óptima de unidades a pedir en cada pedido ($Q^*$).
+
+### Supuestos del modelo
+
+El modelo se basa en los siguientes supuestos:
+
+- **Tamaño de pedido constante**: todos los pedidos son siempre del mismo tamaño ($Q$ unidades).
+- **Demanda constante y conocida**: la demanda del producto es estable, constante y predecible a lo largo del año.
+- **Plazo de entrega constante y conocido**: el proveedor tarda siempre el mismo tiempo en entregar desde que se emite el pedido ($t$ días).
+- **Coste de almacenamiento proporcional** al nivel medio de inventario.
+- **Coste de pedido constante** e independiente del tamaño del pedido.
+- **No se permiten roturas de stock**: la demanda siempre se satisface.
+
+### Notación y variables
+
+| Símbolo | Significado |
+|:-------:|:------------|
+| $D$ | Demanda anual (unidades) |
+| $Q$ | Volumen del pedido (unidades) |
+| $s$ | Coste fijo por pedido (€/pedido) |
+| $g$ | Coste de almacenaje anual por unidad (€/ud·año) |
+| $ss$ | Stock de seguridad (unidades) |
+| $t$ | Plazo de entrega (días) |
+| $d$ | Demanda diaria ($D / 360$) |
+
+### Costes implicados
+
+El modelo trabaja con dos categorías de costes que evolucionan en sentidos opuestos cuando se varía el tamaño del pedido $Q$:
+
+- **Coste de pedido** ($s$): recoge los gastos de tramitación y realización de cada pedido —gastos administrativos, preparación del pedido, transporte y gestión de la recepción—. Es un coste fijo por pedido, independiente de su tamaño. Cuantos más pedidos se hagan al año —es decir, cuanto menor sea $Q$—, mayor será el coste total anual de pedido, ya que se multiplica por el número de pedidos $N = D/Q$.
+
+- **Coste de almacenamiento** ($g$): recoge los gastos derivados de mantener las existencias en el almacén —alquiler del espacio, seguros, pérdidas por obsolescencia, mermas y el coste financiero del capital inmovilizado—. Este coste crece con el nivel medio de inventario: cuanto mayor sea $Q$, mayor será el stock medio $(Q/2 + ss)$ y, por tanto, mayores serán los costes de posesión.
+
+La clave del modelo está en que ambos costes se comportan de forma inversa: reducir $Q$ abarata el almacenamiento pero encarece el pedido, y aumentar $Q$ hace lo contrario. El Modelo de Wilson busca el valor de $Q$ que **minimiza la suma de ambos costes**, que es precisamente el punto en que el coste de pedido y el coste de almacenamiento se igualan.
+
+### Fórmulas operativas
+
+#### A. Cantidad óptima de pedido y tiempos
+
+La **cantidad económica de pedido** ($Q^*$) que minimiza el coste total es:
+
+$$
+Q^* = \sqrt{\frac{2 \cdot s \cdot D}{g}}
+$$
+
+A partir de $Q^*$ se obtienen:
+
+$$
+N = \frac{D}{Q} \quad \text{(número de pedidos al año)}
+$$
+
+$$
+T = \frac{360}{N} \quad \text{(días entre pedidos)}
+$$
+
+#### B. Gestión del almacén
+
+**Punto de pedido ($P_p$):** nivel de stock en el que hay que emitir un nuevo pedido para que llegue justo cuando las existencias actuales se agoten.
+
+$$
+P_p = (d \times t) + ss
+$$
+
+::: {.callout-warning}
+## Importante
+$d$ y $t$ deben estar expresados en la **misma unidad de tiempo**. Si $t$ es en días, $d = D/360$.
+:::
+
+**Stock medio ($S_m$) e Índice de Rotación ($IR$):**
+
+$$
+S_m = \frac{Q}{2} + ss \qquad \longrightarrow \qquad IR = \frac{D}{S_m} \quad \text{(veces/año)}
+$$
+
+#### C. Coste total de gestión (CG)
+
+El coste total que el modelo minimiza es la suma del coste de pedido y el coste de almacenamiento:
+
+$$
+CT = \underbrace{s \cdot N}_{\text{Coste pedido}} + \underbrace{g \cdot \left(\frac{Q}{2} + ss\right)}_{\text{Coste almacenamiento}}
+$$
+
+En el punto óptimo $Q^*$, el coste de pedido y el coste de almacenamiento se igualan.
+
+### Conceptos clave del modelo
+
+**Punto de pedido ($P_p$):** es el nivel de existencias en el que la empresa debe emitir un nuevo pedido. Se calcula de forma que el nuevo lote llegue exactamente cuando las existencias del pedido anterior se han agotado. Como entre el momento en que se hace el pedido y el momento en que llega transcurre un plazo de entrega $t$, la empresa no puede esperar a quedarse sin stock: debe pedir cuando aún le quedan suficientes unidades para cubrir la demanda durante ese plazo. Matemáticamente, eso es $d \times t$ unidades; y si además se quiere mantener un colchón de seguridad, el punto de pedido sube en $ss$ unidades adicionales.
+
+**Stock de seguridad ($ss$):** es una reserva mínima de existencias que la empresa mantiene de forma permanente como colchón ante imprevistos; un retraso del proveedor, una demanda puntualmente más alta de lo previsto, una incidencia en el transporte. Su coste es real (ocupa espacio y capital inmovilizado), pero su función es evitar la ruptura de stock y los costes asociados a ella: pérdida de ventas, paradas de producción o penalizaciones. Cuanto mayor sea la incertidumbre en la demanda o en el plazo de entrega, mayor deberá ser el stock de seguridad.
+
+### Funcionamiento gráfico: la curva de "dientes de sierra"
+
+La evolución del inventario bajo este modelo tiene forma de **dientes de sierra**. Al comienzo de cada ciclo, la empresa recibe un pedido de $Q$ unidades y las existencias alcanzan su nivel máximo. A partir de ese momento, la demanda va consumiendo el stock a un ritmo constante $d$ (unidades por día), por lo que el nivel de inventario desciende de forma lineal.
+
+Cuando el stock llega al nivel del **punto de pedido $P_p$**, la empresa emite un nuevo pedido. Como el proveedor tarda $t$ días en servirlo, las existencias siguen bajando durante ese plazo de entrega hasta que, justo cuando se agotan las existencias del ciclo anterior, llega el nuevo lote de $Q$ unidades y el ciclo comienza de nuevo.
+
+Si existe **stock de seguridad**, el inventario nunca baja de $ss$ unidades: la gráfica no toca el eje X sino que rebota en el nivel $ss$. Esto significa que el eje Y de la gráfica no empieza en cero, sino en $ss$, y que el stock máximo no es $Q$ sino $Q + ss$.
+
+::: {.callout-tip}
+## Notas para resolver ejercicios
+
+1. **Año comercial**: usa siempre **360 días** salvo que el enunciado indique expresamente 365.
+2. **Demanda diaria**: si te dan $D$ anual → $d = D/360$. Si te dan $D$ mensual → $d = D/30$.
+3. **Ruptura de stock**: ocurre si el retraso del proveedor (en días) $\times\, d > ss$.
+4. **Gráfica de dientes de sierra**: si hay stock de seguridad, el eje Y **empieza en $ss$** (no en 0).
+:::
+
+---
+
+## El sistema JIT (*Just in Time*)
+
+El sistema JIT, desarrollado por Toyota en los años 50 como parte del **Toyota Production System**, es mucho más que un modelo de inventario: es una **filosofía de gestión de la producción y la calidad** que busca la **eliminación de todo tipo de desperdicios** (*muda* en japonés): el inventario excesivo, los defectos, la sobreproducción, las esperas, los transportes innecesarios, los movimientos inútiles y el procesamiento que no añade valor. Desde Japón, este enfoque se extendió a todo el mundo y se convirtió en el fundamento de lo que hoy conocemos como **producción ajustada** o *lean manufacturing*.
+
+**Objetivo principal:** producir o adquirir los productos **justo en el momento en que son necesarios y en la cantidad exacta requerida**, minimizando o eliminando la necesidad de mantener grandes inventarios. En la práctica, esto se traduce en realizar **muchos pedidos pequeños con alta frecuencia**, en lugar de pocos pedidos grandes que luego hay que almacenar.
+
+### El sistema *pull* (arrastre)
+
+La distinción más importante del JIT frente a los sistemas de gestión tradicionales es la dirección en la que fluye la información que desencadena la producción.
+
+En los sistemas tradicionales, llamados ***push*** (de empuje), la empresa produce basándose en previsiones de demanda y luego intenta colocar esa producción en el mercado. Se "empuja" el producto hacia el cliente. El riesgo es evidente: si las previsiones fallan, el resultado es exceso de stock —con sus costes asociados— o bien escasez.
+
+El JIT funciona al revés, como un sistema ***pull*** (de arrastre): la producción y los pedidos de materiales o componentes se inician **únicamente cuando existe una demanda real del cliente final**. Es la demanda del cliente la que "tira" de toda la cadena de suministro hacia atrás, desde el punto de venta hasta el primer proveedor de materias primas, asegurando que solo se produce y entrega lo que realmente se necesita, en el momento preciso. El mecanismo visual clásico para implementar este sistema en la planta de producción es el ***kanban***, una tarjeta o señal que autoriza la producción o el movimiento de materiales solo cuando hay una necesidad real aguas abajo en el proceso.
+
+### Requisitos para el éxito del JIT
+
+El JIT es un sistema exigente que solo funciona correctamente cuando se cumplen ciertas condiciones:
+
+1. **Previsiones de demanda precisas**: el sistema opera con márgenes muy estrechos; una previsión errónea puede dejar a la empresa sin existencias o generar un pedido urgente con costes elevados.
+2. **Entregas rápidas, frecuentes y fiables**: dado que se trabaja con inventarios mínimos, los productos deben llegar en pequeñas cantidades y en la fecha exactamente pactada. Un retraso que en un sistema convencional sería inapreciable puede provocar aquí la parada de una línea de producción.
+3. **Relaciones estrechas y de confianza con proveedores**: el JIT no es compatible con una gestión transaccional y distante de los proveedores. Se requiere una colaboración estrecha, contratos a largo plazo y proveedores que compartan la filosofía de calidad y puntualidad.
+4. **Alta calidad de producción**: en un sistema con stock convencional, los productos defectuosos pueden retirarse del almacén sin interrumpir la producción. En el JIT no existe ese colchón, por lo que cualquier defecto detiene inmediatamente el proceso. La calidad deja de ser un objetivo deseable y se convierte en una condición de supervivencia del sistema.
+
+### Ventajas del JIT
+
+- **Reducción drástica de costes de almacenamiento**: al trabajar con inventarios mínimos, desaparecen o se reducen enormemente los costes de espacio físico, mantenimiento, seguros, obsolescencia y el coste financiero del capital inmovilizado en existencias.
+- **Mayor adaptación a la demanda**: la empresa puede modificar rápidamente su mix de producción o su surtido de productos para ajustarse a los cambios en los gustos y necesidades de los consumidores, sin verse lastrada por un gran stock de productos que ya no se demandan.
+- **Mejora continua de la calidad**: paradójicamente, eliminar el inventario que "oculta" los problemas de producción obliga a resolverlos. Cada defecto, cada retraso, cada ineficiencia queda expuesto inmediatamente, lo que genera una presión constante hacia la mejora.
+- **Reducción de residuos y eficiencia global**: el JIT no se limita a reducir el stock; su filosofía abarca la eliminación de todas las ineficiencias del proceso productivo, con el resultado de una operación más ágil y con menos desperdicio de recursos.
+
+### Inconvenientes del JIT
+
+- **Mayor vulnerabilidad ante imprevistos**: el sistema tiene poca capacidad de absorber perturbaciones externas. Un retraso del proveedor, un problema de calidad en un lote, una huelga de transportes o un pico inesperado de demanda pueden traducirse muy rápidamente en una ruptura de stock y en la parada de la producción o la pérdida de ventas. La pandemia de 2020 expuso con crudeza esta fragilidad en las cadenas de suministro globales que habían adoptado el JIT.
+- **Pérdida de descuentos por volumen**: los proveedores suelen ofrecer condiciones más favorables cuanto mayor es el pedido. Al optar por pedidos pequeños y frecuentes, la empresa renuncia a esos descuentos, lo que puede encarecer el coste unitario de los materiales.
+- **Dependencia crítica de proveedores**: la relación con los proveedores pasa a ser estratégica. Un proveedor poco fiable, geográficamente lejano o con problemas de capacidad puede convertirse en el punto débil de todo el sistema. Esto suele implicar trabajar con un número reducido de proveedores de confianza, lo que a su vez reduce la capacidad de negociación.
+
+::: {.callout-note}
+## Ejemplo real: Zara
+La empresa **Zara** es uno de los ejemplos más conocidos del éxito del sistema JIT en el sector de la moda, con colecciones que se renuevan en pocas semanas y entregas frecuentes a tiendas para evitar exceso de stock.
+:::
+
+---
+
+## El sistema ABC de gestión de inventarios
+
+El sistema ABC es un método de clasificación de los artículos del inventario basado en su valor o importancia relativa para la empresa. Su principio fundamental es que **no todos los artículos del almacén merecen el mismo nivel de atención y control**: dedicar los mismos recursos a gestionar un componente de alto valor que a gestionar un artículo de papelería es un desperdicio evidente. El sistema propone asignar el esfuerzo de control de forma proporcional al impacto económico de cada artículo.
+
+El fundamento teórico del ABC es el **Principio de Pareto** (también conocido como regla 80/20), enunciado por el economista italiano Vilfredo Pareto a finales del siglo XIX: en muchos fenómenos económicos, aproximadamente el 20 % de las causas explica el 80 % de los efectos. Aplicado al inventario, esto significa que un pequeño porcentaje de artículos concentra la mayor parte del valor del stock, mientras que la mayoría de los artículos representan una fracción pequeña del valor total.
+
+### Clasificación de los artículos
+
+El inventario se divide en tres categorías según su participación en el número total de artículos y en el valor total del stock:
+
+```{=typst}
+#figure(
+  table(
+    columns: (auto, auto, auto, 1fr),
+    align: (center, center, center, left),
+    table.header(
+      [*Categoría*], [*% artículos*], [*% valor*], [*Política de control*],
+    ),
+    [*A* \ (Alto valor)],
+    [10–20 %],
+    [70–80 %],
+    [Control riguroso y continuo. Revisión permanente del stock, previsiones de demanda muy precisas y análisis detallado de cada pedido. Son los artículos críticos: alto coste unitario, alto volumen de ventas o importancia estratégica para la empresa.],
+
+    [*B* \ (Valor medio)],
+    [20–30 %],
+    [15–25 %],
+    [Control moderado. Revisiones periódicas, menos frecuentes que los A pero más que los C. Importancia intermedia para la empresa.],
+
+    [*C* \ (Bajo valor)],
+    [50–70 %],
+    [5–10 %],
+    [Control simple y poco frecuente. Suele bastar con una revisión visual periódica o un sistema de doble cajón. A menudo se hacen pedidos de gran volumen para reducir los costes administrativos por pedido. Son artículos de bajo coste unitario, poco volumen de ventas o no críticos para la operación.],
+  ),
+  caption: [Clasificación ABC del inventario según el Principio de Pareto.]
+)
+```
+
+La frontera entre categorías no es rígida: lo importante no es si un artículo cae exactamente en el 20 % o en el 25 %, sino identificar qué artículos merecen un control exhaustivo y cuáles pueden gestionarse con criterios más simples. En la práctica, la clasificación se construye ordenando todos los artículos de mayor a menor valor anual consumido (precio unitario × cantidad anual) y trazando la línea divisoria donde se observe un salto significativo en la acumulación del valor total.
+
+### Ventajas del sistema ABC
+
+- **Optimización del tiempo y los recursos de gestión**: al concentrar el esfuerzo de control en los artículos A, la empresa obtiene el mayor retorno posible de su trabajo de gestión. Vigilar con detalle un componente que representa el 0,1 % del valor del stock raramente merece la pena.
+- **Reducción del riesgo en los artículos de mayor valor**: un exceso de stock de artículos A puede inmovilizar cantidades significativas de capital; una ruptura de stock en esos mismos artículos puede detener la producción o perder un cliente clave. El control estricto reduce ambos riesgos.
+- **Simplificación de la gestión de los artículos menos importantes**: los artículos C, que son numerosos pero poco valiosos, pueden gestionarse con procedimientos automáticos o muy sencillos, liberando tiempo para lo que realmente importa.
+- **Marco para la toma de decisiones**: el ABC ofrece una estructura clara para priorizar decisiones de compra, negociación con proveedores y asignación de espacio en el almacén.
+
+### Inconvenientes del sistema ABC
+
+- **Subjetividad en la clasificación**: determinar qué artículos son A, B o C puede ser complejo, especialmente cuando el criterio puramente monetario no captura toda la importancia de un artículo. Un tornillo de céntimos que es el único componente que falta para terminar un producto de miles de euros puede ser, en la práctica, tan crítico como cualquier artículo A.
+- **Necesidad de actualización continua**: las categorías no son permanentes. Un artículo que hoy es C puede convertirse en A si cambia su precio, su volumen de consumo o su importancia estratégica. El sistema debe revisarse periódicamente para seguir siendo útil.
+- **Visión limitada al valor monetario**: el ABC se construye sobre el valor económico del inventario, pero no incorpora directamente otros factores relevantes como la dificultad de aprovisionamiento, el tiempo de entrega, el riesgo de obsolescencia o la importancia crítica para la continuidad de la producción. En la práctica, estos factores a veces aconsejan tratar como A artículos que el valor económico clasificaría como C.
+
+
+<!-- 
+NOTA CURRICULAR (comentario; no se renderiza en PDF/HTML)
+
+Este capítulo cubre los saberes básicos del Decreto 76/2023
+para Empresa y Diseño de Modelos de Negocio (2.º Bach.):
+
+Bloque B.3 - Función productiva y aprovisionamiento:
+  - Gestión de inventarios: Punto de pedido, JIT ✓
+  - Modelo de Wilson (CEP / EOQ) con fórmulas completas ✓
+  - Sistema JIT ✓
+  - Sistema ABC (Principio de Pareto) ✓
+
+FORMULARIO INTEGRADO:
+  Las fórmulas de este capítulo proceden del formulario oficial Wilson-2-1.pdf
+  (elaboración propia perdida el original). Están integradas en el cuerpo del texto.
+  Puede reproducirse como hoja de fórmulas separada para el alumnado
+  a partir de la sección "Fórmulas operativas" de este capítulo.
+-->

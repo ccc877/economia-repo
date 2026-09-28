@@ -1,0 +1,79 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Cuaderno de ejercicios — Empresa y diseño de modelos de negocio"
+  subtitle: "Selectividad EHU · 2.º Bachillerato"
+  author: "Guillermo"
+  date: today
+  language: es
+
+  chapters:
+    - index.qmd
+
+    - part: "BLOQUE 1 · Producción y costes"
+      chapters:
+        - b1_costes_umbral.qmd
+        - b1_producir_o_comprar.qmd
+        - b1_productividad.qmd
+
+    - part: "BLOQUE 2 · Gestión del almacén"
+      chapters:
+        - b2_wilson.qmd
+        - b2_pmm.qmd
+        - b2_fifo_pmp.qmd
+
+    - part: "BLOQUE 3 · Inversión y financiación"
+      chapters:
+        - b3_payback_van_tir.qmd
+        - b3_fuentes_financiacion.qmd
+
+    - part: "BLOQUE 4 · Contabilidad y ratios"
+      chapters:
+        - b4_balance_pyg.qmd
+        - b4_ratios.qmd
+
+    - part: "BLOQUE 5 · Empresa y marco jurídico"
+      chapters:
+        - b5_formas_juridicas.qmd
+        - b5_verdadero_falso.qmd
+
+    - part: "Apéndices"
+      chapters:
+        - formularios.qmd
+        - plantillas_ratios.qmd
+        - examenes_completos.qmd
+
+format:
+  html:
+    theme: cosmo
+    lang: es
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 2
+    highlight-style: tango
+    code-fold: false
+    grid:
+      sidebar-width: 260px
+      body-width: 760px
+
+  pdf:
+    documentclass: scrbook
+    classoption: [twoside, openright]
+    lang: es
+    toc: true
+    number-sections: true
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.8cm
+      - right=2.2cm
+    include-in-header:
+      text: |
+        \usepackage{amsmath}
+        \usepackage{booktabs}
+        \usepackage{xcolor}
+        \usepackage{tcolorbox}
+        \tcbuselibrary{skins, breakable}

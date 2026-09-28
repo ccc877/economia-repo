@@ -1,0 +1,317 @@
+# Costes y umbral de rentabilidad
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Costes y umbral de rentabilidad"}
+
+**Notación**
+
+| Símbolo | Nombre | Significado |
+|:---:|:---|:---|
+| $Q$ | Cantidad | Unidades producidas y vendidas |
+| $P$ | Precio de venta unitario | Ingreso por cada unidad vendida |
+| $CF$ | Costes fijos | Costes que no dependen de la cantidad (alquiler, seguros, sueldos fijos…) |
+| $CVu$ | Coste variable unitario | Coste adicional de producir una unidad más (materiales, energía…) |
+| $CV$ | Costes variables totales | $CV = CVu \times Q$ |
+| $CT$ | Coste total | $CT = CF + CV$ |
+| $IT$ | Ingresos totales | $IT = P \times Q$ |
+| $B$ | Beneficio | $B = IT - CT$ |
+| $Q^*$ | Umbral de rentabilidad | Cantidad donde $B = 0$ (punto muerto) |
+| $P - CVu$ | Margen de contribución unitario | Lo que aporta cada unidad a cubrir los CF |
+
+**Fórmulas**
+
+$$CT = CF + CVu \times Q$$
+
+$$B = IT - CT = (P \times Q) - (CF + CVu \times Q)$$
+
+$$Q^* = \frac{CF}{P - CVu} \qquad \text{(umbral de rentabilidad)}$$
+
+$$P_{min} = \frac{CF + CVu \times Q}{Q} \qquad \text{(precio mínimo para no perder con una Q dada)}$$
+
+$$CM = \frac{CT}{Q} \qquad \text{(coste medio unitario)}$$
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- El punto muerto se expresa en **unidades**. Si piden el umbral en euros: $IT^* = P \times Q^*$.
+- Cuando hay **dos productos**, cada uno soporta solo la parte de CF que le corresponde (el % indicado), no el total.
+- Si te dan CT y CF, calcula primero $CV = CT - CF$ y luego $CVu = CV / Q$.
+- Si te dan IT y P, calcula primero $Q = IT / P$ antes de buscar el $CVu$.
+- Cuando la capacidad máxima es inferior al punto muerto, la empresa siempre tendrá pérdidas al precio actual: hay que calcular el **precio mínimo** para cubrir costes con esa cantidad.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2025 Extraordinaria — Pastelería AMETS (roscos de Navidad)
+
+> *AMETS tiene CF = 58.014 €, CV totales = 245.250 €, produce 54.500 roscos al año y los vende a 7,8 €/ud.*
+>
+> a) Punto muerto, significado y representación gráfica. *(1 p)*
+> b) Resultado económico de este año. *(0,5 p)*
+> c) Si la capacidad máxima fuera de 14.000 roscos, ¿a qué precio mínimo habría que venderlos para no tener pérdidas? *(0,5 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+**Paso 0 — Calcular el CVu**
+
+$$CVu = \frac{CV}{Q} = \frac{245.250}{54.500} = \mathbf{4{,}5\ \text{€/rosco}}$$
+
+**a) Punto muerto**
+
+$$Q^* = \frac{CF}{P - CVu} = \frac{58.014}{7{,}8 - 4{,}5} = \frac{58.014}{3{,}3} = \mathbf{17.580\ \text{roscos}}$$
+
+**Significado:** AMETS necesita vender exactamente 17.580 roscos para cubrir todos sus costes. Por debajo de esa cifra incurre en pérdidas; por encima, obtiene beneficio.
+
+**Gráfica:** eje Y en euros, eje X en cantidad.
+
+- Recta CF: horizontal en 58.014 €.
+- Recta CT: nace en (0, 58.014) con pendiente 4,5.
+- Recta IT: nace en el origen con pendiente 7,8 (más empinada que CT).
+- Cruce en $Q^* = 17.580$ roscos; valor en ese punto: $17.580 \times 7{,}8 = 137.124$ €.
+- Izquierda del cruce: zona de pérdidas. Derecha: zona de beneficios.
+
+```{=html}
+<figure style="margin:1.5em auto;max-width:600px;">
+<svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
+  <!-- Fondo -->
+  <rect x="0" y="0" width="600" height="380" fill="#fafafa" rx="4"/>
+  <!-- Zonas -->
+  <!-- Pérdidas: triángulo izquierda del punto muerto -->
+  <polygon points="70,310 254,164 70,164" fill="#fde8cc" opacity="0.6"/>
+  <!-- Beneficios: triángulo derecha -->
+  <polygon points="254,164 530,40 530,310" fill="#d5edcc" opacity="0.5"/>
+  <!-- Ejes -->
+  <line x1="70" y1="20" x2="70" y2="320" stroke="#333" stroke-width="2"/>
+  <line x1="60" y1="310" x2="560" y2="310" stroke="#333" stroke-width="2"/>
+  <!-- Etiquetas ejes -->
+  <text x="300" y="345" text-anchor="middle" fill="#555">Cantidad (Q)</text>
+  <text x="20" y="170" text-anchor="middle" fill="#555" transform="rotate(-90,20,170)">Euros (€)</text>
+  <!-- Recta CF: y=58014 → escala: yPX = 310 - (58014/450000)*290 = 310-37.4=272.6 -->
+  <line x1="70" y1="273" x2="560" y2="273" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="565" y="277" fill="#888" font-size="10">CF</text>
+  <!-- Recta CT: nace en (70,273), pendiente: 303264/54500 × (490/60000) → llega a (530, ~40) -->
+  <!-- CT(Q)=58014+4.5Q; en Q=0: 58014→273px; en Q=54500: 303264→ escala -->
+  <!-- yPX = 310 - (CT/450000)*290 -->
+  <!-- Q=0 → CT=58014 → 310-(58014/450000)*290 = 310-37.4=272.6≈273 -->
+  <!-- Q=54500 → CT=303264 → 310-(303264/450000)*290 = 310-195.5=114.5≈115 -->
+  <!-- xPX = 70 + (Q/60000)*490 -->
+  <!-- Q=54500 → 70+(54500/60000)*490=70+445.4=515 -->
+  <line x1="70" y1="273" x2="530" y2="97" stroke="#e15759" stroke-width="2"/>
+  <text x="535" y="94" fill="#e15759" font-size="10">CT</text>
+  <!-- Recta IT: nace en origen (70,310); IT=7.8Q -->
+  <!-- Q=54500 → IT=425100 → 310-(425100/450000)*290=310-273.9=36 -->
+  <line x1="70" y1="310" x2="530" y2="36" stroke="#4e79a7" stroke-width="2"/>
+  <text x="535" y="33" fill="#4e79a7" font-size="10">IT</text>
+  <!-- Punto muerto Q*=17580 -->
+  <!-- xPM = 70+(17580/60000)*490 = 70+143.7=214 -->
+  <!-- yPM = 310-(137124/450000)*290 = 310-88.4=222 -->
+  <line x1="214" y1="222" x2="214" y2="310" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="70" y1="222" x2="214" y2="222" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="214" cy="222" r="4" fill="#333"/>
+  <text x="214" y="326" text-anchor="middle" fill="#333" font-weight="bold">17.580</text>
+  <text x="55" y="226" text-anchor="end" fill="#333">137.124 €</text>
+  <!-- Etiqueta Q* -->
+  <text x="220" y="210" fill="#333" font-size="10">Q*</text>
+  <!-- Etiqueta CF en eje Y -->
+  <text x="55" y="277" text-anchor="end" fill="#888">58.014 €</text>
+  <!-- Zonas texto -->
+  <text x="150" y="295" text-anchor="middle" fill="#c05000" font-size="10" font-weight="bold">Pérdidas</text>
+  <text x="390" y="120" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Beneficios</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.3em">Gráfica del umbral de rentabilidad — Pastelería AMETS (datos reales del ejercicio)</figcaption>
+</figure>
+```
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.008mm, y=0.00064mm, font=\small]
+  % Ejes
+  \draw[->] (0,0) -- (62000,0) node[right] {$Q$};
+  \draw[->] (0,0) -- (0,470000) node[above] {€};
+  % CF
+  \draw[dashed, gray] (0,58014) -- (58000,58014) node[right] {CF};
+  % CT
+  \draw[red!70!black, thick] (0,58014) -- (54500,303264) node[right] {CT};
+  % IT
+  \draw[blue!70!black, thick] (0,0) -- (54500,425100) node[right] {IT};
+  % Q*
+  \draw[dotted] (17580,0) node[below] {17.580} -- (17580,137124) -- (0,137124) node[left] {137.124};
+  \filldraw (17580,137124) circle (2pt);
+  % Zonas
+  \fill[orange!20, opacity=0.5] (0,58014) -- (17580,137124) -- (0,137124) -- cycle;
+  \fill[green!20, opacity=0.5] (17580,137124) -- (54500,425100) -- (54500,303264) -- cycle;
+  \node at (8000,80000) {\color{orange!70!black}\footnotesize Pérdidas};
+  \node at (40000,380000) {\color{green!50!black}\footnotesize Beneficios};
+\end{tikzpicture}
+\caption{Umbral de rentabilidad -- Pastelería AMETS}
+\end{figure}
+```
+
+**b) Resultado este año (54.500 roscos)**
+
+$$IT = 54.500 \times 7{,}8 = 425.100\ \text{€}$$
+$$CT = 58.014 + 245.250 = 303.264\ \text{€}$$
+$$B = 425.100 - 303.264 = \mathbf{121.836\ \text{€ de beneficio}}$$
+
+Coherente: 54.500 > 17.580, por lo que era seguro que habría beneficio.
+
+**c) Precio mínimo con capacidad de 14.000 roscos**
+
+14.000 < 17.580: al precio actual habría pérdidas. Para no perder dinero:
+
+$$P_{min} = \frac{CF + CVu \times Q}{Q} = \frac{58.014 + 4{,}5 \times 14.000}{14.000} = \frac{58.014 + 63.000}{14.000} = \frac{121.014}{14.000} = \mathbf{8{,}64\ \text{€/rosco}}$$
+
+Habría que subir el precio a al menos **8,65 €** (redondeando hacia arriba para asegurar que se cubren todos los costes).
+
+:::
+
+---
+
+### EHU 2019 Extraordinaria — Empresa PETUKA (tubos y paneles)
+
+> *PETUKA fabrica tubos y paneles. CF totales = 32.000 €. CVu tubos = 2,6 €; precio tubos = 15 €. CVu paneles = 6 €; precio paneles = 12 €. Reparto CF: 60 % tubos, 40 % paneles.*
+>
+> a) Punto muerto de tubos y de paneles. *(1,25 p)*
+> b) Resultado si produce 5.000 tubos y 3.200 paneles. *(1,25 p)*
+> c) Punto muerto produciendo solo tubos. Significado. *(1,25 p)*
+> d) Representación gráfica del apartado c). *(1,25 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+**Datos organizados**
+
+| | Tubos | Paneles |
+|---|---|---|
+| Precio (P) | 15 € | 12 € |
+| CVu | 2,6 € | 6 € |
+| Margen contribución | 12,4 € | 6 € |
+| CF asignados | 19.200 € (60 %) | 12.800 € (40 %) |
+
+**a) Punto muerto con reparto de CF**
+
+$$Q^*_{\text{tubos}} = \frac{19.200}{15 - 2{,}6} = \frac{19.200}{12{,}4} = \mathbf{1.548{,}4 \approx 1.549\ \text{tubos}}$$
+
+$$Q^*_{\text{paneles}} = \frac{12.800}{12 - 6} = \frac{12.800}{6} = \mathbf{2.133{,}3 \approx 2.134\ \text{paneles}}$$
+
+**b) Resultado con 5.000 tubos y 3.200 paneles**
+
+$$IT = (5.000 \times 15) + (3.200 \times 12) = 75.000 + 38.400 = 113.400\ \text{€}$$
+$$CT = 32.000 + (5.000 \times 2{,}6) + (3.200 \times 6) = 32.000 + 13.000 + 19.200 = 64.200\ \text{€}$$
+$$B = 113.400 - 64.200 = \mathbf{49.200\ \text{€ de beneficio}}$$
+
+**c) Punto muerto produciendo solo tubos**
+
+Al fabricar únicamente tubos, absorben el 100 % de los CF:
+
+$$Q^* = \frac{32.000}{15 - 2{,}6} = \frac{32.000}{12{,}4} = \mathbf{2.580{,}6 \approx 2.581\ \text{tubos}}$$
+
+**Significado:** PETUKA necesita vender 2.581 tubos para que los ingresos igualen exactamente a los costes. Por debajo: pérdidas. Por encima: beneficios.
+
+**d) Gráfica**
+
+- Recta CF: horizontal en 32.000 €.
+- Recta CT: nace en (0, 32.000), pendiente 2,6.
+- Recta IT: nace en el origen, pendiente 15.
+- Cruce en $Q^* = 2.581$ tubos.
+- Zona de pérdidas a la izquierda; zona de beneficios a la derecha.
+
+```{=html}
+<figure style="margin:1.5em auto;max-width:600px;">
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
+  <rect x="0" y="0" width="600" height="360" fill="#fafafa" rx="4"/>
+  <!-- Zonas -->
+  <polygon points="70,290 70,149 318,149" fill="#fde8cc" opacity="0.6"/>
+  <polygon points="318,149 530,38 530,290" fill="#d5edcc" opacity="0.5"/>
+  <!-- Ejes -->
+  <line x1="70" y1="20" x2="70" y2="300" stroke="#333" stroke-width="2"/>
+  <line x1="60" y1="290" x2="560" y2="290" stroke="#333" stroke-width="2"/>
+  <text x="300" y="325" text-anchor="middle" fill="#555">Cantidad Q (tubos)</text>
+  <text x="20" y="160" text-anchor="middle" fill="#555" transform="rotate(-90,20,160)">Euros (€)</text>
+  <!-- CF: y=32000 → yPX=290-(32000/65000)*270=290-132.9=157≈157 -->
+  <line x1="70" y1="157" x2="560" y2="157" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="565" y="161" fill="#888" font-size="10">CF</text>
+  <text x="55" y="161" text-anchor="end" fill="#888">32.000 €</text>
+  <!-- CT: (0,32000)→(70,157); (4000,42400)→xPX=70+(4000/4500)*490=505, yPX=290-(42400/65000)*270=290-176.2=114 -->
+  <!-- En Q=3500: CT=41100→ yPX=290-(41100/65000)*270=290-170.8=119; xPX=70+(3500/4500)*490=451 -->
+  <line x1="70" y1="157" x2="530" y2="107" stroke="#e15759" stroke-width="2"/>
+  <text x="535" y="104" fill="#e15759" font-size="10">CT</text>
+  <!-- IT: (0,0)→(70,290); (3500,52500)→yPX=290-(52500/65000)*270=290-218=72; xPX=451 -->
+  <line x1="70" y1="290" x2="530" y2="38" stroke="#4e79a7" stroke-width="2"/>
+  <text x="535" y="35" fill="#4e79a7" font-size="10">IT</text>
+  <!-- Q*=2581 → xPX=70+(2581/4500)*490=70+281.2=351; IT*=38715→yPX=290-(38715/65000)*270=290-160.8=129 -->
+  <!-- Ajuste visual para que el punto quede en la intersección real -->
+  <!-- Q*=2581: CT=32000+2.6*2581=38910.6; IT=15*2581=38715 → prácticamente iguales, uso 38715 -->
+  <line x1="351" y1="129" x2="351" y2="290" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="70" y1="129" x2="351" y2="129" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="351" cy="129" r="4" fill="#333"/>
+  <text x="351" y="306" text-anchor="middle" fill="#333" font-weight="bold">2.581</text>
+  <text x="55" y="133" text-anchor="end" fill="#333">38.715 €</text>
+  <text x="357" y="118" fill="#333" font-size="10">Q*</text>
+  <!-- Zonas texto -->
+  <text x="190" y="275" text-anchor="middle" fill="#c05000" font-size="10" font-weight="bold">Pérdidas</text>
+  <text x="450" y="80" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Beneficios</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.3em">Gráfica del umbral de rentabilidad — PETUKA, solo tubos (CF totales = 32.000 €)</figcaption>
+</figure>
+```
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — EHU 2022 Ordinaria · Restaurante ONDO JAN"}
+
+El restaurante ONDO JAN ofrece menús de mediodía. CF mensuales = 8.000 €. CVu = 5 €/menú. Precio = 12 €/menú. Capacidad máxima = 2.000 menús/mes.
+
+a) Calcula el punto muerto o umbral de rentabilidad.
+b) ¿Qué resultado obtiene si sirve el 80 % de su capacidad máxima?
+
+::: {.callout-note title="Solución" collapse="true"}
+**a)**
+$$Q^* = \frac{8.000}{12 - 5} = \frac{8.000}{7} = \mathbf{1.142{,}9 \approx 1.143\ \text{menús}}$$
+
+A partir de 1.143 menús el restaurante empieza a obtener beneficios.
+
+**b)** Cantidad al 80 %: $2.000 \times 0{,}80 = 1.600$ menús.
+
+$$B = (12 \times 1.600) - (8.000 + 5 \times 1.600) = 19.200 - 16.000 = \mathbf{3.200\ \text{€ de beneficio}}$$
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — EHU 2023 Extraordinaria · Datos indirectos"}
+
+Una empresa presenta los siguientes datos del último ejercicio:
+
+- IT = 50.000 € · P = 80 €/ud · CT = 30.000 € · CF = 5.000 €
+
+a) Calcula el punto muerto.
+b) Resultado económico de este año.
+c) Resultado si se hubieran vendido 1.000 unidades.
+d) Resultado si la facturación hubiera sido de 74.960 €.
+
+::: {.callout-note title="Solución" collapse="true"}
+**Datos previos:**
+
+$Q = IT / P = 50.000 / 80 = 625$ unidades.
+
+$CVu = (CT - CF) / Q = (30.000 - 5.000) / 625 = 40\ \text{€/ud}$
+
+**a)**
+$$Q^* = \frac{5.000}{80 - 40} = \frac{5.000}{40} = \mathbf{125\ \text{unidades}}$$
+
+**b)**
+$$B = 50.000 - 30.000 = \mathbf{20.000\ \text{€ de beneficio}}$$
+
+**c)** Con 1.000 unidades:
+$$B = (80 \times 1.000) - (5.000 + 40 \times 1.000) = 80.000 - 45.000 = \mathbf{35.000\ \text{€}}$$
+
+**d)** Facturación 74.960 €: $Q = 74.960 / 80 = 937$ unidades.
+$$B = (80 \times 937) - (5.000 + 40 \times 937) = 74.960 - 42.480 = \mathbf{32.480\ \text{€}}$$
+:::
+:::

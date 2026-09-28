@@ -1,0 +1,212 @@
+# Valoración de existencias: FIFO y PMP
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — FIFO y PMP"}
+
+**Estructura de la ficha de almacén**
+
+Cada fila registra una operación. Las columnas se agrupan en tres secciones:
+
+| Fecha | Concepto | ENTRADAS (Cant. / Precio / Valor) | SALIDAS (Cant. / Precio / Valor) | EXISTENCIAS (Cant. / Precio / Valor) |
+
+**Método FIFO** *(First In, First Out — Primera en entrar, primera en salir)*
+
+Las unidades vendidas se valoran al precio del lote **más antiguo** que quede en el almacén. Cuando ese lote se agota, se pasa al siguiente. Las existencias pueden tener varios lotes a precios distintos.
+
+**Método PMP** *(Precio Medio Ponderado)*
+
+Cada vez que entra un nuevo lote, se recalcula el precio medio:
+
+$$PMP = \frac{\text{Valor total en existencias}}{\text{Unidades totales en existencias}}$$
+
+Las salidas se valoran siempre al PMP vigente en ese momento. Cuando entra un nuevo lote, el PMP se recalcula y todas las unidades pasan a valer ese nuevo precio medio.
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- Los **precios de venta** al cliente **no se usan en la ficha de almacén**. Solo interesan los precios de coste (precio de adquisición). Los precios de venta sirven para calcular el beneficio, no para valorar el stock.
+- En FIFO, cuando una venta requiere más unidades de las que hay en el lote más antiguo, hay que **partir la salida en dos filas**: una por cada lote del que se extrae.
+- En PMP, el recálculo se hace **solo cuando hay entradas**, nunca en las salidas. Las salidas usan el PMP ya calculado.
+- Cuidado con el **redondeo en PMP**: lo más seguro es trabajar con la fracción exacta durante los cálculos intermedios y redondear solo en el resultado final de existencias. El corrector oficial de EHU suele calcular el valor de la salida con el precio exacto y el valor de existencias con el precio redondeado a dos decimales.
+- Comprueba siempre que: $\text{Existencias iniciales} + \text{Total entradas} - \text{Total salidas} = \text{Existencias finales}$ (en unidades).
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2024 Ordinaria — Empresa EDIMO (gafas de lectura)
+
+> *EDIMO comercializa gafas de lectura. Operaciones de enero:*
+>
+> - 02/01: Existencias iniciales: 500 ud × 20 €
+> - 03/01: Compra EUR S.L.: 500 ud × 24 €
+> - 09/01: Compra GOR S.L.: 1.000 ud × 22 €
+> - 13/01: Venta ODI S.L.: 750 ud (precio venta: 24 €, no se usa en la ficha)
+> - 22/01: Compra EUR S.L.: 2.500 ud × 20 €
+> - 30/01: Venta ODI S.L.: 1.200 ud (precio venta: 23 €, no se usa en la ficha)
+>
+> Rellena la ficha de almacén por FIFO y PMP. Calcula las existencias finales y su valor.
+
+::: {.callout-tip title="Solución comentada — FIFO"}
+
+En FIFO, el almacén mantiene los lotes separados. Las salidas consumen primero el lote más antiguo.
+
+**Ficha FIFO:**
+
+| Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 02/01 | Exist. iniciales | | | | | | | 500 | 20 | 10.000 |
+| 03/01 | Compra EUR | 500 | 24 | 12.000 | | | | 500 / 500 | 20 / 24 | 10.000 / 12.000 |
+| 09/01 | Compra GOR | 1.000 | 22 | 22.000 | | | | 500 / 500 / 1.000 | 20 / 24 / 22 | 10.000 / 12.000 / 22.000 |
+| 13/01 | Venta ODI | | | | 500 / 250 | 20 / 24 | 10.000 / 6.000 | 250 / 1.000 | 24 / 22 | 6.000 / 22.000 |
+| 22/01 | Compra EUR | 2.500 | 20 | 50.000 | | | | 250 / 1.000 / 2.500 | 24 / 22 / 20 | 6.000 / 22.000 / 50.000 |
+| 30/01 | Venta ODI | | | | 250 / 950 | 24 / 22 | 6.000 / 20.900 | 50 / 2.500 | 22 / 20 | 1.100 / 50.000 |
+
+**Existencias finales: 2.550 unidades — Valor: 51.100 €**
+
+*Razonamiento de las ventas:*
+
+- **13/01 — Venta de 750 ud:** Primero agotamos el lote más antiguo (500 ud × 20 €). Faltan 250 ud, que salen del siguiente lote (250 ud × 24 €). Quedan: 250 ud a 24 € + 1.000 ud a 22 €.
+- **30/01 — Venta de 1.200 ud:** El lote más antiguo ahora es el remanente de 250 ud a 24 € (lo agotamos). Faltan 950 ud, que salen del lote de 22 €. Quedan: 50 ud a 22 € + 2.500 ud a 20 €. Valor: 1.100 + 50.000 = **51.100 €**.
+
+:::
+
+::: {.callout-tip title="Solución comentada — PMP"}
+
+En PMP, cada entrada obliga a recalcular el precio medio. Las salidas usan el PMP vigente.
+
+**Ficha PMP:**
+
+| Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 02/01 | Exist. iniciales | | | | | | | 500 | 20 | 10.000 |
+| 03/01 | Compra EUR | 500 | 24 | 12.000 | | | | 1.000 | **22** | 22.000 |
+| 09/01 | Compra GOR | 1.000 | 22 | 22.000 | | | | 2.000 | **22** | 44.000 |
+| 13/01 | Venta ODI | | | | 750 | 22 | 16.500 | 1.250 | 22 | 27.500 |
+| 22/01 | Compra EUR | 2.500 | 20 | 50.000 | | | | 3.750 | **20,67** | 77.500 |
+| 30/01 | Venta ODI | | | | 1.200 | 20,67 | 24.800 | 2.550 | 20,67 | 52.708,5 |
+
+**Existencias finales: 2.550 unidades — Valor: 52.708,5 €**
+
+*Recálculo del PMP paso a paso:*
+
+- **03/01:** $(10.000 + 12.000) / (500 + 500) = 22.000 / 1.000 = \mathbf{22\ €}$
+- **09/01:** $(22.000 + 22.000) / (1.000 + 1.000) = 44.000 / 2.000 = \mathbf{22\ €}$ (igual porque el precio de entrada coincide con el PMP)
+- **22/01:** $(27.500 + 50.000) / (1.250 + 2.500) = 77.500 / 3.750 = \mathbf{20{,}67\ \text{€}}$ (periódico: $20{,}\overline{6}$)
+- **30/01 salida:** $1.200 \times (77.500/3.750) = \mathbf{24.800\ \text{€}}$ (calculado con precio exacto, sin redondear)
+- **30/01 existencias:** $2.550 \times 20{,}67 = \mathbf{52.708{,}5\ €}$ (precio redondeado)
+
+::: {.callout-warning title="Nota sobre el redondeo en el día 30/01"}
+El valor de la salida (24.800 €) se calcula con el precio exacto para que cuadre con el valor de existencias. El valor final de existencias (52.708,5 €) se calcula con el precio redondeado a dos decimales. Esta es la práctica habitual del corrector oficial EHU: evita que el error de redondeo se acumule.
+:::
+
+:::
+
+---
+
+### EHU 2024 Extraordinaria — Empresa PERTUERO S.A. (juguetes)
+
+> *PERTUERO se dedica a la compraventa de juguetes. Operaciones de mayo:*
+>
+> - 05/01: Existencias iniciales: 20 ud × 10 €
+> - 05/07: Compra GAC: 30 ud × 11 €
+> - 05/10: Venta JOSTA: 30 ud (precio venta: 19,35 €)
+> - 05/15: Venta TUNIA: 20 ud (precio venta: 18,75 €)
+> - 05/23: Compra BARA: 25 ud × 11 €
+> - 05/25: Compra EIRA: 15 ud × 12 €
+> - 05/30: Venta SNOW: 30 ud (precio venta: 22,95 €)
+>
+> Rellena la ficha por FIFO y PMP.
+
+::: {.callout-tip title="Solución comentada — FIFO"}
+
+**Ficha FIFO:**
+
+| Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 05/01 | Exist. iniciales | | | | | | | 20 | 10 | 200 |
+| 05/07 | Compra GAC | 30 | 11 | 330 | | | | 20 / 30 | 10 / 11 | 200 / 330 |
+| 05/10 | Venta JOSTA | | | | 20 / 10 | 10 / 11 | 200 / 110 | 20 | 11 | 220 |
+| 05/15 | Venta TUNIA | | | | 20 | 11 | 220 | 0 | — | 0 |
+| 05/23 | Compra BARA | 25 | 11 | 275 | | | | 25 | 11 | 275 |
+| 05/25 | Compra EIRA | 15 | 12 | 180 | | | | 25 / 15 | 11 / 12 | 275 / 180 |
+| 05/30 | Venta SNOW | | | | 25 / 5 | 11 / 12 | 275 / 60 | 10 | 12 | 120 |
+
+**Existencias finales: 10 unidades — Valor: 120 €**
+
+*Razonamiento de las ventas:*
+
+- **05/10 — Venta de 30 ud:** Agotamos las 20 ud a 10 € y tomamos 10 ud del lote a 11 €. Quedan 20 ud a 11 €.
+- **05/15 — Venta de 20 ud:** Agotamos exactamente las 20 ud restantes a 11 €. Almacén vacío.
+- **05/30 — Venta de 30 ud:** Agotamos las 25 ud a 11 € y tomamos 5 ud del lote a 12 €. Quedan 10 ud a 12 € = 120 €.
+
+:::
+
+::: {.callout-tip title="Solución comentada — PMP"}
+
+**Ficha PMP:**
+
+| Fecha | Concepto | E.Cant | E.Pre | E.Val | S.Cant | S.Pre | S.Val | X.Cant | X.Pre | X.Val |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 05/01 | Exist. iniciales | | | | | | | 20 | 10 | 200 |
+| 05/07 | Compra GAC | 30 | 11 | 330 | | | | 50 | **10,60** | 530 |
+| 05/10 | Venta JOSTA | | | | 30 | 10,60 | 318 | 20 | 10,60 | 212 |
+| 05/15 | Venta TUNIA | | | | 20 | 10,60 | 212 | 0 | — | 0 |
+| 05/23 | Compra BARA | 25 | 11 | 275 | | | | 25 | **11** | 275 |
+| 05/25 | Compra EIRA | 15 | 12 | 180 | | | | 40 | **11,375** | 455 |
+| 05/30 | Venta SNOW | | | | 30 | 11,375 | 341,25 | 10 | 11,375 | 113,75 |
+
+**Existencias finales: 10 unidades — Valor: 113,75 €**
+
+*Recálculo del PMP:*
+
+- **05/07:** $(200 + 330) / (20 + 30) = 530 / 50 = \mathbf{10{,}60\ €}$
+- **05/23:** El almacén estaba a cero, así que el PMP es simplemente el precio de la nueva compra: $275 / 25 = \mathbf{11\ €}$
+- **05/25:** $(275 + 180) / (25 + 15) = 455 / 40 = \mathbf{11{,}375\ €}$
+
+::: {.callout-warning title="Almacén a cero entre operaciones"}
+Cuando el almacén llega a cero existencias (como ocurre el 05/15), el PMP se «reinicia». La siguiente entrada define el nuevo PMP por sí sola, sin arrastrar lotes anteriores.
+:::
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Caso sencillo"}
+Una empresa tiene las siguientes operaciones durante marzo:
+
+- 01/03: Existencias iniciales: 100 ud × 5 €
+- 08/03: Compra: 50 ud × 6 €
+- 15/03: Venta: 80 ud
+- 20/03: Compra: 60 ud × 7 €
+- 28/03: Venta: 90 ud
+
+Calcula las existencias finales y su valor por FIFO y PMP.
+
+::: {.callout-note title="Solución" collapse="true"}
+**FIFO:**
+
+- 15/03 venta 80 ud: 80 ud × 5 € = 400 €. Quedan: 20 ud × 5 € + 50 ud × 6 €.
+- 20/03 compra: añade 60 ud × 7 €. Quedan: 20 × 5 + 50 × 6 + 60 × 7.
+- 28/03 venta 90 ud: 20 × 5 + 50 × 6 + 20 × 7 = 100 + 300 + 140 = 540 €. Quedan: 40 ud × 7 € = **280 €**.
+
+**Existencias finales FIFO: 40 ud — 280 €**
+
+**PMP:**
+
+- 08/03: PMP = (500 + 300) / 150 = 800/150 = **5,33 €**
+- 15/03 venta: 80 × 5,33 = 426,67 €. Quedan: 70 ud × 5,33 = 373,33 €.
+- 20/03: PMP = (373,33 + 420) / 130 = 793,33/130 = **6,10 €**
+- 28/03 venta: 90 × 6,10 = 549,23 €. Quedan: 40 ud × 6,10 = **244 €**.
+
+**Existencias finales PMP: 40 ud — 244 €** (pueden variar ligeramente según redondeo).
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — EHU (año a completar)"}
+*(Introduce aquí el enunciado cuando lo tengas disponible)*
+:::

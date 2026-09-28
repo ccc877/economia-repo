@@ -1,0 +1,187 @@
+# Producir o comprar
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Producir o comprar"}
+
+**Notación**
+
+| Símbolo | Nombre | Significado |
+|:---:|:---|:---|
+| $Q$ | Cantidad | Unidades necesarias |
+| $P_c$ | Precio de compra | Precio unitario que cobra el proveedor externo |
+| $CF$ | Costes fijos de fabricación | Solo existen si se fabrica internamente (instalaciones, maquinaria, personal fijo…) |
+| $CVu$ | Coste variable unitario de fabricación | Coste de producir cada unidad internamente (materiales, energía…) |
+| $Q^*$ | Punto de indiferencia | Cantidad donde $C_{	ext{fab}} = C_{	ext{comp}}$ |
+| $P_{max}$ | Precio máximo al proveedor | Precio límite a partir del cual deja de interesar comprar |
+
+**Fórmulas**
+
+$$C_{	ext{fab}} = CF + CVu \times Q \qquad \text{(coste de fabricar internamente)}$$
+
+$$C_{	ext{comp}} = P_c \times Q \qquad \text{(coste de comprar; sin costes fijos propios)}$$
+
+$$Q^* = \frac{CF}{P_c - CVu} \qquad \text{(punto de indiferencia)}$$
+
+$$P_{max} = \frac{CF + CVu \times Q}{Q} \qquad \text{(precio máximo aceptable al proveedor)}$$
+
+**Regla de decisión:** fabricar conviene cuando $Q > Q^*$; comprar conviene cuando $Q < Q^*$.
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- Si el enunciado da Costes Totales del año pasado (no el CVu directamente), calcula: $CV = CT - CF$ y luego $CVu = CV / Q$.
+- La pregunta «¿para qué cantidad es mejor fabricar?» pide el rango, no solo el punto: **fabricar conviene cuando $Q > Q^*$**.
+- En el gráfico, la recta de $C_{\text{comp}}$ **nace en el origen** (si no compras nada, gastas 0). La de $C_{\text{fab}}$ nace en $CF$ (aunque no produzcas nada, pagas los fijos).
+- Si los CF cambian (suben un %), actualízalos **antes** de calcular el nuevo punto de indiferencia o precio máximo.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2022 Extraordinaria — Empresa de camisas (proveedor de India)
+
+> *Una empresa fabricó 13.200 camisas el año pasado con CT = 630.000 € y CF = 88.800 €. Un proveedor indio ofrece camisas a 45 €/ud.*
+>
+> a) ¿Para qué cantidad es mejor la producción propia? *(0,5 p)*
+> b) Representación gráfica. *(0,5 p)*
+> c) ¿Qué decisión tomar si prevén vender 18.000 camisas? *(0,5 p)*
+> d) Si los CF suben un 15 % y necesitan 23.200 camisas, ¿cuál es el precio máximo que pueden pagar al proveedor? *(0,5 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+**Paso 0 — Calcular el CVu (dato oculto)**
+
+$$CV = CT - CF = 630.000 - 88.800 = 541.200\ \text{€}$$
+
+$$CVu = \frac{541.200}{13.200} = \mathbf{41\ \text{€/camisa}}$$
+
+**a) Punto de indiferencia**
+
+$$45 \cdot Q^* = 88.800 + 41 \cdot Q^* \implies 4Q^* = 88.800 \implies Q^* = \mathbf{22.200 \text{ camisas}}$$
+
+Fabricar es más barato **para cualquier cantidad superior a 22.200 camisas**.
+
+**b) Gráfica**
+
+- $C_{\text{comp}}$: nace en el origen, pendiente 45. Más empinada.
+- $C_{\text{fab}}$: nace en (0, 88.800), pendiente 41. Menos empinada.
+- Cruce en $Q^* = 22.200$ camisas; coste en ese punto: $22.200 \times 45 = 999.000$ €.
+- Izquierda del cruce: zona de compra. Derecha: zona de producción propia.
+
+```{=html}
+<figure style="margin:1.5em auto;max-width:600px;">
+<svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
+  <rect x="0" y="0" width="600" height="350" fill="#fafafa" rx="4"/>
+  <!-- Zonas coloreadas -->
+  <!-- Zona compra (izq. del cruce, C_comp < C_fab): triángulo entre origen y cruce -->
+  <polygon points="70,290 70,273 432,104 432,104" fill="#d5edcc" opacity="0.55"/>
+  <!-- Zona producción (der. del cruce) -->
+  <polygon points="432,104 530,67 530,82 432,104" fill="#dce8f5" opacity="0.6"/>
+  <!-- Ejes -->
+  <line x1="70" y1="20" x2="70" y2="300" stroke="#333" stroke-width="2"/>
+  <line x1="60" y1="290" x2="560" y2="290" stroke="#333" stroke-width="2"/>
+  <text x="300" y="330" text-anchor="middle" fill="#555">Cantidad (Q)</text>
+  <text x="18" y="160" text-anchor="middle" fill="#555" transform="rotate(-90,18,160)">Costes (€)</text>
+  <!-- C_fab: nace en (70, yPX de 88800) y llega a (530, yPX de 30000*41+88800=1318800) -->
+  <!-- y(88800) = 290-(88800/1400000)*260 = 290-16.5 = 273.5 ≈ 274 -->
+  <!-- y(1318800) = 290-(1318800/1400000)*260 = 290-244.9 = 45 -->
+  <!-- x(30000) = 70+(30000/30000)*490 = 560 → uso 530 con Q=28500 -->
+  <!-- y(28500): CF_fab=88800+41*28500=88800+1168500=1257300 → 290-(1257300/1400000)*260=290-233.4=56.6≈57 -->
+  <line x1="70" y1="274" x2="530" y2="57" stroke="#e15759" stroke-width="2"/>
+  <text x="535" y="54" fill="#e15759" font-size="10">C fab</text>
+  <!-- C_comp: nace en origen (70,290), pendiente 45 -->
+  <!-- y(28500)=290-(28500*45/1400000)*260=290-(1282500/1400000)*260=290-238.2=51.8≈52 -->
+  <line x1="70" y1="290" x2="530" y2="52" stroke="#4e79a7" stroke-width="2"/>
+  <text x="535" y="49" fill="#4e79a7" font-size="10">C comp</text>
+  <!-- CF horizontal -->
+  <line x1="70" y1="274" x2="250" y2="274" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="55" y="278" text-anchor="end" fill="#aaa" font-size="10">88.800 €</text>
+  <!-- Q*=22200 → xPX=70+(22200/30000)*490=70+362.6=432.6≈433 -->
+  <!-- C*=999000 → yPX=290-(999000/1400000)*260=290-185.5=104.5≈105 -->
+  <line x1="433" y1="104" x2="433" y2="290" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="70" y1="104" x2="433" y2="104" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="433" cy="104" r="4" fill="#333"/>
+  <text x="433" y="307" text-anchor="middle" fill="#333" font-weight="bold">22.200</text>
+  <text x="55" y="108" text-anchor="end" fill="#333">999.000 €</text>
+  <text x="440" y="95" fill="#333" font-size="10">Q*</text>
+  <!-- Etiquetas zonas -->
+  <text x="240" y="265" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Zona de compra</text>
+  <text x="490" y="130" text-anchor="middle" fill="#1a3a5c" font-size="10" font-weight="bold">Zona de</text>
+  <text x="490" y="143" text-anchor="middle" fill="#1a3a5c" font-size="10" font-weight="bold">producción</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.3em">Gráfica del punto de indiferencia — empresa camisas (Q* = 22.200 uds)</figcaption>
+</figure>
+```
+
+**c) Escenario de 18.000 camisas**
+
+$$C_{\text{comp}} = 18.000 \times 45 = 810.000\ \text{€}$$
+
+$$C_{\text{fab}} = 88.800 + (41 \times 18.000) = 826.800\ \text{€}$$
+
+Conviene **comprar** al proveedor indio (ahorro de 16.800 €). Coherente: 18.000 < 22.200.
+
+**d) Precio máximo con CF +15 % y Q = 23.200**
+
+$$CF' = 88.800 \times 1{,}15 = 102.120\ \text{€}$$
+
+$$P_{max} = \frac{102.120 + (41 \times 23.200)}{23.200} = \frac{102.120 + 951.200}{23.200} = \frac{1.053.320}{23.200} = \mathbf{45{,}40\ \text{€}}$$
+
+Si el proveedor pide más de 45,40 €, conviene fabricar internamente a pesar de la subida de CF.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1"}
+Una empresa produce 8.000 unidades al año con CT = 200.000 € y CF = 56.000 €. Un proveedor externo ofrece el producto a 22 €/ud.
+
+a) Calcula el CVu propio.
+b) ¿A partir de qué cantidad conviene fabricar internamente?
+c) Si la empresa prevé producir 6.000 unidades, ¿qué decisión debe tomar y cuánto se ahorra?
+
+::: {.callout-note title="Solución" collapse="true"}
+a) $CV = 200.000 - 56.000 = 144.000$ €; $CVu = 144.000 / 8.000 = 18$ €
+b) $Q^* = 56.000 / (22 - 18) = 14.000$ unidades → fabricar conviene si $Q > 14.000$
+c) 6.000 < 14.000 → conviene comprar. $C_{\text{comp}} = 132.000$ €; $C_{\text{fab}} = 56.000 + 108.000 = 164.000$ €. Ahorro = 32.000 €.
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — EHU 2012 Ordinaria · AZKUNE S.A."}
+AZKUNE S.A. compra los componentes XX en Malasia a **11 €/unidad**. Se plantea producirlos ella misma con los siguientes costes: ampliación de instalaciones 650.000 €, adquisición de maquinaria 300.000 €, contratación de nuevos trabajadores 450.000 €, otros costes fijos 200.000 €. Los costes variables serían: materias primas 4 €/ud, electricidad 1,50 €/ud, otros 0,50 €/ud.
+
+a) ¿A partir de qué cantidad mínima interesa producir en lugar de comprar?
+b) Representación gráfica.
+c) Si necesitara 250.000 unidades, ¿cuál sería el precio de compra máximo para que aún sea mejor comprar?
+d) Si necesitara 400.000 unidades, ¿cuál es la mejor decisión? Calcula los costes de cada alternativa.
+
+::: {.callout-note title="Solución" collapse="true"}
+**Datos:**
+- $P_c = 11$ €/ud (precio de compra en Malasia)
+- $CF = 650.000 + 300.000 + 450.000 + 200.000 = 1.600.000$ €
+- $CVu = 4 + 1{,}50 + 0{,}50 = 6$ €/ud
+
+**a) Punto de indiferencia:**
+$$Q^* = rac{CF}{P_c - CVu} = rac{1.600.000}{11 - 6} = rac{1.600.000}{5} = \mathbf{320.000\ 	ext{unidades}}$$
+
+A partir de 320.000 unidades interesa producir internamente.
+
+**b) Gráfica:** $C_{	ext{comp}}$ nace en el origen con pendiente 11. $C_{	ext{fab}}$ nace en (0, 1.600.000) con pendiente 6. Se cruzan en $Q^* = 320.000$ uds; coste en ese punto: $11 	imes 320.000 = 3.520.000$ €.
+
+**c) Precio máximo con Q = 250.000** (por debajo del punto de indiferencia → conviene comprar, pero ¿hasta qué precio?):
+$$P_{max} = rac{CF + CVu 	imes Q}{Q} = rac{1.600.000 + 6 	imes 250.000}{250.000} = rac{3.100.000}{250.000} = \mathbf{12{,}4\ 	ext{€/ud}}$$
+
+Si el proveedor cobra menos de 12,4 €, sigue siendo mejor comprar. Si cobra más, ya convendría fabricar.
+
+**d) Decisión con 400.000 unidades** (por encima del punto de indiferencia → debería convenir fabricar):
+
+$$C_{	ext{comp}} = 11 	imes 400.000 = 4.400.000\ 	ext{€}$$
+$$C_{	ext{fab}} = 1.600.000 + 6 	imes 400.000 = 4.000.000\ 	ext{€}$$
+
+Conviene **fabricar**: ahorro de 400.000 €. Coherente con el apartado a): 400.000 > 320.000.
+:::
+:::

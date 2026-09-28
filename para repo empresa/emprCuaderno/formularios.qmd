@@ -1,0 +1,139 @@
+# Formularios {.unnumbered}
+
+Este apéndice reúne todos los formularios del cuaderno en una sola página. Está pensado para consulta rápida mientras se resuelven ejercicios.
+
+---
+
+## Bloque 1 · Producción y costes
+
+### Costes y umbral de rentabilidad
+
+$$CT = CF + CV \qquad CV = CVu \times Q$$
+
+$$Q^* = \frac{CF}{P - CVu} \qquad \text{(umbral de rentabilidad)}$$
+
+$$B = IT - CT = (P \times Q) - CF - (CVu \times Q)$$
+
+### Producir o comprar
+
+$$C_{\text{fab}} = CF + CVu \times Q \qquad C_{\text{comp}} = P_c \times Q$$
+
+$$Q^*_{\text{indiferencia}} = \frac{CF}{P_c - CVu} \qquad P_{max} = \frac{CF + CVu \times Q}{Q}$$
+
+### Productividad
+
+$$\text{Productividad factor} = \frac{\text{Producción}}{\text{Unidades del factor}}$$
+
+$$PG = \frac{\sum Q_i \times P_i}{\sum F_j \times C_j} \qquad IPG = \frac{PG_1}{PG_0} \qquad TVPG = (IPG - 1) \times 100$$
+
+---
+
+## Bloque 2 · Gestión del almacén
+
+### Modelo de Wilson (CEP / EOQ)
+
+$$Q^* = \sqrt{\frac{2 \cdot s \cdot D}{g}} \qquad N = \frac{D}{Q} \qquad T = \frac{360}{N}$$
+
+$$PP = ss + (d \times t) \qquad S_m = \frac{Q}{2} + ss \qquad IR = \frac{D}{S_m}$$
+
+$$CT = s \cdot N + g \cdot \left(\frac{Q}{2} + ss\right)$$
+
+**Ruptura de stock:** ocurre si retraso (días) $\times\ d > ss$. Días que aguanta el $ss$: $ss / d$.
+
+### Período Medio de Maduración
+
+$$PM_i = \frac{\text{días del año}}{n_i}$$
+
+| Subperíodo | Índice $n_i$ |
+|:---|:---|
+| Almacenamiento MP ($PM_A$) | Consumo anual MP / Saldo medio MP |
+| Fabricación ($PM_F$) | Coste anual producción / Saldo medio productos en curso |
+| Venta ($PM_V$) | Coste anual ventas / Saldo medio productos terminados |
+| Cobro ($PM_C$) | Ventas anuales (precio venta) / Saldo medio clientes |
+| Pago ($PM_P$) | Compras anuales / Saldo medio proveedores |
+
+$$PMMe = PM_A + PM_F + PM_V + PM_C \qquad PMMf = PMMe - PM_P$$
+
+### FIFO y PMP
+
+**FIFO:** las salidas se valoran al precio del lote más antiguo.
+
+**PMP:** recalcular en cada entrada:
+
+$$PMP = \frac{\text{Valor total en existencias}}{\text{Unidades totales en existencias}}$$
+
+---
+
+## Bloque 3 · Inversión y financiación
+
+### Pay-back
+
+Sumar flujos acumulados hasta igualar $D_0$. Meses del año parcial:
+
+$$\text{Meses} = \frac{\text{Cantidad pendiente}}{F_{\text{año parcial}}} \times 12$$
+
+### VAN
+
+$$k = i + g + (i \times g) \qquad \text{(fórmula de Fisher)}$$
+
+$$VAN = -D_0 + \frac{F_1}{(1+k)^1} + \frac{F_2}{(1+k)^2} + \cdots + \frac{F_n}{(1+k)^n}$$
+
+| VAN | Decisión |
+|:---:|:---|
+| $> 0$ | Aceptar |
+| $= 0$ | Indiferente |
+| $< 0$ | Rechazar |
+
+Entre proyectos aceptables: elegir el de **mayor VAN**.
+
+---
+
+## Bloque 4 · Contabilidad y ratios
+
+### Balance
+
+$$\text{Activo} = \text{Patrimonio Neto} + \text{Pasivo}$$
+
+$$B = \text{Total Activo} - \text{Capital} - \text{Reservas} - PNC - PC$$
+
+$$FM = AC - PC = (PN + PNC) - ANC$$
+
+### Cuenta de resultados
+
+$$BAII = \text{Ingresos explotación} - \text{Gastos explotación}$$
+
+$$BAI = BAII + \text{Resultado financiero}$$
+
+$$\text{Resultado} = BAI - \text{Impuestos}$$
+
+$$EBITDA = BAII + \text{Amortizaciones}$$
+
+### Ratios financieros
+
+| Ratio | Fórmula | Referencia |
+|:---|:---|:---:|
+| Inmovilizado | $ANC / (PN + PNC)$ | $< 1$ |
+| Endeudamiento | $(PNC + PC) / PN$ | $0{,}5 - 1{,}2$ |
+| Liquidez | $AC / PC$ | $> 1$ |
+| Garantía | $\text{Activo} / (PNC + PC)$ | $> 1$ |
+| Tesorería | $(AC - \text{Exist.}) / PC$ | $> 1$ |
+| Autonomía financiera | $PN / (PNC + PC)$ | $> 1$ |
+
+---
+
+## Notas generales para el examen
+
+::: {.callout-warning title="Recordatorios críticos"}
+
+1. **Año comercial:** 360 días salvo que el enunciado indique 365.
+2. **Fisher:** nunca sumes $i + g$ directamente; usa $k = i + g + i \times g$.
+3. **Valor residual:** se suma al flujo del **último año**, no se trata aparte.
+4. **Pagos fraccionados de inversión:** el desembolso inicial es solo el primer pago; los siguientes restan del flujo del año en que se realizan.
+5. **Amortización acumulada:** va en el **activo** con signo negativo, nunca en el pasivo.
+6. **Capital social por diferencia:** si no se da, calcular al final: $\text{Capital} = \text{Total Activo} - \text{Reservas} - PNC - PC$.
+7. **Precios de venta en FIFO/PMP:** no se usan en la ficha de almacén; solo sirven para calcular el beneficio.
+8. **Endeudamiento:** el único ratio con rango (0,5–1,2); criticar también si es demasiado bajo.
+9. **Inmovilizado y FM:** siempre coherentes. Si inmovilizado > 1 → FM < 0, y viceversa.
+10. **PMP con almacén a cero:** si las existencias llegan a cero, el PMP se reinicia con la siguiente entrada.
+
+:::

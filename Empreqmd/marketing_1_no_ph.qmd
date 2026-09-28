@@ -1,0 +1,270 @@
+# Marketing
+
+## Mercado y función comercial
+
+Desde el punto de vista comercial, un **mercado** es el grupo de consumidores que, con una misma necesidad, quieren satisfacerla y tienen capacidad de pago.
+
+Para conocer la presencia que tiene la empresa en el mercado hay que valerse de la **cuota de mercado**:
+
+$$
+\text{Cuota de mercado} = \frac{\text{Ventas de la empresa}}{\text{Ventas del sector}} \times 100
+$$
+
+Ésta revela qué porcentaje de las ventas en el sector pertenecen a una empresa.
+
+La **función comercial o de marketing** se refiere a todas las actividades relacionadas con la detección de las necesidades de los clientes, así como con la comercialización y venta de sus productos o servicios de manera rentable.
+
+---
+
+## Misión, visión y valores
+
+Antes de diseñar cualquier estrategia de marketing, la empresa debe tener claro su propósito y dirección estratégica. Esto se concreta en tres conceptos fundamentales:
+
+- **Misión**: declaración que define el propósito y razón de ser de la empresa. Describe lo que la empresa hace, para quién lo hace y cómo lo hace.
+- **Visión**: descripción de lo que la empresa quiere ser en el futuro, generalmente a largo plazo. Debe ser ambiciosa, inspiradora y realista.
+- **Valores**: principios y creencias que guían el comportamiento y la toma de decisiones. Definen la cultura organizacional y la forma en que la empresa interactúa con empleados, clientes y socios.
+
+::: {.callout-note}
+## Ejemplo práctico
+
+- *Misión*: "Proporcionar soluciones innovadoras y de alta calidad a nuestros clientes para mejorar su vida y negocio."
+- *Visión*: "Ser la empresa líder en nuestra industria en 5 años, reconocida por nuestra innovación y compromiso con la excelencia."
+- *Valores*: "Innovación, excelencia, respeto, integridad y compromiso con el cliente."
+:::
+
+---
+
+## Branding e imagen de marca
+
+El **branding** es el conjunto de decisiones que configura la marca. Según la Asociación Americana de Marketing (2016), la **marca** es: nombre, término, diseño, símbolo, o cualquier otra característica que identifique el bien o servicio de un vendedor y lo diferencie de los demás vendedores de la competencia.
+
+### Estrategias de marca
+
+Existen diferentes maneras de gestionar las marcas dentro de una empresa:
+
+- **Marca única**: una única marca representa todos los productos de la empresa.
+- **Marcas múltiples**: una sola empresa utiliza diferentes marcas para distintos grupos de productos. A veces las empresas mantienen su marca principal, pero buscan nuevos mercados con alguna marca secundaria (Renault-Dacia...).
+- **Marca blanca**: la del distribuidor.
+- **Alianza de marcas** (co-branding, licensing...): empresas que comparten marca en un producto conjunto.
+- **Marca de garantía**: utilizada por varios oferentes para garantizar un estándar de calidad, origen, etc.
+
+### Posicionamiento
+
+En marketing, el **posicionamiento** es la imagen que ocupa nuestra marca, producto, servicio o empresa en la mente del consumidor. Este posicionamiento se construye a partir de la percepción que tiene el consumidor de nuestra marca de forma individual y respecto a la competencia.
+
+El posicionamiento se puede cambiar mediante una **estrategia de reposicionamiento**.
+
+---
+
+## Marketing Mix: las 4P
+
+El **marketing mix** son los 4 instrumentos que dispone la empresa para dirigirse a su mercado meta (*target*). Estos 4 instrumentos son el **producto**, el **precio**, la **promoción** y la **distribución** (*place*), que se conocen como las **4P del marketing**.
+
+### Producto
+
+El producto tiene una función básica, determinada por la necesidad que satisface, y cuenta con atributos tangibles e intangibles.
+
+#### Ciclo de vida del producto
+
+Los productos y los mercados no son estáticos; varían con el tiempo. Al igual que un ser vivo, nacen, crecen y mueren. Las fases son **introducción, crecimiento, madurez y declive**.
+
+```{=html}
+<figure style="margin: 1.5em auto; max-width: 640px;">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;">
+  <!-- Ejes -->
+  <line x1="50" y1="240" x2="610" y2="240" stroke="#333" stroke-width="2"/>
+  <line x1="50" y1="20" x2="50" y2="240" stroke="#333" stroke-width="2"/>
+  <!-- Etiquetas ejes -->
+  <text x="330" y="270" text-anchor="middle" font-size="12" fill="#555">Tiempo</text>
+  <text x="18" y="130" text-anchor="middle" font-size="12" fill="#555" transform="rotate(-90,18,130)">Ventas / Beneficios</text>
+  <!-- Líneas de fase -->
+  <line x1="190" y1="30" x2="190" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="350" y1="30" x2="350" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="490" y1="30" x2="490" y2="240" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+  <!-- Etiquetas fases -->
+  <text x="120" y="18" text-anchor="middle" font-size="11" fill="#888">Introducción</text>
+  <text x="270" y="18" text-anchor="middle" font-size="11" fill="#888">Crecimiento</text>
+  <text x="420" y="18" text-anchor="middle" font-size="11" fill="#888">Madurez</text>
+  <text x="550" y="18" text-anchor="middle" font-size="11" fill="#888">Declive</text>
+  <!-- Curva ventas (azul) - curva en campana -->
+  <path d="M60,230 C100,225 150,200 190,160 C240,110 300,70 350,60 C400,55 440,65 490,100 C530,130 570,175 610,210"
+        fill="none" stroke="#2a6aad" stroke-width="2.5"/>
+  <!-- Curva beneficios (verde) - retrasada y más baja -->
+  <path d="M60,238 C110,237 160,230 210,210 C260,180 310,130 360,110 C400,97 440,105 480,135 C515,160 560,200 610,230"
+        fill="none" stroke="#2e8b57" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Leyenda -->
+  <line x1="60" y1="258" x2="100" y2="258" stroke="#2a6aad" stroke-width="2.5"/>
+  <text x="106" y="262" font-size="11" fill="#333">Ventas</text>
+  <line x1="170" y1="258" x2="210" y2="258" stroke="#2e8b57" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="216" y="262" font-size="11" fill="#333">Beneficios</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.4em">Figura: Ciclo de vida del producto — evolución de ventas y beneficios</figcaption>
+</figure>
+```
+
+Cada fase requiere un tratamiento diferente:
+
+1. **Introducción**: lanzamiento del producto, desconocido para los consumidores. La empresa invierte en publicidad informativa. Las ventas crecen lentamente y pueden registrarse pérdidas.
+
+2. **Crecimiento**: el producto es aceptado. Las ventas y los beneficios aumentan. Aparecen competidores. La publicidad pasa a ser persuasiva y la empresa mejora los atributos del producto.
+
+3. **Madurez**: el crecimiento se frena y las ventas se estabilizan. Muchos competidores. La empresa intenta bajar precios y llegar a más segmentos. La publicidad no necesita ser tan alta.
+
+4. **Declive**: aparecen productos sustitutivos y las ventas disminuyen. Dos opciones: salir del mercado o mejorar el producto.
+
+| Introducción | Crecimiento | Madurez | Declive |
+|:------------|:------------|:--------|:--------|
+| Pocas ventas | Aumentan las ventas rápidamente | Las ventas se estancan | Las ventas disminuyen |
+| Pocos oferentes | Aparecen competidores | Los competidores más débiles desaparecen | Disminuye la competencia |
+| No existen beneficios | Empiezan a producirse beneficios | Los beneficios empiezan a disminuir | Los beneficios disminuyen; pueden existir pérdidas |
+| La duración depende del grado de innovación | El mercado crece | Saturación del mercado | Dos opciones: revitalizar las ventas o desinvertir |
+
+### Precio
+
+El **precio** es la cantidad de dinero que los consumidores deben pagar para comprar el producto de la empresa.
+
+**Métodos de fijación de precios:**
+
+- **Basado en el coste**: se calcula el coste unitario y se le añade un margen de beneficio.
+- **Basado en la demanda**: se analiza al consumidor y se fija el precio en función de lo que esté dispuesto a pagar (elasticidad de la demanda).
+- **Basado en la competencia**: según la posición de liderazgo-seguidor de la empresa, se sigue el precio de los competidores, se pone un precio menor (calidad inferior o menor prestigio) o se establece un precio mayor.
+
+**Estrategias de precio:**
+
+- **Penetración**: precios bajos para obtener cuota de mercado rápidamente.
+- **Descremación**: precios altos para que los *early adopters* (consumidores dispuestos a pagar más por tener lo último) compren caro; posteriormente se reduce el precio llegando al resto del mercado.
+
+### Promoción
+
+La **promoción o comunicación** es el instrumento de marketing con el que la empresa intenta informar al consumidor sobre el producto, persuadirlo para que lo compre y tratar de que sea recordado.
+
+### Distribución
+
+La **distribución del producto** son todas las actividades que permiten llevar el producto al consumidor en la cantidad, tiempo y lugar que éstos desean.
+
+**Según la longitud del canal:** mayorista y minorista.
+
+**Según las estrategias de distribución:**
+
+- **Distribución intensiva**: se usa gran cantidad de intermediarios para llegar al mayor número de personas posibles del *target*. Se utiliza para productos de compra rápida (patatas de bolsa: supermercados, tiendas de barrio, bares, etc.).
+- **Distribución selectiva**: se distribuye a través de un número pequeño de intermediarios. Para productos de compra menos frecuente y precio más elevado (Ralph Lauren o Bimba y Lola, disponibles en El Corte Inglés y algunas otras tiendas).
+- **Distribución exclusiva**: se utiliza sólo un intermediario dentro de una localidad o región. Para productos muy exclusivos y normalmente de precio muy elevado (solo hay 25 concesionarios de Porsche en toda España).
+
+---
+
+## Fidelización y marketing relacional
+
+La **fidelización** es el conjunto de estrategias y acciones de marketing orientadas a mantener una **relación a largo plazo** y de confianza con los clientes actuales, con el objetivo de que éstos mantengan su preferencia por la marca y no se marchen a la competencia.
+
+El marketing actual no sólo busca la venta inmediata (enfoque transaccional), sino la creación de vínculos duraderos (**marketing relacional**). Este enfoque parte de la premisa económica de que **es mucho más costoso captar un nuevo cliente que retener a uno ya existente.**
+
+**Objetivos principales:**
+
+1. **Repetición de compra**: conseguir ingresos estables en el tiempo.
+2. **Prescripción**: lograr que el cliente satisfecho recomiende la marca a otros consumidores (boca a boca positivo).
+
+**Herramientas:**
+
+Para lograr la fidelización, las empresas utilizan un excelente **servicio postventa**, programas de lealtad (tarjetas de puntos, descuentos exclusivos) y sistemas **CRM** (*Customer Relationship Management*) para ofrecer un trato personalizado.
+
+---
+
+## Segmentación del mercado
+
+La **segmentación del mercado** es la división en grupos diferenciados de los potenciales compradores, que presentan determinadas características comunes, para adecuar la estrategia comercial a cada uno de estos grupos.
+
+**Criterios de segmentación:**
+
+- **Demográfica**: en función de características de la población como sexo o edad.
+- **Geográfica**: por región, zona urbana o rural...
+- **Socioeconómica**: nivel cultural, clase social.
+- **Psicográfica**: aspectos como la personalidad, los valores, los intereses y el estilo de vida de los consumidores.
+
+**Estrategias según la segmentación:**
+
+- **Estrategia indiferenciada**: la misma política comercial para todo el mercado.
+- **Estrategia diferenciada**: una política comercial distinta para cada segmento. Esta diferencia puede darse en cuatro niveles:
+  1. Política de producto: segundas marcas, envases distintos, etc.
+  2. Política de precios: precios por edad, por fidelidad a la marca, etc.
+  3. Política de distribución: más o menos exclusiva, ciertos canales, etc.
+  4. Política de promoción: ciertos medios o determinados mensajes.
+- **Estrategia concentrada**: la empresa concentra todos sus esfuerzos en un único segmento del mercado, al que se dirige con una política comercial específicamente diseñada para él.
+
+---
+
+## Digitalización y marketing 2.0
+
+Los grandes avances en las tecnologías y la digitalización han permitido que surjan nuevas maneras de relacionarse entre consumidores y empresas. Este fenómeno se engloba bajo el concepto de **marketing 2.0** o **marketing digital**, caracterizado por la comunicación bidireccional y la participación activa del consumidor.
+
+**Ventajas para los consumidores:**
+
+- Pueden comprar por internet desde cualquier lugar, comparando precios y características las 24 horas.
+- Es más fácil obtener información: pueden consultar reseñas de otros consumidores y compartir opiniones en redes sociales.
+- Pueden interactuar con la empresa: suscribirse a servicios, recibir ofertas personalizadas y plantear dudas con mayor facilidad.
+
+**Ventajas para las empresas:**
+
+- Obtienen mejor información sobre los consumidores: perfil de consumo a través del historial de compra, *cookies*, etc.
+- Aumenta la capacidad de ventas: *banners*, aplicaciones móviles (como la app de Zara que permite escanear códigos de barras para pedir tallas) facilitan la conversión.
+- Pueden dirigirse a los clientes de manera rápida a través de redes sociales y marketing móvil para enviar anuncios e información personalizada.
+- Se reduce la necesidad de intermediarios, lo que permite que una pequeña empresa sea capaz de competir con grandes multinacionales a través de su página web.
+
+---
+
+## Investigación de mercado
+
+La **investigación comercial o de mercado** es la recogida sistemática, el registro, el análisis y la interpretación de los datos relativos al mercado objetivo de la empresa para diseñar y/o evaluar la estrategia de comercialización o una parte de la misma.
+
+**Métodos:**
+
+- **Cuantitativos**: encuesta, observación y experimentación.
+- **Cualitativos**: entrevistas en profundidad, reuniones de grupo (*focus groups*).
+
+---
+
+## Objetivos SMART
+
+Un **objetivo** es el lugar donde quiere llegar la empresa. Su función básica es orientar todas las decisiones de la empresa y permitir una evaluación posterior.
+
+Para que un objetivo sirva de guía y de evaluación, debe cumplir una serie de características que se resumen en el acrónimo **SMART**:
+
+```{=html}
+<figure style="margin: 1.5em auto; max-width: 580px;">
+<svg viewBox="0 0 580 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;">
+  <!-- S -->
+  <rect x="5" y="5" width="106" height="80" rx="8" fill="#4e79a7"/>
+  <text x="58" y="34" text-anchor="middle" font-size="28" font-weight="bold" fill="white">S</text>
+  <text x="58" y="52" text-anchor="middle" font-size="9.5" fill="#dce8f5">Specific</text>
+  <text x="58" y="65" text-anchor="middle" font-size="9" fill="white">Específico</text>
+  <!-- M -->
+  <rect x="119" y="5" width="106" height="80" rx="8" fill="#f28e2b"/>
+  <text x="172" y="34" text-anchor="middle" font-size="28" font-weight="bold" fill="white">M</text>
+  <text x="172" y="52" text-anchor="middle" font-size="9.5" fill="#fde8cc">Measurable</text>
+  <text x="172" y="65" text-anchor="middle" font-size="9" fill="white">Medible</text>
+  <!-- A -->
+  <rect x="233" y="5" width="106" height="80" rx="8" fill="#59a14f"/>
+  <text x="286" y="34" text-anchor="middle" font-size="28" font-weight="bold" fill="white">A</text>
+  <text x="286" y="52" text-anchor="middle" font-size="9.5" fill="#d5edcc">Achievable</text>
+  <text x="286" y="65" text-anchor="middle" font-size="9" fill="white">Alcanzable</text>
+  <!-- R -->
+  <rect x="347" y="5" width="106" height="80" rx="8" fill="#e15759"/>
+  <text x="400" y="34" text-anchor="middle" font-size="28" font-weight="bold" fill="white">R</text>
+  <text x="400" y="52" text-anchor="middle" font-size="9.5" fill="#f9d0d0">Relevant</text>
+  <text x="400" y="65" text-anchor="middle" font-size="9" fill="white">Relevante</text>
+  <!-- T -->
+  <rect x="461" y="5" width="114" height="80" rx="8" fill="#76b7b2"/>
+  <text x="518" y="34" text-anchor="middle" font-size="28" font-weight="bold" fill="white">T</text>
+  <text x="518" y="52" text-anchor="middle" font-size="9.5" fill="#d5eeec">Time-bound</text>
+  <text x="518" y="65" text-anchor="middle" font-size="9" fill="white">Temporal</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.4em">Figura: Las cinco características de un objetivo SMART</figcaption>
+</figure>
+```
+
+| Letra | Significado | Descripción |
+|:------|:-----------|:------------|
+| **S** | *Specific* — Específico | El objetivo debe describir con exactitud lo que se quiere lograr, sin ambigüedad. |
+| **M** | *Measurable* — Medible | Debe poder cuantificarse para saber si se ha alcanzado o no. |
+| **A** | *Achievable* — Alcanzable | Debe ser realista y posible dadas las capacidades y recursos de la empresa. |
+| **R** | *Relevant* — Relevante | Debe estar alineado con la estrategia y los valores de la empresa. |
+| **T** | *Time-bound* — Temporal | Debe tener un plazo definido de consecución. |

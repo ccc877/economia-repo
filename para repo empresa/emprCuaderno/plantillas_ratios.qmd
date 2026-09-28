@@ -1,0 +1,127 @@
+# Plantillas de comentario de ratios {.unnumbered}
+
+Este apéndice contiene las plantillas de redacción para el análisis de ratios financieros, listas para usar en el examen. Sustituye los corchetes `[...]` con los valores calculados.
+
+---
+
+## Cómo estructurar la respuesta
+
+Un análisis de ratios completo en EHU tiene tres partes:
+
+1. **Cálculo** — fórmula y resultado numérico.
+2. **Comparación con la referencia** — indicar si está por encima o por debajo.
+3. **Interpretación en lenguaje natural** — qué significa para la empresa.
+
+Si el examen pide «analice la situación financiera», añade una **conclusión global** al final que integre todos los ratios.
+
+---
+
+## Ratio de inmovilizado
+
+$$\text{Inmovilizado} = \frac{ANC}{PN + PNC}$$
+
+**Referencia:** $< 1$
+
+::: {.callout-tip title="Comentario favorable (ratio < 1)"}
+El ratio de inmovilizado obtenido es [...], que se sitúa por debajo de 1 (valor de referencia). El patrimonio neto y el pasivo no corriente, además de financiar el activo no corriente, están financiando una parte del activo corriente. El fondo de maniobra es positivo: la empresa se encuentra en una situación de **equilibrio financiero**.
+:::
+
+::: {.callout-warning title="Comentario desfavorable (ratio > 1)"}
+El ratio de inmovilizado obtenido es [...], superior a 1. El patrimonio neto y el pasivo no corriente no son suficientes para financiar el activo no corriente: la empresa necesita recurrir al pasivo corriente para cubrir parte de sus inversiones a largo plazo. El fondo de maniobra es negativo. Existe un **desequilibrio financiero** que puede generar tensiones de liquidez.
+:::
+
+---
+
+## Ratio de endeudamiento
+
+$$\text{Endeudamiento} = \frac{PNC + PC}{PN}$$
+
+**Referencia:** entre $0{,}5$ y $1{,}2$
+
+::: {.callout-tip title="Comentario favorable (dentro del rango)"}
+El ratio de endeudamiento es [...], dentro de los valores de referencia (0,5–1,2). La empresa mantiene un equilibrio adecuado entre financiación propia y ajena. Su estructura financiera es sana y no está condicionada en exceso por sus deudas para la toma de decisiones de inversión.
+:::
+
+::: {.callout-warning title="Comentario desfavorable — exceso de deuda (ratio > 1,2)"}
+El ratio de endeudamiento es [...], que supera los valores de referencia. La empresa depende excesivamente de financiación ajena. Por cada euro de recursos propios, debe [...] euros a terceros. Esta situación aumenta el riesgo financiero y reduce la capacidad de maniobra de la empresa.
+:::
+
+::: {.callout-warning title="Comentario desfavorable — exceso de autonomía (ratio < 0,5)"}
+El ratio de endeudamiento es [...], por debajo de los valores de referencia. La empresa es muy autónoma y apenas recurre a financiación ajena, lo que puede interpretarse como una infrautilización del apalancamiento financiero. Podría endeudarse más para invertir y mejorar su rentabilidad.
+:::
+
+---
+
+## Ratio de liquidez
+
+$$\text{Liquidez} = \frac{AC}{PC}$$
+
+**Referencia:** $> 1$
+
+::: {.callout-tip title="Comentario favorable (ratio > 1)"}
+El ratio de liquidez es [...], superior a 1. La empresa puede hacer frente a sus deudas a corto plazo. Por cada euro adeudado a corto plazo dispone de [...] euros en activo corriente. **Buena solvencia a corto plazo.**
+:::
+
+::: {.callout-warning title="Comentario desfavorable (ratio < 1)"}
+El ratio de liquidez es [...], inferior a 1. La empresa tendrá problemas para pagar sus deudas a corto plazo: por cada euro adeudado solo dispone de [...] euros en activo corriente. Existe **riesgo de suspensión de pagos**.
+:::
+
+---
+
+## Ratio de garantía
+
+$$\text{Garantía} = \frac{\text{Activo}}{PNC + PC}$$
+
+**Referencia:** $> 1$ (si supera 2, puede indicar exceso de solvencia)
+
+::: {.callout-tip title="Comentario favorable (ratio > 1)"}
+El ratio de garantía es [...], superior a 1. La empresa no tendrá problemas para hacer frente a la totalidad de sus deudas. Dispone de [...] euros en activo por cada euro adeudado. **Buena solvencia a largo plazo.**
+:::
+
+::: {.callout-warning title="Comentario desfavorable (ratio < 1)"}
+El ratio de garantía es [...], inferior a 1. La empresa podría tener problemas para responder ante sus acreedores: dispone de solo [...] euros en activo por cada euro adeudado. **Riesgo de quiebra técnica.**
+:::
+
+---
+
+## Ratio de tesorería
+
+$$\text{Tesorería} = \frac{AC - \text{Existencias}}{PC}$$
+
+**Referencia:** $> 1$
+
+::: {.callout-tip title="Comentario favorable (ratio > 1)"}
+El ratio de tesorería es [...], superior a 1. La empresa puede atender sus deudas a muy corto plazo sin necesidad de vender sus existencias. Dispone de suficiente efectivo y derechos de cobro inmediatos.
+:::
+
+::: {.callout-warning title="Comentario desfavorable (ratio < 1)"}
+El ratio de tesorería es [...], inferior a 1. La empresa no dispone de suficiente efectivo y derechos de cobro para afrontar sus pagos inmediatos sin recurrir a la venta de existencias. **Riesgo de suspensión de pagos a muy corto plazo.**
+:::
+
+---
+
+## Conclusión global
+
+Usar al final del análisis cuando el examen pide valorar la situación financiera en su conjunto:
+
+::: {.callout-note title="Plantilla de conclusión global"}
+En resumen, la situación financiera de **[nombre empresa]** es [equilibrada / desequilibrada].
+
+**A largo plazo**, la empresa [goza de buena solvencia y no presenta riesgo de quiebra / presenta problemas de garantía que pueden comprometer su viabilidad futura], con un nivel de endeudamiento [adecuado / excesivo / insuficiente].
+
+**A corto plazo**, su liquidez [le permite afrontar sus pagos sin riesgo de suspensión / es deficiente y genera tensiones de tesorería], lo que se confirma con un fondo de maniobra [positivo de [...] € / negativo de [...] €].
+
+Como recomendación, la empresa debería [mantener su actual política financiera / renegociar parte de la deuda a corto plazo convirtiéndola en deuda a largo plazo / ampliar capital para reducir el endeudamiento / vender activos ociosos para mejorar la liquidez].
+:::
+
+---
+
+## Tabla resumen rápida
+
+| Ratio | Fórmula | Ref. | Favorable | Desfavorable |
+|:---|:---|:---:|:---|:---|
+| Inmovilizado | $ANC/(PN+PNC)$ | $<1$ | FM positivo, equilibrio | FM negativo, desequilibrio |
+| Endeudamiento | $(PNC+PC)/PN$ | $0{,}5$–$1{,}2$ | Estructura sana | Exceso de deuda o de autonomía |
+| Liquidez | $AC/PC$ | $>1$ | Paga deudas C/P | Riesgo suspensión pagos |
+| Garantía | $A/(PNC+PC)$ | $>1$ | Solvencia L/P | Riesgo quiebra |
+| Tesorería | $(AC-Exist.)/PC$ | $>1$ | Paga sin vender stock | Riesgo suspensión inmediata |

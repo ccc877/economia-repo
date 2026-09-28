@@ -1,0 +1,308 @@
+# Empresa y sistema económico
+
+## El sistema económico
+
+### Economía: definición
+
+::: {.callout-note}
+## Definición
+Ciencia que se ocupa de la forma en la que las personas administramos los recursos escasos con los que satisfacemos nuestras necesidades.
+:::
+
+La ciencia económica se divide en dos ramas: **macroeconomía** y **microeconomía**. La macroeconomía estudia las relaciones entre el agregado de los agentes económicos (familias, empresas y sector público); la microeconomía estudia las que involucran a los agentes económicos individuales (consumidores, empresas, trabajadores). También conviene diferenciar entre la **economía positiva**, que produce conocimiento objetivo (lo que *es*), y la **economía normativa**, que incluye postulados subjetivos (lo que *debería ser*).
+
+### Factores productivos
+
+Existen varios tipos de factor productivo. Los principales son tierra, trabajo y capital. También se puede considerar factor productivo a la **iniciativa empresarial**.
+
+- **Tierra:** engloba todos los recursos que se extraen de la naturaleza, los llamados recursos naturales.
+- **Trabajo** (o capital humano): es la capacidad productiva del ser humano, considerando no solo la cantidad de trabajadores, sino también su nivel de conocimientos y formación.
+- **Capital:** está constituido por el conjunto de bienes utilizados para generar nuevos bienes, como las máquinas y los pabellones.
+
+Los propietarios de los factores de producción pueden decidir venderlos o alquilarlos a cambio de un pago, denominado **renta**.
+
+### Tipos de mercados productivos
+
+| Variables | Competencia perfecta | Monopolio | Oligopolio | Competencia monopolística |
+|:---|:---|:---|:---|:---|
+| **Vendedores** | Muchas empresas | Una empresa | Pocas empresas | Muchas empresas |
+| **Poder de mercado** | Ninguno, empresas precio-aceptantes | Muy elevado, fija precios | Competencia limitada, colusión elevada | Elevado si se valora la marca |
+| **Barreras de entrada** | No existen | Existen | Parcialmente | Grandes inversiones en publicidad y marketing |
+| **Grado de diferenciación** | Ninguno, productos homogéneos | Total, pocos sustitutivos | Depende del producto | Elevado, es la causa de este tipo de mercado |
+| **Ejemplos** | Productos agrícolas, materias primas | Agua, fármacos patentados | Telefonía, banca | Ropa |
+
+### El flujo circular de la renta
+
+<!-- imagen: image3.png -->
+
+
+
+El flujo circular de la renta es un modelo que sirve para explicar el funcionamiento básico de la economía. Como todo modelo, es una simplificación, pero ayuda a entender las relaciones que se dan entre los agentes económicos (familias, empresas y sector público). Describe cómo el dinero, los bienes y servicios circulan entre ellos, en dos direcciones principales: el flujo de bienes y servicios, y el flujo de dinero.
+
+Componentes del flujo circular de la renta:
+
+- **Familias (u hogares):** proporcionan los factores de producción (trabajo, tierra, capital) a las empresas. A cambio, reciben una renta en forma de salarios, alquileres, intereses y beneficios.
+- **Empresas:** utilizan los factores de producción proporcionados por los hogares para producir bienes y servicios, que luego venden a los mismos hogares y a otros sectores de la economía. A cambio, reciben ingresos por la venta de estos bienes y servicios.
+- **Sector público:** cobra impuestos y proporciona transferencias a familias y empresas. Además, regula la economía.
+
+## La empresa
+
+### Definición y funciones
+
+::: {.callout-note}
+## Definición de empresa
+Una empresa es una organización de personas y recursos que buscan obtener un beneficio económico a través de la producción y comercialización de bienes o servicios destinados a satisfacer las necesidades de los consumidores en el mercado, asumiendo un riesgo para ello.
+:::
+
+La empresa cumple diversas funciones en la economía:
+
+- **Función de creación de valor:** en su proceso productivo, la empresa transforma materias primas en productos adecuados para satisfacer las necesidades de los consumidores. Esta transformación incrementa la utilidad de esas materias primas y añade valor a los bienes, lo cual se traduce en un aumento del precio que los consumidores están dispuestos a pagar.
+- **Función de riesgo:** para poder producir bienes y servicios, la empresa debe adquirir y pagar los recursos y factores de producción necesarios por adelantado, antes incluso de producir y vender los productos, asumiendo así un riesgo.
+- **Función social:** la empresa genera empleo y contribuye al desarrollo económico de la región en la que opera. Además, contribuye mediante el desarrollo de investigación e innovaciones que repercuten positivamente en la calidad de los bienes y servicios y, por consiguiente, en el bienestar social.
+- **Función productiva:** para desarrollar su actividad de la manera más eficiente, la empresa debe reunir y coordinar múltiples factores de producción tales como capital, recursos naturales y recursos humanos.
+
+### Elementos y áreas funcionales
+
+Los elementos constitutivos de la empresa son: capital humano, recursos materiales, recursos financieros, organización y entorno o marco externo.
+
+Sus principales áreas funcionales son: producción, marketing, financiación, recursos humanos (RRHH) y administración.
+
+### Clasificación de empresas
+
+**Por tamaño**
+
+La Comisión Europea ha establecido que el criterio preferente debe ser el número de empleados. Además, ha de cumplirse al menos uno de los dos requisitos sobre ventas y el valor total de los activos (bienes y derechos que son propiedad de la empresa).
+
+<!-- imagen: image1.png -->
+
+**Por titularidad del capital**
+
+- Empresa privada
+- Empresa pública
+- Empresa mixta
+
+También existen otras clasificaciones: por sector económico (primario, secundario o terciario) o por ámbito geográfico (local, nacional o multinacional).
+
+## Integración empresarial
+
+Las empresas tienden a integrarse entre ellas y a acercarse geográficamente. A continuación se presentan algunas formas de integración y concentración empresarial:
+
+- **Clúster:** concentración geográfica y sectorial de empresas interconectadas, proveedores especializados, instituciones relacionadas (universidades, centros de investigación) e incluso competidores, que colaboran e interactúan para potenciar la innovación y la competitividad colectiva. Ejemplo: regiones tecnológicas, zonas vinícolas con bodegas y proveedores de corcho o maquinaria.
+- **Parque industrial:** zona de suelo específicamente designada y equipada con la infraestructura necesaria (vías de acceso, suministro eléctrico, agua, saneamiento) para albergar instalaciones industriales y manufactureras, normalmente a las afueras de las ciudades.
+- **Trust:** forma de concentración empresarial donde varias compañías, generalmente del mismo sector, se unen o son controladas por una entidad superior con el objetivo de reducir la competencia y ejercer un control dominante sobre el mercado.
+- **Cártel:** acuerdo formal o informal entre empresas competidoras para limitar la competencia, fijando precios, repartiendo el mercado geográficamente o limitando la producción. Perjudica a los consumidores y está prohibido en muchos países.
+- **Integración vertical:** estrategia por la cual una compañía extiende sus actividades para controlar diferentes etapas de su cadena de valor, ya sea hacia atrás (controlando a sus proveedores) o hacia adelante (controlando la distribución o venta al cliente final).
+- **Holding:** sociedad tenedora de acciones cuya principal función es tener y/o administrar la propiedad de otras sociedades o compañías.
+
+## Empresario y emprendedor
+
+### El emprendedor
+
+::: {.callout-note}
+## Definición de emprendedor
+Un **emprendedor** es una persona que tiene la capacidad de identificar una oportunidad de negocio, desarrolla una idea y tiene la iniciativa para reunir los recursos necesarios para llevarla a cabo. Está dispuesto a asumir riesgos al invertir tiempo y/o dinero para lograr el éxito.
+:::
+
+Sus características principales incluyen: iniciativa, creatividad, capacidad para asumir riesgos, autoconfianza y perseverancia, actitud positiva y empatía, y capacidad de trabajar en equipo. Los emprendedores no son únicamente aquellos que crean una empresa; el concepto implica una actitud ante la vida, buscando soluciones innovadoras a problemas.
+
+**Tipos de emprendedor:**
+
+- **Visionario:** capaz de adelantarse a su tiempo y detectar negocios antes que nadie. Ejemplo: Coco Chanel.
+- **Por necesidad:** se ven obligados por las circunstancias a identificar oportunidades y llevar a cabo nuevos proyectos. Ejemplo: J. K. Rowling.
+- **Inversor:** personas con capital que deciden invertir en empresas emergentes buscando rentabilidad. Ejemplo: Gerard Piqué.
+- **Por casualidad u oportunidad:** detectan una necesidad no cubierta y proponen una solución sin mucha reflexión previa. Ejemplo: los creadores de Mr. Wonderful.
+- **Con habilidades o conocimientos:** poseen experiencia en un área determinada y detectan oportunidades para emprender su propio negocio. Ejemplo: Amancio Ortega (Zara).
+- **Persuasivo:** tiene la capacidad de influir en otros para perseguir un objetivo común, siendo perseverante y resiliente. Ejemplo: Jeff Bezos (Amazon).
+- **Social:** realiza actividades con un objetivo social (ayudar a desfavorecidos, proteger el medioambiente), además de generar ganancias.
+- **Intraemprendedor:** trabajador que, dentro de una empresa, tiene ideas innovadoras y busca nuevas oportunidades de negocio. Ejemplo: Google Drive, surgido de un empleado de Google.
+
+Estas clasificaciones no son excluyentes; un emprendedor puede encajar en varias a la vez.
+
+::: {.callout-warning}
+## Emprendimiento e inclusión
+El **emprendimiento inclusivo** promueve la participación activa en la actividad emprendedora de colectivos tradicionalmente excluidos o con mayores dificultades, como personas con discapacidad, mujeres, migrantes, mayores de 45 años, jóvenes en riesgo de exclusión o desempleados de larga duración.
+
+Para fomentarlo, los gobiernos pueden aplicar diversas estrategias:
+*   Conceder ayudas, formación y acompañamiento a colectivos desfavorecidos.
+*   Crear campañas de sensibilización para luchar contra los estereotipos.
+*   Fomentar redes de apoyo y cooperación como asociaciones, alianzas de empresas o espacios de *coworking*.
+Dificultades del emprendimiento femenino
+
+Falta de financiación: Las mujeres suelen tener más problemas para acceder a préstamos bancarios o para atraer a inversores que apuesten por negocios liderados por ellas.
+
+  **Brecha salarial y techo de cristal:**
+
+  Brecha salarial: Es la diferencia existente entre los salarios recibidos por hombres y por mujeres (en España, una mujer cobra de media un 15% menos por hora que un hombre).
+
+  Techo de cristal: Se refiere a las barreras invisibles que dificultan que las mujeres asciendan a puestos directivos o de máxima responsabilidad, que son los mejor remunerados. Ambos factores reducen la capacidad de ahorro y dificultan el inicio de proyectos propios.
+
+  Desequilibrio en la vida laboral y familiar: Debido a roles de género tradicionales, existe un reparto desigual en el cuidado de hijos y tareas del hogar.
+
+  Estereotipos de género: Ideas preconcebidas.
+
+  Falta de referentes: La menor visibilidad de las mujeres líderes dificulta que otras se identifiquen con el rol de emprendedora.
+:::
+
+### El empresario
+
+::: {.callout-note}
+## Definición de empresario
+El **empresario** es la persona que se encarga de administrar y coordinar los diferentes elementos de una empresa para conseguir unos objetivos. No tiene por qué ser el creador de la empresa. Sus funciones principales son planificación, gestión, organización y control.
+:::
+
+<!-- imagen: image4.png -->
+
+Las características del empresario a menudo coinciden con las del emprendedor, pero además necesita habilidades de administración de empresas: liderazgo, comunicación, negociación y gestión de equipos.
+
+Históricamente, el empresario era el dueño del negocio que aportaba el capital y lo dirigía personalmente. Sin embargo, con el crecimiento de las empresas, se ha producido una **separación entre la propiedad y la dirección**, permitiendo que el empresario sea un directivo profesional contratado para la gestión, sin ser necesariamente el propietario o el creador de la idea.
+
+## Innovación en la empresa
+
+**Creatividad** es la capacidad de generar nuevas ideas o mejorar las existentes para crear algo nuevo. **Innovación** es llevar la creatividad a la práctica: crear un producto, proceso o modelo de negocio e introducirlo en el mercado.
+
+Según el grado de originalidad:
+
+- **Innovación incremental:** pequeñas modificaciones o mejoras en productos existentes que los hacen más atractivos. No implica una creación 100% original, pero puede suponer una gran mejora. Ejemplos: añadir un palo a un cepillo de fregar, incorporar una cámara a los teléfonos móviles, o sustituir ingredientes para crear productos *light*.
+- **Innovación radical:** introducción de un producto completamente nuevo que implica un cambio revolucionario en la sociedad. Ejemplos: la creación de internet en 1989, el primer iPhone en 2007, o el avión.
+
+## Marco jurídico de la actividad empresarial
+
+### El Derecho
+
+El Derecho es un conjunto de principios y normas que regula las relaciones humanas y permite resolver sus conflictos. El Estado lo aplica de manera coactiva, persiguiendo y sancionando a quienes lo incumplen. Se divide en:
+
+- **Derecho público:** constitucional, administrativo, penal, procesal, financiero e internacional público.
+- **Derecho mixto:** laboral.
+- **Derecho privado:** civil, mercantil e internacional privado.
+
+<!-- imagen: image2.png -->
+
+### Forma jurídica
+
+La elección de la forma jurídica determina dos aspectos clave: si el titular responde con su patrimonio personal de las deudas del negocio (responsabilidad limitada o ilimitada), y la vía de tributación de los beneficios (vía Impuesto de Sociedades para personas jurídicas mercantiles, o vía IRPF para personas físicas y entidades en régimen de atribución de rentas).
+
+| Forma jurídica | Nº socios | Capital mínimo | Responsabilidad |
+|:---|:---|:---|:---|
+| Agrupación de Interés Económico | Mínimo 2 | Sin mínimo legal | Ilimitada (subsidiaria y solidaria) |
+| Comunidad de Bienes | Mínimo 2 | Sin mínimo legal | Ilimitada |
+| Empresario Individual (Autónomo) | 1 | Sin mínimo legal | Ilimitada |
+| Emprendedor de Responsabilidad Limitada | 1 | Sin mínimo legal | Ilimitada con excepciones |
+| Sociedad Anónima (SA) | Mínimo 1 | 60.000 € | Limitada |
+| Sociedad Anónima Laboral | Mín. 2 (constitución), 3 a los 36 meses | 60.000 € | Limitada |
+| Sociedad Agraria de Transformación | Mínimo 3 | Sin mínimo legal | Ilimitada o limitada según estatutos |
+| Sociedad Civil | Mínimo 2 | Sin mínimo legal | Ilimitada |
+| Sociedad Colectiva | Mínimo 2 | Sin mínimo legal | Ilimitada (personal y subsidiaria) |
+| Sociedad Comanditaria por acciones | Mínimo 2 | 60.000 € | Mixta (ilimitada colectivos / limitada comanditarios) |
+| Sociedad Comanditaria Simple | Mínimo 2 | Sin mínimo legal | Mixta (ilimitada colectivos / limitada comanditarios) |
+| Sociedad Cooperativa | 1.er grado: mín. 3 (estatal) / 2 (en CC. AA. como País Vasco); 2.º grado: mín. 2 cooperativas | Fijado en estatutos | Limitada |
+| Sociedad Cooperativa de Trabajo Asociado | Mínimo 3 (estatal) / 2 (País Vasco) | Fijado en estatutos | Limitada |
+| Sociedad de Garantía Recíproca | Mínimo 150 socios partícipes | 10.000.000 € | Limitada |
+| Sociedad de Responsabilidad Limitada (SL) | Mínimo 1 | 1 € | Limitada |
+| Sociedad de Responsabilidad Limitada Laboral | Mín. 2 (constitución), 3 a los 36 meses | 1 € | Limitada |
+| Sociedades Profesionales | Mínimo 1 | Según forma social elegida | Según forma social elegida |
+| Entidades de Capital-Riesgo | Mín. 3 miembros en el Consejo de Administración | Desde 125.000 € | Limitada |
+
+::: {.callout-warning}
+## Responsabilidad ilimitada
+Las formas jurídicas con responsabilidad ilimitada (empresario individual, sociedad colectiva, comunidad de bienes, etc.) implican que el propietario responde de las deudas de la empresa con su **patrimonio personal**, incluyendo todos sus bienes presentes y futuros.
+:::
+
+**Sociedad de Responsabilidad Limitada (SL / SRL / SLU si es unipersonal)**
+
+- El número de socios puede ser de uno o más.
+- La responsabilidad es limitada al capital aportado. Si la empresa se crea con menos de 3.000 €, los socios responderán de manera solidaria hasta alcanzar esa cantidad en caso de liquidación.
+- El capital social mínimo es de 1 € (Ley 18/2022 *Crea y Crece*), dividido en participaciones iguales, acumulables e indivisibles. Deben destinarse al menos el 20% de los beneficios anuales a una reserva legal hasta que esta y el capital sumen 3.000 €.
+- La transmisión de participaciones es libre entre socios o familiares directos, pero si se desea transferir a un tercero ajeno a la sociedad, los demás socios tienen derecho de adquisición preferente y deben dar su consentimiento.
+- Tributa por el Impuesto de Sociedades.
+
+**Sociedad Anónima (SA / SAU si es unipersonal)**
+
+- El número de socios puede ser de uno o más, ya sean personas físicas o jurídicas.
+- La responsabilidad es limitada al capital aportado.
+- El capital social mínimo es de 60.000 €, dividido en acciones. Debe estar totalmente suscrito y desembolsado en al menos un 25% en el momento de la constitución.
+- La transmisión de las acciones es libre por defecto.
+- Tributa por el Impuesto de Sociedades.
+
+**Comunidad de Bienes**
+
+Surge cuando un bien o derecho pertenece indiviso a varias personas (por ejemplo, un inmueble heredado) y lo usan para poner en marcha una actividad empresarial conjunta. No tiene personalidad jurídica propia independiente de los comuneros; tributa en régimen de atribución de rentas (en el IRPF de cada comunero) y la responsabilidad es personal e ilimitada.
+
+**Sociedad Civil**
+
+Surge con un contrato de colaboración entre dos o más personas que ponen en común dinero, bienes o industria para realizar una actividad con ánimo de lucro. Existen dos tipos de socios: **industriales** (aportan únicamente trabajo) y **capitalistas** (aportan bienes o dinero). 
+
+*Tributación:* si la Sociedad Civil tiene **objeto mercantil**, tributa obligatoriamente por el **Impuesto sobre Sociedades**; si carece de objeto mercantil (actividades agrícolas, ganaderas, forestales o profesionales no societarias), tributa por el IRPF a través del régimen de atribución de rentas.
+
+**Empresario Individual (Autónomo)**
+
+Persona física con capacidad legal (mayor de 18 años, o de 16 si está emancipada) que realiza una actividad económica o profesional a título lucrativo de forma habitual, personal, directa y por cuenta propia, con o sin trabajadores a su cargo. Responde con todo su patrimonio personal presente y futuro (responsabilidad ilimitada) y tributa por el IRPF.
+
+**Sociedad Comanditaria Simple**
+
+Sociedad mercantil de carácter personalista en la que conviven dos tipos de socios:
+- **Socios colectivos:** gestionan la sociedad, aportan capital y/o trabajo, y responden de forma subsidiaria, personal, ilimitada y solidaria de las deudas sociales.
+- **Socios comanditarios:** no participan en la gestión ordinaria, únicamente aportan capital y su responsabilidad queda **limitada** al importe de su aportación.
+
+Existe la variante de la **sociedad comanditaria por acciones**, donde el capital aportado por los comanditarios se divide en acciones y el capital mínimo exigido es de 60.000 €.
+
+**Sociedad Limitada Laboral (SLL)**
+
+Sociedad de responsabilidad limitada en la que la mayoría del capital social es propiedad de los trabajadores que prestan en ella servicios retribuidos de forma personal y directa, con relación laboral por tiempo indefinido.
+
+Requisitos para obtener la calificación de "laboral" (Ley 44/2015):
+
+- La mayoría del capital social (más del 50%) debe estar en manos de socios trabajadores con contrato indefinido.
+- Ningún socio podrá poseer más de un tercio (33,33%) del capital social, salvo dos excepciones: en el momento de constitución inicial con dos socios trabajadores al 50% (con obligación de incorporar a un tercero en un plazo de 36 meses), o si son entidades públicas o de la economía social (pueden alcanzar hasta el 49% sin llegar a la mitad).
+- El número de horas-año trabajadas por empleados con contrato indefinido que no sean socios no puede superar el 49% del total de horas-año trabajadas por los socios trabajadores (excluidos del cómputo los trabajadores con un grado de discapacidad igual o superior al 33%).
+
+Si el capital está dividido en acciones en lugar de participaciones, la denominación es **sociedad anónima laboral (SAL)** (capital mínimo de 60.000 €).
+
+**Sociedad Cooperativa**
+
+::: {.callout-note}
+## Sociedad Cooperativa
+Sociedad constituida por personas que se asocian de forma democrática para realizar actividades empresariales que les permitan satisfacer sus necesidades y aspiraciones económicas y sociales comunes. Su principal objetivo es el servicio a sus miembros y el fomento del empleo. Sus beneficios netos (denominados **excedentes**) deben destinarse prioritariamente a fondos de reserva obligatorios y a fines de educación y promoción social. Como norma general, rige el principio democrático: **cada socio tiene un voto**, con independencia del capital que haya aportado.
+:::
+
+Características:
+- Responsabilidad limitada a las aportaciones suscritas.
+- Capital social mínimo fijado libremente en los estatutos sociales.
+- Tributan por el Impuesto de Sociedades bajo un régimen fiscal especial protegido con bonificaciones.
+
+Órganos de gobierno y representación:
+
+- **Asamblea general:** órgano supremo integrado por todos los socios; debate y aprueba las decisiones clave y las cuentas anuales bajo el principio de «una persona, un voto».
+- **Consejo rector:** órgano colegiado de gobierno, gestión y representación de la cooperativa (equivalente al consejo de administración).
+- **Interventores:** vigilan y revisan las cuentas anuales y los libros contables antes de elevarlos a la asamblea.
+- **Comité de recursos:** tramita y resuelve las reclamaciones contra las sanciones impuestas por el consejo rector a los socios.
+
+Tipos de cooperativas según su actividad:
+
+- **De trabajo asociado:** los propios trabajadores son los socios y dueños del negocio, aportando su trabajo personal y medios de producción.
+- **De venta / agrarias:** los productores se asocian para comercializar sus productos conjuntamente, adquiriendo escala y mayor poder de negociación.
+- **De consumo:** las personas consumidoras se organizan para adquirir bienes y servicios en mejores condiciones de precio y calidad.
+
+**El cooperativismo vasco**
+
+En el País Vasco, el cooperativismo es una seña de identidad económica y social con una arraigada tradición desde mediados del siglo XX, impulsada por una fuerte cohesión comunitaria, la reactivación industrial y modelos de gobernanza participativos. El referente mundial más emblemático es la **Corporación Mondragón**, fundada en 1956 en Arrasate-Mondragón por el sacerdote José María Arizmendiarrieta.
+
+*Marco normativo propio:* En el País Vasco, las cooperativas se rigen por la **Ley 11/2019 de Cooperativas de Euskadi**, la cual flexibiliza los requisitos fundacionales permitiendo constituir cooperativas de primer grado (incluidas las de trabajo asociado) con un **mínimo de solo 2 socios**, frente al umbral estatal general de 3 socios fijado en la Ley 27/1999.
+
+## El sistema fiscal vasco
+
+El sistema fiscal propio del País Vasco, derivado de los derechos históricos de Bizkaia, Gipuzkoa y Álava/Araba, es una de sus características más singulares. No se puede entender la historia económica vasca desde finales del siglo XIX sin el pacto fiscal entre los tres Territorios Históricos y el Estado español: el **Concierto Económico**.
+
+El primer Concierto Económico vasco data de 1878; hasta 1937 se desarrollaron cinco. Durante la dictadura franquista se suspendió en Bizkaia y Gipuzkoa, consideradas "provincias traidoras". En 1981 se recuperó, se incorporó al Estatuto de Autonomía y fue renovado y ampliado mediante sucesivas leyes estatales y forales (destacando las leyes de 2002, 2007 y actualizaciones periódicas de metodología de cupo).
+
+::: {.callout-tip}
+## El Concierto Económico
+El Concierto Económico es el mecanismo por el que los Territorios Históricos Vascos recaudan y gestionan sus propios impuestos, contribuyendo al Estado mediante el **cupo**: una cantidad global que sufraga las competencias no asumidas por la Comunidad Autónoma (Defensa, Asuntos Exteriores, infraestructuras generales, etc.). El cupo se acuerda en la Comisión Mixta del Concierto Económico, compuesta paritariamente por representantes de las tres diputaciones forales, el Gobierno Vasco y la Administración General del Estado.
+:::
+
+**Régimen tributario propio**
+
+Los Territorios Históricos Vascos disponen de un régimen tributario foral con capacidad normativa y de gestión tributaria prácticamente plena. Las Juntas Generales aprueban las normas forales tributarias y las diputaciones forales de Bizkaia, Álava/Araba y Gipuzkoa liquidan y recaudan los tributos, financiando las instituciones forales, los ayuntamientos vascos y el presupuesto general del Gobierno Vasco.
+
+En cuanto a la **imposición directa**, las instituciones forales tienen competencia exclusiva para regular e ingresar su propio IRPF, el Impuesto sobre Sociedades y los impuestos sobre el Patrimonio y sobre Sucesiones y Donaciones. El Parlamento Vasco ostenta potestad para armonizar principios generales mediante leyes de coordinación y colaboración fiscal.
+
+En cuanto a la **imposición indirecta**, figuras como el IVA y los Impuestos Especiales siguen una regulación sustancialmente armonizada con la legislación estatal y la normativa comunitaria europea, quedando las facultades forales centradas en su exacción, liquidación y gestión administrativa. En cambio, tributos como el Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados (ITP-AJD) disponen de un margen normativo foral significativamente más amplio.

@@ -1,0 +1,36 @@
+project:
+  type: book
+  output-dir: _book
+
+lang: es
+
+book:
+  title: "Empresa y diseño de modelos de negocio — 2.º Bachillerato"
+  author: "Guillermo"
+  date: today
+  chapters:
+    - index.qmd
+    - empresa.qmd
+    - modelos2_no_ph.qmd
+    - marketing_1_no_ph.qmd
+    - inversiones_1_no_ph.qmd
+    - almacen.qmd
+    - contabilidad_2.qmd
+    - RRHH.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  typst:
+    lang: es
+    number-sections: true
+    toc: true
+    toc-depth: 3
+
+execute:
+  echo: false
+  warning: false
+  freeze: auto

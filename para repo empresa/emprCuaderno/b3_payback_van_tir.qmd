@@ -1,0 +1,250 @@
+# Selección de inversiones: Pay-back y VAN
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Pay-back y VAN"}
+
+**Notación**
+
+| Símbolo | Nombre completo | Significado |
+|:---:|:---|:---|
+| $D_0$ | Desembolso inicial | Pago realizado en el momento 0 para iniciar la inversión |
+| $F_t$ | Flujo neto de caja del año $t$ | Cobros menos pagos del año $t$ (puede ser negativo) |
+| $n$ | Vida útil | Número de años que dura el proyecto |
+| $VR$ | Valor residual | Valor de venta del activo al finalizar la vida útil (se suma al último $F_n$) |
+| $k$ | Tasa de descuento | Rentabilidad mínima exigida ajustada por inflación (fórmula de Fisher) |
+| $i$ | Rentabilidad mínima exigida | Rendimiento mínimo que debe ofrecer la inversión para que compense |
+| $g$ | Tasa de inflación | Pérdida anual de poder adquisitivo del dinero |
+| $VAN$ | Valor Actual Neto | Valor presente de todos los flujos menos el desembolso inicial |
+
+**Flujo neto de caja**
+
+$$F_t = \text{Cobros}_t - \text{Pagos}_t$$
+
+Si hay valor residual, se suma al flujo del último año. Si la inversión se paga a plazos, cada pago es un egreso en el año correspondiente.
+
+**Pay-back (plazo de recuperación)**
+
+Sumar flujos acumulados hasta igualar $D_0$. Para los meses del año parcial:
+
+$$\text{Meses} = \frac{\text{Cantidad pendiente}}{F_{\text{año parcial}}} \times 12$$
+
+Criterio: se elige el proyecto que recupera la inversión **antes**. Si algún proyecto no la recupera dentro de su vida útil, se descarta.
+
+**Tasa de descuento — Fórmula de Fisher**
+
+$$k = i + g + (i \times g)$$
+
+donde $i$ = rentabilidad mínima exigida y $g$ = tasa de inflación.
+
+**Valor Actual Neto (VAN)**
+
+$$VAN = -D_0 + \frac{F_1}{(1+k)^1} + \frac{F_2}{(1+k)^2} + \cdots + \frac{F_n}{(1+k)^n}$$
+
+| VAN | Interpretación |
+|:---:|:---|
+| $> 0$ | Proyecto rentable: acepta |
+| $= 0$ | Indiferente |
+| $< 0$ | Proyecto no rentable: rechaza |
+
+Entre varios proyectos aceptables, se elige el de **mayor VAN**.
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- Si la inversión se paga en varios plazos, el **desembolso inicial $D_0$ es solo el primer pago**. Los pagos posteriores se restan del flujo del año en que se realizan.
+- El **valor residual** (venta del activo al final) se **suma** al flujo del último año, no se trata aparte.
+- No sumes directamente $i + g$ para obtener $k$: usa siempre la **fórmula de Fisher** ($k = i + g + i \times g$). En la EHU es la fórmula oficial.
+- Un flujo de caja puede ser **negativo** (si los pagos de ese año superan los cobros). Hay que incluirlo igual en el VAN.
+- El Pay-back ignora los flujos posteriores a la recuperación: por eso el VAN es siempre el criterio más completo.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2022 Ordinaria — Empresa NORBERA (proyectos A y B)
+
+> *La empresa NORBERA evalúa dos proyectos de inversión. Inflación: 2 %. Rentabilidad mínima: 7 %.*
+>
+> **Proyecto A** — $I_0 = 75.000$ €; vida útil: 3 años.
+>
+> | Año | Ingresos | Gastos | Valor residual |
+> |:---:|---:|---:|---:|
+> | 1 | 35.000 € | 12.000 € | — |
+> | 2 | 52.000 € | 15.000 € | — |
+> | 3 | 55.000 € | 25.000 € | 15.000 € |
+>
+> **Proyecto B** — $I_0 = 50.000$ €; precio unitario: 25 €; vida útil: 3 años.
+>
+> | Año | Unidades vendidas | Gastos |
+> |:---:|---:|---:|
+> | 1 | 1.200 | 17.800 € |
+> | 2 | 1.300 | 16.600 € |
+> | 3 | 2.400 | 25.000 € |
+>
+> a) ¿Qué proyecto es más conveniente según el Pay-back? *(0,5 p)*
+> b) ¿Cuál elegir según el VAN? *(1 p)*
+> c) ¿Qué criterio es más adecuado y por qué? *(0,5 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+**Paso 0 — Calcular los flujos de caja**
+
+El enunciado no da los flujos directamente: hay que construirlos.
+
+*Proyecto A:* Los ingresos del año 3 llevan valor residual, que se suma.
+
+$$F_1 = 35.000 - 12.000 = 23.000\ \text{€}$$
+$$F_2 = 52.000 - 15.000 = 37.000\ \text{€}$$
+$$F_3 = 55.000 - 25.000 + 15.000 = 45.000\ \text{€}$$
+
+*Proyecto B:* Los ingresos hay que calcularlos (precio × unidades).
+
+$$F_1 = (25 \times 1.200) - 17.800 = 30.000 - 17.800 = 12.200\ \text{€}$$
+$$F_2 = (25 \times 1.300) - 16.600 = 32.500 - 16.600 = 15.900\ \text{€}$$
+$$F_3 = (25 \times 2.400) - 25.000 = 60.000 - 25.000 = 35.000\ \text{€}$$
+
+**Tabla resumen:**
+
+| Proyecto | $D_0$ | $F_1$ | $F_2$ | $F_3$ |
+|:---|:---:|:---:|:---:|:---:|
+| A | 75.000 € | 23.000 € | 37.000 € | 45.000 € |
+| B | 50.000 € | 12.200 € | 15.900 € | 35.000 € |
+
+**a) Pay-back**
+
+*Proyecto A ($D_0 = 75.000$ €):*
+
+- Tras año 1: recuperado 23.000 €. Pendiente: 52.000 €.
+- Tras año 2: recuperado 23.000 + 37.000 = 60.000 €. Pendiente: **15.000 €**.
+- Año 3: $\frac{15.000}{45.000} \times 12 = \mathbf{4\ \text{meses}}$
+
+**Pay-back A: 2 años y 4 meses.**
+
+*Proyecto B ($D_0 = 50.000$ €):*
+
+- Tras año 1: recuperado 12.200 €. Pendiente: 37.800 €.
+- Tras año 2: recuperado 12.200 + 15.900 = 28.100 €. Pendiente: **21.900 €**.
+- Año 3: $\frac{21.900}{35.000} \times 12 = \mathbf{7{,}5\ \text{meses}}$
+
+**Pay-back B: 2 años y 7,5 meses.**
+
+Según el Pay-back, **conviene el Proyecto A** (recupera la inversión 3,5 meses antes).
+
+**b) VAN**
+
+Tasa de descuento por Fisher:
+
+$$k = 0{,}07 + 0{,}02 + (0{,}07 \times 0{,}02) = 0{,}09 + 0{,}0014 = \mathbf{0{,}0914}$$
+
+$$VAN_A = -75.000 + \frac{23.000}{1{,}0914} + \frac{37.000}{1{,}0914^2} + \frac{45.000}{1{,}0914^3}$$
+$$= -75.000 + 21.073{,}85 + 31.062{,}31 + 34.614{,}71 = \mathbf{11.750{,}87\ \text{€}}$$
+
+$$VAN_B = -50.000 + \frac{12.200}{1{,}0914} + \frac{15.900}{1{,}0914^2} + \frac{35.000}{1{,}0914^3}$$
+$$= -50.000 + 11.178{,}30 + 13.348{,}40 + 26.922{,}55 = \mathbf{1.449{,}25\ \text{€}}$$
+
+Ambos VAN son positivos. Esto significa que **ambos proyectos superan la rentabilidad mínima exigida** del 7 % anual (después de descontar la inflación del 2 %). Sin embargo, el Proyecto A genera mucha más riqueza neta adicional: tras recuperar la inversión y cubrir la rentabilidad mínima exigida, aún queda un excedente de 11.750,87 €, frente a los apenas 1.449,25 € del Proyecto B. Se elige el **Proyecto A** por tener el mayor VAN.
+
+**c) Criterio más adecuado**
+
+El **VAN es superior al Pay-back** por dos razones:
+
+1. **Tiene en cuenta el valor temporal del dinero**: actualiza los flujos descontando la inflación. El Pay-back suma euros de distintos años como si valieran lo mismo.
+2. **Considera todos los flujos**: el Pay-back deja de contar en cuanto recupera la inversión, ignorando todo lo que ocurre después. El VAN evalúa el proyecto de principio a fin.
+
+:::
+
+---
+
+### EHU 2023 Ordinaria — Empresa GAUTZA (pagos fraccionados)
+
+> *La empresa GAUTZA elige entre dos máquinas. Inflación: 5,9 %. Rentabilidad mínima: 3 %.*
+>
+> **Proyecto A** — Máquina: 105.000 € pagados en tres tercios iguales (al comprar, fin año 1 y fin año 2). Vida útil: 4 años. Cobros: 40.000 / 50.000 / 60.000 / 46.000 €. Pagos producción: 5.000 / 10.000 / 15.000 / 7.000 €. Valor residual: 2.000 €.
+>
+> **Proyecto B** — Máquina: 110.000 € (mitad al comprar, mitad fin año 1). Mantenimiento: 300 €/año. Flujos netos (sin compra ni mantenimiento): 20.000 / 25.000 / 35.000 €. Vida útil: 3 años. Valor residual: 20.000 €.
+>
+> a) Pay-back. *(0,75 p)*
+> b) VAN. *(1 p)*
+> c) ¿Qué criterio es más adecuado? *(0,25 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+**Paso 0 — Flujos de caja (con cuidado con los pagos fraccionados)**
+
+Cada tercio de la máquina A: $105.000 / 3 = 35.000$ €.
+Cada mitad de la máquina B: $110.000 / 2 = 55.000$ €.
+
+*Proyecto A:*
+
+$$D_0 = 35.000\ \text{€}$$
+$$F_1 = 40.000 - 5.000 - 35.000 = \mathbf{0\ \text{€}}$$
+$$F_2 = 50.000 - 10.000 - 35.000 = \mathbf{5.000\ \text{€}}$$
+$$F_3 = 60.000 - 15.000 = \mathbf{45.000\ \text{€}}$$
+$$F_4 = 46.000 - 7.000 + 2.000 = \mathbf{41.000\ \text{€}}$$
+
+*Proyecto B:*
+
+$$D_0 = 55.000\ \text{€}$$
+$$F_1 = 20.000 - 300 - 55.000 = \mathbf{-35.300\ \text{€}}$$
+$$F_2 = 25.000 - 300 = \mathbf{24.700\ \text{€}}$$
+$$F_3 = 35.000 - 300 + 20.000 = \mathbf{54.700\ \text{€}}$$
+
+::: {.callout-warning title="Flujo negativo en el año 1 del Proyecto B"}
+En el año 1, el pago del segundo plazo de la máquina (55.000 €) supera con creces los cobros netos (19.700 €). El resultado es un flujo negativo de −35.300 €. Hay que incluirlo así en el pay-back y en el VAN: no se puede ignorar ni poner a cero.
+:::
+
+**a) Pay-back**
+
+*Proyecto A ($D_0 = 35.000$ €):*
+
+- Año 1: $F_1 = 0$. Pendiente: 35.000 €.
+- Año 2: acumulado = 5.000 €. Pendiente: **30.000 €**.
+- Año 3: $\frac{30.000}{45.000} \times 12 = 8\ \text{meses}$
+
+**Pay-back A: 2 años y 8 meses.** Proyecto aceptable (se recupera antes del año 4).
+
+*Proyecto B ($D_0 = 55.000$ €):*
+
+- Año 1: flujo −35.300 €. La deuda crece: pendiente = $55.000 + 35.300 = 90.300$ €.
+- Año 2: acumulado recuperado = 24.700 €. Pendiente: 65.600 €.
+- Año 3: acumulado = 24.700 + 54.700 = 79.400 €. Pendiente: **10.900 €**.
+
+El proyecto acaba en el año 3 con 10.900 € aún sin recuperar. **No se recupera la inversión.**
+
+Según el Pay-back, **se debe elegir el Proyecto A**. El B es inviable porque no recupera la inversión durante su vida útil.
+
+**b) VAN**
+
+Tasa de descuento por Fisher:
+
+$$k = 0{,}03 + 0{,}059 + (0{,}03 \times 0{,}059) = 0{,}089 + 0{,}00177 = \mathbf{0{,}09077}$$
+
+$$VAN_A = -35.000 + \frac{0}{1{,}09077} + \frac{5.000}{1{,}09077^2} + \frac{45.000}{1{,}09077^3} + \frac{41.000}{1{,}09077^4} = \mathbf{32.840{,}69\ \text{€}}$$
+
+$$VAN_B = -55.000 + \frac{-35.300}{1{,}09077} + \frac{24.700}{1{,}09077^2} + \frac{54.700}{1{,}09077^3} = \mathbf{-24.453{,}26\ \text{€}}$$
+
+$VAN_A > 0$: el Proyecto A supera la rentabilidad mínima exigida del 3 % (tras descontar la inflación del 5,9 %); genera 32.840,69 € de riqueza neta adicional. Es aceptable.
+
+$VAN_B < 0$: el Proyecto B no alcanza la rentabilidad mínima exigida; destruye valor. Debe rechazarse.
+
+Según el VAN, **se debe elegir el Proyecto A**.
+
+**c) Criterio más adecuado**
+
+El **VAN** es superior porque es un método dinámico: actualiza los flujos teniendo en cuenta el valor temporal del dinero y considera la vida útil completa del proyecto. El Pay-back es estático y no descuenta la inflación ni valora los flujos posteriores a la recuperación.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — EHU (enunciado pendiente)"}
+*(Añade aquí un ejercicio real de inversiones de EHU cuando lo tengas disponible.)*
+:::
+
+::: {.callout-important title="Propuesto 2 — Con pago fraccionado (formato EHU)"}
+*(Introduce aquí el enunciado cuando lo tengas disponible)*
+:::

@@ -1,0 +1,147 @@
+## Forma jurídica {#forma-juridica}
+
+La elección de la forma jurídica es una de las decisiones más relevantes al constituir una empresa. Determina, entre otros aspectos, si el titular responde con su patrimonio personal de las deudas del negocio (responsabilidad limitada o ilimitada) y la vía de tributación de los beneficios (Impuesto de Sociedades para las personas jurídicas mercantiles, o IRPF para las personas físicas y las entidades en régimen de atribución de rentas).
+
+### Personalidad física y personalidad jurídica
+
+::: {.callout-note title="Definición"}
+La **personalidad jurídica** es la aptitud que el ordenamiento jurídico reconoce a una entidad para ser titular de derechos y obligaciones, con independencia de las personas físicas que la integran.
+:::
+
+Esta es la distinción de fondo que subyace a toda la clasificación de formas jurídicas:
+
+- **Empresas sin personalidad jurídica propia.** El empresario, persona física, aporta el capital, dirige la empresa y asume el riesgo del negocio a título personal. Empresa y persona son, a efectos legales, lo mismo: los derechos y obligaciones del negocio coinciden con los del propio empresario. Es el caso del empresario individual y, con matices, de la comunidad de bienes y la sociedad civil.
+- **Empresas con personalidad jurídica propia.** Surgen cuando varias personas, mediante un contrato, ponen en común capital o trabajo para desarrollar una actividad conjunta. Ese contrato da origen a una persona jurídica nueva, distinta de las personas físicas que la constituyen, con derechos y obligaciones propios y separados de los de sus socios. Es el caso de las sociedades mercantiles, que deben constituirse mediante escritura pública ante notario e inscribirse en el Registro Mercantil.
+
+::: {.callout-tip title="Otros sujetos con personalidad jurídica propia"}
+Además de las sociedades mercantiles, tienen personalidad jurídica propia las corporaciones de derecho público (p. ej., los ayuntamientos), las fundaciones (p. ej., la Fundación Nobel) y las asociaciones. Estas últimas pueden carecer de fin mercantil (una asociación de madres y padres de alumnos) o perseguirlo (en cuyo caso se rigen por las normas de las sociedades mercantiles).
+:::
+
+### Clasificación general de las formas jurídicas
+
+Atendiendo al criterio anterior, las formas jurídicas se agrupan en dos grandes bloques:
+
+1. **Empresario individual (autónomo).** Persona física que realiza una actividad económica en nombre propio.
+2. **Sociedades mercantiles.** Se subdividen, a su vez, en tres categorías según qué resulte determinante para el éxito de la sociedad:
+   - **Sociedades personalistas:** lo relevante son las cualidades personales de los socios, que son quienes ejercen la gestión (sociedad colectiva, sociedad comanditaria simple).
+   - **Sociedades capitalistas:** lo relevante es el capital aportado por cada socio, que no tiene por qué implicarse en la gestión (sociedad de responsabilidad limitada, sociedad anónima, sociedad comanditaria por acciones).
+   - **Sociedades de interés social:** se constituyen para satisfacer las necesidades de sus propios socios más que para maximizar el beneficio (sociedad laboral, sociedad cooperativa).
+
+La sociedad civil y la comunidad de bienes constituyen figuras específicas, sin encaje pleno en la clasificación anterior, que se estudian de forma independiente al final del epígrafe.
+
+### Criterios para la elección de la forma jurídica
+
+La forma jurídica más adecuada depende de las necesidades concretas de los socios. Los principales factores a valorar son:
+
+| Criterio | Aspectos a considerar |
+|---|---|
+| **Número de socios** | Algunas formas admiten un único socio (empresario individual, SL unipersonal, SA unipersonal); otras exigen un mínimo de socios (sociedad laboral, sociedad cooperativa). |
+| **Responsabilidad** | Ilimitada (el socio responde con su patrimonio presente y futuro) frente a limitada al capital aportado (solo se puede perder lo invertido). |
+| **Capital mínimo exigido** | Desde la ausencia de mínimo legal (autónomo, sociedades personalistas) hasta cifras elevadas (60.000 € en la sociedad anónima; 18.000.000 € para constituir un banco). |
+| **Transmisión de la participación** | Restringida (requiere el consentimiento de los demás socios) o libre (se puede vender a cualquier tercero), en función de la importancia de la relación personal entre los socios. |
+| **Tributación** | Impuesto de Sociedades (tipo fijo) para las personas jurídicas mercantiles, o IRPF (tipo progresivo) para el empresario individual y otras entidades en atribución de rentas. |
+| **Ánimo de lucro** | La generalidad de las empresas persigue el beneficio; determinadas figuras (fundaciones, asociaciones no mercantiles) se orientan, en cambio, a la satisfacción de necesidades de sus miembros o de terceros. |
+
+### El empresario individual
+
+::: {.callout-note title="Definición"}
+El **empresario individual** es la persona física que realiza, por cuenta propia y de manera habitual, personal y directa, una actividad económica o profesional con o sin trabajadores a su cargo, asumiendo todos los derechos y obligaciones derivados de dicha actividad.
+:::
+
+**Requisitos y características**
+
+- Mayoría de edad (18 años) o 16 años con emancipación legal.
+- Responsabilidad ilimitada: el empresario individual responde con todo su patrimonio presente y futuro.
+- No se exige capital mínimo para el inicio de la actividad.
+- Tributa por el IRPF, con un tipo progresivo que aumenta con el nivel de beneficios.
+
+**Tipos de empresario individual (autónomo)**
+
+- **Autónomo individual:** ejerce la actividad de forma independiente (p. ej., un fontanero o un abogado por cuenta propia).
+- **Autónomo con trabajadores:** además de ejercer la actividad, dirige a un grupo de trabajadores por cuenta ajena.
+- **Trabajador Autónomo Económicamente Dependiente (TRADE):** aquel cuyos ingresos dependen en al menos un 75 % de un único cliente. A diferencia del resto de autónomos, el TRADE tiene reconocidos derechos próximos a los de un trabajador por cuenta ajena: prestación por desempleo, vacaciones, permiso de maternidad/paternidad e indemnización en caso de que el cliente decida finalizar el contrato. Esta figura se introdujo, entre otros motivos, para dar respuesta a los llamados «falsos autónomos», práctica asociada a la denominada *uberización* de la economía, mediante la cual una empresa contrata a un trabajador exigiéndole que se dé de alta como autónomo para eludir cotizaciones sociales y derechos laborales.
+
+::: {.callout-tip title="Emprendedor de Responsabilidad Limitada (ERL)"}
+Desde 2013 existe la figura del **emprendedor de responsabilidad limitada**, que permite al autónomo excluir de la responsabilidad derivada de sus deudas empresariales la vivienda habitual, siempre que su valor no supere un determinado umbral y se cumplan ciertos requisitos formales (inscripción en el Registro Mercantil y en el Registro de la Propiedad).
+:::
+
+**Ventajas e inconvenientes**
+
+| Ventajas | Inconvenientes |
+|---|---|
+| El empresario mantiene el control total de la empresa. | Debe hacer frente en solitario a todos los gastos y riesgos. |
+| Trámites de constitución sencillos y escasa inversión inicial; adecuado para negocios pequeños (fontanería, electricidad, etc.). | Responsabilidad ilimitada: en caso de deuda, responde con todo su patrimonio presente y futuro. |
+| Suele ser más rentable para negocios pequeños sin grandes beneficios. | Con beneficios elevados, la tributación por IRPF resulta más gravosa que la de una sociedad. |
+
+### Órganos de gobierno de las sociedades capitalistas
+
+Tanto la sociedad de responsabilidad limitada como la sociedad anónima se organizan en torno a dos órganos:
+
+1. **Junta general.** Órgano en el que los socios (o accionistas) se reúnen para adoptar los acuerdos fundamentales: aprobación de la gestión de los administradores, aprobación de las cuentas del ejercicio anterior, aplicación del resultado y nombramiento de administradores. En el caso de la sociedad anónima, las decisiones se adoptan por mayoría de votos, proporcional al número de acciones de cada socio. Puede ser:
+   - **Ordinaria:** se celebra obligatoriamente una vez al año, dentro de los seis primeros meses del ejercicio.
+   - **Extraordinaria:** se convoca cuando los administradores lo consideran oportuno, o a solicitud de socios que representen, en la sociedad anónima, al menos el 5 % del capital.
+2. **Órgano de administración.** Gestiona y representa a la sociedad frente a terceros. Puede adoptar la forma de administrador único o de consejo de administración; sus miembros son designados por la junta general y no tienen por qué ostentar la condición de socios.
+
+En la sociedad de responsabilidad limitada, los socios ostentan, además, los siguientes derechos: participación en el reparto de beneficios, adquisición preferente de las participaciones que transmitan otros socios, participación en la junta general y derecho de información sobre los acuerdos adoptados.
+
+### Cuadro comparativo de las formas jurídicas
+
+| Forma jurídica | Nº socios | Capital mínimo | Responsabilidad | Tributación |
+|---|---|---|---|---|
+| Empresario individual | Solo el empresario | Sin mínimo legal | Ilimitada | IRPF |
+| Comunidad de Bienes | Mínimo 2 | Sin mínimo legal | Ilimitada | IRPF |
+| Sociedad Civil | Mínimo 2 | Sin mínimo legal | Ilimitada | IRPF / IS, según objeto |
+| Sociedad Colectiva | Mínimo 2 | Sin mínimo legal | Ilimitada y solidaria | IS |
+| Sociedad Comanditaria Simple | Mínimo 2 (1 colectivo, 1 comanditario) | Sin mínimo legal | Ilimitada (colectivos) / Limitada (comanditarios) | IS |
+| Sociedad Comanditaria por Acciones | Mínimo 2 (1 colectivo, 1 comanditario) | 60.000 € (100 % suscrito, 25 % desembolsado) | Ilimitada (colectivos) / Limitada (comanditarios) | IS |
+| Sociedad de Responsabilidad Limitada | Mínimo 1 | 1 € (con obligación de destinar el 20 % de beneficios a reserva legal hasta 3.000 €) | Limitada | IS |
+| Sociedad Anónima | Mínimo 1 | 60.000 € (100 % suscrito, 25 % desembolsado) | Limitada | IS |
+| Sociedad Laboral (SLL / SAL) | Mínimo 2 (3 a los 36 meses) | 1 € (SLL) / 60.000 € (SAL) | Limitada | IS |
+| Sociedad Cooperativa | 1.er grado: mín. 3 (mín. 2 en Euskadi) · 2.º grado: mín. 2 cooperativas | Fijado en los estatutos | Limitada | IS (con bonificaciones) |
+
+### Otras formas sociales
+
+**Comunidad de Bienes**
+
+::: {.callout-note title="Definición"}
+Surge cuando un bien o derecho pertenece proindiviso a varias personas —por ejemplo, un inmueble heredado— que lo destinan al ejercicio de una actividad empresarial conjunta.
+:::
+
+No tiene personalidad jurídica propia, por lo que la responsabilidad de los comuneros es ilimitada. No se exige capital mínimo, si bien las aportaciones no pueden consistir únicamente en dinero. No tributa como tal: cada comunero declara su parte de los rendimientos en su IRPF (o en el Impuesto de Sociedades, si es persona jurídica).
+
+**Sociedad Civil**
+
+::: {.callout-note title="Definición"}
+Contrato por el que dos o más personas ponen en común dinero, bienes o trabajo con ánimo de obtener un beneficio y repartirlo entre ellas.
+:::
+
+Distingue entre socios industriales (aportan trabajo) y socios capitalistas (aportan bienes o dinero). No exige capital mínimo. Desde 2016, la sociedad civil con objeto mercantil tributa por el Impuesto de Sociedades; si carece de objeto mercantil (actividades agrícolas, ganaderas, forestales o profesionales no societarias), tributa por el IRPF en régimen de atribución de rentas.
+
+La diferencia esencial entre ambas figuras radica en su origen: la comunidad de bienes surge cuando el bien ya se posee de forma previa (p. ej., por herencia) y después se decide explotarlo empresarialmente, mientras que la sociedad civil se constituye de forma expresa con la finalidad de obtener beneficios.
+
+---
+
+## El tejido empresarial vasco
+
+### El peso de las pymes
+
+Las pequeñas y medianas empresas constituyen el motor de la economía española y, muy particularmente, de la economía vasca:
+
+- Representan más del **99 %** del total de empresas del País Vasco.
+- Generan más del **70 %** del empleo privado.
+- Tienen presencia destacada en la industria avanzada y manufacturera, los servicios profesionales, el comercio local y el turismo y la hostelería.
+- Muchas de ellas se integran en clústeres industriales, que fomentan la cooperación entre empresas de un mismo sector para innovar y competir en mercados globales.
+
+### El cooperativismo vasco
+
+El cooperativismo constituye una seña de identidad económica y social del País Vasco, con una tradición consolidada desde mediados del siglo XX, favorecida por una fuerte cohesión comunitaria y por la necesidad de reconstrucción industrial de posguerra.
+
+::: {.callout-tip title="Marco normativo propio"}
+En el País Vasco, las cooperativas se rigen por la **Ley 11/2019, de Cooperativas de Euskadi**, que flexibiliza los requisitos fundacionales frente a la norma estatal (Ley 27/1999): permite constituir cooperativas de primer grado —incluidas las de trabajo asociado— con un mínimo de **2 socios**, frente al umbral general de 3 socios.
+:::
+
+**Corporación Mondragón**
+
+Fundada en 1956 en Arrasate-Mondragón por el sacerdote José María Arizmendiarrieta, la Corporación Mondragón es hoy el mayor grupo cooperativo de Europa y uno de los principales grupos empresariales del Estado. Integra más de 90 cooperativas repartidas en los ámbitos de industria (Fagor, Eroski), finanzas (Laboral Kutxa), educación (Mondragon Unibertsitatea) y distribución, innovación y servicios.
+
+El modelo cooperativo vasco se ha convertido en un referente internacional de economía social, analizado por universidades, gobiernos y organizaciones de todo el mundo como alternativa al modelo empresarial capitalista convencional.

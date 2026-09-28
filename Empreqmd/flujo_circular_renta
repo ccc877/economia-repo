@@ -1,0 +1,44 @@
+digraph Flujo_Circular {
+	fontname=Helvetica nodesep=1.2 rankdir=TB ranksep=1.2
+	node [fontname=Helvetica fontsize=12 shape=box style="filled, rounded"]
+	edge [fontname=Helvetica fontsize=10]
+	MBS [label="Mercado de bienes
+y servicios" fillcolor="#FFF9C4" shape=ellipse]
+	MF [label="Mercado de
+factores" fillcolor="#FFF9C4" shape=ellipse]
+	Familias [label=Familias fillcolor="#E3F2FD"]
+	Estado [label=Estado fillcolor="#E8F5E9" fontcolor=black fontsize=13]
+	Empresas [label=Empresas fillcolor="#E3F2FD"]
+	{
+		rank=same
+		Familias
+		Estado
+		Empresas
+	}
+	edge [color="#1565C0" fontcolor="#1565C0" style=dashed]
+	Familias -> MBS [label=" Gasto en consumo"]
+	MBS -> Empresas [label=" Ingresos por ventas"]
+	Empresas -> MF [label=" Salarios, rentas
+ y beneficios"]
+	MF -> Familias [label=" Rentas de los
+ factores"]
+	Familias -> Estado [label=" Impuestos"]
+	Empresas -> Estado [label=" Impuestos"]
+	Estado -> Empresas [label=" Subvenciones"]
+	edge [color="#C62828" fontcolor="#C62828" style=solid]
+	Empresas -> MBS [label=" Oferta de bienes
+ y servicios"]
+	MBS -> Familias [label=" Compra de bienes
+ y servicios"]
+	Familias -> MF [label=" Oferta de trabajo,
+ tierra y capital"]
+	MF -> Empresas [label=" Factores de
+ producción"]
+	Estado -> Familias [label=" Bienes públicos y
+ transferencias"]
+	subgraph cluster_leyenda {
+		color=black fontname=Helvetica label=Leyenda style=rounded
+		leyenda_real [label="Flujo real (Bienes y factores)" fontcolor="#C62828" shape=plaintext]
+		leyenda_monetario [label="Flujo monetario (Dinero)" fontcolor="#1565C0" shape=plaintext]
+	}
+}

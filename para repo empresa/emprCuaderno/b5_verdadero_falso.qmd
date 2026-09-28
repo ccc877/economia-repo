@@ -1,0 +1,132 @@
+# Conceptos de empresa: verdadero o falso
+
+Este capítulo recoge las preguntas teóricas de tipo verdadero/falso y opción múltiple que aparecen habitualmente en los exámenes EHU sobre el bloque de empresa, sistema económico y marco jurídico. No requieren cálculo, pero sí precisión conceptual.
+
+---
+
+## Conceptos frecuentes en examen
+
+::: {.callout-note title="Resumen de conceptos que más se prestan a confusión"}
+
+**Dividendo activo vs. dividendo pasivo**
+- **Activo:** parte del beneficio que la SA reparte entre los accionistas. Es un cobro para el accionista.
+- **Pasivo:** parte del capital social comprometida por el accionista pero aún no desembolsada. Es una deuda del accionista con la sociedad.
+
+**Trust vs. cártel**
+- **Trust:** fusión o control de empresas del mismo sector bajo una entidad superior. Las empresas pierden independencia.
+- **Cártel:** acuerdo entre empresas independientes para fijar precios o repartirse el mercado. No hay fusión. Prohibido en la UE y la mayoría de países.
+
+**Startup**
+Empresa de reciente creación, vinculada a la innovación tecnológica, con modelo de negocio escalable y alta incertidumbre. No es una empresa tradicional.
+
+**Integración vertical vs. horizontal**
+- **Vertical:** la empresa controla distintas fases de la cadena de valor (hacia atrás: proveedores; hacia adelante: distribución).
+- **Horizontal:** la empresa absorbe o se fusiona con competidores del mismo sector.
+
+**Holding**
+Sociedad cuya función principal es poseer participaciones en otras empresas para controlarlas, sin necesariamente producir bienes o servicios directamente.
+
+**Intraemprendedor**
+Trabajador que desarrolla proyectos innovadores dentro de una empresa existente, con el apoyo de esta. No crea una empresa propia.
+
+:::
+
+---
+
+## Ejercicios resueltos
+
+### Banco de verdadero/falso — Conceptos de empresa
+
+::: {.callout-tip title="Serie A — Formas de concentración y tipos de empresa"}
+
+**1. Un cártel es legal en España siempre que las empresas participantes pertenezcan al mismo sector.**
+
+**Falso.** Los cárteles están prohibidos por la legislación española y europea de defensa de la competencia, independientemente del sector. Su objetivo —fijar precios o repartirse el mercado— perjudica a los consumidores y elimina la libre competencia.
+
+---
+
+**2. En un holding, la sociedad matriz fabrica los mismos productos que sus filiales para aprovechar economías de escala.**
+
+**Falso.** Un holding es una sociedad cuya función es poseer y gestionar participaciones en otras empresas (sus filiales), no producir los mismos bienes. El holding controla sin producir directamente.
+
+---
+
+**3. La integración vertical hacia atrás consiste en que una empresa adquiere a uno de sus proveedores.**
+
+**Verdadero.** La integración vertical hacia atrás implica extender el control de la empresa hacia fases anteriores de la cadena de valor, es decir, hacia sus suministradores. Por ejemplo, una fábrica de coches que compra una acería para autoabastecerse de acero.
+
+---
+
+**4. Un intraemprendedor es un empleado que abandona su empresa para fundar una startup competidora.**
+
+**Falso.** El intraemprendedor desarrolla proyectos innovadores **dentro** de la empresa en la que trabaja, con el apoyo y los recursos de esta. No la abandona ni compite con ella. Ejemplo clásico: el empleado de Google que propuso Gmail como proyecto interno.
+
+:::
+
+::: {.callout-tip title="Serie B — Sistema económico y factores productivos"}
+
+**5. La macroeconomía estudia las decisiones de consumidores y empresas individuales.**
+
+**Falso.** La macroeconomía estudia el comportamiento agregado de la economía (PIB, inflación, desempleo, comercio exterior). El estudio de los agentes individuales —consumidores, empresas, trabajadores— corresponde a la **microeconomía**.
+
+---
+
+**6. El trabajo, como factor productivo, incluye únicamente la cantidad de personas empleadas, sin considerar su formación.**
+
+**Falso.** El factor trabajo (también llamado capital humano) engloba tanto la cantidad de trabajadores como su nivel de conocimientos, habilidades y formación. Una economía con pocos trabajadores pero muy cualificados puede ser más productiva que otra con muchos trabajadores poco formados.
+
+---
+
+**7. En un mercado de competencia perfecta, ninguna empresa tiene poder para influir en el precio.**
+
+**Verdadero.** En la competencia perfecta hay muchos compradores y vendedores, el producto es homogéneo y la información es perfecta. Ninguna empresa por sí sola puede influir en el precio de mercado: todas son precio-aceptantes (*price takers*).
+
+---
+
+**8. El agua potable suministrada por una empresa pública es un ejemplo de mercado oligopolístico.**
+
+**Falso.** El suministro de agua es un ejemplo de **monopolio natural**: una sola empresa (normalmente pública o concesionaria) abastece a toda la demanda porque duplicar la infraestructura sería ineficiente. No hay varios competidores, como exigiría el oligopolio.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Serie para resolver"}
+Indica si son verdaderas o falsas y razona cada respuesta:
+
+a) La economía normativa describe cómo funciona la economía tal como es, sin emitir juicios de valor.
+b) El capital, como factor productivo, incluye el dinero en efectivo que tiene la empresa en caja.
+c) Un empresario es siempre la misma persona que el propietario de la empresa.
+d) La innovación radical introduce mejoras graduales en productos ya existentes.
+e) Una Sociedad Agraria de Transformación (SAT) tiene responsabilidad limitada.
+
+::: {.callout-note title="Solución" collapse="true"}
+a) **Falso.** La economía **positiva** describe cómo funciona la economía (lo que *es*). La economía **normativa** incluye juicios de valor sobre cómo debería funcionar (lo que *debería ser*).
+
+b) **Falso.** El capital como factor productivo son los **bienes de producción** (máquinas, instalaciones, herramientas) utilizados para generar otros bienes. El dinero en caja es liquidez, no capital productivo en sentido estricto.
+
+c) **Falso.** Con el crecimiento de las empresas se ha producido una separación entre propiedad y dirección. El empresario puede ser un directivo profesional contratado que gestiona la empresa sin ser su propietario.
+
+d) **Falso.** La innovación **incremental** introduce mejoras graduales. La innovación **radical** supone un cambio revolucionario que crea algo completamente nuevo (p. ej., el primer iPhone, Internet).
+
+e) **Falso.** La SAT tiene responsabilidad **ilimitada**: los socios responden con su patrimonio personal de las deudas de la sociedad.
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — Opción múltiple estilo EHU"}
+Selecciona la respuesta correcta y justifica brevemente:
+
+1. ¿Cuál de las siguientes es una fuente de autofinanciación? a) Emisión de obligaciones. b) Reservas. c) Leasing.
+2. ¿Qué tipo de mercado se caracteriza por pocas empresas con productos diferenciados y colusión elevada? a) Competencia perfecta. b) Monopolio. c) Oligopolio.
+3. El fondo de maniobra es positivo cuando: a) El activo corriente supera al pasivo corriente. b) El activo no corriente supera al patrimonio neto. c) El pasivo corriente supera al activo corriente.
+
+::: {.callout-note title="Solución" collapse="true"}
+1. **b) Reservas.** Son beneficios retenidos internamente por la empresa: propios, internos y a largo plazo. Las obligaciones son deuda ajena externa; el leasing es deuda ajena a largo plazo.
+
+2. **c) Oligopolio.** Pocas empresas con poder de mercado, posible colusión para fijar precios o repartirse el mercado, barreras de entrada parciales.
+
+3. **a) El activo corriente supera al pasivo corriente.** $FM = AC - PC > 0$ significa que los activos líquidos superan las deudas a corto plazo: la empresa tiene margen para operar sin tensiones de liquidez.
+:::
+:::

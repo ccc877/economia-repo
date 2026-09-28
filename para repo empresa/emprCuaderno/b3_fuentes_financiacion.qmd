@@ -1,0 +1,181 @@
+# Fuentes de financiación
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Esquema de clasificación — Fuentes de financiación"}
+
+**Según su propiedad**
+
+- **Propias:** no hay obligación de devolución (capital social, reservas, amortizaciones, provisiones).
+- **Ajenas:** deben devolverse con intereses (préstamos, obligaciones, leasing, descuento de efectos…).
+
+**Según su origen**
+
+- **Internas (autofinanciación):** generadas por la propia actividad de la empresa (reservas, amortizaciones, provisiones).
+- **Externas:** proceden del exterior (aportaciones de socios, emisión de obligaciones, préstamos…).
+
+**Según su plazo**
+
+- **Largo plazo (> 1 año):** capital social, reservas, amortizaciones, préstamos L/P, obligaciones, leasing, renting.
+- **Corto plazo (< 1 año):** crédito comercial de proveedores, descuento de efectos, factoring, confirming, préstamos C/P.
+
+**Tabla resumen de los recursos más habituales**
+
+| Recurso | Propias | Ajenas | Internas | Externas | C/P | L/P |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Capital social | ✓ | | | ✓ | | ✓ |
+| Reservas | ✓ | | ✓ | | | ✓ |
+| Amortizaciones (fondo) | ✓ | | ✓ | | | ✓ |
+| Provisiones | ✓ | | ✓ | | | ✓ |
+| Emisión de obligaciones | | ✓ | | ✓ | | ✓ |
+| Préstamo L/P | | ✓ | | ✓ | | ✓ |
+| Leasing | | ✓ | | ✓ | | ✓ |
+| Renting | | ✓ | | ✓ | | ✓ |
+| Crédito comercial (proveedores) | | ✓ | | ✓ | ✓ | |
+| Descuento de efectos | | ✓ | | ✓ | ✓ | |
+| Factoring | | ✓ | | ✓ | ✓ | |
+| Confirming | | ✓ | | ✓ | ✓ | |
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- Las **amortizaciones** son propias, internas y a largo plazo. Mucha gente las confunde con financiación ajena porque «se descuentan como gasto». No: son dinero que la empresa retiene internamente para renovar sus activos.
+- Las **reservas** también son propias e internas: son beneficios no distribuidos que permanecen en la empresa.
+- El **leasing** tiene opción de compra al final; el **renting** no. Ambos son ajenos y a largo plazo.
+- El **crédito comercial de proveedores** es financiación ajena a corto plazo, aunque no se pagan intereses explícitos. Es gratuita salvo que el proveedor ofrezca descuento por pronto pago.
+- En el **descuento de efectos**, si el cliente no paga al vencimiento, el banco reclamará el importe a la empresa: el riesgo de impago no desaparece. En el **factoring**, en cambio, el riesgo sí se transfiere al factor.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2018 Ordinaria — Tabla de clasificación y definiciones
+
+> Clasifique los siguientes recursos financieros según su procedencia (internos/externos), su propiedad (propios/ajenos) y el plazo de devolución (C/P / L/P). Señale tres casillas por fila.
+>
+> Recursos: capital social, reservas, fondo de amortización, emisión de obligaciones, descuento de efectos, leasing.
+>
+> b) Explique: capital social, fondo de amortización, emisión de obligaciones, descuento de efectos.
+
+::: {.callout-tip title="Solución comentada"}
+
+**a) Tabla de clasificación**
+
+| Recurso | Propias | Ajenas | Internas | Externas | C/P | L/P |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Capital social | ✓ | | | ✓ | | ✓ |
+| Reservas | ✓ | | ✓ | | | ✓ |
+| Fondo de amortización | ✓ | | ✓ | | | ✓ |
+| Emisión de obligaciones | | ✓ | | ✓ | | ✓ |
+| Descuento de efectos | | ✓ | | ✓ | ✓ | |
+| Leasing | | ✓ | | ✓ | | ✓ |
+
+**b) Definiciones**
+
+**Capital social:** conjunto de aportaciones en dinero o bienes que los socios realizan a la sociedad en el momento de su constitución o en ampliaciones posteriores. Es la base de la financiación propia externa de la empresa.
+
+**Fondo de amortización:** fuente de autofinanciación de mantenimiento. Cada año se contabiliza como gasto la pérdida de valor de los activos fijos (cuota de amortización), pero ese importe no sale realmente de la empresa: se va acumulando en el fondo de amortización. Cuando el activo llega al final de su vida útil, la empresa dispone de esos fondos para sustituirlo. Aparece en el balance como «amortización acumulada del inmovilizado».
+
+**Emisión de obligaciones (empréstito):** cuando la empresa necesita una financiación muy elevada y no puede obtenerla de un solo prestamista, puede emitir títulos de pequeño valor nominal (obligaciones o bonos) y ofrecerlos al público. Quien los compra se convierte en acreedor de la empresa: cobrará intereses periódicos y recuperará el capital al vencimiento. Es financiación ajena a largo plazo.
+
+**Descuento de efectos:** operación por la que una empresa cede a su banco un efecto comercial (letra de cambio, pagaré) antes de su vencimiento a cambio de recibir el importe anticipado, menos los intereses y comisiones. Permite reducir el período medio de maduración y mejora la tesorería a corto plazo. Sin embargo, si el deudor no paga al vencimiento, el banco reclamará el importe a la empresa: el riesgo de impago no se transfiere.
+
+:::
+
+---
+
+### EHU 2020 Ordinaria — Opción múltiple
+
+> Seleccione la respuesta correcta:
+>
+> 1. El crédito comercial de proveedores de mercaderías es una fuente de financiación: a) Ajena y a corto plazo. b) Ajena y a largo plazo. c) Propia y a corto plazo.
+> 2. La parte del activo corriente financiada por el patrimonio neto y el pasivo no corriente se denomina: a) Neto. b) Fondo de maniobra. c) Umbral de rentabilidad.
+
+::: {.callout-tip title="Solución comentada"}
+
+**1. Respuesta correcta: a) Ajena y a corto plazo.**
+
+El crédito comercial de proveedores es la financiación que obtiene la empresa cuando sus proveedores le permiten aplazar el pago de las mercaderías (normalmente entre 30 y 90 días). Es **ajena** porque habrá que devolverla, y **a corto plazo** porque el vencimiento es inferior a un año. No es propia porque la empresa no la genera internamente: proviene de un tercero (el proveedor).
+
+**2. Respuesta correcta: b) Fondo de maniobra.**
+
+El fondo de maniobra (también llamado capital circulante) es la parte del activo corriente que no está financiada por deudas a corto plazo, sino por recursos permanentes (patrimonio neto + pasivo no corriente). Si es positivo, indica que la empresa tiene un colchón de liquidez; si es negativo, existe riesgo de suspensión de pagos.
+
+$$FM = \text{Activo corriente} - \text{Pasivo corriente} = (\text{PN} + \text{PNC}) - \text{ANC}$$
+
+:::
+
+---
+
+### EHU 2021 Extraordinaria — Texto y definiciones
+
+> *«A pesar de la mala noticia, el nivel de **autofinanciación** está aumentando por los ingresos de la actividad deportiva, operadores y patrocinios.»*
+>
+> a) Defina y comente las palabras subrayadas.
+> b) Explique qué es un descuento de efectos y la razón de ser de esta forma de financiación.
+
+::: {.callout-tip title="Solución comentada"}
+
+**a) Autofinanciación**
+
+La **autofinanciación** es la capacidad de la empresa para financiar su actividad y sus inversiones con recursos generados internamente, sin recurrir a financiación externa. Se compone de:
+
+- **Autofinanciación de mantenimiento:** amortizaciones y provisiones. Permiten mantener la capacidad productiva de la empresa reponiendo los activos que se deprecian.
+- **Autofinanciación de enriquecimiento:** reservas (beneficios no distribuidos). Permiten a la empresa crecer y ampliar su capacidad.
+
+Sus ventajas son la independencia financiera (no genera deuda ni intereses) y la flexibilidad. Su inconveniente es que depende de la rentabilidad de la empresa y puede ser insuficiente para proyectos de gran envergadura.
+
+**b) Descuento de efectos**
+
+El **descuento de efectos** es una operación financiera a corto plazo por la que la empresa cede a una entidad bancaria un efecto comercial (letra de cambio, pagaré) antes de su fecha de vencimiento. El banco adelanta el importe del efecto, descontando previamente los intereses y comisiones correspondientes al tiempo que queda hasta el vencimiento.
+
+**Razón de ser:** muchas empresas venden a crédito y emiten efectos comerciales que cobrarán en 60 o 90 días. Si necesitan liquidez antes de esa fecha, el descuento de efectos les permite convertir esos derechos de cobro en dinero inmediato, reduciendo el período medio de maduración y mejorando su tesorería. El coste es el interés que descuenta el banco. El riesgo de impago del cliente no desaparece: si el efecto resulta impagado al vencimiento, el banco lo devuelve a la empresa y le reclama el importe.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Tabla de clasificación"}
+Clasifica los siguientes recursos en la tabla (tres cruces por fila):
+
+crédito bancario a 5 años, factoring, provisiones, ampliación de capital, confirming, beneficios no distribuidos (reservas).
+
+| Recurso | Propias | Ajenas | Internas | Externas | C/P | L/P |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Crédito bancario 5 años | | | | | | |
+| Factoring | | | | | | |
+| Provisiones | | | | | | |
+| Ampliación de capital | | | | | | |
+| Confirming | | | | | | |
+| Reservas | | | | | | |
+
+::: {.callout-note title="Solución" collapse="true"}
+
+| Recurso | Propias | Ajenas | Internas | Externas | C/P | L/P |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Crédito bancario 5 años | | ✓ | | ✓ | | ✓ |
+| Factoring | | ✓ | | ✓ | ✓ | |
+| Provisiones | ✓ | | ✓ | | | ✓ |
+| Ampliación de capital | ✓ | | | ✓ | | ✓ |
+| Confirming | | ✓ | | ✓ | ✓ | |
+| Reservas | ✓ | | ✓ | | | ✓ |
+
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — Definición y comparación"}
+a) Explica las diferencias entre leasing y renting. ¿En qué se parecen y en qué se diferencian?
+b) ¿Qué diferencia hay entre factoring y descuento de efectos en cuanto al riesgo de impago?
+c) ¿Por qué las amortizaciones se consideran financiación propia e interna si aparecen como un gasto en la cuenta de pérdidas y ganancias?
+
+::: {.callout-note title="Solución" collapse="true"}
+a) Ambos son contratos de arrendamiento a largo plazo de bienes de equipo, ajenos y externos. La diferencia clave: el **leasing** incluye opción de compra al final del contrato (el mantenimiento y el seguro corren por cuenta del arrendatario); el **renting** no incluye opción de compra pero sí mantenimiento y seguro en la cuota.
+
+b) En el **descuento de efectos**, si el deudor no paga al vencimiento, el banco devuelve el efecto a la empresa y le reclama el importe: el riesgo de impago permanece en la empresa. En el **factoring**, la empresa vende sus derechos de cobro al factor, que asume el riesgo de impago: si el deudor no paga, el factor soporta la pérdida (siempre que sea factoring sin recurso).
+
+c) Las amortizaciones reducen el beneficio contable (son un gasto), pero **no suponen una salida real de dinero**: el dinero ya salió cuando se compró el activo. Cada año, la empresa retiene internamente el importe de la cuota de amortización, que se va acumulando en el fondo de amortización. Cuando el activo se agota, la empresa dispone de esos fondos para reponerlo. Por eso son autofinanciación de mantenimiento: propias (no hay que devolverlas) e internas (generadas por la propia actividad).
+:::
+:::

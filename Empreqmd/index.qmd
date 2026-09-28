@@ -1,0 +1,25 @@
+# Presentación {.unnumbered}
+
+Vivimos en un entorno económico y tecnológico que cambia a una velocidad de vértigo. Las profesiones del futuro exigirán capacidad de adaptación, pensamiento crítico y, sobre todo, iniciativa. Precisamente de eso trata este libro: de entender cómo las personas y las organizaciones transforman ideas en proyectos reales que aportan valor a la sociedad.
+
+### ¿Qué vamos a aprender en este curso?
+
+A lo largo de estos apuntes dejaremos atrás la visión tradicional de la empresa como una simple fábrica de hacer dinero. Abordaremos el mundo empresarial desde una perspectiva moderna, ágil y sostenible. 
+
+El contenido está estructurado para llevaros desde los conceptos económicos más amplios hasta el diseño práctico de una idea de negocio:
+
+1. **El entorno económico y jurídico:** Comprenderemos el terreno de juego. Qué es una empresa, cómo interactúa con el sistema económico, qué formas jurídicas existen y cuáles son las reglas fiscales (con especial atención a nuestro entorno).
+2. **Innovación y Modelos de Negocio:** Aprenderemos a usar herramientas visuales y ágiles como el *Business Model Canvas* y la metodología *Lean Startup*. Descubriremos que fracasar rápido y barato es el mejor camino hacia el éxito.
+3. **Las áreas funcionales:** Nos meteremos en las "tripas" de la empresa para ver cómo se organizan sus recursos humanos, cómo se financia, cómo produce y cómo utiliza el marketing para llegar a sus clientes.
+4. **Sostenibilidad y ética:** Analizaremos el impacto social y medioambiental de las decisiones empresariales, entendiendo que hoy en día no hay negocio viable si no es también responsable.
+
+### ¿Cómo usar estos apuntes?
+
+Estos materiales han sido diseñados para ser claros y directos. A lo largo del texto encontraréis diferentes recursos visuales que os ayudarán a estudiar:
+
+* 📝 **Definiciones clave:** Conceptos fundamentales que debéis dominar.
+* 💡 **Ejemplos reales:** Casos de empresas conocidas que ilustran la teoría.
+* ⚠️ **Atención/Errores comunes:** Aclaraciones sobre conceptos que suelen generar confusión.
+* 📊 **Esquemas y tablas:** Resúmenes visuales para facilitar el repaso antes de los exámenes.
+
+El objetivo final no es que memoricéis qué es un empresario o una fórmula financiera, sino que seáis capaces de observar una empresa en vuestro barrio, o una aplicación en vuestro móvil, y entendáis el engranaje que las hace funcionar. 

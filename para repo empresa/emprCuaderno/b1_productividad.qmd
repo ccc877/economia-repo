@@ -1,0 +1,94 @@
+# Productividad
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Productividad"}
+
+**Productividad de un factor**
+
+$$\text{Productividad} = \frac{\text{Producción obtenida}}{\text{Unidades del factor utilizadas}}$$
+
+**Productividad global (PG)**
+
+$$PG = \frac{\text{Valor de la producción}}{\text{Coste de los factores}} = \frac{\sum (Q_i \times P_i)}{\sum (F_j \times C_j)}$$
+
+Donde $Q_i \times P_i$ es la cantidad de cada producto multiplicada por su precio, y $F_j \times C_j$ es la cantidad de cada factor multiplicada por su coste.
+
+**Índice de Productividad Global (IPG)**
+
+$$IPG = \frac{PG_1}{PG_0}$$
+
+Si $IPG > 1$: la productividad ha mejorado. Si $IPG < 1$: ha empeorado.
+
+**Tasa de Variación de la Productividad Global (TVPG)**
+
+$$TVPG = \frac{PG_1 - PG_0}{PG_0} \times 100 = (IPG - 1) \times 100$$
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- No se pueden sumar unidades distintas de producción (cafés y donuts) ni de factores (trabajadores y máquinas). Hay que convertir todo a euros.
+- Asegúrate de que el **valor de la producción** y el **coste de los factores** estén expresados en la misma unidad de tiempo (ambos diarios, o ambos mensuales, etc.).
+- El IPG mide cuántas veces es mayor la productividad del año 1 respecto al año 0, no cuánto ha crecido en porcentaje. Para el porcentaje usa la TVPG.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### Ejercicio tipo — Empresa con dos productos y dos factores
+
+> *Una empresa produce 500 mesas a 200 € y 300 sillas a 80 €. Emplea 10 trabajadores a 1.500 €/mes y 4 máquinas a 600 €/mes.*
+>
+> a) Calcula la productividad global del mes.
+> b) Al mes siguiente produce 520 mesas y 320 sillas con los mismos factores y precios. Calcula el IPG y la TVPG.
+
+::: {.callout-tip title="Solución comentada"}
+
+**a) Productividad global — mes 0**
+
+$$\text{Valor producción} = (500 \times 200) + (300 \times 80) = 100.000 + 24.000 = 124.000\ \text{€}$$
+
+$$\text{Coste factores} = (10 \times 1.500) + (4 \times 600) = 15.000 + 2.400 = 17.400\ \text{€}$$
+
+$$PG_0 = \frac{124.000}{17.400} = \mathbf{7{,}13}$$
+
+Por cada euro invertido en factores, la empresa genera 7,13 € de producción.
+
+**b) Mes siguiente — mes 1**
+
+$$\text{Valor producción}_1 = (520 \times 200) + (320 \times 80) = 104.000 + 25.600 = 129.600\ \text{€}$$
+
+$$PG_1 = \frac{129.600}{17.400} = \mathbf{7{,}45}$$
+
+$$IPG = \frac{7{,}45}{7{,}13} = \mathbf{1{,}045}$$
+
+$$TVPG = (1{,}045 - 1) \times 100 = \mathbf{4{,}5\ \%}$$
+
+La productividad global ha mejorado un 4,5 % respecto al mes anterior.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1"}
+Una fábrica produce 1.000 kg de queso a 6 €/kg y 400 litros de yogur a 1,5 €/litro. Emplea 5 trabajadores a 1.200 €/mes y utiliza instalaciones con un coste mensual de 3.000 €.
+
+a) Calcula la productividad del factor trabajo.
+b) Calcula la productividad global del mes.
+c) Si el mes siguiente la producción de queso sube a 1.100 kg (resto igual), ¿cuál es el IPG y la TVPG?
+
+::: {.callout-note title="Solución" collapse="true"}
+a) $\text{Productividad trabajo} = (1.000 \times 6 + 400 \times 1{,}5) / 5 = 6.600 / 5 = 1.320$ €/trabajador
+
+b) $PG_0 = 6.600 / (5 \times 1.200 + 3.000) = 6.600 / 9.000 = 0{,}733$
+
+c) $\text{Valor}_1 = (1.100 \times 6) + (400 \times 1{,}5) = 6.600 + 600 = 7.200$ €; $PG_1 = 7.200 / 9.000 = 0{,}8$; $IPG = 0{,}8 / 0{,}733 = 1{,}091$; $TVPG = 9{,}1\ \%$
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — EHU (año a completar)"}
+*(Introduce aquí el enunciado cuando lo tengas disponible)*
+:::

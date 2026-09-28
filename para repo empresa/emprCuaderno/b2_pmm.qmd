@@ -1,0 +1,195 @@
+# Período Medio de Maduración (PMM)
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Período Medio de Maduración"}
+
+**Notación**
+
+| Símbolo | Nombre completo | Significado |
+|:---:|:---|:---|
+| $PM_A$ | Período medio de almacenamiento | Días que la materia prima permanece en el almacén antes de entrar en producción |
+| $PM_F$ | Período medio de fabricación | Días que tarda la empresa en transformar la MP en producto terminado |
+| $PM_V$ | Período medio de venta | Días que el producto terminado permanece en el almacén antes de venderse |
+| $PM_C$ | Período medio de cobro | Días que tarda la empresa en cobrar a sus clientes tras la venta |
+| $PM_P$ | Período medio de pago | Días que tarda la empresa en pagar a sus proveedores (se resta: es financiación gratuita) |
+| $n_i$ | Índice de rotación | Veces que se renueva el elemento correspondiente en un año |
+| $PMMe$ | PMM económico | Duración total del ciclo de explotación (de MP a cobro) |
+| $PMMf$ | PMM financiero | Días que la empresa debe financiar por sí misma (descontado el crédito de proveedores) |
+
+**Índices de rotación y subperíodos**
+
+Cada subperíodo se obtiene dividiendo los días del año entre el índice de rotación:
+
+$$PM_i = \frac{\text{días del año}}{n_i}$$
+
+| Subperíodo | Índice de rotación $n_i$ | Valoración |
+|:---|:---|:---|
+| $PM_A$ | $n_A = \dfrac{\text{Consumo anual de MP}}{\text{Saldo medio de MP}}$ | A precio de coste |
+| $PM_F$ | $n_F = \dfrac{\text{Coste anual de producción}}{\text{Saldo medio productos en curso}}$ | A precio de coste |
+| $PM_V$ | $n_V = \dfrac{\text{Coste anual de ventas}}{\text{Saldo medio productos terminados}}$ | A precio de coste |
+| $PM_C$ | $n_C = \dfrac{\text{Ventas anuales}}{\text{Saldo medio de clientes}}$ | A precio de **venta** |
+| $PM_P$ | $n_P = \dfrac{\text{Compras anuales a crédito}}{\text{Saldo medio de proveedores}}$ | A precio de coste |
+
+**PMM Económico y Financiero**
+
+$$PMMe = PM_A + PM_F + PM_V + PM_C$$
+
+$$PMMf = PMMe - PM_P$$
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- Los índices de rotación y los saldos medios deben estar valorados de forma coherente: MP y productos en curso **a precio de coste**; cobro y ventas **a precio de venta**. Mezclarlos es el error más frecuente.
+- Si el enunciado da directamente $n_i$ (el índice de rotación), no tienes que calcularlo: aplica directamente $PM_i = 360 / n_i$.
+- El $PM_P$ **se resta** porque es financiación gratuita que retrasa la necesidad de tesorería.
+- Comprueba el enunciado: algunos exámenes usan 360 días y otros 365. En los más recientes de EHU aparecen los dos.
+- El **PMMf negativo** significa que los proveedores financian todo el ciclo y sobra margen: es una situación favorable para la empresa.
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2019 Extraordinaria — Empresa con rotaciones dadas
+
+> *Datos: $PM_F = 25$ días; rotación MP $n_A = 18$ veces; $PM_V = 30$ días; rotación cobro $n_C = 12$ veces; $PM_P = 50$ días. Año = 360 días.*
+>
+> Calcula el PMM económico y financiero.
+
+::: {.callout-tip title="Solución comentada"}
+
+Este enunciado mezcla subperíodos dados directamente en días ($PM_F$, $PM_V$, $PM_P$) con índices de rotación ($n_A$, $n_C$). Hay que convertir estos últimos antes de sumar.
+
+**Subperíodos que hay que calcular**
+
+$$PM_A = \frac{360}{n_A} = \frac{360}{18} = \mathbf{20\ \text{días}}$$
+
+$$PM_C = \frac{360}{n_C} = \frac{360}{12} = \mathbf{30\ \text{días}}$$
+
+**PMM Económico**
+
+$$PMMe = PM_A + PM_F + PM_V + PM_C = 20 + 25 + 30 + 30 = \mathbf{105\ \text{días}}$$
+
+Desde que las materias primas entran en el almacén hasta que se cobra la venta pasan 105 días.
+
+**PMM Financiero**
+
+$$PMMf = PMMe - PM_P = 105 - 50 = \mathbf{55\ \text{días}}$$
+
+Una vez descontado el plazo que conceden los proveedores (50 días), la empresa necesita financiar su actividad durante 55 días hasta recuperar el dinero invertido.
+
+:::
+
+---
+
+### EHU 2025 Extraordinaria — Empresa con saldos medios
+
+> *Una empresa compró y consumió 20.000 € de materias primas y mantuvo un saldo medio de MP de 1.800 €. Ventas (precio venta): 75.000 €; saldo medio de clientes: 1.500 €. Producción anual: 40.000 €; productos en curso (media): 4.000 €. Ventas (precio coste): 45.000 €; productos terminados (media): 3.750 €. Año = 365 días.*
+>
+> a) PMM económico y significado. *(1,5 p)*
+> b) PMM financiero con saldo medio de proveedores 2.500 €. *(0,5 p)*
+
+::: {.callout-tip title="Solución comentada"}
+
+Este ejercicio es el formato más completo y exigente: todos los índices hay que calcularlos desde los datos brutos. La clave es identificar qué magnitud va en el numerador y cuál en el denominador de cada $n_i$, respetando la valoración correcta.
+
+**Paso 1 — Calcular los cuatro índices de rotación**
+
+$$n_A = \frac{\text{Consumo anual de MP}}{\text{Saldo medio de MP}} = \frac{20.000}{1.800} = 11{,}11\ \text{veces}$$
+
+$$n_F = \frac{\text{Coste anual de producción}}{\text{Saldo medio de productos en curso}} = \frac{40.000}{4.000} = 10\ \text{veces}$$
+
+$$n_V = \frac{\text{Coste anual de ventas}}{\text{Saldo medio de productos terminados (coste)}} = \frac{45.000}{3.750} = 12\ \text{veces}$$
+
+$$n_C = \frac{\text{Ventas anuales (precio venta)}}{\text{Saldo medio de clientes}} = \frac{75.000}{1.500} = 50\ \text{veces}$$
+
+**Paso 2 — Convertir a días**
+
+$$PM_A = \frac{365}{11{,}11} = \mathbf{32{,}85\ \text{días}}$$
+
+$$PM_F = \frac{365}{10} = \mathbf{36{,}5\ \text{días}}$$
+
+$$PM_V = \frac{365}{12} = \mathbf{30{,}42\ \text{días}}$$
+
+$$PM_C = \frac{365}{50} = \mathbf{7{,}3\ \text{días}}$$
+
+**a) PMM Económico**
+
+$$PMMe = 32{,}85 + 36{,}5 + 30{,}42 + 7{,}3 = \mathbf{107{,}07\ \text{días}}$$
+
+Desde que las materias primas entran en el almacén hasta que se cobra la venta a los clientes pasan 107 días. Es el tiempo que dura el ciclo de explotación completo.
+
+**b) PMM Financiero**
+
+$$n_P = \frac{\text{Compras anuales de MP}}{\text{Saldo medio de proveedores}} = \frac{20.000}{2.500} = 8\ \text{veces}$$
+
+$$PM_P = \frac{365}{8} = \mathbf{45{,}63\ \text{días}}$$
+
+$$PMMf = 107{,}07 - 45{,}63 = \mathbf{61{,}44\ \text{días}}$$
+
+Desde que la empresa paga las materias primas a sus proveedores hasta que cobra a sus clientes pasan 61 días. Durante ese tiempo la empresa necesita financiación propia o ajena para cubrir el desfase.
+
+::: {.callout-warning title="Atención a las valoraciones"}
+Fíjate en que $n_V$ usa el **coste** de ventas (45.000 €) y el saldo medio de productos terminados también **a coste** (3.750 €), mientras que $n_C$ usa las **ventas a precio de venta** (75.000 €) y el saldo de clientes también **a precio de venta** (1.500 €). Mezclar ambas valoraciones es el error más penalizado en este tema.
+:::
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Rotaciones dadas directamente"}
+Una empresa tiene los siguientes datos (año = 360 días):
+
+- Rotación de materias primas: 9 veces
+- Período medio de fabricación: 40 días
+- Rotación de productos terminados: 6 veces
+- Rotación de cobro a clientes: 8 veces
+- Período medio de pago a proveedores: 45 días
+
+a) Calcula el PMM económico y el financiero.
+b) Interpreta el resultado del PMMf.
+
+::: {.callout-note title="Solución" collapse="true"}
+$PM_A = 360/9 = 40$ días; $PM_F = 40$ días; $PM_V = 360/6 = 60$ días; $PM_C = 360/8 = 45$ días
+
+$PMMe = 40 + 40 + 60 + 45 = \mathbf{185\ \text{días}}$
+
+$PMMf = 185 - 45 = \mathbf{140\ \text{días}}$
+
+La empresa necesita financiar 140 días de su ciclo de explotación. Es un PMMf elevado, lo que indica que tiene pocas ventas al contado, mucho stock o un ciclo de producción largo.
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — Con saldos medios (formato EHU)"}
+Una empresa presenta los siguientes datos anuales (año = 360 días):
+
+- Consumo de MP: 36.000 €; saldo medio de MP: 3.000 €
+- Producción anual (coste): 54.000 €; productos en curso (media): 4.500 €
+- Ventas (coste): 60.000 €; productos terminados (media): 5.000 €
+- Ventas (precio venta): 90.000 €; saldo medio de clientes: 7.500 €
+- Compras de MP: 36.000 €; saldo medio de proveedores: 4.000 €
+
+a) Calcula todos los subperíodos y el PMMe.
+b) Calcula el PMMf e interprétalo.
+
+::: {.callout-note title="Solución" collapse="true"}
+$n_A = 36.000/3.000 = 12$; $PM_A = 30$ días
+
+$n_F = 54.000/4.500 = 12$; $PM_F = 30$ días
+
+$n_V = 60.000/5.000 = 12$; $PM_V = 30$ días
+
+$n_C = 90.000/7.500 = 12$; $PM_C = 30$ días
+
+$PMMe = 30 + 30 + 30 + 30 = \mathbf{120\ \text{días}}$
+
+$n_P = 36.000/4.000 = 9$; $PM_P = 40$ días
+
+$PMMf = 120 - 40 = \mathbf{80\ \text{días}}$
+
+La empresa necesita financiar 80 días. Los proveedores cubren 40 días del ciclo; el resto lo asume la empresa con recursos propios o ajenos.
+:::
+:::

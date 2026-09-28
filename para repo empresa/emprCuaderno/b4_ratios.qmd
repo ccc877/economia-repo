@@ -1,0 +1,178 @@
+# Ratios financieros
+
+## Formulario {.unnumbered}
+
+::: {.callout-note title="Formulario — Ratios financieros"}
+
+**Notación**
+
+| Símbolo | Nombre completo |
+|:---:|:---|
+| $ANC$ | Activo No Corriente (inversiones a largo plazo: inmovilizado material e intangible) |
+| $AC$ | Activo Corriente (existencias + realizable + disponible) |
+| $PN$ | Patrimonio Neto (capital + reservas + resultado del ejercicio) |
+| $PNC$ | Pasivo No Corriente (deudas con vencimiento superior a 1 año) |
+| $PC$ | Pasivo Corriente (deudas con vencimiento inferior a 1 año) |
+| $FM$ | Fondo de Maniobra ($AC - PC$) |
+
+| Ratio | Fórmula | Referencia | Tipo |
+|:---|:---|:---:|:---:|
+| Inmovilizado | $ANC / (PN + PNC)$ | $< 1$ | Límite |
+| Endeudamiento | $(PNC + PC) / PN$ | $0{,}5 - 1{,}2$ | Rango |
+| Liquidez | $AC / PC$ | $> 1$ | Límite |
+| Garantía | $\text{Activo} / (PNC + PC)$ | $> 1$ | Límite |
+| Tesorería | $(AC - \text{Existencias}) / PC$ | $> 1$ | Límite |
+| Autonomía financiera | $PN / (PNC + PC)$ | $> 1$ | Límite |
+
+**Fondo de maniobra**
+
+$$FM = AC - PC = (PN + PNC) - ANC$$
+
+:::
+
+::: {.callout-warning title="Trampas de examen"}
+- El **endeudamiento** es el único ratio con rango óptimo (0,5–1,2). Los demás tienen un único umbral. Si el endeudamiento es muy bajo (< 0,5) también hay que comentarlo: la empresa está infrautilizando el apalancamiento financiero.
+- La **tesorería** usa $AC - \text{Existencias}$, no solo el disponible. Es el «acid test»: comprueba si se puede pagar sin vender stock.
+- La **garantía** se calcula con el activo total, no solo el corriente.
+- El ratio de **inmovilizado** y el **FM** dicen lo mismo desde ángulos distintos: si inmovilizado > 1, entonces FM < 0, y viceversa. Siempre deben ser coherentes.
+- En la interpretación del endeudamiento hay que criticar **ambos extremos**: endeudamiento excesivo (> 1,2) y exceso de autonomía (< 0,5).
+- En exámenes anteriores a 2024 aparece «activo real» en la garantía. Con la contabilidad actual es equivalente a «activo total».
+:::
+
+---
+
+## Plantillas de comentario
+
+::: {.callout-note title="Modelos de redacción para cada ratio"}
+
+Sustituye los corchetes `[...]` con los valores calculados.
+
+**Inmovilizado** *(favorable)*: Su patrimonio neto y pasivo no corriente, además de financiar el activo no corriente, financian una parte del activo corriente. El fondo de maniobra es positivo: situación de equilibrio financiero.
+
+**Inmovilizado** *(desfavorable)*: El ratio de inmovilizado es superior a 1 ([...]). El patrimonio neto y el pasivo no corriente no son capaces de financiar el activo no corriente, por lo que la empresa necesita recurrir al pasivo corriente para ello. Fondo de maniobra negativo: desequilibrio financiero.
+
+**Endeudamiento** *(dentro del rango)*: El nivel de endeudamiento ([...]) se sitúa dentro de los valores de referencia. La empresa mantiene un equilibrio adecuado entre financiación propia y ajena.
+
+**Endeudamiento** *(excesivo, > 1,2)*: El ratio ([...]) supera los valores de referencia. La empresa depende en exceso de financiación ajena, lo que aumenta su riesgo financiero y reduce su capacidad de maniobra.
+
+**Endeudamiento** *(insuficiente, < 0,5)*: El ratio ([...]) está por debajo de los valores de referencia. La empresa tiene una estructura muy autónoma, pero infrautiliza el apalancamiento financiero: podría endeudarse para invertir y mejorar su rentabilidad.
+
+**Liquidez** *(favorable)*: La empresa puede hacer frente a sus deudas a corto plazo. Por cada euro adeudado a corto plazo dispone de [...] euros en activo corriente.
+
+**Liquidez** *(desfavorable)*: El ratio ([...]) está por debajo de 1. La empresa tendrá problemas para pagar sus deudas a corto plazo: por cada euro adeudado solo dispone de [...] euros en activo corriente. Riesgo de suspensión de pagos.
+
+**Garantía** *(favorable)*: La empresa no tendrá problemas para responder ante sus acreedores. Dispone de [...] euros en activo por cada euro adeudado.
+
+**Garantía** *(desfavorable)*: El ratio ([...]) es inferior a 1. La empresa podría no ser capaz de responder ante sus acreedores. Riesgo de quiebra técnica.
+
+**Tesorería** *(favorable)*: La empresa no tendrá problemas para pagar sus deudas a muy corto plazo sin necesidad de vender existencias.
+
+**Tesorería** *(desfavorable)*: El ratio ([...]) está por debajo de 1. La empresa no dispone de suficiente efectivo y derechos de cobro para afrontar sus pagos inmediatos sin recurrir a la venta de existencias. Riesgo de suspensión de pagos a muy corto plazo.
+
+**Conclusión global:** En resumen, la situación financiera de la empresa es [equilibrada / desequilibrada]. A largo plazo [goza de solvencia / presenta riesgo de quiebra], con un endeudamiento [adecuado / excesivo / insuficiente]. A corto plazo, su liquidez [le permite afrontar sus pagos / es deficiente], lo que se confirma con un fondo de maniobra [positivo / negativo]. Como recomendación, la empresa debería [mantener su política financiera / renegociar deuda a largo plazo / ampliar capital / vender activos ociosos].
+
+:::
+
+---
+
+## Ejercicios resueltos
+
+### EHU 2024 Ordinaria — GAI SAI S.A. (ratios)
+
+> *Datos del balance (construido en el capítulo anterior):*
+> ANC = 1.018.000 € · AC = 633.800 € · PN = 668.900 € · PNC = 312.000 € · PC = 670.900 €
+> Total Activo = 1.651.800 €
+>
+> Calcula y comenta: tesorería, liquidez, endeudamiento, garantía e inmovilizado.
+
+::: {.callout-tip title="Solución comentada"}
+
+| Ratio | Cálculo | Valor | Ref. | Situación |
+|:---|:---|:---:|:---:|:---:|
+| Inmovilizado | $1.018.000 / (668.900 + 312.000)$ | **1,03** | < 1 | ⚠️ Desfavorable |
+| Endeudamiento | $(312.000 + 670.900) / 668.900$ | **1,47** | 0,5–1,2 | ⚠️ Excesivo |
+| Liquidez | $633.800 / 670.900$ | **0,94** | > 1 | ⚠️ Desfavorable |
+| Garantía | $1.651.800 / (312.000 + 670.900)$ | **1,68** | > 1 | ✅ Favorable |
+| Tesorería | $(633.800 - 70.000) / 670.900$ | **0,84** | > 1 | ⚠️ Desfavorable |
+
+**Interpretación ratio a ratio:**
+
+**Inmovilizado (1,03):** Superior a 1, por lo que el fondo de maniobra es negativo (−37.100 €). El patrimonio neto y el pasivo no corriente no llegan a financiar el activo no corriente: parte de las inversiones a largo plazo están siendo financiadas con deuda a corto plazo. Desequilibrio financiero.
+
+**Endeudamiento (1,47):** Por encima del rango óptimo (0,5–1,2). La empresa depende excesivamente de financiación ajena. Por cada euro de recursos propios, debe 1,47 euros a terceros. Su capacidad de maniobra está comprometida.
+
+**Liquidez (0,94):** Inferior a 1. Por cada euro que debe a corto plazo solo dispone de 0,94 euros en activo corriente. Riesgo de suspensión de pagos a corto plazo.
+
+**Garantía (1,68):** Superior a 1. La empresa dispone de 1,68 euros en activo por cada euro de deuda total. A largo plazo, su solvencia es adecuada: no hay riesgo de quiebra.
+
+**Tesorería (0,84):** Inferior a 1. Sin contar las existencias, la empresa solo dispone de 0,84 euros por cada euro que debe a corto plazo. Dificultades para atender pagos inmediatos.
+
+**Conclusión:** La empresa presenta una paradoja: buena solvencia a largo plazo (garantía 1,68) pero tensiones serias a corto plazo (liquidez y tesorería por debajo de 1, FM negativo). El endeudamiento es excesivo. Debería renegociar parte de la deuda a corto plazo convirtiéndola en deuda a largo plazo, lo que mejoraría inmediatamente la liquidez y el fondo de maniobra.
+
+:::
+
+---
+
+### EHU 2025 Extraordinaria — EHUNTZE S.A. (ratios)
+
+> *Datos del balance:*
+> ANC = 808.600 € · AC = 68.000 € · Existencias = 16.000 € · PN = 629.600 € · PNC = 84.000 € · PC = 163.000 €
+> Total Activo = 876.600 €
+
+::: {.callout-tip title="Solución comentada"}
+
+| Ratio | Cálculo | Valor | Ref. | Situación |
+|:---|:---|:---:|:---:|:---:|
+| Inmovilizado | $808.600 / (629.600 + 84.000)$ | **1,13** | < 1 | ⚠️ Desfavorable |
+| Endeudamiento | $(84.000 + 163.000) / 629.600$ | **0,39** | 0,5–1,2 | ⚠️ Insuficiente |
+| Liquidez | $68.000 / 163.000$ | **0,42** | > 1 | ⚠️ Desfavorable |
+| Garantía | $876.600 / (84.000 + 163.000)$ | **3,55** | > 1 | ✅ Favorable |
+| Tesorería | $(68.000 - 16.000) / 163.000$ | **0,32** | > 1 | ⚠️ Desfavorable |
+
+**Interpretación:**
+
+**Inmovilizado (1,13):** FM negativo. Los recursos permanentes no cubren el activo no corriente. Desequilibrio financiero, aunque leve.
+
+**Endeudamiento (0,39):** Por debajo del rango óptimo. La empresa es muy autónoma —apenas se financia con deuda— pero infrautiliza el apalancamiento. Podría endeudarse más para invertir y mejorar la rentabilidad.
+
+**Liquidez (0,42):** Muy por debajo de 1. Por cada euro de deuda a corto plazo solo dispone de 0,42 euros en activo corriente. Riesgo elevado de suspensión de pagos.
+
+**Garantía (3,55):** Excelente. La empresa tiene 3,55 euros en activo por cada euro de deuda. Su solvencia a largo plazo es muy sólida gracias al valor de su inmovilizado.
+
+**Tesorería (0,32):** Muy por debajo de 1. Sin vender existencias, apenas puede cubrir un tercio de sus deudas inmediatas.
+
+**Conclusión:** EHUNTZE presenta la paradoja opuesta a GAI SAI: excelente solvencia a largo plazo (garantía 3,55, endeudamiento bajo) pero situación crítica a corto plazo (liquidez 0,42, tesorería 0,32). La solución es aprovechar la gran garantía que ofrecen sus activos para solicitar un préstamo a largo plazo y utilizar ese dinero para pagar las deudas urgentes (Hacienda, proveedores). Así se convierte deuda a corto en deuda a largo, mejorando la liquidez sin aumentar el endeudamiento total de forma preocupante.
+
+:::
+
+---
+
+## Ejercicios propuestos
+
+::: {.callout-important title="Propuesto 1 — Ratios desde balance dado"}
+Una empresa presenta el siguiente balance resumido:
+
+| ACTIVO | € | PN Y PASIVO | € |
+|:---|---:|:---|---:|
+| ANC | 400.000 | PN | 250.000 |
+| Existencias | 60.000 | PNC | 180.000 |
+| Realizable | 80.000 | PC | 160.000 |
+| Disponible | 50.000 | | |
+| **Total** | **590.000** | **Total** | **590.000** |
+
+Calcula los cinco ratios (inmovilizado, endeudamiento, liquidez, garantía, tesorería) e interpreta la situación financiera de la empresa.
+
+::: {.callout-note title="Solución" collapse="true"}
+- Inmovilizado: $400.000 / (250.000 + 180.000) = 0{,}93$ ✅ FM positivo.
+- Endeudamiento: $(180.000 + 160.000) / 250.000 = 1{,}36$ ⚠️ Excesivo.
+- Liquidez: $190.000 / 160.000 = 1{,}19$ ✅ Adecuada.
+- Garantía: $590.000 / 340.000 = 1{,}74$ ✅ Buena solvencia L/P.
+- Tesorería: $(190.000 - 60.000) / 160.000 = 0{,}81$ ⚠️ Algo baja.
+
+Conclusión: equilibrio financiero general (FM positivo, liquidez correcta), pero endeudamiento excesivo que debería reducirse. La tesorería está algo justa; convendría vigilar el cobro a clientes.
+:::
+:::
+
+::: {.callout-important title="Propuesto 2 — EHU (año a completar)"}
+*(Introduce aquí el enunciado cuando lo tengas disponible)*
+:::

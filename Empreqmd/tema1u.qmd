@@ -1,0 +1,586 @@
+---
+title: "tema1Untitled"
+format: pdf
+editor: visual
+jupyter: python3
+---
+
+## \## El sistema económico
+
+\### Economía: definición
+
+::: {.callout-note title="Definición"}
+
+Ciencia que se ocupa de la forma en la que las personas administramos los recursos escasos con los que satisfacemos nuestras necesidades.
+
+:::
+
+La ciencia económica se divide en dos grandes ramas, según la escala a la que se sitúe el análisis:
+
+\- \*\*Macroeconomía:\*\* estudia el comportamiento agregado de la economía en su conjunto, a través de variables como el PIB, la inflación, la tasa de desempleo o la balanza comercial. Analiza las relaciones entre los grandes agentes económicos ---familias, empresas y sector público--- tomados en su conjunto, y no las decisiones de ninguno de ellos en particular.
+
+\- \*\*Microeconomía:\*\* estudia el comportamiento individual de los agentes económicos: cómo decide un consumidor qué comprar con su renta disponible, cómo fija sus precios una empresa concreta, o cómo se determina el precio de equilibrio en un mercado particular.
+
+Ambas ramas son complementarias: los fenómenos macroeconómicos (por ejemplo, la inflación) resultan, en última instancia, de la agregación de innumerables decisiones microeconómicas individuales.
+
+También conviene distinguir entre economía positiva y economía normativa, una distinción que separa la descripción del juicio de valor:
+
+\- \*\*Economía positiva:\*\* produce conocimiento objetivo y contrastable con los hechos; describe lo que \*es\*. Ejemplo: «La inflación en España fue del 3,5 % el año pasado».
+
+\- \*\*Economía normativa:\*\* incorpora juicios de valor y recomendaciones de política económica; describe lo que \*debería ser\*. Ejemplo: «El Gobierno debería bajar los impuestos para reducir la inflación».
+
+Una misma cuestión económica suele combinar ambos planos: primero se describe objetivamente la situación (análisis positivo) y, sobre esa base, se proponen medidas que dependen de preferencias, prioridades y valores que pueden no ser compartidos por todos (análisis normativo). Distinguir ambos planos ayuda a identificar en qué punto de un debate económico se está discutiendo sobre hechos y en qué punto se está discutiendo sobre prioridades.
+
+\### Factores productivos
+
+Existen varios tipos de factor productivo. Los principales son tierra, trabajo y capital. También se puede considerar factor productivo a la \*\*iniciativa empresarial\*\*.
+
+\- \*\*Tierra:\*\* engloba todos los recursos que se extraen de la naturaleza, los llamados recursos naturales.
+
+\- \*\*Trabajo\*\* (o capital humano): es la capacidad productiva del ser humano, considerando no solo la cantidad de trabajadores, sino también su nivel de conocimientos y formación.
+
+\- \*\*Capital:\*\* está constituido por el conjunto de bienes utilizados para generar nuevos bienes, como las máquinas y los pabellones.
+
+Los propietarios de los factores de producción pueden decidir venderlos o alquilarlos a cambio de un pago, denominado \*\*renta\*\*.
+
+\### Tipos de mercados productivos
+
+Variables Competencia perfecta Monopolio Oligopolio Competencia monopolística
+
+----------------------------- -------------------------------------- --------------------------- ---------------------------------------- -----------------------------------------------
+
+\*\*Vendedores\*\* Muchas empresas Una empresa Pocas empresas Muchas empresas
+
+\*\*Poder de mercado\*\* Ninguno, empresas precio-aceptantes Muy elevado, fija precios Competencia limitada, colusión elevada Elevado si se valora la marca
+
+\*\*Barreras de entrada\*\* No existen Existen Parcialmente Grandes inversiones en publicidad y marketing
+
+\*\*Grado de diferenciación\*\* Ninguno, productos homogéneos Total, pocos sustitutivos Depende del producto Elevado, es la causa de este tipo de mercado
+
+\*\*Ejemplos\*\* Productos agrícolas, materias primas Agua, fármacos patentados Telefonía, banca Ropa
+
+\### El flujo circular de la renta
+
+El flujo circular de la renta es un modelo que sirve para explicar el funcionamiento básico de la economía. Como todo modelo, es una simplificación, pero ayuda a entender las relaciones que se dan entre los agentes económicos (familias, empresas y sector público). Describe cómo el dinero, los bienes y servicios circulan entre ellos, en dos direcciones principales: el flujo de bienes y servicios, y el flujo de dinero.
+
+Componentes del flujo circular de la renta:
+
+\- \*\*Familias (u hogares):\*\* proporcionan los factores de producción (trabajo, tierra, capital) a las empresas. A cambio, reciben una renta en forma de salarios, alquileres, intereses y beneficios.
+
+\- \*\*Empresas:\*\* utilizan los factores de producción proporcionados por los hogares para producir bienes y servicios, que luego venden a los mismos hogares y a otros sectores de la economía. A cambio, reciben ingresos por la venta de estos bienes y servicios.
+
+\- \*\*Sector público:\*\* cobra impuestos y proporciona transferencias a familias y empresas. Además, regula la economía.
+
+\## La empresa
+
+\### Definición y funciones
+
+::: {.callout-note title="Definición de empresa"}
+
+Una empresa es una organización de personas y recursos que buscan obtener un beneficio económico a través de la producción y comercialización de bienes o servicios destinados a satisfacer las necesidades de los consumidores en el mercado, asumiendo un riesgo para ello.
+
+:::
+
+La empresa cumple diversas funciones en la economía:
+
+\- \*\*Función de creación de valor:\*\* en su proceso productivo, la empresa transforma materias primas en productos adecuados para satisfacer las necesidades de los consumidores. Esta transformación incrementa la utilidad de esas materias primas y añade valor a los bienes, lo cual se traduce en un aumento del precio que los consumidores están dispuestos a pagar.
+
+\- \*\*Función de riesgo:\*\* para poder producir bienes y servicios, la empresa debe adquirir y pagar los recursos y factores de producción necesarios por adelantado, antes incluso de producir y vender los productos, asumiendo así un riesgo.
+
+\- \*\*Función social:\*\* la empresa genera empleo y contribuye al desarrollo económico de la región en la que opera. Además, contribuye mediante el desarrollo de investigación e innovaciones que repercuten positivamente en la calidad de los bienes y servicios y, por consiguiente, en el bienestar social.
+
+\- \*\*Función productiva:\*\* para desarrollar su actividad de la manera más eficiente, la empresa debe reunir y coordinar múltiples factores de producción tales como capital, recursos naturales y recursos humanos.
+
+\### Elementos y áreas funcionales
+
+Los elementos constitutivos de la empresa son: capital humano, recursos materiales, recursos financieros, organización y entorno o marco externo.
+
+Sus principales áreas funcionales son: producción, marketing, financiación, recursos humanos (RRHH) y administración.
+
+\### Clasificación de empresas
+
+\*\*Por tamaño (criterio de la Comisión Europea)\*\*
+
+La Unión Europea establece una clasificación basada en tres parámetros: el \*\*número de trabajadores\*\*, el \*\*volumen de facturación anual\*\* (ventas) y el \*\*balance general anual\*\* (activo total):
+
+Tipo de empresa Número de trabajadores Volumen de ventas Total de Activo
+
+------------------- ------------------------ ------------------- -----------------
+
+\*\*Microempresas\*\* Hasta 10 \\\< 2.000.000 € \\\< 2.000.000 €
+
+\*\*Pequeñas\*\* Hasta 50 \\\< 10.000.000 € \\\< 10.000.000 €
+
+\*\*Medianas\*\* Hasta 250 \\\< 50.000.000 € \\\< 43.000.000 €
+
+\*\*Grandes\*\* +250 +50.000.000 € +43.000.000 €
+
+::: {.callout-important title="Criterio de aplicación"}
+
+\*\*Para que una empresa sea considerada dentro de una clasificación, debe cumplir el criterio de número de trabajadores y al menos uno de los otros dos (volumen de ventas o total de activo).\*\*
+
+\*Ejemplo:\* Si una empresa tiene 5 trabajadores, medio millón de euros de ventas y un activo de 4 millones, será \*\*microempresa\*\*, ya que cumple el criterio de plantilla y el de ventas. En cambio, si sus ventas aumentasen a 5 millones de euros (superando el límite de facturación y manteniendo el activo en 4 millones), pasaría a clasificarse como \*\*empresa pequeña\*\*.
+
+:::
+
+\*\*Por titularidad del capital\*\*
+
+\- Empresa privada
+
+\- Empresa pública
+
+\- Empresa mixta
+
+También existen otras clasificaciones: por sector económico (primario, secundario o terciario) o por ámbito geográfico (local, nacional o multinacional).
+
+\## Integración empresarial
+
+Las empresas tienden a integrarse entre ellas y a acercarse geográficamente. A continuación se presentan algunas formas de integración y concentración empresarial:
+
+\- \*\*Clúster:\*\* concentración geográfica y sectorial de empresas interconectadas, proveedores especializados, instituciones relacionadas (universidades, centros de investigación) e incluso competidores, que colaboran e interactúan para potenciar la innovación y la competitividad colectiva. Ejemplo: regiones tecnológicas, zonas vinícolas con bodegas y proveedores de corcho o maquinaria.
+
+\- \*\*Parque industrial:\*\* zona de suelo específicamente designada y equipada con la infraestructura necesaria (vías de acceso, suministro eléctrico, agua, saneamiento) para albergar instalaciones industriales y manufactureras, normalmente a las afueras de las ciudades.
+
+\- \*\*Trust:\*\* forma de concentración empresarial donde varias compañías, generalmente del mismo sector, se unen o son controladas por una entidad superior con el objetivo de reducir la competencia y ejercer un control dominante sobre el mercado.
+
+\- \*\*Cártel:\*\* acuerdo formal o informal entre empresas competidoras para limitar la competencia, fijando precios, repartiendo el mercado geográficamente o limitando la producción. Perjudica a los consumidores y está prohibido en muchos países.
+
+\- \*\*Integración vertical:\*\* estrategia por la cual una compañía extiende sus actividades para controlar diferentes etapas de su cadena de valor, ya sea hacia atrás (controlando a sus proveedores) o hacia adelante (controlando la distribución o venta al cliente final).
+
+\- \*\*Holding:\*\* sociedad tenedora de acciones cuya principal función es tener y/o administrar la propiedad de otras sociedades o compañías.
+
+\## Empresario y emprendedor
+
+\### El emprendedor
+
+::: {.callout-note title="Definición de emprendedor"}
+
+Un \*\*emprendedor\*\* es una persona que tiene la capacidad de identificar una oportunidad de negocio, desarrolla una idea y tiene la iniciativa para reunir los recursos necesarios para llevarla a cabo. Está dispuesto a asumir riesgos al invertir tiempo y/o dinero para lograr el éxito.
+
+:::
+
+Sus características principales incluyen: iniciativa, creatividad, capacidad para asumir riesgos, autoconfianza y perseverancia, actitud positiva y empatía, y capacidad de trabajar en equipo. Los emprendedores no son únicamente aquellos que crean una empresa; el concepto implica una actitud ante la vida, buscando soluciones innovadoras a problemas.
+
+\*\*Tipos de emprendedor:\*\*
+
+\- \*\*Visionario:\*\* capaz de adelantarse a su tiempo y detectar negocios antes que nadie. Ejemplo: Coco Chanel.
+
+\- \*\*Por necesidad:\*\* se ven obligados por las circunstancias a identificar oportunidades y llevar a cabo nuevos proyectos. Ejemplo: J. K. Rowling.
+
+\- \*\*Inversor:\*\* personas con capital que deciden invertir en empresas emergentes buscando rentabilidad. Ejemplo: Gerard Piqué.
+
+\- \*\*Por casualidad u oportunidad:\*\* detectan una necesidad no cubierta y proponen una solución sin mucha reflexión previa. Ejemplo: los creadores de Mr. Wonderful.
+
+\- \*\*Con habilidades o conocimientos:\*\* poseen experiencia en un área determinada y detectan oportunidades para emprender su propio negocio. Ejemplo: Amancio Ortega (Zara).
+
+\- \*\*Persuasivo:\*\* tiene la capacidad de influir en otros para perseguir un objetivo común, siendo perseverante y resiliente. Ejemplo: Jeff Bezos (Amazon).
+
+\- \*\*Social:\*\* realiza actividades con un objetivo social (ayudar a desfavorecidos, proteger el medioambiente), además de generar ganancias.
+
+\- \*\*Intraemprendedor:\*\* trabajador que, dentro de una empresa, tiene ideas innovadoras y busca nuevas oportunidades de negocio. Ejemplo: Google Drive, surgido de un empleado de Google.
+
+Estas clasificaciones no son excluyentes; un emprendedor puede encajar en varias a la vez.
+
+::: {.callout-warning title="Emprendimiento e inclusión"}
+
+El \*\*emprendimiento inclusivo\*\* promueve la participación activa en la actividad emprendedora de colectivos tradicionalmente excluidos o con mayores dificultades, como personas con discapacidad, mujeres, migrantes, mayores de 45 años, jóvenes en riesgo de exclusión o desempleados de larga duración.
+
+Para fomentarlo, los gobiernos pueden aplicar diversas estrategias: \\\* Conceder ayudas, formación y acompañamiento a colectivos desfavorecidos. \\\* Crear campañas de sensibilización para luchar contra los estereotipos. \\\* Fomentar redes de apoyo y cooperación como asociaciones, alianzas de empresas o espacios de \*coworking\*. Dificultades del emprendimiento femenino
+
+Falta de financiación: Las mujeres suelen tener más problemas para acceder a préstamos bancarios o para atraer a inversores que apuesten por negocios liderados por ellas.
+
+\*\*Brecha salarial y techo de cristal:\*\*
+
+Brecha salarial: Es la diferencia existente entre los salarios recibidos por hombres y por mujeres (en España, una mujer cobra de media un 15% menos por hora que un hombre).
+
+Techo de cristal: Se refiere a las barreras invisibles que dificultan que las mujeres asciendan a puestos directivos o de máxima responsabilidad, que son los mejor remunerados. Ambos factores reducen la capacidad de ahorro y dificultan el inicio de proyectos propios.
+
+Desequilibrio en la vida laboral y familiar: Debido a roles de género tradicionales, existe un reparto desigual en el cuidado de hijos y tareas del hogar.
+
+Estereotipos de género: Ideas preconcebidas.
+
+Falta de referentes: La menor visibilidad de las mujeres líderes dificulta que otras se identifiquen con el rol de emprendedora.
+
+:::
+
+\### El empresario
+
+::: {.callout-note title="Definición de empresario"}
+
+El \*\*empresario\*\* es la persona que se encarga de administrar y coordinar los diferentes elementos de una empresa para conseguir unos objetivos. No tiene por qué ser el creador de la empresa. Sus funciones principales son planificación, gestión, organización y control.
+
+:::
+
+Las características del empresario a menudo coinciden con las del emprendedor, pero además necesita habilidades de administración de empresas: liderazgo, comunicación, negociación y gestión de equipos.
+
+Históricamente, el empresario era el dueño del negocio que aportaba el capital y lo dirigía personalmente. Sin embargo, con el crecimiento de las empresas, se ha producido una \*\*separación entre la propiedad y la dirección\*\*, permitiendo que el empresario sea un directivo profesional contratado para la gestión, sin ser necesariamente el propietario o el creador de la idea.
+
+\*\*Emprendedor y empresario: diferencias\*\*
+
+Ambos conceptos suelen confundirse porque, en la práctica, coinciden con frecuencia en la misma persona ---especialmente en las primeras fases de un negocio---, pero no son sinónimos: todo empresario que funda su propia empresa fue antes emprendedor, pero no todo empresario ha sido el emprendedor original del proyecto que dirige.
+
+Criterio Emprendedor Empresario
+
+-------------------------------------------- ---------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------
+
+\*\*Papel principal\*\* Identifica la oportunidad de negocio y pone en marcha el proyecto. Administra y coordina los recursos de una empresa ya en marcha.
+
+\*\*Relación con la creación de la empresa\*\* Suele ser el creador de la idea de negocio. No tiene por qué ser el creador; puede ser un directivo contratado con posterioridad.
+
+\*\*Fase en la que actúa\*\* Fase inicial, de puesta en marcha e innovación. Fase de gestión continuada, una vez la empresa está operativa.
+
+\*\*Riesgo asumido\*\* Riesgo de la idea y de los recursos (tiempo, dinero) que invierte para lanzarla. Riesgo derivado de las decisiones de gestión tomadas al frente de la empresa.
+
+\*\*Ejemplo\*\* La persona que detecta la oportunidad y funda una startup. El directivo profesional contratado años después para dirigir esa misma empresa.
+
+\## Innovación en la empresa
+
+\*\*Creatividad\*\* es la capacidad de generar nuevas ideas o mejorar las existentes para crear algo nuevo. \*\*Innovación\*\* es llevar la creatividad a la práctica: crear un producto, proceso o modelo de negocio e introducirlo en el mercado.
+
+Según el grado de originalidad:
+
+\- \*\*Innovación incremental:\*\* pequeñas modificaciones o mejoras en productos existentes que los hacen más atractivos. No implica una creación 100% original, pero puede suponer una gran mejora. Ejemplos: añadir un palo a un cepillo de fregar, incorporar una cámara a los teléfonos móviles, o sustituir ingredientes para crear productos \*light\*.
+
+\- \*\*Innovación radical:\*\* introducción de un producto completamente nuevo que implica un cambio revolucionario en la sociedad. Ejemplos: la creación de internet en 1989, el primer iPhone en 2007, o el avión.
+
+\## Marco jurídico de la actividad empresarial
+
+\### El Derecho
+
+El Derecho es un conjunto de principios y normas que regula las relaciones humanas y permite resolver sus conflictos. El Estado lo aplica de manera coactiva, persiguiendo y sancionando a quienes lo incumplen. Se divide en:
+
+\- \*\*Derecho público:\*\* constitucional, administrativo, penal, procesal, financiero e internacional público.
+
+\- \*\*Derecho mixto:\*\* laboral.
+
+\- \*\*Derecho privado:\*\* civil, mercantil e internacional privado.
+
+\### Forma jurídica
+
+La elección de la forma jurídica determina dos aspectos clave: si el titular responde con su patrimonio personal de las deudas del negocio (responsabilidad limitada o ilimitada), y la vía de tributación de los beneficios (vía Impuesto de Sociedades para personas jurídicas mercantiles, o vía IRPF para personas físicas y entidades en régimen de atribución de rentas).
+
+\#### Personalidad física y personalidad jurídica
+
+::: {.callout-note title="Definición"}
+
+La \*\*personalidad jurídica\*\* es la aptitud que el ordenamiento jurídico reconoce a una entidad para ser titular de derechos y obligaciones, con independencia de las personas físicas que la integran.
+
+:::
+
+Esta es la distinción de fondo que subyace a toda la clasificación de formas jurídicas:
+
+\- \*\*Empresas sin personalidad jurídica propia:\*\* el empresario, persona física, aporta el capital, dirige la empresa y asume el riesgo del negocio a título personal. Empresa y persona son, a efectos legales, lo mismo: los derechos y obligaciones del negocio coinciden con los del propio empresario. Es el caso del empresario individual y, con matices, de la comunidad de bienes y la sociedad civil.
+
+\- \*\*Empresas con personalidad jurídica propia:\*\* surgen cuando varias personas, mediante un contrato, ponen en común capital o trabajo para desarrollar una actividad conjunta. Ese contrato da origen a una persona jurídica nueva, distinta de las personas físicas que la constituyen, con derechos y obligaciones propios y separados de los de sus socios. Es el caso de las sociedades mercantiles, que deben constituirse mediante escritura pública ante notario e inscribirse en el Registro Mercantil.
+
+::: {.callout-tip title="Otros sujetos con personalidad jurídica propia"}
+
+Además de las sociedades mercantiles, tienen personalidad jurídica propia las corporaciones de derecho público (p. ej., los ayuntamientos), las fundaciones (p. ej., la Fundación Nobel) y las asociaciones. Estas últimas pueden carecer de fin mercantil (una asociación de madres y padres de alumnos) o perseguirlo (en cuyo caso se rigen por las normas de las sociedades mercantiles).
+
+:::
+
+\#### Clasificación general de las formas jurídicas
+
+Atendiendo al criterio anterior, las formas jurídicas se agrupan en dos grandes bloques:
+
+1\. \*\*Empresario individual (autónomo):\*\* persona física que realiza una actividad económica en nombre propio.
+
+2\. \*\*Sociedades mercantiles:\*\* se subdividen, a su vez, en tres categorías según qué resulte determinante para el éxito de la sociedad:
+
+ - \*\*Sociedades personalistas:\*\* lo relevante son las cualidades personales de los socios, que son quienes ejercen la gestión (sociedad colectiva, sociedad comanditaria simple).
+
+ - \*\*Sociedades capitalistas:\*\* lo relevante es el capital aportado por cada socio, que no tiene por qué implicarse en la gestión (sociedad de responsabilidad limitada, sociedad anónima, sociedad comanditaria por acciones).
+
+ - \*\*Sociedades de interés social:\*\* se constituyen para satisfacer las necesidades de sus propios socios más que para maximizar el beneficio (sociedad laboral, sociedad cooperativa).
+
+Esta tripartición explica, en buena medida, por qué varían el resto de características entre unas formas y otras: en las sociedades personalistas, al importar quién es cada socio, la responsabilidad tiende a ser ilimitada y solidaria y la transmisión de la condición de socio, restringida; en las capitalistas, al importar solo cuánto aporta cada uno, la responsabilidad se limita al capital aportado y la transmisión tiende a ser libre.
+
+La sociedad civil y la comunidad de bienes constituyen figuras específicas, sin encaje pleno en la clasificación anterior, que se estudian de forma independiente al final del epígrafe.
+
+\#### Criterios para la elección de la forma jurídica
+
+La forma jurídica más adecuada depende de las necesidades concretas de los socios. Los principales factores a valorar son:
+
+Criterio Aspectos a considerar
+
+------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\*\*Número de socios\*\* Algunas formas admiten un único socio (empresario individual, SL unipersonal, SA unipersonal); otras exigen un mínimo de socios (sociedad laboral, sociedad cooperativa).
+
+\*\*Responsabilidad\*\* Ilimitada (el socio responde con su patrimonio presente y futuro) frente a limitada al capital aportado (solo se puede perder lo invertido).
+
+\*\*Capital mínimo exigido\*\* Desde la ausencia de mínimo legal (autónomo, sociedades personalistas) hasta cifras elevadas (60.000 € en la sociedad anónima; 18.000.000 € para constituir un banco).
+
+\*\*Transmisión de la participación\*\* Restringida (requiere el consentimiento de los demás socios) o libre (se puede vender a cualquier tercero), en función de la importancia de la relación personal entre los socios.
+
+\*\*Tributación\*\* Impuesto de Sociedades (tipo fijo) para las personas jurídicas mercantiles, o IRPF (tipo progresivo) para el empresario individual y otras entidades en atribución de rentas.
+
+\*\*Ánimo de lucro\*\* La generalidad de las empresas persigue el beneficio; determinadas figuras (fundaciones, asociaciones no mercantiles) se orientan, en cambio, a la satisfacción de necesidades de sus miembros o de terceros.
+
+\#### El empresario individual
+
+::: {.callout-note title="Definición"}
+
+El \*\*empresario individual\*\* es la persona física que realiza, por cuenta propia y de manera habitual, personal y directa, una actividad económica o profesional con o sin trabajadores a su cargo, asumiendo todos los derechos y obligaciones derivados de dicha actividad.
+
+:::
+
+\*\*Requisitos y características:\*\*
+
+\- Mayoría de edad (18 años) o 16 años con emancipación legal.
+
+\- Responsabilidad ilimitada: el empresario individual responde con todo su patrimonio personal presente y futuro.
+
+\- No se exige capital mínimo para el inicio de la actividad.
+
+\- Tributa por el IRPF, con un tipo progresivo que aumenta con el nivel de beneficios.
+
+\*\*Tipos de empresario individual (autónomo):\*\*
+
+\- \*\*Autónomo individual:\*\* ejerce la actividad de forma independiente (p. ej., un fontanero o un abogado por cuenta propia).
+
+\- \*\*Autónomo con trabajadores:\*\* además de ejercer la actividad, dirige a un grupo de trabajadores por cuenta ajena.
+
+\- \*\*Trabajador Autónomo Económicamente Dependiente (TRADE):\*\* aquel cuyos ingresos dependen en al menos un 75% de un único cliente. A diferencia del resto de autónomos, el TRADE tiene reconocidos derechos próximos a los de un trabajador por cuenta ajena: prestación por desempleo, vacaciones, permiso de maternidad/paternidad e indemnización en caso de que el cliente decida finalizar el contrato. Esta figura se introdujo, entre otros motivos, para dar respuesta a los llamados «falsos autónomos», práctica asociada a la denominada \*uberización\* de la economía, mediante la cual una empresa contrata a un trabajador exigiéndole que se dé de alta como autónomo para eludir cotizaciones sociales y derechos laborales.
+
+::: {.callout-tip title="Emprendedor de Responsabilidad Limitada (ERL)"}
+
+Desde 2013 existe la figura del \*\*emprendedor de responsabilidad limitada\*\*, que permite al autónomo excluir de la responsabilidad derivada de sus deudas empresariales la vivienda habitual, siempre que su valor no supere un determinado umbral y se cumplan ciertos requisitos formales (inscripción en el Registro Mercantil y en el Registro de la Propiedad).
+
+:::
+
+\*\*Ventajas e inconvenientes:\*\*
+
+Ventajas Inconvenientes
+
+---------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------
+
+El empresario mantiene el control total de la empresa. Debe hacer frente en solitario a todos los gastos y riesgos.
+
+Trámites de constitución sencillos y escasa inversión inicial; adecuado para negocios pequeños (fontanería, electricidad, etc.). Responsabilidad ilimitada: en caso de deuda, responde con todo su patrimonio presente y futuro.
+
+Suele ser más rentable para negocios pequeños sin grandes beneficios. Con beneficios elevados, la tributación por IRPF resulta más gravosa que la de una sociedad.
+
+\#### Órganos de gobierno de las sociedades capitalistas
+
+Tanto la sociedad de responsabilidad limitada como la sociedad anónima se organizan en torno a dos órganos:
+
+1\. \*\*Junta general:\*\* órgano soberano en el que los socios (o accionistas) se reúnen para adoptar los acuerdos fundamentales: aprobación de la gestión de los administradores, aprobación de las cuentas del ejercicio anterior, aplicación del resultado y nombramiento de administradores. En el caso de la sociedad anónima, las decisiones se adoptan por mayoría de votos, proporcional al número de acciones de cada socio. Puede ser:
+
+ - \*\*Ordinaria:\*\* se celebra obligatoriamente una vez al año, dentro de los seis primeros meses del ejercicio.
+
+ - \*\*Extraordinaria:\*\* se convoca cuando los administradores lo consideran oportuno, o a solicitud de socios que representen, en la sociedad anónima, al menos el 5% del capital.
+
+2\. \*\*Órgano de administración:\*\* gestiona y representa a la sociedad frente a terceros. Puede adoptar la forma de administrador único, administradores mancomunados o solidarios, o consejo de administración; sus miembros son designados por la junta general y no tienen por qué ostentar la condición de socios.
+
+En la sociedad de responsabilidad limitada, los socios ostentan, además, los siguientes derechos: participación en el reparto de beneficios, adquisición preferente de las participaciones que transmitan otros socios, participación en la junta general y derecho de información sobre los acuerdos adoptados.
+
+\#### Cuadro de referencia de las formas jurídicas
+
+Forma jurídica Nº socios Capital mínimo Responsabilidad
+
+---------------------------------------------- ----------------------------------------------------------------------------------------------- ---------------------------- -------------------------------------------------------
+
+Agrupación de Interés Económico Mínimo 2 Sin mínimo legal Ilimitada (subsidiaria y solidaria)
+
+Comunidad de Bienes Mínimo 2 Sin mínimo legal Ilimitada
+
+Empresario Individual (Autónomo) 1 Sin mínimo legal Ilimitada
+
+Emprendedor de Responsabilidad Limitada 1 Sin mínimo legal Ilimitada con excepciones
+
+Sociedad Anónima (SA) Mínimo 1 60.000 € Limitada
+
+Sociedad Anónima Laboral Mín. 2 (constitución), 3 a los 36 meses 60.000 € Limitada
+
+Sociedad Agraria de Transformación Mínimo 3 Sin mínimo legal Ilimitada o limitada según estatutos
+
+Sociedad Civil Mínimo 2 Sin mínimo legal Ilimitada
+
+Sociedad Colectiva Mínimo 2 Sin mínimo legal Ilimitada (personal y subsidiaria)
+
+Sociedad Comanditaria por acciones Mínimo 2 60.000 € Mixta (ilimitada colectivos / limitada comanditarios)
+
+Sociedad Comanditaria Simple Mínimo 2 Sin mínimo legal Mixta (ilimitada colectivos / limitada comanditarios)
+
+Sociedad Cooperativa 1.er grado: mín. 3 (estatal) / 2 (en CC. AA. como País Vasco); 2.º grado: mín. 2 cooperativas Fijado en estatutos Limitada
+
+Sociedad Cooperativa de Trabajo Asociado Mínimo 3 (estatal) / 2 (País Vasco) Fijado en estatutos Limitada
+
+Sociedad de Garantía Recíproca Mínimo 150 socios partícipes 10.000.000 € Limitada
+
+Sociedad de Responsabilidad Limitada (SL) Mínimo 1 1 € Limitada
+
+Sociedad de Responsabilidad Limitada Laboral Mín. 2 (constitución), 3 a los 36 meses 1 € Limitada
+
+Sociedades Profesionales Mínimo 1 Según forma social elegida Según forma social elegida
+
+Entidades de Capital-Riesgo Mín. 3 miembros en el Consejo de Administración Desde 125.000 € Limitada
+
+::: {.callout-warning title="Responsabilidad ilimitada"}
+
+Las formas jurídicas con responsabilidad ilimitada (empresario individual, sociedad colectiva, comunidad de bienes, etc.) implican que el propietario responde de las deudas de la empresa con su \*\*patrimonio personal\*\*, incluyendo todos sus bienes presentes y futuros.
+
+:::
+
+\#### Descripción de cada forma jurídica
+
+\*\*Sociedad de Responsabilidad Limitada (SL / SRL / SLU si es unipersonal)\*\*
+
+\- El número de socios puede ser de uno o más.
+
+\- La responsabilidad es limitada al capital aportado. Si la empresa se crea con menos de 3.000 €, los socios responderán de manera solidaria hasta alcanzar esa cantidad en caso de liquidación.
+
+\- El capital social mínimo es de 1 € (Ley 18/2022 \*Crea y Crece\*), dividido en participaciones iguales, acumulables e indivisibles. Deben destinarse al menos el 20% de los beneficios anuales a una reserva legal hasta que esta y el capital sumen 3.000 €.
+
+\- La transmisión de participaciones es libre entre socios o familiares directos, pero si se desea transferir a un tercero ajeno a la sociedad, los demás socios tienen derecho de adquisición preferente y deben dar su consentimiento.
+
+\- Tributa por el Impuesto de Sociedades.
+
+\*\*Sociedad Anónima (SA / SAU si es unipersonal)\*\*
+
+\- El número de socios puede ser de uno o más, ya sean personas físicas o jurídicas.
+
+\- La responsabilidad es limitada al capital aportado.
+
+\- El capital social mínimo es de 60.000 €, dividido en acciones. Debe estar totalmente suscrito y desembolsado en al menos un 25% en el momento de la constitución.
+
+\- La transmisión de las acciones es libre por defecto.
+
+\- Tributa por el Impuesto de Sociedades.
+
+\*\*Comunidad de Bienes\*\*
+
+Surge cuando un bien o derecho pertenece indiviso a varias personas (por ejemplo, un inmueble heredado) y lo usan para poner en marcha una actividad empresarial conjunta. No tiene personalidad jurídica propia independiente de los comuneros; tributa en régimen de atribución de rentas (en el IRPF de cada comunero) y la responsabilidad es personal e ilimitada.
+
+\*\*Sociedad Civil\*\*
+
+Surge con un contrato de colaboración entre dos o más personas que ponen en común dinero, bienes o industria para realizar una actividad con ánimo de lucro. Existen dos tipos de socios: \*\*industriales\*\* (aportan únicamente trabajo) y \*\*capitalistas\*\* (aportan bienes o dinero).
+
+\*Tributación:\* si la Sociedad Civil tiene \*\*objeto mercantil\*\*, tributa obligatoriamente por el \*\*Impuesto sobre Sociedades\*\*; si carece de objeto mercantil (actividades agrícolas, ganaderas, forestales o profesionales no societarias), tributa por el IRPF a través del régimen de atribución de rentas.
+
+\*La diferencia esencial entre comunidad de bienes y sociedad civil\* radica en su origen: la comunidad de bienes surge cuando el bien ya se posee de forma previa (p. ej., por herencia) y después se decide explotarlo empresarialmente, mientras que la sociedad civil se constituye de forma expresa con la finalidad de poner bienes o trabajo en común para obtener beneficios.
+
+\*\*Sociedad Comanditaria Simple\*\*
+
+Sociedad mercantil de carácter personalista en la que conviven dos tipos de socios: - \*\*Socios colectivos:\*\* gestionan la sociedad, aportan capital y/o trabajo, y responden de forma subsidiaria, personal, ilimitada y solidaria de las deudas sociales. - \*\*Socios comanditarios:\*\* no participan en la gestión ordinaria, únicamente aportan capital y su responsabilidad queda \*\*limitada\*\* al importe de su aportación.
+
+Existe la variante de la \*\*sociedad comanditaria por acciones\*\*, donde el capital aportado por los comanditarios se divide en acciones y el capital mínimo exigido es de 60.000 €.
+
+\*\*Sociedad Limitada Laboral (SLL)\*\*
+
+Sociedad de responsabilidad limitada en la que la mayoría del capital social es propiedad de los trabajadores que prestan en ella servicios retribuidos de forma personal y directa, con relación laboral por tiempo indefinido.
+
+Requisitos para obtener la calificación de \\"laboral\\" (Ley 44/2015):
+
+\- La mayoría del capital social (más del 50%) debe estar en manos de socios trabajadores con contrato indefinido.
+
+\- Ningún socio podrá poseer más de un tercio (33,33%) del capital social, salvo dos excepciones: en el momento de constitución inicial con dos socios trabajadores al 50% (con obligación de incorporar a un tercero en un plazo de 36 meses), o si son entidades públicas o de la economía social (pueden alcanzar hasta el 49% sin llegar a la mitad).
+
+\- El número de horas-año trabajadas por empleados con contrato indefinido que no sean socios no puede superar el 49% del total de horas-año trabajadas por los socios trabajadores (excluidos del cómputo los trabajadores con un grado de discapacidad igual o superior al 33%).
+
+Si el capital está dividido en acciones en lugar de participaciones, la denominación es \*\*sociedad anónima laboral (SAL)\*\* (capital mínimo de 60.000 €).
+
+\*\*Sociedad Cooperativa\*\*
+
+::: {.callout-note title="Sociedad Cooperativa"}
+
+Sociedad constituida por personas que se asocian de forma democrática para realizar actividades empresariales que les permitan satisfacer sus necesidades y aspiraciones económicas y sociales comunes. Su principal objetivo es el servicio a sus miembros y el fomento del empleo. Sus beneficios netos (denominados \*\*excedentes\*\*) deben destinarse prioritariamente a fondos de reserva obligatorios y a fines de educación y promoción social. Como norma general, rige el principio democrático: \*\*cada socio tiene un voto\*\*, con independencia del capital que haya aportado.
+
+:::
+
+Características: - Responsabilidad limitada a las aportaciones suscritas. - Capital social mínimo fijado libremente en los estatutos sociales. - Tributan por el Impuesto de Sociedades bajo un régimen fiscal especial protegido con bonificaciones.
+
+Órganos de gobierno y representación:
+
+\- \*\*Asamblea general:\*\* órgano supremo integrado por todos los socios; debate y aprueba las decisiones clave y las cuentas anuales bajo el principio de «una persona, un voto».
+
+\- \*\*Consejo rector:\*\* órgano colegiado de gobierno, gestión y representación de la cooperativa (equivalente al consejo de administración).
+
+\- \*\*Interventores:\*\* vigilan y revisan las cuentas anuales y los libros contables antes de elevarlos a la asamblea.
+
+\- \*\*Comité de recursos:\*\* tramita y resuelve las reclamaciones contra las sanciones impuestas por el consejo rector a los socios.
+
+Tipos de cooperativas según su actividad:
+
+\- \*\*De trabajo asociado:\*\* los propios trabajadores son los socios y dueños del negocio, aportando su trabajo personal y medios de producción.
+
+\- \*\*De venta / agrarias:\*\* los productores se asocian para comercializar sus productos conjuntamente, adquiriendo escala y mayor poder de negociación.
+
+\- \*\*De consumo:\*\* las personas consumidoras se organizan para adquirir bienes y servicios en mejores condiciones de precio y calidad.
+
+\*\*El cooperativismo vasco\*\*
+
+En el País Vasco, el cooperativismo es una seña de identidad económica y social con una arraigada tradición desde mediados del siglo XX, impulsada por una fuerte cohesión comunitaria, la reactivación industrial y modelos de gobernanza participativos. El referente mundial más emblemático es la \*\*Corporación Mondragón\*\*, fundada en 1956 en Arrasate-Mondragón por el sacerdote José María Arizmendiarrieta.
+
+\*Marco normativo propio:\* En el País Vasco, las cooperativas se rigen por la \*\*Ley 11/2019 de Cooperativas de Euskadi\*\*, la cual flexibiliza los requisitos fundacionales permitiendo constituir cooperativas de primer grado (incluidas las de trabajo asociado) con un \*\*mínimo de solo 2 socios\*\*, frente al umbral estatal general de 3 socios fijado en la Ley 27/1999.
+
+\#### En síntesis: cómo elegir forma jurídica
+
+::: {.callout-tip title="Guía rápida de repaso"}
+
+\- Un único promotor, negocio pequeño, poca inversión inicial y aceptación del riesgo → \*\*empresario individual\*\* (valorar la variante de responsabilidad limitada, ERL, si hay vivienda que proteger).
+
+\- Pocos socios, poca inversión inicial y se quiere limitar la responsabilidad al capital aportado → \*\*sociedad de responsabilidad limitada\*\*.
+
+\- Se necesita captar mucho capital, cotizar en bolsa o dar entrada fácil a nuevos inversores → \*\*sociedad anónima\*\*.
+
+\- Los socios quieren llevar personalmente la gestión y no les preocupa la responsabilidad ilimitada → \*\*sociedad colectiva\*\* o \*\*comanditaria simple\*\*.
+
+\- Un grupo de trabajadores quiere ser propietario de la empresa en la que trabaja, con voto igualitario y reparto de excedentes → \*\*sociedad cooperativa\*\*.
+
+\- Los trabajadores quieren ser mayoritariamente dueños de una sociedad mercantil convencional (SL o SA) → \*\*sociedad laboral\*\* (SLL / SAL).
+
+\- Varias personas quieren explotar un bien que ya poseían en común, con trámites mínimos → \*\*comunidad de bienes\*\*.
+
+:::
+
+\## El tejido empresarial vasco
+
+\### El peso de las pymes
+
+Las pequeñas y medianas empresas constituyen el motor de la economía española y, muy particularmente, de la economía vasca:
+
+\- Representan más del \*\*99%\*\* del total de empresas del País Vasco.
+
+\- Generan más del \*\*70%\*\* del empleo privado.
+
+\- Tienen presencia destacada en la industria avanzada y manufacturera, los servicios profesionales, el comercio local y el turismo y la hostelería.
+
+\- Muchas de ellas se integran en clústeres industriales, que fomentan la cooperación entre empresas de un mismo sector para innovar y competir en mercados globales.
+
+\### El cooperativismo vasco
+
+El cooperativismo constituye una seña de identidad económica y social del País Vasco, con una tradición consolidada desde mediados del siglo XX, favorecida por una fuerte cohesión comunitaria y por la necesidad de reconstrucción industrial de posguerra.
+
+::: {.callout-tip title="Marco normativo propio"}
+
+En el País Vasco, las cooperativas se rigen por la \*\*Ley 11/2019, de Cooperativas de Euskadi\*\*, que flexibiliza los requisitos fundacionales frente a la norma estatal (Ley 27/1999): permite constituir cooperativas de primer grado ---incluidas las de trabajo asociado--- con un mínimo de \*\*2 socios\*\*, frente al umbral general de 3 socios.
+
+:::
+
+\*\*Corporación Mondragón\*\*
+
+Fundada en 1956 en Arrasate-Mondragón por el sacerdote José María Arizmendiarrieta, la Corporación Mondragón es hoy el mayor grupo cooperativo de Europa y uno de los principales grupos empresariales del Estado. Integra más de 90 cooperativas repartidas en los ámbitos de industria (Fagor, Eroski), finanzas (Laboral Kutxa), educación (Mondragon Unibertsitatea) y distribución, innovación y servicios.
+
+El modelo cooperativo vasco se ha convertido en un referente internacional de economía social, analizado por universidades, gobiernos y organizaciones de todo el mundo como alternativa al modelo empresarial capitalista convencional.
+
+\## El sistema fiscal vasco
+
+El sistema fiscal propio del País Vasco, derivado de los derechos históricos de Bizkaia, Gipuzkoa y Álava/Araba, es una de sus características más singulares. No se puede entender la historia económica vasca desde finales del siglo XIX sin el pacto fiscal entre los tres Territorios Históricos y el Estado español: el \*\*Concierto Económico\*\*.
+
+El primer Concierto Económico vasco data de 1878; hasta 1937 se desarrollaron cinco. Durante la dictadura franquista se suspendió en Bizkaia y Gipuzkoa, consideradas "provincias traidoras". En 1981 se recuperó, se incorporó al Estatuto de Autonomía y fue renovado y ampliado mediante sucesivas leyes estatales y forales (destacando las leyes de 2002, 2007 y actualizaciones periódicas de metodología de cupo).
+
+::: {.callout-tip title="El Concierto Económico"}
+
+El Concierto Económico es el mecanismo por el que los Territorios Históricos Vascos recaudan y gestionan sus propios impuestos, contribuyendo al Estado mediante el \*\*cupo\*\*: una cantidad global que sufraga las competencias no asumidas por la Comunidad Autónoma (Defensa, Asuntos Exteriores, infraestructuras generales, etc.). El cupo se acuerda en la Comisión Mixta del Concierto Económico, compuesta paritariamente por representantes de las tres diputaciones forales, el Gobierno Vasco y la Administración General del Estado.
+
+:::
+
+\*\*Régimen tributario propio\*\*
+
+Los Territorios Históricos Vascos disponen de un régimen tributario foral con capacidad normativa y de gestión tributaria prácticamente plena. Las Juntas Generales aprueban las normas forales tributarias y las diputaciones forales de Bizkaia, Álava/Araba y Gipuzkoa liquidan y recaudan los tributos, financiando las instituciones forales, los ayuntamientos vascos y el presupuesto general del Gobierno Vasco.
+
+En cuanto a la \*\*imposición directa\*\*, las instituciones forales tienen competencia exclusiva para regular e ingresar su propio IRPF, el Impuesto sobre Sociedades y los impuestos sobre el Patrimonio y sobre Sucesiones y Donaciones. El Parlamento Vasco ostenta potestad para armonizar principios generales mediante leyes de coordinación y colaboración fiscal.
+
+En cuanto a la \*\*imposición indirecta\*\*, figuras como el IVA y los Impuestos Especiales siguen una regulación sustancialmente armonizada con la legislación estatal y la normativa comunitaria europea, quedando las facultades forales centradas en su exacción, liquidación y gestión administrativa. En cambio, tributos como el Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados (ITP-AJD) disponen de un margen normativo foral significativamente más amplio.

@@ -1,0 +1,73 @@
+# Presentación {.unnumbered}
+
+Este cuaderno es el complemento práctico del libro *Empresa y diseño de modelos de negocio — 2.º Bachillerato*. Su objetivo es preparar la parte cuantitativa y aplicada de la **Selectividad EHU (EBAU)**.
+
+## Cómo usar este cuaderno
+
+Cada bloque sigue siempre la misma estructura:
+
+1. **Formulario compacto** — todas las fórmulas del bloque en una sola página, listas para consultar mientras resuelves ejercicios.
+2. **Ejercicios resueltos y comentados** — con el razonamiento paso a paso, las trampas habituales y la interpretación del resultado.
+3. **Ejercicios propuestos** — para resolver de forma autónoma. La solución numérica aparece al final de cada ejercicio en un bloque plegable.
+
+## Relación con el libro teórico
+
+| Cuaderno — Bloque | Capítulos del libro | Contenido |
+|:---|:---:|:---|
+| Bloque 1 · Producción y costes | Cap. 1 | Umbral de rentabilidad, producir o comprar, productividad |
+| Bloque 2 · Gestión del almacén | Cap. 5 | Modelo de Wilson, PMM, FIFO y PMP |
+| Bloque 3 · Inversión y financiación | Cap. 4 | Pay-back, VAN, fuentes de financiación |
+| Bloque 4 · Contabilidad y ratios | Cap. 6 | Balance, cuenta de PyG, ratios financieros |
+| Bloque 5 · Empresa y marco jurídico | Cap. 1 | Formas jurídicas, verdadero/falso conceptual |
+
+> **Temas no incluidos:** Marketing (Cap. 3) y Recursos Humanos (Cap. 7) aparecen en EHU casi exclusivamente como preguntas teóricas sin cálculo. Para estudiarlos, consulta directamente el libro.
+
+## Convenciones visuales
+
+::: {.callout-note title="Formulario"}
+Fórmulas y notación del bloque.
+:::
+
+::: {.callout-tip title="Ejercicio resuelto"}
+Problema de selectividad con solución comentada.
+:::
+
+::: {.callout-warning title="Trampa de examen"}
+Errores habituales que cuestan puntos.
+:::
+
+::: {.callout-important title="Ejercicio propuesto"}
+Problema para resolver de forma autónoma.
+:::
+
+## Exámenes EHU cubiertos
+
+| Año | Ordinaria | Extraordinaria |
+|:---:|:---|:---|
+| 2019 | — | PMM |
+| 2021 | — | Fuentes de financiación |
+| 2022 | Inversiones (NORBERA), Wilson (PEREIRA) | Producir o comprar (camisas) |
+| 2023 | Inversiones (GAUTZA) | — |
+| 2024 | Balance y ratios (GAI SAI), FIFO y PMP (EDIMO) | FIFO y PMP (PERTUERO) |
+| 2025 | PMM | Balance y ratios (EHUNTZE) |
+
+## Índice de ejercicios por empresa
+
+| Empresa | Tema | Convocatoria | Capítulo |
+|:---|:---|:---:|:---|
+| AMETS | Costes y umbral de rentabilidad | EHU 2025 Ext. | B1 · Costes |
+| ONDO JAN | Costes y umbral de rentabilidad (propuesto) | EHU 2022 Ord. | B1 · Costes |
+| Empresa anónima | Costes con datos indirectos (propuesto) | EHU 2023 Ext. | B1 · Costes |
+| PETUKA | Costes dos productos | Examen interno | B1 · Costes |
+| Empresa camisas | Producir o comprar | EHU 2022 Ext. | B1 · Producir o comprar |
+| NORBERA | Pay-back y VAN | EHU 2022 Ord. | B3 · Inversiones |
+| GAUTZA | Pay-back y VAN (pagos fraccionados) | EHU 2023 Ord. | B3 · Inversiones |
+| PEREIRA | Modelo de Wilson | EHU 2022 Ord. | B2 · Wilson |
+| KOTINA S.L. | Modelo de Wilson | Examen interno 2024/25 | B2 · Wilson |
+| Empresa anónima | PMM (rotaciones dadas) | EHU 2019 Ext. | B2 · PMM |
+| Empresa anónima | PMM (saldos medios) | EHU 2025 Ext. | B2 · PMM |
+| EDIMO | FIFO y PMP | EHU 2024 Ord. | B2 · FIFO y PMP |
+| PERTUERO S.A. | FIFO y PMP | EHU 2024 Ext. | B2 · FIFO y PMP |
+| GAI SAI S.A. | Balance y ratios | EHU 2024 Ord. | B4 · Balance / Ratios |
+| EHUNTZE S.A. | Balance y ratios | EHU 2025 Ext. | B4 · Balance / Ratios |
+| Elena, Marcos y Sofía | Forma jurídica razonada | Examen interno | B5 · Formas jurídicas |
