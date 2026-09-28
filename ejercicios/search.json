@@ -1,0 +1,472 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ejercicios de Economía",
+    "section": "",
+    "text": "Ejercicios del primer trimestre\nEste cuaderno reúne los ejercicios del primer trimestre, ordenados por bloques y en el mismo orden en que se abordan en el libro. Cada documento contiene los enunciados y, al final de cada ejercicio, su solución desplegada.",
+    "crumbs": [
+      "Ejercicios del primer trimestre"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-usar-estos-ejercicios",
+    "href": "index.html#cómo-usar-estos-ejercicios",
+    "title": "Ejercicios de Economía",
+    "section": "Cómo usar estos ejercicios",
+    "text": "Cómo usar estos ejercicios\nResuelve primero el enunciado por tu cuenta. Cuando termines, despliega el Solución que hay justo debajo para comprobar el resultado: están al lado, no al final del documento, para que puedas ir uno a uno sin ver por adelantado las respuestas de los siguientes.\nEn las soluciones no aparece solo el resultado: se indica el procedimiento y se justifica cada decisión, que es lo que se pide en un examen.",
+    "crumbs": [
+      "Ejercicios del primer trimestre"
+    ]
+  },
+  {
+    "objectID": "index.html#bloques",
+    "href": "index.html#bloques",
+    "title": "Ejercicios de Economía",
+    "section": "Bloques",
+    "text": "Bloques\n\nConceptos fundamentales\nLos dos primeros documentos cubren la distinción entre economía normativa y positiva, el nivel de análisis micro y macro, los costes irrecuperables, el coste de oportunidad y la clasificación de bienes.\n\n\nFrank Price Production\nLa frontera de posibilidades de producción, con el caso de la movilidad urbana Ícaro y las preguntas habituales de un examen sobre si el coste de oportunidad es creciente o constante.\n\n\nEficiencia\nEficiencia técnica y económica, con ejercicios de consolidación que exigen comparar varias tecnologías de producción para la misma cantidad de producto.\n\n\nProductividad\nProductividad de los factores productivos y sus dos componentes, la del trabajo y la del capital.\n\n\nCostes y producción\nEstructura de costes y óptimo de producción a corto plazo, donde la empresa iguala el ingreso marginal al coste marginal.\n\n\nUmbral de rentabilidad\nDeducción del punto muerto, su cálculo y su representación gráfica, con ejercicios de repaso que mezclan eficiencia, costes y umbral.\n\n\nEvaluación\nUna prueba completa tipo examen, con su solucionario desplegable pregunta a pregunta.",
+    "crumbs": [
+      "Ejercicios del primer trimestre"
+    ]
+  },
+  {
+    "objectID": "2-macro-micro-normativa-positiva.html",
+    "href": "2-macro-micro-normativa-positiva.html",
+    "title": "1  Microeconomía y macroeconomía",
+    "section": "",
+    "text": "1.1 Tres ejemplos para ver el contraste\nLa forma más clara y clásica de entender la diferencia es la metáfora del bosque:\nDicho de forma técnica pero sencilla: la micro analiza precios de cosas concretas y mercados individuales; la macro analiza el sistema completo (toda la producción, todos los precios y todo el empleo a la vez).",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Microeconomía y macroeconomía</span>"
+    ]
+  },
+  {
+    "objectID": "2-macro-micro-normativa-positiva.html#tres-ejemplos-para-ver-el-contraste",
+    "href": "2-macro-micro-normativa-positiva.html#tres-ejemplos-para-ver-el-contraste",
+    "title": "1  Microeconomía y macroeconomía",
+    "section": "",
+    "text": "Precios e impuestos\n\nMicro: El Estado sube el impuesto a las bebidas azucaradas.\n\nPregunta micro: ¿Cuánto subirá el precio de la Coca-Cola? ¿La gente comprará más agua en su lugar? ¿Reducirá la empresa sus beneficios?\n\nMacro: El Banco Central sube los tipos de interés o hay una crisis energética global.\n\nPregunta macro: ¿Qué pasa con la inflación general de todo el país? ¿Por qué la cesta de la compra completa de todas las familias se ha encarecido un 6% este año?\n\n\n\n\nEmpleo y salarios\n\nMicro: Una cadena de comida rápida decide sustituir a sus cajeros por pantallas táctiles.\n\nPregunta micro: ¿Cómo decide una empresa concreta entre contratar trabajadores o comprar máquinas según sus costes?\n\nMacro: La tasa de desempleo de todo el país sube del 10% al 14%.\n\nPregunta macro: ¿Por qué la economía nacional ha dejado de crear empleo? ¿Está el país entrando en una recesión económica?\n\n\n\n\nProducción\n\nMicro: Una empresa tecnológica lanza un nuevo móvil y vende millones de unidades, mientras su competidor quiebra.\n\nPregunta micro: ¿Qué estrategia de precios o producto ha funcionado en ese sector concreto?\n\nMacro: El PIB (Producto Interior Bruto) del país creció un 2% este año.\n\nPregunta macro: ¿Cuánta riqueza total han producido sumadas todas las fábricas, servicios, comercios y trabajadores del país juntos?",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Microeconomía y macroeconomía</span>"
+    ]
+  },
+  {
+    "objectID": "2-macro-micro-normativa-positiva.html#la-regla-rápida-para-no-dudar-nunca",
+    "href": "2-macro-micro-normativa-positiva.html#la-regla-rápida-para-no-dudar-nunca",
+    "title": "1  Microeconomía y macroeconomía",
+    "section": "1.2 La regla rápida para no dudar nunca",
+    "text": "1.2 La regla rápida para no dudar nunca\nPregúntate: ¿se puede responder mirando un solo sector o mercado, o hay que mirar la suma de todos los sectores del país?\n\nSi se refiere a un producto o sector concreto (coches, tabaco, vivienda, trigo) \\(\\rightarrow\\) micro.\nSi se refiere a una variable que resume a todo el país (PIB, desempleo nacional, inflación del IPC, deuda pública de la nación) \\(\\rightarrow\\) macro.\n\n\nBreve recordatorio conceptual\n\nMicroeconomía: Estudia las decisiones individuales de familias y empresas, y el funcionamiento de mercados concretos (precio del pan, beneficios de Apple, salario de un empleado).\nMacroeconomía: Estudia el comportamiento global de la economía a través de variables agregadas (PIB, inflación, tasa de desempleo, tipos de interés del banco central).\nEconomía positiva: Describe la realidad «tal como es». Son hechos o relaciones causa-efecto que se pueden contrastar empíricamente con datos, y no contienen juicios morales.\nEconomía normativa: Expresa «lo que debería ser». Contiene opiniones, valores éticos, juicios morales o propuestas políticas, y no se puede demostrar si es científicamente verdadera o falsa.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Microeconomía y macroeconomía</span>"
+    ]
+  },
+  {
+    "objectID": "2-macro-micro-normativa-positiva.html#microeconomía-frente-a-macroeconomía",
+    "href": "2-macro-micro-normativa-positiva.html#microeconomía-frente-a-macroeconomía",
+    "title": "1  Microeconomía y macroeconomía",
+    "section": "1.3 Microeconomía frente a macroeconomía",
+    "text": "1.3 Microeconomía frente a macroeconomía\nInstrucciones: Lee los siguientes titulares y situaciones. Clasifica cada uno en microeconomía (MIC) o macroeconomía (MAC).\n\nInditex anuncia una subida del 3 % en el precio de sus prendas para compensar el coste del transporte.\nEl Banco Central Europeo baja los tipos de interés oficiales un 0,25 %.\nEl Producto Interior Bruto (PIB) español creció un 2,4 % en el último ejercicio.\nUna familia decide reducir sus salidas a restaurantes para hacer frente al pago de la hipoteca.\nLa sequía en Andalucía encarece el precio del aceite de oliva en los supermercados.\nLa tasa de desempleo juvenil a nivel nacional se sitúa en el 26 %.\nUna empresa de reparto contrata a 15 nuevos repartidores para la campaña de Navidad.\nLa inflación de la eurozona repunta dos décimas este mes.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Microeconomía y macroeconomía</span>"
+    ]
+  },
+  {
+    "objectID": "2-macro-micro-normativa-positiva.html#economía-positiva-frente-a-normativa",
+    "href": "2-macro-micro-normativa-positiva.html#economía-positiva-frente-a-normativa",
+    "title": "1  Microeconomía y macroeconomía",
+    "section": "1.4 Economía positiva frente a normativa",
+    "text": "1.4 Economía positiva frente a normativa\nInstrucciones: Indica si las siguientes afirmaciones pertenecen a la economía positiva (POS) o a la economía normativa (NOR).\n\nSi sube el precio de la gasolina, a corto plazo disminuirá la demanda de combustible.\nEl Gobierno debería limitar por ley el precio del alquiler de viviendas para ayudar a los jóvenes.\nEl salario mínimo interprofesional en España se fijó en una cuantía superior a los 1.000 euros.\nEs injusto que los ciudadanos con rentas más bajas paguen el mismo porcentaje de IVA que los ricos.\nUn incremento de los aranceles a los coches importados encarecerá su precio de venta final.\nHabría que destinar más presupuesto público a la sanidad y recortar en defensa.\nEl número de afiliados a la Seguridad Social cayó en 20.000 personas en agosto.\nLas empresas que contaminan tendrían que pagar más impuestos que las empresas limpias.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Microeconomía y macroeconomía</span>"
+    ]
+  },
+  {
+    "objectID": "2-macro-micro-normativa-positiva.html#reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa",
+    "href": "2-macro-micro-normativa-positiva.html#reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa",
+    "title": "1  Microeconomía y macroeconomía",
+    "section": "1.5 Reto doble: micro frente a macro y positiva frente a normativa",
+    "text": "1.5 Reto doble: micro frente a macro y positiva frente a normativa\nPara nota. Instrucciones: Clasifica cada enunciado en los dos ejes a la vez (micro/macro y positiva/normativa).\n\n«Para frenar la inflación en el país, el banco central tendría que ser más agresivo subiendo los tipos de interés.»\n«La helada de la semana pasada arruinó la cosecha de naranjas en Valencia, duplicando su precio en el mercado local.»\n«Los supermercados no deberían obtener beneficios tan altos con la venta de productos básicos de primera necesidad.»\n«La recaudación total por IRPF del Estado aumentó un 6 % este trimestre debido al crecimiento del empleo agregado.»",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Microeconomía y macroeconomía</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html",
+    "href": "3-costes-irrecuperables.html",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "",
+    "text": "2.1 El dilema del concierto\n(Coste de oportunidad y costes irrecuperables)\nEs viernes por la tarde. Tienes una entrada para ir al concierto de tu grupo favorito en otra localidad. La entrada te costó 45 € hace un mes y las condiciones no permiten ni devolución ni reventa.\nPara asistir debes pagar un billete de tren de ida y vuelta que cuesta 25 € y calcular un gasto en cena de 15 € (si te quedas en casa cenas gratis porque la comida ya está comprada por tu familia).\nJusto antes de salir, un vecino de confianza te llama con una urgencia: te ofrece 50 € en efectivo si cuidas a sus dos perros durante esa misma tarde y noche (de 18:00 a 23:00 h).\nCuestiones a resolver:",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html#el-dilema-del-concierto",
+    "href": "3-costes-irrecuperables.html#el-dilema-del-concierto",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "",
+    "text": "Identifica qué gasto en este problema representa un coste irrecuperable (o coste hundido) y explica por qué no debería influir en la decisión que tomes hoy.\nSi finalmente decides ir al concierto:\n\n¿Cuál es el gasto monetario adicional y directo en el que incurres hoy?\n¿Cuál es el valor económico total de tu coste de oportunidad por haber ido al concierto? (Pista: considera tanto el dinero que sale de tu bolsillo hoy como el ingreso al que estás renunciando).\n\nSi decides quedarte en casa a cuidar a los perros, ¿cuál es tu coste de oportunidad?",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html#cuántas-horas-debo-estudiar",
+    "href": "3-costes-irrecuperables.html#cuántas-horas-debo-estudiar",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "2.2 ¿Cuántas horas debo estudiar?",
+    "text": "2.2 ¿Cuántas horas debo estudiar?\n(El análisis marginal en la toma de decisiones)\nDispones de 5 horas libres el domingo por la tarde para preparar el examen de Economía del lunes. Cada hora de estudio mejora tu calificación estimada (beneficio total), pero también incrementa tu cansancio físico y mental y te resta tiempo de ocio (coste total, medido en puntos de sacrificio).\n\nCompleta la tabla calculando el beneficio marginal (\\(BMg\\)) y el coste marginal (\\(CMg\\)) de cada hora de estudio adicional, e indica en la última columna si esa hora compensa o no:\n\n\n\n\n\n\n\n\n\n\n\n\nHoras de estudio (\\(Q\\))\nNota esperada (\\(BT\\))\nCansancio / sacrificio (\\(CT\\))\nBeneficio marginal (\\(BMg = \\Delta BT\\))\nCoste marginal (\\(CMg = \\Delta CT\\))\n¿Compensa estudiar esta hora? (Sí/No)\n\n\n\n\n0\n\\(2,0\\)\n\\(0,0\\)\n—\n—\n—\n\n\n1\n\\(5,0\\)\n\\(1,0\\)\n\n\n\n\n\n2\n\\(7,0\\)\n\\(3,0\\)\n\n\n\n\n\n3\n\\(8,5\\)\n\\(6,0\\)\n\n\n\n\n\n4\n\\(9,2\\)\n\\(10,0\\)\n\n\n\n\n\n5\n\\(9,5\\)\n\\(15,0\\)\n\n\n\n\n\n\n\nObserva la columna de beneficio marginal: ¿por qué disminuye conforme sumas más horas de estudio? ¿Qué principio económico explica este comportamiento?\nAplicando la regla de decisión marginal (\\(BMg \\ge CMg\\)), ¿cuál es el número óptimo de horas que deberías estudiar el domingo? Justifica tu respuesta.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html#el-laberinto-de-los-bienes",
+    "href": "3-costes-irrecuperables.html#el-laberinto-de-los-bienes",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "2.3 El laberinto de los bienes",
+    "text": "2.3 El laberinto de los bienes\n(Tipologías económicas, rivalidad y exclusión)\n\nParte A: clasificación según rivalidad y exclusión\nClasifica los siguientes 8 casos ubicándolos en el cuadrante que les corresponda:\n\nUna manzana comprada en el supermercado.\nUna autopista de peaje a las 3:00 de la madrugada (sin tráfico).\nLa señal de radio convencional en frecuencia modulada (FM).\nUn banco de atunes en aguas internacionales del océano Atlántico.\nEl alumbrado público de las calles de tu municipio.\nUna suscripción mensual a Spotify.\nLos pastos comunales de una sierra donde cualquier ganadero puede soltar sus vacas.\nUna sudadera con capucha.\n\n\n\n\n\n\n\n\n\n\nExcluible (se puede impedir su uso a quien no pague)\nNo excluible (no se puede impedir el acceso a nadie)\n\n\n\n\nRival(su consumo reduce la cantidad disponible para otros)\nBien privado\nRecurso común\n\n\nNo rival(el uso por una persona no reduce la cantidad disponible)\nBien club\nBien público puro\n\n\n\n\nPregunta de reflexión: ¿por qué los recursos comunes corren un riesgo permanente de sobreexplotación o agotamiento si el Estado no establece normas de uso? ¿Cómo se conoce este problema en economía?\n\n\n\nParte B: función y grado de transformación\nIndica para cada elemento si se trata de un bien de consumo o de capital, y si es intermedio o final:\n\nLa harina adquirida por una panificadora industrial.\nEl horno industrial utilizado por esa misma panificadora.\nUna barra de pan comprada por una familia para almorzar.\nUna furgoneta comprada por un electricista para transportar sus herramientas de trabajo.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html#autopsia-a-una-empresa-factores-y-retribuciones",
+    "href": "3-costes-irrecuperables.html#autopsia-a-una-empresa-factores-y-retribuciones",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "2.4 Autopsia a una empresa: factores y retribuciones",
+    "text": "2.4 Autopsia a una empresa: factores y retribuciones\n(Tierra, trabajo, capital e iniciativa empresarial)\nLee con atención el siguiente caso sobre la apertura de un negocio:\n\nMario ha alquilado un local comercial en una calle céntrica por 1.400 € al mes. Para poner en marcha su pizzería, solicitó un préstamo bancario de 30.000 € por el que abona intereses periódicos a la entidad financiera. Con esos fondos adquirió un horno de leña profesional, mobiliario de comedor y una cámara frigorífica. Cada semana compra ingredientes frescos a productores locales (harina, agua, tomates, hortalizas y leña). Tiene contratados a dos pizzeros y dos camareros a jornada completa con un sueldo fijado por convenio. Mario no cocina ni atiende mesas: él ideó el modelo de negocio, diseñó la carta, asumió el riesgo de invertir sus ahorros y, al cierre del ejercicio anual, tras abonar salarios, facturas, compras e impuestos, obtiene el beneficio neto de la actividad.\n\nCuestiones a resolver:\n\nExtrae del texto al menos dos ejemplos concretos correspondientes a cada uno de los cuatro factores productivos:\n\nTierra (recursos naturales):\nTrabajo:\nCapital (físico):\nIniciativa emprendedora:\n\nCompleta la correspondencia entre factores productivos, la denominación técnica de su remuneración y el agente concreto del texto que la percibe:\n\n\n\n\n\n\n\n\n\nFactor productivo\nNombre económico de su renta\n¿Quién la percibe en el caso de la pizzería?\n\n\n\n\nTierra\n\n\n\n\nTrabajo\n\n\n\n\nCapital\n\n\n\n\nIniciativa empresarial\n\n\n\n\n\n\nMario guarda 4.000 € en efectivo dentro de la caja fuerte del local para atender posibles gastos imprevistos. ¿Constituye ese dinero en metálico un «factor de producción capital» en sentido estricto? Razona tu respuesta distinguiendo entre capital físico y capital financiero.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html#trazando-el-flujo-circular-de-la-renta",
+    "href": "3-costes-irrecuperables.html#trazando-el-flujo-circular-de-la-renta",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "2.5 Trazando el flujo circular de la renta",
+    "text": "2.5 Trazando el flujo circular de la renta\n(Relaciones entre familias, empresas y sector público)\nAnaliza las siguientes transacciones cotidianas completando la tabla:\n\nSofía abona 22 € con su tarjeta bancaria por un bono mensual de transporte público.\nUna empresa de logística abona una nómina de 1.400 € a Carlos, que trabaja como mozo de almacén.\nEl Ministerio de Transportes paga 120.000 € a la constructora Pavimentos del Sur por reparar un tramo de autovía.\nUna zapatería transfiere 900 € al dueño particular del bajo comercial en concepto de alquiler del mes.\nLa Agencia Tributaria ingresa una transferencia de 480 € a Elena correspondiente al subsidio por desempleo.\n\n\n\n\n\n\n\n\n\n\n\nTransacción\nAgentes económicos que intervienen\n¿Mercado de bienes o mercado de factores? (o relación directa con el Estado)\nFlujo real (bienes, servicios o factores aportados)\nFlujo monetario (sentido y cuantía del dinero)\n\n\n\n\n1. Bono de transporte\n\n\n\n\n\n\n2. Nómina de Carlos\n\n\n\n\n\n\n3. Reparación de la autovía\n\n\n\n\n\n\n4. Alquiler del bajo\n\n\n\n\n\n\n5. Subsidio de Elena",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "3-costes-irrecuperables.html#el-debate-de-la-isla-los-sistemas-económicos",
+    "href": "3-costes-irrecuperables.html#el-debate-de-la-isla-los-sistemas-económicos",
+    "title": "2  Costes irrecuperables, coste de oportunidad y tipos de bienes",
+    "section": "2.6 El debate de la isla: los sistemas económicos",
+    "text": "2.6 El debate de la isla: los sistemas económicos\n(Las tres preguntas básicas: qué, cómo y para quién)\nUn grupo de 500 personas naufraga en una isla remota y fértil pero deshabitada. No hay posibilidad de rescate inmediato, por lo que deciden organizar su economía. Rápidamente surgen tres propuestas defendidas por distintos colectivos:\n\nPropuesta A (mercado puro): cada individuo es libre de apropiarse de la tierra y las herramientas que consiga delimitar primero. Quien desee pescado, madera o medicinas deberá pagar su precio en conchas recolectadas o mediante trueque. No habrá servicios asistenciales ni normas de reparto: quien enferme o no pueda faenar dependerá de la caridad privada.\nPropuesta B (planificación central): todos los recursos (suelo, agua, herramientas y cabañas) pasan a ser propiedad colectiva. Una asamblea técnica —el «Comité de Planificación»— fijará cada mañana las tareas laborales de cada náufrago, las horas obligatorias de trabajo y repartirá por la noche raciones alimentarias idénticas para todos.\nPropuesta C (economía mixta): se reconoce la propiedad individual sobre pequeñas parcelas, aperos y talleres domésticos, permitiendo el intercambio libre de mercancías entre particulares. No obstante, se establece una contribución obligatoria (un 15 % de las cosechas y capturas) para financiar un dispensario médico común y un almacén de reserva ante sequías y temporales.\n\nCuestiones a resolver en equipo:\n\nCompleta la matriz indicando cómo respondería cada propuesta a las tres decisiones económicas fundamentales:\n\n\n\n\n\n\n\n\n\n\nPregunta fundamental\nPropuesta A (mercado)\nPropuesta B (planificación)\nPropuesta C (mixta)\n\n\n\n\n¿Qué producir?\n\n\n\n\n\n¿Cómo producir?\n\n\n\n\n\n¿Para quién producir?\n\n\n\n\n\n\n\nSeñala el principal fallo o riesgo que afrontaría la sociedad insular si aplica de forma estricta la propuesta A.\nSeñala el principal fallo o riesgo de gestión e incentivos que surgiría si se aprueba la propuesta B.\nArgumenta por qué prácticamente todos los países con altos índices de desarrollo humano han adoptado esquemas organizativos basados en la propuesta C.",
+    "crumbs": [
+      "Conceptos fundamentales",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Costes irrecuperables, coste de oportunidad y tipos de bienes</span>"
+    ]
+  },
+  {
+    "objectID": "4-fpp-icaro.html",
+    "href": "4-fpp-icaro.html",
+    "title": "3  La frontera de posibilidades de producción de «Movilidad Ícaro»",
+    "section": "",
+    "text": "Contexto de la cooperativa\nLa empresa de inserción juvenil «Movilidad Ícaro» fabrica dos tipos de vehículos sostenibles para la ciudad: Bicicletas de carga (Bien \\(X\\)) y Patinetes eléctricos (Bien \\(Y\\)). Con sus instalaciones actuales y su equipo de 12 operarios a jornada completa durante un mes, las combinaciones máximas de producción son las siguientes:\nSitúa los siguientes puntos en tu gráfico y responde a las preguntas: * Punto R (\\(15\\) bicicletas, \\(30\\) patinetes): Clasifícalo. ¿Qué problema organizativo refleja en el taller? Sin reducir las 15 bicicletas, ¿cuántos patinetes adicionales se podrían fabricar si la producción fuera eficiente? * Punto S (\\(25\\) bicicletas, \\(40\\) patinetes): Clasifícalo. Un cliente solicita este pedido para entrega inmediata. ¿Puede la cooperativa atenderlo con sus medios actuales? ¿Qué proceso económico requeriría para conseguirlo? * Punto T (\\(30\\) bicicletas, \\(26\\) patinetes): Clasifícalo indicando qué propiedad cumple respecto al aprovechamiento de los factores de producción.\nDibuja tres gráficos esquemáticos a mano alzada que representen la reacción de la FPP original ante cada uno de los siguientes escenarios independientes: * Caso 1: Una subvención de capital permite ampliar las instalaciones y contratar a 6 nuevos operarios aptos para fabricar ambos productos. * Caso 2: Se incorpora una máquina de soldadura automática que incrementa exclusivamente la productividad del montaje de patinetes eléctricos. * Caso 3: Una inundación inutiliza de forma irreversible el 40 % de la maquinaria del taller.",
+    "crumbs": [
+      "Frank Price Production",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>La frontera de posibilidades de producción de «Movilidad Ícaro»</span>"
+    ]
+  },
+  {
+    "objectID": "5-1-eficiencia.html",
+    "href": "5-1-eficiencia.html",
+    "title": "4  Eficiencia técnica y eficiencia económica",
+    "section": "",
+    "text": "Conceptos clave\nNota fundamental: Una técnica que no sea eficiente técnicamente queda descartada de inmediato; nunca se calcula su coste ni se considera eficiente económicamente.\n2. La empresa textil Alfa S. L. confecciona lotes de 1000 camisetas y puede recurrir a cuatro técnicas de producción distintas. La tabla siguiente recoge los recursos empleados:\n3. Una explotación ganadera requiere gestionar una cabaña de 1000 vacas. Dispone de cinco procesos tecnológicos distintos, que combinan operarios y máquinas automatizadas:",
+    "crumbs": [
+      "Eficiencia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Eficiencia técnica y eficiencia económica</span>"
+    ]
+  },
+  {
+    "objectID": "5-1-eficiencia.html#actividades-prácticas",
+    "href": "5-1-eficiencia.html#actividades-prácticas",
+    "title": "4  Eficiencia técnica y eficiencia económica",
+    "section": "4.1 Actividades prácticas",
+    "text": "4.1 Actividades prácticas\n1. Un estudiante prepara su examen final de Economía, cuyo temario consta de 15 temas. Puede seguir dos métodos de estudio distintos: * Método tradicional: Requiere 18 horas de lectura repetitiva y memorización. * Método activo: Requiere 12 horas basadas en elaboración de mapas conceptuales y resolución de preguntas prácticas.\nCon ambos métodos obtiene la misma calificación (un 9 sobre 10).\n\na) ¿Qué método es más eficiente desde el punto de vista técnico? Razona la respuesta indicando recursos y resultados.\nb) Si cada hora de estudio le supone un coste de oportunidad de 10 € (dinero que deja de ganar trabajando en un empleo por horas), ¿cuál es el método económicamente más eficiente?",
+    "crumbs": [
+      "Eficiencia",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Eficiencia técnica y eficiencia económica</span>"
+    ]
+  },
+  {
+    "objectID": "5-2-eficiencia-produccion.html",
+    "href": "5-2-eficiencia-produccion.html",
+    "title": "5  Eficiencia técnica y económica: ejercicios de consolidación",
+    "section": "",
+    "text": "Las dos caras de la eficiencia técnica\nRecuerda que una técnica de producción puede descartarse por ineficiencia técnica bajo dos supuestos distintos: 1. Misma producción con más recursos: Si para fabricar la misma cantidad de producto utiliza más unidades de algún factor productivo y no menos de ninguno de los demás. 2. Mismos recursos con menor producción: Si empleando exactamente la misma cantidad de factores que otra técnica, obtiene un volumen final de producción inferior.\n2. La empresa chocolatera Negro y Blanco S. L. planea actualizar sus líneas de fabricación y duda entre cuatro tecnologías posibles. Las cantidades diarias de factores y la producción estimada de tabletas se indican a continuación:",
+    "crumbs": [
+      "Eficiencia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Eficiencia técnica y económica: ejercicios de consolidación</span>"
+    ]
+  },
+  {
+    "objectID": "5-2-eficiencia-produccion.html#actividades-prácticas",
+    "href": "5-2-eficiencia-produccion.html#actividades-prácticas",
+    "title": "5  Eficiencia técnica y económica: ejercicios de consolidación",
+    "section": "5.1 Actividades prácticas",
+    "text": "5.1 Actividades prácticas\n1. La empresa textil Kanis S. A. evalúa cuatro tecnologías distintas para confeccionar gorras. El rendimiento por hora de cada una de ellas se recoge en la siguiente tabla:\n\n\n\n\n\n\n\n\n\nTecnología\nTrabajadores (\\(L\\))\nMáquinas (\\(K\\))\nProducción (gorras/hora)\n\n\n\n\nA\n8\n4\n300\n\n\nB\n4\n6\n300\n\n\nC\n8\n6\n300\n\n\nD\n4\n6\n299\n\n\n\n\na) Determina qué tecnología o tecnologías son eficientes técnicamente. Justifica de manera razonada el descarte de las tecnologías ineficientes comparándolas con aquellas que las superan.\nb) Sabiendo que el coste de la mano de obra es de 10 €/hora por trabajador y el alquiler de cada máquina cuesta 15,50 €/hora, calcula el coste por hora de las tecnologías técnicamente eficientes e indica cuál es la más eficiente económicamente.",
+    "crumbs": [
+      "Eficiencia",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Eficiencia técnica y económica: ejercicios de consolidación</span>"
+    ]
+  },
+  {
+    "objectID": "6-1-productividad.html",
+    "href": "6-1-productividad.html",
+    "title": "6  La productividad de los factores productivos",
+    "section": "",
+    "text": "Concepto de productividad\nMientras que la producción es el volumen total de bienes o servicios obtenidos en un periodo determinado, la productividad mide el rendimiento de los factores utilizados para lograrla; es decir, relaciona lo obtenido con los recursos necesarios para conseguirlo:\n\\[\\text{Productividad de un factor} = \\frac{\\text{Producción obtenida}}{\\text{Cantidad de factor utilizado}}\\]\nSi analizamos el factor trabajo (\\(L\\)), suele calcularse como: * Productividad por hora trabajada: \\(\\dfrac{\\text{Producción total}}{\\text{Horas totales trabajadas}}\\) * Productividad por trabajador: \\(\\dfrac{\\text{Producción total}}{\\text{Número de trabajadores}}\\)\nNota clave: Producir más no significa necesariamente ser más productivo. Una empresa puede producir el doble simplemente porque contrata al triple de trabajadores, lo que implicaría que su productividad individual ha disminuido.\n2. Una cooperativa elabora pan artesanal en dos obradores distintos durante la misma jornada de 8 horas: * Obrador Central: Emplea a 5 panaderos y obtiene una producción total de 1200 barras de pan al día. * Obrador Norte: Emplea a 3 panaderos y logra una producción total de 900 barras de pan al día.\n3. La empresa tecnológica «NovaTech» ensambla tabletas digitales. A principios de año, con una plantilla de 10 trabajadores que cumplían un total de 1600 horas mensuales, fabricaba 3200 tabletas al mes.\nTras implantar un programa de formación técnica y reorganizar las cadenas de montaje, la empresa pasa a ensamblar 3600 tabletas mensuales con 9 trabajadores, trabajando un total de 1440 horas mensuales.",
+    "crumbs": [
+      "Productividad",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>La productividad de los factores productivos</span>"
+    ]
+  },
+  {
+    "objectID": "6-1-productividad.html#actividades-prácticas",
+    "href": "6-1-productividad.html#actividades-prácticas",
+    "title": "6  La productividad de los factores productivos",
+    "section": "6.1 Actividades prácticas",
+    "text": "6.1 Actividades prácticas\n1. Dos alumnos de Bachillerato preparan la prueba de acceso a la universidad repasando un bloque temático de Historia de España: * Álex le dedica 8 horas al estudio y consigue memorizar y resumir 4 folios completos. * Beatriz emplea 2 horas y asimila de forma comprensiva 12 folios.\n\na) Elabora una tabla con las horas dedicadas (factor productivo), los folios aprendidos (producción) y calcula la productividad por hora de cada estudiante. Indica con claridad las unidades de medida resultantes.\nb) Interpreta los resultados: ¿cuántas veces es Beatriz más productiva que Álex?\nc) Explica una consecuencia positiva que esta diferencia de productividad puede reportar a Beatriz en su vida académica o personal frente a su compañero.",
+    "crumbs": [
+      "Productividad",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>La productividad de los factores productivos</span>"
+    ]
+  },
+  {
+    "objectID": "6-2-productividad-trabajo-capital.html",
+    "href": "6-2-productividad-trabajo-capital.html",
+    "title": "7  Productividad del trabajo y del capital",
+    "section": "",
+    "text": "Productividad media de los factores\nCuando una empresa combina varios factores productivos —habitualmente trabajo (\\(L\\)) y capital (\\(K\\), como maquinaria o instalaciones)—, se puede calcular el rendimiento medio unitario de cada uno de ellos por separado:\n2. La empresa de carpintería «Muebles Sierra» fabrica cajoneras de oficina. Para ensamblar un pedido de 1200 cajoneras evalúa tres métodos organizativos diferentes:\n3. Dos cooperativas hortofrutícolas recolectan y empaquetan naranjas durante la campaña de invierno: * Cooperativa El Azahar: Con 10 trabajadores y 2 máquinas clasificadoras, recolecta y procesa 5000 kg al día. * Cooperativa La Vega: Con 6 trabajadores y 3 máquinas clasificadoras, recolecta y procesa 4500 kg al día.",
+    "crumbs": [
+      "Productividad",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Productividad del trabajo y del capital</span>"
+    ]
+  },
+  {
+    "objectID": "6-2-productividad-trabajo-capital.html#actividades-prácticas",
+    "href": "6-2-productividad-trabajo-capital.html#actividades-prácticas",
+    "title": "7  Productividad del trabajo y del capital",
+    "section": "7.1 Actividades prácticas",
+    "text": "7.1 Actividades prácticas\n1. Una explotación lechera analiza cuatro técnicas alternativas (A, B, C y D) para completar la tarea de ordeño de 800 vacas al día combinando peones agrícolas y equipos mecánicos de ordeño:\n\n\n\n\n\n\n\n\n\nTécnica\nTrabajadores (\\(L\\))\nMáquinas (\\(K\\))\nVacas ordeñadas (\\(Q\\))\n\n\n\n\nA\n3\n4\n800\n\n\nB\n4\n3\n800\n\n\nC\n4\n4\n800\n\n\nD\n6\n5\n800\n\n\n\n\na) Calcula la productividad del trabajo (\\(P_L\\)) y la productividad del capital (\\(P_K\\)) para cada una de las cuatro técnicas. Expresa los resultados redondeados a dos decimales e indica siempre sus unidades.\nb) ¿Qué técnica presenta el personal más productivo? ¿En cuál rinde mejor cada máquina?\nc) Relaciona los resultados obtenidos con la eficiencia técnica: explica por qué la técnica D muestra las productividades más bajas en ambos factores simultáneamente.",
+    "crumbs": [
+      "Productividad",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Productividad del trabajo y del capital</span>"
+    ]
+  },
+  {
+    "objectID": "7-1-produccion-costes.html",
+    "href": "7-1-produccion-costes.html",
+    "title": "8  Producción, costes y maximización del beneficio a corto plazo",
+    "section": "",
+    "text": "Fórmulas de producción y costes a corto plazo\nA corto plazo, al menos un factor de producción permanece fijo (el capital o las instalaciones, \\(K\\)), mientras que otros son variables (el trabajo, \\(L\\)):\n2. Un taller artesanal de tablas de surf presenta los siguientes datos en su proceso de producción:\nSabiendo que el precio de mercado de cada tabla es de 210 €:",
+    "crumbs": [
+      "Costes y producción",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Producción, costes y maximización del beneficio a corto plazo</span>"
+    ]
+  },
+  {
+    "objectID": "7-1-produccion-costes.html#actividades-prácticas",
+    "href": "7-1-produccion-costes.html#actividades-prácticas",
+    "title": "8  Producción, costes y maximización del beneficio a corto plazo",
+    "section": "8.1 Actividades prácticas",
+    "text": "8.1 Actividades prácticas\n1. Una empresa dedicada a la fabricación de balones de fútbol dispone de un local alquilado por 500 € al mes (coste fijo) y puede contratar entre 0 y 6 trabajadores, a los que abona un salario de 1000 € mensuales a cada uno (coste variable). El precio de venta en el mercado es de 10 € por balón. La evolución de la producción según la plantilla contratada es la siguiente:\n\n\n\nTrabajadores (\\(L\\))\nProducción total en balones (\\(Q\\))\n\n\n\n\n0\n0\n\n\n1\n100\n\n\n2\n220\n\n\n3\n380\n\n\n4\n500\n\n\n5\n580\n\n\n6\n600\n\n\n\n\na) Reproduce y completa en tu cuaderno la tabla con las columnas: \\(PMe\\), \\(PMg\\), \\(CF\\), \\(CV\\), \\(CT\\), \\(CMe\\), \\(CMg\\), Precio (\\(P\\)), \\(IT\\) y Beneficio (\\(B\\)).\nb) Analiza la evolución del producto marginal (\\(PMg\\)) e identifica las dos etapas de la producción: ¿a partir de qué trabajador se manifiesta la ley de rendimientos decrecientes?\nc) Explica la relación gráfica y matemática que existe entre el producto marginal (\\(PMg\\)) y el coste marginal (\\(CMg\\)) a lo largo de toda la tabla.\nd) ¿Qué número de trabajadores contratará la empresa para maximizar sus beneficios? Justifica la decisión aplicando la lógica marginal (\\(P\\) frente a \\(CMg\\)) y el umbral de rentabilidad (\\(P\\) frente a \\(CMe\\)).",
+    "crumbs": [
+      "Costes y producción",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Producción, costes y maximización del beneficio a corto plazo</span>"
+    ]
+  },
+  {
+    "objectID": "7-2-costes-optimo.html",
+    "href": "7-2-costes-optimo.html",
+    "title": "9  Estructura de costes y óptimo de producción",
+    "section": "",
+    "text": "Solución\nUna empresa artesanal fabrica pulseras de tela. Afronta un coste fijo mensual de 2000 € por el alquiler del taller. Los costes variables en función del volumen de pulseras producidas se recogen en la siguiente tabla:\nCuestiones:\n1. Elabora una tabla con las columnas: Producción total (\\(Q\\)), Coste fijo (\\(CF\\)), Coste variable (\\(CV\\)), Coste total (\\(CT\\)), Coste marginal (\\(CMg\\)) y Coste medio (\\(CMe\\)). (Recuerda calcular el \\(CMg\\) como \\(\\Delta CT / \\Delta Q\\)).\n2. Observa la evolución del coste marginal (\\(CMg\\)): * a) ¿En qué tramo de producción alcanza su valor mínimo? * b) ¿Por qué a partir de 20 000 pulseras el coste marginal empieza a encarecerse? ¿Qué ley económica explica este fenómeno?\n3. Localiza en la tabla el óptimo de explotación (el volumen de producción que minimiza el coste medio por pulsera). ¿Por qué a la empresa le interesa conocer esta cifra?\n4. Si el precio de mercado de cada pulsera fuera de 2,45 €: * ¿Le convendría a la empresa producir 35 000 pulseras? Justifica la respuesta comparando el precio con el coste medio y calcula el beneficio o pérdida obtenido.",
+    "crumbs": [
+      "Costes y producción",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Estructura de costes y óptimo de producción</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html",
+    "href": "8-repaso-eficiencia-costes.html",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "",
+    "text": "10.1 Ejercicio 1\nPalomo del Sur es una empresa que puede fabricar tornillos con las tecnologías A, B y C, de acuerdo con lo expuesto en la siguiente tabla:",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-1",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-1",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "",
+    "text": "Tecnología\nTrabajo (horas)\nCapital (máquinas)\nTornillos\n\n\n\n\nA\n6\n4\n10.500\n\n\nB\n4\n6\n10.500\n\n\nC\n6\n6\n10.500\n\n\n\n\na) Razona cuáles de estas son las tecnologías más eficientes técnicamente.\nb) Calcula el coste total para cada una de las tecnologías, sabiendo que el coste del trabajo asciende a 500 €/hora y el de las máquinas a 800 €/hora.\nc) Indica cuál de las tecnologías anteriores es la más eficiente desde el punto de vista económico.",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-2",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-2",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "10.2 Ejercicio 2",
+    "text": "10.2 Ejercicio 2\nIndica si son fijos o variables los siguientes costes mensuales correspondientes a un taller mecánico: * El alquiler del local. * El gas. * El salario de los mecánicos. * La luz. * La pintura, el aceite y otros consumibles. * El agua. * Las máquinas. * Las piezas de repuesto.",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-3",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-3",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "10.3 Ejercicio 3",
+    "text": "10.3 Ejercicio 3\nUn taller de costura vende 10 camisas diarias a 40 €/unidad. Calcula el beneficio diario y el beneficio por camisa, dados los siguientes costes: salarios diarios (100 €), materiales (150 €) y alquiler (30 €).",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-4",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-4",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "10.4 Ejercicio 4",
+    "text": "10.4 Ejercicio 4\nUtilizando como ejemplo la recogida de fruta en temporada, explica cómo podría llegar a producirse la ley de los rendimientos decrecientes.",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-5",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-5",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "10.5 Ejercicio 5",
+    "text": "10.5 Ejercicio 5\nPor cada diez vasijas que elabora, un ceramista emplea 2 kg de arcilla, que compra a 0,40 €/kg, y 2 horas de trabajo asalariado, que paga a 5 €/hora. Sabiendo que el ceramista paga un alquiler mensual de 600 €: * Durante el mes de enero fabricó 300 vasijas a un precio de venta de 12 € y vendió 100. * En el mes de febrero bajó el precio a 11 € y la producción a 210 vasijas, vendiendo solo 80. * En el mes de marzo subió el precio a 15 € y vendió 120 unidades, produciendo 400.\nCalcula para cada mes: * a) Los costes totales. * b) Los ingresos totales. * c) El beneficio empresarial.",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-6",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-6",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "10.6 Ejercicio 6",
+    "text": "10.6 Ejercicio 6\nReflejos, SL se dedica a fabricar espejos y ha vendido 45.000 unidades el presente año. Si el precio de venta ha sido de 240 € por espejo, sus costes fijos de 3.000.000 € y el coste variable unitario de 125 € por espejo: * a) ¿Cuál ha sido su beneficio?",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "8-repaso-eficiencia-costes.html#ejercicio-7",
+    "href": "8-repaso-eficiencia-costes.html#ejercicio-7",
+    "title": "10  Ejercicios de repaso: eficiencia y costes",
+    "section": "10.7 Ejercicio 7",
+    "text": "10.7 Ejercicio 7\nLas ventas de libros de la editorial Asimov, así como sus gastos en concepto de pagos de comisiones, dietas y material de promoción, aumentan a medida que contrata a más comerciales, según el ritmo que figura en la tabla siguiente:\n\n\n\nComerciales\n1\n2\n3\n4\n\n\n\n\nLibros vendidos\n500\n1.000\n1.500\n2.000\n\n\nCostes variables\n9.500 €\n19.000 €\n28.000 €\n38.500 €\n\n\n\nSi el precio de venta de cada libro es de 20 € y los gastos fijos ascienden a 600 €: * a) Representa en una tabla los costes fijos (CF), costes variables (CV), costes totales (CT), costes medios (Cme), ingresos totales (IT), beneficio total (BT), ingreso marginal (Ima), coste marginal (Cma) y rendimiento marginal (Rma). * b) Interpreta los resultados de acuerdo con la ley de los rendimientos decrecientes.",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ejercicios de repaso: eficiencia y costes</span>"
+    ]
+  },
+  {
+    "objectID": "9-1-umbral-formula.html",
+    "href": "9-1-umbral-formula.html",
+    "title": "11  Introducción al umbral de rentabilidad: de los beneficios al punto muerto",
+    "section": "",
+    "text": "Píldora teórica 1: Los componentes del resultado empresarial\nPara saber si un negocio gana o pierde dinero, recurrimos a la ecuación básica del beneficio:\n\\[\\text{Beneficio } (B) = \\text{Ingresos totales } (IT) - \\text{Costes totales } (CT)\\]\nSi desglosamos cada término en función del número de unidades producidas y vendidas (\\(Q\\)):\nPor tanto, la fórmula ampliada del beneficio queda así: \\[B = (P \\cdot Q) - (CF + CV_u \\cdot Q)\\]\n2. Un ilustrador diseña y vende láminas artísticas a través de internet. Afronta unos costes fijos mensuales de 800 € (cuota de autónomos, servidor web y programas de diseño). La impresión, papel especial y empaquetado de cada lámina suponen un coste de 4 €. Vende cada lámina por 20 €.\n3. Reflexiona sobre la lógica económica del umbral de rentabilidad: * a) Si el ilustrador del ejercicio anterior decide subir el precio de venta de sus láminas de 20 € a 24 €, ¿necesitará vender más o menos láminas para cubrir costes? Justifica tu respuesta sin hacer cálculos numéricos y luego compruébalo con la fórmula. * b) ¿Qué ocurriría con el punto muerto si una crisis de suministros encarece el papel, elevando el coste variable unitario de 4 € a 8 € manteniendo el precio inicial en 20 €?",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span>"
+    ]
+  },
+  {
+    "objectID": "9-1-umbral-formula.html#actividades-prácticas",
+    "href": "9-1-umbral-formula.html#actividades-prácticas",
+    "title": "11  Introducción al umbral de rentabilidad: de los beneficios al punto muerto",
+    "section": "11.1 Actividades prácticas",
+    "text": "11.1 Actividades prácticas\n1. Un grupo de estudiantes de Bachillerato decide montar una pequeña empresa de camisetas personalizadas para financiar su viaje de estudios. Tienen los siguientes datos: * Alquiler de la máquina estampadora: 300 € (pago único fijo). * Coste de cada camiseta en blanco y tinta: 5 € por camiseta (\\(CV_u\\)). * Precio de venta al público fijado: 15 € por camiseta (\\(P\\)).\n\na) ¿Cuánto dinero «limpio» deja cada camiseta vendida para ayudar a pagar el alquiler de la máquina? Calcula el margen de contribución unitario (\\(P - CV_u\\)).\nb) Calcula los ingresos totales (\\(IT\\)), los costes totales (\\(CT\\)) y el beneficio (\\(B\\)) si venden:\n\n10 camisetas.\n20 camisetas.\n30 camisetas.\n40 camisetas.\n\nc) A la vista de los resultados del apartado anterior, ¿cuántas camisetas necesitaban vender como mínimo para empezar a obtener beneficios? Comprueba que coincide exactamente con la fórmula del umbral: \\[Q_0 = \\frac{CF}{P - CV_u}\\]",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span>"
+    ]
+  },
+  {
+    "objectID": "9-2-umbral-basico.html",
+    "href": "9-2-umbral-basico.html",
+    "title": "12  El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones",
+    "section": "",
+    "text": "Ejemplo modelo resuelto: Fabricación de camisetas\nEnunciado: Una empresa confecciona camisetas con los siguientes datos mensuales: * Precio de venta (\\(P\\)): 25 € por camiseta. * Coste variable unitario (\\(CV_u\\)): 10 € por camiseta. * Costes fijos mensuales (\\(CF\\)): 6000 €.\nResolución paso a paso:\n2. Una empresa juvenil se dedica a la fabricación y comercialización de mochilas escolares recicladas. Afronta los siguientes costes mensuales: * Alquiler del taller y amortización de maquinaria: 3500 €. * Gastos de publicidad, asesoría y suministros fijos (luz, internet): 1500 €. * Materiales reciclados y cremalleras: 12 € por mochila. * Mano de obra directa a destajo y embalaje: 8 € por mochila.\nEl precio de venta unitario fijado es de 45 € por mochila.",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "9-2-umbral-basico.html#actividades-prácticas",
+    "href": "9-2-umbral-basico.html#actividades-prácticas",
+    "title": "12  El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones",
+    "section": "12.1 Actividades prácticas",
+    "text": "12.1 Actividades prácticas\n1. A partir de los datos del ejemplo modelo de la empresa de camisetas (\\(P = 25\\text{ €}\\), \\(CV_u = 10\\text{ €}\\), \\(CF = 6000\\text{ €}\\), \\(Q_0 = 400\\text{ camisetas}\\)):\n\na) Calcula el valor en euros de los ingresos totales (\\(IT\\)) y de los costes totales (\\(CT\\)) cuando la empresa alcanza el umbral de rentabilidad.\nb) Enumera las coordenadas \\((Q, \\text{€})\\) necesarias para trazar con regla en unos ejes cartesianos las rectas de \\(CF\\), \\(IT\\) y \\(CT\\), tomando como referencia los valores para \\(Q = 0\\), el umbral \\(Q = 400\\) y un volumen superior de \\(Q = 600\\) unidades.\nc) ¿Cuántas camisetas deberá vender la empresa si desea obtener un beneficio mensual neto de 3000 €?",
+    "crumbs": [
+      "Umbral de rentabilidad",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "nivel.html",
+    "href": "nivel.html",
+    "title": "13  Prueba de Economía — 1.º de Bachillerato",
+    "section": "",
+    "text": "13.1 BLOQUE 1: Conceptos fundamentales (5 puntos)\nNombre: Fecha:",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Prueba de Economía — 1.º de Bachillerato</span>"
+    ]
+  },
+  {
+    "objectID": "nivel.html#bloque-1-conceptos-fundamentales-5-puntos",
+    "href": "nivel.html#bloque-1-conceptos-fundamentales-5-puntos",
+    "title": "13  Prueba de Economía — 1.º de Bachillerato",
+    "section": "",
+    "text": "1. Clasificación metodológica y ramas (1,5 puntos)\nClasifica cada afirmación marcando con una X si pertenece a la Economía Positiva (P) o Normativa (N), y si su enfoque es Microeconómico (MIC) o Macroeconómico (MAC).\n\n\n\n\n\n\n\n\n\n#\nAfirmación\nP / N\nMIC / MAC\n\n\n\n\n1\nSi sube el precio de los abonos de transporte, caerá el número de usuarios en Madrid.\n\n\n\n\n2\nEl Gobierno debería congelar los precios del alquiler para ayudar a los jóvenes.\n\n\n\n\n3\nLa tasa de inflación interanual de la zona euro cerró el último mes en el 2,6%.\n\n\n\n\n4\nInditex aumentará su margen de beneficios reduciendo los costes logísticos.\n\n\n\n\n5\nDeberían incrementarse las pensiones mínimas financiado con deuda pública.\n\n\n\n\n6\nUn aumento del tipo de interés oficial reduce el consumo agregado nacional.",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Prueba de Economía — 1.º de Bachillerato</span>"
+    ]
+  },
+  {
+    "objectID": "nivel.html#bloque-2-modelización-gráfica-y-análisis-cuantitativo-5-puntos",
+    "href": "nivel.html#bloque-2-modelización-gráfica-y-análisis-cuantitativo-5-puntos",
+    "title": "13  Prueba de Economía — 1.º de Bachillerato",
+    "section": "13.2 BLOQUE 2: Modelización gráfica y análisis cuantitativo (5 puntos)",
+    "text": "13.2 BLOQUE 2: Modelización gráfica y análisis cuantitativo (5 puntos)\n\n4. Gráfico de Oferta, Demanda y Mecanismo de Mercado (3 puntos)\nEl mercado semanal de cafés en un campus universitario presenta la siguiente tabla:\n\n\n\n\n\n\n\n\n\n\nPrecio (€/café)\nCantidad Demandada (\\(Q_d\\))\nCantidad Ofrecida (\\(Q_s\\))\nSituación de Mercado (Exceso Oferta / Exceso Demanda / Equilibrio)\nMagnitud del desequilibrio (unidades)\n\n\n\n\n1,00\n1.000\n200\n\n\n\n\n1,50\n800\n400\n\n\n\n\n2,00\n600\n600\n\n\n\n\n2,50\n400\n800\n\n\n\n\n3,00\n200\n1.000\n\n\n\n\n\nTareas: 1. Completa las dos últimas columnas de la tabla. 2. En la parte posterior de esta hoja, dibuja el gráfico de mercado: - Eje vertical (\\(P\\)) y horizontal (\\(Q\\)) correctamente graduados y rotulados. - Traza la curva de demanda (\\(D\\)) y de oferta (\\(S\\)). - Señala con una línea discontinua el punto de equilibrio (\\(E\\)) indicando \\(P_e\\) y \\(Q_e\\). - Sombrea el área correspondiente al exceso de oferta a un precio de \\(2,50\\ €\\).",
+    "crumbs": [
+      "Evaluación",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Prueba de Economía — 1.º de Bachillerato</span>"
+    ]
+  }
+]

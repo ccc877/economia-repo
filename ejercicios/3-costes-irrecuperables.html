@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Costes irrecuperables, coste de oportunidad y tipos de bienes – Ejercicios de Economía</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-macro-micro-normativa-positiva.html">Conceptos fundamentales</a></li><li class="breadcrumb-item"><a href="./3-costes-irrecuperables.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Ejercicios de Economía</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios del primer trimestre</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Conceptos fundamentales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-macro-micro-normativa-positiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-costes-irrecuperables.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frank Price Production</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4-fpp-icaro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La frontera de posibilidades de producción de «Movilidad Ícaro»</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Eficiencia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-1-eficiencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-2-eficiencia-produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Eficiencia técnica y económica: ejercicios de consolidación</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Productividad</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6-1-productividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La productividad de los factores productivos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6-2-productividad-trabajo-capital.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Productividad del trabajo y del capital</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Costes y producción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-1-produccion-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-2-costes-optimo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Estructura de costes y óptimo de producción</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Umbral de rentabilidad</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8-repaso-eficiencia-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ejercicios de repaso: eficiencia y costes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-1-umbral-formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-2-umbral-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nivel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Prueba de Economía — 1.º de Bachillerato</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#el-dilema-del-concierto" id="toc-el-dilema-del-concierto" class="nav-link active" data-scroll-target="#el-dilema-del-concierto"><span class="header-section-number">2.1</span> El dilema del concierto</a></li>
+  <li><a href="#cuántas-horas-debo-estudiar" id="toc-cuántas-horas-debo-estudiar" class="nav-link" data-scroll-target="#cuántas-horas-debo-estudiar"><span class="header-section-number">2.2</span> ¿Cuántas horas debo estudiar?</a></li>
+  <li><a href="#el-laberinto-de-los-bienes" id="toc-el-laberinto-de-los-bienes" class="nav-link" data-scroll-target="#el-laberinto-de-los-bienes"><span class="header-section-number">2.3</span> El laberinto de los bienes</a>
+  <ul class="collapse">
+  <li><a href="#parte-a-clasificación-según-rivalidad-y-exclusión" id="toc-parte-a-clasificación-según-rivalidad-y-exclusión" class="nav-link" data-scroll-target="#parte-a-clasificación-según-rivalidad-y-exclusión">Parte A: clasificación según rivalidad y exclusión</a></li>
+  <li><a href="#parte-b-función-y-grado-de-transformación" id="toc-parte-b-función-y-grado-de-transformación" class="nav-link" data-scroll-target="#parte-b-función-y-grado-de-transformación">Parte B: función y grado de transformación</a></li>
+  </ul></li>
+  <li><a href="#autopsia-a-una-empresa-factores-y-retribuciones" id="toc-autopsia-a-una-empresa-factores-y-retribuciones" class="nav-link" data-scroll-target="#autopsia-a-una-empresa-factores-y-retribuciones"><span class="header-section-number">2.4</span> Autopsia a una empresa: factores y retribuciones</a></li>
+  <li><a href="#trazando-el-flujo-circular-de-la-renta" id="toc-trazando-el-flujo-circular-de-la-renta" class="nav-link" data-scroll-target="#trazando-el-flujo-circular-de-la-renta"><span class="header-section-number">2.5</span> Trazando el flujo circular de la renta</a></li>
+  <li><a href="#el-debate-de-la-isla-los-sistemas-económicos" id="toc-el-debate-de-la-isla-los-sistemas-económicos" class="nav-link" data-scroll-target="#el-debate-de-la-isla-los-sistemas-económicos"><span class="header-section-number">2.6</span> El debate de la isla: los sistemas económicos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-macro-micro-normativa-positiva.html">Conceptos fundamentales</a></li><li class="breadcrumb-item"><a href="./3-costes-irrecuperables.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="el-dilema-del-concierto" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="el-dilema-del-concierto"><span class="header-section-number">2.1</span> El dilema del concierto</h2>
+<p><em>(Coste de oportunidad y costes irrecuperables)</em></p>
+<p>Es viernes por la tarde. Tienes una entrada para ir al concierto de tu grupo favorito en otra localidad. La entrada te costó <strong>45 €</strong> hace un mes y las condiciones no permiten ni devolución ni reventa.</p>
+<p>Para asistir debes pagar un billete de tren de ida y vuelta que cuesta <strong>25 €</strong> y calcular un gasto en cena de <strong>15 €</strong> (si te quedas en casa cenas gratis porque la comida ya está comprada por tu familia).</p>
+<p>Justo antes de salir, un vecino de confianza te llama con una urgencia: te ofrece <strong>50 € en efectivo</strong> si cuidas a sus dos perros durante esa misma tarde y noche (de 18:00 a 23:00 h).</p>
+<p><strong>Cuestiones a resolver:</strong></p>
+<ol type="1">
+<li>Identifica qué gasto en este problema representa un <strong>coste irrecuperable (o coste hundido)</strong> y explica por qué no debería influir en la decisión que tomes hoy.</li>
+<li>Si finalmente decides <strong>ir al concierto</strong>:
+<ul>
+<li>¿Cuál es el gasto monetario adicional y directo en el que incurres hoy?</li>
+<li>¿Cuál es el valor económico total de tu <strong>coste de oportunidad</strong> por haber ido al concierto? <em>(Pista: considera tanto el dinero que sale de tu bolsillo hoy como el ingreso al que estás renunciando).</em></li>
+</ul></li>
+<li>Si decides <strong>quedarte en casa a cuidar a los perros</strong>, ¿cuál es tu coste de oportunidad?</li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>1. Identificación del coste irrecuperable</strong></p>
+<ul>
+<li><strong>El coste irrecuperable son los 45 € de la entrada.</strong> Se compró hace un mes y no admite cancelación, cambio ni reventa.</li>
+<li><strong>Justificación económica:</strong> vaya al concierto o se quede cuidando a los perros, los 45 € han salido definitivamente de su patrimonio. Un agente económico racional evalúa únicamente los costes y beneficios marginales —futuros— de cada alternativa, sin intentar amortizar decisiones pasadas irreversibles. Esto es lo que se conoce como la falacia del coste irrecuperable.</li>
+</ul>
+<p><strong>2. Si decides ir al concierto</strong></p>
+<ul>
+<li><p><strong>Gasto monetario directo incurrido hoy:</strong></p>
+<p><span class="math display">\[25 \text{ € (tren)} + 15 \text{ € (cena)} = \mathbf{40 \text{ €}}\]</span></p></li>
+<li><p><strong>Coste de oportunidad total:</strong></p>
+<p><span class="math display">\[\text{Gasto adicional incurrido} + \text{Ingresos a los que se renuncia} = 40 \text{ €} + 50 \text{ €} = \mathbf{90 \text{ €}}\]</span></p>
+<p>A nivel cualitativo, también se renuncia al descanso o a la tranquilidad de pasar la tarde en casa.</p></li>
+</ul>
+<p><strong>3. Si te quedas a cuidar a los perros</strong></p>
+<ul>
+<li><strong>Coste de oportunidad:</strong> la renuncia al disfrute y al bienestar personal que habría supuesto asistir al concierto con tus amistades.</li>
+</ul>
+</section>
+<hr>
+<section id="cuántas-horas-debo-estudiar" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="cuántas-horas-debo-estudiar"><span class="header-section-number">2.2</span> ¿Cuántas horas debo estudiar?</h2>
+<p><em>(El análisis marginal en la toma de decisiones)</em></p>
+<p>Dispones de 5 horas libres el domingo por la tarde para preparar el examen de Economía del lunes. Cada hora de estudio mejora tu calificación estimada (<strong>beneficio total</strong>), pero también incrementa tu cansancio físico y mental y te resta tiempo de ocio (<strong>coste total</strong>, medido en puntos de sacrificio).</p>
+<ol type="1">
+<li>Completa la tabla calculando el <strong>beneficio marginal (<span class="math inline">\(BMg\)</span>)</strong> y el <strong>coste marginal (<span class="math inline">\(CMg\)</span>)</strong> de cada hora de estudio adicional, e indica en la última columna si esa hora compensa o no:</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Horas de estudio (<span class="math inline">\(Q\)</span>)</th>
+<th style="text-align: center;">Nota esperada (<span class="math inline">\(BT\)</span>)</th>
+<th style="text-align: center;">Cansancio / sacrificio (<span class="math inline">\(CT\)</span>)</th>
+<th style="text-align: center;">Beneficio marginal (<span class="math inline">\(BMg = \Delta BT\)</span>)</th>
+<th style="text-align: center;">Coste marginal (<span class="math inline">\(CMg = \Delta CT\)</span>)</th>
+<th style="text-align: center;">¿Compensa estudiar esta hora? (Sí/No)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><span class="math inline">\(2,0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0,0\)</span></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><span class="math inline">\(5,0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1,0\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><span class="math inline">\(7,0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(3,0\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><span class="math inline">\(8,5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(6,0\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><span class="math inline">\(9,2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(10,0\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><span class="math inline">\(9,5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(15,0\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Observa la columna de beneficio marginal: ¿por qué disminuye conforme sumas más horas de estudio? ¿Qué principio económico explica este comportamiento?</li>
+<li>Aplicando la regla de decisión marginal (<span class="math inline">\(BMg \ge CMg\)</span>), ¿cuál es el <strong>número óptimo de horas</strong> que deberías estudiar el domingo? Justifica tu respuesta.</li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>1. Tabla resuelta</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Horas (<span class="math inline">\(Q\)</span>)</th>
+<th style="text-align: center;"><span class="math inline">\(BT\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CT\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(BMg\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CMg\)</span></th>
+<th style="text-align: center;">¿Compensa?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">2,0</td>
+<td style="text-align: center;">0,0</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">5,0</td>
+<td style="text-align: center;">1,0</td>
+<td style="text-align: center;"><span class="math inline">\(+3,0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+1,0\)</span></td>
+<td style="text-align: center;"><strong>Sí</strong> (<span class="math inline">\(BMg &gt; CMg\)</span>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">7,0</td>
+<td style="text-align: center;">3,0</td>
+<td style="text-align: center;"><span class="math inline">\(+2,0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+2,0\)</span></td>
+<td style="text-align: center;"><strong>Sí</strong> (<span class="math inline">\(BMg = CMg\)</span>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">8,5</td>
+<td style="text-align: center;">6,0</td>
+<td style="text-align: center;"><span class="math inline">\(+1,5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+3,0\)</span></td>
+<td style="text-align: center;"><strong>No</strong> (<span class="math inline">\(BMg &lt; CMg\)</span>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">9,2</td>
+<td style="text-align: center;">10,0</td>
+<td style="text-align: center;"><span class="math inline">\(+0,7\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+4,0\)</span></td>
+<td style="text-align: center;"><strong>No</strong> (<span class="math inline">\(BMg &lt; CMg\)</span>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">9,5</td>
+<td style="text-align: center;">15,0</td>
+<td style="text-align: center;"><span class="math inline">\(+0,3\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+5,0\)</span></td>
+<td style="text-align: center;"><strong>No</strong> (<span class="math inline">\(BMg &lt; CMg\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Disminución del beneficio marginal</strong></p>
+<ul>
+<li>Obedece a la <strong>ley de rendimientos decrecientes</strong>. En las primeras horas de estudio la mente asimila los conceptos esenciales con rapidez; a medida que transcurre el tiempo, la fatiga cognitiva acumulada reduce el rendimiento por unidad de tiempo, de modo que cada hora extra aporta una ganancia de nota cada vez menor.</li>
+</ul>
+<p><strong>3. Decisión óptima</strong></p>
+<ul>
+<li><strong>El número óptimo de horas es de 2 horas.</strong></li>
+<li><strong>Justificación:</strong> la regla marginal establece que una actividad debe continuarse mientras el <span class="math inline">\(BMg \ge CMg\)</span>. En la hora 2 se cumple el equilibrio (<span class="math inline">\(BMg = 2,0 = CMg = 2,0\)</span>). En la hora 3 el coste marginal (<span class="math inline">\(3,0\)</span>) duplica al beneficio marginal (<span class="math inline">\(1,5\)</span>), reduciendo el bienestar neto global.</li>
+</ul>
+</section>
+<hr>
+<section id="el-laberinto-de-los-bienes" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="el-laberinto-de-los-bienes"><span class="header-section-number">2.3</span> El laberinto de los bienes</h2>
+<p><em>(Tipologías económicas, rivalidad y exclusión)</em></p>
+<section id="parte-a-clasificación-según-rivalidad-y-exclusión" class="level3">
+<h3 class="anchored" data-anchor-id="parte-a-clasificación-según-rivalidad-y-exclusión">Parte A: clasificación según rivalidad y exclusión</h3>
+<p>Clasifica los siguientes 8 casos ubicándolos en el cuadrante que les corresponda:</p>
+<ol type="1">
+<li>Una manzana comprada en el supermercado.</li>
+<li>Una autopista de peaje a las 3:00 de la madrugada (sin tráfico).</li>
+<li>La señal de radio convencional en frecuencia modulada (FM).</li>
+<li>Un banco de atunes en aguas internacionales del océano Atlántico.</li>
+<li>El alumbrado público de las calles de tu municipio.</li>
+<li>Una suscripción mensual a Spotify.</li>
+<li>Los pastos comunales de una sierra donde cualquier ganadero puede soltar sus vacas.</li>
+<li>Una sudadera con capucha.</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><strong>Excluible</strong> (se puede impedir su uso a quien no pague)</th>
+<th style="text-align: left;"><strong>No excluible</strong> (no se puede impedir el acceso a nadie)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Rival</strong><br><em>(su consumo reduce la cantidad disponible para otros)</em></td>
+<td style="text-align: left;"><strong>Bien privado</strong></td>
+<td style="text-align: left;"><strong>Recurso común</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>No rival</strong><br><em>(el uso por una persona no reduce la cantidad disponible)</em></td>
+<td style="text-align: left;"><strong>Bien club</strong></td>
+<td style="text-align: left;"><strong>Bien público puro</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Pregunta de reflexión:</strong> ¿por qué los recursos comunes corren un riesgo permanente de sobreexplotación o agotamiento si el Estado no establece normas de uso? ¿Cómo se conoce este problema en economía?</li>
+</ul>
+</section>
+<section id="parte-b-función-y-grado-de-transformación" class="level3">
+<h3 class="anchored" data-anchor-id="parte-b-función-y-grado-de-transformación">Parte B: función y grado de transformación</h3>
+<p>Indica para cada elemento si se trata de un bien <strong>de consumo</strong> o <strong>de capital</strong>, y si es <strong>intermedio</strong> o <strong>final</strong>:</p>
+<ol type="1">
+<li>La harina adquirida por una panificadora industrial.</li>
+<li>El horno industrial utilizado por esa misma panificadora.</li>
+<li>Una barra de pan comprada por una familia para almorzar.</li>
+<li>Una furgoneta comprada por un electricista para transportar sus herramientas de trabajo.</li>
+</ol>
+</section>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>Parte A: matriz de rivalidad y exclusión</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><strong>Excluible</strong></th>
+<th style="text-align: left;"><strong>No excluible</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Rival</strong></td>
+<td style="text-align: left;"><strong>Bien privado:</strong><br>1. La manzana del supermercado.<br>8. La sudadera con capucha.</td>
+<td style="text-align: left;"><strong>Recurso común:</strong><br>4. El banco de atunes atlántico.<br>7. Los pastos comunales de la sierra.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>No rival</strong></td>
+<td style="text-align: left;"><strong>Bien club:</strong><br>2. La autopista de peaje sin tráfico.<br>6. La suscripción a Spotify.</td>
+<td style="text-align: left;"><strong>Bien público puro:</strong><br>3. La señal de radio FM.<br>5. El alumbrado público.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Reflexión (tragedia de los bienes comunales):</strong> los recursos comunes carecen de barreras de acceso —no hay exclusión—, pero el consumo de un usuario agota el recurso para los demás —hay rivalidad—. Al no existir un precio de mercado ni derechos de propiedad definidos, los usuarios individuales maximizan su extracción a corto plazo antes de que lo hagan otros, lo que provoca la degradación o extinción del recurso.</li>
+</ul>
+<p><strong>Parte B: función y grado de elaboración</strong></p>
+<ol type="1">
+<li><strong>Harina industrial:</strong> de capital (producción) / intermedia, porque se transforma por completo en el producto final.</li>
+<li><strong>Horno industrial:</strong> de capital / final, equipo duradero que forma parte del inmovilizado técnico.</li>
+<li><strong>Barra de pan en el hogar:</strong> de consumo / final, destinada a la satisfacción directa de una necesidad familiar.</li>
+<li><strong>Furgoneta del electricista:</strong> de capital / final, medio de transporte necesario para prestar servicios.</li>
+</ol>
+</section>
+<hr>
+<section id="autopsia-a-una-empresa-factores-y-retribuciones" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="autopsia-a-una-empresa-factores-y-retribuciones"><span class="header-section-number">2.4</span> Autopsia a una empresa: factores y retribuciones</h2>
+<p><em>(Tierra, trabajo, capital e iniciativa empresarial)</em></p>
+<p>Lee con atención el siguiente caso sobre la apertura de un negocio:</p>
+<blockquote class="blockquote">
+<p><em>Mario ha alquilado un local comercial en una calle céntrica por 1.400 € al mes. Para poner en marcha su pizzería, solicitó un préstamo bancario de 30.000 € por el que abona intereses periódicos a la entidad financiera. Con esos fondos adquirió un horno de leña profesional, mobiliario de comedor y una cámara frigorífica. Cada semana compra ingredientes frescos a productores locales (harina, agua, tomates, hortalizas y leña). Tiene contratados a dos pizzeros y dos camareros a jornada completa con un sueldo fijado por convenio. Mario no cocina ni atiende mesas: él ideó el modelo de negocio, diseñó la carta, asumió el riesgo de invertir sus ahorros y, al cierre del ejercicio anual, tras abonar salarios, facturas, compras e impuestos, obtiene el beneficio neto de la actividad.</em></p>
+</blockquote>
+<p><strong>Cuestiones a resolver:</strong></p>
+<ol type="1">
+<li>Extrae del texto al menos <strong>dos ejemplos concretos</strong> correspondientes a cada uno de los cuatro factores productivos:
+<ul>
+<li><strong>Tierra (recursos naturales):</strong></li>
+<li><strong>Trabajo:</strong></li>
+<li><strong>Capital (físico):</strong></li>
+<li><strong>Iniciativa emprendedora:</strong></li>
+</ul></li>
+<li>Completa la correspondencia entre factores productivos, la denominación técnica de su remuneración y el agente concreto del texto que la percibe:</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Factor productivo</th>
+<th style="text-align: left;">Nombre económico de su renta</th>
+<th style="text-align: left;">¿Quién la percibe en el caso de la pizzería?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Tierra</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Trabajo</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Capital</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iniciativa empresarial</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Mario guarda 4.000 € en efectivo dentro de la caja fuerte del local para atender posibles gastos imprevistos. ¿Constituye ese dinero en metálico un «factor de producción capital» en sentido estricto? Razona tu respuesta distinguiendo entre capital físico y capital financiero.</li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>1. Factores productivos presentes en el texto</strong></p>
+<ul>
+<li><strong>Tierra (recursos naturales):</strong> el suelo donde se asienta el local comercial; los ingredientes frescos agrícolas (harina, tomates, hortalizas); el agua; la madera y la leña para el horno.</li>
+<li><strong>Trabajo:</strong> la mano de obra física e intelectual de los dos cocineros y de los dos camareros.</li>
+<li><strong>Capital (físico):</strong> el horno de leña profesional, las mesas, las sillas y el mobiliario del comedor, y la cámara frigorífica.</li>
+<li><strong>Iniciativa emprendedora:</strong> Mario, por el diseño de la idea empresarial, la asunción del riesgo económico y la coordinación de recursos productivos.</li>
+</ul>
+<p><strong>2. Relación de rentas</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Factor productivo</th>
+<th style="text-align: left;">Denominación económica de su renta</th>
+<th style="text-align: left;">Agente perceptor en el caso analizado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Tierra</strong></td>
+<td style="text-align: left;"><strong>Alquiler</strong> (o renta de la tierra)</td>
+<td style="text-align: left;">El propietario particular del local</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Trabajo</strong></td>
+<td style="text-align: left;"><strong>Salario</strong></td>
+<td style="text-align: left;">Los dos cocineros y los dos camareros</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Capital</strong></td>
+<td style="text-align: left;"><strong>Interés</strong></td>
+<td style="text-align: left;">La entidad bancaria que otorgó el préstamo</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iniciativa empresarial</strong></td>
+<td style="text-align: left;"><strong>Beneficio</strong></td>
+<td style="text-align: left;">Mario, como promotor del negocio</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Dinero en metálico frente a capital productivo</strong></p>
+<ul>
+<li><strong>No constituye un factor de producción capital.</strong> El factor capital comprende exclusivamente el <strong>capital físico o real</strong> (maquinaria, infraestructuras, herramientas). El dinero en metálico es <strong>capital financiero</strong>: un medio de cambio y activo líquido que sirve para adquirir factores de producción, pero que por sí mismo no participa directamente en la transformación técnica de bienes o servicios.</li>
+</ul>
+</section>
+<hr>
+<section id="trazando-el-flujo-circular-de-la-renta" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="trazando-el-flujo-circular-de-la-renta"><span class="header-section-number">2.5</span> Trazando el flujo circular de la renta</h2>
+<p><em>(Relaciones entre familias, empresas y sector público)</em></p>
+<p>Analiza las siguientes transacciones cotidianas completando la tabla:</p>
+<ol type="1">
+<li>Sofía abona 22 € con su tarjeta bancaria por un bono mensual de transporte público.</li>
+<li>Una empresa de logística abona una nómina de 1.400 € a Carlos, que trabaja como mozo de almacén.</li>
+<li>El Ministerio de Transportes paga 120.000 € a la constructora Pavimentos del Sur por reparar un tramo de autovía.</li>
+<li>Una zapatería transfiere 900 € al dueño particular del bajo comercial en concepto de alquiler del mes.</li>
+<li>La Agencia Tributaria ingresa una transferencia de 480 € a Elena correspondiente al subsidio por desempleo.</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Transacción</th>
+<th style="text-align: left;">Agentes económicos que intervienen</th>
+<th style="text-align: left;">¿Mercado de bienes o mercado de factores? <em>(o relación directa con el Estado)</em></th>
+<th style="text-align: left;">Flujo real <em>(bienes, servicios o factores aportados)</em></th>
+<th style="text-align: left;">Flujo monetario <em>(sentido y cuantía del dinero)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1. Bono de transporte</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2. Nómina de Carlos</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3. Reparación de la autovía</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4. Alquiler del bajo</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5. Subsidio de Elena</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Transacción</th>
+<th style="text-align: left;">Agentes</th>
+<th style="text-align: left;">Mercado o vía institucional</th>
+<th style="text-align: left;">Flujo real</th>
+<th style="text-align: left;">Flujo monetario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1. Bono de transporte</strong></td>
+<td style="text-align: left;">Familia (Sofía) y empresa de transporte</td>
+<td style="text-align: left;"><strong>Mercado de bienes y servicios</strong></td>
+<td style="text-align: left;">Servicio de transporte y movilidad urbana prestado a Sofía</td>
+<td style="text-align: left;">Pago de 22 € hacia la empresa de transporte</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2. Nómina de Carlos</strong></td>
+<td style="text-align: left;">Familia (Carlos) y empresa de logística</td>
+<td style="text-align: left;"><strong>Mercado de factores productivos</strong> (mercado laboral)</td>
+<td style="text-align: left;">Prestación de mano de obra y horas de trabajo en el almacén</td>
+<td style="text-align: left;">Retribución salarial de 1.400 € abonada por la empresa a Carlos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3. Reparación de la autovía</strong></td>
+<td style="text-align: left;">Sector público (Ministerio) y empresa constructora</td>
+<td style="text-align: left;"><strong>Mercado de bienes y servicios</strong> (contratación pública)</td>
+<td style="text-align: left;">Obra civil, pavimentación y adecuación de la infraestructura vial</td>
+<td style="text-align: left;">Desembolso de 120.000 € de fondos públicos hacia la constructora</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4. Alquiler del bajo</strong></td>
+<td style="text-align: left;">Empresa (zapatería) y familia (propietario inmobiliario)</td>
+<td style="text-align: left;"><strong>Mercado de factores productivos</strong> (factor tierra)</td>
+<td style="text-align: left;">Cesión temporal del espacio físico del local para actividad comercial</td>
+<td style="text-align: left;">Pago del alquiler de 900 € de la zapatería al arrendador</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5. Subsidio de Elena</strong></td>
+<td style="text-align: left;">Sector público (Estado) y familia (Elena)</td>
+<td style="text-align: left;"><strong>Sector público directo</strong>, sin mercado</td>
+<td style="text-align: left;">Inexistente: no hay contraprestación inmediata de bienes o servicios</td>
+<td style="text-align: left;">Transferencia asistencial de 480 € del Estado hacia Elena</td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr>
+<section id="el-debate-de-la-isla-los-sistemas-económicos" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="el-debate-de-la-isla-los-sistemas-económicos"><span class="header-section-number">2.6</span> El debate de la isla: los sistemas económicos</h2>
+<p><em>(Las tres preguntas básicas: qué, cómo y para quién)</em></p>
+<p>Un grupo de 500 personas naufraga en una isla remota y fértil pero deshabitada. No hay posibilidad de rescate inmediato, por lo que deciden organizar su economía. Rápidamente surgen tres propuestas defendidas por distintos colectivos:</p>
+<ul>
+<li><strong>Propuesta A (mercado puro):</strong> cada individuo es libre de apropiarse de la tierra y las herramientas que consiga delimitar primero. Quien desee pescado, madera o medicinas deberá pagar su precio en conchas recolectadas o mediante trueque. No habrá servicios asistenciales ni normas de reparto: quien enferme o no pueda faenar dependerá de la caridad privada.</li>
+<li><strong>Propuesta B (planificación central):</strong> todos los recursos (suelo, agua, herramientas y cabañas) pasan a ser propiedad colectiva. Una asamblea técnica —el «Comité de Planificación»— fijará cada mañana las tareas laborales de cada náufrago, las horas obligatorias de trabajo y repartirá por la noche raciones alimentarias idénticas para todos.</li>
+<li><strong>Propuesta C (economía mixta):</strong> se reconoce la propiedad individual sobre pequeñas parcelas, aperos y talleres domésticos, permitiendo el intercambio libre de mercancías entre particulares. No obstante, se establece una contribución obligatoria (un 15 % de las cosechas y capturas) para financiar un dispensario médico común y un almacén de reserva ante sequías y temporales.</li>
+</ul>
+<p><strong>Cuestiones a resolver en equipo:</strong></p>
+<ol type="1">
+<li>Completa la matriz indicando cómo respondería cada propuesta a las tres decisiones económicas fundamentales:</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Pregunta fundamental</th>
+<th style="text-align: left;">Propuesta A (mercado)</th>
+<th style="text-align: left;">Propuesta B (planificación)</th>
+<th style="text-align: left;">Propuesta C (mixta)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>¿Qué producir?</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>¿Cómo producir?</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>¿Para quién producir?</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Señala el <strong>principal fallo o riesgo</strong> que afrontaría la sociedad insular si aplica de forma estricta la <strong>propuesta A</strong>.</li>
+<li>Señala el <strong>principal fallo o riesgo</strong> de gestión e incentivos que surgiría si se aprueba la <strong>propuesta B</strong>.</li>
+<li>Argumenta por qué prácticamente todos los países con altos índices de desarrollo humano han adoptado esquemas organizativos basados en la <strong>propuesta C</strong>.</li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>1. Cuadro comparativo de sistemas</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Pregunta fundamental</th>
+<th style="text-align: left;">Propuesta A (mercado puro)</th>
+<th style="text-align: left;">Propuesta B (planificación central)</th>
+<th style="text-align: left;">Propuesta C (economía mixta)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>¿Qué producir?</strong></td>
+<td style="text-align: left;">Los bienes demandados por quienes disponen de medios de pago (conchas)</td>
+<td style="text-align: left;">Lo fijado por el Comité técnico según las metas del plan</td>
+<td style="text-align: left;">Bienes de mercado según la demanda, complementados con bienes y reservas públicas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>¿Cómo producir?</strong></td>
+<td style="text-align: left;">Cada titular privado con las técnicas que maximicen su margen</td>
+<td style="text-align: left;">Mediante asignación y métodos de trabajo obligatorios regulados centralmente</td>
+<td style="text-align: left;">Iniciativa privada buscando eficiencia, bajo regulación y directrices comunes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>¿Para quién producir?</strong></td>
+<td style="text-align: left;">Para quien pueda pagar el precio en el mercado</td>
+<td style="text-align: left;">Reparto homogéneo por racionamiento igualitario</td>
+<td style="text-align: left;">Según la capacidad adquisitiva, garantizando un mínimo vital solidario vía impuestos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Riesgo de la propuesta A</strong></p>
+<ul>
+<li><strong>Extrema desigualdad social y desprotección.</strong> Quienes sufran accidentes, caigan enfermas o carezcan de fuerza física quedarán desprovistos de recursos de subsistencia, y no se proveerán bienes públicos esenciales por falta de rentabilidad privada directa.</li>
+</ul>
+<p><strong>3. Riesgo de la propuesta B</strong></p>
+<ul>
+<li><strong>Desincentivo generalizado e ineficiencia asignativa.</strong> Si la asignación de alimentos es fija e independiente del esfuerzo individual, los náufragos reducen su productividad. Además, el Comité carece de mecanismos de precios para calibrar con precisión las necesidades reales de cada habitante, lo que genera desabastecimiento o despilfarro.</li>
+</ul>
+<p><strong>4. Por qué funciona el modelo mixto</strong></p>
+<ul>
+<li>Combina la <strong>eficiencia productiva y el estímulo a la innovación</strong> propios del mercado libre —gracias al sistema de precios y a los incentivos de la propiedad privada— con la <strong>equidad y estabilidad</strong> que aporta la intervención pública: financiación de la sanidad, infraestructuras y amortiguación de crisis mediante la redistribución fiscal.</li>
+</ul>
+</section>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

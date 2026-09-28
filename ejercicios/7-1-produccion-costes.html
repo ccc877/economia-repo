@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Economía</title>
+<title>8&nbsp; Producción, costes y maximización del beneficio a corto plazo – Ejercicios de Economía</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tema-01.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,11 +74,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Recursos de Economía</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7-1-produccion-costes.html">Costes y producción</a></li><li class="breadcrumb-item"><a href="./7-1-produccion-costes.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -100,10 +127,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Economía</a> 
+      <a href="./">Ejercicios de Economía</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -115,14 +142,14 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Recursos de Economía</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios del primer trimestre</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 1. Decisión, comportamiento y método</span></a>
+ <span class="menu-text">Conceptos fundamentales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -130,20 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span></a>
+  <a href="./2-macro-micro-normativa-positiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Necesidades, producción y sistemas económicos</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La economía del comportamiento</span></span></a>
+  <a href="./3-costes-irrecuperables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></span></a>
   </div>
 </li>
       </ul>
@@ -151,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 2. Microeconomía y mercados</span></a>
+ <span class="menu-text">Frank Price Production</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -159,26 +180,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">La empresa y la producción</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Los fallos del mercado y el mercado de trabajo</span></span></a>
+  <a href="./4-fpp-icaro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La frontera de posibilidades de producción de «Movilidad Ícaro»</span></span></a>
   </div>
 </li>
       </ul>
@@ -186,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 3. Macroeconomía y desarrollo</span></a>
+ <span class="menu-text">Eficiencia</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -194,14 +197,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">La macroeconomía y el Producto Interior Bruto</span></span></a>
+  <a href="./5-1-eficiencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">El desarrollo económico</span></span></a>
+  <a href="./5-2-eficiencia-produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Eficiencia técnica y económica: ejercicios de consolidación</span></span></a>
   </div>
 </li>
       </ul>
@@ -209,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 4. Sistema financiero y política monetaria</span></a>
+ <span class="menu-text">Productividad</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -217,14 +220,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El dinero, el sistema financiero y las finanzas personales</span></span></a>
+  <a href="./6-1-productividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La productividad de los factores productivos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Los precios, la inflación y la política monetaria</span></span></a>
+  <a href="./6-2-productividad-trabajo-capital.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Productividad del trabajo y del capital</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 5. Política fiscal y sector público</span></a>
+ <span class="menu-text">Costes y producción</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -240,8 +243,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Las finanzas públicas y la política fiscal</span></span></a>
+  <a href="./7-1-produccion-costes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-2-costes-optimo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Estructura de costes y óptimo de producción</span></span></a>
   </div>
 </li>
       </ul>
@@ -249,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 6. Comercio, globalización y retos actuales</span></a>
+ <span class="menu-text">Umbral de rentabilidad</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -257,14 +266,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">El comercio internacional</span></span></a>
+  <a href="./8-repaso-eficiencia-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ejercicios de repaso: eficiencia y costes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La globalización y los retos de la economía actual</span></span></a>
+  <a href="./9-1-umbral-formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-2-umbral-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nivel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Prueba de Economía — 1.º de Bachillerato</span></span></a>
   </div>
 </li>
       </ul>
@@ -279,44 +311,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#recursos-de-economía" id="toc-recursos-de-economía" class="nav-link active" data-scroll-target="#recursos-de-economía">Recursos de Economía</a>
-  <ul class="collapse">
-  <li><a href="#apuntes" id="toc-apuntes" class="nav-link" data-scroll-target="#apuntes">Apuntes</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método" id="toc-unidad-1.-decisión-comportamiento-y-método" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados" id="toc-unidad-2.-microeconomía-y-mercados" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#unidad-3.-macroeconomía-y-desarrollo" id="toc-unidad-3.-macroeconomía-y-desarrollo" class="nav-link" data-scroll-target="#unidad-3.-macroeconomía-y-desarrollo">Unidad 3. Macroeconomía y desarrollo</a></li>
-  <li><a href="#unidad-4.-sistema-financiero-y-política-monetaria" id="toc-unidad-4.-sistema-financiero-y-política-monetaria" class="nav-link" data-scroll-target="#unidad-4.-sistema-financiero-y-política-monetaria">Unidad 4. Sistema financiero y política monetaria</a></li>
-  <li><a href="#unidad-5.-política-fiscal-y-sector-público" id="toc-unidad-5.-política-fiscal-y-sector-público" class="nav-link" data-scroll-target="#unidad-5.-política-fiscal-y-sector-público">Unidad 5. Política fiscal y sector público</a></li>
-  <li><a href="#unidad-6.-comercio-globalización-y-retos-actuales" id="toc-unidad-6.-comercio-globalización-y-retos-actuales" class="nav-link" data-scroll-target="#unidad-6.-comercio-globalización-y-retos-actuales">Unidad 6. Comercio, globalización y retos actuales</a></li>
-  </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios">Ejercicios</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método-1" id="toc-unidad-1.-decisión-comportamiento-y-método-1" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método-1">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados-1" id="toc-unidad-2.-microeconomía-y-mercados-1" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados-1">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación">Evaluación</a></li>
-  <li><a href="#unidades-3-a-6" id="toc-unidades-3-a-6" class="nav-link" data-scroll-target="#unidades-3-a-6">Unidades 3 a 6</a></li>
-  </ul></li>
-  <li><a href="#documentos-pdf" id="toc-documentos-pdf" class="nav-link" data-scroll-target="#documentos-pdf">Documentos PDF</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método-2" id="toc-unidad-1.-decisión-comportamiento-y-método-2" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método-2">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados-2" id="toc-unidad-2.-microeconomía-y-mercados-2" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados-2">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#unidad-3.-macroeconomía-y-desarrollo-1" id="toc-unidad-3.-macroeconomía-y-desarrollo-1" class="nav-link" data-scroll-target="#unidad-3.-macroeconomía-y-desarrollo-1">Unidad 3. Macroeconomía y desarrollo</a></li>
-  <li><a href="#unidad-4.-sistema-financiero-y-política-monetaria-1" id="toc-unidad-4.-sistema-financiero-y-política-monetaria-1" class="nav-link" data-scroll-target="#unidad-4.-sistema-financiero-y-política-monetaria-1">Unidad 4. Sistema financiero y política monetaria</a></li>
-  <li><a href="#unidad-5.-política-fiscal-y-sector-público-1" id="toc-unidad-5.-política-fiscal-y-sector-público-1" class="nav-link" data-scroll-target="#unidad-5.-política-fiscal-y-sector-público-1">Unidad 5. Política fiscal y sector público</a></li>
-  <li><a href="#unidad-6.-comercio-globalización-y-retos-actuales-1" id="toc-unidad-6.-comercio-globalización-y-retos-actuales-1" class="nav-link" data-scroll-target="#unidad-6.-comercio-globalización-y-retos-actuales-1">Unidad 6. Comercio, globalización y retos actuales</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#actividades-prácticas" id="toc-actividades-prácticas" class="nav-link active" data-scroll-target="#actividades-prácticas"><span class="header-section-number">8.1</span> Actividades prácticas</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7-1-produccion-costes.html">Costes y producción</a></li><li class="breadcrumb-item"><a href="./7-1-produccion-costes.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Economía</h1>
-<p class="subtitle lead">1.º de Bachillerato</p>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></h1>
 </div>
 
 
@@ -333,175 +337,284 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="recursos-de-economía" class="level1 unnumbered">
-<h1 class="unnumbered">Recursos de Economía</h1>
-<div class="resource-intro">
-<p>En esta página encontrarás los materiales de Economía de 1.º de Bachillerato. Los apuntes y los ejercicios del primer trimestre ya están disponibles; los ejercicios de los trimestres siguientes y los documentos complementarios se irán incorporando a lo largo del curso.</p>
-</div>
-<div class="resource-navigation">
-<p><a href="#apuntes">Apuntes</a></p>
-<p><a href="#ejercicios">Ejercicios</a></p>
-<p><a href="#documentos-pdf">Documentos PDF</a></p>
-</div>
-<section id="apuntes" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="apuntes">Apuntes</h2>
-<p>Cada tema incluye explicaciones, definiciones, ejemplos y gráficos.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método">Unidad 1. Decisión, comportamiento y método</h3>
+<section class="level2 unnumbered unlisted callout-note" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Fórmulas de producción y costes a corto plazo</h2>
+<p>A corto plazo, al menos un factor de producción permanece fijo (el capital o las instalaciones, <span class="math inline">\(K\)</span>), mientras que otros son variables (el trabajo, <span class="math inline">\(L\)</span>):</p>
 <ul>
-<li><a href="tema-01.html">La economía: concepto, método y ramas</a></li>
-<li><a href="tema-02.html">Necesidades, producción y sistemas económicos</a></li>
-<li><a href="tema-03.html">La economía del comportamiento</a></li>
-</ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados">Unidad 2. Microeconomía y mercados</h3>
+<li><strong>Magnitudes de producción:</strong>
 <ul>
-<li><a href="tema-04.html">La empresa y la producción</a></li>
-<li><a href="tema-05.html">El mercado: oferta, demanda y elasticidad</a></li>
-<li><a href="tema-06.html">Las estructuras de mercado</a></li>
-<li><a href="tema-07.html">Los fallos del mercado y el mercado de trabajo</a></li>
-</ul>
-</section>
-<section id="unidad-3.-macroeconomía-y-desarrollo" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-3.-macroeconomía-y-desarrollo">Unidad 3. Macroeconomía y desarrollo</h3>
-<ul>
-<li><a href="tema-08.html">La macroeconomía y el Producto Interior Bruto</a></li>
-<li><a href="tema-09.html">El desarrollo económico</a></li>
-</ul>
-</section>
-<section id="unidad-4.-sistema-financiero-y-política-monetaria" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-4.-sistema-financiero-y-política-monetaria">Unidad 4. Sistema financiero y política monetaria</h3>
-<ul>
-<li><a href="tema-10.html">El dinero, el sistema financiero y las finanzas personales</a></li>
-<li><a href="tema-11.html">Los precios, la inflación y la política monetaria</a></li>
-</ul>
-</section>
-<section id="unidad-5.-política-fiscal-y-sector-público" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-5.-política-fiscal-y-sector-público">Unidad 5. Política fiscal y sector público</h3>
-<ul>
-<li><a href="tema-12.html">Las finanzas públicas y la política fiscal</a></li>
-</ul>
-</section>
-<section id="unidad-6.-comercio-globalización-y-retos-actuales" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-6.-comercio-globalización-y-retos-actuales">Unidad 6. Comercio, globalización y retos actuales</h3>
-<ul>
-<li><a href="tema-13.html">El comercio internacional</a></li>
-<li><a href="tema-14.html">La globalización y los retos de la economía actual</a></li>
-</ul>
-</section>
-</section>
-<section id="ejercicios" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="ejercicios">Ejercicios</h2>
-<p>Los ejercicios del primer trimestre están disponibles por tema, con la solución de cada uno desplegable justo debajo de su enunciado. El <a href="ejercicios/index.html">cuaderno completo</a> está siguiente, con todo el temario en orden y el índice navegable.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método-1">Unidad 1. Decisión, comportamiento y método</h3>
-<ul>
-<li><strong>Ejercicios: La economía: concepto, método y ramas</strong>
-<ul>
-<li><a href="ejercicios/2-macro-micro-normativa-positiva.html">Microeconomía y macroeconomía; economía normativa y positiva</a></li>
+<li><strong>Producto medio (<span class="math inline">\(PMe_L\)</span>):</strong> rendimiento por trabajador <span class="math inline">\(\rightarrow PMe_L = \dfrac{Q}{L}\)</span></li>
+<li><strong>Producto marginal (<span class="math inline">\(PMg_L\)</span>):</strong> producción adicional que aporta el último trabajador incorporado <span class="math inline">\(\rightarrow PMg_L = \dfrac{\Delta Q}{\Delta L}\)</span></li>
 </ul></li>
-<li><strong>Ejercicios: Necesidades, producción y sistemas económicos</strong>
+<li><strong>Magnitudes de costes:</strong>
 <ul>
-<li><a href="ejercicios/3-costes-irrecuperables.html">Costes irrecuperables, coste de oportunidad y tipos de bienes</a></li>
-<li><a href="ejercicios/4-fpp-icaro.html">La frontera de posibilidades de producción de «Movilidad Ícaro»</a></li>
+<li><strong>Coste total (<span class="math inline">\(CT\)</span>):</strong> suma de costes fijos y variables <span class="math inline">\(\rightarrow CT = CF + CV\)</span></li>
+<li><strong>Coste medio (<span class="math inline">\(CMe\)</span>):</strong> coste por unidad fabricada <span class="math inline">\(\rightarrow CMe = \dfrac{CT}{Q}\)</span></li>
+<li><strong>Coste marginal (<span class="math inline">\(CMg\)</span>):</strong> coste de producir una unidad adicional <span class="math inline">\(\rightarrow CMg = \dfrac{\Delta CT}{\Delta Q}\)</span></li>
 </ul></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados-1">Unidad 2. Microeconomía y mercados</h3>
+<li><strong>Resultados económicos:</strong>
 <ul>
-<li><strong>Ejercicios: La empresa y la producción</strong>
-<ul>
-<li><a href="ejercicios/5-1-eficiencia.html">Eficiencia técnica y económica</a></li>
-<li><a href="ejercicios/5-2-eficiencia-produccion.html">Consolidación de eficiencia técnica y económica</a></li>
-<li><a href="ejercicios/6-1-productividad.html">Productividad de los factores productivos</a></li>
-<li><a href="ejercicios/6-2-productividad-trabajo-capital.html">Productividad del trabajo y del capital</a></li>
-<li><a href="ejercicios/7-1-produccion-costes.html">Producción, costes y maximización del beneficio a corto plazo</a></li>
-<li><a href="ejercicios/7-2-costes-optimo.html">Estructura de costes y óptimo de producción</a></li>
-<li><a href="ejercicios/8-repaso-eficiencia-costes.html">Repaso de eficiencia y costes</a></li>
-<li><a href="ejercicios/9-1-umbral-formula.html">Umbral de rentabilidad: de los beneficios al punto muerto</a></li>
-<li><a href="ejercicios/9-2-umbral-basico.html">Umbral de rentabilidad: cálculo y representación gráfica</a></li>
-</ul></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="evaluación" class="level3">
-<h3 class="anchored" data-anchor-id="evaluación">Evaluación</h3>
-<ul>
-<li><strong>Prueba de Economía — 1.º de Bachillerato</strong>
-<ul>
-<li><a href="ejercicios/nivel.html">Enunciado completo con solucionario desplegable</a></li>
+<li><strong>Ingreso total (<span class="math inline">\(IT\)</span>):</strong> <span class="math inline">\(IT = P \cdot Q\)</span></li>
+<li><strong>Beneficio (<span class="math inline">\(B\)</span>):</strong> <span class="math inline">\(B = IT - CT\)</span></li>
 </ul></li>
 </ul>
 </section>
-<section id="unidades-3-a-6" class="level3">
-<h3 class="anchored" data-anchor-id="unidades-3-a-6">Unidades 3 a 6</h3>
+<hr>
+<section class="level2 unnumbered unlisted callout-tip" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Claves teóricas para el análisis</h2>
+<ol type="1">
+<li><strong>Ley de rendimientos decrecientes:</strong> Al añadir trabajadores sucesivamente a unas instalaciones fijas, la producción al principio crece a ritmo creciente por la división y especialización del trabajo (<span class="math inline">\(PMg\)</span> aumenta). Sin embargo, llega un momento a partir del cual los factores fijos se saturan y los nuevos trabajadores estorban, de modo que la producción total crece a ritmo decreciente (<span class="math inline">\(PMg\)</span> disminuye).</li>
+<li><strong>Relación inversa entre <span class="math inline">\(PMg\)</span> y <span class="math inline">\(CMg\)</span>:</strong>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El desarrollo económico</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El comercio internacional</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span></li>
+<li>Si el <span class="math inline">\(PMg\)</span> es creciente, cada unidad extra de producto requiere menos esfuerzo y tiempo; por tanto, el <strong><span class="math inline">\(CMg\)</span> disminuye</strong>.</li>
+<li>Cuando entra en juego la ley de rendimientos decrecientes y el <span class="math inline">\(PMg\)</span> cae, cada unidad adicional resulta más difícil de obtener; por consiguiente, el <strong><span class="math inline">\(CMg\)</span> se dispara</strong>.</li>
+</ul></li>
+<li><strong>Regla de maximización del beneficio (<span class="math inline">\(P = CMg\)</span>):</strong>
+<ul>
+<li>La empresa obtiene <strong>beneficios positivos</strong> únicamente cuando el precio supera al coste medio (<span class="math inline">\(P &gt; CMe\)</span>).</li>
+<li>Para saber <strong>cuánto conviene producir</strong>, se compara el precio con el coste marginal: si <span class="math inline">\(P &gt; CMg\)</span>, fabricar esa unidad adicional aporta más ingresos que costes y el beneficio total sube. Si <span class="math inline">\(P &lt; CMg\)</span>, producirla genera pérdidas marginales y el beneficio global se reduce.</li>
+</ul></li>
+</ol>
+</section>
+<hr>
+<section id="actividades-prácticas" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="actividades-prácticas"><span class="header-section-number">8.1</span> Actividades prácticas</h2>
+<p><strong>1.</strong> Una empresa dedicada a la fabricación de balones de fútbol dispone de un local alquilado por 500 € al mes (coste fijo) y puede contratar entre 0 y 6 trabajadores, a los que abona un salario de 1000 € mensuales a cada uno (coste variable). El precio de venta en el mercado es de 10 € por balón. La evolución de la producción según la plantilla contratada es la siguiente:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Trabajadores (<span class="math inline">\(L\)</span>)</th>
+<th style="text-align: center;">Producción total en balones (<span class="math inline">\(Q\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">220</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">380</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">500</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">580</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">600</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>a)</strong> Reproduce y completa en tu cuaderno la tabla con las columnas: <span class="math inline">\(PMe\)</span>, <span class="math inline">\(PMg\)</span>, <span class="math inline">\(CF\)</span>, <span class="math inline">\(CV\)</span>, <span class="math inline">\(CT\)</span>, <span class="math inline">\(CMe\)</span>, <span class="math inline">\(CMg\)</span>, Precio (<span class="math inline">\(P\)</span>), <span class="math inline">\(IT\)</span> y Beneficio (<span class="math inline">\(B\)</span>).</li>
+<li><strong>b)</strong> Analiza la evolución del producto marginal (<span class="math inline">\(PMg\)</span>) e identifica las dos etapas de la producción: ¿a partir de qué trabajador se manifiesta la ley de rendimientos decrecientes?</li>
+<li><strong>c)</strong> Explica la relación gráfica y matemática que existe entre el producto marginal (<span class="math inline">\(PMg\)</span>) y el coste marginal (<span class="math inline">\(CMg\)</span>) a lo largo de toda la tabla.</li>
+<li><strong>d)</strong> ¿Qué número de trabajadores contratará la empresa para maximizar sus beneficios? Justifica la decisión aplicando la lógica marginal (<span class="math inline">\(P\)</span> frente a <span class="math inline">\(CMg\)</span>) y el umbral de rentabilidad (<span class="math inline">\(P\)</span> frente a <span class="math inline">\(CMe\)</span>).</li>
 </ul>
 </section>
-</section>
-<section id="documentos-pdf" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="documentos-pdf">Documentos PDF</h2>
-<p>Esta sección queda preparada para reunir fichas, esquemas y otros documentos descargables en PDF.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método-2" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método-2">Unidad 1. Decisión, comportamiento y método</h3>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span></li>
+<li><strong>a) Tabla completa:</strong></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(L\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(Q\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(PMe_L\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(PMg_L\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CF\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CV\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CT\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CMe\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(CMg\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(P\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(IT\)</span></th>
+<th style="text-align: center;">Beneficio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"><span class="math inline">\(-500\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: center;">1500</td>
+<td style="text-align: center;">15,00</td>
+<td style="text-align: center;">10,00</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: center;"><span class="math inline">\(-500\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">220</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">2500</td>
+<td style="text-align: center;">11,36</td>
+<td style="text-align: center;">8,33</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">2200</td>
+<td style="text-align: center;"><span class="math inline">\(-300\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">380</td>
+<td style="text-align: center;">126,67</td>
+<td style="text-align: center;">160</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">3000</td>
+<td style="text-align: center;">3500</td>
+<td style="text-align: center;">9,21</td>
+<td style="text-align: center;">6,25</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">3800</td>
+<td style="text-align: center;"><span class="math inline">\(+300\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">125</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">4000</td>
+<td style="text-align: center;">4500</td>
+<td style="text-align: center;">9,00</td>
+<td style="text-align: center;">8,33</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">5000</td>
+<td style="text-align: center;"><span class="math inline">\(\mathbf{+500}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">580</td>
+<td style="text-align: center;">116</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">5000</td>
+<td style="text-align: center;">5500</td>
+<td style="text-align: center;">9,48</td>
+<td style="text-align: center;">12,50</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">5800</td>
+<td style="text-align: center;"><span class="math inline">\(+300\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">600</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">6000</td>
+<td style="text-align: center;">6500</td>
+<td style="text-align: center;">10,83</td>
+<td style="text-align: center;">50,00</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">6000</td>
+<td style="text-align: center;"><span class="math inline">\(-500\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><em>Notas de cálculo:</em> * <span class="math inline">\(PMg = \Delta Q / \Delta L\)</span> (por ejemplo, para <span class="math inline">\(L=2\)</span>: <span class="math inline">\((220 - 100)/1 = 120\)</span>). * <span class="math inline">\(CMe = CT / Q\)</span> (por ejemplo, para <span class="math inline">\(L=3\)</span>: <span class="math inline">\(3500 / 380 = 9{,}21\text{ €}\)</span>). * <span class="math inline">\(CMg = \Delta CT / \Delta Q\)</span> (por ejemplo, para <span class="math inline">\(L=3\)</span>: <span class="math inline">\((3500 - 2500) / (380 - 220) = 1000 / 160 = 6{,}25\text{ €}\)</span>).</p>
+<ul>
+<li><strong>b) Etapas y rendimientos decrecientes:</strong>
+<ul>
+<li><strong>Etapa 1 (rendimientos marginales crecientes):</strong> Entre <span class="math inline">\(L=1\)</span> y <span class="math inline">\(L=3\)</span>, el <span class="math inline">\(PMg\)</span> crece de forma continuada (<span class="math inline">\(100 \rightarrow 120 \rightarrow 160\)</span>). La plantilla se beneficia de la especialización de tareas en el local.</li>
+<li><strong>Etapa 2 (rendimientos marginales decrecientes):</strong> A partir del <strong>cuarto trabajador</strong>, el <span class="math inline">\(PMg\)</span> comienza a caer (<span class="math inline">\(120 \rightarrow 80 \rightarrow 20\)</span>). Los trabajadores empiezan a molestarse o a compartir maquinaria, con lo que cada empleado adicional añade menos producto que el anterior.</li>
+</ul></li>
+<li><strong>c) Relación entre <span class="math inline">\(PMg\)</span> y <span class="math inline">\(CMg\)</span>:</strong>
+<ul>
+<li>Muestran un comportamiento exactamente inverso:
+<ul>
+<li>Cuando el <span class="math inline">\(PMg\)</span> aumenta (<span class="math inline">\(L=1\)</span> a <span class="math inline">\(L=3\)</span>), el <span class="math inline">\(CMg\)</span> desciende de 10 € a 6,25 €, alcanzando en <span class="math inline">\(L=3\)</span> su valor mínimo. Producir cada balón extra es cada vez más barato.</li>
+<li>Cuando el <span class="math inline">\(PMg\)</span> disminuye (<span class="math inline">\(L=4\)</span> en adelante), el <span class="math inline">\(CMg\)</span> sube de forma acelerada (<span class="math inline">\(8{,}33 \rightarrow 12{,}50 \rightarrow 50\text{ €}\)</span>). Producir balones adicionales se encarece drásticamente.</li>
+</ul></li>
+</ul></li>
+<li><strong>d) Nivel óptimo de empleo y maximización del beneficio:</strong>
+<ul>
+<li>La empresa contratará <strong>4 trabajadores</strong>, con los que logra el máximo beneficio posible (500 €).</li>
+<li><strong>Por qué hay beneficio:</strong> La empresa solo obtiene beneficios con 3, 4 y 5 trabajadores, pues son los únicos niveles donde el precio (<span class="math inline">\(10\text{ €}\)</span>) supera al coste medio (<span class="math inline">\(CMe &lt; 10\text{ €}\)</span>).</li>
+<li><strong>Por qué no quedarse en 3 trabajadores:</strong> Al pasar de 3 a 4 trabajadores, el coste marginal de cada nuevo balón es de 8,33 €, inferior al precio de venta (10 €). Como cada balón nuevo aporta más de lo que cuesta (<span class="math inline">\(P &gt; CMg\)</span>), el beneficio total aumenta de 300 € a 500 €.</li>
+<li><strong>Por qué no contratar al quinto:</strong> Al pasar de 4 a 5 trabajadores, el coste marginal asciende a 12,50 €, superando el precio de venta de 10 € (<span class="math inline">\(CMg &gt; P\)</span>). Cada balón extra genera una pérdida unitaria de 2,50 €, reduciendo el beneficio global de 500 € a 300 €.</li>
+</ul></li>
 </ul>
 </section>
-<section id="unidad-2.-microeconomía-y-mercados-2" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados-2">Unidad 2. Microeconomía y mercados</h3>
+<hr>
+<p><strong>2.</strong> Un taller artesanal de tablas de surf presenta los siguientes datos en su proceso de producción:</p>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La empresa y la producción</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span></li>
+<li>Para fabricar 10 tablas, su coste total es de 2000 € (<span class="math inline">\(CMe = 200\text{ €}\)</span>).</li>
+<li>Si decide ampliar la producción a 11 tablas, su coste total pasa a ser de 2180 €.</li>
+<li>Si amplía a 12 tablas, el coste total asciende a 2420 €.</li>
 </ul>
-</section>
-<section id="unidad-3.-macroeconomía-y-desarrollo-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-3.-macroeconomía-y-desarrollo-1">Unidad 3. Macroeconomía y desarrollo</h3>
+<p>Sabiendo que el precio de mercado de cada tabla es de 210 €:</p>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El desarrollo económico</a><span class="placeholder-status">Próximamente</span></li>
+<li><strong>a)</strong> Calcula el coste marginal (<span class="math inline">\(CMg\)</span>) de la tabla número 11 y de la tabla número 12.</li>
+<li><strong>b)</strong> Razona, mediante el enfoque marginal, si a la empresa le compensa producir la tabla número 11 y si le conviene fabricar la tabla número 12.</li>
 </ul>
-</section>
-<section id="unidad-4.-sistema-financiero-y-política-monetaria-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-4.-sistema-financiero-y-política-monetaria-1">Unidad 4. Sistema financiero y política monetaria</h3>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-5.-política-fiscal-y-sector-público-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-5.-política-fiscal-y-sector-público-1">Unidad 5. Política fiscal y sector público</h3>
+<li><strong>a) Coste marginal:</strong>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-6.-comercio-globalización-y-retos-actuales-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-6.-comercio-globalización-y-retos-actuales-1">Unidad 6. Comercio, globalización y retos actuales</h3>
+<li>Tabla 11: <span class="math inline">\(CMg_{11} = \frac{2180 - 2000}{11 - 10} = \mathbf{180\text{ €}}\)</span>.</li>
+<li>Tabla 12: <span class="math inline">\(CMg_{12} = \frac{2420 - 2180}{12 - 11} = \mathbf{240\text{ €}}\)</span>.</li>
+</ul></li>
+<li><strong>b) Decisión marginal (<span class="math inline">\(P = 210\text{ €}\)</span>):</strong>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El comercio internacional</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span></li>
+<li><strong>Tabla 11:</strong> Sí compensa producirla, ya que el precio que ingresa la empresa (210 €) es superior al coste adicional de fabricarla (180 €), sumando 30 € netos al beneficio.</li>
+<li><strong>Tabla 12:</strong> No compensa producirla, puesto que el coste de producirla (240 €) es mayor que el precio de venta (210 €). Producir esta duodécima unidad restaría 30 € al beneficio acumulado.</li>
+</ul></li>
 </ul>
-</section>
 </section>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -591,6 +704,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -904,15 +1022,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./tema-01.html" class="pagination-link" aria-label="La economía: concepto, método y ramas">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

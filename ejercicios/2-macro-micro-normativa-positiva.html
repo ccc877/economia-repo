@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Economía</title>
+<title>1&nbsp; Microeconomía y macroeconomía – Ejercicios de Economía</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tema-01.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,11 +74,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Recursos de Economía</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-macro-micro-normativa-positiva.html">Conceptos fundamentales</a></li><li class="breadcrumb-item"><a href="./2-macro-micro-normativa-positiva.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -100,10 +127,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Economía</a> 
+      <a href="./">Ejercicios de Economía</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -115,14 +142,14 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Recursos de Economía</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios del primer trimestre</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 1. Decisión, comportamiento y método</span></a>
+ <span class="menu-text">Conceptos fundamentales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -130,20 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span></a>
+  <a href="./2-macro-micro-normativa-positiva.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Necesidades, producción y sistemas económicos</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La economía del comportamiento</span></span></a>
+  <a href="./3-costes-irrecuperables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></span></a>
   </div>
 </li>
       </ul>
@@ -151,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 2. Microeconomía y mercados</span></a>
+ <span class="menu-text">Frank Price Production</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -159,26 +180,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">La empresa y la producción</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Los fallos del mercado y el mercado de trabajo</span></span></a>
+  <a href="./4-fpp-icaro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La frontera de posibilidades de producción de «Movilidad Ícaro»</span></span></a>
   </div>
 </li>
       </ul>
@@ -186,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 3. Macroeconomía y desarrollo</span></a>
+ <span class="menu-text">Eficiencia</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -194,14 +197,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">La macroeconomía y el Producto Interior Bruto</span></span></a>
+  <a href="./5-1-eficiencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">El desarrollo económico</span></span></a>
+  <a href="./5-2-eficiencia-produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Eficiencia técnica y económica: ejercicios de consolidación</span></span></a>
   </div>
 </li>
       </ul>
@@ -209,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 4. Sistema financiero y política monetaria</span></a>
+ <span class="menu-text">Productividad</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -217,14 +220,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El dinero, el sistema financiero y las finanzas personales</span></span></a>
+  <a href="./6-1-productividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La productividad de los factores productivos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Los precios, la inflación y la política monetaria</span></span></a>
+  <a href="./6-2-productividad-trabajo-capital.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Productividad del trabajo y del capital</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 5. Política fiscal y sector público</span></a>
+ <span class="menu-text">Costes y producción</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -240,8 +243,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Las finanzas públicas y la política fiscal</span></span></a>
+  <a href="./7-1-produccion-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-2-costes-optimo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Estructura de costes y óptimo de producción</span></span></a>
   </div>
 </li>
       </ul>
@@ -249,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 6. Comercio, globalización y retos actuales</span></a>
+ <span class="menu-text">Umbral de rentabilidad</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -257,14 +266,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">El comercio internacional</span></span></a>
+  <a href="./8-repaso-eficiencia-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ejercicios de repaso: eficiencia y costes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La globalización y los retos de la economía actual</span></span></a>
+  <a href="./9-1-umbral-formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-2-umbral-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nivel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Prueba de Economía — 1.º de Bachillerato</span></span></a>
   </div>
 </li>
       </ul>
@@ -279,44 +311,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#recursos-de-economía" id="toc-recursos-de-economía" class="nav-link active" data-scroll-target="#recursos-de-economía">Recursos de Economía</a>
+  <li><a href="#tres-ejemplos-para-ver-el-contraste" id="toc-tres-ejemplos-para-ver-el-contraste" class="nav-link active" data-scroll-target="#tres-ejemplos-para-ver-el-contraste"><span class="header-section-number">1.1</span> Tres ejemplos para ver el contraste</a>
   <ul class="collapse">
-  <li><a href="#apuntes" id="toc-apuntes" class="nav-link" data-scroll-target="#apuntes">Apuntes</a>
+  <li><a href="#precios-e-impuestos" id="toc-precios-e-impuestos" class="nav-link" data-scroll-target="#precios-e-impuestos">Precios e impuestos</a></li>
+  <li><a href="#empleo-y-salarios" id="toc-empleo-y-salarios" class="nav-link" data-scroll-target="#empleo-y-salarios">Empleo y salarios</a></li>
+  <li><a href="#producción" id="toc-producción" class="nav-link" data-scroll-target="#producción">Producción</a></li>
+  </ul></li>
+  <li><a href="#la-regla-rápida-para-no-dudar-nunca" id="toc-la-regla-rápida-para-no-dudar-nunca" class="nav-link" data-scroll-target="#la-regla-rápida-para-no-dudar-nunca"><span class="header-section-number">1.2</span> La regla rápida para no dudar nunca</a>
   <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método" id="toc-unidad-1.-decisión-comportamiento-y-método" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados" id="toc-unidad-2.-microeconomía-y-mercados" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#unidad-3.-macroeconomía-y-desarrollo" id="toc-unidad-3.-macroeconomía-y-desarrollo" class="nav-link" data-scroll-target="#unidad-3.-macroeconomía-y-desarrollo">Unidad 3. Macroeconomía y desarrollo</a></li>
-  <li><a href="#unidad-4.-sistema-financiero-y-política-monetaria" id="toc-unidad-4.-sistema-financiero-y-política-monetaria" class="nav-link" data-scroll-target="#unidad-4.-sistema-financiero-y-política-monetaria">Unidad 4. Sistema financiero y política monetaria</a></li>
-  <li><a href="#unidad-5.-política-fiscal-y-sector-público" id="toc-unidad-5.-política-fiscal-y-sector-público" class="nav-link" data-scroll-target="#unidad-5.-política-fiscal-y-sector-público">Unidad 5. Política fiscal y sector público</a></li>
-  <li><a href="#unidad-6.-comercio-globalización-y-retos-actuales" id="toc-unidad-6.-comercio-globalización-y-retos-actuales" class="nav-link" data-scroll-target="#unidad-6.-comercio-globalización-y-retos-actuales">Unidad 6. Comercio, globalización y retos actuales</a></li>
+  <li><a href="#breve-recordatorio-conceptual" id="toc-breve-recordatorio-conceptual" class="nav-link" data-scroll-target="#breve-recordatorio-conceptual">Breve recordatorio conceptual</a></li>
   </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios">Ejercicios</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método-1" id="toc-unidad-1.-decisión-comportamiento-y-método-1" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método-1">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados-1" id="toc-unidad-2.-microeconomía-y-mercados-1" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados-1">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación">Evaluación</a></li>
-  <li><a href="#unidades-3-a-6" id="toc-unidades-3-a-6" class="nav-link" data-scroll-target="#unidades-3-a-6">Unidades 3 a 6</a></li>
-  </ul></li>
-  <li><a href="#documentos-pdf" id="toc-documentos-pdf" class="nav-link" data-scroll-target="#documentos-pdf">Documentos PDF</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método-2" id="toc-unidad-1.-decisión-comportamiento-y-método-2" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método-2">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados-2" id="toc-unidad-2.-microeconomía-y-mercados-2" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados-2">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#unidad-3.-macroeconomía-y-desarrollo-1" id="toc-unidad-3.-macroeconomía-y-desarrollo-1" class="nav-link" data-scroll-target="#unidad-3.-macroeconomía-y-desarrollo-1">Unidad 3. Macroeconomía y desarrollo</a></li>
-  <li><a href="#unidad-4.-sistema-financiero-y-política-monetaria-1" id="toc-unidad-4.-sistema-financiero-y-política-monetaria-1" class="nav-link" data-scroll-target="#unidad-4.-sistema-financiero-y-política-monetaria-1">Unidad 4. Sistema financiero y política monetaria</a></li>
-  <li><a href="#unidad-5.-política-fiscal-y-sector-público-1" id="toc-unidad-5.-política-fiscal-y-sector-público-1" class="nav-link" data-scroll-target="#unidad-5.-política-fiscal-y-sector-público-1">Unidad 5. Política fiscal y sector público</a></li>
-  <li><a href="#unidad-6.-comercio-globalización-y-retos-actuales-1" id="toc-unidad-6.-comercio-globalización-y-retos-actuales-1" class="nav-link" data-scroll-target="#unidad-6.-comercio-globalización-y-retos-actuales-1">Unidad 6. Comercio, globalización y retos actuales</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#microeconomía-frente-a-macroeconomía" id="toc-microeconomía-frente-a-macroeconomía" class="nav-link" data-scroll-target="#microeconomía-frente-a-macroeconomía"><span class="header-section-number">1.3</span> Microeconomía frente a macroeconomía</a></li>
+  <li><a href="#economía-positiva-frente-a-normativa" id="toc-economía-positiva-frente-a-normativa" class="nav-link" data-scroll-target="#economía-positiva-frente-a-normativa"><span class="header-section-number">1.4</span> Economía positiva frente a normativa</a></li>
+  <li><a href="#reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa" id="toc-reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa" class="nav-link" data-scroll-target="#reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa"><span class="header-section-number">1.5</span> Reto doble: micro frente a macro y positiva frente a normativa</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-macro-micro-normativa-positiva.html">Conceptos fundamentales</a></li><li class="breadcrumb-item"><a href="./2-macro-micro-normativa-positiva.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Economía</h1>
-<p class="subtitle lead">1.º de Bachillerato</p>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></h1>
 </div>
 
 
@@ -333,175 +349,151 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="recursos-de-economía" class="level1 unnumbered">
-<h1 class="unnumbered">Recursos de Economía</h1>
-<div class="resource-intro">
-<p>En esta página encontrarás los materiales de Economía de 1.º de Bachillerato. Los apuntes y los ejercicios del primer trimestre ya están disponibles; los ejercicios de los trimestres siguientes y los documentos complementarios se irán incorporando a lo largo del curso.</p>
-</div>
-<div class="resource-navigation">
-<p><a href="#apuntes">Apuntes</a></p>
-<p><a href="#ejercicios">Ejercicios</a></p>
-<p><a href="#documentos-pdf">Documentos PDF</a></p>
-</div>
-<section id="apuntes" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="apuntes">Apuntes</h2>
-<p>Cada tema incluye explicaciones, definiciones, ejemplos y gráficos.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método">Unidad 1. Decisión, comportamiento y método</h3>
+<p>La forma más clara y clásica de entender la diferencia es la metáfora del bosque:</p>
 <ul>
-<li><a href="tema-01.html">La economía: concepto, método y ramas</a></li>
-<li><a href="tema-02.html">Necesidades, producción y sistemas económicos</a></li>
-<li><a href="tema-03.html">La economía del comportamiento</a></li>
+<li><strong>Microeconomía:</strong> Estudia <strong>los árboles individuales</strong> (o un grupo concreto de árboles). Analiza cómo toman decisiones las personas y las empresas, y cómo interactúan en un <strong>mercado específico</strong>.</li>
+<li><strong>Macroeconomía:</strong> Estudia <strong>el bosque entero</strong>. Analiza el clima general de toda la economía: si el bosque crece o se marchita, cuánto llueve en promedio o si hay una sequía que afecta a todos los árboles a la vez.</li>
 </ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados">Unidad 2. Microeconomía y mercados</h3>
+<p>Dicho de forma técnica pero sencilla: <strong>la micro analiza <em>precios de cosas concretas</em> y mercados individuales; la macro analiza <em>el sistema completo</em> (toda la producción, todos los precios y todo el empleo a la vez).</strong></p>
+<hr>
+<section id="tres-ejemplos-para-ver-el-contraste" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="tres-ejemplos-para-ver-el-contraste"><span class="header-section-number">1.1</span> Tres ejemplos para ver el contraste</h2>
+<section id="precios-e-impuestos" class="level3">
+<h3 class="anchored" data-anchor-id="precios-e-impuestos">Precios e impuestos</h3>
 <ul>
-<li><a href="tema-04.html">La empresa y la producción</a></li>
-<li><a href="tema-05.html">El mercado: oferta, demanda y elasticidad</a></li>
-<li><a href="tema-06.html">Las estructuras de mercado</a></li>
-<li><a href="tema-07.html">Los fallos del mercado y el mercado de trabajo</a></li>
-</ul>
-</section>
-<section id="unidad-3.-macroeconomía-y-desarrollo" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-3.-macroeconomía-y-desarrollo">Unidad 3. Macroeconomía y desarrollo</h3>
+<li><strong>Micro:</strong> El Estado sube el impuesto a las bebidas azucaradas.
 <ul>
-<li><a href="tema-08.html">La macroeconomía y el Producto Interior Bruto</a></li>
-<li><a href="tema-09.html">El desarrollo económico</a></li>
-</ul>
-</section>
-<section id="unidad-4.-sistema-financiero-y-política-monetaria" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-4.-sistema-financiero-y-política-monetaria">Unidad 4. Sistema financiero y política monetaria</h3>
-<ul>
-<li><a href="tema-10.html">El dinero, el sistema financiero y las finanzas personales</a></li>
-<li><a href="tema-11.html">Los precios, la inflación y la política monetaria</a></li>
-</ul>
-</section>
-<section id="unidad-5.-política-fiscal-y-sector-público" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-5.-política-fiscal-y-sector-público">Unidad 5. Política fiscal y sector público</h3>
-<ul>
-<li><a href="tema-12.html">Las finanzas públicas y la política fiscal</a></li>
-</ul>
-</section>
-<section id="unidad-6.-comercio-globalización-y-retos-actuales" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-6.-comercio-globalización-y-retos-actuales">Unidad 6. Comercio, globalización y retos actuales</h3>
-<ul>
-<li><a href="tema-13.html">El comercio internacional</a></li>
-<li><a href="tema-14.html">La globalización y los retos de la economía actual</a></li>
-</ul>
-</section>
-</section>
-<section id="ejercicios" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="ejercicios">Ejercicios</h2>
-<p>Los ejercicios del primer trimestre están disponibles por tema, con la solución de cada uno desplegable justo debajo de su enunciado. El <a href="ejercicios/index.html">cuaderno completo</a> está siguiente, con todo el temario en orden y el índice navegable.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método-1">Unidad 1. Decisión, comportamiento y método</h3>
-<ul>
-<li><strong>Ejercicios: La economía: concepto, método y ramas</strong>
-<ul>
-<li><a href="ejercicios/2-macro-micro-normativa-positiva.html">Microeconomía y macroeconomía; economía normativa y positiva</a></li>
+<li><em>Pregunta micro:</em> ¿Cuánto subirá el precio de la Coca-Cola? ¿La gente comprará más agua en su lugar? ¿Reducirá la empresa sus beneficios?</li>
 </ul></li>
-<li><strong>Ejercicios: Necesidades, producción y sistemas económicos</strong>
+<li><strong>Macro:</strong> El Banco Central sube los tipos de interés o hay una crisis energética global.
 <ul>
-<li><a href="ejercicios/3-costes-irrecuperables.html">Costes irrecuperables, coste de oportunidad y tipos de bienes</a></li>
-<li><a href="ejercicios/4-fpp-icaro.html">La frontera de posibilidades de producción de «Movilidad Ícaro»</a></li>
-</ul></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados-1">Unidad 2. Microeconomía y mercados</h3>
-<ul>
-<li><strong>Ejercicios: La empresa y la producción</strong>
-<ul>
-<li><a href="ejercicios/5-1-eficiencia.html">Eficiencia técnica y económica</a></li>
-<li><a href="ejercicios/5-2-eficiencia-produccion.html">Consolidación de eficiencia técnica y económica</a></li>
-<li><a href="ejercicios/6-1-productividad.html">Productividad de los factores productivos</a></li>
-<li><a href="ejercicios/6-2-productividad-trabajo-capital.html">Productividad del trabajo y del capital</a></li>
-<li><a href="ejercicios/7-1-produccion-costes.html">Producción, costes y maximización del beneficio a corto plazo</a></li>
-<li><a href="ejercicios/7-2-costes-optimo.html">Estructura de costes y óptimo de producción</a></li>
-<li><a href="ejercicios/8-repaso-eficiencia-costes.html">Repaso de eficiencia y costes</a></li>
-<li><a href="ejercicios/9-1-umbral-formula.html">Umbral de rentabilidad: de los beneficios al punto muerto</a></li>
-<li><a href="ejercicios/9-2-umbral-basico.html">Umbral de rentabilidad: cálculo y representación gráfica</a></li>
-</ul></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="evaluación" class="level3">
-<h3 class="anchored" data-anchor-id="evaluación">Evaluación</h3>
-<ul>
-<li><strong>Prueba de Economía — 1.º de Bachillerato</strong>
-<ul>
-<li><a href="ejercicios/nivel.html">Enunciado completo con solucionario desplegable</a></li>
+<li><em>Pregunta macro:</em> ¿Qué pasa con la <strong>inflación general</strong> de todo el país? ¿Por qué la cesta de la compra completa de todas las familias se ha encarecido un 6% este año?</li>
 </ul></li>
 </ul>
 </section>
-<section id="unidades-3-a-6" class="level3">
-<h3 class="anchored" data-anchor-id="unidades-3-a-6">Unidades 3 a 6</h3>
+<section id="empleo-y-salarios" class="level3">
+<h3 class="anchored" data-anchor-id="empleo-y-salarios">Empleo y salarios</h3>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El desarrollo económico</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El comercio internacional</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span></li>
+<li><strong>Micro:</strong> Una cadena de comida rápida decide sustituir a sus cajeros por pantallas táctiles.
+<ul>
+<li><em>Pregunta micro:</em> ¿Cómo decide una empresa concreta entre contratar trabajadores o comprar máquinas según sus costes?</li>
+</ul></li>
+<li><strong>Macro:</strong> La tasa de <strong>desempleo de todo el país</strong> sube del 10% al 14%.
+<ul>
+<li><em>Pregunta macro:</em> ¿Por qué la economía nacional ha dejado de crear empleo? ¿Está el país entrando en una recesión económica?</li>
+</ul></li>
 </ul>
 </section>
-</section>
-<section id="documentos-pdf" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="documentos-pdf">Documentos PDF</h2>
-<p>Esta sección queda preparada para reunir fichas, esquemas y otros documentos descargables en PDF.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método-2" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método-2">Unidad 1. Decisión, comportamiento y método</h3>
+<section id="producción" class="level3">
+<h3 class="anchored" data-anchor-id="producción">Producción</h3>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados-2" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados-2">Unidad 2. Microeconomía y mercados</h3>
+<li><strong>Micro:</strong> Una empresa tecnológica lanza un nuevo móvil y vende millones de unidades, mientras su competidor quiebra.
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La empresa y la producción</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-3.-macroeconomía-y-desarrollo-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-3.-macroeconomía-y-desarrollo-1">Unidad 3. Macroeconomía y desarrollo</h3>
+<li><em>Pregunta micro:</em> ¿Qué estrategia de precios o producto ha funcionado en ese sector concreto?</li>
+</ul></li>
+<li><strong>Macro:</strong> El <strong>PIB (Producto Interior Bruto)</strong> del país creció un 2% este año.
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El desarrollo económico</a><span class="placeholder-status">Próximamente</span></li>
+<li><em>Pregunta macro:</em> ¿Cuánta riqueza total han producido sumadas todas las fábricas, servicios, comercios y trabajadores del país juntos?</li>
+</ul></li>
 </ul>
+<hr>
 </section>
-<section id="unidad-4.-sistema-financiero-y-política-monetaria-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-4.-sistema-financiero-y-política-monetaria-1">Unidad 4. Sistema financiero y política monetaria</h3>
+</section>
+<section id="la-regla-rápida-para-no-dudar-nunca" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="la-regla-rápida-para-no-dudar-nunca"><span class="header-section-number">1.2</span> La regla rápida para no dudar nunca</h2>
+<p>Pregúntate: <strong>¿se puede responder mirando un solo sector o mercado, o hay que mirar la suma de todos los sectores del país?</strong></p>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span></li>
+<li>Si se refiere a un producto o sector concreto (coches, tabaco, vivienda, trigo) <span class="math inline">\(\rightarrow\)</span> <strong>micro</strong>.</li>
+<li>Si se refiere a una variable que resume a todo el país (PIB, desempleo nacional, inflación del IPC, deuda pública de la nación) <span class="math inline">\(\rightarrow\)</span> <strong>macro</strong>.</li>
 </ul>
-</section>
-<section id="unidad-5.-política-fiscal-y-sector-público-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-5.-política-fiscal-y-sector-público-1">Unidad 5. Política fiscal y sector público</h3>
+<section id="breve-recordatorio-conceptual" class="level3">
+<h3 class="anchored" data-anchor-id="breve-recordatorio-conceptual">Breve recordatorio conceptual</h3>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span></li>
+<li><strong>Microeconomía:</strong> Estudia las decisiones individuales de familias y empresas, y el funcionamiento de mercados concretos (precio del pan, beneficios de Apple, salario de un empleado).</li>
+<li><strong>Macroeconomía:</strong> Estudia el comportamiento global de la economía a través de variables agregadas (PIB, inflación, tasa de desempleo, tipos de interés del banco central).</li>
+<li><strong>Economía positiva:</strong> Describe la realidad «tal como es». Son hechos o relaciones causa-efecto que se pueden contrastar empíricamente con datos, y no contienen juicios morales.</li>
+<li><strong>Economía normativa:</strong> Expresa «lo que debería ser». Contiene opiniones, valores éticos, juicios morales o propuestas políticas, y no se puede demostrar si es científicamente verdadera o falsa.</li>
 </ul>
+<hr>
 </section>
-<section id="unidad-6.-comercio-globalización-y-retos-actuales-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-6.-comercio-globalización-y-retos-actuales-1">Unidad 6. Comercio, globalización y retos actuales</h3>
-<ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El comercio internacional</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
 </section>
+<section id="microeconomía-frente-a-macroeconomía" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="microeconomía-frente-a-macroeconomía"><span class="header-section-number">1.3</span> Microeconomía frente a macroeconomía</h2>
+<p><strong>Instrucciones:</strong> Lee los siguientes titulares y situaciones. Clasifica cada uno en <strong>microeconomía (MIC)</strong> o <strong>macroeconomía (MAC)</strong>.</p>
+<ol type="1">
+<li>Inditex anuncia una subida del 3 % en el precio de sus prendas para compensar el coste del transporte.</li>
+<li>El Banco Central Europeo baja los tipos de interés oficiales un 0,25 %.</li>
+<li>El Producto Interior Bruto (PIB) español creció un 2,4 % en el último ejercicio.</li>
+<li>Una familia decide reducir sus salidas a restaurantes para hacer frente al pago de la hipoteca.</li>
+<li>La sequía en Andalucía encarece el precio del aceite de oliva en los supermercados.</li>
+<li>La tasa de desempleo juvenil a nivel nacional se sitúa en el 26 %.</li>
+<li>Una empresa de reparto contrata a 15 nuevos repartidores para la campaña de Navidad.</li>
+<li>La inflación de la eurozona repunta dos décimas este mes.</li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<ol type="1">
+<li><strong>MIC:</strong> trata sobre las decisiones de una empresa concreta (Inditex) y su producto.</li>
+<li><strong>MAC:</strong> afecta a toda la economía comunitaria y al conjunto del sistema financiero.</li>
+<li><strong>MAC:</strong> el PIB mide la producción total agregada de un país.</li>
+<li><strong>MIC:</strong> estudia la conducta y el presupuesto de un agente individual (una familia).</li>
+<li><strong>MIC:</strong> se centra en el equilibrio de un mercado específico, el del aceite.</li>
+<li><strong>MAC:</strong> es una tasa de desempleo agregada a nivel de todo el país.</li>
+<li><strong>MIC:</strong> decisión de contratación de una empresa particular.</li>
+<li><strong>MAC:</strong> el nivel general de precios (inflación) de un conjunto de países.</li>
+</ol>
+</section>
+<hr>
+<section id="economía-positiva-frente-a-normativa" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="economía-positiva-frente-a-normativa"><span class="header-section-number">1.4</span> Economía positiva frente a normativa</h2>
+<p><strong>Instrucciones:</strong> Indica si las siguientes afirmaciones pertenecen a la <strong>economía positiva (POS)</strong> o a la <strong>economía normativa (NOR)</strong>.</p>
+<ol type="1">
+<li>Si sube el precio de la gasolina, a corto plazo disminuirá la demanda de combustible.</li>
+<li>El Gobierno debería limitar por ley el precio del alquiler de viviendas para ayudar a los jóvenes.</li>
+<li>El salario mínimo interprofesional en España se fijó en una cuantía superior a los 1.000 euros.</li>
+<li>Es injusto que los ciudadanos con rentas más bajas paguen el mismo porcentaje de IVA que los ricos.</li>
+<li>Un incremento de los aranceles a los coches importados encarecerá su precio de venta final.</li>
+<li>Habría que destinar más presupuesto público a la sanidad y recortar en defensa.</li>
+<li>El número de afiliados a la Seguridad Social cayó en 20.000 personas en agosto.</li>
+<li>Las empresas que contaminan tendrían que pagar más impuestos que las empresas limpias.</li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<ol type="1">
+<li><strong>POS:</strong> plantea una hipótesis causa-efecto que se puede comprobar con datos estadísticos.</li>
+<li><strong>NOR:</strong> contiene la palabra clave «debería» y parte de un juicio de valor sobre la política de vivienda.</li>
+<li><strong>POS:</strong> constata un dato legal o estadístico objetivo e irrefutable.</li>
+<li><strong>NOR:</strong> emite un juicio moral subjetivo («es injusto»).</li>
+<li><strong>POS:</strong> es una predicción económica objetiva y comprobable.</li>
+<li><strong>NOR:</strong> «habría que destinar…» expresa una preferencia política o ética sobre prioridades de gasto.</li>
+<li><strong>POS:</strong> dato observable y medible extraído de estadísticas oficiales.</li>
+<li><strong>NOR:</strong> juicio de valor ético («tendrían que pagar»).</li>
+</ol>
+</section>
+<hr>
+<section id="reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="reto-doble-micro-frente-a-macro-y-positiva-frente-a-normativa"><span class="header-section-number">1.5</span> Reto doble: micro frente a macro y positiva frente a normativa</h2>
+<p><em>Para nota.</em> <strong>Instrucciones:</strong> Clasifica cada enunciado en los dos ejes a la vez (<strong>micro/macro</strong> y <strong>positiva/normativa</strong>).</p>
+<ol type="1">
+<li><em>«Para frenar la inflación en el país, el banco central tendría que ser más agresivo subiendo los tipos de interés.»</em></li>
+<li><em>«La helada de la semana pasada arruinó la cosecha de naranjas en Valencia, duplicando su precio en el mercado local.»</em></li>
+<li><em>«Los supermercados no deberían obtener beneficios tan altos con la venta de productos básicos de primera necesidad.»</em></li>
+<li><em>«La recaudación total por IRPF del Estado aumentó un 6 % este trimestre debido al crecimiento del empleo agregado.»</em></li>
+</ol>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<ol type="1">
+<li><strong>Macroeconomía / normativa:</strong> trata sobre una variable global (inflación y política monetaria del país) y hace una prescripción de lo que «tendría que hacerse».</li>
+<li><strong>Microeconomía / positiva:</strong> analiza el mercado concreto de un bien (las naranjas en Valencia) y describe un hecho empírico observable causa-efecto.</li>
+<li><strong>Microeconomía / normativa:</strong> se refiere a un mercado concreto (los supermercados) y emite un juicio ético («no deberían tener tantos beneficios»).</li>
+<li><strong>Macroeconomía / positiva:</strong> trata sobre ingresos fiscales agregados del Estado y el empleo global, constatando un dato objetivo real.</li>
+</ol>
 </section>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -591,6 +583,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -904,15 +901,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./tema-01.html" class="pagination-link" aria-label="La economía: concepto, método y ramas">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

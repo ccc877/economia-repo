@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Economía</title>
+<title>4&nbsp; Eficiencia técnica y eficiencia económica – Ejercicios de Economía</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tema-01.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,11 +74,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Recursos de Economía</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5-1-eficiencia.html">Eficiencia</a></li><li class="breadcrumb-item"><a href="./5-1-eficiencia.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -100,10 +127,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Economía</a> 
+      <a href="./">Ejercicios de Economía</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -115,14 +142,14 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Recursos de Economía</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios del primer trimestre</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 1. Decisión, comportamiento y método</span></a>
+ <span class="menu-text">Conceptos fundamentales</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -130,20 +157,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span></a>
+  <a href="./2-macro-micro-normativa-positiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Necesidades, producción y sistemas económicos</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La economía del comportamiento</span></span></a>
+  <a href="./3-costes-irrecuperables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></span></a>
   </div>
 </li>
       </ul>
@@ -151,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 2. Microeconomía y mercados</span></a>
+ <span class="menu-text">Frank Price Production</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -159,26 +180,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">La empresa y la producción</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Las estructuras de mercado</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tema-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Los fallos del mercado y el mercado de trabajo</span></span></a>
+  <a href="./4-fpp-icaro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La frontera de posibilidades de producción de «Movilidad Ícaro»</span></span></a>
   </div>
 </li>
       </ul>
@@ -186,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 3. Macroeconomía y desarrollo</span></a>
+ <span class="menu-text">Eficiencia</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -194,14 +197,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">La macroeconomía y el Producto Interior Bruto</span></span></a>
+  <a href="./5-1-eficiencia.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">El desarrollo económico</span></span></a>
+  <a href="./5-2-eficiencia-produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Eficiencia técnica y económica: ejercicios de consolidación</span></span></a>
   </div>
 </li>
       </ul>
@@ -209,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 4. Sistema financiero y política monetaria</span></a>
+ <span class="menu-text">Productividad</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -217,14 +220,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El dinero, el sistema financiero y las finanzas personales</span></span></a>
+  <a href="./6-1-productividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La productividad de los factores productivos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Los precios, la inflación y la política monetaria</span></span></a>
+  <a href="./6-2-productividad-trabajo-capital.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Productividad del trabajo y del capital</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 5. Política fiscal y sector público</span></a>
+ <span class="menu-text">Costes y producción</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -240,8 +243,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Las finanzas públicas y la política fiscal</span></span></a>
+  <a href="./7-1-produccion-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-2-costes-optimo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Estructura de costes y óptimo de producción</span></span></a>
   </div>
 </li>
       </ul>
@@ -249,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Unidad 6. Comercio, globalización y retos actuales</span></a>
+ <span class="menu-text">Umbral de rentabilidad</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -257,14 +266,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">El comercio internacional</span></span></a>
+  <a href="./8-repaso-eficiencia-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ejercicios de repaso: eficiencia y costes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tema-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La globalización y los retos de la economía actual</span></span></a>
+  <a href="./9-1-umbral-formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-2-umbral-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nivel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Prueba de Economía — 1.º de Bachillerato</span></span></a>
   </div>
 </li>
       </ul>
@@ -279,44 +311,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#recursos-de-economía" id="toc-recursos-de-economía" class="nav-link active" data-scroll-target="#recursos-de-economía">Recursos de Economía</a>
-  <ul class="collapse">
-  <li><a href="#apuntes" id="toc-apuntes" class="nav-link" data-scroll-target="#apuntes">Apuntes</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método" id="toc-unidad-1.-decisión-comportamiento-y-método" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados" id="toc-unidad-2.-microeconomía-y-mercados" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#unidad-3.-macroeconomía-y-desarrollo" id="toc-unidad-3.-macroeconomía-y-desarrollo" class="nav-link" data-scroll-target="#unidad-3.-macroeconomía-y-desarrollo">Unidad 3. Macroeconomía y desarrollo</a></li>
-  <li><a href="#unidad-4.-sistema-financiero-y-política-monetaria" id="toc-unidad-4.-sistema-financiero-y-política-monetaria" class="nav-link" data-scroll-target="#unidad-4.-sistema-financiero-y-política-monetaria">Unidad 4. Sistema financiero y política monetaria</a></li>
-  <li><a href="#unidad-5.-política-fiscal-y-sector-público" id="toc-unidad-5.-política-fiscal-y-sector-público" class="nav-link" data-scroll-target="#unidad-5.-política-fiscal-y-sector-público">Unidad 5. Política fiscal y sector público</a></li>
-  <li><a href="#unidad-6.-comercio-globalización-y-retos-actuales" id="toc-unidad-6.-comercio-globalización-y-retos-actuales" class="nav-link" data-scroll-target="#unidad-6.-comercio-globalización-y-retos-actuales">Unidad 6. Comercio, globalización y retos actuales</a></li>
-  </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios">Ejercicios</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método-1" id="toc-unidad-1.-decisión-comportamiento-y-método-1" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método-1">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados-1" id="toc-unidad-2.-microeconomía-y-mercados-1" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados-1">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación">Evaluación</a></li>
-  <li><a href="#unidades-3-a-6" id="toc-unidades-3-a-6" class="nav-link" data-scroll-target="#unidades-3-a-6">Unidades 3 a 6</a></li>
-  </ul></li>
-  <li><a href="#documentos-pdf" id="toc-documentos-pdf" class="nav-link" data-scroll-target="#documentos-pdf">Documentos PDF</a>
-  <ul class="collapse">
-  <li><a href="#unidad-1.-decisión-comportamiento-y-método-2" id="toc-unidad-1.-decisión-comportamiento-y-método-2" class="nav-link" data-scroll-target="#unidad-1.-decisión-comportamiento-y-método-2">Unidad 1. Decisión, comportamiento y método</a></li>
-  <li><a href="#unidad-2.-microeconomía-y-mercados-2" id="toc-unidad-2.-microeconomía-y-mercados-2" class="nav-link" data-scroll-target="#unidad-2.-microeconomía-y-mercados-2">Unidad 2. Microeconomía y mercados</a></li>
-  <li><a href="#unidad-3.-macroeconomía-y-desarrollo-1" id="toc-unidad-3.-macroeconomía-y-desarrollo-1" class="nav-link" data-scroll-target="#unidad-3.-macroeconomía-y-desarrollo-1">Unidad 3. Macroeconomía y desarrollo</a></li>
-  <li><a href="#unidad-4.-sistema-financiero-y-política-monetaria-1" id="toc-unidad-4.-sistema-financiero-y-política-monetaria-1" class="nav-link" data-scroll-target="#unidad-4.-sistema-financiero-y-política-monetaria-1">Unidad 4. Sistema financiero y política monetaria</a></li>
-  <li><a href="#unidad-5.-política-fiscal-y-sector-público-1" id="toc-unidad-5.-política-fiscal-y-sector-público-1" class="nav-link" data-scroll-target="#unidad-5.-política-fiscal-y-sector-público-1">Unidad 5. Política fiscal y sector público</a></li>
-  <li><a href="#unidad-6.-comercio-globalización-y-retos-actuales-1" id="toc-unidad-6.-comercio-globalización-y-retos-actuales-1" class="nav-link" data-scroll-target="#unidad-6.-comercio-globalización-y-retos-actuales-1">Unidad 6. Comercio, globalización y retos actuales</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#actividades-prácticas" id="toc-actividades-prácticas" class="nav-link active" data-scroll-target="#actividades-prácticas"><span class="header-section-number">4.1</span> Actividades prácticas</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5-1-eficiencia.html">Eficiencia</a></li><li class="breadcrumb-item"><a href="./5-1-eficiencia.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Economía</h1>
-<p class="subtitle lead">1.º de Bachillerato</p>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></h1>
 </div>
 
 
@@ -333,175 +337,200 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="recursos-de-economía" class="level1 unnumbered">
-<h1 class="unnumbered">Recursos de Economía</h1>
-<div class="resource-intro">
-<p>En esta página encontrarás los materiales de Economía de 1.º de Bachillerato. Los apuntes y los ejercicios del primer trimestre ya están disponibles; los ejercicios de los trimestres siguientes y los documentos complementarios se irán incorporando a lo largo del curso.</p>
-</div>
-<div class="resource-navigation">
-<p><a href="#apuntes">Apuntes</a></p>
-<p><a href="#ejercicios">Ejercicios</a></p>
-<p><a href="#documentos-pdf">Documentos PDF</a></p>
-</div>
-<section id="apuntes" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="apuntes">Apuntes</h2>
-<p>Cada tema incluye explicaciones, definiciones, ejemplos y gráficos.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método">Unidad 1. Decisión, comportamiento y método</h3>
+<section class="level2 unnumbered unlisted callout-note" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Conceptos clave</h2>
 <ul>
-<li><a href="tema-01.html">La economía: concepto, método y ramas</a></li>
-<li><a href="tema-02.html">Necesidades, producción y sistemas económicos</a></li>
-<li><a href="tema-03.html">La economía del comportamiento</a></li>
+<li><strong>Eficiencia técnica:</strong> Un método de producción es técnicamente eficiente si produce una determinada cantidad de bienes empleando la menor cantidad posible de recursos (factores productivos). Una técnica <strong>A</strong> domina o descarta a otra <strong>B</strong> si:
+<ol type="1">
+<li>Utiliza menos unidades de algún factor y no utiliza más de ninguno de los demás para obtener el mismo producto.</li>
+<li>O bien, utilizando la misma cantidad de factores, obtiene una mayor producción.</li>
+</ol></li>
+<li><strong>Eficiencia económica:</strong> De entre todas las técnicas que son <strong>técnicamente eficientes</strong>, la más eficiente económicamente es aquella que permite obtener la producción con el <strong>menor coste monetario</strong>.</li>
 </ul>
+<p><em>Nota fundamental:</em> Una técnica que no sea eficiente técnicamente queda descartada de inmediato; nunca se calcula su coste ni se considera eficiente económicamente.</p>
 </section>
-<section id="unidad-2.-microeconomía-y-mercados" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados">Unidad 2. Microeconomía y mercados</h3>
+<hr>
+<section class="level2 unnumbered unlisted callout-tip" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Guía paso a paso para resolver estos ejercicios</h2>
+<ol type="1">
+<li><strong>Comprobar la producción:</strong> Asegúrate de que todas las técnicas producen lo mismo.</li>
+<li><strong>Comparar factores entre técnicas (descarte técnico):</strong>
 <ul>
-<li><a href="tema-04.html">La empresa y la producción</a></li>
-<li><a href="tema-05.html">El mercado: oferta, demanda y elasticidad</a></li>
-<li><a href="tema-06.html">Las estructuras de mercado</a></li>
-<li><a href="tema-07.html">Los fallos del mercado y el mercado de trabajo</a></li>
-</ul>
-</section>
-<section id="unidad-3.-macroeconomía-y-desarrollo" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-3.-macroeconomía-y-desarrollo">Unidad 3. Macroeconomía y desarrollo</h3>
-<ul>
-<li><a href="tema-08.html">La macroeconomía y el Producto Interior Bruto</a></li>
-<li><a href="tema-09.html">El desarrollo económico</a></li>
-</ul>
-</section>
-<section id="unidad-4.-sistema-financiero-y-política-monetaria" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-4.-sistema-financiero-y-política-monetaria">Unidad 4. Sistema financiero y política monetaria</h3>
-<ul>
-<li><a href="tema-10.html">El dinero, el sistema financiero y las finanzas personales</a></li>
-<li><a href="tema-11.html">Los precios, la inflación y la política monetaria</a></li>
-</ul>
-</section>
-<section id="unidad-5.-política-fiscal-y-sector-público" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-5.-política-fiscal-y-sector-público">Unidad 5. Política fiscal y sector público</h3>
-<ul>
-<li><a href="tema-12.html">Las finanzas públicas y la política fiscal</a></li>
-</ul>
-</section>
-<section id="unidad-6.-comercio-globalización-y-retos-actuales" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-6.-comercio-globalización-y-retos-actuales">Unidad 6. Comercio, globalización y retos actuales</h3>
-<ul>
-<li><a href="tema-13.html">El comercio internacional</a></li>
-<li><a href="tema-14.html">La globalización y los retos de la economía actual</a></li>
-</ul>
-</section>
-</section>
-<section id="ejercicios" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="ejercicios">Ejercicios</h2>
-<p>Los ejercicios del primer trimestre están disponibles por tema, con la solución de cada uno desplegable justo debajo de su enunciado. El <a href="ejercicios/index.html">cuaderno completo</a> está siguiente, con todo el temario en orden y el índice navegable.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método-1">Unidad 1. Decisión, comportamiento y método</h3>
-<ul>
-<li><strong>Ejercicios: La economía: concepto, método y ramas</strong>
-<ul>
-<li><a href="ejercicios/2-macro-micro-normativa-positiva.html">Microeconomía y macroeconomía; economía normativa y positiva</a></li>
+<li>Si una técnica usa más de todo respecto a otra, se descarta.</li>
+<li>Si usa lo mismo de un factor pero más de otro, se descarta.</li>
+<li>Si usa menos de un factor pero más de otro, <strong>no se puede descartar</strong> (es técnicamente eficiente).</li>
 </ul></li>
-<li><strong>Ejercicios: Necesidades, producción y sistemas económicos</strong>
+<li><strong>Calcular el coste total (<span class="math inline">\(CT\)</span>):</strong> Solo se calcula para las técnicas que han superado el filtro técnico: <span class="math display">\[\text{Coste total} = (L \cdot P_L) + (K \cdot P_K)\]</span> <em>(donde <span class="math inline">\(L\)</span> es trabajo, <span class="math inline">\(K\)</span> es capital y <span class="math inline">\(P\)</span> sus respectivos precios).</em></li>
+<li><strong>Elegir la técnica más barata:</strong> Esa será la económicamente eficiente.</li>
+</ol>
+</section>
+<hr>
+<section id="actividades-prácticas" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="actividades-prácticas"><span class="header-section-number">4.1</span> Actividades prácticas</h2>
+<p><strong>1.</strong> Un estudiante prepara su examen final de Economía, cuyo temario consta de 15 temas. Puede seguir dos métodos de estudio distintos: * <strong>Método tradicional:</strong> Requiere 18 horas de lectura repetitiva y memorización. * <strong>Método activo:</strong> Requiere 12 horas basadas en elaboración de mapas conceptuales y resolución de preguntas prácticas.</p>
+<p>Con ambos métodos obtiene la misma calificación (un 9 sobre 10).</p>
 <ul>
-<li><a href="ejercicios/3-costes-irrecuperables.html">Costes irrecuperables, coste de oportunidad y tipos de bienes</a></li>
-<li><a href="ejercicios/4-fpp-icaro.html">La frontera de posibilidades de producción de «Movilidad Ícaro»</a></li>
+<li><strong>a)</strong> ¿Qué método es más eficiente desde el punto de vista técnico? Razona la respuesta indicando recursos y resultados.</li>
+<li><strong>b)</strong> Si cada hora de estudio le supone un coste de oportunidad de 10 € (dinero que deja de ganar trabajando en un empleo por horas), ¿cuál es el método económicamente más eficiente?</li>
+</ul>
+</section>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<ul>
+<li><strong>a)</strong> El <strong>método activo</strong> es técnicamente más eficiente porque alcanza el mismo resultado (15 temas aprendidos con nota de 9) empleando menos recursos (12 horas frente a 18 horas; un ahorro de 6 horas).</li>
+<li><strong>b)</strong> Coste método tradicional: <span class="math inline">\(18 \cdot 10 = 180\text{ €}\)</span>. Coste método activo: <span class="math inline">\(12 \cdot 10 = 120\text{ €}\)</span>. El método activo es también el más eficiente económicamente.</li>
+</ul>
+</section>
+<hr>
+<p><strong>2.</strong> La empresa textil Alfa S. L. confecciona lotes de 1000 camisetas y puede recurrir a cuatro técnicas de producción distintas. La tabla siguiente recoge los recursos empleados:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Técnica</th>
+<th style="text-align: center;">Trabajadores (<span class="math inline">\(L\)</span>)</th>
+<th style="text-align: center;">Máquinas (<span class="math inline">\(K\)</span>)</th>
+<th style="text-align: center;">Producción (camisetas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1000</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>a)</strong> Determina qué técnicas son eficientes técnicamente y cuáles deben descartarse. Justifica cada descarte comparando las técnicas implicadas.</li>
+<li><strong>b)</strong> Sabiendo que el salario diario por trabajador es de 60 € y el alquiler diario de cada máquina cuesta 80 €, calcula el coste total de las técnicas técnicamente eficientes.</li>
+<li><strong>c)</strong> Indica qué técnica elegirá la empresa por ser económicamente eficiente.</li>
+</ul>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>a) Eficiencia técnica</strong></p>
+<ul>
+<li>La técnica <strong>C</strong> se descarta porque, comparada con la <strong>B</strong>, utiliza más trabajadores (6 frente a 5) y más máquinas (7 frente a 5).</li>
+<li>La técnica <strong>B</strong> se descarta porque, comparada con la <strong>D</strong>, utiliza los mismos trabajadores (5) pero más máquinas (5 frente a 3).</li>
+<li>Las técnicas <strong>A</strong> (8 trabajadores y 2 máquinas) y <strong>D</strong> (5 trabajadores y 3 máquinas) son <strong>eficientes técnicamente</strong>: <strong>A</strong> usa menos máquinas que <strong>D</strong>, pero <strong>D</strong> usa menos trabajadores que <strong>A</strong>. No se dominan entre sí.</li>
+</ul>
+<p><strong>b) Coste total (<span class="math inline">\(P_L = 60\text{ €}\)</span>, <span class="math inline">\(P_K = 80\text{ €}\)</span>)</strong></p>
+<ul>
+<li>Técnica <strong>A</strong>: <span class="math inline">\((8 \cdot 60) + (2 \cdot 80) = 480 + 160 = 640\text{ €}\)</span>.</li>
+<li>Técnica <strong>D</strong>: <span class="math inline">\((5 \cdot 60) + (3 \cdot 80) = 300 + 240 = 540\text{ €}\)</span>.</li>
+</ul>
+<p><strong>c) Eficiencia económica:</strong> la técnica <strong>D</strong> es la más eficiente económicamente por tener el menor coste (540 €).</p>
+</section>
+<hr>
+<p><strong>3.</strong> Una explotación ganadera requiere gestionar una cabaña de 1000 vacas. Dispone de cinco procesos tecnológicos distintos, que combinan operarios y máquinas automatizadas:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Técnica</th>
+<th style="text-align: center;">Trabajadores</th>
+<th style="text-align: center;">Máquinas</th>
+<th style="text-align: center;">Producción (vacas gestionadas)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>E</strong></td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1000</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>a)</strong> Analiza la eficiencia técnica de cada proceso:
+<ul>
+<li>Compara la técnica <strong>A</strong> con la <strong>C</strong> y explica por qué se descarta <strong>A</strong>.</li>
+<li>Compara la técnica <strong>B</strong> con la <strong>D</strong> y explica por qué se descarta <strong>B</strong>.</li>
+<li>Justifica por qué las técnicas <strong>C</strong>, <strong>D</strong> y <strong>E</strong> sí son eficientes técnicamente (presta especial atención al caso de la técnica <strong>E</strong>).</li>
 </ul></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados-1">Unidad 2. Microeconomía y mercados</h3>
+<li><strong>b)</strong> Si el coste por trabajador es de 15 € y el de cada máquina es de 10 €:
 <ul>
-<li><strong>Ejercicios: La empresa y la producción</strong>
-<ul>
-<li><a href="ejercicios/5-1-eficiencia.html">Eficiencia técnica y económica</a></li>
-<li><a href="ejercicios/5-2-eficiencia-produccion.html">Consolidación de eficiencia técnica y económica</a></li>
-<li><a href="ejercicios/6-1-productividad.html">Productividad de los factores productivos</a></li>
-<li><a href="ejercicios/6-2-productividad-trabajo-capital.html">Productividad del trabajo y del capital</a></li>
-<li><a href="ejercicios/7-1-produccion-costes.html">Producción, costes y maximización del beneficio a corto plazo</a></li>
-<li><a href="ejercicios/7-2-costes-optimo.html">Estructura de costes y óptimo de producción</a></li>
-<li><a href="ejercicios/8-repaso-eficiencia-costes.html">Repaso de eficiencia y costes</a></li>
-<li><a href="ejercicios/9-1-umbral-formula.html">Umbral de rentabilidad: de los beneficios al punto muerto</a></li>
-<li><a href="ejercicios/9-2-umbral-basico.html">Umbral de rentabilidad: cálculo y representación gráfica</a></li>
+<li>Calcula el coste de las técnicas viables.</li>
+<li>Determina cuál es la técnica más eficiente económicamente.</li>
 </ul></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span></li>
+<li><strong>c)</strong> Imagina que, debido a un aumento salarial, el coste por trabajador pasa a 20 € y el de cada máquina baja a 5 €. ¿Sigue siendo la misma técnica la más eficiente económicamente? Demuéstralo con los nuevos cálculos.</li>
 </ul>
-</section>
-<section id="evaluación" class="level3">
-<h3 class="anchored" data-anchor-id="evaluación">Evaluación</h3>
+<section class="level2 unnumbered unlisted callout-example" data-callout-appearance="simple" data-unnumbered="true">
+<h2 class="unnumbered unlisted anchored" data-unnumbered="true" data-anchor-id="">Solución</h2>
+<p><strong>a) Eficiencia técnica</strong></p>
 <ul>
-<li><strong>Prueba de Economía — 1.º de Bachillerato</strong>
+<li><strong>A no es eficiente:</strong> comparada con <strong>C</strong>, usa las mismas máquinas (4), pero 3 trabajadores más (7 frente a 4).</li>
+<li><strong>B no es eficiente:</strong> comparada con <strong>D</strong>, usa más trabajadores (4 frente a 3) y más máquinas (6 frente a 5).</li>
+<li><strong>C, D y E son eficientes:</strong>
 <ul>
-<li><a href="ejercicios/nivel.html">Enunciado completo con solucionario desplegable</a></li>
+<li><strong>D</strong> es la que menos trabajadores emplea de todas (3).</li>
+<li><strong>C</strong> usa un trabajador más que <strong>D</strong>, pero una máquina menos (4 frente a 5).</li>
+<li><strong>E</strong> es la que menos máquinas emplea de todas (solo 1), por lo que ninguna otra técnica la supera en ambos factores a la vez.</li>
 </ul></li>
 </ul>
-</section>
-<section id="unidades-3-a-6" class="level3">
-<h3 class="anchored" data-anchor-id="unidades-3-a-6">Unidades 3 a 6</h3>
+<p><strong>b) Eficiencia económica con <span class="math inline">\(P_L = 15\text{ €}\)</span> y <span class="math inline">\(P_K = 10\text{ €}\)</span></strong></p>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El desarrollo económico</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El comercio internacional</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span></li>
+<li>Coste <strong>C</strong>: <span class="math inline">\((4 \cdot 15) + (4 \cdot 10) = 60 + 40 = 100\text{ €}\)</span>.</li>
+<li>Coste <strong>D</strong>: <span class="math inline">\((3 \cdot 15) + (5 \cdot 10) = 45 + 50 = \mathbf{95\text{ €}}\)</span> <span class="math inline">\(\rightarrow\)</span> <strong>más eficiente económicamente</strong>.</li>
+<li>Coste <strong>E</strong>: <span class="math inline">\((20 \cdot 15) + (1 \cdot 10) = 300 + 10 = 310\text{ €}\)</span>.</li>
 </ul>
-</section>
-</section>
-<section id="documentos-pdf" class="level2 resource-section">
-<h2 class="anchored" data-anchor-id="documentos-pdf">Documentos PDF</h2>
-<p>Esta sección queda preparada para reunir fichas, esquemas y otros documentos descargables en PDF.</p>
-<section id="unidad-1.-decisión-comportamiento-y-método-2" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-1.-decisión-comportamiento-y-método-2">Unidad 1. Decisión, comportamiento y método</h3>
+<p><strong>c) Cambio de precios a <span class="math inline">\(P_L = 20\text{ €}\)</span> y <span class="math inline">\(P_K = 5\text{ €}\)</span></strong></p>
 <ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span></li>
+<li>Coste <strong>C</strong>: <span class="math inline">\((4 \cdot 20) + (4 \cdot 5) = 80 + 20 = 100\text{ €}\)</span>.</li>
+<li>Coste <strong>D</strong>: <span class="math inline">\((3 \cdot 20) + (5 \cdot 5) = 60 + 25 = \mathbf{85\text{ €}}\)</span> <span class="math inline">\(\rightarrow\)</span> <strong>sigue siendo la más eficiente económicamente</strong>, ampliando su ventaja sobre <strong>C</strong> al intensificarse el abaratamiento del capital.</li>
+<li>Coste <strong>E</strong>: <span class="math inline">\((20 \cdot 20) + (1 \cdot 5) = 405\text{ €}\)</span>.</li>
 </ul>
-</section>
-<section id="unidad-2.-microeconomía-y-mercados-2" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-2.-microeconomía-y-mercados-2">Unidad 2. Microeconomía y mercados</h3>
-<ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La empresa y la producción</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-3.-macroeconomía-y-desarrollo-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-3.-macroeconomía-y-desarrollo-1">Unidad 3. Macroeconomía y desarrollo</h3>
-<ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El desarrollo económico</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-4.-sistema-financiero-y-política-monetaria-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-4.-sistema-financiero-y-política-monetaria-1">Unidad 4. Sistema financiero y política monetaria</h3>
-<ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-5.-política-fiscal-y-sector-público-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-5.-política-fiscal-y-sector-público-1">Unidad 5. Política fiscal y sector público</h3>
-<ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
-<section id="unidad-6.-comercio-globalización-y-retos-actuales-1" class="level3">
-<h3 class="anchored" data-anchor-id="unidad-6.-comercio-globalización-y-retos-actuales-1">Unidad 6. Comercio, globalización y retos actuales</h3>
-<ul>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: El comercio internacional</a><span class="placeholder-status">Próximamente</span></li>
-<li><a class="placeholder-link" href="" aria-disabled="true">Documento: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span></li>
-</ul>
-</section>
 </section>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -591,6 +620,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -904,15 +938,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./tema-01.html" class="pagination-link" aria-label="La economía: concepto, método y ramas">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">La economía: concepto, método y ramas</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
