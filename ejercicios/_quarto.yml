@@ -1,0 +1,90 @@
+project:
+  type: book
+  # Se renderiza dentro del _book/ del proyecto principal, para que la landing
+  # (que vive en _book/index.html) pueda enlazar con rutas relativas normales.
+  output-dir: ../_book/ejercicios
+
+lang: es
+
+filters:
+  - ../filters/github-alerts.lua
+
+book:
+  title: "Ejercicios de Economía"
+  subtitle: "1.º de Bachillerato · Primer trimestre"
+  author: "Guillermo"
+  page-navigation: false
+  sidebar:
+    style: docked
+    contents:
+      - index.md
+      - section: "Conceptos fundamentales"
+        contents:
+          - 2-macro-micro-normativa-positiva.md
+          - 3-costes-irrecuperables.md
+      - section: "Frank Price Production"
+        contents:
+          - 4-fpp-icaro.md
+      - section: "Eficiencia"
+        contents:
+          - 5-1-eficiencia.md
+          - 5-2-eficiencia-produccion.md
+      - section: "Productividad"
+        contents:
+          - 6-1-productividad.md
+          - 6-2-productividad-trabajo-capital.md
+      - section: "Costes y producción"
+        contents:
+          - 7-1-produccion-costes.md
+          - 7-2-costes-optimo.md
+      - section: "Umbral de rentabilidad"
+        contents:
+          - 8-repaso-eficiencia-costes.md
+          - 9-1-umbral-formula.md
+          - 9-2-umbral-basico.md
+      - section: "Evaluación"
+        contents:
+          - nivel.md
+  chapters:
+    - index.md
+    - part: "Conceptos fundamentales"
+      chapters:
+        - 2-macro-micro-normativa-positiva.md
+        - 3-costes-irrecuperables.md
+    - part: "Frank Price Production"
+      chapters:
+        - 4-fpp-icaro.md
+    - part: "Eficiencia"
+      chapters:
+        - 5-1-eficiencia.md
+        - 5-2-eficiencia-produccion.md
+    - part: "Productividad"
+      chapters:
+        - 6-1-productividad.md
+        - 6-2-productividad-trabajo-capital.md
+    - part: "Costes y producción"
+      chapters:
+        - 7-1-produccion-costes.md
+        - 7-2-costes-optimo.md
+    - part: "Umbral de rentabilidad"
+      chapters:
+        - 8-repaso-eficiencia-costes.md
+        - 9-1-umbral-formula.md
+        - 9-2-umbral-basico.md
+    - part: "Evaluación"
+      chapters:
+        - nivel.md
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 2
+    link-external-newwindow: true
+
+execute:
+  echo: false
+  warning: false
+  message: false

@@ -1,13 +1,13 @@
 # Recursos de Economía {.unnumbered}
 
 ::: {.resource-intro}
-En esta página encontrarás los materiales de Economía de 1.º de Bachillerato. Los apuntes ya están disponibles; los ejercicios y los documentos complementarios se irán incorporando a lo largo del curso.
+En esta página encontrarás los materiales de Economía de 1.º de Bachillerato. Los apuntes y los ejercicios del primer trimestre ya están disponibles; los ejercicios de los trimestres siguientes y los documentos complementarios se irán incorporando a lo largo del curso.
 :::
 
 ::: {.resource-navigation}
 [Apuntes](#apuntes)
 
-[Ejercicios en HTML](#ejercicios-en-html)
+[Ejercicios](#ejercicios)
 
 [Documentos PDF](#documentos-pdf)
 :::
@@ -51,39 +51,53 @@ Cada tema incluye explicaciones, definiciones, ejemplos y gráficos.
 :::
 
 ::: {.resource-section}
-## Ejercicios en HTML
+## Ejercicios
 
-Los enlaces se han dejado preparados para añadir los ejercicios interactivos cuando estén disponibles.
+Los ejercicios del primer trimestre están disponibles por tema, con la solución de
+cada uno desplegable justo debajo de su enunciado. El [cuaderno
+completo](ejercicios/index.html) está siguiente, con todo el temario en orden y el
+índice navegable.
 
 ### Unidad 1. Decisión, comportamiento y método
 
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span>
+- **Ejercicios: La economía: concepto, método y ramas**
+  - [Microeconomía y macroeconomía; economía normativa y positiva](ejercicios/2-macro-micro-normativa-positiva.html)
+
+- **Ejercicios: Necesidades, producción y sistemas económicos**
+  - [Costes irrecuperables, coste de oportunidad y tipos de bienes](ejercicios/3-costes-irrecuperables.html)
+  - [La frontera de posibilidades de producción de «Movilidad Ícaro»](ejercicios/4-fpp-icaro.html)
+
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span>
 
 ### Unidad 2. Microeconomía y mercados
 
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La empresa y la producción</a><span class="placeholder-status">Próximamente</span>
+- **Ejercicios: La empresa y la producción**
+  - [Eficiencia técnica y económica](ejercicios/5-1-eficiencia.html)
+  - [Consolidación de eficiencia técnica y económica](ejercicios/5-2-eficiencia-produccion.html)
+  - [Productividad de los factores productivos](ejercicios/6-1-productividad.html)
+  - [Productividad del trabajo y del capital](ejercicios/6-2-productividad-trabajo-capital.html)
+  - [Producción, costes y maximización del beneficio a corto plazo](ejercicios/7-1-produccion-costes.html)
+  - [Estructura de costes y óptimo de producción](ejercicios/7-2-costes-optimo.html)
+  - [Repaso de eficiencia y costes](ejercicios/8-repaso-eficiencia-costes.html)
+  - [Umbral de rentabilidad: de los beneficios al punto muerto](ejercicios/9-1-umbral-formula.html)
+  - [Umbral de rentabilidad: cálculo y representación gráfica](ejercicios/9-2-umbral-basico.html)
+
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span>
 
-### Unidad 3. Macroeconomía y desarrollo
+### Evaluación
+
+- **Prueba de Economía — 1.º de Bachillerato**
+  - [Enunciado completo con solucionario desplegable](ejercicios/nivel.html)
+
+### Unidades 3 a 6
 
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El desarrollo económico</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 4. Sistema financiero y política monetaria
-
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 5. Política fiscal y sector público
-
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 6. Comercio, globalización y retos actuales
-
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El comercio internacional</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
 :::

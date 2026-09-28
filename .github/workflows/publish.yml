@@ -40,6 +40,12 @@ jobs:
       - name: Renderizar el libro a HTML
         run: quarto render --to html
 
+      # Los ejercicios son un proyecto Quarto aparte que escribe dentro de
+      # _book/ejercicios/, así que tienen que renderizarse después del libro.
+      - name: Renderizar los ejercicios a HTML
+        run: quarto render --to html
+        working-directory: ejercicios
+
       - name: Publicar en GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

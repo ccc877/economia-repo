@@ -79,31 +79,26 @@ $$Q^* = \frac{CF}{P - CVu} = \frac{58.014}{7{,}8 - 4{,}5} = \frac{58.014}{3{,}3}
   <!-- Fondo -->
   <rect x="0" y="0" width="600" height="380" fill="#fafafa" rx="4"/>
   <!-- Zonas -->
-  <!-- Pérdidas: triángulo izquierda del punto muerto -->
-  <polygon points="70,310 254,164 70,164" fill="#fde8cc" opacity="0.6"/>
-  <!-- Beneficios: triángulo derecha -->
-  <polygon points="254,164 530,40 530,310" fill="#d5edcc" opacity="0.5"/>
+  <!-- Pérdidas: región entre IT y CT a la izquierda del punto muerto -->
+  <polygon points="70,310 214,222 70,273" fill="#fde8cc" opacity="0.6"/>
+  <!-- Beneficios: región entre IT y CT a la derecha del punto muerto -->
+  <polygon points="214,222 530,27 530,109" fill="#d5edcc" opacity="0.5"/>
   <!-- Ejes -->
   <line x1="70" y1="20" x2="70" y2="320" stroke="#333" stroke-width="2"/>
   <line x1="60" y1="310" x2="560" y2="310" stroke="#333" stroke-width="2"/>
   <!-- Etiquetas ejes -->
   <text x="300" y="345" text-anchor="middle" fill="#555">Cantidad (Q)</text>
   <text x="20" y="170" text-anchor="middle" fill="#555" transform="rotate(-90,20,170)">Euros (€)</text>
-  <!-- Recta CF: y=58014 → escala: yPX = 310 - (58014/450000)*290 = 310-37.4=272.6 -->
+  <!-- Recta CF: 58014 → yPX = 310 - (58014/450000)*290 = 272.6 ≈ 273 -->
   <line x1="70" y1="273" x2="560" y2="273" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
   <text x="565" y="277" fill="#888" font-size="10">CF</text>
-  <!-- Recta CT: nace en (70,273), pendiente: 303264/54500 × (490/60000) → llega a (530, ~40) -->
-  <!-- CT(Q)=58014+4.5Q; en Q=0: 58014→273px; en Q=54500: 303264→ escala -->
-  <!-- yPX = 310 - (CT/450000)*290 -->
-  <!-- Q=0 → CT=58014 → 310-(58014/450000)*290 = 310-37.4=272.6≈273 -->
-  <!-- Q=54500 → CT=303264 → 310-(303264/450000)*290 = 310-195.5=114.5≈115 -->
-  <!-- xPX = 70 + (Q/60000)*490 -->
-  <!-- Q=54500 → 70+(54500/60000)*490=70+445.4=515 -->
-  <line x1="70" y1="273" x2="530" y2="97" stroke="#e15759" stroke-width="2"/>
+  <!-- Recta CT: CT(Q)=58014+4,5Q, nace en (70,273).
+       En x=530 → Q=56327 → CT=311483 → yPX = 310-(311483/450000)*290 = 109 -->
+  <line x1="70" y1="273" x2="530" y2="109" stroke="#e15759" stroke-width="2"/>
   <text x="535" y="94" fill="#e15759" font-size="10">CT</text>
-  <!-- Recta IT: nace en origen (70,310); IT=7.8Q -->
-  <!-- Q=54500 → IT=425100 → 310-(425100/450000)*290=310-273.9=36 -->
-  <line x1="70" y1="310" x2="530" y2="36" stroke="#4e79a7" stroke-width="2"/>
+  <!-- Recta IT: IT(Q)=7,8Q, nace en el origen (70,310).
+       En x=530 → Q=56327 → IT=439347 → yPX = 310-(439347/450000)*290 = 27 -->
+  <line x1="70" y1="310" x2="530" y2="27" stroke="#4e79a7" stroke-width="2"/>
   <text x="535" y="33" fill="#4e79a7" font-size="10">IT</text>
   <!-- Punto muerto Q*=17580 -->
   <!-- xPM = 70+(17580/60000)*490 = 70+143.7=214 -->
@@ -118,8 +113,8 @@ $$Q^* = \frac{CF}{P - CVu} = \frac{58.014}{7{,}8 - 4{,}5} = \frac{58.014}{3{,}3}
   <!-- Etiqueta CF en eje Y -->
   <text x="55" y="277" text-anchor="end" fill="#888">58.014 €</text>
   <!-- Zonas texto -->
-  <text x="150" y="295" text-anchor="middle" fill="#c05000" font-size="10" font-weight="bold">Pérdidas</text>
-  <text x="390" y="120" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Beneficios</text>
+  <text x="130" y="300" text-anchor="middle" fill="#c05000" font-size="10" font-weight="bold">Pérdidas</text>
+  <text x="400" y="136" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Beneficios</text>
 </svg>
 <figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.3em">Gráfica del umbral de rentabilidad — Pastelería AMETS (datos reales del ejercicio)</figcaption>
 </figure>
@@ -223,9 +218,10 @@ $$Q^* = \frac{32.000}{15 - 2{,}6} = \frac{32.000}{12{,}4} = \mathbf{2.580{,}6 \a
 <figure style="margin:1.5em auto;max-width:600px;">
 <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:sans-serif;font-size:11px;">
   <rect x="0" y="0" width="600" height="360" fill="#fafafa" rx="4"/>
-  <!-- Zonas -->
-  <polygon points="70,290 70,149 318,149" fill="#fde8cc" opacity="0.6"/>
-  <polygon points="318,149 530,38 530,290" fill="#d5edcc" opacity="0.5"/>
+  <!-- Pérdidas: región entre IT y CT a la izquierda del punto muerto -->
+  <polygon points="70,290 351,129 70,157" fill="#fde8cc" opacity="0.6"/>
+  <!-- Beneficios: región entre IT y CT a la derecha del punto muerto -->
+  <polygon points="351,129 530,27 530,112" fill="#d5edcc" opacity="0.5"/>
   <!-- Ejes -->
   <line x1="70" y1="20" x2="70" y2="300" stroke="#333" stroke-width="2"/>
   <line x1="60" y1="290" x2="560" y2="290" stroke="#333" stroke-width="2"/>
@@ -235,16 +231,16 @@ $$Q^* = \frac{32.000}{15 - 2{,}6} = \frac{32.000}{12{,}4} = \mathbf{2.580{,}6 \a
   <line x1="70" y1="157" x2="560" y2="157" stroke="#888" stroke-width="1.5" stroke-dasharray="6,3"/>
   <text x="565" y="161" fill="#888" font-size="10">CF</text>
   <text x="55" y="161" text-anchor="end" fill="#888">32.000 €</text>
-  <!-- CT: (0,32000)→(70,157); (4000,42400)→xPX=70+(4000/4500)*490=505, yPX=290-(42400/65000)*270=290-176.2=114 -->
-  <!-- En Q=3500: CT=41100→ yPX=290-(41100/65000)*270=290-170.8=119; xPX=70+(3500/4500)*490=451 -->
-  <line x1="70" y1="157" x2="530" y2="107" stroke="#e15759" stroke-width="2"/>
+  <!-- CT: CT(Q)=32000+2,6Q, nace en (70,157).
+       En x=530 → Q=4224 → CT=42984 → yPX = 290-(42984/65000)*270 = 112 -->
+  <line x1="70" y1="157" x2="530" y2="112" stroke="#e15759" stroke-width="2"/>
   <text x="535" y="104" fill="#e15759" font-size="10">CT</text>
-  <!-- IT: (0,0)→(70,290); (3500,52500)→yPX=290-(52500/65000)*270=290-218=72; xPX=451 -->
-  <line x1="70" y1="290" x2="530" y2="38" stroke="#4e79a7" stroke-width="2"/>
+  <!-- IT: IT(Q)=15Q, nace en el origen (70,290).
+       En x=530 → Q=4224 → IT=63367 → yPX = 290-(63367/65000)*270 = 27 -->
+  <line x1="70" y1="290" x2="530" y2="27" stroke="#4e79a7" stroke-width="2"/>
   <text x="535" y="35" fill="#4e79a7" font-size="10">IT</text>
-  <!-- Q*=2581 → xPX=70+(2581/4500)*490=70+281.2=351; IT*=38715→yPX=290-(38715/65000)*270=290-160.8=129 -->
-  <!-- Ajuste visual para que el punto quede en la intersección real -->
-  <!-- Q*=2581: CT=32000+2.6*2581=38910.6; IT=15*2581=38715 → prácticamente iguales, uso 38715 -->
+  <!-- Punto muerto: Q*=2580,6 → xPX = 70+(2580,6/4500)*490 = 351;
+       IT* = 15·2580,6 = 38710 → yPX = 290-(38710/65000)*270 = 129 -->
   <line x1="351" y1="129" x2="351" y2="290" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
   <line x1="70" y1="129" x2="351" y2="129" stroke="#555" stroke-width="1" stroke-dasharray="4,3"/>
   <circle cx="351" cy="129" r="4" fill="#333"/>
@@ -252,8 +248,8 @@ $$Q^* = \frac{32.000}{15 - 2{,}6} = \frac{32.000}{12{,}4} = \mathbf{2.580{,}6 \a
   <text x="55" y="133" text-anchor="end" fill="#333">38.715 €</text>
   <text x="357" y="118" fill="#333" font-size="10">Q*</text>
   <!-- Zonas texto -->
-  <text x="190" y="275" text-anchor="middle" fill="#c05000" font-size="10" font-weight="bold">Pérdidas</text>
-  <text x="450" y="80" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Beneficios</text>
+  <text x="190" y="200" text-anchor="middle" fill="#c05000" font-size="10" font-weight="bold">Pérdidas</text>
+  <text x="460" y="72" text-anchor="middle" fill="#2d6a27" font-size="10" font-weight="bold">Beneficios</text>
 </svg>
 <figcaption style="text-align:center;font-size:0.85em;color:#555;margin-top:0.3em">Gráfica del umbral de rentabilidad — PETUKA, solo tubos (CF totales = 32.000 €)</figcaption>
 </figure>

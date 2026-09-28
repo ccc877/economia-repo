@@ -12,12 +12,31 @@ con tablas descolocadas, símbolos rotos o texto en inglés donde debería ir en
 ## 1. Estructura del repositorio
 
 ```
-_quarto.yml          # Configuración del proyecto: formatos, unidades (parts), capítulos
-index.qmd             # Portada/presentación del libro
+_quarto.yml          # Configuración del libro: formatos, unidades (parts), capítulos
+index.qmd             # Landing del sitio: apuntes, ejercicios y documentos
 tema-01.qmd … tema-14.qmd   # Un archivo por tema, cada uno UN SOLO capítulo (un único "# Título" H1)
+ejercicios/           # PROYECTO QLARTO APARTE (tiene su propio _quarto.yml), ver más abajo
+filters/              # Filtros Lua que usa el proyecto de ejercicios
 render.sh              # Pipeline de renderizado completo (HTML + PDF), ver sección 4
 .github/workflows/      # CI: renderiza a HTML y publica en GitHub Pages en cada push a main
 ```
+
+Hay **dos proyectos Quarto distintos** en el mismo repositorio, y conviene no confundirlos:
+
+- **El libro** (`_quarto.yml` en la raíz): los apuntes, `tema-NN.qmd`. Va a `_book/`.
+- **Los ejercicios** (`ejercicios/_quarto.yml`): proyecto propio de tipo `book`, que
+  renderiza dentro de `_book/ejercicios/`. Los ejercicios **no** son capítulos del
+  libro ni un apéndice suyo: son una sección aparte del sitio, enlazada desde la
+  landing. El `output-dir: ../_book/ejercicios` es lo que hace que las rutas relativas
+  de la landing funcionen tal cual.
+
+Y dentro de cada uno, dos tipos de contenido con reglas distintas:
+
+- **Los apuntes** (`tema-NN.qmd`) son el libro de texto: obligatoriamente `.qmd`, con su
+  *chunk* de R y siguiendo todo lo de la sección 3.
+- **Los ejercicios** (`ejercicios/*.md`) son material de trabajo: van en **Markdown plano
+  (`.md`)**, no necesitan chunk de R. Puedes escribirlos como los escribes en GitHub; el
+  filtro de la sección 3 se encarga de la interoperabilidad.
 
 Cada `tema-NN.qmd` empieza con el mismo *chunk* de configuración:
 
@@ -38,6 +57,31 @@ el libro (ha pasado más de una vez).
 Las 6 unidades didácticas se declaran en `_quarto.yml` mediante bloques `part:`. Si
 añades o mueves un tema, actualiza también su bloque `part` correspondiente.
 
+Los ejercicios se declaran en `ejercicios/_quarto.yml`, agrupados por `part:` (y también
+en el `sidebar:` del mismo proyecto, para que el índice lateral cuadre). Ahí **no** puedes
+anidar un `part:` dentro de otro: pon cada bloque a nivel superior. Nómbralos en minúsculas
+y con guiones (`9-1-umbral-basico.md`), porque el nombre del archivo acaba en la URL; los
+espacios y las tildes en el nombre se rompen. El proyecto de ejercicios necesita un
+`index.md` como portada, siempre.
+
+### Cómo es un ejercicio
+
+Todo el material va **orientado al alumnado**, sin excepciones:
+
+- El **título del documento no lleva numeración** ni prefijos tipo «6.1» o «Bloque 3»:
+  un título limpio y legible (`# La productividad de los factores productivos`). La
+  numeración es un residuo de cómo se ordenaron los apuntes al copiarlos, y descoloca
+  al alumno que busca por el índice.
+- Cada ejercicio lleva **su propio desplegable de solución** justo debajo del
+  enunciado, con la forma exacta `> [!example]- Solución`. Nada de un bloque único de
+  soluciones al final: el alumno debe poder comprobar uno sin ver los demás.
+- No hay solucionarios en ficheros aparte ni «guías docentes»: el material es el
+  mismo para quien lo resuelve y para quien lo corrige. Nada de mencionar al
+  profesorado ni de escribir comentarios del tipo «esto sirve para comprobar si el
+  alumnado…».
+- El **filtro marca los títulos de callout como `unlisted`**, así que no ensucian el
+  índice. Si añades un desplegable nuevo, hereda ese comportamiento automáticamente.
+
 ## 2. Entorno necesario
 
 Este contenedor **no trae preinstalado** nada de lo siguiente; instálalo antes de
@@ -52,8 +96,10 @@ renderizar por primera vez:
   `texlive-luatex`, `texlive-plain-generic` — este último trae `ulem.sty`, que
   `kableExtra` necesita y que sorprendentemente no viene en los paquetes "grandes"—.
   El motor de PDF es `lualatex`.
-- Fija siempre el *locale* al renderizar: `LANG=C.utf8 LC_ALL=C.utf8` — sin esto, los
-  acentos y las letras con tilde se corrompen en el PDF.
+- Fija siempre el *locale* al renderizar. Ojo: **`C.utf8` es el nombre de Linux y en
+  macOS no existe**, así que R arranca con `LC_CTYPE=C` y trunca los caracteres acentuados
+  del código (`<text>:2:14: unexpected input`). En macOS el correcto es `C.UTF-8`. El
+  `render.sh` lo detecta solo, pero si renderizas a mano usa `LANG=C.UTF-8 LC_ALL=C.UTF-8`.
 
 **La versión HTML no necesita LaTeX en absoluto.** Si solo vas a trabajar en la web,
 basta con Quarto + R (ver `.github/workflows/publish.yml`, que usa exactamente eso).
@@ -78,6 +124,31 @@ basta con Quarto + R (ver `.github/workflows/publish.yml`, que usa exactamente e
 - `.callout-important` → leyes económicas, matices importantes ("Nota").
 - `.callout-tip` → ejemplos, casos reales, ejercicios resueltos.
 - `.callout-warning` → avisos (contenido pendiente, matices que rompen una regla general).
+
+**Sintaxis de GitHub también vale.** El filtro `filters/github-alerts.lua` (declarado en
+`_quarto.yml`) convierte los avisos de GitHub en callouts nativos de Quarto, así que en
+los ejercicios puedes escribir como en GitHub y sale igual de bien:
+
+```markdown
+> [!tip] Título          se convierte en    ::: {.callout-tip}
+> cuerpo                                    ## Título
+>                                           cuerpo
+>                                         :::
+```
+
+`[!info]` se mapea a `callout-note` (GitHub y Quarto lo llaman distinto). Un sufijo `-`
+deja el callout plegado y `+` desplegado pero plegable. Si añades un tipo nuevo al mapa
+`TIPOS` del filtro, ten en cuenta que un tipo ausente hace que el aviso se descarte **en
+silencio** y salga como texto entrecomillado plano.
+
+⚠️ **Si el cuerpo de un aviso empieza con una lista o una tabla, pon una línea `>`
+vacía justo después del título.** Sin ella Pandoc interpreta la lista como
+continuación del párrafo del título y sale como texto plano con los `*` y los `1.`
+a la vista. Esto ya pasó y es fácil de no ver en el código.
+
+⚠️ **Ojo con los dos espacios al final de línea.** Markdown los interpreta como un salto
+de línea forzado, y si la línea siguiente es un aviso sangrado (`  > [!tip] ...`) deja de
+ser un bloque y se pega al párrafo anterior como texto literal. Quítalos.
 
 Evita dos callouts pegados sin ninguna frase de transición entre ellos: en LaTeX, en
 alguna combinación con figuras flotantes cercanas, han llegado a solaparse visualmente.
@@ -127,10 +198,14 @@ Usa `render.sh`, que encapsula el pipeline completo (ver el propio script para e
 detalle). Resumen:
 
 ```bash
-./render.sh html   # solo la web (rápido, sin LaTeX)
+./render.sh html   # solo la web (rápido, sin LaTeX): libro + ejercicios
 ./render.sh pdf    # el libro en PDF (requiere el entorno LaTeX completo)
 ./render.sh all    # ambos
 ```
+
+`render.sh html` renderiza **los dos proyectos** por orden: primero el libro (que borra
+`_book/` entero) y después los ejercicios, que escriben dentro de `_book/ejercicios/`. Si
+inviertes ese orden, el segundo render se come al primero.
 
 El paso a PDF hace, en este orden:
 
@@ -165,20 +240,27 @@ a secas.
 
 ## 6. Ejercicios y apuntes pendientes de completar
 
-Si te piden completar apuntes o ejercicios sueltos que aparecen en la carpeta (fuera de
-los `tema-NN.qmd` ya integrados), el criterio es:
+Los ejercicios **no se integran en los temas ni en el libro**: viven como proyecto aparte
+en `ejercicios/*.md` y se enlazan desde la sección «Ejercicios en HTML» de la landing
+(`index.qmd`). Si te pidan añadir ejercicios:
 
-- Intégralos dentro del tema que les corresponda temáticamente, seleccionando o creando
-  el apartado (`##`/`###`) adecuado — no los dejes como archivos sueltos sin conectar
-  con el resto del libro.
-- Los ejercicios resueltos siguen el patrón `.callout-tip` con título
-  `## Ejercicio resuelto: <qué calcula>`, enunciado en texto normal y solución con las
-  fórmulas en LaTeX (`$$...$$` o `$...$`), igual que los ya existentes — cópialos como
-  plantilla antes de escribir uno nuevo.
-- El libro es fundamentalmente **teórico**: los ejercicios resueltos son ilustraciones
-  puntuales dentro de la exposición, no una batería de práctica exhaustiva. Si el volumen
-  de ejercicios que hay que añadir es grande, plantea antes si conviene un cuaderno de
-  ejercicios aparte en vez de saturar el libro de texto.
+- Pon el archivo en `ejercicios/` con nombre en minúsculas y guiones, y regístralo en el
+  `part:` correspondiente de `ejercicios/_quarto.yml` (y en el `sidebar:`).
+- Usa sintaxis de GitHub para los avisos (`> [!tip] Título`); el filtro los traduce
+  (sección 3). Cada solución va en su propio desplegable `> [!example]- Solución` bajo
+  su enunciado (ver «Cómo es un ejercicio» en la sección 1).
+- En la sección «Ejercicios en HTML» de `index.qmd`, sustituye el `placeholder-link` del
+  tema correspondiente por los enlaces reales. Si el tema ya tiene ejercicios, se los
+  añades; si es el primero, la entrada pasa a ser un encabezado en negrita con el título
+  del tema, como las que ya están resueltas.
+- Si un ejercicio **no tiene solución**, déjalo sin desplegable. No la inventes.
+- El libro de texto es fundamentalmente **teórico**: los ejercicios resueltos son
+  ilustraciones puntuales, no una batería de práctica. El cuaderno de ejercicios es el
+  sitio natural para el volumen grande, no saturar los temas.
+
+Si lo que te piden es ampliar la **explicación** de un tema, entonces sí: intégralo en
+el `tema-NN.qmd` que le corresponda, seleccionando o creando el apartado (`##`/`###`)
+adecuado, y sigue las reglas de estilo de la sección 3.
 
 ## 7. Git y publicación
 

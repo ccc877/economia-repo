@@ -14,15 +14,29 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-export LANG=C.utf8
-export LC_ALL=C.utf8
+# En macOS el locale UTF-8 neutro se llama C.UTF-8, no C.utf8 (que es el nombre
+# de Linux). Con C.utf8 R arranca con LC_CTYPE=C y trunca los caracteres
+# acentuados del código, así que aquí se prueba el que exista de verdad.
+if locale -a 2>/dev/null | grep -qix 'C.utf-8'; then
+  export LANG=C.UTF-8
+  export LC_ALL=C.UTF-8
+elif locale -a 2>/dev/null | grep -qix 'C.utf8'; then
+  export LANG=C.utf8
+  export LC_ALL=C.utf8
+else
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+fi
 
 MODE="${1:-all}"
 
 render_html () {
-  echo "==> Renderizando HTML..."
+  echo "==> Renderizando HTML del libro..."
   rm -rf _book
   quarto render --to html
+  echo "==> Renderizando HTML de los ejercicios..."
+  # Va después del anterior porque escribe dentro de _book/.
+  ( cd ejercicios && quarto render --to html )
   echo "==> HTML listo en _book/"
 }
 

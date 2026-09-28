@@ -12,14 +12,14 @@
 | $P_c$ | Precio de compra | Precio unitario que cobra el proveedor externo |
 | $CF$ | Costes fijos de fabricación | Solo existen si se fabrica internamente (instalaciones, maquinaria, personal fijo…) |
 | $CVu$ | Coste variable unitario de fabricación | Coste de producir cada unidad internamente (materiales, energía…) |
-| $Q^*$ | Punto de indiferencia | Cantidad donde $C_{	ext{fab}} = C_{	ext{comp}}$ |
+| $Q^*$ | Punto de indiferencia | Cantidad donde $C_{\text{fab}} = C_{\text{comp}}$ |
 | $P_{max}$ | Precio máximo al proveedor | Precio límite a partir del cual deja de interesar comprar |
 
 **Fórmulas**
 
-$$C_{	ext{fab}} = CF + CVu \times Q \qquad \text{(coste de fabricar internamente)}$$
+$$C_{\text{fab}} = CF + CVu \times Q \qquad \text{(coste de fabricar internamente)}$$
 
-$$C_{	ext{comp}} = P_c \times Q \qquad \text{(coste de comprar; sin costes fijos propios)}$$
+$$C_{\text{comp}} = P_c \times Q \qquad \text{(coste de comprar; sin costes fijos propios)}$$
 
 $$Q^* = \frac{CF}{P_c - CVu} \qquad \text{(punto de indiferencia)}$$
 
@@ -166,21 +166,21 @@ d) Si necesitara 400.000 unidades, ¿cuál es la mejor decisión? Calcula los co
 - $CVu = 4 + 1{,}50 + 0{,}50 = 6$ €/ud
 
 **a) Punto de indiferencia:**
-$$Q^* = rac{CF}{P_c - CVu} = rac{1.600.000}{11 - 6} = rac{1.600.000}{5} = \mathbf{320.000\ 	ext{unidades}}$$
+$$Q^* = \frac{CF}{P_c - CVu} = \frac{1.600.000}{11 - 6} = \frac{1.600.000}{5} = \mathbf{320.000\ \text{unidades}}$$
 
 A partir de 320.000 unidades interesa producir internamente.
 
-**b) Gráfica:** $C_{	ext{comp}}$ nace en el origen con pendiente 11. $C_{	ext{fab}}$ nace en (0, 1.600.000) con pendiente 6. Se cruzan en $Q^* = 320.000$ uds; coste en ese punto: $11 	imes 320.000 = 3.520.000$ €.
+**b) Gráfica:** $C_{\text{comp}}$ nace en el origen con pendiente 11. $C_{\text{fab}}$ nace en (0, 1.600.000) con pendiente 6. Se cruzan en $Q^* = 320.000$ uds; coste en ese punto: $11 \times 320.000 = 3.520.000$ €.
 
 **c) Precio máximo con Q = 250.000** (por debajo del punto de indiferencia → conviene comprar, pero ¿hasta qué precio?):
-$$P_{max} = rac{CF + CVu 	imes Q}{Q} = rac{1.600.000 + 6 	imes 250.000}{250.000} = rac{3.100.000}{250.000} = \mathbf{12{,}4\ 	ext{€/ud}}$$
+$$P_{max} = \frac{CF + CVu \times Q}{Q} = \frac{1.600.000 + 6 \times 250.000}{250.000} = \frac{3.100.000}{250.000} = \mathbf{12{,}4\ \text{€/ud}}$$
 
 Si el proveedor cobra menos de 12,4 €, sigue siendo mejor comprar. Si cobra más, ya convendría fabricar.
 
 **d) Decisión con 400.000 unidades** (por encima del punto de indiferencia → debería convenir fabricar):
 
-$$C_{	ext{comp}} = 11 	imes 400.000 = 4.400.000\ 	ext{€}$$
-$$C_{	ext{fab}} = 1.600.000 + 6 	imes 400.000 = 4.000.000\ 	ext{€}$$
+$$C_{\text{comp}} = 11 \times 400.000 = 4.400.000\ \text{€}$$
+$$C_{\text{fab}} = 1.600.000 + 6 \times 400.000 = 4.000.000\ \text{€}$$
 
 Conviene **fabricar**: ahorro de 400.000 €. Coherente con el apartado a): 400.000 > 320.000.
 :::
