@@ -77,6 +77,105 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script>
+(function () {
+  var CLAVE = "eco-modo";
+  var raiz = document.documentElement;
+
+  function guardado() {
+    try { return localStorage.getItem(CLAVE); } catch (e) { return null; }
+  }
+  function porDefectoOscuro() {
+    return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+  function aplicar(oscuro) {
+    raiz.setAttribute("data-bs-theme", oscuro ? "dark" : "light");
+  }
+
+  // Antes de pintar nada, para evitar el destello de tema claro.
+  var elegido = guardado();
+  aplicar(elegido === null ? porDefectoOscuro() : elegido === "oscuro");
+
+  function ponerBoton() {
+    var nav = document.querySelector(".navbar");
+    if (!nav || document.getElementById("boton-modo")) return;
+
+    var boton = document.createElement("button");
+    boton.id = "boton-modo";
+    boton.type = "button";
+    boton.className = "btn btn-sm btn-outline-secondary boton-modo";
+    boton.title = "Cambiar entre modo claro y oscuro";
+
+    function pintar() {
+      var oscuro = raiz.getAttribute("data-bs-theme") === "dark";
+      boton.textContent = oscuro ? "☀" : "☾";
+      boton.setAttribute("aria-label", oscuro ? "Activar modo claro" : "Activar modo oscuro");
+    }
+
+    boton.addEventListener("click", function () {
+      var oscuro = raiz.getAttribute("data-bs-theme") === "dark";
+      aplicar(!oscuro);
+      try { localStorage.setItem(CLAVE, !oscuro ? "oscuro" : "claro"); } catch (e) {}
+      pintar();
+      avisarIframes();
+    });
+
+    nav.appendChild(boton);
+    pintar();
+  }
+
+  // Los iframes (la solución interactiva) son documentos aparte: hay que
+  //lles decir en qué tema están, porque no heredan nada del padre.
+  function avisarIframes() {
+    var tema = raiz.getAttribute("data-bs-theme");
+    var marcos = document.querySelectorAll("iframe");
+    for (var i = 0; i < marcos.length; i++) {
+      try {
+        marcos[i].contentWindow.postMessage({ tipo: "tema-iframe", tema: tema }, "*");
+      } catch (e) {}
+    }
+  }
+  window.addEventListener("message", function (ev) {
+    var f = ev.source;
+    if (!ev.data) return;
+    if (ev.data.tipo === "altura-iframe" && f && f.tagName === "IFRAME") {
+      f.style.height = (ev.data.alto + 4) + "px";
+    }
+    // El iframe acaba de cargar y quiere saber en qué tema está.
+    if (ev.data.tipo === "tema-iframe-listo") avisarIframes();
+  });
+  window.avisoTemaIframes = avisarIframes;
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ponerBoton);
+  } else {
+    ponerBoton();
+  }
+})();
+</script>
+<style>
+  /* El botón se ancla a la derecha de la barra de navegación. */
+  .boton-modo { margin-left: auto; min-width: 2.4rem; }
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav { margin-right: 3rem; }
+    .boton-modo { margin-right: 0.5rem; }
+  }
+  /* Los material en color propio del proyecto (solo la portada) hay que
+     adaptarlos a mano: Bootstrap no los conoce. */
+  [data-bs-theme="dark"] .resource-navigation a {
+    background: #1b2634;
+    border-color: #33455c;
+    color: #9ecbff;
+  }
+  [data-bs-theme="dark"] .resource-navigation a:hover {
+    background: #24344a;
+    border-color: #4a6b8a;
+  }
+  [data-bs-theme="dark"] .placeholder-link,
+  [data-bs-theme="dark"] .placeholder-status { color: #8a949e; }
+  /* El desplegable de un ejercicio lleva fondo blanco propio. */
+  [data-bs-theme="dark"] .callout { --bs-callout-bg: #1b2634; }
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
