@@ -6,6 +6,11 @@ project:
 
 lang: es
 
+# Los ficheros HTML del cuaderno (los explainers interactivos) no se renderizan,
+# pero hay que copiarlos a la salida para poder enlazarlos o incrustarlos.
+resources:
+  - "*.html"
+
 book:
   title: "Ejercicios de Economía"
   subtitle: "1.º de Bachillerato · Primer trimestre"

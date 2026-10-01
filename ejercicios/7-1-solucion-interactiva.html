@@ -144,4 +144,20 @@ document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{
  document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on',x===b));
  document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t))});
 upd();
+
+/* Avisa a la página contenedora de cuál es la altura real del contenido, para
+   que el iframe se ajuste sin scroll anidado. No basta con medir al cargar: la
+   altura cambia al cambiar de pestaña (Producción es larga y Tabla, corta) y al
+   mover el deslizador, porque cambia el texto del veredicto. */
+(function(){
+  function avisar(){
+    var alto=document.documentElement.scrollHeight;
+    if (window.parent && window.parent!==window){
+      window.parent.postMessage({tipo:'alto-iframe',alto:alto},'*');
+    }
+  }
+  if (window.ResizeObserver){ new ResizeObserver(avisar).observe(document.body); }
+  window.addEventListener('load',avisar);
+  setTimeout(avisar,0);
+})();
 </script></body></html>

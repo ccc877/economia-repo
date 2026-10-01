@@ -52,6 +52,15 @@ AVISO = re.compile(r"^(\s*)>\s*\[!([A-Za-z][\w-]*)\]([+-]?)\s*(.*)$")
 CITADA = re.compile(r"^(\s*)>( ?)(.*)$")
 
 
+def copiar_estaticos(origen, destino):
+    """Copia los ficheros que no son Markdown, como los explainers interactivos."""
+    for patron in ("*.html", "*.css", "*.js"):
+        for ruta in glob.glob(os.path.join(origen, patron)):
+            destino_fichero = os.path.join(destino, os.path.basename(ruta))
+            shutil.copyfile(ruta, destino_fichero)
+            print(f"  {os.path.basename(ruta)}: copiado sin convertir")
+
+
 def convertir(origen, destino):
     os.makedirs(destino, exist_ok=True)
     total = 0
@@ -108,9 +117,10 @@ def convertir(origen, destino):
             print(f"  {os.path.basename(ruta)}: {convertidos} avisos")
             total += convertidos
 
+    copiar_estaticos(origen, destino)
+
     # El _quarto.yml se copia con la ruta de salida ajustada al nuevo nivel de
-    # anidamiento (build/ejercicios en vez de ejercicios) y sin el filtro, que
-    # ya no hace falta.
+    # anidamiento (build/ejercicios en vez de ejercicios).
     config_origen = os.path.join(origen, "_quarto.yml")
     if os.path.exists(config_origen):
         with open(config_origen, encoding="utf-8") as f:

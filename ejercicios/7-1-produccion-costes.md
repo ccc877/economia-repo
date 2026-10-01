@@ -82,6 +82,25 @@
 >   * **Qué niveles dan beneficio:** Con 3, 4 y 5 trabajadores el beneficio es positivo, porque es la zona en la que el precio ($10\text{ €}$) supera al coste medio ($CMe < 10\text{ €}$). Con 6, el beneficio vuelve a ser negativo.
 >   * **Por qué no quedarse en 3 trabajadores:** Al pasar de 3 a 4, el coste marginal de cada balón nuevo es de 8,33 €, inferior al precio de venta. Como cada balón aporta más de lo que cuesta ($P > CMg$), el beneficio total sube de 300 € a 500 €.
 >   * **Por qué no seguir a 5 ni a 6:** El quinto trabajador no es rentable, aunque la empresa no pierda dinero con él. Su coste marginal es de 12,50 €, que supera el precio de 10 € ($CMg > P$): cada balón adicional sale a pérdida, y el beneficio total cae de 500 € a 300 €. Con el sexto, el coste marginal se dispara a 50 € y el beneficio se vuelve negativo. El óptimo no es «cuántos dan beneficio», sino **cuántos los maximizan**: 4.
+>
+> **Explora la solución.** Mueve el deslizador y cambia de pestaña para ver cómo se construyen los cuatro apartados y por qué el óptimo está en $L = 4$.
+>
+> <a href="7-1-solucion-interactiva.html" target="_blank" rel="noopener">Abrir la solución interactiva en una pestaña nueva</a>
+>
+> ```{=html}
+> <iframe src="7-1-solucion-interactiva.html" title="Solución interactiva: producción, costes y beneficio" loading="lazy" style="width:100%;border:1px solid #d9e2ec;border-radius:0.4rem;height:640px;background:#fff;"></iframe>
+> <script>
+> window.addEventListener('message', function(ev){
+>   if (!ev.data || ev.data.tipo !== 'alto-iframe') return;
+>   var f = ev.source;
+>   if (f && f.tagName === 'IFRAME') f.style.height = (ev.data.alto + 4) + 'px';
+> });
+> </script>
+> ```
+>
+> ::: {.content-visible when-format="is_pdf"}
+> La solución interactiva (con deslizador y gráficos) está disponible en la versión web de estos apuntes.
+> :::
 
 ---
 
