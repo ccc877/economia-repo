@@ -1,4 +1,4 @@
-# Ejercicio: Estructura de costes y óptimo de producción
+# Estructura de costes y óptimo de producción
 
 Una empresa artesanal fabrica pulseras de tela. Afronta un coste fijo mensual de 2000 € por el alquiler del taller. Los costes variables en función del volumen de pulseras producidas se recogen en la siguiente tabla:
 
@@ -28,7 +28,7 @@ Una empresa artesanal fabrica pulseras de tela. Afronta un coste fijo mensual de
 
 ---
 
-> [!example]- Solución detallada
+> [!example]- Solución
 > 
 > ### 1. Tabla de costes completa
 > 
