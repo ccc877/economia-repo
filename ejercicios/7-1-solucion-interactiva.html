@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Producción, costes y beneficio</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#6b6b66;--card:#fff;--line:#dcdcd4;--grid:#ececE4;--a:#2563eb;--b:#dc2626;--c:#16a34a;--d:#d97706;--e:#7c3aed;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161615;--fg:#eeeee8;--mut:#a3a39b;--card:#1f1f1d;--line:#3a3a36;--grid:#2a2a27;--a:#60a5fa;--b:#f87171;--c:#4ade80;--d:#fbbf24;--e:#a78bfa}}
+:root[data-theme="dark"]{--bg:#161615;--fg:#eeeee8;--mut:#a3a39b;--card:#1f1f1d;--line:#3a3a36;--grid:#2a2a27;--a:#60a5fa;--b:#f87171;--c:#4ade80;--d:#fbbf24;--e:#a78bfa}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.4rem;margin:0 0 4px}p.s{color:var(--mut);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
+.ctrl{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+input[type=range]{flex:1;min-width:160px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:7px 12px;border-radius:999px;cursor:pointer;font:inherit;font-size:.9rem}
+.tabs button.on{background:var(--fg);color:var(--bg)}
+section{display:none}section.on{display:block}
+svg{width:100%;height:auto;display:block}
+.leg{display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem;color:var(--mut);margin:6px 0}
+.leg i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:5px;border-radius:2px}
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;margin-top:10px}
+.vals div{background:var(--bg);border-radius:8px;padding:6px 8px;font-size:.8rem;color:var(--mut)}
+.vals b{display:block;color:var(--fg);font-size:1rem}
+.note{font-size:.92rem}.note b{color:var(--fg)}
+h2{font-size:1rem;margin:0 0 4px}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.82rem;font-variant-numeric:tabular-nums}th,td{padding:5px 7px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--mut);font-weight:600}tr.sel td{background:var(--bg);font-weight:600}.ok{color:var(--c)}.no{color:var(--b)}
+</style></head><body><main>
+<h1>Producción, costes y beneficio</h1>
+<p class="s">Mueve el control de trabajadores (L) o pulsa un punto de cualquier gráfico. Precio constante P = 10 €.</p>
+
+<div class="card">
+<div class="ctrl"><label for="L"><b>Trabajadores L = <span id="Lv">3</span></b></label><input id="L" type="range" min="0" max="6" step="1" value="3"></div>
+<div class="vals" id="vals"></div>
+<p class="note" id="cm" style="margin:10px 0 0"></p>
+<p class="note" id="dec" style="margin:6px 0 0"></p>
+</div>
+
+<div class="tabs" id="tabs">
+<button data-t="t1" class="on">Producción</button><button data-t="t5">PMg ↔ CMg</button><button data-t="t2">Costes totales</button><button data-t="t3">Costes unitarios</button><button data-t="t4">Beneficio</button><button data-t="t6">Tabla</button>
+</div>
+
+<section id="t1" class="on">
+<div class="card"><h2>Producto total Q según L</h2><div id="c1"></div>
+<p class="note">La curva es primero convexa y luego cóncava: el producto total crece cada vez más deprisa hasta L = 3 y después cada trabajador extra suma menos.</p></div>
+<div class="card"><h2>Productividad media y marginal</h2><div id="c2"></div>
+<p class="note"><b>Etapa 1 (L = 1 a 3):</b> el PMg crece (100 → 120 → 160) por la especialización. <b>Etapa 2 (desde L = 4):</b> el PMg cae (120 → 80 → 20): rendimientos decrecientes. El PMg corta al PMe en su máximo (entre L = 3 y 4, aprox. 126,67): mientras PMg &gt; PMe la media sube y cuando PMg &lt; PMe baja.</p></div>
+</section>
+
+<section id="t2">
+<div class="card"><h2>CF, CV y CT según Q</h2><div id="c3"></div>
+<p class="note">El CF (500 €) es una recta horizontal. El CV parte de cero y el CT es el CV desplazado 500 € hacia arriba: la distancia vertical entre CT y CV es siempre el CF. La curvatura invertida respecto a la producción es el reflejo de los rendimientos: primero el coste crece más despacio que Q (productividad creciente) y luego más deprisa.</p></div>
+</section>
+
+<section id="t3">
+<div class="card"><h2>CMe, CMg y precio según Q</h2><div id="c4"></div>
+<p class="note">El CMg es el espejo del PMg: mínimo en L = 3 (6,25 €), justo donde el PMg es máximo. El CMg corta al CMe en el mínimo de este (≈ 9 € cerca de Q = 500), y con P = 10 el precio solo supera al CMe con L = 3, 4 y 5 (9,21, 9 y 9,48 €); con L = 2 (11,36 €) y L = 6 (10,83 €) el CMe queda por encima del precio. El CMg de L = 6 (50 €) sale del gráfico.</p></div>
+</section>
+
+<section id="t4">
+<div class="card"><h2>Ingreso total frente a coste total</h2><div id="c5"></div>
+<p class="note">Hay beneficio donde el ingreso está por encima del coste: entre L = 3 y L = 5.</p></div>
+<div class="card"><h2>Beneficio según L</h2><div id="c6"></div>
+<p class="note"><b>Óptimo: L = 4, Q = 500, beneficio +500 €.</b> Regla IMg = CMg: hasta Q = 500 la última unidad cuesta 8,33 € (&lt; 10), pero la siguiente costaría 12,50 € (&gt; 10), así que contratar al quinto trabajador reduce el beneficio (de +500 a +300). En L = 6 el beneficio vuelve a −500: se pierde el CF, como si no se produjera.</p></div>
+</section>
+<section id="t5">
+<div class="card"><h2>PMg y las dos etapas</h2><div id="c7"></div>
+<p class="note"><b>Etapa 1 (L = 1 a 3):</b> PMg creciente (100 → 120 → 160), por la especialización. <b>Etapa 2:</b> la ley de rendimientos decrecientes aparece <b>con el cuarto trabajador</b>, cuando el PMg cae (120 → 80 → 20).</p></div>
+<div class="card"><h2>CMg: el espejo del PMg</h2><div id="c8"></div>
+<p class="note"><b>Relación matemática:</b> como cada trabajador cuesta w = 1.000 €, CMg = ΔCT/ΔQ = w·ΔL/ΔQ = <b>w / PMg</b>. Por ejemplo, L = 3: 1.000/160 = 6,25 €; L = 4: 1.000/120 = 8,33 €. Si el PMg sube, el CMg baja (10 → 6,25 €, mínimo en L = 3); si el PMg baja, el CMg sube (8,33 → 12,50 → 50 €). Comparado con P = 10 €, el CMg es menor hasta L = 4 y mayor desde L = 5.</p></div>
+</section>
+<section id="t6">
+<div class="card tw" id="tb"></div>
+<p class="note">Pulsa una fila para seleccionarla. CMe = CT/Q; CMg = ΔCT/ΔQ; PMg = ΔQ/ΔL; Beneficio = IT − CT.</p>
+</section>
+</main>
+<script>
+const N=null;
+const D={L:[0,1,2,3,4,5,6],Q:[0,100,220,380,500,580,600],
+PMe:[N,100,110,126.67,125,116,100],PMg:[N,100,120,160,120,80,20],
+CF:[500,500,500,500,500,500,500],CV:[0,1000,2000,3000,4000,5000,6000],CT:[500,1500,2500,3500,4500,5500,6500],
+CMe:[N,15,11.36,9.21,9,9.48,10.83],CMg:[N,10,8.33,6.25,8.33,12.5,50],P:[10,10,10,10,10,10,10],
+IT:[0,1000,2200,3800,5000,5800,6000],B:[-500,-500,-300,300,500,300,-500]};
+const C={a:'var(--a)',b:'var(--b)',c:'var(--c)',d:'var(--d)',e:'var(--e)'};
+const K=[
+{id:'c1',x:'L',xl:'Trabajadores (L)',yl:'Q',ymin:0,ymax:600,ys:[{k:'Q',n:'Producto total (Q)',c:C.a}]},
+{id:'c2',x:'L',xl:'Trabajadores (L)',yl:'unidades por trabajador',ymin:0,ymax:180,stages:1,ys:[{k:'PMe',n:'PMe',c:C.a},{k:'PMg',n:'PMg',c:C.b}]},
+{id:'c3',x:'Q',xl:'Producción (Q)',yl:'€',ymin:0,ymax:7000,xmax:600,ys:[{k:'CF',n:'CF',c:C.d},{k:'CV',n:'CV',c:C.c},{k:'CT',n:'CT',c:C.a}]},
+{id:'c4',x:'Q',xl:'Producción (Q)',yl:'€ por unidad',ymin:0,ymax:20,xmax:600,ys:[{k:'CMe',n:'CMe',c:C.a},{k:'CMg',n:'CMg',c:C.b},{k:'P',n:'P = IMg',c:C.d,dash:1}]},
+{id:'c5',x:'Q',xl:'Producción (Q)',yl:'€',ymin:0,ymax:7000,xmax:600,ys:[{k:'IT',n:'Ingreso total',c:C.c},{k:'CT',n:'Coste total',c:C.b}]},
+{id:'c6',x:'L',xl:'Trabajadores (L)',yl:'Beneficio (€)',ymin:-600,ymax:600,bars:1,ys:[{k:'B',n:'Beneficio',c:C.e}]},
+{id:'c7',x:'L',xl:'Trabajadores (L)',yl:'PMg (unidades)',ymin:0,ymax:180,stages:1,ys:[{k:'PMg',n:'PMg',c:C.a}]},
+{id:'c8',x:'L',xl:'Trabajadores (L)',yl:'CMg (€ por unidad)',ymin:0,ymax:20,ys:[{k:'CMg',n:'CMg',c:C.b},{k:'P',n:'P = IMg',c:C.d,dash:1}]}];
+const W=640,H=320,ml=58,mr=16,mt=12,mb=40;let sel=3;
+const f=v=>Number(v).toLocaleString('es-ES',{maximumFractionDigits:2});
+function draw(c){
+ const xs=D[c.x],xmax=c.xmax||Math.max(...xs),xmin=0;
+ const X=v=>ml+(v-xmin)/(xmax-xmin)*(W-ml-mr),Y=v=>mt+(1-(Math.min(v,c.ymax)-c.ymin)/(c.ymax-c.ymin))*(H-mt-mb);
+ let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${c.yl} frente a ${c.xl}">`;
+ for(let i=0;i<=5;i++){const v=c.ymin+(c.ymax-c.ymin)*i/5,y=Y(v);
+  s+=`<line x1="${ml}" x2="${W-mr}" y1="${y}" y2="${y}" stroke="var(--grid)"/><text x="${ml-6}" y="${y+4}" font-size="11" text-anchor="end" fill="var(--mut)">${f(v)}</text>`}
+ if(c.ymin<0)s+=`<line x1="${ml}" x2="${W-mr}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--mut)"/>`;
+ xs.forEach((v,i)=>{s+=`<text x="${X(v)}" y="${H-mb+16}" font-size="11" text-anchor="middle" fill="var(--mut)">${v}</text>`});
+ s+=`<text x="${(ml+W-mr)/2}" y="${H-6}" font-size="12" text-anchor="middle" fill="var(--mut)">${c.xl}</text>`;
+ s+=`<text transform="translate(13 ${H/2}) rotate(-90)" font-size="12" text-anchor="middle" fill="var(--mut)">${c.yl}</text>`;
+ if(c.stages)s+=`<rect x="${X(1)}" y="${mt}" width="${X(3)-X(1)}" height="${H-mt-mb}" fill="var(--c)" opacity=".10"/><rect x="${X(3)}" y="${mt}" width="${X(6)-X(3)}" height="${H-mt-mb}" fill="var(--b)" opacity=".08"/><text x="${X(2)}" y="${mt+14}" font-size="11" text-anchor="middle" fill="var(--mut)">Etapa 1: PMg crece</text><text x="${X(4.5)}" y="${mt+14}" font-size="11" text-anchor="middle" fill="var(--mut)">Etapa 2: PMg decrece</text>`;
+ s+=`<line x1="${X(xs[sel])}" x2="${X(xs[sel])}" y1="${mt}" y2="${H-mb}" stroke="var(--mut)" stroke-dasharray="3 4"/>`;
+ if(c.bars){const bw=30;D.B.forEach((v,i)=>{s+=`<rect x="${X(xs[i])-bw/2}" y="${Math.min(Y(v),Y(0))}" width="${bw}" height="${Math.abs(Y(v)-Y(0))}" fill="${v>=0?'var(--c)':'var(--b)'}" opacity="${i==sel?1:.55}" rx="3" data-i="${i}" style="cursor:pointer"/><text x="${X(xs[i])}" y="${v>=0?Y(v)-5:Y(v)+14}" font-size="11" text-anchor="middle" fill="var(--fg)">${v>0?'+':''}${v}</text>`})}
+ else c.ys.forEach(a=>{const pts=D[a.k].map((v,i)=>v==null?null:[X(xs[i]),Y(v),i,v]).filter(Boolean);
+  s+=`<polyline fill="none" stroke="${a.c}" stroke-width="2.5" ${a.dash?'stroke-dasharray="6 5"':''} points="${pts.map(p=>p[0]+','+p[1]).join(' ')}"/>`;
+  if(!a.dash)pts.forEach(p=>{const on=p[2]==sel;s+=`<circle cx="${p[0]}" cy="${p[1]}" r="${on?7:4.5}" fill="${on?a.c:'var(--card)'}" stroke="${a.c}" stroke-width="2" data-i="${p[2]}" style="cursor:pointer"/>`;
+   if(on)s+=`<text x="${p[0]}" y="${p[1]-11}" font-size="11" font-weight="600" text-anchor="middle" fill="var(--fg)">${f(p[3])}${p[3]>c.ymax?' ↑':''}</text>`})});
+ s+='</svg><div class="leg">'+(c.bars?'<span><i style="background:var(--c)"></i>Beneficio</span><span><i style="background:var(--b)"></i>Pérdida</span>':c.ys.map(a=>`<span><i style="background:${a.c}"></i>${a.n}</span>`).join(''))+'</div>';
+ const el=document.getElementById(c.id);el.innerHTML=s;
+ el.querySelectorAll('[data-i]').forEach(n=>n.onclick=()=>{sel=+n.dataset.i;upd()});
+}
+const CM=[
+"Sin trabajadores no hay producción, pero el CF de 500 € se paga igual: pérdida de −500. Es el coste de tener el local abierto.",
+"Primer trabajador: PMg = 100 y CMg = 10 €, igual que el precio. Cada unidad cuesta lo que se vende, así que solo se cubre el coste variable y sigue la pérdida de −500.",
+"Segundo trabajador: el PMg sube a 120 (especialización) y el CMg baja a 8,33 €. Ya se gana en cada unidad marginal, pero el CF aún no está cubierto: −300.",
+"Máxima productividad marginal (160) y CMg mínimo (6,25 €). Fin de la etapa 1. Aparece el primer beneficio: +300.",
+"Comienzan los rendimientos decrecientes (PMg = 120). El CMe llega a su mínimo (9 €) y el beneficio es máximo: +500. El CMg (8,33) todavía es menor que P = 10.",
+"El PMg cae a 80 y el CMg sube a 12,50 €, por encima del precio: la última unidad cuesta más de lo que ingresa. El beneficio baja a +300.",
+"Casi saturación: PMg = 20 y CMg = 50 €. Un trabajador que añade 20 unidades cuesta 1.000 €. El beneficio cae a −500."];
+function upd(){
+ document.getElementById('L').value=sel;document.getElementById('Lv').textContent=sel;
+ const v=(l,k,u)=>`<div>${l}<b>${D[k][sel]==null?'—':f(D[k][sel])+(u||'')}</b></div>`;
+ document.getElementById('vals').innerHTML=v('Q','Q')+v('PMe','PMe')+v('PMg','PMg')+v('CT','CT',' €')+v('CMe','CMe',' €')+v('CMg','CMg',' €')+v('IT','IT',' €')+`<div>Beneficio<b style="color:${D.B[sel]>0?'var(--c)':'var(--b)'}">${D.B[sel]>0?'+':''}${D.B[sel]} €</b></div>`;
+ document.getElementById('cm').textContent=CM[sel];
+ K.forEach(draw);tbl();dec();
+}
+function tbl(){const cols=['L','Q','PMe','PMg','CF','CV','CT','CMe','CMg','P','IT','B'];
+let h='<table><tr>'+cols.map(c=>`<th>${c==='B'?'Beneficio':c}</th>`).join('')+'</tr>';
+D.L.forEach((_,i)=>{h+=`<tr class="${i==sel?'sel':''}" data-i="${i}" style="cursor:pointer">`+cols.map(c=>{const v=c==='L'?i:D[c][i];return `<td>${v==null?'—':(c==='B'&&v>0?'+':'')+f(v)}</td>`}).join('')+'</tr>'});
+const el=document.getElementById('tb');el.innerHTML=h+'</table>';el.querySelectorAll('tr[data-i]').forEach(r=>r.onclick=()=>{sel=+r.dataset.i;upd()})}
+function dec(){const e=document.getElementById('dec');
+ if(sel==0){e.innerHTML='<b>Decisión:</b> con L = 0 solo existe el CF. Contratar al primero tiene CMg = 10 € = P: no mejora ni empeora el resultado.';return}
+ const mg=D.CMg[sel],me=D.CMe[sel],r=sel==1?'<b>P = CMg</b>: no cambia el beneficio':mg<10?'<b class="ok">P &gt; CMg</b>: compensa contratarlo':'<b class="no">P &lt; CMg</b>: no compensa contratarlo';
+ e.innerHTML=`<b>Regla marginal</b> (pasar a L = ${sel}): CMg = ${f(mg)} € frente a P = 10 € → ${r}. <b>Umbral de rentabilidad</b>: CMe = ${f(me)} € → ${me<10?'<b class="ok">P &gt; CMe</b>: hay beneficio':'<b class="no">P &lt; CMe</b>: hay pérdida'}.${sel==4?' <b>Es el óptimo.</b>':''}`}
+document.getElementById('L').oninput=e=>{sel=+e.target.value;upd()};
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on',x===b));
+ document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===b.dataset.t))});
+upd();
+
+/* Avisa a la página contenedora de cuál es la altura real del contenido, para
+   que el iframe se ajuste sin scroll anidado. No basta con medir al cargar: la
+   altura cambia al cambiar de pestaña (Producción es larga y Tabla, corta) y al
+   mover el deslizador, porque cambia el texto del veredicto. */
+(function(){
+  function avisar(){
+    var alto=document.documentElement.scrollHeight;
+    if (window.parent && window.parent!==window){
+      window.parent.postMessage({tipo:'alto-iframe',alto:alto},'*');
+    }
+  }
+  if (window.ResizeObserver){ new ResizeObserver(avisar).observe(document.body); }
+  window.addEventListener('load',avisar);
+  setTimeout(avisar,0);
+})();
+</script></body></html>
