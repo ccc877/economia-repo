@@ -52,3 +52,21 @@
   color: #6c757d;
   font-size: 0.85em;
 }
+
+/* Modo oscuro. Bootstrap no conoce estos elementos propios de la portada, así
+   que hay que redefinirlos. */
+[data-bs-theme="dark"] .resource-navigation a {
+  background: #1b2634;
+  border-color: #33455c;
+  color: #9ecbff;
+}
+
+[data-bs-theme="dark"] .resource-navigation a:hover {
+  background: #24344a;
+  border-color: #4a6b8a;
+}
+
+[data-bs-theme="dark"] .placeholder-link,
+[data-bs-theme="dark"] .placeholder-status {
+  color: #8a949e;
+}
