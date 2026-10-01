@@ -286,29 +286,41 @@ adecuado, y sigue las reglas de estilo de la sección 3.
 
 ## 7. Modo oscuro
 
-El sitio tiene conmutador de tema claro/oscuro. Bootstrap **5.3.1** lo soporta de
-forma nativa con el atributo `data-bs-theme` en `<html>`, así que no se carga un
-segundo tema: eso duplicaría el CSS y provocaría destellos.
+Usa el **modo oscuro nativo de Quarto**: en los dos `_quarto.yml`, el tema se declara
+con un tema por modo y Quarto se encarga de conmutar y de guardar la preferencia.
 
-El motor vive en el bloque `include-in-header:` de los **dos** `_quarto.yml` (el del
-libro y el de los ejercicios), en línea a propósito para que no haya rutas que ajustar
-al copiar el proyecto de ejercicios a `build/`. Si lo tocas, tócalo en los dos sitios.
+```yaml
+theme:
+  light: cosmo
+  dark: darkly
+```
 
-- El script fija `data-bs-theme` **antes** de que exista el `<body>`, leyendo
-  `localStorage` y, si no hay preferencia guardada, `prefers-color-scheme`. Por eso no
-  hay destello al cargar.
-- El botón lo crea el mismo script al terminar el `DOMContentLoaded`, porque en el
-  `<head>` la barra de navegación todavía no existe.
-- Los colores propios del proyecto (`.resource-*`, `.placeholder-*`) **no** los cubre
-  Bootstrap y hay que definirlos a mano con `[data-bs-theme="dark"]`.
+Cargar los dos temas es lo correcto aquí, no un gasto: el índice lateral y el resto de
+CSS del tema también cambian, y una única hoja con `data-bs-theme` los deja claros. No
+añadas un conmutador propio, que sería pelearse con el de Quarto.
+
+⚠️ **El botón hay que colocarlo a mano.** En un proyecto *website* Quarto lo mete en el
+`navbar`, pero estos proyectos son de tipo *book* y no tienen `navbar`: su respaldo
+automático cuelga el botón del `body` y **no trae ninguna regla de posición**, así que
+acaba al final de la página. El script del `include-in-header:` lo inserta en
+`.quarto-secondary-nav` con la clase `quarto-color-scheme-toggle` de Quarto —para que
+herede el icono y el estado— y llama a `window.quartoToggleColorScheme()`. Está en los
+dos proyectos; si lo tocas, tócalo en los dos.
+
+Los colores propios del proyecto (`.resource-*`, `.placeholder-*`) **no** los cubre
+Bootstrap y hay que definirlos a mano con `[data-bs-theme="dark"]` en `styles.css`.
 
 ### La solución interactiva y el tema
 
 `ejercicios/7-1-solucion-interactiva.html` se incrusta en un `iframe`, y un iframe no
-hereda nada del padre: es un documento aparte. Se comunican por `postMessage`:
+hereda nada del padre: es un documento aparte. La comunicación va en ambos sentidos por
+`postMessage`:
 
 - **Hijo → padre:** `alto-iframe` (para ajustar el alto) y `tema-iframe-listo`.
 - **Padre → hijo:** `tema-iframe`, que el hijo aplica como `data-theme`.
+
+El padre no pone el atributo: **observa** el que pone Quarto con un `MutationObserver`
+sobre `data-bs-theme`, y lo reenvía. Así los dos conmutadores no se contradicen.
 
 El documento interactivo ya traía su propia paleta oscura con variables CSS y ya las
 usaba dentro del SVG, así que los gráficos recolorean solos al cambiar el atributo: no

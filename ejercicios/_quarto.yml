@@ -6,64 +6,20 @@ project:
 
 lang: es
 
-# Mismo motor de modo oscuro que el libro (ver _quarto.yml de la raíz). Va en
-# línea y no como fichero aparte para que funcione igual en los dos proyectos sin
-# rutas que ajustar. Bootstrap 5.3 lo soporta de forma nativa con `data-bs-theme`.
+# Puente con el iframe de la solución interactiva, idéntico al del libro: un
+# iframe no hereda nada del padre, así que hay que vigilar el cambio de tema y
+# comunicárselo. El conmutador es el de Quarto.
 include-in-header:
   text: |
     <script>
     (function () {
-      var CLAVE = "eco-modo";
-      var raiz = document.documentElement;
-
-      function guardado() {
-        try { return localStorage.getItem(CLAVE); } catch (e) { return null; }
-      }
-      function porDefectoOscuro() {
-        return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
-      }
-      function aplicar(oscuro) {
-        raiz.setAttribute("data-bs-theme", oscuro ? "dark" : "light");
-      }
-
-      var elegido = guardado();
-      aplicar(elegido === null ? porDefectoOscuro() : elegido === "oscuro");
-
-      function ponerBoton() {
-        var nav = document.querySelector(".navbar");
-        if (!nav || document.getElementById("boton-modo")) return;
-
-        var boton = document.createElement("button");
-        boton.id = "boton-modo";
-        boton.type = "button";
-        boton.className = "btn btn-sm btn-outline-secondary boton-modo";
-        boton.title = "Cambiar entre modo claro y oscuro";
-
-        function pintar() {
-          var oscuro = raiz.getAttribute("data-bs-theme") === "dark";
-          boton.textContent = oscuro ? "☀" : "☾";
-          boton.setAttribute("aria-label", oscuro ? "Activar modo claro" : "Activar modo oscuro");
-        }
-
-        boton.addEventListener("click", function () {
-          var oscuro = raiz.getAttribute("data-bs-theme") === "dark";
-          aplicar(!oscuro);
-          try { localStorage.setItem(CLAVE, !oscuro ? "oscuro" : "claro"); } catch (e) {}
-          pintar();
-          avisarIframes();
-        });
-
-        nav.appendChild(boton);
-        pintar();
-      }
-
       function avisarIframes() {
-        var tema = raiz.getAttribute("data-bs-theme");
+        var tema = document.documentElement.getAttribute("data-bs-theme");
+        if (!tema) return;
         var marcos = document.querySelectorAll("iframe");
         for (var i = 0; i < marcos.length; i++) {
-          try {
-            marcos[i].contentWindow.postMessage({ tipo: "tema-iframe", tema: tema }, "*");
-          } catch (e) {}
+          try { marcos[i].contentWindow.postMessage({ tipo: "tema-iframe", tema: tema }, "*"); }
+          catch (e) {}
         }
       }
       window.addEventListener("message", function (ev) {
@@ -72,23 +28,50 @@ include-in-header:
         if (ev.data.tipo === "altura-iframe" && f && f.tagName === "IFRAME") {
           f.style.height = (ev.data.alto + 4) + "px";
         }
-        // El iframe acaba de cargar y quiere saber en qué tema está.
         if (ev.data.tipo === "tema-iframe-listo") avisarIframes();
       });
       window.avisoTemaIframes = avisarIframes;
 
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", ponerBoton);
-      } else {
-        ponerBoton();
+      // El conmutador de tema es el de Quarto: lo que hace falta es colocarlo en
+      // un sitio visible. Su respaldo automático (para proyectos book, sin navbar)
+      // cuelga el boton del body y no trae reglas de posicion, asi que acaba al
+      // final de la pagina. Le ponemos la clase de Quarto para que herede el
+      // icono y el estado, pero lo insertamos en la barra de navegacion.
+      function ponerConmutador() {
+        if (window.document.querySelector(".quarto-color-scheme-toggle")) return;
+        var nav = window.document.querySelector(".quarto-secondary-nav .container-fluid")
+               || window.document.querySelector(".navbar");
+        if (!nav) return;
+        var a = window.document.createElement("a");
+        a.className = "quarto-color-scheme-toggle conmutador-tema";
+        a.href = "";
+        a.title = "Cambiar entre tema claro y oscuro";
+        a.setAttribute("aria-label", "Cambiar entre tema claro y oscuro");
+        a.onclick = function () {
+          try { window.quartoToggleColorScheme(); } catch (e) {}
+          return false;
+        };
+        var i = window.document.createElement("i");
+        i.className = "bi";
+        a.appendChild(i);
+        nav.appendChild(a);
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        ponerConmutador();
+        avisarIframes();
+        new MutationObserver(avisarIframes).observe(document.documentElement,
+          { attributes: true, attributeFilter: ["data-bs-theme", "data-theme"] });
+      });
     })();
     </script>
     <style>
-      .boton-modo { margin-left: auto; min-width: 2.4rem; }
-      @media (min-width: 992px) {
-        .navbar-expand-lg .navbar-nav { margin-right: 3rem; }
-        .boton-modo { margin-right: 0.5rem; }
+      .conmutador-tema {
+        margin-left: auto;
+        padding: 0.25rem 0.55rem;
+        font-size: 1.05rem;
+        line-height: 1;
+        text-decoration: none;
       }
     </style>
 
@@ -165,7 +148,10 @@ book:
 
 format:
   html:
-    theme: cosmo
+    # Mismo criterio que el libro: tema claro y oscuro, conmutador de Quarto.
+    theme:
+      light: cosmo
+      dark: darkly
     toc: true
     toc-depth: 3
     number-sections: true
