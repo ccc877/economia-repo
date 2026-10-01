@@ -160,4 +160,22 @@ upd();
   window.addEventListener('load',avisar);
   setTimeout(avisar,0);
 })();
+
+/* El tema lo decide la página contenedora (es la que tiene el conmutador), así
+   que este documento no lo elige: lo pide y lo obedece. Los gráficos están
+   dibujados con variables CSS, así que recolorean solos al cambiar el atributo. */
+(function(){
+  var raiz=document.documentElement;
+  function aplicar(tema){
+    if (tema==='dark'||tema==='light') raiz.setAttribute('data-theme',tema);
+  }
+  window.addEventListener('message',function(ev){
+    if (ev.data && ev.data.tipo==='tema-iframe') aplicar(ev.data.tema);
+  });
+  window.addEventListener('load',function(){
+    if (window.parent && window.parent!==window){
+      window.parent.postMessage({tipo:'tema-iframe-listo'},'*');
+    }
+  });
+})();
 </script></body></html>

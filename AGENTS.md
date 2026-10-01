@@ -284,7 +284,37 @@ Si lo que te piden es ampliar la **explicación** de un tema, entonces sí: int�
 el `tema-NN.qmd` que le corresponda, seleccionando o creando el apartado (`##`/`###`)
 adecuado, y sigue las reglas de estilo de la sección 3.
 
-## 7. Git y publicación
+## 7. Modo oscuro
+
+El sitio tiene conmutador de tema claro/oscuro. Bootstrap **5.3.1** lo soporta de
+forma nativa con el atributo `data-bs-theme` en `<html>`, así que no se carga un
+segundo tema: eso duplicaría el CSS y provocaría destellos.
+
+El motor vive en el bloque `include-in-header:` de los **dos** `_quarto.yml` (el del
+libro y el de los ejercicios), en línea a propósito para que no haya rutas que ajustar
+al copiar el proyecto de ejercicios a `build/`. Si lo tocas, tócalo en los dos sitios.
+
+- El script fija `data-bs-theme` **antes** de que exista el `<body>`, leyendo
+  `localStorage` y, si no hay preferencia guardada, `prefers-color-scheme`. Por eso no
+  hay destello al cargar.
+- El botón lo crea el mismo script al terminar el `DOMContentLoaded`, porque en el
+  `<head>` la barra de navegación todavía no existe.
+- Los colores propios del proyecto (`.resource-*`, `.placeholder-*`) **no** los cubre
+  Bootstrap y hay que definirlos a mano con `[data-bs-theme="dark"]`.
+
+### La solución interactiva y el tema
+
+`ejercicios/7-1-solucion-interactiva.html` se incrusta en un `iframe`, y un iframe no
+hereda nada del padre: es un documento aparte. Se comunican por `postMessage`:
+
+- **Hijo → padre:** `alto-iframe` (para ajustar el alto) y `tema-iframe-listo`.
+- **Padre → hijo:** `tema-iframe`, que el hijo aplica como `data-theme`.
+
+El documento interactivo ya traía su propia paleta oscura con variables CSS y ya las
+usaba dentro del SVG, así que los gráficos recolorean solos al cambiar el atributo: no
+hay que redibujarlos.
+
+## 8. Git y publicación
 
 - La rama `main` se renderiza y publica automáticamente en GitHub Pages en cada *push*
   (ver `.github/workflows/publish.yml`). No hace falta subir `_book/` a mano ni
