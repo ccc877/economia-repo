@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>10&nbsp; El mercado: oferta, demanda y elasticidad – Ejercicios de Economía</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-30c660190e35ece3a137042d8cd86ee9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<script>
+(function () {
+  function avisarIframes() {
+    var tema = document.documentElement.getAttribute("data-bs-theme");
+    if (!tema) return;
+    var marcos = document.querySelectorAll("iframe");
+    for (var i = 0; i < marcos.length; i++) {
+      try { marcos[i].contentWindow.postMessage({ tipo: "tema-iframe", tema: tema }, "*"); }
+      catch (e) {}
+    }
+  }
+  window.addEventListener("message", function (ev) {
+    var f = ev.source;
+    if (!ev.data) return;
+    if (ev.data.tipo === "altura-iframe" && f && f.tagName === "IFRAME") {
+      f.style.height = (ev.data.alto + 4) + "px";
+    }
+    if (ev.data.tipo === "tema-iframe-listo") avisarIframes();
+  });
+  window.avisoTemaIframes = avisarIframes;
+
+  // El conmutador de tema es el de Quarto: lo que hace falta es colocarlo en
+  // un sitio visible. Su respaldo automático (para proyectos book, sin navbar)
+  // cuelga el boton del body y no trae reglas de posicion, asi que acaba al
+  // final de la pagina. Le ponemos la clase de Quarto para que herede el
+  // icono y el estado, pero lo insertamos en la barra de navegacion.
+  function ponerConmutador() {
+    if (window.document.querySelector(".quarto-color-scheme-toggle")) return;
+    var nav = window.document.querySelector(".quarto-secondary-nav .container-fluid")
+           || window.document.querySelector(".navbar");
+    if (!nav) return;
+    var a = window.document.createElement("a");
+    a.className = "quarto-color-scheme-toggle conmutador-tema";
+    a.href = "";
+    a.title = "Cambiar entre tema claro y oscuro";
+    a.setAttribute("aria-label", "Cambiar entre tema claro y oscuro");
+    a.onclick = function () {
+      try { window.quartoToggleColorScheme(); } catch (e) {}
+      return false;
+    };
+    var i = window.document.createElement("i");
+    i.className = "bi";
+    a.appendChild(i);
+    nav.appendChild(a);
+  }
+
+  function ponerEnlaceInicio() {
+    if (window.document.querySelector(".enlace-inicio")) return;
+    var nav = window.document.querySelector(".quarto-secondary-nav .container-fluid")
+           || window.document.querySelector(".navbar");
+    if (!nav) return;
+    var a = window.document.createElement("a");
+    var esEjercicios = window.location.pathname.indexOf("/ejercicios/") !== -1;
+    a.className = "enlace-inicio";
+    a.href = esEjercicios ? "../index.html" : "./index.html";
+    a.textContent = "Inicio";
+    a.title = "Volver a la página de inicio";
+    a.setAttribute("aria-label", "Volver a la página de inicio");
+    var buscar = nav.querySelector(".quarto-search-button");
+    if (buscar) nav.insertBefore(a, buscar);
+    else nav.appendChild(a);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    ponerConmutador();
+    ponerEnlaceInicio();
+    avisarIframes();
+    new MutationObserver(avisarIframes).observe(document.documentElement,
+      { attributes: true, attributeFilter: ["data-bs-theme", "data-theme"] });
+  });
+})();
+</script>
+<style>
+  .conmutador-tema {
+    margin-left: auto;
+    padding: 0.25rem 0.55rem;
+    font-size: 1.05rem;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .enlace-inicio {
+    flex: 0 0 auto;
+    margin: 0 0.75rem 0 0.5rem;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.25rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .enlace-inicio:hover {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mercado-oferta-demanda-elasticidad.html">El mercado: oferta, demanda y elasticidad</a></li><li class="breadcrumb-item"><a href="./mercado-oferta-demanda-elasticidad.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Ejercicios de Economía</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ejercicios del primer trimestre</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Conceptos fundamentales</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-macro-micro-normativa-positiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Microeconomía y macroeconomía</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-costes-irrecuperables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Costes irrecuperables, coste de oportunidad y tipos de bienes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">La frontera de posibilidades de producción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4-fpp-icaro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">La frontera de posibilidades de producción de «Movilidad Ícaro»</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Eficiencia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-1-eficiencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Eficiencia técnica y eficiencia económica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-2-eficiencia-produccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Eficiencia técnica y económica: ejercicios de consolidación</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Productividad</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6-1-productividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La productividad de los factores productivos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6-2-productividad-trabajo-capital.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Productividad del trabajo y del capital</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Costes y producción</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-1-produccion-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Producción, costes y maximización del beneficio a corto plazo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-2-costes-optimo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Estructura de costes y óptimo de producción</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">El mercado: oferta, demanda y elasticidad</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mercado-oferta-demanda-elasticidad.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Umbral de rentabilidad</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8-repaso-eficiencia-costes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ejercicios de repaso: eficiencia y costes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-1-umbral-formula.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Introducción al umbral de rentabilidad: de los beneficios al punto muerto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-2-umbral-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">El umbral de rentabilidad: cálculo, representación gráfica y toma de decisiones</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nivel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Prueba de Economía — 1.º de Bachillerato</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#actividades-prácticas" id="toc-actividades-prácticas" class="nav-link active" data-scroll-target="#actividades-prácticas"><span class="header-section-number">10.1</span> Actividades prácticas</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mercado-oferta-demanda-elasticidad.html">El mercado: oferta, demanda y elasticidad</a></li><li class="breadcrumb-item"><a href="./mercado-oferta-demanda-elasticidad.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El mercado: oferta, demanda y elasticidad</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Nota conceptual previa: ¿La curva se «mueve» o se «desplaza»?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En rigor matemático, una curva no «se mueve»: o permanece en su posición o se traslada a otra. En Economía se distingue entre dos situaciones:</p>
+<ul>
+<li><strong>Movimiento a lo largo de la curva:</strong> la curva permanece fija. El punto de elección pasa de una coordenada <span class="math inline">\((P_1, Q_1)\)</span> a otra <span class="math inline">\((P_2, Q_2)\)</span> sobre la misma línea porque ha variado el precio del propio bien. Cambia la <strong>cantidad demandada</strong> o la <strong>cantidad ofertada</strong>.</li>
+<li><strong>Desplazamiento de la curva:</strong> toda la gráfica se traslada a la derecha o a la izquierda porque ha variado un factor externo —como la renta, los gustos, los costes de producción o la tecnología—, manteniendo constante el precio. Cambia la <strong>demanda</strong> o la <strong>oferta</strong>.</li>
+</ul>
+</div>
+</div>
+<hr>
+<section id="actividades-prácticas" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="actividades-prácticas"><span class="header-section-number">10.1</span> Actividades prácticas</h2>
+<p><strong>1.</strong> Analiza los siguientes hechos e indica si provocan un desplazamiento de la curva de demanda —a la derecha o a la izquierda— o un movimiento a lo largo de la curva —hacia arriba o hacia abajo—. Justifica brevemente cada respuesta.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mercado</th>
+<th style="text-align: left;">Hecho económico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Coches eléctricos</strong></td>
+<td style="text-align: left;">El precio de la gasolina sube un 30 %.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Café en bares</strong></td>
+<td style="text-align: left;">El precio del café sube de 1,40 € a 2,00 €.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Viajes en avión</strong></td>
+<td style="text-align: left;">Una recesión reduce los ingresos familiares.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Marcas blancas</strong></td>
+<td style="text-align: left;">Aumenta el desempleo y cae la renta media.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Consolas de videojuegos</strong></td>
+<td style="text-align: left;">Se abarata notablemente el precio de los juegos.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Aceite de oliva virgen extra</strong></td>
+<td style="text-align: left;">Un estudio médico confirma sus beneficios cardiovasculares.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Smartphones</strong></td>
+<td style="text-align: left;">Se anuncia que dentro de diez días habrá rebajas por el <em>Black Friday</em>.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mercado</th>
+<th style="text-align: left;">Efecto sobre la curva</th>
+<th style="text-align: left;">Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Coches eléctricos</strong></td>
+<td style="text-align: left;">Desplazamiento a la derecha</td>
+<td style="text-align: left;">La gasolina es un bien sustitutivo. Si sube su precio, aumenta la demanda de coches eléctricos.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Café en bares</strong></td>
+<td style="text-align: left;">Movimiento a lo largo de la curva, hacia arriba</td>
+<td style="text-align: left;">Cambia el precio del propio bien; por ello, disminuye la cantidad demandada.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Viajes en avión</strong></td>
+<td style="text-align: left;">Desplazamiento a la izquierda</td>
+<td style="text-align: left;">Se consideran un bien normal: si cae la renta disponible, disminuye su demanda a cualquier precio.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Marcas blancas</strong></td>
+<td style="text-align: left;">Desplazamiento a la derecha</td>
+<td style="text-align: left;">Se consideran bienes inferiores: al caer el poder adquisitivo, aumenta su demanda frente a las primeras marcas.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Consolas de videojuegos</strong></td>
+<td style="text-align: left;">Desplazamiento a la derecha</td>
+<td style="text-align: left;">Los juegos son complementarios de las consolas. Si baja su precio, aumenta la demanda de consolas.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Aceite de oliva virgen extra</strong></td>
+<td style="text-align: left;">Desplazamiento a la derecha</td>
+<td style="text-align: left;">La información modifica favorablemente los gustos y las preferencias de los consumidores.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Smartphones</strong></td>
+<td style="text-align: left;">Desplazamiento a la izquierda</td>
+<td style="text-align: left;">La expectativa de precios más bajos lleva a algunos consumidores a posponer sus compras.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>2.</strong> Analiza los siguientes acontecimientos desde la perspectiva de las empresas productoras. Indica si provocan un desplazamiento de la curva de oferta —a la derecha o a la izquierda— o un movimiento a lo largo de ella —hacia arriba o hacia abajo—. Justifica brevemente cada respuesta.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mercado</th>
+<th style="text-align: left;">Hecho económico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Panaderías</strong></td>
+<td style="text-align: left;">Sube el precio de la harina y la tarifa eléctrica.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Automóviles</strong></td>
+<td style="text-align: left;">Una innovación con robots reduce a la mitad el tiempo de montaje.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Zapatillas de deporte</strong></td>
+<td style="text-align: left;">Sube el precio de venta del calzado deportivo en el mercado.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Paneles solares</strong></td>
+<td style="text-align: left;">El Gobierno concede una subvención fija por unidad producida.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Restaurantes</strong></td>
+<td style="text-align: left;">Cierran 3.000 locales de hostelería a lo largo del año.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Viviendas en alquiler</strong></td>
+<td style="text-align: left;">Se aprueba un impuesto municipal extraordinario a los propietarios.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mercado</th>
+<th style="text-align: left;">Efecto sobre la curva</th>
+<th style="text-align: left;">Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Panaderías</strong></td>
+<td style="text-align: left;">Desplazamiento a la izquierda</td>
+<td style="text-align: left;">Aumentan los costes de los factores productivos, por lo que fabricar pan resulta menos rentable.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Automóviles</strong></td>
+<td style="text-align: left;">Desplazamiento a la derecha</td>
+<td style="text-align: left;">La mejora tecnológica eleva la productividad y reduce los costes por unidad.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Zapatillas de deporte</strong></td>
+<td style="text-align: left;">Movimiento a lo largo de la curva, hacia arriba</td>
+<td style="text-align: left;">Sube el precio del propio bien y, según la ley de la oferta, las empresas desean ofrecer una cantidad mayor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Paneles solares</strong></td>
+<td style="text-align: left;">Desplazamiento a la derecha</td>
+<td style="text-align: left;">Las subvenciones reducen los costes netos de las empresas y estimulan la oferta.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Restaurantes</strong></td>
+<td style="text-align: left;">Desplazamiento a la izquierda</td>
+<td style="text-align: left;">Disminuye el número total de oferentes en el mercado.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Viviendas en alquiler</strong></td>
+<td style="text-align: left;">Desplazamiento a la izquierda</td>
+<td style="text-align: left;">La mayor carga impositiva desincentiva ofrecer viviendas en alquiler.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>3.</strong> En cada caso, determina qué curva se ve afectada, qué factor causa el cambio, hacia dónde se desplaza la curva y qué ocurre con el precio y la cantidad de equilibrio.</p>
+<p><strong>a) Mercado de bicicletas de ciudad.</strong> El ayuntamiento instala una amplia red de vías ciclistas seguras y, al mismo tiempo, se encarece el billete del transporte público urbano.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La curva afectada es la <strong>demanda de bicicletas</strong>. La mayor seguridad puede hacerlas más atractivas y el transporte público es un medio sustitutivo cuyo precio ha subido. La demanda se desplaza a la <strong>derecha</strong>; por tanto, suben el precio y la cantidad de equilibrio.</p>
+</div>
+</div>
+</div>
+<p><strong>b) Mercado de tabletas de chocolate.</strong> Una sequía extrema arruina buena parte de las cosechas mundiales de cacao.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Se ve afectada la <strong>oferta de chocolate</strong>, porque el cacao es una materia prima necesaria y su escasez eleva los costes de producción. La oferta se desplaza a la <strong>izquierda</strong>; el precio de equilibrio sube y la cantidad de equilibrio disminuye.</p>
+</div>
+</div>
+</div>
+<p><strong>c) Mercado de abrigos de pluma en invierno.</strong> Se registra el invierno con las temperaturas más altas de las últimas décadas.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Se ve afectada la <strong>demanda de abrigos</strong>: al hacer menos frío, disminuye la necesidad de comprarlos. La demanda se desplaza a la <strong>izquierda</strong>; bajan el precio y la cantidad de equilibrio.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>4.</strong> En el mercado de auriculares inalámbricos, las curvas de demanda y oferta vienen expresadas por las siguientes ecuaciones lineales:</p>
+<p><span class="math display">\[\text{Demanda: } Q_d = 240 - 5P\]</span></p>
+<p><span class="math display">\[\text{Oferta: } Q_o = 40 + 3P\]</span></p>
+<p>En estas expresiones, <span class="math inline">\(P\)</span> es el precio en euros y <span class="math inline">\(Q\)</span> la cantidad en miles de unidades.</p>
+<ul>
+<li><strong>a)</strong> Determina el precio de equilibrio (<span class="math inline">\(P^*\)</span>) y la cantidad de equilibrio (<span class="math inline">\(Q^*\)</span>).</li>
+<li><strong>b)</strong> Si el mercado fija provisionalmente un precio de 30 €, calcula la cantidad demandada y la ofertada. ¿Qué desequilibrio se genera y cuál es su magnitud?</li>
+<li><strong>c)</strong> Repite el análisis si el precio es de 15 €.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>a) Precio y cantidad de equilibrio.</strong> En equilibrio, <span class="math inline">\(Q_d = Q_o\)</span>:</p>
+<p><span class="math display">\[240 - 5P = 40 + 3P\]</span> <span class="math display">\[200 = 8P \implies P^* = 25\text{ €}\]</span></p>
+<p>Al sustituir el precio en cualquiera de las funciones:</p>
+<p><span class="math display">\[Q^* = 240 - 5(25) = 115\text{ mil unidades}\]</span></p>
+<p><strong>b) Precio de 30 €.</strong></p>
+<ul>
+<li><span class="math inline">\(Q_d = 240 - 5(30) = 90\)</span> mil unidades.</li>
+<li><span class="math inline">\(Q_o = 40 + 3(30) = 130\)</span> mil unidades.</li>
+</ul>
+<p>Como <span class="math inline">\(Q_o &gt; Q_d\)</span>, hay un <strong>exceso de oferta</strong> de <span class="math inline">\(130 - 90 = 40\)</span> mil unidades. Las empresas acumulan existencias y tienen incentivos para bajar el precio.</p>
+<p><strong>c) Precio de 15 €.</strong></p>
+<ul>
+<li><span class="math inline">\(Q_d = 240 - 5(15) = 165\)</span> mil unidades.</li>
+<li><span class="math inline">\(Q_o = 40 + 3(15) = 85\)</span> mil unidades.</li>
+</ul>
+<p>Como <span class="math inline">\(Q_d &gt; Q_o\)</span>, hay un <strong>exceso de demanda</strong> de <span class="math inline">\(165 - 85 = 80\)</span> mil unidades. La escasez presiona el precio al alza.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>5.</strong> La elasticidad-precio de la demanda mide la sensibilidad de los compradores ante las variaciones del precio. Puede calcularse mediante la fórmula:</p>
+<p><span class="math display">\[E_p = \left| \frac{\%\Delta Q_d}{\%\Delta P} \right| = \left| \frac{\frac{Q_2 - Q_1}{Q_1}}{\frac{P_2 - P_1}{P_1}} \right|\]</span></p>
+<p>El ingreso total de una empresa es el precio multiplicado por la cantidad vendida:</p>
+<p><span class="math display">\[IT = P \times Q\]</span></p>
+<p>Resuelve los dos supuestos.</p>
+<p><strong>a) La sala de cine.</strong> Una entrada cuesta 8 € y acuden 400 espectadores cada tarde. La dirección sube el precio a 10 €, y la asistencia cae a 260 espectadores.</p>
+<ul>
+<li>Calcula la elasticidad-precio de la demanda.</li>
+<li>Clasifica la demanda como elástica o inelástica.</li>
+<li>Compara los ingresos totales antes y después de la subida y evalúa la decisión.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Elasticidad.</strong> La variación porcentual del precio es <span class="math inline">\((10 - 8)/8 = 25\%\)</span> y la de la cantidad es <span class="math inline">\((260 - 400)/400 = -35\%\)</span>. Por tanto:</p>
+<p><span class="math display">\[E_p = \left|\frac{-35\%}{25\%}\right| = 1{,}4\]</span></p>
+<p>Como <span class="math inline">\(E_p &gt; 1\)</span>, la demanda es <strong>elástica</strong>: la cantidad demandada responde proporcionalmente más que el precio.</p>
+<ul>
+<li>Ingreso inicial: <span class="math inline">\(IT_1 = 8 \times 400 = 3.200\text{ €}\)</span>.</li>
+<li>Ingreso tras la subida: <span class="math inline">\(IT_2 = 10 \times 260 = 2.600\text{ €}\)</span>.</li>
+</ul>
+<p>Los ingresos disminuyen en 600 €. En este caso, la subida no fue acertada desde el punto de vista de los ingresos totales.</p>
+</div>
+</div>
+</div>
+<p><strong>b) El transporte en autobús urbano.</strong> Un billete cuesta 1,20 € y se registran 100.000 viajes al día. La empresa municipal sube la tarifa a 1,50 €, y los viajes se reducen a 95.000 diarios.</p>
+<ul>
+<li>Calcula la elasticidad-precio de la demanda.</li>
+<li>Clasifica la demanda y explica su comportamiento.</li>
+<li>Compara los ingresos diarios antes y después de la subida.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solución
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Elasticidad.</strong> La variación porcentual del precio es <span class="math inline">\((1{,}50 - 1{,}20)/1{,}20 = 25\%\)</span> y la de la cantidad es <span class="math inline">\((95.000 - 100.000)/100.000 = -5\%\)</span>. Por tanto:</p>
+<p><span class="math display">\[E_p = \left|\frac{-5\%}{25\%}\right| = 0{,}2\]</span></p>
+<p>Como <span class="math inline">\(E_p &lt; 1\)</span>, la demanda es <strong>inelástica</strong>. Muchos usuarios necesitan el transporte para ir al trabajo o al centro de estudios y, a corto plazo, pueden no tener un sustituto asequible.</p>
+<ul>
+<li>Ingreso inicial: <span class="math inline">\(IT_1 = 1{,}20 \times 100.000 = 120.000\text{ €/día}\)</span>.</li>
+<li>Ingreso tras la subida: <span class="math inline">\(IT_2 = 1{,}50 \times 95.000 = 142.500\text{ €/día}\)</span>.</li>
+</ul>
+<p>Los ingresos aumentan en 22.500 € al día: la subida del precio compensa la reducción de los viajes.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
