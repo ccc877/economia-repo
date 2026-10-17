@@ -57,8 +57,26 @@ include-in-header:
         nav.appendChild(a);
       }
 
+      function ponerEnlaceInicio() {
+        if (window.document.querySelector(".enlace-inicio")) return;
+        var nav = window.document.querySelector(".quarto-secondary-nav .container-fluid")
+               || window.document.querySelector(".navbar");
+        if (!nav) return;
+        var a = window.document.createElement("a");
+        var esEjercicios = window.location.pathname.indexOf("/ejercicios/") !== -1;
+        a.className = "enlace-inicio";
+        a.href = esEjercicios ? "../index.html" : "./index.html";
+        a.textContent = "Inicio";
+        a.title = "Volver a la página de inicio";
+        a.setAttribute("aria-label", "Volver a la página de inicio");
+        var buscar = nav.querySelector(".quarto-search-button");
+        if (buscar) nav.insertBefore(a, buscar);
+        else nav.appendChild(a);
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         ponerConmutador();
+        ponerEnlaceInicio();
         avisarIframes();
         new MutationObserver(avisarIframes).observe(document.documentElement,
           { attributes: true, attributeFilter: ["data-bs-theme", "data-theme"] });
@@ -72,6 +90,22 @@ include-in-header:
         font-size: 1.05rem;
         line-height: 1;
         text-decoration: none;
+      }
+
+      .enlace-inicio {
+        flex: 0 0 auto;
+        margin: 0 0.75rem 0 0.5rem;
+        padding: 0.2rem 0.65rem;
+        border: 1px solid var(--bs-border-color);
+        border-radius: 0.25rem;
+        color: var(--bs-body-color);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .enlace-inicio:hover {
+        color: var(--bs-primary);
+        border-color: var(--bs-primary);
       }
     </style>
 

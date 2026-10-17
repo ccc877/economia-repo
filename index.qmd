@@ -8,8 +8,6 @@ En esta página encontrarás los materiales de Economía de 1.º de Bachillerato
 [Apuntes](#apuntes)
 
 [Ejercicios](#ejercicios)
-
-[Documentos PDF](#documentos-pdf)
 :::
 
 ::: {.resource-section}
@@ -100,42 +98,4 @@ completo](ejercicios/index.html) está siguiente, con todo el temario en orden y
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El comercio internacional</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
-:::
-
-::: {.resource-section}
-## Documentos PDF
-
-Esta sección queda preparada para reunir fichas, esquemas y otros documentos descargables en PDF.
-
-### Unidad 1. Decisión, comportamiento y método
-
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: La economía: concepto, método y ramas</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: Necesidades, producción y sistemas económicos</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 2. Microeconomía y mercados
-
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: La empresa y la producción</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 3. Macroeconomía y desarrollo
-
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: El desarrollo económico</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 4. Sistema financiero y política monetaria
-
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 5. Política fiscal y sector público
-
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span>
-
-### Unidad 6. Comercio, globalización y retos actuales
-
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: El comercio internacional</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Documento: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
 :::
