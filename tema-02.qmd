@@ -393,23 +393,25 @@ Este intercambio no ocurre en el vacío, sino a través de dos grandes mercados 
 
 ## Los sistemas económicos
 
-Un sistema económico es el conjunto de principios, instituciones y normas que organizan la producción, distribución y consumo en una sociedad.
+Toda sociedad debe resolver tres cuestiones básicas: **qué** bienes y servicios producir, **cómo** producirlos —con qué recursos y técnicas— y **para quién** —cómo se reparte lo producido—. Un **sistema económico** es el conjunto de principios, instituciones y normas con el que una sociedad responde a esas tres cuestiones.
+
+Los sistemas se distinguen, sobre todo, por dos rasgos: quién es propietario de los **medios de producción** —los recursos naturales y los bienes de capital— y quién toma las decisiones: la costumbre, los particulares a través del mercado o el Estado. Los cuatro sistemas que siguen son modelos; en la realidad, ninguna economía responde exactamente a uno solo de ellos.
 
 ### El sistema tradicional
 
-Es la forma más antigua de organización económica. Las decisiones sobre qué, cómo y para quién producir se resuelven siguiendo la costumbre y la tradición, transmitidas de generación en generación.
+Es la forma más antigua de organización económica. Las decisiones sobre qué, cómo y para quién producir se toman siguiendo la costumbre, que se transmite de generación en generación.
 
 Sus rasgos principales son:
 
-- Producción basada en la **agricultura y la ganadería de subsistencia**.
-- Las técnicas de producción apenas cambian con el tiempo.
-- La distribución de tareas suele seguir criterios familiares o comunitarios establecidos por costumbre.
+- **Producción de subsistencia**, basada en la agricultura, la ganadería, la pesca o la recolección.
+- **Técnicas estables**: los métodos de producción apenas cambian con el tiempo.
+- **Reparto por costumbre**: las tareas y los productos se distribuyen según criterios familiares o comunitarios.
 
-Este sistema ha ido perdiendo peso frente a la economía de mercado, la planificación central y la economía mixta, aunque subsiste en algunas comunidades rurales o aisladas.
+Entre sus ventajas está la estabilidad: cada miembro de la comunidad conoce su papel y sus derechos, lo que favorece la cohesión social. Entre sus inconvenientes está el estancamiento: al no haber incentivos para cambiar, la innovación es escasa, la producción apenas supera lo necesario y la comunidad queda muy expuesta a una mala cosecha. Este sistema ha ido perdiendo peso frente a los otros tres, aunque subsiste en algunas comunidades rurales o aisladas.
 
 ### La economía de mercado
 
-En la economía de mercado las decisiones sobre qué, cómo y para quién producir las toman los agentes privados a través del mecanismo de precios.
+En la economía de mercado, las decisiones sobre qué, cómo y para quién producir las toman los agentes privados —familias y empresas— a través del mecanismo de precios. Los precios indican qué bienes son escasos y cuáles se demandan, y orientan así las decisiones de productores y consumidores.
 
 Sus rasgos principales son:
 
@@ -418,36 +420,50 @@ Sus rasgos principales son:
 - **Papel limitado del Estado**: se limita a garantizar el marco legal y la propiedad privada.
 - **Búsqueda del beneficio** como incentivo que impulsa la eficiencia y la innovación.
 
+Entre sus ventajas están la eficiencia —los recursos tienden a dirigirse hacia los usos que los consumidores más valoran—, la innovación, que el beneficio recompensa, y la libertad de elección. Entre sus inconvenientes se encuentran la desigualdad, porque quien no dispone de recursos que el mercado valore obtiene pocos ingresos, y los **fallos del mercado**, que se describen más adelante en este tema. Además, la actividad atraviesa fases de crecimiento y de recesión que el mercado, por sí solo, no evita.
+
 ### La planificación central
 
-En los sistemas de planificación central el Estado es el propietario de los medios de producción y toma todas las decisiones económicas de forma centralizada.
+En los sistemas de planificación central, el Estado es propietario de los medios de producción y toma las decisiones económicas de forma centralizada.
 
 Sus rasgos principales son:
 
 - **Propiedad estatal** de los medios de producción.
 - **Planificación centralizada**: el Estado fija qué y cuánto producir y a qué precios.
-- **Objetivos sociales**: igualdad, cobertura de necesidades básicas y pleno empleo.
+- **Objetivos sociales**: igualdad, cobertura de las necesidades básicas y pleno empleo.
 
-Sus principales inconvenientes son la burocracia, la falta de incentivos y la ineficiencia en la asignación de recursos.
+Entre sus ventajas está que permite garantizar la cobertura de las necesidades básicas, reducir las desigualdades y dirigir los recursos hacia los objetivos que el Estado considera prioritarios. Entre sus inconvenientes se encuentran la burocracia, la falta de incentivos y la ineficiencia en la asignación de recursos: un organismo central dispone de poca información sobre las preferencias de millones de consumidores y sobre la situación de cada empresa, y carece de precios de mercado que le sirvan de señal. El ejemplo histórico principal fue la Unión Soviética; en la actualidad, se aproximan a este modelo, con importantes matices, países como Cuba o Corea del Norte.
 
 ### La economía mixta
 
-La economía mixta combina elementos del mercado y de la planificación. Es el modelo predominante en las economías desarrolladas actuales.
+La economía mixta combina elementos de la economía de mercado y de la planificación. La mayor parte de la producción corresponde a empresas privadas que actúan en mercados, pero el Estado interviene para corregir los **fallos del mercado** y alcanzar objetivos sociales. Es el modelo predominante en las economías desarrolladas actuales. En España, por ejemplo, conviven las empresas privadas con servicios públicos, como la sanidad o la educación, que se financian con impuestos.
 
-El Estado corrige los **fallos del mercado** (desigualdad, contaminación, monopolios) sin suprimir la iniciativa privada.
+Sus rasgos principales son:
+
+- **Propiedad mixta** de los medios de producción: privada en la mayoría de las empresas y pública en algunas.
+- **Decisiones compartidas**: los precios se forman, en general, en el mercado, y el Estado regula determinadas actividades.
+- **Estado activo**: regula, provee bienes públicos, redistribuye la renta y procura estabilizar la economía.
+
+Entre sus ventajas está que conserva la eficiencia y la capacidad de innovación del mercado y, a la vez, corrige sus fallos y ofrece protección social. Entre sus inconvenientes se encuentran la **carga fiscal** —los impuestos y las cotizaciones necesarios para financiar el gasto público—, la **burocracia** y la complejidad de la regulación, y el riesgo de déficit y deuda públicos cuando el gasto supera de forma sostenida a los ingresos. Además, la intervención no siempre alcanza sus objetivos: una regulación mal diseñada puede generar costes mayores que el problema que pretendía resolver. El grado de intervención deseable es también objeto de debate permanente.
 
 ### Los fallos del mercado y la intervención del Estado
 
-En una economía mixta, el Estado interviene para corregir situaciones en las que el mercado no asigna bien los recursos. Los principales son:
+Los fallos del mercado son situaciones en las que el mercado, por sí solo, no asigna los recursos de forma eficiente. En una economía mixta, el Estado interviene para corregirlos. Los principales son:
 
-- **Desigualdad**: el mercado puede generar diferencias económicas muy amplias entre individuos. El Estado las reduce mediante impuestos progresivos, transferencias sociales y servicios públicos.
-- **Contaminación y externalidades**: muchas actividades generan costes que no pagan quienes los causan (contaminación, ruido). El Estado puede corregirlos con regulación, impuestos ecológicos o subvenciones a tecnologías limpias.
-- **Crisis económicas**: los mercados pueden experimentar recesiones, inflación elevada o desempleo masivo. El sector público actúa mediante política fiscal y monetaria para estabilizar la economía.
-- **Bienes públicos**: algunos bienes son necesarios pero no rentables para el sector privado (alumbrado público, defensa nacional, carreteras rurales). El Estado los provee directamente.
+- **Falta de competencia (monopolios)**: cuando una empresa, o un grupo reducido de ellas, domina un mercado, puede subir los precios y reducir la producción. El Estado lo corrige con leyes de defensa de la competencia y con organismos que las aplican, como la Comisión Nacional de los Mercados y la Competencia (CNMC) en España.
+- **Externalidades**: muchas actividades generan costes que no pagan quienes los causan, como la contaminación o el ruido. El Estado puede corregirlas con regulación, impuestos ecológicos o subvenciones a tecnologías limpias.
+- **Bienes públicos**: algunos bienes son necesarios, pero no resultan rentables para el sector privado porque no se puede excluir a nadie de su uso y el consumo de una persona no reduce el de las demás, como el alumbrado público o la defensa nacional. El Estado los provee directamente.
+
+Además de corregir estos fallos, el Estado persigue otros dos objetivos que el mercado no garantiza por sí solo, aunque, en sentido estricto, no constituyen fallos de eficiencia:
+
+- **Equidad**: el mercado puede generar diferencias económicas muy amplias entre individuos. El Estado las reduce mediante impuestos progresivos, transferencias sociales y servicios públicos.
+- **Estabilidad**: los mercados pueden experimentar recesiones, inflación elevada o desempleo masivo. El sector público actúa mediante la política fiscal y la política monetaria para estabilizar la economía.
+
+Todos estos aspectos se estudiarán con más detalle en el tema dedicado a los fallos del mercado.
 
 ### Comparativa de los sistemas económicos
 
-Vistos uno a uno, los cuatro sistemas pueden parecer categorías abstractas; puestos lado a lado, sus diferencias resultan mucho más claras. La tabla siguiente resume cómo responde cada sistema a las mismas preguntas: quién decide, qué incentivos existen y qué gana y qué pierde una sociedad al elegir uno u otro modelo.
+La tabla siguiente resume cómo responde cada sistema a las mismas cuestiones: quién decide, qué incentivos existen y qué ventajas e inconvenientes presenta cada uno.
 
 ```{r}
 #| label: tbl-sistemas
@@ -466,23 +482,24 @@ df_sis <- data.frame(
                      "Principal inconveniente"),
   `Tradicional`             = c("Comunitaria o familiar", "La costumbre", "Nulo o mínimo",
                                 "Muy reducida", "Subsistencia", "Muy reducidos",
-                                "Baja", "Según costumbre",
+                                "Baja", "Según la costumbre",
                                 "Estabilidad y cohesión social",
-                                "Estancamiento y escasa innovación"),
-  `Economía de mercado`    = c("Privada", "El mercado", "Limitado",
+                                "Estancamiento y exposición a las malas cosechas"),
+  `Economía de mercado`     = c("Privada", "Los agentes privados, mediante el mercado", "Limitado",
                                 "Muy alta", "Beneficio", "Elevados",
-                                "Alta (en teoría)", "Escasa",
-                                "Eficiencia e innovación", "Desigualdad"),
-  `Planificación central`  = c("Estatal", "El Estado", "Total",
+                                "Alta, si hay competencia", "Escasa",
+                                "Eficiencia e innovación",
+                                "Desigualdad y fallos del mercado"),
+  `Planificación central`   = c("Estatal", "El Estado", "Total",
                                 "Reducida", "Igualdad", "Reducidos",
-                                "Baja (en la práctica)", "Amplia",
+                                "Baja", "Amplia",
                                 "Cobertura básica garantizada",
                                 "Burocracia e ineficiencia"),
-  `Economía mixta`         = c("Mixta", "Mercado y Estado", "Activo",
-                                "Intermedia", "Equilibrio", "Moderados",
-                                "Variable", "Moderada",
-                                "Corrección de fallos de mercado",
-                                "Riesgo de desequilibrio fiscal"),
+  `Economía mixta`          = c("Mixta", "Mercado y Estado", "Activo",
+                                "Intermedia", "Equilibrio entre eficiencia y equidad", "Moderados",
+                                "Intermedia", "Moderada",
+                                "Eficiencia del mercado y protección social",
+                                "Carga fiscal, burocracia y riesgo de déficit"),
   check.names = FALSE
 )
 
@@ -498,4 +515,4 @@ kable(df_sis, format = if (knitr::is_latex_output()) "latex" else "html", bookta
   column_spec(1, bold = TRUE)
 ```
 
-Ningún sistema gana en todas las filas de la tabla a la vez, y ahí está la clave: cada uno resuelve mejor un problema a costa de otro. La economía de mercado maximiza la eficiencia pero descuida la igualdad; la planificación central prioriza la igualdad pero sacrifica la eficiencia; la economía mixta —el modelo que domina en la práctica totalidad de los países desarrollados— trata de quedarse con lo mejor de ambos mundos, aunque sin llegar nunca a los extremos de ninguno.
+Ningún sistema es superior en todos los criterios: cada uno resuelve mejor unos problemas a costa de otros. La economía de mercado destaca por su eficiencia y su capacidad de innovación, pero puede generar desigualdad y fallos de asignación. La planificación central prioriza la igualdad y la cobertura de necesidades básicas, pero tropieza con problemas de información y de incentivos. La economía mixta intenta combinar ambos enfoques, a cambio de impuestos, regulación y un debate continuo sobre cuánto debe intervenir el Estado. Por eso, la mayoría de los países desarrollados son economías mixtas que se diferencian entre sí por el grado de intervención pública.

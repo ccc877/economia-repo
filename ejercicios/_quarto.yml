@@ -142,6 +142,9 @@ book:
         contents:
           - 7-1-produccion-costes.md
           - 7-2-costes-optimo.md
+      - section: "El mercado: oferta, demanda y elasticidad"
+        contents:
+          - mercado-oferta-demanda-elasticidad.md
       - section: "Umbral de rentabilidad"
         contents:
           - 8-repaso-eficiencia-costes.md
@@ -171,6 +174,9 @@ book:
       chapters:
         - 7-1-produccion-costes.md
         - 7-2-costes-optimo.md
+    - part: "El mercado: oferta, demanda y elasticidad"
+      chapters:
+        - mercado-oferta-demanda-elasticidad.md
     - part: "Umbral de rentabilidad"
       chapters:
         - 8-repaso-eficiencia-costes.md
