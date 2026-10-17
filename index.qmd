@@ -80,7 +80,8 @@ completo](ejercicios/index.html) está siguiente, con todo el temario en orden y
   - [Umbral de rentabilidad: de los beneficios al punto muerto](ejercicios/9-1-umbral-formula.html)
   - [Umbral de rentabilidad: cálculo y representación gráfica](ejercicios/9-2-umbral-basico.html)
 
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El mercado: oferta, demanda y elasticidad</a><span class="placeholder-status">Próximamente</span>
+- **Ejercicios: El mercado: oferta, demanda y elasticidad**
+  - [Desplazamientos, equilibrio y elasticidad](ejercicios/mercado-oferta-demanda-elasticidad.html)
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span>
 
