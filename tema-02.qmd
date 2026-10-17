@@ -417,7 +417,7 @@ Sus rasgos principales son:
 
 - **Propiedad privada** de los medios de producción.
 - **Libertad de elección**: empresas y consumidores actúan según sus propios intereses.
-- **Papel limitado del Estado**: garantiza el marco legal y la propiedad privada.
+- **Papel limitado del Estado**: se limita a garantizar el marco legal y la propiedad privada.
 - **Búsqueda del beneficio** como incentivo que impulsa la eficiencia y la innovación.
 
 Entre sus ventajas están la eficiencia —los recursos tienden a dirigirse hacia los usos que los consumidores más valoran—, la innovación, que el beneficio recompensa, y la libertad de elección. Entre sus inconvenientes se encuentran la desigualdad, porque quien no dispone de recursos que el mercado valore obtiene pocos ingresos, y los **fallos del mercado**, que se describen más adelante en este tema. Además, la actividad atraviesa fases de crecimiento y de recesión que el mercado, por sí solo, no evita.
