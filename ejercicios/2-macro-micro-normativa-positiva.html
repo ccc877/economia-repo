@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-b9b87f1ee5f3efc80085e05a1cdeb0ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -123,8 +123,26 @@ ul.task-list li input[type="checkbox"] {
     nav.appendChild(a);
   }
 
+  function ponerEnlaceInicio() {
+    if (window.document.querySelector(".enlace-inicio")) return;
+    var nav = window.document.querySelector(".quarto-secondary-nav .container-fluid")
+           || window.document.querySelector(".navbar");
+    if (!nav) return;
+    var a = window.document.createElement("a");
+    var esEjercicios = window.location.pathname.indexOf("/ejercicios/") !== -1;
+    a.className = "enlace-inicio";
+    a.href = esEjercicios ? "../index.html" : "./index.html";
+    a.textContent = "Inicio";
+    a.title = "Volver a la página de inicio";
+    a.setAttribute("aria-label", "Volver a la página de inicio");
+    var buscar = nav.querySelector(".quarto-search-button");
+    if (buscar) nav.insertBefore(a, buscar);
+    else nav.appendChild(a);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     ponerConmutador();
+    ponerEnlaceInicio();
     avisarIframes();
     new MutationObserver(avisarIframes).observe(document.documentElement,
       { attributes: true, attributeFilter: ["data-bs-theme", "data-theme"] });
@@ -138,6 +156,22 @@ ul.task-list li input[type="checkbox"] {
     font-size: 1.05rem;
     line-height: 1;
     text-decoration: none;
+  }
+
+  .enlace-inicio {
+    flex: 0 0 auto;
+    margin: 0 0.75rem 0 0.5rem;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.25rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .enlace-inicio:hover {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
   }
 </style>
 
