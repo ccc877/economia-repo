@@ -20,6 +20,14 @@ Las **barreras de entrada y salida** determinan cuán fácil es para una empresa
 
 Por último, la **información** disponible para compradores y vendedores condiciona el funcionamiento del mercado. Cuando la información es perfecta, todos conocen los precios y la calidad de los productos, lo que permite decisiones informadas. Cuando existe **asimetría de información** —una parte sabe más que la otra—, quien tiene más información puede aprovecharse de quien tiene menos, generando ineficiencias.
 
+### La cuota de mercado
+
+La **cuota de mercado** indica qué parte de las ventas totales de un mercado corresponde a una empresa. Puede calcularse con las unidades vendidas o con el valor de las ventas, pero en ambos casos hay que comparar datos del mismo producto, territorio y periodo.
+
+$$\text{Cuota de mercado} = \frac{\text{Ventas de la empresa}}{\text{Ventas totales del mercado}} \times 100$$
+
+Por ejemplo, si una panadería vende 1600 barras al día y en el mercado considerado se venden 10 000, su cuota es $1600/10\,000 \times 100 = 16\,\%$. Esto significa que vende 16 de cada 100 barras comercializadas en ese mercado. Una cuota elevada suele indicar una posición importante, aunque por sí sola no permite saber si la empresa tiene poder para fijar precios: también importan los competidores, las barreras de entrada y las posibilidades de sustitución.
+
 ```{r}
 #| label: tbl-estructuras-resumen
 #| tbl-cap: "Comparativa de las estructuras de mercado"

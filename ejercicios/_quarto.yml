@@ -116,7 +116,7 @@ resources:
 
 book:
   title: "Ejercicios de Economía"
-  subtitle: "1.º de Bachillerato · Primer trimestre"
+  subtitle: "Ejercicios por temas · 1.º de Bachillerato"
   author: "Guillermo"
   page-navigation: false
   sidebar:
@@ -145,6 +145,16 @@ book:
       - section: "El mercado: oferta, demanda y elasticidad"
         contents:
           - mercado-oferta-demanda-elasticidad.md
+          - mercado-oferta-demanda-extra.md
+      - section: "Estructuras de mercado"
+        contents:
+          - estructuras-de-mercado.md
+      - section: "El mercado de trabajo"
+        contents:
+          - mercado-trabajo-y-desempleo.md
+      - section: "Macroeconomía y Producto Interior Bruto"
+        contents:
+          - pib-demanda-agregada.md
       - section: "Umbral de rentabilidad"
         contents:
           - 8-repaso-eficiencia-costes.md
@@ -177,6 +187,16 @@ book:
     - part: "El mercado: oferta, demanda y elasticidad"
       chapters:
         - mercado-oferta-demanda-elasticidad.md
+        - mercado-oferta-demanda-extra.md
+    - part: "Estructuras de mercado"
+      chapters:
+        - estructuras-de-mercado.md
+    - part: "El mercado de trabajo"
+      chapters:
+        - mercado-trabajo-y-desempleo.md
+    - part: "Macroeconomía y Producto Interior Bruto"
+      chapters:
+        - pib-demanda-agregada.md
     - part: "Umbral de rentabilidad"
       chapters:
         - 8-repaso-eficiencia-costes.md
