@@ -1,18 +1,17 @@
-# Ejercicios del primer trimestre {.unnumbered}
+# Ejercicios de Economía {.unnumbered}
 
-Este cuaderno reúne los ejercicios del primer trimestre, ordenados por bloques
-y en el mismo orden en que se abordan en el libro. Cada documento contiene los
-enunciados y, al final de cada ejercicio, su solución desplegada.
+Este cuaderno reúne ejercicios de distintos temas del libro, ordenados por
+bloques. Algunas actividades incluyen una solución desplegable justo debajo del
+enunciado; las demás se proponen para resolverlas por cuenta propia.
 
 ## Cómo usar estos ejercicios
 
-Resuelve primero el enunciado por tu cuenta. Cuando termines, despliega el
-**Solución** que hay justo debajo para comprobar el resultado: están al lado, no
-al final del documento, para que puedas ir uno a uno sin ver por adelantado las
-respuestas de los siguientes.
+Resuelve primero cada enunciado por tu cuenta. Cuando haya una solución, podrás
+desplegarla inmediatamente después para comprobar el resultado, sin ver por
+adelantado las respuestas de los ejercicios siguientes.
 
-En las soluciones no aparece solo el resultado: se indica el procedimiento y se
-justifica cada decisión, que es lo que se pide en un examen.
+Las soluciones disponibles explican el procedimiento y justifican las
+decisiones, además de indicar el resultado.
 
 ## Bloques
 
@@ -46,6 +45,26 @@ iguala el ingreso marginal al coste marginal.
 
 Deducción del punto muerto, su cálculo y su representación gráfica, con
 ejercicios de repaso que mezclan eficiencia, costes y umbral.
+
+### El mercado: oferta, demanda y elasticidad
+
+Ejercicios sobre desplazamientos de las curvas, equilibrio, elasticidad y las
+leyes de la oferta y la demanda.
+
+### Estructuras de mercado
+
+Actividades sobre competencia perfecta e imperfecta, cuota de mercado,
+economías de escala y entrada y salida de empresas.
+
+### El mercado de trabajo
+
+Cálculo e interpretación de las tasas de actividad, paro y ocupación;
+clasificación de situaciones de desempleo y análisis del equilibrio laboral.
+
+### Macroeconomía y Producto Interior Bruto
+
+Clasificación de operaciones para el PIB, cálculo por el método de las rentas
+y análisis de cambios en la demanda agregada.
 
 ### Evaluación
 

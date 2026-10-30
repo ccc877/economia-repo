@@ -51,10 +51,10 @@ Cada tema incluye explicaciones, definiciones, ejemplos y gráficos.
 ::: {.resource-section}
 ## Ejercicios
 
-Los ejercicios del primer trimestre están disponibles por tema, con la solución de
-cada uno desplegable justo debajo de su enunciado. El [cuaderno
-completo](ejercicios/index.html) está siguiente, con todo el temario en orden y el
-índice navegable.
+Los ejercicios disponibles están organizados por tema; algunos incluyen la
+solución desplegable junto al enunciado. El [cuaderno de
+ejercicios](ejercicios/index.html) reúne el material y ofrece un índice
+navegable.
 
 ### Unidad 1. Decisión, comportamiento y método
 
@@ -82,8 +82,11 @@ completo](ejercicios/index.html) está siguiente, con todo el temario en orden y
 
 - **Ejercicios: El mercado: oferta, demanda y elasticidad**
   - [Desplazamientos, equilibrio y elasticidad](ejercicios/mercado-oferta-demanda-elasticidad.html)
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las estructuras de mercado</a><span class="placeholder-status">Próximamente</span>
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los fallos del mercado y el mercado de trabajo</a><span class="placeholder-status">Próximamente</span>
+  - [Práctica adicional de oferta y demanda](ejercicios/mercado-oferta-demanda-extra.html)
+- **Ejercicios: Las estructuras de mercado**
+  - [Competencia y cuota de mercado](ejercicios/estructuras-de-mercado.html)
+- **Ejercicios: Los fallos del mercado y el mercado de trabajo**
+  - [Empleo, desempleo y equilibrio laboral](ejercicios/mercado-trabajo-y-desempleo.html)
 
 ### Evaluación
 
@@ -92,7 +95,8 @@ completo](ejercicios/index.html) está siguiente, con todo el temario en orden y
 
 ### Unidades 3 a 6
 
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La macroeconomía y el Producto Interior Bruto</a><span class="placeholder-status">Próximamente</span>
+- **Ejercicios: La macroeconomía y el Producto Interior Bruto**
+  - [Cálculo del PIB y demanda agregada](ejercicios/pib-demanda-agregada.html)
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El desarrollo económico</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: El dinero, el sistema financiero y las finanzas personales</a><span class="placeholder-status">Próximamente</span>
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Los precios, la inflación y la política monetaria</a><span class="placeholder-status">Próximamente</span>
