@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.20">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,14 +44,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0ae969d3293726db143f6e9eb89af930.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-4dc5810a0ca2761c5abee21657872ed5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-fd0503e23dce65854c81c5baaade3bdf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fd33a4952e9ae2782db733e1f7710525.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-c7f9e716fd0b9cf72826647080c3781c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-fd33a4952e9ae2782db733e1f7710525.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -145,6 +145,35 @@ ul.task-list li input[type="checkbox"] {
   }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -514,7 +543,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#los-elementos-que-condicionan-los-mercados" id="toc-los-elementos-que-condicionan-los-mercados" class="nav-link active" data-scroll-target="#los-elementos-que-condicionan-los-mercados"><span class="header-section-number">6.1</span> Los elementos que condicionan los mercados</a></li>
+  <li><a href="#los-elementos-que-condicionan-los-mercados" id="toc-los-elementos-que-condicionan-los-mercados" class="nav-link active" data-scroll-target="#los-elementos-que-condicionan-los-mercados"><span class="header-section-number">6.1</span> Los elementos que condicionan los mercados</a>
+  <ul class="collapse">
+  <li><a href="#la-cuota-de-mercado" id="toc-la-cuota-de-mercado" class="nav-link" data-scroll-target="#la-cuota-de-mercado"><span class="header-section-number">6.1.1</span> La cuota de mercado</a></li>
+  </ul></li>
   <li><a href="#la-competencia-perfecta" id="toc-la-competencia-perfecta" class="nav-link" data-scroll-target="#la-competencia-perfecta"><span class="header-section-number">6.2</span> La competencia perfecta</a></li>
   <li><a href="#la-competencia-imperfecta" id="toc-la-competencia-imperfecta" class="nav-link" data-scroll-target="#la-competencia-imperfecta"><span class="header-section-number">6.3</span> La competencia imperfecta</a></li>
   <li><a href="#el-monopolio" id="toc-el-monopolio" class="nav-link" data-scroll-target="#el-monopolio"><span class="header-section-number">6.4</span> El monopolio</a>
@@ -557,6 +589,11 @@ ul.task-list li input[type="checkbox"] {
 <p>La <strong>homogeneidad del producto</strong> también importa. Cuando los productos son idénticos —materias primas como el trigo o el petróleo—, los consumidores no tienen preferencia por un vendedor concreto y compiten solo en precio. Cuando los productos están diferenciados —automóviles, teléfonos móviles—, las empresas compiten además en calidad, marca y características, lo que les permite fijar precios más altos y generar cierta lealtad de marca.</p>
 <p>Las <strong>barreras de entrada y salida</strong> determinan cuán fácil es para una empresa nueva sumarse al mercado, o para una existente abandonarlo. Unos costes iniciales muy altos, unas regulaciones estrictas o la necesidad de tecnología avanzada dificultan la entrada; en general, cuanto más fácil es entrar y salir, más competitivo tiende a ser el mercado.</p>
 <p>Por último, la <strong>información</strong> disponible para compradores y vendedores condiciona el funcionamiento del mercado. Cuando la información es perfecta, todos conocen los precios y la calidad de los productos, lo que permite decisiones informadas. Cuando existe <strong>asimetría de información</strong> —una parte sabe más que la otra—, quien tiene más información puede aprovecharse de quien tiene menos, generando ineficiencias.</p>
+<section id="la-cuota-de-mercado" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="la-cuota-de-mercado"><span class="header-section-number">6.1.1</span> La cuota de mercado</h3>
+<p>La <strong>cuota de mercado</strong> indica qué parte de las ventas totales de un mercado corresponde a una empresa. Puede calcularse con las unidades vendidas o con el valor de las ventas, pero en ambos casos hay que comparar datos del mismo producto, territorio y periodo.</p>
+<p><span class="math display">\[\text{Cuota de mercado} = \frac{\text{Ventas de la empresa}}{\text{Ventas totales del mercado}} \times 100\]</span></p>
+<p>Por ejemplo, si una panadería vende 1600 barras al día y en el mercado considerado se venden 10 000, su cuota es <span class="math inline">\(1600/10\,000 \times 100 = 16\,\%\)</span>. Esto significa que vende 16 de cada 100 barras comercializadas en ese mercado. Una cuota elevada suele indicar una posición importante, aunque por sí sola no permite saber si la empresa tiene poder para fijar precios: también importan los competidores, las barreras de entrada y las posibilidades de sustitución.</p>
 <div class="cell">
 <div id="tbl-estructuras-resumen" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -611,6 +648,7 @@ Tabla&nbsp;6.1: Comparativa de las estructuras de mercado
 </figure>
 </div>
 </div>
+</section>
 </section>
 <section id="la-competencia-perfecta" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="la-competencia-perfecta"><span class="header-section-number">6.2</span> La competencia perfecta</h2>
