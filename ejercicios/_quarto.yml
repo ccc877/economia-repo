@@ -155,6 +155,14 @@ book:
       - section: "Macroeconomía y Producto Interior Bruto"
         contents:
           - pib-demanda-agregada.md
+      - section: "Sistema financiero y política monetaria"
+        contents:
+          - dinero-y-creacion-bancaria.md
+          - matematica-financiera.md
+          - econosublime-intermediarios-bce.md
+      - section: "Comercio internacional"
+        contents:
+          - comercio-internacional.md
       - section: "Umbral de rentabilidad"
         contents:
           - 8-repaso-eficiencia-costes.md
@@ -197,6 +205,14 @@ book:
     - part: "Macroeconomía y Producto Interior Bruto"
       chapters:
         - pib-demanda-agregada.md
+    - part: "Sistema financiero y política monetaria"
+      chapters:
+        - dinero-y-creacion-bancaria.md
+        - matematica-financiera.md
+        - econosublime-intermediarios-bce.md
+    - part: "Comercio internacional"
+      chapters:
+        - comercio-internacional.md
     - part: "Umbral de rentabilidad"
       chapters:
         - 8-repaso-eficiencia-costes.md
