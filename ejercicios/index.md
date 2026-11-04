@@ -66,6 +66,17 @@ clasificación de situaciones de desempleo y análisis del equilibrio laboral.
 Clasificación de operaciones para el PIB, cálculo por el método de las rentas
 y análisis de cambios en la demanda agregada.
 
+### Sistema financiero y política monetaria
+
+Funciones y agregados del dinero, creación de dinero bancario, intermediarios
+financieros, tipos de interés, matemática financiera, inflación y actuaciones
+del BCE. El material procedente de Econosublime está identificado como tal.
+
+### Comercio internacional
+
+Motivos del comercio, librecambismo y proteccionismo, integración económica,
+Unión Europea y Unión Económica y Monetaria, y ejercicios de balanza de pagos.
+
 ### Evaluación
 
 Una prueba completa tipo examen, con su solucionario desplegable pregunta a
