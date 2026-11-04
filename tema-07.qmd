@@ -203,6 +203,16 @@ $$\text{Tasa de paro} = \frac{\text{Población desempleada}}{\text{Población ac
 
 Una tasa de paro del 10 % significa que 10 de cada 100 personas de la fuerza laboral no encuentran un puesto de trabajo.
 
+La **tasa de ocupación** expresa qué proporción de la población en edad de trabajar tiene empleo. Su denominador es, por tanto, la población en edad de trabajar, que incluye tanto a las personas activas como a las inactivas:
+
+$$\text{Tasa de ocupación} = \frac{\text{Población ocupada}}{\text{Población en edad de trabajar}} \times 100$$
+
+No debe confundirse con el porcentaje de ocupados sobre la población activa. La tasa de paro se calcula sobre la población activa, mientras que la de ocupación se calcula sobre toda la población en edad de trabajar. Por eso ambas tasas no suman necesariamente el 100 %. En cambio, dentro de la población activa, la proporción de ocupados y la de parados sí suman el 100 %: toda persona activa está ocupada o desempleada. La relación entre las tres tasas es:
+
+$$\text{Tasa de ocupación} = \text{Tasa de actividad} \times \frac{100 - \text{Tasa de paro}}{100}$$
+
+Por tanto, una tasa de actividad más alta eleva la proporción ocupada si la tasa de paro se mantiene igual.
+
 ::: {.callout-tip}
 ### Para saber más: la tasa de asalarización
 La tasa de asalarización mide el porcentaje que representan los trabajadores por cuenta ajena sobre el total de la población ocupada:
@@ -291,6 +301,16 @@ La curva de demanda de trabajo tiene pendiente negativa. Un cambio en el salario
 En el mercado de trabajo, los roles habituales se invierten respecto a los mercados de bienes: las familias son las oferentes y las empresas las demandantes. La interacción entre ambas curvas determina el **salario de equilibrio** —al que la cantidad de trabajo ofrecida coincide con la demandada— y el **nivel de empleo de equilibrio**.
 
 En un modelo teórico de competencia perfecta, en ese punto no existiría desempleo involuntario: cualquiera que deseara trabajar al salario vigente encontraría empleo. Sin embargo, esta es una simplificación, porque el mercado de trabajo presenta imperfecciones que impiden alcanzar ese equilibrio de forma automática.
+
+#### Desplazamientos de las curvas y salario mínimo
+
+Un cambio en el **salario** modifica la cantidad ofrecida o demandada y produce un movimiento a lo largo de la curva correspondiente. Si cambia otro factor, se desplaza la curva completa. Por ejemplo, una mayor población activa o una ola migratoria de personas en edad de trabajar desplaza la oferta hacia la derecha. Si la demanda no cambia, aumenta el empleo de equilibrio y disminuye el salario. Una caída de la oferta produce el efecto contrario.
+
+La demanda de trabajo se desplaza hacia la derecha cuando aumenta la productividad o el precio de los bienes que producen los trabajadores. Una subvención vinculada a la contratación también puede elevar la demanda, porque reduce el coste efectivo de contratar. Si la demanda aumenta y la oferta no cambia, suben el empleo y el salario de equilibrio. Una tecnología que sustituye puestos de trabajo en una actividad concreta puede desplazar su demanda laboral hacia la izquierda, reduciendo el empleo y el salario de equilibrio de ese mercado.
+
+El aumento de la natalidad no incrementa de inmediato la oferta de trabajo: lo hará cuando esas personas alcancen la edad legal para trabajar y quieran incorporarse al mercado laboral. En el modelo sencillo de oferta y demanda, un **salario mínimo** solo altera el resultado si se fija por encima del salario de equilibrio. A ese nivel salarial, más personas quieren trabajar que las que las empresas desean contratar; la diferencia entre ambas cantidades es un exceso de oferta de trabajo o desempleo. Si el mínimo queda por debajo del equilibrio, no modifica directamente el salario ni el empleo del modelo.
+
+Por ejemplo, supongamos que el salario de equilibrio es de 15 euros por hora y que, a ese salario, las empresas contratan a 70 personas. Si se establece un salario mínimo de 20 euros, las empresas podrían querer contratar solo a 50 personas, mientras que 90 estarían dispuestas a trabajar. Se contrataría a 50 y habría 40 personas que quieren trabajar pero no encuentran empleo. El efecto real de un salario mínimo depende también de las condiciones del mercado y de la respuesta de empresas y trabajadores; el ejemplo describe el resultado del modelo competitivo básico.
 
 #### Imperfecciones del mercado de trabajo
 
