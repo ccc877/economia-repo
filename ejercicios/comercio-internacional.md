@@ -173,3 +173,45 @@ Indica si cada afirmación es verdadera o falsa y justifica brevemente la respue
 - ¿Qué efectos puede tener el comercio internacional sobre el medio ambiente?
 - ¿Cómo influyen las tensiones comerciales entre grandes potencias en la economía mundial?
 - ¿Cómo puede afectar el comercio a la distribución de la riqueza entre países?
+
+## Ventaja absoluta y ventaja comparativa
+
+Dos países, **Tecnolia** y **Agrolandia**, disponen de la misma cantidad de recursos: 1000 horas de trabajo cada uno. Si dedican todos esos recursos a producir un solo bien, pueden alcanzar estas producciones máximas:
+
+| País | Robots (unidades) | Manzanas (toneladas) |
+|:---|---:|---:|
+| Tecnolia | 40 | 80 |
+| Agrolandia | 10 | 50 |
+
+**31.** Analiza las ventajas absolutas y comparativas de los dos países.
+
+- **a)** ¿Qué país tiene ventaja absoluta en la producción de robots? ¿Y en la de manzanas? Justifica tus respuestas comparando cuánto produce cada país con los mismos recursos.
+- **b)** Calcula el coste de oportunidad de producir un robot en cada país, expresado en toneladas de manzanas.
+- **c)** Calcula el coste de oportunidad de producir una tonelada de manzanas en cada país, expresado en robots.
+- **d)** ¿Qué país tiene ventaja comparativa en la producción de robots? ¿Y en la de manzanas? Justifica la respuesta usando los costes de oportunidad.
+- **e)** Según la ventaja comparativa, ¿en qué bien debería especializarse cada país?
+- **f)** Explica cómo podría beneficiarles el comercio, aunque uno de los países tuviera ventaja absoluta en los dos bienes.
+
+Para calcular el coste de oportunidad de una unidad de un bien, divide la producción máxima del otro bien entre la producción máxima del bien elegido. Por ejemplo, el coste de oportunidad de un robot se expresa en manzanas a las que se renuncia.
+
+En la actividad anterior, la ventaja absoluta se compara desde la producción: cuántas unidades se obtienen con los mismos recursos. En esta segunda actividad se compara desde los insumos: cuántas horas se necesitan para producir una unidad. Ambos enfoques permiten identificar qué país utiliza sus recursos de forma más productiva.
+
+### Enfoque de los insumos
+
+Tecnolia y Agrolandia disponen de 1000 horas de trabajo cada una. La tabla indica las horas necesarias para producir una unidad de cada bien:
+
+| País | 1 robot | 1 tonelada de manzanas |
+|:---|---:|---:|
+| Tecnolia | 50 horas | 10 horas |
+| Agrolandia | 150 horas | 25 horas |
+
+**32.** Analiza las ventajas absolutas y comparativas de los dos países a partir de las horas de trabajo necesarias.
+
+- **a)** ¿Qué país tiene ventaja absoluta en la producción de robots? ¿Y en la de manzanas? Justifica la respuesta comparando las horas necesarias para producir una unidad.
+- **b)** Calcula el coste de oportunidad de producir un robot en cada país, expresado en toneladas de manzanas.
+- **c)** Calcula el coste de oportunidad de producir una tonelada de manzanas en cada país, expresado en robots.
+- **d)** ¿Qué país tiene ventaja comparativa en la producción de robots? ¿Y en la de manzanas? Justifica la respuesta con los costes de oportunidad.
+- **e)** Según la ventaja comparativa, ¿en qué bien debería especializarse cada país?
+- **f)** Explica por qué el comercio entre ambos países podría beneficiarles.
+
+Para calcular los costes de oportunidad, divide las horas necesarias para producir una unidad del bien elegido entre las horas necesarias para producir una unidad del otro bien. Interpreta el resultado en unidades del bien al que se renuncia.
