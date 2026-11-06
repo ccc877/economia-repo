@@ -85,10 +85,21 @@ Una vez descontado el plazo que conceden los proveedores (50 días), la empresa 
 
 ### EHU 2025 Extraordinaria — Empresa con saldos medios
 
-> *Una empresa compró y consumió 20.000 € de materias primas y mantuvo un saldo medio de MP de 1.800 €. Ventas (precio venta): 75.000 €; saldo medio de clientes: 1.500 €. Producción anual: 40.000 €; productos en curso (media): 4.000 €. Ventas (precio coste): 45.000 €; productos terminados (media): 3.750 €. Año = 365 días.*
+> Una empresa compró y consumió el año pasado, para la fabricación de su producto, 20.000 € de materias primas y, por término medio, mantuvo un nivel de existencias de las mismas en el almacén de 1.800 € (estando ambas magnitudes valoradas al precio de adquisición).
 >
-> a) PMM económico y significado. *(1,5 p)*
-> b) PMM financiero con saldo medio de proveedores 2.500 €. *(0,5 p)*
+> El volumen de ventas, valoradas al precio de venta de los productos, fue de 75.000 € y, por término medio, los clientes tuvieron una deuda con la empresa de 1.500 €. Otros datos relativos a la empresa, valorados todos ellos según su coste, son los siguientes:
+>
+> - Valor de la producción anual: 40.000 €.
+> - Valor de los productos en curso de fabricación, por término medio: 4.000 €.
+> - Ventas anuales: 45.000 €.
+> - Nivel medio de existencias en el almacén de productos terminados: 3.750 €.
+>
+> 1 año = 365 días.
+>
+> Calcule:
+>
+> a) El periodo medio de maduración económica y explique su significado. *(1,5 puntos)*
+> b) El periodo medio de maduración financiera, teniendo en cuenta que el saldo medio de los proveedores es de 2.500 €. Explique el resultado. *(0,5 puntos)*
 
 ::: {.callout-tip title="Solución comentada"}
 
