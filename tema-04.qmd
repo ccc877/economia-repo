@@ -286,7 +286,7 @@ Agrupando los términos que dependen de $Q$:
 
 $$Q(P - CVu) = CF$$
 
-Y despejando $Q$, obtenemos la cantidad de equilibrio $Q^*$:
+Y despejando $Q$, obtenemos el umbral de rentabilidad, que denotamos por $Q^*$:
 
 $$\boxed{Q^* = \frac{CF}{P - CVu}}$$
 

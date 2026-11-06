@@ -142,6 +142,7 @@ book:
         contents:
           - 7-1-produccion-costes.md
           - 7-2-costes-optimo.md
+          - costes-produccion-decisiones.md
       - section: "El mercado: oferta, demanda y elasticidad"
         contents:
           - mercado-oferta-demanda-elasticidad.md
@@ -192,6 +193,7 @@ book:
       chapters:
         - 7-1-produccion-costes.md
         - 7-2-costes-optimo.md
+        - costes-produccion-decisiones.md
     - part: "El mercado: oferta, demanda y elasticidad"
       chapters:
         - mercado-oferta-demanda-elasticidad.md
