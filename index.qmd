@@ -65,7 +65,8 @@ navegable.
   - [Costes irrecuperables, coste de oportunidad y tipos de bienes](ejercicios/3-costes-irrecuperables.html)
   - [La frontera de posibilidades de producción de «Movilidad Ícaro»](ejercicios/4-fpp-icaro.html)
 
-- <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La economía del comportamiento</a><span class="placeholder-status">Próximamente</span>
+- **Ejercicios: La economía del comportamiento**
+  - [Decisiones, sesgos y riesgo](ejercicios/economia-del-comportamiento.html)
 
 ### Unidad 2. Microeconomía y mercados
 
@@ -108,5 +109,7 @@ navegable.
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: Las finanzas públicas y la política fiscal</a><span class="placeholder-status">Próximamente</span>
 - **Ejercicios: El comercio internacional**
   - [Comercio, proteccionismo, integración y balanza de pagos](ejercicios/comercio-internacional.html)
+  - [Cambio de divisas y tipos de cambio](ejercicios/cambio-divisas.html)
+  - [Clasificación y saldo de la balanza de pagos](ejercicios/balanza-pagos.html)
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
 :::
