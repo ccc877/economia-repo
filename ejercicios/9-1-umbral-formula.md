@@ -24,7 +24,7 @@
 ---
 
 > [!info] Píldora teórica 2: Deducción matemática del umbral de rentabilidad
-> El **umbral de rentabilidad** o **punto muerto** ($Q_0$) es el número exacto de unidades vendidas con el que la empresa ni gana ni pierde dinero: el beneficio es cero ($B = 0$). En ese punto, los ingresos cubren justamente la totalidad de los costes ($IT = CT$).
+> El **umbral de rentabilidad** o **punto muerto** ($Q^*$) es el número exacto de unidades vendidas con el que la empresa ni gana ni pierde dinero: el beneficio es cero ($B = 0$). En ese punto, los ingresos cubren justamente la totalidad de los costes ($IT = CT$).
 > 
 > Si imponemos la condición $B = 0$ en la fórmula ampliada y despejamos la cantidad ($Q$):
 > 
@@ -40,8 +40,8 @@
 > 4. Sacamos factor común a la incógnita $Q$:
 >    $$Q \cdot (P - CV_u) = CF$$
 > 
-> 5. Despejamos $Q_0$:
->    $$Q_0 = \frac{CF}{P - CV_u}$$
+> 5. Despejamos $Q^*$:
+>    $$Q^* = \frac{CF}{P - CV_u}$$
 
 ---
 
@@ -56,9 +56,9 @@
 
 > [!info] Píldora teórica 4: Las tres zonas del punto muerto
 > 
-> * **Si $Q < Q_0$ (zona de pérdidas):** El volumen de ventas es insuficiente. $IT < CT \rightarrow B < 0$.
-> * **Si $Q = Q_0$ (umbral o punto muerto):** Las ventas cubren exactamente los costes. $IT = CT \rightarrow B = 0$.
-> * **Si $Q > Q_0$ (zona de beneficios):** Superado el umbral, la empresa gana dinero. $IT > CT \rightarrow B > 0$.
+> * **Si $Q < Q^*$ (zona de pérdidas):** El volumen de ventas es insuficiente. $IT < CT \rightarrow B < 0$.
+> * **Si $Q = Q^*$ (umbral o punto muerto):** Las ventas cubren exactamente los costes. $IT = CT \rightarrow B = 0$.
+> * **Si $Q > Q^*$ (zona de beneficios):** Superado el umbral, la empresa gana dinero. $IT > CT \rightarrow B > 0$.
 
 ---
 
@@ -76,7 +76,7 @@
   * 30 camisetas.
   * 40 camisetas.
 * **c)** A la vista de los resultados del apartado anterior, ¿cuántas camisetas necesitaban vender como mínimo para empezar a obtener beneficios? Comprueba que coincide exactamente con la fórmula del umbral:
-  $$Q_0 = \frac{CF}{P - CV_u}$$
+  $$Q^* = \frac{CF}{P - CV_u}$$
 
 > [!example]- Solución
 > **a) Margen de contribución unitario:**
@@ -94,7 +94,7 @@
 >
 > **c) Comprobación:**
 > Para empezar a tener beneficios necesitaban vender **30 camisetas**. Aplicando la fórmula:
-> $$Q_0 = \frac{CF}{P - CV_u} = \frac{300}{15 - 5} = \frac{300}{10} = \mathbf{30\text{ camisetas}}$$
+> $$Q^* = \frac{CF}{P - CV_u} = \frac{300}{15 - 5} = \frac{300}{10} = \mathbf{30\text{ camisetas}}$$
 
 ---
 
@@ -107,7 +107,7 @@
 > [!example]- Solución
 > **a) Deducción y cálculo:**
 > $$IT = CT \rightarrow 20 \cdot Q = 800 + 4 \cdot Q$$
-> $$20 \cdot Q - 4 \cdot Q = 800 \rightarrow 16 \cdot Q = 800 \rightarrow Q_0 = \frac{800}{16} = \mathbf{50\text{ láminas}}$$
+> $$20 \cdot Q - 4 \cdot Q = 800 \rightarrow 16 \cdot Q = 800 \rightarrow Q^* = \frac{800}{16} = \mathbf{50\text{ láminas}}$$
 > Debe vender 50 láminas al mes para no perder dinero.
 >
 > **b) Resultado con $Q = 65$ láminas:**
@@ -130,8 +130,8 @@
 > [!example]- Solución
 > **a) Subida del precio a 24 €:**
 > * Al subir el precio, cada lámina deja un margen mayor ($24 - 4 = 20\text{ €}$ frente a 16 €). Al recaudar más por unidad para cubrir los mismos costes fijos, necesitará vender **menos láminas**.
-> * *Cálculo:* $Q_0 = \frac{800}{24 - 4} = \frac{800}{20} = \mathbf{40\text{ láminas}}$ (10 láminas menos que antes).
+> * *Cálculo:* $Q^* = \frac{800}{24 - 4} = \frac{800}{20} = \mathbf{40\text{ láminas}}$ (10 láminas menos que antes).
 >
 > **b) Aumento del coste variable a 8 €:**
 > * Si el coste de fabricación aumenta, el margen unitario se estrecha ($20 - 8 = 12\text{ €}$). Como cada lámina aporta menos dinero a la bolsa de costes fijos, la empresa se vuelve más vulnerable y necesitará vender **más láminas** para no entrar en pérdidas.
-> * *Cálculo:* $Q_0 = \frac{800}{20 - 8} = \frac{800}{12} = \mathbf{66{,}67} \rightarrow \mathbf{67\text{ láminas}}$ (se redondea hacia arriba al tratarse de unidades indivisibles).
+> * *Cálculo:* $Q^* = \frac{800}{20 - 8} = \frac{800}{12} = \mathbf{66{,}67} \rightarrow \mathbf{67\text{ láminas}}$ (se redondea hacia arriba al tratarse de unidades indivisibles).

@@ -39,7 +39,9 @@ y la del capital.
 ### Costes y producción
 
 Estructura de costes y óptimo de producción a corto plazo, donde la empresa
-iguala el ingreso marginal al coste marginal.
+iguala el ingreso marginal al coste marginal. La práctica de ampliación combina
+costes e inventarios, productividad marginal, punto muerto con capacidad
+limitada, umbral de cierre y costes irrecuperables.
 
 ### Umbral de rentabilidad
 
