@@ -15,6 +15,16 @@ decisiones, además de indicar el resultado.
 
 ## Bloques
 
+### La empresa y su organización
+
+Formas de empresa, dimensión, crecimiento, entorno y organización, con
+preguntas de las pruebas de acceso a la universidad del País Vasco.
+
+### Modelos de negocio, marketing e innovación
+
+Propuestas de valor, modelos de ingresos, marketing, sostenibilidad e innovación
+empresarial, con casos de las pruebas de acceso a la universidad del País Vasco.
+
 ### Conceptos fundamentales
 
 Los dos primeros documentos cubren la distinción entre economía normativa y
@@ -41,7 +51,9 @@ y la del capital.
 Estructura de costes y óptimo de producción a corto plazo, donde la empresa
 iguala el ingreso marginal al coste marginal. La práctica de ampliación combina
 costes e inventarios, productividad marginal, punto muerto con capacidad
-limitada, umbral de cierre y costes irrecuperables.
+limitada, umbral de cierre y costes irrecuperables. Incluye también un caso
+teórico de Andalucía sobre innovación en el producto, el proceso y la
+comercialización.
 
 ### Umbral de rentabilidad
 
@@ -83,3 +95,8 @@ Unión Europea y Unión Económica y Monetaria, y ejercicios de balanza de pagos
 
 Una prueba completa tipo examen, con su solucionario desplegable pregunta a
 pregunta.
+
+### Repaso general
+
+Ejercicios de Aragón sobre contabilidad e inversión, con cálculos y preguntas
+de interpretación financiera.
