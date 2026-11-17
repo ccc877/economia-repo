@@ -56,11 +56,6 @@ solución desplegable junto al enunciado. El [cuaderno de
 ejercicios](ejercicios/index.html) reúne el material y ofrece un índice
 navegable.
 
-### Empresa y modelos de negocio
-
-- [La empresa y su organización](ejercicios/empresa-y-organizacion.html)
-- [Modelos de negocio, marketing e innovación](ejercicios/modelos-de-negocio-y-marketing.html)
-
 ### Unidad 1. Decisión, comportamiento y método
 
 - **Ejercicios: La economía: concepto, método y ramas**
@@ -117,8 +112,4 @@ navegable.
   - [Cambio de divisas y tipos de cambio](ejercicios/cambio-divisas.html)
   - [Clasificación y saldo de la balanza de pagos](ejercicios/balanza-pagos.html)
 - <a class="placeholder-link" href="" aria-disabled="true">Ejercicios: La globalización y los retos de la economía actual</a><span class="placeholder-status">Próximamente</span>
-
-### Repaso general
-
-- [Repaso de inversión y contabilidad](ejercicios/repaso-general-otras-comunidades.html)
 :::

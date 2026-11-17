@@ -138,11 +138,3 @@ TechLab invirtió 40 000 € el año pasado en desarrollar un lote de 1000 micro
 > **c)** Si rechaza, el resultado acumulado es $-40\,000$ €. Si acepta, es $18\,000 - 12\,000 - 40\,000 = -34\,000$ €. Aceptar no vuelve rentable el proyecto en conjunto, pero limita la pérdida en 6000 €.
 >
 > **d)** El coste adicional por microprocesador es $12\,000/1000 = 12$ €. Ese es el precio mínimo de equilibrio para la decisión futura, si no hay otros costes ni alternativas. Para que completar el lote aporte un margen positivo, el precio debe superar los 12 € por unidad.
-
-## Innovación en producto, proceso y comercialización
-
-**6.** La empresa andaluza La Oliva, dedicada a producir aceite de oliva, ha desarrollado un nuevo producto llamado *aceite de oliva en espray*, que facilita su uso en la cocina. También ha implantado un sistema de producción sostenible que reduce el consumo de agua y energía. Por último, ha creado una aplicación móvil con recetas, consejos de cocina y un localizador de puntos de venta.
-
-Identifica los tres tipos de innovación que aparecen en el caso según el área de mejora y justifica cada respuesta con un dato del texto.
-
-*Andalucía · Julio de 2025.*

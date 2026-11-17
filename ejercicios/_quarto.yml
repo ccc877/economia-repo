@@ -123,12 +123,6 @@ book:
     style: docked
     contents:
       - index.md
-      - section: "La empresa y su organización"
-        contents:
-          - empresa-y-organizacion.md
-      - section: "Modelos de negocio, marketing e innovación"
-        contents:
-          - modelos-de-negocio-y-marketing.md
       - section: "Conceptos fundamentales"
         contents:
           - 2-macro-micro-normativa-positiva.md
@@ -181,17 +175,8 @@ book:
       - section: "Evaluación"
         contents:
           - nivel.md
-      - section: "Repaso general"
-        contents:
-          - repaso-general-otras-comunidades.md
   chapters:
     - index.md
-    - part: "La empresa y su organización"
-      chapters:
-        - empresa-y-organizacion.md
-    - part: "Modelos de negocio, marketing e innovación"
-      chapters:
-        - modelos-de-negocio-y-marketing.md
     - part: "Conceptos fundamentales"
       chapters:
         - 2-macro-micro-normativa-positiva.md
@@ -244,9 +229,6 @@ book:
     - part: "Evaluación"
       chapters:
         - nivel.md
-    - part: "Repaso general"
-      chapters:
-        - repaso-general-otras-comunidades.md
 
 format:
   html:
